@@ -22,10 +22,10 @@ util.config(para)
 startTime = time.time() # start timing
 
 # load the dataset
-logdata = dataloader.load(para)
+loglines = dataloader.load(para)
 
 # log template extraction
-slct.extract(logdata, para)
+slct.extract(loglines, para)
 
 logger.info('All done. Elaspsed time: ' + util.formatElapsedTime(time.time() - startTime)) # end timing
 logger.info('==============================================')
