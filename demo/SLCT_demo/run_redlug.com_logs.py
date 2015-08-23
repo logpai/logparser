@@ -1,7 +1,7 @@
 import os, sys, time
 sys.path.append('../../')
 sys.path.append('../')
-from loglyzer import slct
+from logparser import slct
 from commons.util import logger
 from commons import util
 from commons import dataloader
