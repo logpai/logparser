@@ -482,8 +482,3 @@ def editDistOfSeq(wordList1,wordList2,v):
                 d[i].insert(j, minimum)
     return  d[-1][-1]
 
-# t1=time.time()
-# logKeyPara=para(threshold2=6)
-# x=logkeyExtraction(logKeyPara)
-# x.mainProcess()
-# print('time is ',time.time()-t1)
