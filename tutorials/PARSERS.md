@@ -21,8 +21,6 @@ IPLoM
 
 ***Step 4***: Log template extraction. IPLoM processes through all the clusters generated in previous steps and generates one log template for each of them. For each column in a cluster, the number of unique words is counted. If there is only one unique word in a column, the word is regarded as constant. Otherwise, the words in the column are variables and will be replaced by a wildcard in the output.
 
-Three important parameters of IPLoM are Partition Support Threshold (PST), Cluster Goodness Threshold (CGT) and Lower Bound (LB). PST decides whether a newly generated cluster in the first 3 steps should be regarded as outlier. CGT indicates whether a cluster is good enough and could skip step 3. Last but not least, LB is used in step 3 to decide whether words in the M side are constants or variables.
-
 LKE
 --------
 ***Step 1***: Log clustering. Weighted edit distance is designed to evaluate the similarity between two logs, WED=\sum_{i=1}^{n}\frac{1}{1+e^{x_{i}-v}}
@@ -37,21 +35,21 @@ LKE
   is selected as the value of \sigma
  .
 
-***Step 2***: Cluster splitting. In this step, some clusters are further partitioned. LKE firstly finds out the longest common sequence (LCS) of all the logs in the same cluster, such as “Receiving block src: dest:” in log 2 and log 3 in Figure [Fig:Framework-of-Log-Parsing]. The rests of the logs are dynamic parts separated by common words, such as “/10.251.43.210:55700” or “blk_904791815409399662”. The number of unique words in each dynamic part column, which is denoted as |DP|
+***Step 2***: Cluster splitting. In this step, some clusters are further partitioned. LKE firstly finds out the longest common sequence (LCS) of all the logs in the same cluster. The rests of the logs are dynamic parts separated by common words, such as “/10.251.43.210:55700” or “blk_904791815409399662”. The number of unique words in each dynamic part column, which is denoted as |DP|
  , is counted. For example, |DP|=2
   for the dynamic part column between “src:” and “dest:” in log 2 and log 3. If the smallest |DP|
   is less than threshold \phi
  , LKE will use this dynamic part column to partition the cluster. 
 
-***Step 3***: Log template extraction. This step is similar to the step 4 of IPLoM in [sub:IPLoM-1]. The only difference is that LKE removes all variables when they generate log templates, instead of representing them by wildcards.
+***Step 3***: Log template extraction. This step is similar to the step 4 of IPLoM. The only difference is that LKE removes all variables when they generate log templates, instead of representing them by wildcards.
 
 LogSig
 --------
-***Step 1***: Word pair generation. In this step, each log is converted to a set of word pairs. For example, the 10th raw log in Figure [Fig:Framework-of-Log-Parsing] is converted to the following word pairs: (Verification, succeeded), (Verification, for), (Verification, blk_904791815409399662), (succeeded, for), (succeeded, blk_904791815409399662), (for, blk_904791815409399662). Each word pair preserves the order information of the original log.
+***Step 1***: Word pair generation. In this step, each log is converted to a set of word pairs. For example, "Verification succeeded for blk_904791815409399662" is converted to the following word pairs: (Verification, succeeded), (Verification, for), (Verification, blk_904791815409399662), (succeeded, for), (succeeded, blk_904791815409399662), (for, blk_904791815409399662). Each word pair preserves the order information of the original log.
 
 ***Step 2***: Clustering. LogSig requires users to determine the number of clusters, say k
  , which leads to k
-  randomly partitioned clusters of logs at the beginning of clustering. In each iteration of clustering, LogSig goes through all the logs and move them to other clusters if needed. For each log, potential value, which is based on word pairs generated in step 1, is calculated to decide to which cluster the log should be moved. The potential value is explained in detail in Section 4.2.2 in [#ltang11]. LogSig keeps clustering untill no log is decided to move in one iteration.
+  randomly partitioned clusters of logs at the beginning of clustering. In each iteration of clustering, LogSig goes through all the logs and move them to other clusters if needed. For each log, potential value, which is based on word pairs generated in step 1, is calculated to decide to which cluster the log should be moved. LogSig keeps clustering untill no log is decided to move in one iteration.
 
 ***Step 3***: Log template extraction. At this point, there are k
   clusters of logs. For each cluster, words in more than half of the logs are selected as candidate words of the template. To figure out the order of candidate words, LogSig goes through all the logs in the cluster and count how many times each permutation appears. The most frequent one is the log template of the cluster.
