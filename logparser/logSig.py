@@ -40,7 +40,7 @@ class para:
 		self.saveFileName=saveFileName
 		self.groupNum=groupNum   #partition into k groups
 
-class logSig:
+class LogSig:
 	def __init__(self,para,wordLL=[],loglineNum=0,termpairLLT=[],logNumPerGroup=[],groupIndex=dict(),termPairLogNumLD=[],logIndexPerGroup=[]):
 		self.para=para
 		self.wordLL=[]
@@ -263,12 +263,9 @@ def getDeltaD(logNumPerGroup,termPairLogNumLD,groupI,groupJ,lineNum,termpairLT):
 			deltaD+=(pow((1/(Cj+1.0)),2)-pow((termPairLogNumLD[groupI][r]/(Ci+0.0)),2))
 	deltaD=deltaD*3
 	return deltaD
+	
 	#delete the files under this dirPath
 def deleteAllFiles(dirPath):
 	fileList = os.listdir(dirPath)
 	for fileName in fileList:
  		os.remove(dirPath+"/"+fileName)
-
-# logSigPara=para()
-# logSigInstance=logSig(logSigPara)
-# logSigInstance.mainProcess()
