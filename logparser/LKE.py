@@ -41,7 +41,7 @@ class para:
 		self.saveFileName=saveFileName
 		self.regular=regular
 
-class logkeyExtraction:
+class LKE:
 	def __init__(self,para,wordLL=[],wordLen=[],groups=[],loglineNumPerGroup=[],wordLenPerGroup=[],
 		wordOccuOfPosiLLD=[],loglinesOfGroups=[],flatLogLineGroups=[],newGroups=[]):
 		self.para=para
