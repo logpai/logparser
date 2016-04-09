@@ -21,6 +21,18 @@ If you are not familiar with log parser, please check the [Principles of Parsers
 * LKE (Log Key Extraction): [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](http://research.microsoft.com/pubs/102365/DM790-CR.pdf)
 * LogSig: [LogSig: Gnerating Ssystem Events from Raw Textual Logs](http://users.cis.fiu.edu/~taoli/pub/liang-cikm2011.pdf)
 
+Data
+--------------
+In [data](https://github.com/cuhk-cse/logparser/tree/master/data), there are 5 datasets for you to play with. Each dataset contains several text files.
+* rawlog.log: The raw log messages with ID. "ID\tword1 word2 word3"
+* template[0-9]+: The log messages belong to a certain template.
+* templates: The text of templates.
+
+Quick Start
+--------------
+Input: A raw log file. Each line of the file follows "ID\tword1 word2 word3" <br />
+Output: Two parts. One is splitted log messages (only contains log ID) in different text files. The other is the ***templates*** file which contains all templates. <br />
+
 
 
 Documentation
