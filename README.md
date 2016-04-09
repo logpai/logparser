@@ -14,7 +14,7 @@ If you use these parsers, please cite our paper using the following reference:<b
 
 Parsers
 --------
-[Principles of Parsers](https://github.com/cuhk-cse/logparser/blob/master/tutorials/PARSERS.md) <br />
+If you are not familiar with log parser, please check the [Principles of Parsers](https://github.com/cuhk-cse/logparser/blob/master/tutorials/PARSERS.md) <br />
 
 * SLCT (Simple Logfile Clustering Tool): [A Data Clustering Algorithm for Mining Patterns from Event Logs](http://ristov.github.io/publications/slct-ipom03-web.pdf) (SLCT is wrapped around on the [C source code](http://ristov.github.io/slct/) provided by the author.)
 * IPLoM (Iterative Partitioning Log Mining): [A Lightweight Algorithm for Message Type Extraction in System Application Logs](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5936060)
