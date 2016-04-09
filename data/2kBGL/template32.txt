@@ -1,0 +1,1 @@
+1030	KERNTERM 1121727206 2005.07.18 R20-M1-N8-C:J12-U01 2005-07-18-15.53.26.229596 R20-M1-N8-C:J12-U01 RAS KERNEL FATAL rts: kernel terminated for reason 1001rts: bad message header: invalid cpu, type=42315, cpu=105, index=1207960804, total=2691015

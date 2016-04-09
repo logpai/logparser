@@ -1,0 +1,3 @@
+1469	- 1128027755 2005.09.29 R03-M1-ND-C:J14-U01 2005-09-29-14.02.35.872055 R03-M1-ND-C:J14-U01 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x06): warning for torus y+ wire
+1518	- 1130255740 2005.10.25 R11-M1-N2-C:J09-U11 2005-10-25-08.55.40.146416 R11-M1-N2-C:J09-U11 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x0b): warning for torus z- wire
+1950	- 1133913870 2005.12.06 R01-M0-N0-C:J04-U01 2005-12-06-16.04.30.188673 R01-M0-N0-C:J04-U01 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x17): warning for tree C1 wire, suppressing further interrupts of same type

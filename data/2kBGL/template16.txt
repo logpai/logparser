@@ -1,0 +1,8 @@
+1788	APPSEV 1132853885 2005.11.24 R14-M0-N8-I:J18-U01 2005-11-24-09.38.05.459006 R14-M0-N8-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:41534, Link has been severed
+1790	APPSEV 1132912103 2005.11.25 R45-M1-N0-I:J18-U01 2005-11-25-01.48.23.054823 R45-M1-N0-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:54780, Link has been severed
+1792	APPSEV 1133009333 2005.11.26 R54-M0-N0-I:J18-U01 2005-11-26-04.48.53.869394 R54-M0-N0-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:60243, Link has been severed
+1795	APPSEV 1133044906 2005.11.26 R33-M1-N4-I:J18-U11 2005-11-26-14.41.46.876542 R33-M1-N4-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:47189, Link has been severed
+1974	APPSEV 1134496355 2005.12.13 R74-M1-N8-I:J18-U11 2005-12-13-09.52.35.527182 R74-M1-N8-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:55929, Link has been severed
+1975	APPSEV 1134496398 2005.12.13 R44-M0-N4-I:J18-U01 2005-12-13-09.53.18.260783 R44-M0-N4-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:56170, Link has been severed
+1981	APPSEV 1134630981 2005.12.14 R37-M1-N8-I:J18-U11 2005-12-14-23.16.21.740107 R37-M1-N8-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:49934, Link has been severed
+1982	APPSEV 1134631019 2005.12.14 R32-M0-NC-I:J18-U01 2005-12-14-23.16.59.947676 R32-M0-NC-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:50288, Link has been severed

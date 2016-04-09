@@ -1,0 +1,2 @@
+1975	2015-07-30 23:52:53,800 - INFO  [main:QuorumPeer@933] - minSessionTimeout set to -1
+1989	2015-07-31 15:36:23,686 - INFO  [main:QuorumPeer@933] - minSessionTimeout set to -1

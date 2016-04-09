@@ -1,0 +1,1 @@
+1419	2015-08-18 16:09:18,900 - INFO  [LearnerHandler-/10.10.34.11:49928:Leader@598] - Have quorum of supporters; starting up and setting last processed zxid: 0xb00000000

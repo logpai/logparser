@@ -1,0 +1,5 @@
+173	34808	51338 node-3 node psu 1106496000 1 psu failure\ ambient=28
+174	35004	191898 node-238 node psu 1131240275 1 psu failure\ ambient=28
+175	35046	236618 node-104 node psu 1132434391 1 psu failure\ ambient=28
+176	35138	341834 node-118 node psu 1140312091 1 psu failure\ ambient=28
+177	35154	347972 node-118 node psu 1140430530 1 psu failure\ ambient=31

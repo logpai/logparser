@@ -1,0 +1,4 @@
+1945	- 1133715868 2005.12.04 R06-M1-N6-C:J08-U01 2005-12-04-09.04.28.582086 R06-M1-N6-C:J08-U01 RAS KERNEL INFO total of 1 ddr error(s) detected and corrected over 2487 seconds
+1963	- 1134130421 2005.12.09 R34-M1-NB-C:J17-U11 2005-12-09-04.13.41.810977 R34-M1-NB-C:J17-U11 RAS KERNEL INFO total of 5 ddr error(s) detected and corrected over 9108 seconds
+1983	- 1134748483 2005.12.16 R60-M1-N7-C:J17-U01 2005-12-16-07.54.43.245870 R60-M1-N7-C:J17-U01 RAS KERNEL INFO total of 20 ddr error(s) detected and corrected over 22070 seconds
+1986	- 1134954903 2005.12.18 R13-M1-N1-C:J03-U01 2005-12-18-17.15.03.147145 R13-M1-N1-C:J03-U01 RAS KERNEL INFO total of 3 ddr error(s) detected and corrected over 8732 seconds

@@ -1,0 +1,1 @@
+921	[10.30 17:52:25] Warning : Connections do not originate from the applications. A third party network filter (e.g. antivirus) is detected.

@@ -1,0 +1,3 @@
+1377	2015-07-31 15:31:15,575 - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+1407	2015-08-10 18:25:25,206 - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+1454	2015-08-25 11:14:51,514 - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0

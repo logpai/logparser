@@ -1,0 +1,1 @@
+1232	- 1123614572 2005.08.09 R00-M0-N6-C:J03-U11 2005-08-09-12.09.32.252222 R00-M0-N6-C:J03-U11 RAS KERNEL FATAL rts tree/torus link training failed: wanted: B C X+ X- Y+ Y- Z+ Z- got: B C X- Y- Z+ Z-

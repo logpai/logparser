@@ -1,0 +1,5 @@
+164	32678	2599204 1971 boot_cmd new 1074297378 1 Targeting domains:node-D3 and nodes:node-[104-127] child of command 1963
+165	32743	2599217 1973 boot_cmd new 1074297389 1 Targeting domains:node-D4 and nodes:node-[136-159] child of command 1964
+167	33080	162883 2414 boot_cmd new 1077877853 1 Targeting domains:node-D4 and nodes:node-[128-135] child of command 2401
+168	33181	210240 2490 boot_cmd new 1078453922 1 Targeting domains:node-D0 and nodes:node-[8-31] child of command 2489
+171	34079	128520 3491 boot_cmd new 1111855423 1 Targeting domains:node-D2 and nodes:node-[64-95] child of command 3488

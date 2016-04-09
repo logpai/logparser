@@ -1,0 +1,2 @@
+1350	2015-07-30 23:46:31,590 - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2181:FileTxnSnapLog@240] - Snapshotting: 0x300000dcd to /var/lib/zookeeper/version-2/snapshot.300000dcd
+1379	2015-07-31 15:36:21,074 - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2181:FileTxnSnapLog@240] - Snapshotting: 0x50000062e to /var/lib/zookeeper/version-2/snapshot.50000062e

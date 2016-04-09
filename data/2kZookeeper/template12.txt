@@ -1,0 +1,1 @@
+608	2015-08-10 18:23:49,901 - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3

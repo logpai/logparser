@@ -1,0 +1,1 @@
+622	- 1120908821 2005.07.09 R20-M0-N8-I:J18-U01 2005-07-09-04.33.41.091472 R20-M0-N8-I:J18-U01 RAS KERNEL INFO ciod: duplicate canonical-rank 31 to logical-rank 0 mapping at line 3 of node map file /p/gb2/pakin1/sweep3d-5x5x400-10mk-3mmi-1024pes-sweep/sweep.map

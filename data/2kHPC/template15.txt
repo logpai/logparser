@@ -1,0 +1,12 @@
+323	68968	191911 node-D4 clusterfilesystem fdmn.full 1077949575 1 ServerFileSystem: ServerFileSystem domain root14_local is full
+324	69034	280513 node-D0 clusterfilesystem fdmn.full 1079715693 1 ServerFileSystem: ServerFileSystem domain root10_local is full
+325	69142	284487 node-D3 clusterfilesystem fdmn.full 1080155118 1 ServerFileSystem: ServerFileSystem domain root22_local is full
+326	69294	289398 node-D5 clusterfilesystem fdmn.full 1080811198 1 ServerFileSystem: ServerFileSystem domain root13_local is full
+327	69768	383570 node-D7 clusterfilesystem fdmn.full 1086596948 1 ServerFileSystem: ServerFileSystem domain root26_tmp is full
+328	69802	389984 node-D3 clusterfilesystem fdmn.full 1087531181 1 ServerFileSystem: ServerFileSystem domain root7_local is full
+329	70641	178949 node-D2 clusterfilesystem fdmn.full 1114672353 1 ServerFileSystem: ServerFileSystem domain root1_local is full
+330	70895	178450 node-D4 clusterfilesystem fdmn.full 1114553373 1 ServerFileSystem: ServerFileSystem domain root22_local is full
+331	70998	177934 node-D3 clusterfilesystem fdmn.full 1114546822 1 ServerFileSystem: ServerFileSystem domain root3_local is full
+332	71090	218553 node-D4 clusterfilesystem fdmn.full 1117133933 1 ServerFileSystem: ServerFileSystem domain root25_local is full
+333	71096	218536 node-D1 clusterfilesystem fdmn.full 1117131308 1 ServerFileSystem: ServerFileSystem domain root26_local is full
+334	71124	218505 node-D3 clusterfilesystem fdmn.full 1117130918 1 ServerFileSystem: ServerFileSystem domain root22_local is full

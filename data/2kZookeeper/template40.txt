@@ -1,0 +1,4 @@
+623	2015-08-20 17:12:29,467 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /10.10.34.11:56471 (no session established for client)
+1431	2015-08-20 17:13:23,515 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /10.10.34.12:36401 (no session established for client)
+1921	2015-07-29 19:53:54,912 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /10.10.34.13:54265 (no session established for client)
+1923	2015-07-29 19:55:01,647 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /10.10.34.13:54294 (no session established for client)

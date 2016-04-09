@@ -1,0 +1,2 @@
+895	[10.30 17:47:33] QQ.exe - tcpconn4.tencent.com:443 error : Could not connect through proxy proxy.cse.cuhk.edu.hk:8000 - Proxy closed the connection unexpectedly.
+897	[10.30 17:47:54] QQ.exe - tcpconn4.tencent.com:80 error : Could not connect through proxy proxy.cse.cuhk.edu.hk:8000 - Proxy closed the connection unexpectedly.

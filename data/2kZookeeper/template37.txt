@@ -1,0 +1,1 @@
+1380	2015-07-31 15:36:24,570 - INFO  [LearnerHandler-/10.10.34.13:59348:LearnerHandler@263] - Follower sid: 3 : info : org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer@33557fe4

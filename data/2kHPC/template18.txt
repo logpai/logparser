@@ -1,0 +1,2 @@
+178	36013	147394 Interconnect-0N00 switch_module temphigh 1129812510 1 Temperature (41C) exceeds warning threshold
+179	36111	147494 Interconnect-0N00 switch_module temphigh 1129813980 1 Temperature (41C) exceeds warning threshold

@@ -1,0 +1,1 @@
+581	2015-07-31 15:31:40,971 - INFO  [Thread-1:QuorumCnxManager$Listener@486] - My election bind port: 0.0.0.0/0.0.0.0:3888

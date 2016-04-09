@@ -1,0 +1,46 @@
+.*Starting quorum peer.*
+.*Cannot open channel to.*at election address.*
+.*Notification time out:.*
+.*Received connection request.*
+.*Interrupting SendWorker.*
+.*Interrupted while waiting for message on queue.*
+.*Send worker leaving thread.*
+.*Connection broken for id.*my id =.*error =.*
+.*tickTime set to.*
+.*minSessionTimeout set to.*
+.*maxSessionTimeout set to.*
+.*autopurge.snapRetainCount set to.*
+.*autopurge.purgeInterval.*
+.*My election bind port:.*
+.*- LOOKING.*
+.*New election. My id =.*proposed.*
+.*Notification:.*n.leader.*n.zxid.*n.round.*n.state.*n.sid.*n.peerEPoch.*my state.*
+.*- FOLLOWING - LEADER ELECTION TOOK -.*
+.*- Server.*built on.*
+.*Client attempting to establish new session at.*
+.*Accepted socket connection from.*
+.*Connection request from old client.*will be dropped if server is in r-o mode.*
+.*- Server.*
+.*Snapshotting:.*to.*
+.*Established session.*with negotiated timeout.*for client.*
+.*caught end of stream exception.*
+.*Closed socket connection for client.*which had sessionid.*
+.*Client attempting to renew session.*at.*
+.*Revalidating client:.*
+.*- FOLLOWING.*
+.*Unexpected Exception:.*
+.*Reading snapshot.*
+.*Have smaller server identifier, so dropping the connection:.*
+.*Expiring session.*timeout of.*exceeded.*
+.*Processed session termination for sessionid:.*
+.*shutdown of request processor complete.*
+.*Follower sid:.*: info :.*
+.*- Sending DIFF.*
+.*Exception causing close of session.*due to java.io.IOException: ZooKeeperServer not running.*
+.*Closed socket connection for client.*no session established for client.*
+.*Getting a snapshot from leader.*
+.*Have quorum of supporters; starting up and setting last processed zxid:.*
+.*Unexpected exception causing shutdown while sock still open.*
+.*GOODBYE.*
+.*First is.*
+.*Got user-level KeeperException when processing.*Error.*=.*

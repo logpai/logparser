@@ -1,0 +1,44 @@
+inconsistent nodesets * * <ok> * * <ok> * * <ok> * * <ok> * * <ok> * * <ok> * * <ok> * * <ok> * * <ok> * * <ok> * * <ok> * * <ok> * * <ok>
+inconsistent nodesets * * <ok> * * <ok> * * <ok> * * <ok> * * <ok>
+inconsistent nodesets * * <ok> * * <ok> * * <ok> * * <ok>
+.*ClusterFileSystem: ServerFileSystem domain .* is no longer served by node .*.*
+.*ClusterFileSystem: There is no server for ServerFileSystem domain .*.*
+.*Command has been aborted.*
+.*Command has completed successfully.*
+.*Component State Change: Component .* is in the .* state .*.*
+.*Failed subcommands .*.*
+.*Fan speeds \( .* .* .* .* .* .* \).*
+.*Linkerror event interval expired.*
+.*NIFF: node .* detected a failed network connection on network .* via interface .*.*
+.*NIFF: node .* has detected an available network connection on network .* via interface .*.*
+.*ServerFileSystem: An ServerFileSystem domain panic has occurred on .*.*
+.*ServerFileSystem: ServerFileSystem domain .* is full.*
+.*Targeting domains:node-.* and nodes:node-.* child of command .*.*
+.*Targeting domains:node-.* and nodes:node-.*.*
+.*Temperature .* exceeds warning threshold.*
+.*boot \(command .* Error: HALT asserted\\.*
+.*boot  \(command .*.*
+.*bootGenvmunix  \(command .*.*
+.*clusterAddMember  \(command .*.*
+.*halt  \(command .*.*
+.*link errors remain current.*
+.*risBoot  \(command .*.*
+.*risBoot \(command .* Error: Timed out while waiting for SRM prompt: <ABORT code completed>.*
+.*Link error on broadcast tree .*.*
+.*not responding.*
+.*wait  \(command .*.*
+.*psu failure\\.*
+.*power/control .*.*
+.*Link in reset.*
+.*configured out.*
+.*not-responding.*
+.*Link .*.*
+.*running.*
+.*starting.*
+.*warning.*
+.*active.*
+.*closing.*
+.*normal.*
+.*blocked.*
+.*critical.*
+.*ambient=.*.*

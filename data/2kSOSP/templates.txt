@@ -1,0 +1,14 @@
+.*Verification succeeded for.*
+.*Served block.*to.*
+.*Got exception while serving.*to.*
+.*Receiving block.*src:.*dest:.*
+.*Received block.*src:.*dest:.*of size.*
+.*Received block.*of size.*from.*
+.*PacketResponder.*for block.*terminating.*
+.*Starting thread to transfer block.*to.*
+.*Deleting block.*file.*
+.*BLOCK\* NameSystem.*allocateBlock:.*
+.*BLOCK\* NameSystem.*delete:.*is added to invalidSet of.*
+.*BLOCK\* ask.*to replicate.*to.*
+.*BLOCK\* NameSystem.*addStoredBlock: blockMap updated:.*is added to.*size.*
+.*BLOCK\* ask.*to delete.*

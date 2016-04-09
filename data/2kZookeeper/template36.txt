@@ -1,0 +1,1 @@
+1428	2015-08-20 17:12:29,085 - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2181:FinalRequestProcessor@415] - shutdown of request processor complete

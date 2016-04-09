@@ -1,0 +1,2 @@
+212	41983	365140 node-69 unix.hw net.niff.down 1085075228 1 NIFF: node node-69 detected a failed network connection on network 5.5.224.0 via interface alt0
+213	42397	401608 node-162 unix.hw net.niff.down 1142550442 1 NIFF: node node-162 detected a failed network connection on network 5.5.224.0 via interface alt0

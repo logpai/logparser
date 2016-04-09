@@ -1,0 +1,5 @@
+955	[10.30 17:58:41] firefox.exe - 127.0.0.1:58205 error : Could not connect through proxy proxy.cse.cuhk.edu.hk:8000 - Proxy server cannot establish a connection with the target, status code 403
+976	[10.30 18:00:11] FlashPlayerPlugin_18_0_0_209.exe - formi.baidu.com:843 error : Could not connect through proxy proxy.cse.cuhk.edu.hk:8000 - Proxy server cannot establish a connection with the target, status code 403
+1026	[10.30 18:03:06] Skype.exe - 91.190.216.212:13392 error : Could not connect through proxy proxy.cse.cuhk.edu.hk:8000 - Proxy server cannot establish a connection with the target, status code 403
+1038	[10.30 18:03:13] Skype.exe - 91.190.216.125:12350 error : Could not connect through proxy proxy.cse.cuhk.edu.hk:8000 - Proxy server cannot establish a connection with the target, status code 403
+1977	[10.30 21:08:03] spoolsv.exe *64 - 127.0.0.1:135 error : Could not connect through proxy proxy.cse.cuhk.edu.hk:8000 - Proxy server cannot establish a connection with the target, status code 403

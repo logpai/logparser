@@ -1,0 +1,1 @@
+497	- 1120173883 2005.06.30 R36-M1-N4-I:J18-U01 2005-06-30-16.24.43.164196 R36-M1-N4-I:J18-U01 RAS APP FATAL ciod: Error creating node map from file /p/gb2/welcome3/32k_128x256x1_8x4x4.map: Bad file descriptor

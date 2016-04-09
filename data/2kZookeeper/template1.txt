@@ -1,0 +1,1 @@
+1349	2015-07-30 23:46:27,304 - INFO  [main:QuorumPeerMain@127] - Starting quorum peer

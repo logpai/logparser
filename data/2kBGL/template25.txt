@@ -1,0 +1,2 @@
+1760	- 1132234526 2005.11.17 R72-M1-NE-C:J04-U01 2005-11-17-05.35.26.782649 R72-M1-NE-C:J04-U01 RAS KERNEL INFO 18507114 torus sender z- retransmission error(s) (dcr 0x02f9) detected and corrected over 198 seconds
+1761	- 1132236972 2005.11.17 R72-M1-N6-C:J04-U01 2005-11-17-06.16.12.504899 R72-M1-N6-C:J04-U01 RAS KERNEL INFO 26741629 torus sender z- retransmission error(s) (dcr 0x02f9) detected and corrected over 268 seconds

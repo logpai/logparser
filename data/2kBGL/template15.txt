@@ -1,0 +1,4 @@
+1779	APPRES 1132609258 2005.11.21 R13-M1-N4-I:J18-U11 2005-11-21-13.40.58.052836 R13-M1-N4-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:52839, Connection reset by peer
+1781	APPRES 1132609304 2005.11.21 R22-M0-N0-I:J18-U01 2005-11-21-13.41.44.752517 R22-M0-N0-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:52930, Connection reset by peer
+1783	APPRES 1132609342 2005.11.21 R65-M1-NC-I:J18-U11 2005-11-21-13.42.22.905034 R65-M1-NC-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:53387, Connection reset by peer
+1785	APPRES 1132613769 2005.11.21 R66-M1-N8-I:J18-U01 2005-11-21-14.56.09.042983 R66-M1-N8-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:41587, Connection reset by peer

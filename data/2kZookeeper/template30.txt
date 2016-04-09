@@ -1,0 +1,2 @@
+583	2015-07-31 15:31:42,213 - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:QuorumPeer@738] - FOLLOWING
+1410	2015-08-10 18:25:25,673 - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2181:QuorumPeer@738] - FOLLOWING

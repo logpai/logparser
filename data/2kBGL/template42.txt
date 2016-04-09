@@ -1,0 +1,6 @@
+1503	- 1129550547 2005.10.17 R02-M0-N4-C:J04-U11 2005-10-17-05.02.27.161242 R02-M0-N4-C:J04-U11 RAS KERNEL INFO data cache search parity error detected. attempting to correct
+1504	- 1129550629 2005.10.17 R02-M0-N4-C:J04-U11 2005-10-17-05.03.49.800918 R02-M0-N4-C:J04-U11 RAS KERNEL INFO data cache search parity error detected. attempting to correct
+1505	- 1129551549 2005.10.17 R02-M0-N4-C:J04-U11 2005-10-17-05.19.09.715915 R02-M0-N4-C:J04-U11 RAS KERNEL INFO data cache search parity error detected. attempting to correct
+1506	- 1129551731 2005.10.17 R02-M0-N4-C:J04-U11 2005-10-17-05.22.11.645917 R02-M0-N4-C:J04-U11 RAS KERNEL INFO data cache search parity error detected. attempting to correct
+1507	- 1129552305 2005.10.17 R02-M0-N4-C:J04-U11 2005-10-17-05.31.45.435674 R02-M0-N4-C:J04-U11 RAS KERNEL INFO data cache search parity error detected. attempting to correct
+1508	- 1129552512 2005.10.17 R02-M0-N4-C:J04-U11 2005-10-17-05.35.12.825443 R02-M0-N4-C:J04-U11 RAS KERNEL INFO data cache search parity error detected. attempting to correct

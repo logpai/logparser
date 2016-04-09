@@ -1,0 +1,1 @@
+582	2015-07-31 15:31:40,999 - INFO  [WorkerSender[myid=1]:QuorumCnxManager@190] - Have smaller server identifier, so dropping the connection: (2, 1)

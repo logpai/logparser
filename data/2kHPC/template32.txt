@@ -1,0 +1,9 @@
+311	66591	285855 Interconnect-1T00 switch_module bcast-error 1080298218 1 Link in reset
+317	67373	303852 Interconnect-1T00 switch_module bcast-error 1082033409 1 Link in reset
+1440	303824	2556365 Interconnect-1N01 switch_module error 1072790564 1 Link in reset
+1443	304650	2553727 Interconnect-1N03 switch_module error 1072642564 1 Link in reset
+1450	306695	2561694 Interconnect-1N01 switch_module error 1073459190 1 Link in reset
+1453	307401	2560493 Interconnect-1N01 switch_module error 1073242467 1 Link in reset
+1454	307599	2566680 Interconnect-1N03 switch_module error 1073991556 1 Link in reset
+1455	307832	2565131 Interconnect-1N01 switch_module error 1073923347 1 Link in reset
+1456	307861	2565070 Interconnect-1N01 switch_module error 1073911806 1 Link in reset

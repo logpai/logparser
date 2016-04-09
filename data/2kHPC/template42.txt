@@ -1,0 +1,15 @@
+378	81290	2561542 full partition status 1073427660 1 blocked
+379	81323	2561161 full partition status 1073359530 1 blocked
+460	98679	261973 full partition status 1079220450 1 blocked
+528	110858	370250 full partition status 1085689890 1 blocked
+529	111120	369970 full partition status 1085682780 1 blocked
+565	117964	417113 full partition status 1093473150 1 blocked
+585	121876	449708 full partition status 1098490050 1 blocked
+604	124712	41359 full partition status 1104950640 1 blocked
+610	126589	84322 full partition status 1109007900 1 blocked
+646	133645	284668 full partition status 1120680810 1 blocked
+651	135252	26628 full partition status 1124999460 1 blocked
+671	138668	168084 full partition status 1131032850 1 blocked
+681	141284	274783 full partition status 1133702160 1 blocked
+687	142540	309872 full partition status 1135802130 1 blocked
+703	145860	454307 full partition status 1145174910 1 blocked

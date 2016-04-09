@@ -1,0 +1,112 @@
+.*Node card status: ALERT 0, ALERT 1, ALERT 2, ALERT 3 is \(are\) active. Clock Mode is Low. Clock Select is Midplane. Phy JTAG Reset is asserted. ASIC JTAG Reset is not asserted. Temperature Mask is not active. No temperature error. Temperature Limit Error Latch is clear. PGOOD is asserted. PGOOD error latch is clear. MPGOOD is OK. MPGOOD error latch is clear. The 2.5 volt rail is OK. The 1.5 volt rail is OK..*
+.*Node card status: no ALERTs are active. Clock Mode is Low. Clock Select is Midplane. Phy JTAG Reset is asserted. ASIC JTAG Reset is asserted. Temperature Mask is not active. No temperature error. Temperature Limit Error Latch is clear. PGOOD IS NOT ASSERTED. PGOOD ERROR LATCH IS ACTIVE. MPGOOD IS NOT OK. MPGOOD ERROR LATCH IS ACTIVE. The 2.5 volt rail is OK. The 1.5 volt rail is OK..*
+.*Kernel detected .* integer alignment exceptions .* iar .* dear .* iar .* dear .* .* iar .* dear .* iar .* dear .* .* iar .* dear .* .* iar .* dear .* .* iar .* dear .* iar .* dear .*.*
+.*.* microseconds spent in the rbs signal handler during .* calls. .* microseconds was the maximum time for a single instance of a correctable ddr..*
+.*.* total interrupts. .* critical input interrupts. .* microseconds total spent on critical input interrupts, .* microseconds max time in a critical input interrupt..*
+.*Node card VPD check: .* node in processor card slot .* do not match. VPD ecid .* found .*.*
+.*ciod: .* coordinate .* exceeds physical dimension .* at line .* of node map file .*.*
+.*ciod: duplicate canonical-rank .* to logical-rank .* mapping at line .* of node map file .*.*
+.*ciod: Error reading message prefix after LOAD_MESSAGE on CioStream socket to .* .* .* .* .*.*
+.*ciod: In packet from node .* message code .* is not .* or 4294967295 .*.*
+.*critical input interrupt .* warning for torus .* wire, suppressing further interrupts of same type.*
+.*.* ddr error\(s\) detected and corrected on rank .* symbol .* over .* seconds.*
+.*.* tree receiver .* in re-synch state event\(s\) \(dcr .* detected over .* seconds.*
+.*ciod: Error loading .* invalid or missing program image, No such file or directory.*
+.*ciod: Error reading message prefix on CioStream socket to .* Connection reset by peer.*
+.*ciod: Error reading message prefix on CioStream socket to .* Link has been severed.*
+.*.* ddr errors\(s\) detected and corrected on rank .* symbol .*, bit .*.*
+.*ciod: Error reading message prefix on CioStream socket to .* Connection timed out.*
+.*ciod: failed to read message prefix on control stream \(CioStream socket to .*.*
+.*ciod: Missing or invalid fields on line .* of node map file .*.*
+.*Error receiving packet on tree network, expecting type .* instead of type .*.*
+.*idoproxydb hit ASSERT condition: ASSERT expression=.* Source file=.* Source line=.* Function=.* IdoTransportMgr::SendPacket\(IdoUdpMgr.*, BglCtlPavTrace.*\).*
+.*.* L3 .* error\(s\) \(dcr .* detected and corrected over .* seconds.*
+.*.* torus receiver .* input pipe error\(s\) \(dcr .* detected and corrected.*
+.*.* torus .* error\(s\) \(dcr .* detected and corrected over .* seconds.*
+.*ciod: Error loading .* invalid or missing program image, Exec format error.*
+.*.* tree receiver .* in re-synch state event\(s\) \(dcr .* detected.*
+.*ciod: Error creating node map from file .* Bad file descriptor.*
+.*ciod: Error creating node map from file .* Block device required.*
+.*ciod: Error creating node map from file .* No child processes.*
+.*ciod: Error loading .* invalid or missing program image, Permission denied.*
+.*rts: kernel terminated for reason 1001rts: bad message header: invalid cpu,.*
+.*total of .* ddr error\(s\) detected and corrected over .* seconds.*
+.*ciod: cpu .* at treeaddr .* sent unrecognized message .*.*
+.*ciod: Error creating node map from file .* Permission denied.*
+.*MACHINE CHECK DCR read timeout .* iar .* lr .*.*
+.*rts: bad message header: expecting type .* instead of type.*
+.*.* L3 .* error\(s\) \(dcr .* detected and corrected.*
+.*ciod: Error loading .* program image too big, .*.*
+.*ciod: LOGIN chdir\(.*\) failed: No such file or directory.*
+.*ciod: Message code .* is not .* or 4294967295.*
+.*data cache .* parity error detected. attempting to correct.*
+.*Lustre mount FAILED : .* : block_id : location.*
+.*NFS Mount failed on .* slept .* seconds, retrying.*
+.*PrepareForService shutting down .* as part of Service Action.*
+.*rts tree/torus link training failed: wanted: .* got: .*.*
+.*Can not get assembly information for node card.*
+.*ciod: generated .* core files for program .*.*
+.*critical input interrupt .* warning for .* wire.*
+.*Lustre mount FAILED : .* : point /p/gb1.*
+.*total of .* ddr error\(s\) detected and corrected.*
+.*CE sym .* at .* mask .*.*
+.*New ido chip inserted into the database:.*
+.*size of scratchpad portion of L3.........0 \(0M\).*
+.*ciod: LOGIN chdir\(.*\) failed: Input/output error.*
+.*ciod: pollControlDescriptors: Detected the debugger died..*
+.*data store interrupt caused by .*.*
+.*floating pt ex mode .* .*.*
+.*Node card is not fully functional.*
+.*suppressing further interrupts of same type.*
+.*program interrupt: fp cr field .............0.*
+.*.* floating point alignment exceptions.*
+.*guaranteed .* cache block .*.*
+.*instruction cache parity error corrected.*
+.*NodeCard is not fully functional.*
+.*rts: kernel terminated for reason.*
+.*rts panic! - stopping execution.*
+.*.* double-hummer alignment exceptions.*
+.*.* TLB error interrupt.*
+.*ciod: Received signal .*.*
+.*core configuration register: .*.*
+.*critical input interrupt .*.*
+.*exception syndrome register: .*.*
+.*floating point instr. .*.*
+.*iar .* dear .*.*
+.*Ido chip status changed:.*
+.*lr:.* cr:.* xer:.* ctr:.*.*
+.*program interrupt: fp cr.*
+.*program interrupt: imprecise exception......0.*
+.*program interrupt: privileged instruction...0.*
+.*program interrupt: trap .*.*
+.*program interrupt: unimplemented operation..0.*
+.*r.*=.* r.*=.* r.*=.* r.*=.*.*
+.*byte ordering exception.....................0.*
+.*data address space................0.*
+.*data address: .*.*
+.*data storage interrupt.*
+.*dbcr0=.* dbsr=.* ccr0=.*.*
+.*debug interrupt enable............0.*
+.*debug wait enable.................0.*
+.*disable store gathering..................0.*
+.*force load/store alignment...............0.*
+.*icache prefetch .*.*
+.*instruction address space.........0.*
+.*machine check: i-fetch......................0.*
+.*machine state register:.*
+.*Machine State Register:.*
+.*minus .* .*.*
+.*problem state .*.*
+.*program interrupt: illegal.*
+.*rts internal error.*
+.*special purpose registers:.*
+.*wait state enable.................0.*
+.*machine check .*.*
+.*auxiliary processor.........................0.*
+.*instruction address:.*
+.*program interrupt.*
+.*shutdown complete.*
+.*store .*.*
+.*fpr.*=.*
+.*fraction.*
+.*generating.*

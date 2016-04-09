@@ -1,0 +1,2 @@
+402	86042	2599698 node-D5 domain status 1074297720 1 inconsistent nodesets node-160 0x0001edfe <ok> node-161 0x1001fdfe <ok> node-162 0x1001fdfe <ok> node-163 0x1001fdfe <ok> 
+429	92834	160937 node-D1 domain status 1077875820 1 inconsistent nodesets node-32 0x00000002 <ok> node-34 0x000001fe <ok> node-33 0x000001fe <ok> node-35 0x000001fe <ok> 

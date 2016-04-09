@@ -1,0 +1,4 @@
+319	67840	26281 Interconnect-0T00 switch_module bcast-error 1124878893 1 Link error on broadcast tree Interconnect-0T00:00:2:1
+320	68431	407973 Interconnect-1T00 switch_module bcast-error 1142703109 1 Link error on broadcast tree Interconnect-1T00:00:3:6
+321	68457	408176 Interconnect-1T00 switch_module bcast-error 1142743438 1 Link error on broadcast tree Interconnect-1T00:00:2:0
+322	68470	408221 Interconnect-1T00 switch_module bcast-error 1142752287 1 Link error on broadcast tree Interconnect-1T00:00:2:0

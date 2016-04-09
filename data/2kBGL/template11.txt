@@ -1,0 +1,2 @@
+1751	- 1132062083 2005.11.15 R05-M0-NC-C:J04-U11 2005-11-15-05.41.23.201247 R05-M0-NC-C:J04-U11 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x0a): warning for torus z+ wire, suppressing further interrupts of same type
+1978	- 1134601394 2005.12.14 R42-M1-N2-C:J03-U11 2005-12-14-15.03.14.212440 R42-M1-N2-C:J03-U11 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x0a): warning for torus z+ wire, suppressing further interrupts of same type

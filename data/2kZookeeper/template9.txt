@@ -1,0 +1,1 @@
+638	2015-08-24 15:26:54,494 - INFO  [main:QuorumPeer@913] - tickTime set to 2000

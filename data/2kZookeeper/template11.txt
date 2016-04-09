@@ -1,0 +1,1 @@
+1408	2015-08-10 18:25:25,239 - INFO  [main:QuorumPeer@944] - maxSessionTimeout set to -1

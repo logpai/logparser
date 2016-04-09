@@ -1,0 +1,1 @@
+586	2015-07-31 19:30:07,403 - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:FastLeaderElection@740] - New election. My id =  1, proposed zxid=0x700000000
