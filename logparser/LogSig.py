@@ -27,7 +27,7 @@ import gc
 # rex=['([0-9]+\.){3}[0-9]'],savePath='./results_2kHPC/',saveFileName='template',groupNum=51):# line 67,change the regular expression replacement code
 #******************************************************************************************
 
-class para:
+class Para:
 	def __init__(self,path='../Data/2kBGL/',logname='rawlog.log',removable=True,removeCol=[0,1,2,3,4,5,6,7,8,9],regular=True,
 	rex=['core\.[0-9]*'],savePath='./results_2kBGL/',saveFileName='template',groupNum=100):# line 66,change the regular expression replacement code
 		self.path=path
