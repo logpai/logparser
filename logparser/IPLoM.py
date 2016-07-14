@@ -511,7 +511,7 @@ class IPLoM:
 		for logL in self.output:
 			currentEventID = logL[1]			
 			writeOutput = open(outputPath + str(currentEventID) + '.txt', 'a')
-			logStr = str(logL[0]) + '\t' + ' '.join(logL)
+			logStr = str(logL[0]) + '\t' + ' '.join(logL[2:])
 			writeOutput.write(logStr + '\n')
 			writeOutput.close()
 
