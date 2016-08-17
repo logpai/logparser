@@ -10,7 +10,7 @@ dataName=['Sca_BGL400','Sca_BGL4k','Sca_BGL40k','Sca_BGL400k','Sca_BGL4m']
 curData=3
 for i in range(0,10,1):
 	print 'the ', i+1, 'th experiment starts here!'
-	LogSigPara=para(LogSigDataPath[curData])
+	LogSigPara=Para(LogSigDataPath[curData])
 	LogSigInstance=LogSig(LogSigPara)
 	time=LogSigInstance.mainProcess()
 	parameters=prePara(LogSigDataPath[curData])
