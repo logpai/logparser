@@ -1,7 +1,7 @@
 from LogSig import *
 
 LogSigDataPath = 'rawlog.log'
-LogSigPara=para(logname = LogSigDataPath)
+LogSigPara=Para(logname = LogSigDataPath)
 
 LogSigInstance=LogSig(LogSigPara)
 time=LogSigInstance.mainProcess()
