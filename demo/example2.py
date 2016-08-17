@@ -1,9 +1,11 @@
 from LogSig import *
 
-LogSigDataPath = 'rawlog.log'
-LogSigPara=Para(logname = LogSigDataPath)
+RawLogPath = './'
+RawLogFile = 'rawlog.log'
+OutputPath = './results/'
+para=Para(path=RawLogPath, logname=RawLogFile, savePath=OutputPath)
 
-LogSigInstance=LogSig(LogSigPara)
-time=LogSigInstance.mainProcess()
+myparser=LogSig(para)
+time=myparser.mainProcess()
 
 print ('The running time of LogSig is', time)
