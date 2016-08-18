@@ -143,7 +143,7 @@ class IPLoM:
 				if partition.numOfLogs == 0:
 					partition.valid = False
 
-				elif 1.0*partition.numOfLogs/lineCount < self.para.PST:
+				elif self.para.usePST and 1.0*partition.numOfLogs/lineCount < self.para.PST:
 					for logL in partition.logLL:
 						self.partitionsL[0].logLL.append(logL)
 						self.partitionsL[0].numOfLogs += 1
@@ -197,7 +197,7 @@ class IPLoM:
 				logDLL[ logL[minColumnIdx] ].append(logL)
 
 			for key in logDLL:
-				if 1.0*len(logDLL[key]) / partition.numOfLogs < self.para.PST:
+				if self.para.usePST and 1.0*len(logDLL[key]) / partition.numOfLogs < self.para.PST:
 					self.partitionsL[0].logLL += logDLL[key]
 					self.partitionsL[0].numOfLogs += len(logDLL[key])
 				else:
@@ -439,7 +439,7 @@ class IPLoM:
 				newPartitionsD["dumpKeyforMMrelationInStep2__"].valid = False
 			#Add all the new partitions to collection
 			for key in newPartitionsD:
-				if 1.0*newPartitionsD[key].numOfLogs / partition.numOfLogs < self.para.PST:
+				if self.para.usePST and 1.0*newPartitionsD[key].numOfLogs / partition.numOfLogs < self.para.PST:
 					self.partitionsL[0].logLL += newPartitionsD[key].logLL
 					self.partitionsL[0].numOfLogs += newPartitionsD[key].numOfLogs
 				else:
