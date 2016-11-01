@@ -10,6 +10,7 @@ from SLCT_complete import *
 #For Proxifier: support is 29, True
 #For Zookeeper: support is 9, True
 
+# If the dataset(.log file) is in current directory, then we need to set parameters as: para['dataPath'] = '', para['dataName'] = './'
 #For SLCT, we only need to run once
 data=['Sca_BGL400','Sca_BGL4k','Sca_BGL40k','Sca_BGL400k','Sca_BGL4m']
 dataPath='./results_BGL/'
