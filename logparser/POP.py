@@ -14,6 +14,7 @@ from scipy.cluster.hierarchy import fcluster
 import os
 import time
 
+#user can change the parameters in conf to allocate computing resources
 conf = (SparkConf().setAppName("myParser").set("spark.serializer", "org.apache.spark.serializer.KryoSerializer").set("spark.executor.cores", "5").set("spark.executor.instances", "16").set("spark.executor.memory", "25G").set("spark.ui.killEnabled", "true"))
 sc = SparkContext(conf = conf)
 
