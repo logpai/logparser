@@ -6,7 +6,7 @@ Paper
 If you use these parsers, please cite our paper using the following reference:<br /><br />
 @Conference{He16DSN,<br />
   Title                    = {An Evaluation Study on Log Parsing and Its Use in Log Mining},<br />
-  Author                   = {He, P. and Zhu, J. and He, S. and Li, J. and Lyu, R.},<br />
+  Author                   = {He, P. and Zhu, J. and He, S. and Li, J. and Lyu, M. R.},<br />
   Booktitle                = {DSN'16: Proc. of the 46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks},<br />
   Year                     = {2016}<br />
 }
