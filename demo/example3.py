@@ -12,6 +12,7 @@ hadoopInputDir = '/pjhe/logs/'
 
 
 #upload you raw log file from local file system to HDFS
+os.system('hadoop fs -rm ' + hadoopInputDir + 'rawlog.log')
 os.system('hadoop fs -put rawlog.log ' + hadoopInputDir)
 
 #remove the files in the output directory (initialization), if any
