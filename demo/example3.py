@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-#To run this demo, put POP.py, rawlog.log (your raw log file) and this example3.py in the same directory. Then run "python POP.py".
+#To run this demo, put POP.py, rawlog.log (your raw log file) and this example3.py in the same directory. Then run "python example3.py".
 #rawlog.log "logID\tlogMessage\n"
 #We assume you run this script in the master of Yarn and Spark. If you are running Spark on top of single machine, delete "--master=yarn". 
 
