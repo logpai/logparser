@@ -24,7 +24,7 @@ resultRDDL = []
 resultEventL = []
 
 dataset = 3
-inputPath = 'hdfs:///pjhe/logs/sosp_29_withID.log'
+inputPath = 'hdfs:///pjhe/logs/rawlog.log'
 dataName = 'time'
 #Debug
 ####################################################
