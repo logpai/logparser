@@ -64,7 +64,7 @@ elif dataset == 2:
 	regexL = ['([0-9]+\.){3}[0-9]']
 	maxDistance = 0
 elif dataset == 3:
-	#inputPath = 'hdfs:///pjhe/logs/2kSOSP.log'
+	#inputPath = 'hdfs:///pjhe/logs/2kHDFS.log'
 	step3Support = 0.6
 	splitRel = 0.1
 	splitAbs = 10

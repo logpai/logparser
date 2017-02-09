@@ -56,9 +56,9 @@ class Para:
 		self.rex = rex
 		
 
-#For 2kSOSP data:
-#       (self,path='../Data/2kSOSP/',logname='NoID_2kSOSP.log',removable=True,removeCol=[0,1,2,3,4],regular=True,
-#		rex=['blk_(|-)[0-9]+','(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)'],savePath='./results_2kSOSP/',saveFileName='template',groupNum=14):
+#For 2kHDFS data:
+#       (self,path='../Data/2kHDFS/',logname='NoID_2kHDFS.log',removable=True,removeCol=[0,1,2,3,4],regular=True,
+#		rex=['blk_(|-)[0-9]+','(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)'],savePath='./results_2kHDFS/',saveFileName='template',groupNum=14):
 #For 2kZookeeper:
 # 		(self,path='../Data/2kZookeeper/',logname='NoID_2kZookeeper.log',removable=True,removeCol=[0,1,2,3,4,5],regular=True,
 # 		rex=['(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)'],savePath='./results_2kZookeeper/',saveFileName='template',groupNum=46):
