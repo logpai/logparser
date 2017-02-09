@@ -37,8 +37,8 @@ class Para:
 
 	def __init__(self, path='../Data/2kProxifier/',logname='rawlog.log', savePath='./results_2kProxifier/',
 				 saveFileName='template', maxEventLen = 120, step2Support = 0, PST = 0.0,
-				 CT = 0.175, lowerBound = 0.25, upperBound = 0.9, usePST = False,
-				 removable=True, removeCol=[0],regular=True, rex=['([0-9]+\.){3}[0-9]']):
+				 CT = 0.35, lowerBound = 0.25, upperBound = 0.9, usePST = False,
+				 removable=True, removeCol=[0,1,2,3,4],regular=True, rex=['blk_(|-)[0-9]+','(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)']):
 		self.maxEventLen = maxEventLen
 		self.path = path
 		self.logname = logname
