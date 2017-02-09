@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 
 #To run this demo, put POP.py, rawlog.log (your raw log file) and this example3.py in the same directory. Then run "python example3.py".
-#rawlog.log "logID\tlogMessage\n"
+#The line format of input file rawlog.log : "logID\tlogMessage\n"
 #We assume you run this script in the master of Yarn and Spark. 
 
 #In this demo, we assume the POP.py is under the same directory as this file.
+
+#In this demo, the rawlog.log file is the HDFS data set logs.
+#If you want to test on other data sets, please modify the variable "dataset" in POP.py
 
 import os
 import subprocess
