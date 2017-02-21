@@ -37,9 +37,9 @@ Quick Start
 ***Output***: Two parts. One is splitted log messages (only contains log ID) in different text files. The other is the ***templates*** file which contains all templates. <br />
 
 ***Examples***: Before running the examples, please copy the parser source file to the same directory.
-* [Example1](https://github.com/cuhk-cse/logparser/blob/master/demo/example1.py): This file is used to evaluate the performance of LogSig. It iterates 10 times and record several important information (e.g., TP, FP, time). To play with your own dataset, you could modify the path and files name in the code. You should also modify the path for ground truth data in [RI_precision](https://github.com/cuhk-cse/logparser/blob/master/demo/RI_precision.py)
-* [Example2](https://github.com/cuhk-cse/logparser/blob/master/demo/example2.py): This file is a simple example to demonstrate the usage of LogSig. The usage of other log parsers is similar.
-* [Example3](https://github.com/cuhk-cse/logparser/blob/master/demo/example3.py): This file is to demonstrate the usage of POP.
+* [Example1](https://github.com/cuhk-cse/logparser/blob/master/demo/example1.py): This file is a simple example to demonstrate the usage of LogSig. The usage of other log parsers is similar.
+* [Example2](https://github.com/cuhk-cse/logparser/blob/master/demo/example2.py): This file is to demonstrate the usage of POP.
+* [Example3](https://github.com/cuhk-cse/logparser/blob/master/demo/example3.py): This file is used to evaluate the performance of LogSig. It iterates 10 times and record several important information (e.g., TP, FP, time). To play with your own dataset, you could modify the path and files name in the code. You should also modify the path for ground truth data in [RI_precision](https://github.com/cuhk-cse/logparser/blob/master/demo/RI_precision.py)
 
 <br /> For SLCT, because it is based on the original C code, the running example is [here](https://github.com/cuhk-cse/logparser/blob/master/logparser/SLCT/demo/SLCT_demo_BGL/precision_10_times.py). This program is platform-dependent because the .so files are only valid in Linux.
 
