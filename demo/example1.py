@@ -1,12 +1,16 @@
 #In this demo, the rawlog.log file is the HDFS data set logs.
-#If you want to test on other data sets, please modify the parameters in this file or in the parser source file
+#If you want to test on other data sets or using other parsers, please modify the parameters in this file or in the parser source file
 
 from LogSig import *
 
 RawLogPath = './'
 RawLogFile = 'rawlog.log'
 OutputPath = './results/'
-para=Para(path=RawLogPath, logname=RawLogFile, savePath=OutputPath) #You can set parameters here
+
+#Note: you need to set some other parameters when you try other parsers or data sets
+#For example, the structured columns "removeCol" (e.g., timestamp column) that will be removed before parsing. For each data set, the structure columns are different. Wrong removeCol may result in wrong parsing results. 
+#All parameter setting in our experiments are attached as comments.
+para=Para(path=RawLogPath, logname=RawLogFile, savePath=OutputPath)
 
 myparser=LogSig(para)
 time=myparser.mainProcess()
