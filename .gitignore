@@ -1,6 +1,5 @@
 # Self-defined
-bgl-clusters.txt
-hpc-clusters.txt
+logs/
 
 
 # Byte-compiled / optimized / DLL files
