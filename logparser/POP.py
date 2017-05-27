@@ -44,6 +44,7 @@ writeTemplate = open(templateFile, 'w')
 regexL = []
 specialL = []
 specialNum = 0
+delimiters = ' ' #If you want multiple delimiters, for example, ';' ',' '*' '\n', them delimiter='; |, |\*|\n'
 
 
 #BGL=1, HPC=2, HDFS=3, Zookeeper=4, Proxifier=5
@@ -170,10 +171,10 @@ def combLS(tokenLS1, tokenLS2):
 	return tokenLS1
 
 #Preprocessing
-def preprocess(log, uRemoveCol, removeC, uRegex, regL):
+def preprocess(log, uRemoveCol, removeC, uRegex, regL, delimiters):
 	global dataset
 	if uRemoveCol:
-		wordL = log.strip().split()
+		wordL = re.split(delimiters, log.strip())
 		wordL = [word for i, word in enumerate(wordL) if i not in removeC]
 		log = ' '.join(wordL)
 
