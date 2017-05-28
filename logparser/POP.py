@@ -45,6 +45,7 @@ regexL = []
 specialL = []
 specialNum = 0
 delimiters = ' ' #If you want multiple delimiters, for example, ';' ',' '*' '\n', them delimiter='; |, |\*|\n'
+printStructuredLogs = True
 
 
 #BGL=1, HPC=2, HDFS=3, Zookeeper=4, Proxifier=5
@@ -264,7 +265,7 @@ def step4(partitionRDD, eventLen):
 	
 
 
-def step5(max_d):
+def step5(max_d, printStructuredLogs):
 	global eventL, notCombineRDDL, resultEventL, resultRDDL, outputPath, specialNum
 
 	#vectorize the text
@@ -318,8 +319,9 @@ def step5(max_d):
 		else:
 			resultRDDL.append(sc.union(sameRDDL))
 
-		resultRDDL[-1].map(lambda (ID, log): ID).saveAsTextFile(outputPath + str(len(resultRDDL)+specialNum))
-		#resultRDDL[-1].map(lambda (ID, log): str(ID)+'\t'+log).saveAsTextFile(outputPath + str(len(resultRDDL)+specialNum))
+		if printStructuredLogs:
+			resultRDDL[-1].map(lambda (ID, log): ID).saveAsTextFile(outputPath + str(len(resultRDDL)+specialNum))
+			#resultRDDL[-1].map(lambda (ID, log): str(ID)+'\t'+log).saveAsTextFile(outputPath + str(len(resultRDDL)+specialNum))
 			
 
 ####################################################
@@ -366,7 +368,7 @@ for eventLen in eventLens:
 	step3(step2RDD, eventLen, 1)
 	
 if maxDistance>0:
-	step5(maxDistance)
+	step5(maxDistance, printStructuredLogs)
 
 for currentEvent in resultEventL:
 	writeTemplate.write(currentEvent + '\n')
