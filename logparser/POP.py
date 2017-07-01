@@ -44,7 +44,7 @@ writeTemplate = open(templateFile, 'w')
 regexL = []
 specialL = []
 specialNum = 0
-delimiters = ' ' #If you want multiple delimiters, for example, to split "field0=value0 field1:value1", them delimiter='=|:'
+delimiters = ' ' #If you want multiple delimiters, for example, to split "field0=value0 field1:value1", them delimiter='=|:'. space is the default one
 printStructuredLogs = True
 
 
