@@ -44,7 +44,7 @@ writeTemplate = open(templateFile, 'w')
 regexL = []
 specialL = []
 specialNum = 0
-delimiters = ' ' #If you want multiple delimiters, for example, to split "field0=value0 field1:value1", them delimiter='=|:'. space is added by default
+delimiters = '\s+' #If you want multiple delimiters, for example, to split "field0=value0 field1:value1", them delimiter='=|:'. whitespace is added by default
 printStructuredLogs = True
 
 
@@ -175,7 +175,7 @@ def combLS(tokenLS1, tokenLS2):
 def preprocess(log, uRemoveCol, removeC, uRegex, regL, delimiters):
 	global dataset
 	#The space is for default
-	delimiters = delimiters + '| '
+	delimiters = delimiters + '|\s+'
 	if uRemoveCol:
 		wordL = re.split(delimiters, log.strip())
 		wordL = [word for i, word in enumerate(wordL) if i not in removeC]
