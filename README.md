@@ -44,9 +44,5 @@ Quick Start
 <br /> For SLCT, because it is based on the original C code, the running example is [here](https://github.com/cuhk-cse/logparser/blob/master/logparser/SLCT/demo/SLCT_demo_BGL/precision_10_times.py). This program is platform-dependent because the .so files are only valid in Linux.
 
 
-Documentation
---------------
-[To be continued]
-
 
 
