@@ -31,6 +31,7 @@ In [data](https://github.com/cuhk-cse/logparser/tree/master/data), there are 5 d
 * template[0-9]+: The log messages belong to a certain template.
 * templates: The text of templates.
 
+
 Quick Start
 --------------
 ***Input***: A raw log file. Each line of the file follows "ID\tword1 word2 word3" <br />
@@ -44,5 +45,6 @@ Quick Start
 <br /> For SLCT, because it is based on the original C code, the running example is [here](https://github.com/cuhk-cse/logparser/blob/master/logparser/SLCT/demo/SLCT_demo_BGL/precision_10_times.py). This program is platform-dependent because the .so files are only valid in Linux.
 
 
-
-
+License
+--------
+[The MIT License (MIT)](https://github.com/logpai/logparser/blob/master/LICENSE.md)
