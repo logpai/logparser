@@ -56,22 +56,6 @@ class Para:
 		self.rex = rex
 		
 
-#For 2kHDFS data:
-#       (self,path='../Data/2kHDFS/',logname='NoID_2kHDFS.log',removable=True,removeCol=[0,1,2,3,4],regular=True,
-#		rex=['blk_(|-)[0-9]+','(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)'],savePath='./results_2kHDFS/',saveFileName='template',groupNum=14):
-#For 2kZookeeper:
-# 		(self,path='../Data/2kZookeeper/',logname='NoID_2kZookeeper.log',removable=True,removeCol=[0,1,2,3,4,5],regular=True,
-# 		rex=['(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)'],savePath='./results_2kZookeeper/',saveFileName='template',groupNum=46):
-#For 2kBGL: 
-#		(self,path='../Data/2kBGL/',logname='NoID_2kBGL.log',removable=True,removeCol=[0,1,2,3,4,5,6,7,8],regular=True,
-#		rex=['core\.[0-9]*'],savePath='./results_2kBGL/',saveFileName='template',groupNum=100):# line 55,change the regular expression replacement code
-#For 2kHPC:
-#		(self,path='../Data/2kHPC/',logname='NoID_2kHPC.log',removable=True,removeCol=[0,1],regular=True,
-#		rex=['([0-9]+\.){3}[0-9]'],savePath='./results_2kHPC/',saveFileName='template',groupNum=51):# line 55,change the regular expression replacement code
-#For 2kProxifier:
-#       (self,path='../Data/2kProxifier/',logname='NoID_2kProxifier.log',removable=False,removeCol=[0,1,3,4],regular=True,
-#		rex=[''],savePath='./results_2kProxifier/',saveFileName='template',groupNum=6):
-
 class IPLoM:
 
 
