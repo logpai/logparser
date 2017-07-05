@@ -48,3 +48,5 @@ Quick Start
 License
 --------
 [The MIT License (MIT)](https://github.com/logpai/logparser/blob/master/LICENSE.md)
+
+Copyright © 2017, [LogPAI](https://github.com/logpai), CUHK
