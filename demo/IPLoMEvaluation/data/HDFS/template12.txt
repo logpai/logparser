@@ -1,0 +1,1 @@
+1765	081111 080934 19 INFO dfs.FSNamesystem: BLOCK* ask 10.250.14.38:50010 to replicate blk_-7571492020523929240 to datanode(s) 10.251.122.38:50010
