@@ -26,27 +26,31 @@ print ('The running time of LogSig is', time)
 # 	ct = 0.4
 # 	lowerBound = 0.01
 # 	removeCol = [0,1,2,3,4,5,6,7,8]
+#   regL = ['core\.[0-9]*']
 # 
 # =====For HPC=====
 # 	ct = 0.175
 # 	lowerBound = 0.25
 # 	removeCol = [0]
-# 
+#   regL = ['([0-9]+\.){3}[0-9]']
+
 # =====For HDFS=====
 # 	ct = 0.35
 # 	lowerBound = 0.25
 # 	removeCol = [0,1,2,3,4]
+#   regL = ['blk_(|-)[0-9]+','(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)']
 # 
 # =====For Zookeeper=====
 # 	ct = 0.4
 # 	lowerBound = 0.7
 # 	removeCol = [0,1,2,3,4,5]
+#   regL = ['(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)']
 # 
 # =====For Proxifier=====
 # 	ct = 0.6
 # 	lowerBound = 0.25
 # 	removeCol = [0,1,3,4]
-
+#   regL = []
 
 #LogSig
 #**********************PARAMETERS SETTING**************************************************
