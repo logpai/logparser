@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 from pprint import pprint
 from RI_precision import *
-from IPLoM import *
+from LogSig import *
 import gc
+import numpy as np
 
 
 dataset = 3
@@ -10,33 +11,32 @@ dataPath = './data/'
 
 if dataset == 1:
 	dataName = 'BGL'
-	ct = 0.4
-	lowerBound = 0.25
-	removeCol = [0,1,2,3,4,5,6,7,8]
+	groupNum = 100
+	removeCol = [0,1,2,3,4,5,6,7,8,9]
 	regL = ['core\.[0-9]*']
+	# regL = []
 elif dataset == 2:
 	dataName = 'HPC'
-	ct = 0.175
-	lowerBound = 0.25
-	removeCol = [0]
+	groupNum = 51
+	removeCol = [0,1]
 	regL = ['([0-9]+\.){3}[0-9]']
+	# regL = []
 elif dataset == 3:
 	dataName = 'HDFS'
-	ct = 0.35
-	lowerBound = 0.25
-	removeCol = [0,1,2,3,4]
-	regL = ['blk_(|-)[0-9]+','(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)'] 
+	groupNum = 14
+	removeCol = [0,1,2,3,4,5]
+	regL = ['blk_(|-)[0-9]+','(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)']
+	# regL = [] 
 elif dataset == 4:
 	dataName = 'Zookeeper'
-	ct = 0.4
-	lowerBound = 0.7
-	removeCol = [0,1,2,3,4,5]
+	groupNum = 46
+	removeCol = [0,1,2,3,4,5,6]
 	regL = ['(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)']
+	# regL = []
 elif dataset == 5:
 	dataName = 'Proxifier'
-	ct = 0.6
-	lowerBound = 0.25
-	removeCol = [0,1,3,4] 
+	groupNum = 6
+	removeCol = [0,1,2,4,5]
 	regL = [] 
 
 
@@ -44,8 +44,8 @@ result = np.zeros((1,9))
 
 for i in range(0,1,1):
 	print ('the ', i+1, 'th experiment starts here!')
-	parserPara = Para(path=dataPath+dataName+'/', CT=ct, lowerBound=lowerBound, removeCol=removeCol, rex=regL)
-	myParser = IPLoM(parserPara)
+	parserPara = Para(path=dataPath+dataName+'/', groupNum=groupNum, removeCol=removeCol, rex=regL, savePath='./results/')
+	myParser = LogSig(parserPara)
 	runningTime = myParser.mainProcess()
 
 	parameters=prePara(groundTruthDataPath=dataPath+dataName+'/', geneDataPath='./results/')
