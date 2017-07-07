@@ -96,7 +96,7 @@ class LogSig:
 			ran=random.randint(0,self.para.groupNum-1) # group number from 0 to k-1
 			self.groupIndex[i]=ran
 			self.logNumPerGroup[ran]+=1   #count the number of loglines per group
-
+ 
 		#count the frequency of each termpairs per group 
 		i = 0
 		for termpairLT in self.termpairLLT:
