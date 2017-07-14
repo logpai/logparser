@@ -1,10 +1,10 @@
 '''
-    Description: The algorithm to obtain Longest Common Subsequence of Multiple Sequences (MLCS)
-        This implementation is modified based on the C++ implementation of the algorithm available at:
+    Description: This file implements the algorithm to obtain Longest Common Subsequence of Multiple 
+        Sequences (MLCS), which is modified based on the C++ implementation of the algorithm available at:
         https://github.com/qwangmsk/MLCS-Astar
     Author: LogPAI team
+    License: MIT
 '''
-
 
 import numpy as np
 import re
