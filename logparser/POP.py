@@ -334,7 +334,7 @@ text_file = sc.textFile(inputPath, 20)
 
 #step 1
 #-RDD (ID, log)
-step1halfRDD = text_file.map( lambda x: (x.split('\t')[0], preprocess(x.strip().split('\t')[1], bcuseRemoveCol.value, bcremoveCol.value, bcuseRegex.value, bcregexL.value)) )
+step1halfRDD = text_file.map( lambda x: (x.split('\t')[0], preprocess(x.strip().split('\t')[1], bcuseRemoveCol.value, bcremoveCol.value, bcuseRegex.value, bcregexL.value, delimiters)) )
 
 if useSpecial:
 	for special in specialL:
