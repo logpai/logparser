@@ -103,7 +103,7 @@ class LogParser:
 
             if self.para.rex:
                 for currentRex in self.para.rex:
-                    line = re.sub(currentRex, '', line)
+                    line = re.sub(currentRex, '[*]', line)
 
             wordSeq = line.strip().split()
 
@@ -452,7 +452,7 @@ class LogParser:
                 if len(uniqueTokensCountLS[columnIdx]) == 1:
                     continue
                 else:
-                    e[columnIdx] = '*'
+                    e[columnIdx] = '[*]'
             event = Event(e)
             event.eventCount = partition.numOfLogs
 
@@ -483,7 +483,7 @@ class LogParser:
         eventDf.to_csv(os.path.join(self.para.savePath, self.logname + '_templates.csv'), index=False)
 
         self.output.sort(key=lambda x: int(x[0]))
-        self.df_log['EventId'] = ['E'+str(logL[1]) for logL in self.output]
+        self.df_log['EventId'] = [str(logL[1]) for logL in self.output]
         self.df_log['EventTemplate'] = [eventID_template[logL[1]] for logL in self.output]
         self.df_log.to_csv(os.path.join(self.para.savePath, self.logname + '_structured.csv'), index=False)
 
