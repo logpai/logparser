@@ -1,0 +1,15 @@
+EventId,EventTemplate,Occurences
+E1,BLOCK* NameSystem.addStoredBlock: blockMap updated: [IP]:[NUM] is added to blk_[NUM] size [NUM],314
+E2,PacketResponder [NUM] for block blk_[NUM] terminating,311
+E3,Received block blk_[NUM] of size [NUM] from /[IP],292
+E4,Receiving block blk_[NUM] src: /[IP]:[NUM] dest: /[IP]:[NUM],292
+E5,Deleting block blk_[NUM] file /[*]/blk_[NUM],263
+E6,BLOCK* NameSystem.delete: blk_[NUM] is added to invalidSet of [IP]:[NUM],224
+E7,BLOCK* NameSystem.allocateBlock: /[*]/part-[NUM]. blk_[NUM],115
+E8,[IP]:[NUM] Served block blk_[NUM] to /[IP],80
+E9,[IP]:[NUM]:Got exception while serving blk_[NUM] to /[IP]:,80
+E10,Verification succeeded for blk_[NUM],20
+E11,BLOCK* ask [IP]:[NUM] to delete  blk_[NUM][*],5
+E12,Received block blk_[NUM] src: /[IP]:[NUM] dest: /[IP]:[NUM] of size [NUM],2
+E13,BLOCK* ask [IP]:[NUM] to replicate blk_[NUM] to datanode(s) [IP]:[NUM],1
+E14,[IP]:[NUM] Starting thread to transfer block blk_[NUM] to [IP]:[NUM],1
