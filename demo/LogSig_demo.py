@@ -13,9 +13,10 @@ log_format = 'Date Time Pid Level Component: Content' # HDFS log format
 
 regex = ['blk_(|-)[0-9]+', '(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)']
 
-myparser=LogSig(path=input_dir, savePath=output_dir, rex=regex,
+parser=LogSig(path=input_dir, savePath=output_dir, rex=regex,
                 groupNum=14, logformat=log_format)
-myparser.parse(log_file)
+
+parser.parse(log_file)
 
 evaluator.evaluate(os.path.join(input_dir, 'HDFS_2k.log_structured.csv'),
                    os.path.join(output_dir, 'HDFS_2k.log_structured.csv'))

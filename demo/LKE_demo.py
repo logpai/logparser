@@ -14,7 +14,7 @@ log_format = 'Date Time Pid Level Component: Content' # HDFS log format
 regex = ['blk_(|-)[0-9]+', '(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)']
 
 parser = LKE.LogParser(log_format=log_format, indir=input_dir, outdir=output_dir,
-                       dataName='HDFS', rex=regex, threshold2=5)
+                       dataName='HDFS', rex=regex, threshold2=3)
 
 parser.parse(log_file)
 

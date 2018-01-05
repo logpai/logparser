@@ -37,7 +37,7 @@ class Para:
     """
 
     def __init__(self,log_format, indir, outdir, maxEventLen, step2Support, PST, CT, lowerBound,
-                 upperBound, removable, removeCol, rex):
+                 upperBound, rex):
         self.maxEventLen = maxEventLen
         self.path = indir
         self.savePath = outdir
@@ -46,8 +46,6 @@ class Para:
         self.CT = CT
         self.lowerBound = lowerBound
         self.upperBound = upperBound
-        self.removable = removable
-        self.removeCol = removeCol
         self.rex = rex
         self.logformat = log_format
 
@@ -56,11 +54,10 @@ class LogParser:
     def __init__(self, log_format, indir='../Data/2kProxifier/', outdir='./results_2kProxifier/',
                  maxEventLen=120, step2Support=0, PST=0,
                  CT=0.35, lowerBound=0.25, upperBound=0.9,
-                 removable=True, removeCol=[0, 1, 2, 3, 4],
                  rex=[]):
 
         self.para = Para(log_format=log_format, indir=indir, outdir=outdir, maxEventLen=maxEventLen, step2Support=step2Support,
-                         PST=PST,CT=CT,lowerBound=lowerBound,upperBound=upperBound,removable=removable,removeCol=removeCol, rex=rex)
+                         PST=PST,CT=CT,lowerBound=lowerBound,upperBound=upperBound,rex=rex)
         self.partitionsL = []
         self.eventsL = []
         self.output = []
@@ -103,10 +100,8 @@ class LogParser:
 
             if self.para.rex:
                 for currentRex in self.para.rex:
-                    line = re.sub(currentRex, '[*]', line)
-
+                    line = re.sub(currentRex, '', line)
             wordSeq = line.strip().split()
-
             # Generate terms list, with ID in the end
             wordSeq.append(str(lineCount))
             # print (wordSeq)
@@ -448,11 +443,13 @@ class LogParser:
                     uniqueTokensCountLS[columnIdx].add(logL[columnIdx])
 
             e = copy.deepcopy(partition.logLL[0])[:partition.lenOfLogs]
+
             for columnIdx in range(partition.lenOfLogs):
                 if len(uniqueTokensCountLS[columnIdx]) == 1:
                     continue
                 else:
                     e[columnIdx] = '[*]'
+
             event = Event(e)
             event.eventCount = partition.numOfLogs
 

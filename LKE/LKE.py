@@ -65,7 +65,7 @@ class LogParser:
             line = line['Content']
             if self.para.rex:
                 for currentRex in self.para.rex:
-                    line = re.sub(currentRex, '[*]', line)
+                    line = re.sub(currentRex, '', line)
             wordSeq = line.strip().split()
             self.wordLen.append(len(wordSeq))
             self.wordLL.append(tuple(wordSeq))
@@ -81,9 +81,6 @@ class LogParser:
         print('the parameter v is: %d' % (v))
         logNum = len(self.wordLen)
         print('there are about %d loglines' % (logNum))
-        loadDataTime = 0
-        calDataTime = 0
-        # In order to save time, load distArraydata, if exist, do not calculate the edit distance again:
 
         print('calculating distance....')
         path = self.para.savePath + self.para.dataName
@@ -127,7 +124,7 @@ class LogParser:
             self.groups.append(eachLineLogList)
         print('========================================================================')
         print('there are %s groups' % (len(self.wordLenPerGroup)))
-        return loadDataTime, calDataTime
+        return calDataTime
 
     # split the current group recursively.
     def splitting(self):

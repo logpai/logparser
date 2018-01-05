@@ -66,6 +66,7 @@ class LogSig:
             if self.para.rex:
                 for currentRex in self.para.rex:
                     line = re.sub(currentRex, '', line)
+
             wordSeq = line.strip().split()
             self.wordLL.append(tuple(wordSeq))
         print self.wordLL
@@ -78,8 +79,9 @@ class LogSig:
             wordLT = []
             for j in range(len(wordL)):
                 for k in range(j + 1, len(wordL), 1):
-                    termpair = (wordL[j], wordL[k])
-                    wordLT.append(termpair)
+                    if wordL[j] != '[$]' and wordL[k] != '[$]':
+                        termpair = (wordL[j], wordL[k])
+                        wordLT.append(termpair)
             self.termpairLLT.append(wordLT)
             i += 1
 
@@ -97,6 +99,8 @@ class LogSig:
             ran = random.randint(0, self.para.groupNum - 1)  # group number from 0 to k-1
             self.groupIndex[i] = ran
             self.logNumPerGroup[ran] += 1  # count the number of loglines per group
+
+        print self.termpairLLT[0:5]
 
         # count the frequency of each termpairs per group
         i = 0
