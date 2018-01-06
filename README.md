@@ -1,21 +1,23 @@
 # Logparser
-This repository provides a toolkit and benchmarks for automated log parsing, which is a crucial step in structured log analysis. Logparser implements data-driven approaches that automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is also sometimes refered to as message template extraction, log key extraction, and log message clustering.
+This repository provides a toolkit and benchmarks for automated log parsing, which is a crucial step in structured log analysis. Logparser implements data-driven approaches that automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is also sometimes refered to as message template extraction, log key extraction, or log message clustering.
 
-Log parsing approaches currently made available:
+Log parsers currently made available:
 
+| :---: | :---: |
 | SLCT | [dd'03] A Data Clustering Algorithm for Mining Patterns from Event Logs |
 | IPLoM | [KDD'09] A Lightweight Algorithm for Message Type Extraction in System Application Logs |
 | LKE |  |
 | LogSig |  |
 | POP |  |
 
-
 Benchmarking results on logs in our [loghub](https://github.com/logpai/loghub):
 
-| Approach | HDFS | Hadoop | Spark | Zookeeper | Windows | Linux | Android | BGL | HPC | Thunderbird | Apache | Proxifier | 
-| :--- | :---: | :---: | :---: | :---: | :---: |  :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Approach | HDFS | Hadoop | Spark | Zookeeper | Docker | BGL | HPC | Thunderbird | 
+| :--- | :---: | :---: | :---: | :---: | :---: |  :--- | :---: | :---: |
 
 
+| Approach | Windows | Mac | Linux | Android | Apache | MySQL | Proxifier | OpenSSH | 
+| :--- | :---: | :---: | :---: | :---: | :---: |  :--- |
 
 
 ### Publications about logparser
@@ -30,5 +32,6 @@ For any bugs or feedback, please post to [our issue page](https://github.com/log
 
 ### License
 [The MIT License (MIT)](./LICENSE)
+
 Copyright &copy; 2018, [LogPAI Team](https://github.com/orgs/logpai/people)
 
