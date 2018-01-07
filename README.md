@@ -3,21 +3,28 @@ This repository provides a toolkit and benchmarks for automated log parsing, whi
 
 Log parsers currently made available:
 
+| Tool | Reference |
 | :---: | :---: |
-| SLCT | [dd'03] A Data Clustering Algorithm for Mining Patterns from Event Logs |
-| IPLoM | [KDD'09] A Lightweight Algorithm for Message Type Extraction in System Application Logs |
-| LKE |  |
-| LogSig |  |
-| POP |  |
+| SLCT | [**IPOM'03**] A Data Clustering Algorithm for Mining Patterns from Event Logs |
+| IPLoM | [**KDD'09**] A Lightweight Algorithm for Message Type Extraction in System Application Logs |
+| LKE | [**ICDM'09**] A Data Clustering Algorithm for Mining Patterns from Event Logs |
+| LogSig | [**CIKM'11**] LogSig: Generating System Events from Raw Textual Logs |
+| POP | [**TSDC'17**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [Towards Automated Log Parsing for Large-Scale Log Data Analysis](http://jiemingzhu.github.io/pub/pjhe_tdsc2017.pdf). IEEE Transactions on Dependable and Secure Computing (TDSC), 2017. |
 
 Benchmarking results on logs in our [loghub](https://github.com/logpai/loghub):
 
-| Approach | HDFS | Hadoop | Spark | Zookeeper | Docker | BGL | HPC | Thunderbird | 
-| :--- | :---: | :---: | :---: | :---: | :---: |  :--- | :---: | :---: |
-
-
-| Approach | Windows | Mac | Linux | Android | Apache | MySQL | Proxifier | OpenSSH | 
-| :--- | :---: | :---: | :---: | :---: | :---: |  :--- |
+| Tool | HDFS | Hadoop | Spark | Zookeeper | BGL | HPC | Thunderbird | 
+| :--- | :---: | :---: | :---: | :---: | :---: |  :---: | :---: | 
+| SLCT |  |  | |  |  |   |  | 
+| IPLoM | |  | |  |  |   |  | 
+| LKE |  |  | |  |  |   |  | 
+| LogSig |  |  | |  |  |   |  | 
+| Tool | Windows | Linux | Android | HealthApp | Apache | Proxifier | OpenSSH | 
+| :--- | :---: | :---: | :---: | :---: | :---: |  :---: | :---: |
+| SLCT |  |  | |  |  |   |  | 
+| IPLoM | |  | |  |  |   |  | 
+| LKE |  |  | |  |  |   |  | 
+| LogSig |  |  | |  |  |   |  | 
 
 
 ### Publications about logparser
