@@ -6,7 +6,7 @@ Log parsers currently made available:
 | Tool | Reference |
 | :---: | :--- |
 | SLCT | [**IPOM'03**] A Data Clustering Algorithm for Mining Patterns from Event Logs |
-| IPLoM | [**KDD'09**] Adetokunbo Makanju, A. Nur Zincir-Heywood, Evangelos E. Milios. [Clustering Event Logs Using Iterative Partitioning](https://web.cs.dal.ca/~makanju/publications/paper/kdd09.pdf). ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2009.\\ [**TKDE'12**] Adetokunbo Makanju, A. Nur Zincir-Heywood, Evangelos E. Milios. [A Lightweight Algorithm for Message Type Extraction in System Application Logs](http://ieeexplore.ieee.org/abstract/document/5936060/). IEEE Transactions on Knowledge and Data Engineering (TKDE), 2012 |
+| IPLoM | [**KDD'09**] Adetokunbo Makanju, A. Nur Zincir-Heywood, Evangelos E. Milios. [Clustering Event Logs Using Iterative Partitioning](https://web.cs.dal.ca/~makanju/publications/paper/kdd09.pdf). ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2009.<br> [**TKDE'12**] Adetokunbo Makanju, A. Nur Zincir-Heywood, Evangelos E. Milios. [A Lightweight Algorithm for Message Type Extraction in System Application Logs](http://ieeexplore.ieee.org/abstract/document/5936060/). IEEE Transactions on Knowledge and Data Engineering (TKDE), 2012 |
 | LKE | [**ICDM'09**] A Data Clustering Algorithm for Mining Patterns from Event Logs |
 | LogSig | [**CIKM'11**] Liang Tang, Tao Li, Chang-Shing Perng. [LogSig: Generating System Events from Raw Textual Logs](https://users.cs.fiu.edu/~taoli/pub/liang-cikm2011.pdf), ACM Conference on Information and Knowledge Management (CIKM), 2011. |
 | POP | [**TSDC'17**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [Towards Automated Log Parsing for Large-Scale Log Data Analysis](http://jiemingzhu.github.io/pub/pjhe_tdsc2017.pdf). IEEE Transactions on Dependable and Secure Computing (TDSC), 2017. |
@@ -19,9 +19,8 @@ Benchmarking results on logs in our [loghub](https://github.com/logpai/loghub):
 | IPLoM | |  | |  |  |   |  | 
 | LKE |  |  | |  |  |   |  | 
 | LogSig |  |  | |  |  |   |  | 
-
+|  |  |  | |  |  |   |  | 
 | Tool | Windows | Linux | Android | HealthApp | Apache | Proxifier | OpenSSH | 
-| :--- | :---: | :---: | :---: | :---: | :---: |  :---: | :---: |
 | SLCT |  |  | |  |  |   |  | 
 | IPLoM | |  | |  |  |   |  | 
 | LKE |  |  | |  |  |   |  | 
