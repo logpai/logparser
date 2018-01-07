@@ -1,5 +1,5 @@
 # Logparser
-This repository provides a toolkit and benchmarks for automated log parsing, which is a crucial step in structured log analysis. Logparser implements data-driven approaches that automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is also sometimes refered to as message template extraction, log key extraction, or log message clustering.
+This repository provides a toolkit and benchmarks for automated log parsing, which is a crucial step towards structured log analysis. Logparser implements data-driven approaches that automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is also sometimes refered to as message template extraction, log key extraction, or log message clustering.
 
 Log parsers currently made available:
 
