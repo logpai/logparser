@@ -1,0 +1,37 @@
+EventId,EventTemplate,Occurences
+E1,"Times: total = [NUM], boot = [NUM], init = [NUM], finish = [NUM]",375
+E2,Got assigned task [NUM],305
+E3,Running task [NUM].[NUM] in stage [NUM].[NUM] (TID [NUM]),305
+E4,Finished task [NUM].[NUM] in stage [NUM].[NUM] (TID [NUM]). [NUM] bytes result sent to driver,300
+E5,Found block rdd_[NUM]_[NUM] locally,257
+E6,"Block [*] stored as bytes in memory (estimated size [NUM].[NUM] [*], free [NUM].[NUM] [*])",112
+E7,"Partition rdd_[NUM]_[NUM] not found, computing it",75
+E8,Input split: hdfs://[IP]:[NUM]/pjhe/logs/2kSOSP.log:[NUM]+[NUM],45
+E9,Started reading broadcast variable [NUM],37
+E10,"Block [*] stored as values in memory (estimated size [NUM].[NUM] [*], free [NUM].[NUM] [*])",37
+E11,Reading broadcast variable [NUM] took [NUM] ms,37
+E12,attempt_[NUM]_[NUM]_m_[NUM]_[NUM]: Committed,30
+E13,Saved output of task 'attempt_[NUM]_[NUM]_m_[NUM]_[NUM]' to hdfs://[IP]:[NUM]/pjhe/test/[NUM]/_temporary/[NUM]/task_[NUM]_[NUM]_m_[NUM],30
+E14,File Output Committer Algorithm version is [NUM],30
+E15,"SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(yarn, curi); users with modify permissions: Set(yarn, curi)",2
+E16,"Changing modify acls to: yarn,curi",2
+E17,"Changing view acls to: yarn,curi",2
+E18,"mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id",1
+E19,"mapred.tip.id is deprecated. Instead, use mapreduce.task.id",1
+E20,Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port [NUM].,1
+E21,Trying to register BlockManager,1
+E22,"mapred.job.id is deprecated. Instead, use mapreduce.job.id",1
+E23,Remoting started; listening on addresses :[akka.tcp://sparkExecutorActorSystem@mesos-slave-[NUM]:[NUM]],1
+E24,Successfully registered with driver,1
+E25,Server created on [NUM],1
+E26,Registered BlockManager,1
+E27,Created local directory at /opt/hdfs/nodemanager/usercache/curi/appcache/application_[NUM]_[NUM]/blockmgr-[NUM]-[NUM]-[NUM]-[NUM]-[NUM],1
+E28,"Registered signal handlers for [TERM, HUP, INT]",1
+E29,MemoryStore started with capacity [NUM].[NUM] GB,1
+E30,Starting executor ID [NUM] on host mesos-slave-[NUM],1
+E31,Connecting to driver: spark://CoarseGrainedScheduler@[IP]:[NUM],1
+E32,Slf4jLogger started,1
+E33,"mapred.task.partition is deprecated. Instead, use mapreduce.task.partition",1
+E34,Starting remoting,1
+E35,Successfully started service 'sparkExecutorActorSystem' on port [NUM].,1
+E36,"mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap",1
