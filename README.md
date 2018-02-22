@@ -11,6 +11,21 @@ If you use these parsers, please cite our paper using the following reference:<b
   Year                     = {2016}<br />
 }
 
+You are also welcome to cite our other related log parser papers:
+@Conference{He17ICWS,<br />
+  Title                    = {Drain: An Online Log Parsing Approach with Fixed Depth Tree},<br />
+  Author                   = {He, P. and Zhu, J. and Zheng, Z. and Lyu, M. R.},<br />
+  Booktitle                = {ICWS'17: Proc. of the 24th International Conference on Web Services},<br />
+  Year                     = {2017}<br />
+}
+
+@Article{HeTDSC17,<br />
+  Title                    = {Towards Automated Log Parsing for Large-Scale Log Data Analysis},<br />
+  Author                   = {He, P. and Zhu, J. and He, S. and Li, J. and Lyu, M. R.},<br />
+  Booktitle                = {IEEE Transactions on Dependable and Secure Computing},<br />
+  doi={10.1109/TDSC.2017.2762673}, <br />
+  ISSN={1545-5971}<br />
+}
 
 Parsers
 --------
