@@ -1,0 +1,2000 @@
+1	"Registered signal handlers for [TERM, HUP, INT]"
+2	"Changing view acls to: yarn,curi"
+3	"Changing modify acls to: yarn,curi"
+4	"SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(yarn, curi); users with modify permissions: Set(yarn, curi)"
+5	"Changing view acls to: yarn,curi"
+6	"Changing modify acls to: yarn,curi"
+7	"SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(yarn, curi); users with modify permissions: Set(yarn, curi)"
+8	Slf4jLogger started
+9	Starting remoting
+10	Remoting started; listening on addresses :[akka.tcp://sparkExecutorActorSystem@mesos-slave-07:55904]
+11	Successfully started service 'sparkExecutorActorSystem' on port 55904.
+12	Created local directory at /opt/hdfs/nodemanager/usercache/curi/appcache/application_1485248649253_0147/blockmgr-70293f72-844a-4b39-9ad6-fb0ad7e364e4
+13	MemoryStore started with capacity 17.7 GB
+14	Connecting to driver: spark://CoarseGrainedScheduler@10.10.34.11:48069
+15	Successfully registered with driver
+16	Starting executor ID 5 on host mesos-slave-07
+17	Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40984.
+18	Server created on 40984
+19	Trying to register BlockManager
+20	Registered BlockManager
+21	Got assigned task 0
+22	Got assigned task 1
+23	Got assigned task 2
+24	Got assigned task 3
+25	Running task 0.0 in stage 0.0 (TID 0)
+26	Running task 2.0 in stage 0.0 (TID 2)
+27	Running task 1.0 in stage 0.0 (TID 1)
+28	Running task 3.0 in stage 0.0 (TID 3)
+29	Got assigned task 4
+30	Running task 4.0 in stage 0.0 (TID 4)
+31	Started reading broadcast variable 9
+32	"Block broadcast_9_piece0 stored as bytes in memory (estimated size 5.2 KB, free 5.2 KB)"
+33	Reading broadcast variable 9 took 160 ms
+34	"Block broadcast_9 stored as values in memory (estimated size 8.8 KB, free 14.0 KB)"
+35	"Partition rdd_2_1 not found, computing it"
+36	"Partition rdd_2_3 not found, computing it"
+37	"Partition rdd_2_0 not found, computing it"
+38	"Partition rdd_2_2 not found, computing it"
+39	"Partition rdd_2_4 not found, computing it"
+40	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:21876+7292
+41	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:14584+7292
+42	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:0+7292
+43	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:7292+7292
+44	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:29168+7292
+45	Started reading broadcast variable 8
+46	"Block broadcast_8_piece0 stored as bytes in memory (estimated size 21.4 KB, free 35.4 KB)"
+47	Reading broadcast variable 8 took 19 ms
+48	"Block broadcast_8 stored as values in memory (estimated size 281.6 KB, free 317.0 KB)"
+49	"mapred.tip.id is deprecated. Instead, use mapreduce.task.id"
+50	"mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id"
+51	"mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap"
+52	"mapred.job.id is deprecated. Instead, use mapreduce.job.id"
+53	"mapred.task.partition is deprecated. Instead, use mapreduce.task.partition"
+54	Started reading broadcast variable 0
+55	"Block broadcast_0_piece0 stored as bytes in memory (estimated size 93.0 B, free 317.1 KB)"
+56	Reading broadcast variable 0 took 21 ms
+57	"Block broadcast_0 stored as values in memory (estimated size 384.0 B, free 317.5 KB)"
+58	Started reading broadcast variable 4
+59	"Block broadcast_4_piece0 stored as bytes in memory (estimated size 95.0 B, free 317.6 KB)"
+60	Reading broadcast variable 4 took 18 ms
+61	"Block broadcast_4 stored as values in memory (estimated size 384.0 B, free 318.0 KB)"
+62	Started reading broadcast variable 3
+63	"Block broadcast_3_piece0 stored as bytes in memory (estimated size 152.0 B, free 318.1 KB)"
+64	Reading broadcast variable 3 took 17 ms
+65	"Block broadcast_3 stored as values in memory (estimated size 384.0 B, free 318.5 KB)"
+66	Started reading broadcast variable 1
+67	"Block broadcast_1_piece0 stored as bytes in memory (estimated size 107.0 B, free 318.6 KB)"
+68	Reading broadcast variable 1 took 16 ms
+69	"Block broadcast_1 stored as values in memory (estimated size 384.0 B, free 319.0 KB)"
+70	Started reading broadcast variable 2
+71	"Block broadcast_2_piece0 stored as bytes in memory (estimated size 93.0 B, free 319.0 KB)"
+72	Reading broadcast variable 2 took 16 ms
+73	"Block broadcast_2 stored as values in memory (estimated size 384.0 B, free 319.4 KB)"
+74	"Times: total = 1072, boot = 856, init = 210, finish = 6"
+75	"Times: total = 1114, boot = 885, init = 223, finish = 6"
+76	"Times: total = 1074, boot = 869, init = 199, finish = 6"
+77	"Times: total = 1078, boot = 851, init = 219, finish = 8"
+78	"Times: total = 1077, boot = 865, init = 206, finish = 6"
+79	"Block rdd_2_2 stored as bytes in memory (estimated size 850.0 B, free 320.3 KB)"
+80	"Block rdd_2_3 stored as bytes in memory (estimated size 930.0 B, free 321.2 KB)"
+81	"Block rdd_2_1 stored as bytes in memory (estimated size 935.0 B, free 322.1 KB)"
+82	"Block rdd_2_0 stored as bytes in memory (estimated size 913.0 B, free 323.0 KB)"
+83	"Block rdd_2_4 stored as bytes in memory (estimated size 890.0 B, free 323.8 KB)"
+84	"Times: total = 38, boot = 11, init = 27, finish = 0"
+85	"Times: total = 42, boot = 12, init = 30, finish = 0"
+86	"Times: total = 41, boot = 15, init = 26, finish = 0"
+87	"Times: total = 40, boot = 7, init = 33, finish = 0"
+88	"Times: total = 42, boot = 13, init = 28, finish = 1"
+89	Finished task 3.0 in stage 0.0 (TID 3). 2703 bytes result sent to driver
+90	Finished task 1.0 in stage 0.0 (TID 1). 2703 bytes result sent to driver
+91	Finished task 2.0 in stage 0.0 (TID 2). 2703 bytes result sent to driver
+92	Finished task 4.0 in stage 0.0 (TID 4). 2703 bytes result sent to driver
+93	Finished task 0.0 in stage 0.0 (TID 0). 2703 bytes result sent to driver
+94	Got assigned task 42
+95	Running task 0.0 in stage 1.0 (TID 42)
+96	Got assigned task 56
+97	Running task 1.0 in stage 1.0 (TID 56)
+98	Got assigned task 69
+99	Started reading broadcast variable 10
+100	Running task 2.0 in stage 1.0 (TID 69)
+101	Got assigned task 78
+102	Running task 3.0 in stage 1.0 (TID 78)
+103	Got assigned task 79
+104	Running task 4.0 in stage 1.0 (TID 79)
+105	"Block broadcast_10_piece0 stored as bytes in memory (estimated size 5.8 KB, free 329.6 KB)"
+106	Reading broadcast variable 10 took 17 ms
+107	"Block broadcast_10 stored as values in memory (estimated size 9.6 KB, free 339.2 KB)"
+108	Found block rdd_2_0 locally
+109	Found block rdd_2_3 locally
+110	Found block rdd_2_4 locally
+111	Found block rdd_2_2 locally
+112	Found block rdd_2_1 locally
+113	"Times: total = 42, boot = -4131, init = 4172, finish = 1"
+114	"Times: total = 41, boot = -4122, init = 4162, finish = 1"
+115	"Times: total = 42, boot = -4121, init = 4162, finish = 1"
+116	"Times: total = 42, boot = -4138, init = 4179, finish = 1"
+117	"Times: total = 42, boot = -4134, init = 4175, finish = 1"
+118	Finished task 4.0 in stage 1.0 (TID 79). 2685 bytes result sent to driver
+119	Finished task 1.0 in stage 1.0 (TID 56). 2428 bytes result sent to driver
+120	Finished task 0.0 in stage 1.0 (TID 42). 2474 bytes result sent to driver
+121	Finished task 3.0 in stage 1.0 (TID 78). 2651 bytes result sent to driver
+122	Finished task 2.0 in stage 1.0 (TID 69). 2523 bytes result sent to driver
+123	Got assigned task 87
+124	Running task 0.0 in stage 2.0 (TID 87)
+125	Got assigned task 101
+126	Running task 1.0 in stage 2.0 (TID 101)
+127	Got assigned task 112
+128	Running task 2.0 in stage 2.0 (TID 112)
+129	Got assigned task 118
+130	Running task 3.0 in stage 2.0 (TID 118)
+131	Started reading broadcast variable 11
+132	Got assigned task 119
+133	Running task 4.0 in stage 2.0 (TID 119)
+134	"Block broadcast_11_piece0 stored as bytes in memory (estimated size 5.4 KB, free 344.7 KB)"
+135	Reading broadcast variable 11 took 15 ms
+136	"Block broadcast_11 stored as values in memory (estimated size 9.2 KB, free 353.9 KB)"
+137	Found block rdd_2_4 locally
+138	Found block rdd_2_3 locally
+139	Found block rdd_2_2 locally
+140	Found block rdd_2_0 locally
+141	Found block rdd_2_1 locally
+142	"Times: total = 39, boot = -147, init = 186, finish = 0"
+143	"Times: total = 39, boot = -147, init = 186, finish = 0"
+144	"Times: total = 41, boot = -139, init = 179, finish = 1"
+145	"Times: total = 38, boot = -156, init = 194, finish = 0"
+146	"Times: total = 39, boot = -159, init = 198, finish = 0"
+147	Finished task 4.0 in stage 2.0 (TID 119). 2087 bytes result sent to driver
+148	Finished task 2.0 in stage 2.0 (TID 112). 2087 bytes result sent to driver
+149	Finished task 3.0 in stage 2.0 (TID 118). 2087 bytes result sent to driver
+150	Finished task 1.0 in stage 2.0 (TID 101). 2087 bytes result sent to driver
+151	Finished task 0.0 in stage 2.0 (TID 87). 2087 bytes result sent to driver
+152	Got assigned task 122
+153	Running task 0.0 in stage 3.0 (TID 122)
+154	Got assigned task 136
+155	Running task 1.0 in stage 3.0 (TID 136)
+156	Got assigned task 150
+157	Running task 2.0 in stage 3.0 (TID 150)
+158	Got assigned task 158
+159	Running task 3.0 in stage 3.0 (TID 158)
+160	Started reading broadcast variable 12
+161	Got assigned task 159
+162	Running task 4.0 in stage 3.0 (TID 159)
+163	"Block broadcast_12_piece0 stored as bytes in memory (estimated size 5.6 KB, free 359.4 KB)"
+164	Reading broadcast variable 12 took 30 ms
+165	"Block broadcast_12 stored as values in memory (estimated size 9.8 KB, free 369.3 KB)"
+166	"Partition rdd_6_4 not found, computing it"
+167	"Partition rdd_6_3 not found, computing it"
+168	"Partition rdd_6_0 not found, computing it"
+169	"Partition rdd_6_1 not found, computing it"
+170	"Partition rdd_6_2 not found, computing it"
+171	Found block rdd_2_4 locally
+172	Found block rdd_2_3 locally
+173	Found block rdd_2_1 locally
+174	Found block rdd_2_0 locally
+175	Found block rdd_2_2 locally
+176	"Times: total = 38, boot = -170, init = 208, finish = 0"
+177	"Times: total = 41, boot = -171, init = 212, finish = 0"
+178	"Times: total = 41, boot = -160, init = 200, finish = 1"
+179	"Times: total = 38, boot = -172, init = 210, finish = 0"
+180	"Times: total = 40, boot = -173, init = 213, finish = 0"
+181	"Block rdd_6_4 stored as bytes in memory (estimated size 287.0 B, free 369.5 KB)"
+182	"Block rdd_6_3 stored as bytes in memory (estimated size 344.0 B, free 369.9 KB)"
+183	"Block rdd_6_1 stored as bytes in memory (estimated size 330.0 B, free 370.2 KB)"
+184	"Block rdd_6_2 stored as bytes in memory (estimated size 252.0 B, free 370.4 KB)"
+185	"Block rdd_6_0 stored as bytes in memory (estimated size 265.0 B, free 370.7 KB)"
+186	"Times: total = 38, boot = 14, init = 24, finish = 0"
+187	"Times: total = 38, boot = 12, init = 26, finish = 0"
+188	"Times: total = 41, boot = 19, init = 22, finish = 0"
+189	Finished task 4.0 in stage 3.0 (TID 159). 2667 bytes result sent to driver
+190	"Times: total = 41, boot = 16, init = 25, finish = 0"
+191	Finished task 3.0 in stage 3.0 (TID 158). 2667 bytes result sent to driver
+192	"Times: total = 40, boot = 5, init = 35, finish = 0"
+193	Finished task 1.0 in stage 3.0 (TID 136). 2667 bytes result sent to driver
+194	Finished task 2.0 in stage 3.0 (TID 150). 2667 bytes result sent to driver
+195	Finished task 0.0 in stage 3.0 (TID 122). 2667 bytes result sent to driver
+196	Got assigned task 171
+197	Running task 0.0 in stage 4.0 (TID 171)
+198	Got assigned task 185
+199	Running task 1.0 in stage 4.0 (TID 185)
+200	Started reading broadcast variable 13
+201	Got assigned task 195
+202	Running task 2.0 in stage 4.0 (TID 195)
+203	Got assigned task 198
+204	Running task 3.0 in stage 4.0 (TID 198)
+205	Got assigned task 199
+206	Running task 4.0 in stage 4.0 (TID 199)
+207	"Block broadcast_13_piece0 stored as bytes in memory (estimated size 5.7 KB, free 376.4 KB)"
+208	Reading broadcast variable 13 took 41 ms
+209	"Block broadcast_13 stored as values in memory (estimated size 10.1 KB, free 386.5 KB)"
+210	Found block rdd_6_0 locally
+211	Found block rdd_6_4 locally
+212	Found block rdd_6_3 locally
+213	Found block rdd_6_2 locally
+214	Found block rdd_6_1 locally
+215	"Times: total = 39, boot = -141, init = 180, finish = 0"
+216	"Times: total = 40, boot = -129, init = 169, finish = 0"
+217	"Times: total = 41, boot = -134, init = 175, finish = 0"
+218	"Times: total = 39, boot = -123, init = 162, finish = 0"
+219	"Times: total = 42, boot = -125, init = 166, finish = 1"
+220	Finished task 0.0 in stage 4.0 (TID 171). 2099 bytes result sent to driver
+221	Finished task 1.0 in stage 4.0 (TID 185). 2099 bytes result sent to driver
+222	Finished task 2.0 in stage 4.0 (TID 195). 2138 bytes result sent to driver
+223	Finished task 3.0 in stage 4.0 (TID 198). 2099 bytes result sent to driver
+224	Finished task 4.0 in stage 4.0 (TID 199). 2138 bytes result sent to driver
+225	Got assigned task 206
+226	Running task 0.0 in stage 5.0 (TID 206)
+227	Got assigned task 220
+228	Running task 1.0 in stage 5.0 (TID 220)
+229	Got assigned task 231
+230	Running task 2.0 in stage 5.0 (TID 231)
+231	Started reading broadcast variable 14
+232	Got assigned task 238
+233	Running task 3.0 in stage 5.0 (TID 238)
+234	Got assigned task 239
+235	Running task 4.0 in stage 5.0 (TID 239)
+236	"Block broadcast_14_piece0 stored as bytes in memory (estimated size 5.8 KB, free 392.3 KB)"
+237	Reading broadcast variable 14 took 12 ms
+238	"Block broadcast_14 stored as values in memory (estimated size 9.6 KB, free 401.9 KB)"
+239	Found block rdd_2_0 locally
+240	Found block rdd_2_4 locally
+241	Found block rdd_2_3 locally
+242	Found block rdd_2_2 locally
+243	Found block rdd_2_1 locally
+244	"Times: total = 39, boot = -85, init = 123, finish = 1"
+245	"Times: total = 40, boot = -77, init = 117, finish = 0"
+246	"Times: total = 39, boot = -81, init = 119, finish = 1"
+247	"Times: total = 40, boot = -78, init = 117, finish = 1"
+248	"Times: total = 42, boot = -79, init = 120, finish = 1"
+249	Finished task 0.0 in stage 5.0 (TID 206). 2198 bytes result sent to driver
+250	Finished task 3.0 in stage 5.0 (TID 238). 2198 bytes result sent to driver
+251	Finished task 2.0 in stage 5.0 (TID 231). 2198 bytes result sent to driver
+252	Finished task 4.0 in stage 5.0 (TID 239). 2198 bytes result sent to driver
+253	Finished task 1.0 in stage 5.0 (TID 220). 2272 bytes result sent to driver
+254	Got assigned task 247
+255	Running task 0.0 in stage 6.0 (TID 247)
+256	Got assigned task 261
+257	Running task 1.0 in stage 6.0 (TID 261)
+258	Got assigned task 273
+259	Running task 2.0 in stage 6.0 (TID 273)
+260	Started reading broadcast variable 15
+261	Got assigned task 278
+262	Running task 3.0 in stage 6.0 (TID 278)
+263	Got assigned task 279
+264	Running task 4.0 in stage 6.0 (TID 279)
+265	"Block broadcast_15_piece0 stored as bytes in memory (estimated size 5.4 KB, free 407.4 KB)"
+266	Reading broadcast variable 15 took 15 ms
+267	"Block broadcast_15 stored as values in memory (estimated size 9.2 KB, free 416.6 KB)"
+268	Found block rdd_2_0 locally
+269	Found block rdd_2_4 locally
+270	Found block rdd_2_3 locally
+271	Found block rdd_2_2 locally
+272	Found block rdd_2_1 locally
+273	"Times: total = 39, boot = -107, init = 146, finish = 0"
+274	"Times: total = 41, boot = -100, init = 141, finish = 0"
+275	"Times: total = 42, boot = -99, init = 141, finish = 0"
+276	"Times: total = 39, boot = -103, init = 142, finish = 0"
+277	"Times: total = 42, boot = -101, init = 143, finish = 0"
+278	Finished task 0.0 in stage 6.0 (TID 247). 2087 bytes result sent to driver
+279	Finished task 3.0 in stage 6.0 (TID 278). 2087 bytes result sent to driver
+280	Finished task 2.0 in stage 6.0 (TID 273). 2087 bytes result sent to driver
+281	Finished task 4.0 in stage 6.0 (TID 279). 2087 bytes result sent to driver
+282	Finished task 1.0 in stage 6.0 (TID 261). 2087 bytes result sent to driver
+283	Got assigned task 285
+284	Running task 0.0 in stage 7.0 (TID 285)
+285	Got assigned task 299
+286	Running task 1.0 in stage 7.0 (TID 299)
+287	Got assigned task 312
+288	Running task 2.0 in stage 7.0 (TID 312)
+289	Got assigned task 318
+290	Running task 3.0 in stage 7.0 (TID 318)
+291	Started reading broadcast variable 16
+292	Got assigned task 319
+293	Running task 4.0 in stage 7.0 (TID 319)
+294	"Block broadcast_16_piece0 stored as bytes in memory (estimated size 5.6 KB, free 422.1 KB)"
+295	Reading broadcast variable 16 took 13 ms
+296	"Block broadcast_16 stored as values in memory (estimated size 9.8 KB, free 432.0 KB)"
+297	"Partition rdd_11_0 not found, computing it"
+298	"Partition rdd_11_4 not found, computing it"
+299	"Partition rdd_11_3 not found, computing it"
+300	"Partition rdd_11_2 not found, computing it"
+301	"Partition rdd_11_1 not found, computing it"
+302	Found block rdd_2_0 locally
+303	Found block rdd_2_4 locally
+304	Found block rdd_2_3 locally
+305	Found block rdd_2_2 locally
+306	Found block rdd_2_1 locally
+307	"Times: total = 39, boot = -110, init = 149, finish = 0"
+308	"Times: total = 39, boot = -105, init = 144, finish = 0"
+309	"Times: total = 42, boot = -103, init = 144, finish = 1"
+310	"Times: total = 41, boot = -107, init = 148, finish = 0"
+311	"Times: total = 42, boot = -107, init = 148, finish = 1"
+312	"Block rdd_11_0 stored as bytes in memory (estimated size 152.0 B, free 432.1 KB)"
+313	"Block rdd_11_3 stored as bytes in memory (estimated size 157.0 B, free 432.3 KB)"
+314	"Block rdd_11_4 stored as bytes in memory (estimated size 145.0 B, free 432.4 KB)"
+315	"Block rdd_11_2 stored as bytes in memory (estimated size 199.0 B, free 432.6 KB)"
+316	"Block rdd_11_1 stored as bytes in memory (estimated size 160.0 B, free 432.7 KB)"
+317	"Times: total = 38, boot = 17, init = 21, finish = 0"
+318	"Times: total = 41, boot = 28, init = 13, finish = 0"
+319	"Times: total = 38, boot = 18, init = 20, finish = 0"
+320	"Times: total = 40, boot = 19, init = 21, finish = 0"
+321	"Times: total = 41, boot = 17, init = 24, finish = 0"
+322	Finished task 0.0 in stage 7.0 (TID 285). 2667 bytes result sent to driver
+323	Finished task 3.0 in stage 7.0 (TID 318). 2667 bytes result sent to driver
+324	Finished task 4.0 in stage 7.0 (TID 319). 2667 bytes result sent to driver
+325	Finished task 1.0 in stage 7.0 (TID 299). 2667 bytes result sent to driver
+326	Finished task 2.0 in stage 7.0 (TID 312). 2667 bytes result sent to driver
+327	Got assigned task 321
+328	Running task 0.0 in stage 8.0 (TID 321)
+329	Got assigned task 335
+330	Running task 1.0 in stage 8.0 (TID 335)
+331	Got assigned task 349
+332	Running task 2.0 in stage 8.0 (TID 349)
+333	Started reading broadcast variable 17
+334	Got assigned task 358
+335	Running task 3.0 in stage 8.0 (TID 358)
+336	Got assigned task 359
+337	Running task 4.0 in stage 8.0 (TID 359)
+338	"Block broadcast_17_piece0 stored as bytes in memory (estimated size 5.7 KB, free 438.5 KB)"
+339	Reading broadcast variable 17 took 12 ms
+340	"Block broadcast_17 stored as values in memory (estimated size 10.1 KB, free 448.6 KB)"
+341	Found block rdd_11_0 locally
+342	Found block rdd_11_4 locally
+343	Found block rdd_11_3 locally
+344	Found block rdd_11_2 locally
+345	Found block rdd_11_1 locally
+346	"Times: total = 39, boot = -109, init = 148, finish = 0"
+347	"Times: total = 41, boot = -107, init = 148, finish = 0"
+348	"Times: total = 39, boot = -103, init = 142, finish = 0"
+349	"Times: total = 41, boot = -104, init = 144, finish = 1"
+350	"Times: total = 42, boot = -107, init = 149, finish = 0"
+351	Finished task 0.0 in stage 8.0 (TID 321). 2141 bytes result sent to driver
+352	Finished task 2.0 in stage 8.0 (TID 349). 2141 bytes result sent to driver
+353	Finished task 4.0 in stage 8.0 (TID 359). 2141 bytes result sent to driver
+354	Finished task 3.0 in stage 8.0 (TID 358). 2141 bytes result sent to driver
+355	Finished task 1.0 in stage 8.0 (TID 335). 2111 bytes result sent to driver
+356	Got assigned task 360
+357	Running task 0.0 in stage 9.0 (TID 360)
+358	Got assigned task 374
+359	Running task 1.0 in stage 9.0 (TID 374)
+360	Got assigned task 388
+361	Running task 2.0 in stage 9.0 (TID 388)
+362	Got assigned task 398
+363	Started reading broadcast variable 18
+364	Running task 3.0 in stage 9.0 (TID 398)
+365	Got assigned task 399
+366	Running task 4.0 in stage 9.0 (TID 399)
+367	"Block broadcast_18_piece0 stored as bytes in memory (estimated size 5.8 KB, free 454.4 KB)"
+368	Reading broadcast variable 18 took 12 ms
+369	"Block broadcast_18 stored as values in memory (estimated size 9.6 KB, free 464.0 KB)"
+370	Found block rdd_2_0 locally
+371	Found block rdd_2_4 locally
+372	Found block rdd_2_3 locally
+373	Found block rdd_2_2 locally
+374	Found block rdd_2_1 locally
+375	"Times: total = 39, boot = -73, init = 111, finish = 1"
+376	"Times: total = 40, boot = -75, init = 114, finish = 1"
+377	"Times: total = 41, boot = -75, init = 115, finish = 1"
+378	"Times: total = 40, boot = -75, init = 114, finish = 1"
+379	"Times: total = 42, boot = -67, init = 108, finish = 1"
+380	Finished task 0.0 in stage 9.0 (TID 360). 2239 bytes result sent to driver
+381	Finished task 2.0 in stage 9.0 (TID 388). 2239 bytes result sent to driver
+382	Finished task 3.0 in stage 9.0 (TID 398). 2239 bytes result sent to driver
+383	Finished task 1.0 in stage 9.0 (TID 374). 2298 bytes result sent to driver
+384	Finished task 4.0 in stage 9.0 (TID 399). 2239 bytes result sent to driver
+385	Got assigned task 402
+386	Running task 0.0 in stage 10.0 (TID 402)
+387	Got assigned task 416
+388	Running task 1.0 in stage 10.0 (TID 416)
+389	Got assigned task 430
+390	Running task 2.0 in stage 10.0 (TID 430)
+391	Got assigned task 438
+392	Running task 3.0 in stage 10.0 (TID 438)
+393	Started reading broadcast variable 19
+394	Got assigned task 439
+395	Running task 4.0 in stage 10.0 (TID 439)
+396	"Block broadcast_19_piece0 stored as bytes in memory (estimated size 5.4 KB, free 469.4 KB)"
+397	Reading broadcast variable 19 took 12 ms
+398	"Block broadcast_19 stored as values in memory (estimated size 9.2 KB, free 478.6 KB)"
+399	Found block rdd_2_0 locally
+400	Found block rdd_2_4 locally
+401	Found block rdd_2_3 locally
+402	Found block rdd_2_2 locally
+403	Found block rdd_2_1 locally
+404	"Times: total = 39, boot = -124, init = 163, finish = 0"
+405	"Times: total = 38, boot = -123, init = 161, finish = 0"
+406	"Times: total = 41, boot = -126, init = 167, finish = 0"
+407	"Times: total = 40, boot = -127, init = 167, finish = 0"
+408	"Times: total = 41, boot = -115, init = 155, finish = 1"
+409	Finished task 3.0 in stage 10.0 (TID 438). 2087 bytes result sent to driver
+410	Finished task 0.0 in stage 10.0 (TID 402). 2087 bytes result sent to driver
+411	Finished task 4.0 in stage 10.0 (TID 439). 2087 bytes result sent to driver
+412	Finished task 2.0 in stage 10.0 (TID 430). 2087 bytes result sent to driver
+413	Finished task 1.0 in stage 10.0 (TID 416). 2087 bytes result sent to driver
+414	Got assigned task 450
+415	Running task 0.0 in stage 11.0 (TID 450)
+416	Got assigned task 464
+417	Running task 1.0 in stage 11.0 (TID 464)
+418	Got assigned task 475
+419	Running task 2.0 in stage 11.0 (TID 475)
+420	Got assigned task 478
+421	Started reading broadcast variable 20
+422	Running task 3.0 in stage 11.0 (TID 478)
+423	Got assigned task 479
+424	Running task 4.0 in stage 11.0 (TID 479)
+425	"Block broadcast_20_piece0 stored as bytes in memory (estimated size 5.5 KB, free 416.7 KB)"
+426	Reading broadcast variable 20 took 15 ms
+427	"Block broadcast_20 stored as values in memory (estimated size 9.8 KB, free 411.6 KB)"
+428	"Partition rdd_16_0 not found, computing it"
+429	"Partition rdd_16_4 not found, computing it"
+430	"Partition rdd_16_3 not found, computing it"
+431	"Partition rdd_16_2 not found, computing it"
+432	"Partition rdd_16_1 not found, computing it"
+433	Found block rdd_2_0 locally
+434	Found block rdd_2_4 locally
+435	Found block rdd_2_3 locally
+436	Found block rdd_2_2 locally
+437	Found block rdd_2_1 locally
+438	"Times: total = 40, boot = -95, init = 135, finish = 0"
+439	"Times: total = 39, boot = -96, init = 135, finish = 0"
+440	"Times: total = 42, boot = -95, init = 137, finish = 0"
+441	"Times: total = 42, boot = -97, init = 139, finish = 0"
+442	"Times: total = 43, boot = -85, init = 127, finish = 1"
+443	"Block rdd_16_4 stored as bytes in memory (estimated size 263.0 B, free 386.4 KB)"
+444	"Block rdd_16_0 stored as bytes in memory (estimated size 191.0 B, free 386.6 KB)"
+445	"Block rdd_16_3 stored as bytes in memory (estimated size 232.0 B, free 386.8 KB)"
+446	"Block rdd_16_2 stored as bytes in memory (estimated size 230.0 B, free 387.0 KB)"
+447	"Block rdd_16_1 stored as bytes in memory (estimated size 351.0 B, free 387.4 KB)"
+448	"Times: total = 39, boot = 22, init = 17, finish = 0"
+449	"Times: total = 41, boot = 20, init = 21, finish = 0"
+450	"Times: total = 40, boot = 20, init = 20, finish = 0"
+451	Finished task 4.0 in stage 11.0 (TID 479). 2667 bytes result sent to driver
+452	"Times: total = 41, boot = 16, init = 25, finish = 0"
+453	"Times: total = 40, boot = 26, init = 14, finish = 0"
+454	Finished task 0.0 in stage 11.0 (TID 450). 2667 bytes result sent to driver
+455	Finished task 3.0 in stage 11.0 (TID 478). 2667 bytes result sent to driver
+456	Finished task 2.0 in stage 11.0 (TID 475). 2667 bytes result sent to driver
+457	Finished task 1.0 in stage 11.0 (TID 464). 2667 bytes result sent to driver
+458	Got assigned task 480
+459	Running task 0.0 in stage 12.0 (TID 480)
+460	Got assigned task 494
+461	Running task 1.0 in stage 12.0 (TID 494)
+462	Got assigned task 508
+463	Started reading broadcast variable 21
+464	Running task 2.0 in stage 12.0 (TID 508)
+465	Got assigned task 518
+466	Running task 3.0 in stage 12.0 (TID 518)
+467	Got assigned task 519
+468	Running task 4.0 in stage 12.0 (TID 519)
+469	"Block broadcast_21_piece0 stored as bytes in memory (estimated size 5.7 KB, free 393.1 KB)"
+470	Reading broadcast variable 21 took 11 ms
+471	"Block broadcast_21 stored as values in memory (estimated size 10.1 KB, free 403.2 KB)"
+472	Found block rdd_16_0 locally
+473	Found block rdd_16_4 locally
+474	Found block rdd_16_3 locally
+475	Found block rdd_16_2 locally
+476	Found block rdd_16_1 locally
+477	"Times: total = 37, boot = -162, init = 199, finish = 0"
+478	"Times: total = 40, boot = -157, init = 197, finish = 0"
+479	"Times: total = 39, boot = -157, init = 196, finish = 0"
+480	"Times: total = 38, boot = -146, init = 184, finish = 0"
+481	"Times: total = 40, boot = -156, init = 196, finish = 0"
+482	Finished task 0.0 in stage 12.0 (TID 480). 2155 bytes result sent to driver
+483	Finished task 3.0 in stage 12.0 (TID 518). 2155 bytes result sent to driver
+484	Finished task 4.0 in stage 12.0 (TID 519). 2155 bytes result sent to driver
+485	Finished task 1.0 in stage 12.0 (TID 494). 2105 bytes result sent to driver
+486	Finished task 2.0 in stage 12.0 (TID 508). 2155 bytes result sent to driver
+487	Got assigned task 528
+488	Running task 0.0 in stage 13.0 (TID 528)
+489	Got assigned task 542
+490	Running task 1.0 in stage 13.0 (TID 542)
+491	Got assigned task 553
+492	Running task 2.0 in stage 13.0 (TID 553)
+493	Started reading broadcast variable 22
+494	Got assigned task 558
+495	Running task 3.0 in stage 13.0 (TID 558)
+496	Got assigned task 559
+497	Running task 4.0 in stage 13.0 (TID 559)
+498	"Block broadcast_22_piece0 stored as bytes in memory (estimated size 5.8 KB, free 409.0 KB)"
+499	Reading broadcast variable 22 took 11 ms
+500	"Block broadcast_22 stored as values in memory (estimated size 9.6 KB, free 418.6 KB)"
+501	Found block rdd_2_0 locally
+502	Found block rdd_2_4 locally
+503	Found block rdd_2_3 locally
+504	Found block rdd_2_2 locally
+505	Found block rdd_2_1 locally
+506	"Times: total = 39, boot = -76, init = 114, finish = 1"
+507	"Times: total = 42, boot = -73, init = 114, finish = 1"
+508	"Times: total = 42, boot = -73, init = 114, finish = 1"
+509	"Times: total = 41, boot = -67, init = 107, finish = 1"
+510	"Times: total = 40, boot = -74, init = 113, finish = 1"
+511	Finished task 0.0 in stage 13.0 (TID 528). 2256 bytes result sent to driver
+512	Finished task 4.0 in stage 13.0 (TID 559). 2241 bytes result sent to driver
+513	Finished task 2.0 in stage 13.0 (TID 553). 2241 bytes result sent to driver
+514	Finished task 1.0 in stage 13.0 (TID 542). 2241 bytes result sent to driver
+515	Finished task 3.0 in stage 13.0 (TID 558). 2257 bytes result sent to driver
+516	Got assigned task 562
+517	Running task 0.0 in stage 14.0 (TID 562)
+518	Got assigned task 576
+519	Running task 1.0 in stage 14.0 (TID 576)
+520	Got assigned task 590
+521	Running task 2.0 in stage 14.0 (TID 590)
+522	Started reading broadcast variable 23
+523	Got assigned task 598
+524	Running task 3.0 in stage 14.0 (TID 598)
+525	Got assigned task 599
+526	Running task 4.0 in stage 14.0 (TID 599)
+527	"Block broadcast_23_piece0 stored as bytes in memory (estimated size 5.4 KB, free 378.2 KB)"
+528	Reading broadcast variable 23 took 11 ms
+529	"Block broadcast_23 stored as values in memory (estimated size 9.2 KB, free 387.4 KB)"
+530	Found block rdd_2_0 locally
+531	Found block rdd_2_4 locally
+532	Found block rdd_2_3 locally
+533	Found block rdd_2_2 locally
+534	Found block rdd_2_1 locally
+535	"Times: total = 39, boot = -90, init = 129, finish = 0"
+536	"Times: total = 40, boot = -93, init = 133, finish = 0"
+537	"Times: total = 39, boot = -90, init = 129, finish = 0"
+538	"Times: total = 38, boot = -82, init = 120, finish = 0"
+539	"Times: total = 42, boot = -92, init = 133, finish = 1"
+540	Finished task 3.0 in stage 14.0 (TID 598). 2087 bytes result sent to driver
+541	Finished task 2.0 in stage 14.0 (TID 590). 2087 bytes result sent to driver
+542	Finished task 0.0 in stage 14.0 (TID 562). 2087 bytes result sent to driver
+543	Finished task 4.0 in stage 14.0 (TID 599). 2087 bytes result sent to driver
+544	Finished task 1.0 in stage 14.0 (TID 576). 2087 bytes result sent to driver
+545	Got assigned task 612
+546	Running task 0.0 in stage 15.0 (TID 612)
+547	Got assigned task 626
+548	Running task 1.0 in stage 15.0 (TID 626)
+549	Got assigned task 636
+550	Running task 2.0 in stage 15.0 (TID 636)
+551	Got assigned task 638
+552	Running task 3.0 in stage 15.0 (TID 638)
+553	Got assigned task 639
+554	Running task 4.0 in stage 15.0 (TID 639)
+555	Started reading broadcast variable 24
+556	"Block broadcast_24_piece0 stored as bytes in memory (estimated size 5.6 KB, free 393.0 KB)"
+557	Reading broadcast variable 24 took 10 ms
+558	"Block broadcast_24 stored as values in memory (estimated size 9.8 KB, free 402.8 KB)"
+559	"Partition rdd_21_1 not found, computing it"
+560	"Partition rdd_21_4 not found, computing it"
+561	"Partition rdd_21_3 not found, computing it"
+562	"Partition rdd_21_2 not found, computing it"
+563	"Partition rdd_21_0 not found, computing it"
+564	Found block rdd_2_1 locally
+565	Found block rdd_2_4 locally
+566	Found block rdd_2_3 locally
+567	Found block rdd_2_2 locally
+568	Found block rdd_2_0 locally
+569	"Times: total = 40, boot = -95, init = 135, finish = 0"
+570	"Times: total = 39, boot = -96, init = 135, finish = 0"
+571	"Times: total = 41, boot = -98, init = 139, finish = 0"
+572	"Times: total = 40, boot = -99, init = 139, finish = 0"
+573	"Times: total = 40, boot = -95, init = 135, finish = 0"
+574	"Block rdd_21_1 stored as bytes in memory (estimated size 162.0 B, free 403.0 KB)"
+575	"Block rdd_21_4 stored as bytes in memory (estimated size 200.0 B, free 403.2 KB)"
+576	"Block rdd_21_3 stored as bytes in memory (estimated size 194.0 B, free 403.4 KB)"
+577	"Block rdd_21_2 stored as bytes in memory (estimated size 163.0 B, free 403.5 KB)"
+578	"Block rdd_21_0 stored as bytes in memory (estimated size 244.0 B, free 403.8 KB)"
+579	"Times: total = 38, boot = 19, init = 19, finish = 0"
+580	"Times: total = 39, boot = 20, init = 19, finish = 0"
+581	"Times: total = 38, boot = 19, init = 19, finish = 0"
+582	"Times: total = 40, boot = 17, init = 23, finish = 0"
+583	Finished task 1.0 in stage 15.0 (TID 626). 2667 bytes result sent to driver
+584	"Times: total = 42, boot = 18, init = 24, finish = 0"
+585	Finished task 3.0 in stage 15.0 (TID 638). 2667 bytes result sent to driver
+586	Finished task 4.0 in stage 15.0 (TID 639). 2667 bytes result sent to driver
+587	Finished task 2.0 in stage 15.0 (TID 636). 2667 bytes result sent to driver
+588	Finished task 0.0 in stage 15.0 (TID 612). 2667 bytes result sent to driver
+589	Got assigned task 643
+590	Running task 0.0 in stage 16.0 (TID 643)
+591	Got assigned task 657
+592	Running task 1.0 in stage 16.0 (TID 657)
+593	Got assigned task 671
+594	Running task 2.0 in stage 16.0 (TID 671)
+595	Got assigned task 678
+596	Started reading broadcast variable 25
+597	Running task 3.0 in stage 16.0 (TID 678)
+598	Got assigned task 679
+599	Running task 4.0 in stage 16.0 (TID 679)
+600	"Block broadcast_25_piece0 stored as bytes in memory (estimated size 5.7 KB, free 409.5 KB)"
+601	Reading broadcast variable 25 took 11 ms
+602	"Block broadcast_25 stored as values in memory (estimated size 10.1 KB, free 419.6 KB)"
+603	Found block rdd_21_0 locally
+604	Found block rdd_21_4 locally
+605	Found block rdd_21_3 locally
+606	Found block rdd_21_2 locally
+607	Found block rdd_21_1 locally
+608	"Times: total = 39, boot = -104, init = 143, finish = 0"
+609	"Times: total = 41, boot = -104, init = 145, finish = 0"
+610	"Times: total = 39, boot = -106, init = 145, finish = 0"
+611	"Times: total = 39, boot = -106, init = 145, finish = 0"
+612	"Times: total = 43, boot = -104, init = 146, finish = 1"
+613	Finished task 2.0 in stage 16.0 (TID 671). 2163 bytes result sent to driver
+614	Finished task 3.0 in stage 16.0 (TID 678). 2151 bytes result sent to driver
+615	Finished task 4.0 in stage 16.0 (TID 679). 2163 bytes result sent to driver
+616	Finished task 0.0 in stage 16.0 (TID 643). 2151 bytes result sent to driver
+617	Finished task 1.0 in stage 16.0 (TID 657). 2163 bytes result sent to driver
+618	Got assigned task 692
+619	Running task 0.0 in stage 17.0 (TID 692)
+620	Got assigned task 706
+621	Running task 1.0 in stage 17.0 (TID 706)
+622	Got assigned task 716
+623	Running task 2.0 in stage 17.0 (TID 716)
+624	Got assigned task 718
+625	Started reading broadcast variable 26
+626	Running task 3.0 in stage 17.0 (TID 718)
+627	Got assigned task 719
+628	Running task 4.0 in stage 17.0 (TID 719)
+629	"Block broadcast_26_piece0 stored as bytes in memory (estimated size 5.8 KB, free 379.9 KB)"
+630	Reading broadcast variable 26 took 10 ms
+631	"Block broadcast_26 stored as values in memory (estimated size 9.7 KB, free 389.6 KB)"
+632	Found block rdd_2_0 locally
+633	Found block rdd_2_4 locally
+634	Found block rdd_2_3 locally
+635	Found block rdd_2_2 locally
+636	Found block rdd_2_1 locally
+637	"Times: total = 42, boot = -69, init = 110, finish = 1"
+638	"Times: total = 40, boot = -71, init = 110, finish = 1"
+639	"Times: total = 39, boot = -73, init = 111, finish = 1"
+640	"Times: total = 44, boot = -72, init = 115, finish = 1"
+641	"Times: total = 42, boot = -71, init = 112, finish = 1"
+642	Finished task 4.0 in stage 17.0 (TID 719). 2156 bytes result sent to driver
+643	Finished task 0.0 in stage 17.0 (TID 692). 2156 bytes result sent to driver
+644	Finished task 2.0 in stage 17.0 (TID 716). 2156 bytes result sent to driver
+645	Finished task 3.0 in stage 17.0 (TID 718). 2156 bytes result sent to driver
+646	Finished task 1.0 in stage 17.0 (TID 706). 2156 bytes result sent to driver
+647	Got assigned task 722
+648	Running task 0.0 in stage 18.0 (TID 722)
+649	Got assigned task 736
+650	Running task 1.0 in stage 18.0 (TID 736)
+651	Got assigned task 750
+652	Running task 2.0 in stage 18.0 (TID 750)
+653	Got assigned task 758
+654	Running task 3.0 in stage 18.0 (TID 758)
+655	Started reading broadcast variable 27
+656	Got assigned task 759
+657	Running task 4.0 in stage 18.0 (TID 759)
+658	"Block broadcast_27_piece0 stored as bytes in memory (estimated size 5.4 KB, free 395.0 KB)"
+659	Reading broadcast variable 27 took 10 ms
+660	"Block broadcast_27 stored as values in memory (estimated size 9.2 KB, free 404.2 KB)"
+661	Found block rdd_2_0 locally
+662	Found block rdd_2_4 locally
+663	Found block rdd_2_3 locally
+664	Found block rdd_2_2 locally
+665	Found block rdd_2_1 locally
+666	"Times: total = 38, boot = -77, init = 115, finish = 0"
+667	"Times: total = 40, boot = -76, init = 115, finish = 1"
+668	"Times: total = 40, boot = -75, init = 115, finish = 0"
+669	"Times: total = 42, boot = -74, init = 115, finish = 1"
+670	Finished task 4.0 in stage 18.0 (TID 759). 2087 bytes result sent to driver
+671	Finished task 0.0 in stage 18.0 (TID 722). 2087 bytes result sent to driver
+672	Finished task 3.0 in stage 18.0 (TID 758). 2087 bytes result sent to driver
+673	Finished task 1.0 in stage 18.0 (TID 736). 2087 bytes result sent to driver
+674	"Times: total = 42, boot = -74, init = 115, finish = 1"
+675	Finished task 2.0 in stage 18.0 (TID 750). 2087 bytes result sent to driver
+676	Got assigned task 762
+677	Running task 0.0 in stage 19.0 (TID 762)
+678	Got assigned task 776
+679	Running task 1.0 in stage 19.0 (TID 776)
+680	Got assigned task 789
+681	Running task 2.0 in stage 19.0 (TID 789)
+682	Got assigned task 798
+683	Running task 3.0 in stage 19.0 (TID 798)
+684	Started reading broadcast variable 28
+685	Got assigned task 799
+686	Running task 4.0 in stage 19.0 (TID 799)
+687	"Block broadcast_28_piece0 stored as bytes in memory (estimated size 5.6 KB, free 409.8 KB)"
+688	Reading broadcast variable 28 took 9 ms
+689	"Block broadcast_28 stored as values in memory (estimated size 9.8 KB, free 419.6 KB)"
+690	"Partition rdd_26_0 not found, computing it"
+691	"Partition rdd_26_4 not found, computing it"
+692	"Partition rdd_26_3 not found, computing it"
+693	"Partition rdd_26_2 not found, computing it"
+694	"Partition rdd_26_1 not found, computing it"
+695	Found block rdd_2_0 locally
+696	Found block rdd_2_4 locally
+697	Found block rdd_2_3 locally
+698	Found block rdd_2_2 locally
+699	Found block rdd_2_1 locally
+700	"Times: total = 40, boot = -79, init = 119, finish = 0"
+701	"Times: total = 41, boot = -82, init = 123, finish = 0"
+702	"Times: total = 41, boot = -82, init = 123, finish = 0"
+703	"Block rdd_26_0 stored as bytes in memory (estimated size 16.0 B, free 419.6 KB)"
+704	"Block rdd_26_3 stored as bytes in memory (estimated size 16.0 B, free 419.6 KB)"
+705	"Block rdd_26_4 stored as bytes in memory (estimated size 16.0 B, free 419.6 KB)"
+706	"Times: total = 41, boot = -67, init = 107, finish = 1"
+707	"Times: total = 42, boot = -66, init = 107, finish = 1"
+708	"Block rdd_26_2 stored as bytes in memory (estimated size 16.0 B, free 419.7 KB)"
+709	"Block rdd_26_1 stored as bytes in memory (estimated size 16.0 B, free 419.7 KB)"
+710	"Times: total = 38, boot = 23, init = 15, finish = 0"
+711	Finished task 0.0 in stage 19.0 (TID 762). 2667 bytes result sent to driver
+712	"Times: total = 40, boot = 20, init = 20, finish = 0"
+713	"Times: total = 41, boot = 23, init = 18, finish = 0"
+714	Finished task 3.0 in stage 19.0 (TID 798). 2667 bytes result sent to driver
+715	Finished task 4.0 in stage 19.0 (TID 799). 2667 bytes result sent to driver
+716	"Times: total = 39, boot = 18, init = 21, finish = 0"
+717	"Times: total = 39, boot = 18, init = 21, finish = 0"
+718	Finished task 1.0 in stage 19.0 (TID 776). 2667 bytes result sent to driver
+719	Finished task 2.0 in stage 19.0 (TID 789). 2667 bytes result sent to driver
+720	Got assigned task 807
+721	Running task 0.0 in stage 20.0 (TID 807)
+722	Got assigned task 821
+723	Running task 1.0 in stage 20.0 (TID 821)
+724	Got assigned task 833
+725	Running task 2.0 in stage 20.0 (TID 833)
+726	Got assigned task 838
+727	Started reading broadcast variable 29
+728	Running task 3.0 in stage 20.0 (TID 838)
+729	Got assigned task 839
+730	Running task 4.0 in stage 20.0 (TID 839)
+731	"Block broadcast_29_piece0 stored as bytes in memory (estimated size 5.7 KB, free 379.5 KB)"
+732	Reading broadcast variable 29 took 11 ms
+733	"Block broadcast_29 stored as values in memory (estimated size 10.1 KB, free 374.2 KB)"
+734	Found block rdd_26_0 locally
+735	Found block rdd_26_4 locally
+736	Found block rdd_26_3 locally
+737	Found block rdd_26_2 locally
+738	Found block rdd_26_1 locally
+739	"Times: total = 38, boot = -119, init = 157, finish = 0"
+740	"Times: total = 38, boot = -119, init = 157, finish = 0"
+741	"Times: total = 39, boot = -126, init = 165, finish = 0"
+742	"Times: total = 40, boot = -111, init = 151, finish = 0"
+743	"Times: total = 41, boot = -110, init = 151, finish = 0"
+744	Finished task 4.0 in stage 20.0 (TID 839). 2076 bytes result sent to driver
+745	Finished task 3.0 in stage 20.0 (TID 838). 2076 bytes result sent to driver
+746	Finished task 0.0 in stage 20.0 (TID 807). 2076 bytes result sent to driver
+747	Finished task 1.0 in stage 20.0 (TID 821). 2076 bytes result sent to driver
+748	Finished task 2.0 in stage 20.0 (TID 833). 2076 bytes result sent to driver
+749	Got assigned task 853
+750	Running task 0.0 in stage 21.0 (TID 853)
+751	Got assigned task 867
+752	Running task 1.0 in stage 21.0 (TID 867)
+753	Got assigned task 877
+754	Running task 2.0 in stage 21.0 (TID 877)
+755	Got assigned task 878
+756	Running task 3.0 in stage 21.0 (TID 878)
+757	Started reading broadcast variable 30
+758	Got assigned task 879
+759	Running task 4.0 in stage 21.0 (TID 879)
+760	"Block broadcast_30_piece0 stored as bytes in memory (estimated size 5.8 KB, free 380.0 KB)"
+761	Reading broadcast variable 30 took 8 ms
+762	"Block broadcast_30 stored as values in memory (estimated size 9.7 KB, free 389.7 KB)"
+763	Found block rdd_2_0 locally
+764	Found block rdd_2_4 locally
+765	Found block rdd_2_3 locally
+766	Found block rdd_2_2 locally
+767	Found block rdd_2_1 locally
+768	"Times: total = 38, boot = -59, init = 96, finish = 1"
+769	"Times: total = 39, boot = -59, init = 98, finish = 0"
+770	"Times: total = 41, boot = -59, init = 100, finish = 0"
+771	"Times: total = 41, boot = -59, init = 99, finish = 1"
+772	Finished task 0.0 in stage 21.0 (TID 853). 2348 bytes result sent to driver
+773	"Times: total = 41, boot = -58, init = 98, finish = 1"
+774	Finished task 1.0 in stage 21.0 (TID 867). 2333 bytes result sent to driver
+775	Finished task 3.0 in stage 21.0 (TID 878). 2333 bytes result sent to driver
+776	Finished task 4.0 in stage 21.0 (TID 879). 2333 bytes result sent to driver
+777	Finished task 2.0 in stage 21.0 (TID 877). 2333 bytes result sent to driver
+778	Got assigned task 886
+779	Running task 0.0 in stage 22.0 (TID 886)
+780	Got assigned task 900
+781	Running task 1.0 in stage 22.0 (TID 900)
+782	Got assigned task 912
+783	Running task 2.0 in stage 22.0 (TID 912)
+784	Got assigned task 918
+785	Running task 3.0 in stage 22.0 (TID 918)
+786	Got assigned task 919
+787	Running task 4.0 in stage 22.0 (TID 919)
+788	Started reading broadcast variable 31
+789	"Block broadcast_31_piece0 stored as bytes in memory (estimated size 5.6 KB, free 395.3 KB)"
+790	Reading broadcast variable 31 took 8 ms
+791	"Block broadcast_31 stored as values in memory (estimated size 9.8 KB, free 405.1 KB)"
+792	"Partition rdd_30_0 not found, computing it"
+793	"Partition rdd_30_4 not found, computing it"
+794	"Partition rdd_30_3 not found, computing it"
+795	"Partition rdd_30_2 not found, computing it"
+796	"Partition rdd_30_1 not found, computing it"
+797	Found block rdd_2_0 locally
+798	Found block rdd_2_4 locally
+799	Found block rdd_2_3 locally
+800	Found block rdd_2_2 locally
+801	Found block rdd_2_1 locally
+802	"Times: total = 37, boot = -88, init = 125, finish = 0"
+803	"Times: total = 39, boot = -86, init = 125, finish = 0"
+804	"Block rdd_30_0 stored as bytes in memory (estimated size 324.0 B, free 405.4 KB)"
+805	"Times: total = 39, boot = -86, init = 125, finish = 0"
+806	"Times: total = 41, boot = -84, init = 125, finish = 0"
+807	"Times: total = 40, boot = -85, init = 125, finish = 0"
+808	"Block rdd_30_1 stored as bytes in memory (estimated size 165.0 B, free 405.6 KB)"
+809	"Block rdd_30_2 stored as bytes in memory (estimated size 250.0 B, free 405.8 KB)"
+810	"Block rdd_30_4 stored as bytes in memory (estimated size 226.0 B, free 406.0 KB)"
+811	"Block rdd_30_3 stored as bytes in memory (estimated size 251.0 B, free 406.3 KB)"
+812	"Times: total = 40, boot = 19, init = 21, finish = 0"
+813	"Times: total = 39, boot = 20, init = 19, finish = 0"
+814	"Times: total = 39, boot = 21, init = 18, finish = 0"
+815	Finished task 0.0 in stage 22.0 (TID 886). 2667 bytes result sent to driver
+816	"Times: total = 41, boot = 18, init = 23, finish = 0"
+817	"Times: total = 40, boot = 18, init = 22, finish = 0"
+818	Finished task 1.0 in stage 22.0 (TID 900). 2667 bytes result sent to driver
+819	Finished task 2.0 in stage 22.0 (TID 912). 2667 bytes result sent to driver
+820	Finished task 4.0 in stage 22.0 (TID 919). 2667 bytes result sent to driver
+821	Finished task 3.0 in stage 22.0 (TID 918). 2667 bytes result sent to driver
+822	Got assigned task 926
+823	Running task 0.0 in stage 23.0 (TID 926)
+824	Got assigned task 940
+825	Running task 1.0 in stage 23.0 (TID 940)
+826	Started reading broadcast variable 32
+827	Got assigned task 951
+828	Running task 2.0 in stage 23.0 (TID 951)
+829	Got assigned task 958
+830	Running task 3.0 in stage 23.0 (TID 958)
+831	Got assigned task 959
+832	Running task 4.0 in stage 23.0 (TID 959)
+833	"Block broadcast_32_piece0 stored as bytes in memory (estimated size 5.7 KB, free 406.3 KB)"
+834	Reading broadcast variable 32 took 16 ms
+835	"Block broadcast_32 stored as values in memory (estimated size 10.1 KB, free 400.4 KB)"
+836	Found block rdd_30_0 locally
+837	Found block rdd_30_3 locally
+838	Found block rdd_30_2 locally
+839	Found block rdd_30_1 locally
+840	Found block rdd_30_4 locally
+841	"Times: total = 39, boot = -134, init = 173, finish = 0"
+842	"Times: total = 40, boot = -130, init = 170, finish = 0"
+843	"Times: total = 40, boot = -132, init = 172, finish = 0"
+844	"Times: total = 42, boot = -132, init = 173, finish = 1"
+845	"Times: total = 40, boot = -129, init = 168, finish = 1"
+846	Finished task 0.0 in stage 23.0 (TID 926). 2211 bytes result sent to driver
+847	Finished task 2.0 in stage 23.0 (TID 951). 2223 bytes result sent to driver
+848	Finished task 3.0 in stage 23.0 (TID 958). 2223 bytes result sent to driver
+849	Finished task 4.0 in stage 23.0 (TID 959). 2223 bytes result sent to driver
+850	Finished task 1.0 in stage 23.0 (TID 940). 2223 bytes result sent to driver
+851	Got assigned task 970
+852	Running task 0.0 in stage 24.0 (TID 970)
+853	Got assigned task 984
+854	Running task 1.0 in stage 24.0 (TID 984)
+855	Got assigned task 998
+856	Running task 2.0 in stage 24.0 (TID 998)
+857	Got assigned task 1012
+858	Running task 3.0 in stage 24.0 (TID 1012)
+859	Got assigned task 1026
+860	Running task 4.0 in stage 24.0 (TID 1026)
+861	Started reading broadcast variable 33
+862	"Block broadcast_33_piece0 stored as bytes in memory (estimated size 29.5 KB, free 404.8 KB)"
+863	Reading broadcast variable 33 took 9 ms
+864	"Block broadcast_33 stored as values in memory (estimated size 82.1 KB, free 486.9 KB)"
+865	Found block rdd_6_4 locally
+866	Found block rdd_6_3 locally
+867	Found block rdd_6_2 locally
+868	Found block rdd_6_1 locally
+869	Found block rdd_6_0 locally
+870	File Output Committer Algorithm version is 1
+871	File Output Committer Algorithm version is 1
+872	File Output Committer Algorithm version is 1
+873	File Output Committer Algorithm version is 1
+874	File Output Committer Algorithm version is 1
+875	"Times: total = 40, boot = -340, init = 380, finish = 0"
+876	"Times: total = 40, boot = -337, init = 376, finish = 1"
+877	"Times: total = 42, boot = -343, init = 384, finish = 1"
+878	"Times: total = 39, boot = -342, init = 381, finish = 0"
+879	"Times: total = 41, boot = -343, init = 384, finish = 0"
+880	Saved output of task 'attempt_201706092018_0024_m_000003_1012' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000003
+881	Saved output of task 'attempt_201706092018_0024_m_000004_1026' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000004
+882	Saved output of task 'attempt_201706092018_0024_m_000002_998' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000002
+883	Saved output of task 'attempt_201706092018_0024_m_000000_970' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000000
+884	Saved output of task 'attempt_201706092018_0024_m_000001_984' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000001
+885	attempt_201706092018_0024_m_000004_1026: Committed
+886	attempt_201706092018_0024_m_000002_998: Committed
+887	attempt_201706092018_0024_m_000003_1012: Committed
+888	attempt_201706092018_0024_m_000001_984: Committed
+889	attempt_201706092018_0024_m_000000_970: Committed
+890	Finished task 3.0 in stage 24.0 (TID 1012). 2364 bytes result sent to driver
+891	Finished task 4.0 in stage 24.0 (TID 1026). 2364 bytes result sent to driver
+892	Finished task 1.0 in stage 24.0 (TID 984). 2364 bytes result sent to driver
+893	Finished task 2.0 in stage 24.0 (TID 998). 2364 bytes result sent to driver
+894	Finished task 0.0 in stage 24.0 (TID 970). 2364 bytes result sent to driver
+895	Got assigned task 1125
+896	Running task 40.0 in stage 24.0 (TID 1125)
+897	Got assigned task 1126
+898	Running task 41.0 in stage 24.0 (TID 1126)
+899	Got assigned task 1127
+900	Running task 42.0 in stage 24.0 (TID 1127)
+901	Got assigned task 1128
+902	Running task 43.0 in stage 24.0 (TID 1128)
+903	Got assigned task 1129
+904	Running task 44.0 in stage 24.0 (TID 1129)
+905	Found block rdd_11_0 locally
+906	Found block rdd_11_1 locally
+907	Found block rdd_11_2 locally
+908	Found block rdd_11_3 locally
+909	Found block rdd_11_4 locally
+910	File Output Committer Algorithm version is 1
+911	File Output Committer Algorithm version is 1
+912	File Output Committer Algorithm version is 1
+913	File Output Committer Algorithm version is 1
+914	File Output Committer Algorithm version is 1
+915	"Times: total = 39, boot = -397, init = 436, finish = 0"
+916	"Times: total = 38, boot = -405, init = 443, finish = 0"
+917	"Times: total = 40, boot = -400, init = 440, finish = 0"
+918	"Times: total = 38, boot = -390, init = 428, finish = 0"
+919	"Times: total = 41, boot = -398, init = 439, finish = 0"
+920	Saved output of task 'attempt_201706092018_0024_m_000044_1129' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000044
+921	attempt_201706092018_0024_m_000044_1129: Committed
+922	Saved output of task 'attempt_201706092018_0024_m_000043_1128' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000043
+923	Saved output of task 'attempt_201706092018_0024_m_000040_1125' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000040
+924	attempt_201706092018_0024_m_000043_1128: Committed
+925	attempt_201706092018_0024_m_000040_1125: Committed
+926	Saved output of task 'attempt_201706092018_0024_m_000042_1127' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000042
+927	attempt_201706092018_0024_m_000042_1127: Committed
+928	Saved output of task 'attempt_201706092018_0024_m_000041_1126' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000041
+929	attempt_201706092018_0024_m_000041_1126: Committed
+930	Finished task 44.0 in stage 24.0 (TID 1129). 2364 bytes result sent to driver
+931	Finished task 43.0 in stage 24.0 (TID 1128). 2364 bytes result sent to driver
+932	Finished task 40.0 in stage 24.0 (TID 1125). 2364 bytes result sent to driver
+933	Finished task 42.0 in stage 24.0 (TID 1127). 2364 bytes result sent to driver
+934	Finished task 41.0 in stage 24.0 (TID 1126). 2364 bytes result sent to driver
+935	Got assigned task 1135
+936	Running task 80.0 in stage 24.0 (TID 1135)
+937	Got assigned task 1136
+938	Running task 81.0 in stage 24.0 (TID 1136)
+939	Got assigned task 1137
+940	Running task 82.0 in stage 24.0 (TID 1137)
+941	Got assigned task 1138
+942	Running task 83.0 in stage 24.0 (TID 1138)
+943	Got assigned task 1141
+944	Running task 84.0 in stage 24.0 (TID 1141)
+945	Found block rdd_16_0 locally
+946	Found block rdd_16_1 locally
+947	Found block rdd_16_2 locally
+948	Found block rdd_16_3 locally
+949	Found block rdd_16_4 locally
+950	File Output Committer Algorithm version is 1
+951	File Output Committer Algorithm version is 1
+952	File Output Committer Algorithm version is 1
+953	File Output Committer Algorithm version is 1
+954	File Output Committer Algorithm version is 1
+955	"Times: total = 37, boot = -87, init = 124, finish = 0"
+956	"Times: total = 39, boot = -79, init = 118, finish = 0"
+957	"Times: total = 39, boot = -86, init = 125, finish = 0"
+958	"Times: total = 42, boot = -81, init = 122, finish = 1"
+959	"Times: total = 41, boot = -83, init = 123, finish = 1"
+960	Saved output of task 'attempt_201706092018_0024_m_000083_1138' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000083
+961	attempt_201706092018_0024_m_000083_1138: Committed
+962	Saved output of task 'attempt_201706092018_0024_m_000084_1141' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000084
+963	Saved output of task 'attempt_201706092018_0024_m_000080_1135' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000080
+964	attempt_201706092018_0024_m_000084_1141: Committed
+965	attempt_201706092018_0024_m_000080_1135: Committed
+966	Saved output of task 'attempt_201706092018_0024_m_000082_1137' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000082
+967	attempt_201706092018_0024_m_000082_1137: Committed
+968	Saved output of task 'attempt_201706092018_0024_m_000081_1136' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000081
+969	attempt_201706092018_0024_m_000081_1136: Committed
+970	Finished task 83.0 in stage 24.0 (TID 1138). 2364 bytes result sent to driver
+971	Finished task 84.0 in stage 24.0 (TID 1141). 2364 bytes result sent to driver
+972	Finished task 80.0 in stage 24.0 (TID 1135). 2364 bytes result sent to driver
+973	Finished task 82.0 in stage 24.0 (TID 1137). 2364 bytes result sent to driver
+974	Finished task 81.0 in stage 24.0 (TID 1136). 2364 bytes result sent to driver
+975	Got assigned task 1145
+976	Running task 120.0 in stage 24.0 (TID 1145)
+977	Got assigned task 1146
+978	Running task 121.0 in stage 24.0 (TID 1146)
+979	Got assigned task 1147
+980	Running task 122.0 in stage 24.0 (TID 1147)
+981	Got assigned task 1150
+982	Running task 123.0 in stage 24.0 (TID 1150)
+983	Got assigned task 1151
+984	Running task 124.0 in stage 24.0 (TID 1151)
+985	Found block rdd_21_4 locally
+986	Found block rdd_21_1 locally
+987	Found block rdd_21_0 locally
+988	Found block rdd_21_2 locally
+989	Found block rdd_21_3 locally
+990	File Output Committer Algorithm version is 1
+991	"Times: total = 40, boot = -82, init = 122, finish = 0"
+992	Saved output of task 'attempt_201706092018_0024_m_000124_1151' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000124
+993	attempt_201706092018_0024_m_000124_1151: Committed
+994	Finished task 124.0 in stage 24.0 (TID 1151). 2364 bytes result sent to driver
+995	File Output Committer Algorithm version is 1
+996	File Output Committer Algorithm version is 1
+997	File Output Committer Algorithm version is 1
+998	File Output Committer Algorithm version is 1
+999	Got assigned task 1155
+1000	Running task 160.0 in stage 24.0 (TID 1155)
+1001	"Times: total = 39, boot = -102, init = 141, finish = 0"
+1002	"Times: total = 38, boot = -112, init = 150, finish = 0"
+1003	"Times: total = 40, boot = -107, init = 147, finish = 0"
+1004	"Times: total = 40, boot = -116, init = 156, finish = 0"
+1005	Saved output of task 'attempt_201706092018_0024_m_000120_1145' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000120
+1006	attempt_201706092018_0024_m_000120_1145: Committed
+1007	Saved output of task 'attempt_201706092018_0024_m_000122_1147' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000122
+1008	Saved output of task 'attempt_201706092018_0024_m_000121_1146' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000121
+1009	attempt_201706092018_0024_m_000122_1147: Committed
+1010	Saved output of task 'attempt_201706092018_0024_m_000123_1150' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000123
+1011	attempt_201706092018_0024_m_000121_1146: Committed
+1012	attempt_201706092018_0024_m_000123_1150: Committed
+1013	Finished task 120.0 in stage 24.0 (TID 1145). 2364 bytes result sent to driver
+1014	Finished task 121.0 in stage 24.0 (TID 1146). 2364 bytes result sent to driver
+1015	Finished task 122.0 in stage 24.0 (TID 1147). 2364 bytes result sent to driver
+1016	Finished task 123.0 in stage 24.0 (TID 1150). 2364 bytes result sent to driver
+1017	Got assigned task 1156
+1018	Running task 161.0 in stage 24.0 (TID 1156)
+1019	Got assigned task 1157
+1020	Got assigned task 1158
+1021	Running task 162.0 in stage 24.0 (TID 1157)
+1022	Running task 163.0 in stage 24.0 (TID 1158)
+1023	Got assigned task 1159
+1024	Running task 164.0 in stage 24.0 (TID 1159)
+1025	Found block rdd_26_0 locally
+1026	Found block rdd_26_3 locally
+1027	Found block rdd_26_4 locally
+1028	Found block rdd_26_1 locally
+1029	Found block rdd_26_2 locally
+1030	"Times: total = 38, boot = -62, init = 100, finish = 0"
+1031	File Output Committer Algorithm version is 1
+1032	Saved output of task 'attempt_201706092018_0024_m_000160_1155' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000160
+1033	attempt_201706092018_0024_m_000160_1155: Committed
+1034	Finished task 160.0 in stage 24.0 (TID 1155). 2364 bytes result sent to driver
+1035	"Times: total = 38, boot = -45, init = 83, finish = 0"
+1036	"Times: total = 38, boot = -37, init = 75, finish = 0"
+1037	File Output Committer Algorithm version is 1
+1038	File Output Committer Algorithm version is 1
+1039	Saved output of task 'attempt_201706092018_0024_m_000163_1158' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000163
+1040	attempt_201706092018_0024_m_000163_1158: Committed
+1041	Saved output of task 'attempt_201706092018_0024_m_000164_1159' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000164
+1042	attempt_201706092018_0024_m_000164_1159: Committed
+1043	Finished task 163.0 in stage 24.0 (TID 1158). 2364 bytes result sent to driver
+1044	Finished task 164.0 in stage 24.0 (TID 1159). 2364 bytes result sent to driver
+1045	"Times: total = 37, boot = -54, init = 91, finish = 0"
+1046	"Times: total = 37, boot = -62, init = 99, finish = 0"
+1047	File Output Committer Algorithm version is 1
+1048	File Output Committer Algorithm version is 1
+1049	Saved output of task 'attempt_201706092018_0024_m_000162_1157' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000162
+1050	attempt_201706092018_0024_m_000162_1157: Committed
+1051	Saved output of task 'attempt_201706092018_0024_m_000161_1156' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000161
+1052	attempt_201706092018_0024_m_000161_1156: Committed
+1053	Finished task 162.0 in stage 24.0 (TID 1157). 2364 bytes result sent to driver
+1054	Finished task 161.0 in stage 24.0 (TID 1156). 2364 bytes result sent to driver
+1055	Got assigned task 1166
+1056	Got assigned task 1180
+1057	Running task 0.0 in stage 25.0 (TID 1166)
+1058	Running task 1.0 in stage 25.0 (TID 1180)
+1059	Got assigned task 1194
+1060	Running task 2.0 in stage 25.0 (TID 1194)
+1061	Got assigned task 1198
+1062	Running task 3.0 in stage 25.0 (TID 1198)
+1063	Got assigned task 1199
+1064	Running task 4.0 in stage 25.0 (TID 1199)
+1065	Started reading broadcast variable 34
+1066	"Block broadcast_34_piece0 stored as bytes in memory (estimated size 28.8 KB, free 515.7 KB)"
+1067	Reading broadcast variable 34 took 9 ms
+1068	"Block broadcast_34 stored as values in memory (estimated size 77.4 KB, free 593.1 KB)"
+1069	Found block rdd_30_4 locally
+1070	Found block rdd_30_3 locally
+1071	Found block rdd_30_2 locally
+1072	Found block rdd_30_1 locally
+1073	Found block rdd_30_0 locally
+1074	File Output Committer Algorithm version is 1
+1075	File Output Committer Algorithm version is 1
+1076	File Output Committer Algorithm version is 1
+1077	"Times: total = 38, boot = -727, init = 765, finish = 0"
+1078	File Output Committer Algorithm version is 1
+1079	File Output Committer Algorithm version is 1
+1080	"Times: total = 41, boot = -707, init = 748, finish = 0"
+1081	"Times: total = 39, boot = -700, init = 739, finish = 0"
+1082	"Times: total = 39, boot = -690, init = 729, finish = 0"
+1083	"Times: total = 41, boot = -699, init = 740, finish = 0"
+1084	Saved output of task 'attempt_201706092018_0025_m_000004_1199' to hdfs://10.10.34.11:9000/pjhe/test/2/_temporary/0/task_201706092018_0025_m_000004
+1085	attempt_201706092018_0025_m_000004_1199: Committed
+1086	Finished task 4.0 in stage 25.0 (TID 1199). 2364 bytes result sent to driver
+1087	Saved output of task 'attempt_201706092018_0025_m_000003_1198' to hdfs://10.10.34.11:9000/pjhe/test/2/_temporary/0/task_201706092018_0025_m_000003
+1088	attempt_201706092018_0025_m_000003_1198: Committed
+1089	Saved output of task 'attempt_201706092018_0025_m_000000_1166' to hdfs://10.10.34.11:9000/pjhe/test/2/_temporary/0/task_201706092018_0025_m_000000
+1090	attempt_201706092018_0025_m_000000_1166: Committed
+1091	Saved output of task 'attempt_201706092018_0025_m_000002_1194' to hdfs://10.10.34.11:9000/pjhe/test/2/_temporary/0/task_201706092018_0025_m_000002
+1092	Saved output of task 'attempt_201706092018_0025_m_000001_1180' to hdfs://10.10.34.11:9000/pjhe/test/2/_temporary/0/task_201706092018_0025_m_000001
+1093	attempt_201706092018_0025_m_000002_1194: Committed
+1094	attempt_201706092018_0025_m_000001_1180: Committed
+1095	Finished task 3.0 in stage 25.0 (TID 1198). 2364 bytes result sent to driver
+1096	Finished task 0.0 in stage 25.0 (TID 1166). 2364 bytes result sent to driver
+1097	Finished task 2.0 in stage 25.0 (TID 1194). 2364 bytes result sent to driver
+1098	Finished task 1.0 in stage 25.0 (TID 1180). 2364 bytes result sent to driver
+1099	Got assigned task 1200
+1100	Got assigned task 1201
+1101	Running task 0.0 in stage 26.0 (TID 1200)
+1102	Running task 1.0 in stage 26.0 (TID 1201)
+1103	Got assigned task 1202
+1104	Running task 2.0 in stage 26.0 (TID 1202)
+1105	Got assigned task 1203
+1106	Running task 3.0 in stage 26.0 (TID 1203)
+1107	Got assigned task 1204
+1108	Running task 4.0 in stage 26.0 (TID 1204)
+1109	Started reading broadcast variable 37
+1110	"Block broadcast_37_piece0 stored as bytes in memory (estimated size 5.2 KB, free 569.5 KB)"
+1111	Reading broadcast variable 37 took 14 ms
+1112	"Block broadcast_37 stored as values in memory (estimated size 8.8 KB, free 500.9 KB)"
+1113	"Partition rdd_42_0 not found, computing it"
+1114	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:0+7292
+1115	Started reading broadcast variable 36
+1116	"Partition rdd_42_4 not found, computing it"
+1117	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:29168+7292
+1118	"Partition rdd_42_3 not found, computing it"
+1119	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:21876+7292
+1120	"Partition rdd_42_2 not found, computing it"
+1121	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:14584+7292
+1122	"Partition rdd_42_1 not found, computing it"
+1123	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:7292+7292
+1124	"Block broadcast_36_piece0 stored as bytes in memory (estimated size 21.4 KB, free 522.3 KB)"
+1125	Reading broadcast variable 36 took 11 ms
+1126	"Block broadcast_36 stored as values in memory (estimated size 281.6 KB, free 803.9 KB)"
+1127	"Times: total = 47, boot = -8758, init = 8800, finish = 5"
+1128	"Block rdd_42_0 stored as bytes in memory (estimated size 913.0 B, free 804.8 KB)"
+1129	"Times: total = 55, boot = -8764, init = 8814, finish = 5"
+1130	"Times: total = 55, boot = -8768, init = 8818, finish = 5"
+1131	"Times: total = 59, boot = -8772, init = 8826, finish = 5"
+1132	"Times: total = 60, boot = -8772, init = 8827, finish = 5"
+1133	"Block rdd_42_4 stored as bytes in memory (estimated size 890.0 B, free 805.7 KB)"
+1134	"Block rdd_42_2 stored as bytes in memory (estimated size 850.0 B, free 806.5 KB)"
+1135	"Block rdd_42_1 stored as bytes in memory (estimated size 935.0 B, free 807.4 KB)"
+1136	"Block rdd_42_3 stored as bytes in memory (estimated size 930.0 B, free 808.4 KB)"
+1137	"Times: total = 42, boot = 25, init = 16, finish = 1"
+1138	Finished task 0.0 in stage 26.0 (TID 1200). 2703 bytes result sent to driver
+1139	Got assigned task 1205
+1140	Running task 5.0 in stage 26.0 (TID 1205)
+1141	"Times: total = 41, boot = 21, init = 20, finish = 0"
+1142	"Times: total = 41, boot = 20, init = 20, finish = 1"
+1143	"Partition rdd_42_5 not found, computing it"
+1144	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:36460+7292
+1145	"Times: total = 42, boot = 23, init = 19, finish = 0"
+1146	"Times: total = 42, boot = 20, init = 21, finish = 1"
+1147	Finished task 4.0 in stage 26.0 (TID 1204). 2703 bytes result sent to driver
+1148	Finished task 2.0 in stage 26.0 (TID 1202). 2703 bytes result sent to driver
+1149	Finished task 1.0 in stage 26.0 (TID 1201). 2703 bytes result sent to driver
+1150	Finished task 3.0 in stage 26.0 (TID 1203). 2703 bytes result sent to driver
+1151	Got assigned task 1206
+1152	Running task 6.0 in stage 26.0 (TID 1206)
+1153	Got assigned task 1207
+1154	Running task 7.0 in stage 26.0 (TID 1207)
+1155	Got assigned task 1208
+1156	Running task 8.0 in stage 26.0 (TID 1208)
+1157	Got assigned task 1209
+1158	Running task 9.0 in stage 26.0 (TID 1209)
+1159	"Partition rdd_42_6 not found, computing it"
+1160	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:43752+7292
+1161	"Partition rdd_42_7 not found, computing it"
+1162	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:51044+7292
+1163	"Partition rdd_42_8 not found, computing it"
+1164	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:58336+7292
+1165	"Partition rdd_42_9 not found, computing it"
+1166	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:65628+7292
+1167	"Times: total = 54, boot = 21, init = 28, finish = 5"
+1168	"Block rdd_42_5 stored as bytes in memory (estimated size 930.0 B, free 809.3 KB)"
+1169	"Times: total = 57, boot = 11, init = 41, finish = 5"
+1170	"Times: total = 53, boot = 7, init = 41, finish = 5"
+1171	"Times: total = 58, boot = 7, init = 46, finish = 5"
+1172	"Block rdd_42_6 stored as bytes in memory (estimated size 559.0 B, free 809.8 KB)"
+1173	"Block rdd_42_9 stored as bytes in memory (estimated size 950.0 B, free 810.7 KB)"
+1174	"Times: total = 65, boot = 10, init = 45, finish = 10"
+1175	"Block rdd_42_8 stored as bytes in memory (estimated size 869.0 B, free 811.6 KB)"
+1176	"Block rdd_42_7 stored as bytes in memory (estimated size 640.0 B, free 812.2 KB)"
+1177	"Times: total = 45, boot = 19, init = 26, finish = 0"
+1178	Finished task 5.0 in stage 26.0 (TID 1205). 2705 bytes result sent to driver
+1179	Got assigned task 1210
+1180	Running task 10.0 in stage 26.0 (TID 1210)
+1181	"Partition rdd_42_10 not found, computing it"
+1182	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:72920+7292
+1183	"Times: total = 41, boot = 24, init = 17, finish = 0"
+1184	"Times: total = 38, boot = 18, init = 20, finish = 0"
+1185	"Times: total = 39, boot = 18, init = 21, finish = 0"
+1186	Finished task 6.0 in stage 26.0 (TID 1206). 2697 bytes result sent to driver
+1187	Finished task 9.0 in stage 26.0 (TID 1209). 2703 bytes result sent to driver
+1188	Finished task 8.0 in stage 26.0 (TID 1208). 2703 bytes result sent to driver
+1189	"Times: total = 42, boot = 22, init = 19, finish = 1"
+1190	Got assigned task 1211
+1191	Running task 11.0 in stage 26.0 (TID 1211)
+1192	Got assigned task 1212
+1193	Running task 12.0 in stage 26.0 (TID 1212)
+1194	Finished task 7.0 in stage 26.0 (TID 1207). 2699 bytes result sent to driver
+1195	Got assigned task 1213
+1196	Running task 13.0 in stage 26.0 (TID 1213)
+1197	"Partition rdd_42_11 not found, computing it"
+1198	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:80212+7292
+1199	Got assigned task 1214
+1200	Running task 14.0 in stage 26.0 (TID 1214)
+1201	"Partition rdd_42_12 not found, computing it"
+1202	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:87504+7292
+1203	"Partition rdd_42_13 not found, computing it"
+1204	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:94796+7292
+1205	"Partition rdd_42_14 not found, computing it"
+1206	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:102088+7292
+1207	"Times: total = 48, boot = 8, init = 35, finish = 5"
+1208	"Block rdd_42_10 stored as bytes in memory (estimated size 948.0 B, free 813.1 KB)"
+1209	"Times: total = 48, boot = 10, init = 33, finish = 5"
+1210	"Block rdd_42_11 stored as bytes in memory (estimated size 920.0 B, free 814.0 KB)"
+1211	"Times: total = 51, boot = 3, init = 43, finish = 5"
+1212	"Block rdd_42_13 stored as bytes in memory (estimated size 912.0 B, free 814.9 KB)"
+1213	"Times: total = 56, boot = 10, init = 40, finish = 6"
+1214	"Times: total = 58, boot = 13, init = 40, finish = 5"
+1215	"Block rdd_42_12 stored as bytes in memory (estimated size 852.0 B, free 815.8 KB)"
+1216	"Block rdd_42_14 stored as bytes in memory (estimated size 834.0 B, free 816.6 KB)"
+1217	"Times: total = 42, boot = 17, init = 24, finish = 1"
+1218	Finished task 10.0 in stage 26.0 (TID 1210). 2703 bytes result sent to driver
+1219	Got assigned task 1215
+1220	Running task 15.0 in stage 26.0 (TID 1215)
+1221	"Partition rdd_42_15 not found, computing it"
+1222	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:109380+7292
+1223	"Times: total = 41, boot = 21, init = 20, finish = 0"
+1224	"Times: total = 39, boot = 20, init = 18, finish = 1"
+1225	Finished task 11.0 in stage 26.0 (TID 1211). 2703 bytes result sent to driver
+1226	Finished task 13.0 in stage 26.0 (TID 1213). 2703 bytes result sent to driver
+1227	Got assigned task 1216
+1228	Running task 16.0 in stage 26.0 (TID 1216)
+1229	"Times: total = 40, boot = 22, init = 18, finish = 0"
+1230	Got assigned task 1217
+1231	"Times: total = 39, boot = 24, init = 14, finish = 1"
+1232	Running task 17.0 in stage 26.0 (TID 1217)
+1233	"Partition rdd_42_16 not found, computing it"
+1234	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:116672+7292
+1235	Finished task 12.0 in stage 26.0 (TID 1212). 2703 bytes result sent to driver
+1236	Finished task 14.0 in stage 26.0 (TID 1214). 2703 bytes result sent to driver
+1237	"Partition rdd_42_17 not found, computing it"
+1238	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:123964+7292
+1239	Got assigned task 1218
+1240	Running task 18.0 in stage 26.0 (TID 1218)
+1241	Got assigned task 1219
+1242	Running task 19.0 in stage 26.0 (TID 1219)
+1243	"Partition rdd_42_18 not found, computing it"
+1244	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:131256+7292
+1245	"Partition rdd_42_19 not found, computing it"
+1246	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:138548+7292
+1247	"Times: total = 49, boot = 16, init = 28, finish = 5"
+1248	"Block rdd_42_15 stored as bytes in memory (estimated size 913.0 B, free 817.5 KB)"
+1249	"Times: total = 53, boot = 14, init = 34, finish = 5"
+1250	"Times: total = 52, boot = 13, init = 34, finish = 5"
+1251	"Block rdd_42_16 stored as bytes in memory (estimated size 748.0 B, free 818.2 KB)"
+1252	"Block rdd_42_17 stored as bytes in memory (estimated size 836.0 B, free 819.0 KB)"
+1253	"Times: total = 50, boot = 7, init = 38, finish = 5"
+1254	"Times: total = 52, boot = 2, init = 45, finish = 5"
+1255	"Block rdd_42_19 stored as bytes in memory (estimated size 920.0 B, free 819.9 KB)"
+1256	"Block rdd_42_18 stored as bytes in memory (estimated size 955.0 B, free 820.8 KB)"
+1257	"Times: total = 38, boot = 16, init = 22, finish = 0"
+1258	Finished task 15.0 in stage 26.0 (TID 1215). 2705 bytes result sent to driver
+1259	Got assigned task 1220
+1260	Running task 20.0 in stage 26.0 (TID 1220)
+1261	"Partition rdd_42_20 not found, computing it"
+1262	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:145840+7292
+1263	"Times: total = 38, boot = 24, init = 14, finish = 0"
+1264	"Times: total = 43, boot = 23, init = 19, finish = 1"
+1265	Finished task 16.0 in stage 26.0 (TID 1216). 2701 bytes result sent to driver
+1266	Finished task 17.0 in stage 26.0 (TID 1217). 2701 bytes result sent to driver
+1267	Got assigned task 1221
+1268	Running task 21.0 in stage 26.0 (TID 1221)
+1269	Got assigned task 1222
+1270	Running task 22.0 in stage 26.0 (TID 1222)
+1271	"Partition rdd_42_21 not found, computing it"
+1272	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:153132+7292
+1273	"Partition rdd_42_22 not found, computing it"
+1274	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:160424+7292
+1275	"Times: total = 38, boot = 20, init = 18, finish = 0"
+1276	"Times: total = 41, boot = 20, init = 21, finish = 0"
+1277	Finished task 18.0 in stage 26.0 (TID 1218). 2703 bytes result sent to driver
+1278	Finished task 19.0 in stage 26.0 (TID 1219). 2705 bytes result sent to driver
+1279	Got assigned task 1223
+1280	Running task 23.0 in stage 26.0 (TID 1223)
+1281	Got assigned task 1224
+1282	Running task 24.0 in stage 26.0 (TID 1224)
+1283	"Partition rdd_42_23 not found, computing it"
+1284	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:167716+7292
+1285	"Partition rdd_42_24 not found, computing it"
+1286	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:175008+7292
+1287	"Times: total = 47, boot = 5, init = 37, finish = 5"
+1288	"Block rdd_42_20 stored as bytes in memory (estimated size 917.0 B, free 821.7 KB)"
+1289	"Times: total = 53, boot = 15, init = 33, finish = 5"
+1290	"Times: total = 54, boot = 17, init = 32, finish = 5"
+1291	"Block rdd_42_22 stored as bytes in memory (estimated size 737.0 B, free 822.5 KB)"
+1292	"Block rdd_42_21 stored as bytes in memory (estimated size 922.0 B, free 823.4 KB)"
+1293	"Times: total = 50, boot = 4, init = 41, finish = 5"
+1294	"Times: total = 54, boot = 8, init = 41, finish = 5"
+1295	"Block rdd_42_24 stored as bytes in memory (estimated size 858.0 B, free 824.2 KB)"
+1296	"Times: total = 40, boot = 13, init = 26, finish = 1"
+1297	"Block rdd_42_23 stored as bytes in memory (estimated size 914.0 B, free 825.1 KB)"
+1298	Finished task 20.0 in stage 26.0 (TID 1220). 2703 bytes result sent to driver
+1299	Got assigned task 1225
+1300	Running task 25.0 in stage 26.0 (TID 1225)
+1301	"Partition rdd_42_25 not found, computing it"
+1302	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:182300+7292
+1303	"Times: total = 42, boot = 26, init = 16, finish = 0"
+1304	"Times: total = 39, boot = 23, init = 16, finish = 0"
+1305	Finished task 22.0 in stage 26.0 (TID 1222). 2703 bytes result sent to driver
+1306	Finished task 21.0 in stage 26.0 (TID 1221). 2705 bytes result sent to driver
+1307	Got assigned task 1226
+1308	Running task 26.0 in stage 26.0 (TID 1226)
+1309	Got assigned task 1227
+1310	Running task 27.0 in stage 26.0 (TID 1227)
+1311	"Partition rdd_42_26 not found, computing it"
+1312	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:189592+7292
+1313	"Times: total = 38, boot = 21, init = 17, finish = 0"
+1314	"Times: total = 42, boot = 20, init = 22, finish = 0"
+1315	"Partition rdd_42_27 not found, computing it"
+1316	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:196884+7292
+1317	Finished task 23.0 in stage 26.0 (TID 1223). 2703 bytes result sent to driver
+1318	Finished task 24.0 in stage 26.0 (TID 1224). 2703 bytes result sent to driver
+1319	Got assigned task 1228
+1320	Running task 28.0 in stage 26.0 (TID 1228)
+1321	Got assigned task 1229
+1322	Running task 29.0 in stage 26.0 (TID 1229)
+1323	"Partition rdd_42_28 not found, computing it"
+1324	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:204176+7292
+1325	"Partition rdd_42_29 not found, computing it"
+1326	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:211468+7292
+1327	"Times: total = 48, boot = 5, init = 38, finish = 5"
+1328	"Block rdd_42_25 stored as bytes in memory (estimated size 950.0 B, free 826.0 KB)"
+1329	"Times: total = 52, boot = 7, init = 40, finish = 5"
+1330	"Times: total = 56, boot = 7, init = 44, finish = 5"
+1331	"Block rdd_42_27 stored as bytes in memory (estimated size 790.0 B, free 826.8 KB)"
+1332	"Block rdd_42_26 stored as bytes in memory (estimated size 872.0 B, free 827.6 KB)"
+1333	"Times: total = 52, boot = 7, init = 40, finish = 5"
+1334	"Times: total = 41, boot = 16, init = 25, finish = 0"
+1335	"Times: total = 54, boot = 5, init = 41, finish = 8"
+1336	"Block rdd_42_28 stored as bytes in memory (estimated size 901.0 B, free 828.5 KB)"
+1337	Finished task 25.0 in stage 26.0 (TID 1225). 2705 bytes result sent to driver
+1338	"Block rdd_42_29 stored as bytes in memory (estimated size 901.0 B, free 829.4 KB)"
+1339	Got assigned task 1230
+1340	Running task 30.0 in stage 26.0 (TID 1230)
+1341	"Partition rdd_42_30 not found, computing it"
+1342	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:218760+7292
+1343	"Times: total = 38, boot = 34, init = 4, finish = 0"
+1344	"Times: total = 42, boot = 24, init = 17, finish = 1"
+1345	Finished task 26.0 in stage 26.0 (TID 1226). 2705 bytes result sent to driver
+1346	Finished task 27.0 in stage 26.0 (TID 1227). 2701 bytes result sent to driver
+1347	Got assigned task 1231
+1348	Running task 31.0 in stage 26.0 (TID 1231)
+1349	Got assigned task 1232
+1350	Running task 32.0 in stage 26.0 (TID 1232)
+1351	"Times: total = 42, boot = 22, init = 19, finish = 1"
+1352	"Partition rdd_42_31 not found, computing it"
+1353	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:226052+7292
+1354	"Partition rdd_42_32 not found, computing it"
+1355	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:233344+7292
+1356	"Times: total = 39, boot = 20, init = 18, finish = 1"
+1357	Finished task 28.0 in stage 26.0 (TID 1228). 2705 bytes result sent to driver
+1358	Finished task 29.0 in stage 26.0 (TID 1229). 2705 bytes result sent to driver
+1359	Got assigned task 1233
+1360	Running task 33.0 in stage 26.0 (TID 1233)
+1361	Got assigned task 1234
+1362	Running task 34.0 in stage 26.0 (TID 1234)
+1363	"Partition rdd_42_34 not found, computing it"
+1364	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:247928+7292
+1365	"Partition rdd_42_33 not found, computing it"
+1366	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:240636+7292
+1367	"Times: total = 46, boot = 16, init = 25, finish = 5"
+1368	"Block rdd_42_30 stored as bytes in memory (estimated size 906.0 B, free 830.3 KB)"
+1369	"Times: total = 51, boot = 12, init = 34, finish = 5"
+1370	"Times: total = 50, boot = 3, init = 42, finish = 5"
+1371	"Block rdd_42_31 stored as bytes in memory (estimated size 827.0 B, free 831.1 KB)"
+1372	"Block rdd_42_32 stored as bytes in memory (estimated size 993.0 B, free 832.1 KB)"
+1373	"Times: total = 41, boot = 18, init = 23, finish = 0"
+1374	Finished task 30.0 in stage 26.0 (TID 1230). 2703 bytes result sent to driver
+1375	"Times: total = 50, boot = 6, init = 39, finish = 5"
+1376	Got assigned task 1235
+1377	Running task 35.0 in stage 26.0 (TID 1235)
+1378	"Times: total = 50, boot = 2, init = 43, finish = 5"
+1379	"Block rdd_42_34 stored as bytes in memory (estimated size 842.0 B, free 832.9 KB)"
+1380	"Partition rdd_42_35 not found, computing it"
+1381	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:255220+7292
+1382	"Block rdd_42_33 stored as bytes in memory (estimated size 869.0 B, free 833.7 KB)"
+1383	"Times: total = 42, boot = 24, init = 18, finish = 0"
+1384	"Times: total = 38, boot = 23, init = 15, finish = 0"
+1385	Finished task 32.0 in stage 26.0 (TID 1232). 2703 bytes result sent to driver
+1386	Finished task 31.0 in stage 26.0 (TID 1231). 2703 bytes result sent to driver
+1387	Got assigned task 1236
+1388	Running task 36.0 in stage 26.0 (TID 1236)
+1389	Got assigned task 1237
+1390	Running task 37.0 in stage 26.0 (TID 1237)
+1391	"Partition rdd_42_36 not found, computing it"
+1392	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:262512+7292
+1393	"Partition rdd_42_37 not found, computing it"
+1394	"Times: total = 43, boot = 17, init = 25, finish = 1"
+1395	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:269804+7292
+1396	"Times: total = 38, boot = 12, init = 26, finish = 0"
+1397	Finished task 34.0 in stage 26.0 (TID 1234). 2703 bytes result sent to driver
+1398	Finished task 33.0 in stage 26.0 (TID 1233). 2703 bytes result sent to driver
+1399	Got assigned task 1238
+1400	Running task 38.0 in stage 26.0 (TID 1238)
+1401	Got assigned task 1239
+1402	Running task 39.0 in stage 26.0 (TID 1239)
+1403	"Times: total = 47, boot = 17, init = 23, finish = 7"
+1404	"Partition rdd_42_38 not found, computing it"
+1405	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:277096+7292
+1406	"Partition rdd_42_39 not found, computing it"
+1407	Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:284388+7303
+1408	"Block rdd_42_35 stored as bytes in memory (estimated size 917.0 B, free 834.6 KB)"
+1409	"Times: total = 53, boot = 8, init = 40, finish = 5"
+1410	"Times: total = 53, boot = 12, init = 36, finish = 5"
+1411	"Block rdd_42_37 stored as bytes in memory (estimated size 939.0 B, free 835.5 KB)"
+1412	"Block rdd_42_36 stored as bytes in memory (estimated size 912.0 B, free 836.4 KB)"
+1413	"Times: total = 41, boot = 9, init = 31, finish = 1"
+1414	Finished task 35.0 in stage 26.0 (TID 1235). 2705 bytes result sent to driver
+1415	"Times: total = 48, boot = 17, init = 25, finish = 6"
+1416	"Times: total = 51, boot = 8, init = 38, finish = 5"
+1417	"Block rdd_42_38 stored as bytes in memory (estimated size 974.0 B, free 837.4 KB)"
+1418	"Block rdd_42_39 stored as bytes in memory (estimated size 877.0 B, free 838.2 KB)"
+1419	"Times: total = 40, boot = 24, init = 16, finish = 0"
+1420	"Times: total = 42, boot = 22, init = 19, finish = 1"
+1421	Finished task 36.0 in stage 26.0 (TID 1236). 2705 bytes result sent to driver
+1422	Finished task 37.0 in stage 26.0 (TID 1237). 2705 bytes result sent to driver
+1423	"Times: total = 40, boot = 13, init = 27, finish = 0"
+1424	"Times: total = 38, boot = 18, init = 20, finish = 0"
+1425	Finished task 38.0 in stage 26.0 (TID 1238). 2703 bytes result sent to driver
+1426	Finished task 39.0 in stage 26.0 (TID 1239). 2703 bytes result sent to driver
+1427	Got assigned task 1240
+1428	Running task 0.0 in stage 27.0 (TID 1240)
+1429	Got assigned task 1241
+1430	Running task 1.0 in stage 27.0 (TID 1241)
+1431	Got assigned task 1242
+1432	Started reading broadcast variable 38
+1433	Running task 2.0 in stage 27.0 (TID 1242)
+1434	Got assigned task 1243
+1435	Running task 3.0 in stage 27.0 (TID 1243)
+1436	Got assigned task 1244
+1437	Running task 4.0 in stage 27.0 (TID 1244)
+1438	"Block broadcast_38_piece0 stored as bytes in memory (estimated size 5.8 KB, free 844.0 KB)"
+1439	Reading broadcast variable 38 took 11 ms
+1440	"Block broadcast_38 stored as values in memory (estimated size 9.6 KB, free 853.7 KB)"
+1441	Found block rdd_42_0 locally
+1442	Found block rdd_42_4 locally
+1443	Found block rdd_42_2 locally
+1444	Found block rdd_42_3 locally
+1445	Found block rdd_42_1 locally
+1446	"Times: total = 39, boot = -108, init = 146, finish = 1"
+1447	"Times: total = 42, boot = -77, init = 118, finish = 1"
+1448	Finished task 0.0 in stage 27.0 (TID 1240). 2474 bytes result sent to driver
+1449	"Times: total = 41, boot = -71, init = 111, finish = 1"
+1450	"Times: total = 39, boot = -64, init = 102, finish = 1"
+1451	Finished task 4.0 in stage 27.0 (TID 1244). 2685 bytes result sent to driver
+1452	"Times: total = 42, boot = -66, init = 107, finish = 1"
+1453	Finished task 2.0 in stage 27.0 (TID 1242). 2523 bytes result sent to driver
+1454	Got assigned task 1245
+1455	Running task 5.0 in stage 27.0 (TID 1245)
+1456	Finished task 3.0 in stage 27.0 (TID 1243). 2651 bytes result sent to driver
+1457	Got assigned task 1246
+1458	Finished task 1.0 in stage 27.0 (TID 1241). 2428 bytes result sent to driver
+1459	Running task 6.0 in stage 27.0 (TID 1246)
+1460	Got assigned task 1247
+1461	Running task 7.0 in stage 27.0 (TID 1247)
+1462	Found block rdd_42_5 locally
+1463	Got assigned task 1248
+1464	Running task 8.0 in stage 27.0 (TID 1248)
+1465	Got assigned task 1249
+1466	Running task 9.0 in stage 27.0 (TID 1249)
+1467	Found block rdd_42_7 locally
+1468	Found block rdd_42_6 locally
+1469	Found block rdd_42_8 locally
+1470	Found block rdd_42_9 locally
+1471	"Times: total = 40, boot = 26, init = 13, finish = 1"
+1472	Finished task 5.0 in stage 27.0 (TID 1245). 2721 bytes result sent to driver
+1473	"Times: total = 42, boot = 13, init = 28, finish = 1"
+1474	"Times: total = 40, boot = 15, init = 25, finish = 0"
+1475	"Times: total = 42, boot = 24, init = 17, finish = 1"
+1476	Got assigned task 1250
+1477	Running task 10.0 in stage 27.0 (TID 1250)
+1478	"Times: total = 43, boot = 13, init = 29, finish = 1"
+1479	Finished task 8.0 in stage 27.0 (TID 1248). 2263 bytes result sent to driver
+1480	Finished task 6.0 in stage 27.0 (TID 1246). 2220 bytes result sent to driver
+1481	Finished task 7.0 in stage 27.0 (TID 1247). 2171 bytes result sent to driver
+1482	Found block rdd_42_10 locally
+1483	Finished task 9.0 in stage 27.0 (TID 1249). 2427 bytes result sent to driver
+1484	Got assigned task 1251
+1485	Running task 11.0 in stage 27.0 (TID 1251)
+1486	Got assigned task 1252
+1487	Running task 12.0 in stage 27.0 (TID 1252)
+1488	Got assigned task 1253
+1489	Running task 13.0 in stage 27.0 (TID 1253)
+1490	Got assigned task 1254
+1491	Running task 14.0 in stage 27.0 (TID 1254)
+1492	Found block rdd_42_11 locally
+1493	Found block rdd_42_12 locally
+1494	Found block rdd_42_13 locally
+1495	Found block rdd_42_14 locally
+1496	"Times: total = 40, boot = 14, init = 25, finish = 1"
+1497	Finished task 10.0 in stage 27.0 (TID 1250). 2667 bytes result sent to driver
+1498	Got assigned task 1255
+1499	Running task 15.0 in stage 27.0 (TID 1255)
+1500	"Times: total = 39, boot = 12, init = 26, finish = 1"
+1501	"Times: total = 42, boot = 13, init = 28, finish = 1"
+1502	"Times: total = 40, boot = 10, init = 29, finish = 1"
+1503	Finished task 11.0 in stage 27.0 (TID 1251). 2402 bytes result sent to driver
+1504	Finished task 12.0 in stage 27.0 (TID 1252). 2486 bytes result sent to driver
+1505	"Times: total = 41, boot = 11, init = 29, finish = 1"
+1506	Found block rdd_42_15 locally
+1507	Finished task 14.0 in stage 27.0 (TID 1254). 2404 bytes result sent to driver
+1508	Got assigned task 1256
+1509	Running task 16.0 in stage 27.0 (TID 1256)
+1510	Got assigned task 1257
+1511	Finished task 13.0 in stage 27.0 (TID 1253). 2522 bytes result sent to driver
+1512	Running task 17.0 in stage 27.0 (TID 1257)
+1513	Got assigned task 1258
+1514	Running task 18.0 in stage 27.0 (TID 1258)
+1515	Got assigned task 1259
+1516	Running task 19.0 in stage 27.0 (TID 1259)
+1517	Found block rdd_42_16 locally
+1518	Found block rdd_42_17 locally
+1519	Found block rdd_42_19 locally
+1520	Found block rdd_42_18 locally
+1521	"Times: total = 42, boot = 19, init = 22, finish = 1"
+1522	Finished task 15.0 in stage 27.0 (TID 1255). 2523 bytes result sent to driver
+1523	"Times: total = 39, boot = 15, init = 24, finish = 0"
+1524	Got assigned task 1260
+1525	Running task 20.0 in stage 27.0 (TID 1260)
+1526	Finished task 16.0 in stage 27.0 (TID 1256). 2171 bytes result sent to driver
+1527	"Times: total = 40, boot = 14, init = 26, finish = 0"
+1528	"Times: total = 39, boot = 13, init = 25, finish = 1"
+1529	Found block rdd_42_20 locally
+1530	Got assigned task 1261
+1531	Running task 21.0 in stage 27.0 (TID 1261)
+1532	Finished task 19.0 in stage 27.0 (TID 1259). 2517 bytes result sent to driver
+1533	Finished task 17.0 in stage 27.0 (TID 1257). 2128 bytes result sent to driver
+1534	"Times: total = 42, boot = 16, init = 25, finish = 1"
+1535	Finished task 18.0 in stage 27.0 (TID 1258). 2349 bytes result sent to driver
+1536	Got assigned task 1262
+1537	Running task 22.0 in stage 27.0 (TID 1262)
+1538	Got assigned task 1263
+1539	Found block rdd_42_21 locally
+1540	Running task 23.0 in stage 27.0 (TID 1263)
+1541	Got assigned task 1264
+1542	Running task 24.0 in stage 27.0 (TID 1264)
+1543	Found block rdd_42_22 locally
+1544	Found block rdd_42_24 locally
+1545	Found block rdd_42_23 locally
+1546	"Times: total = 40, boot = 17, init = 22, finish = 1"
+1547	Finished task 20.0 in stage 27.0 (TID 1260). 2355 bytes result sent to driver
+1548	"Times: total = 41, boot = 19, init = 21, finish = 1"
+1549	Got assigned task 1265
+1550	Running task 25.0 in stage 27.0 (TID 1265)
+1551	Finished task 21.0 in stage 27.0 (TID 1261). 2486 bytes result sent to driver
+1552	"Times: total = 41, boot = 14, init = 25, finish = 2"
+1553	"Times: total = 41, boot = 11, init = 29, finish = 1"
+1554	Got assigned task 1266
+1555	Running task 26.0 in stage 27.0 (TID 1266)
+1556	"Times: total = 41, boot = 19, init = 21, finish = 1"
+1557	Found block rdd_42_25 locally
+1558	Finished task 22.0 in stage 27.0 (TID 1262). 2171 bytes result sent to driver
+1559	Finished task 24.0 in stage 27.0 (TID 1264). 2592 bytes result sent to driver
+1560	Finished task 23.0 in stage 27.0 (TID 1263). 2385 bytes result sent to driver
+1561	Found block rdd_42_26 locally
+1562	Got assigned task 1267
+1563	Running task 27.0 in stage 27.0 (TID 1267)
+1564	Got assigned task 1268
+1565	Running task 28.0 in stage 27.0 (TID 1268)
+1566	Got assigned task 1269
+1567	Running task 29.0 in stage 27.0 (TID 1269)
+1568	Found block rdd_42_27 locally
+1569	Found block rdd_42_28 locally
+1570	Found block rdd_42_29 locally
+1571	"Times: total = 42, boot = 14, init = 27, finish = 1"
+1572	"Times: total = 41, boot = 35, init = 5, finish = 1"
+1573	"Times: total = 41, boot = 34, init = 6, finish = 1"
+1574	"Times: total = 42, boot = 34, init = 7, finish = 1"
+1575	Finished task 27.0 in stage 27.0 (TID 1267). 2182 bytes result sent to driver
+1576	Finished task 28.0 in stage 27.0 (TID 1268). 2349 bytes result sent to driver
+1577	Finished task 26.0 in stage 27.0 (TID 1266). 2267 bytes result sent to driver
+1578	Finished task 25.0 in stage 27.0 (TID 1265). 2355 bytes result sent to driver
+1579	Got assigned task 1270
+1580	Running task 30.0 in stage 27.0 (TID 1270)
+1581	Got assigned task 1271
+1582	Running task 31.0 in stage 27.0 (TID 1271)
+1583	Got assigned task 1272
+1584	Running task 32.0 in stage 27.0 (TID 1272)
+1585	Got assigned task 1273
+1586	Running task 33.0 in stage 27.0 (TID 1273)
+1587	Found block rdd_42_31 locally
+1588	Found block rdd_42_32 locally
+1589	Found block rdd_42_33 locally
+1590	Found block rdd_42_30 locally
+1591	"Times: total = 108, boot = 28, init = 79, finish = 1"
+1592	Finished task 29.0 in stage 27.0 (TID 1269). 2349 bytes result sent to driver
+1593	Got assigned task 1274
+1594	Running task 34.0 in stage 27.0 (TID 1274)
+1595	Found block rdd_42_34 locally
+1596	"Times: total = 40, boot = -27, init = 66, finish = 1"
+1597	Finished task 31.0 in stage 27.0 (TID 1271). 2128 bytes result sent to driver
+1598	"Times: total = 42, boot = -28, init = 69, finish = 1"
+1599	"Times: total = 41, boot = -24, init = 64, finish = 1"
+1600	"Times: total = 41, boot = -15, init = 55, finish = 1"
+1601	Finished task 32.0 in stage 27.0 (TID 1272). 2801 bytes result sent to driver
+1602	Finished task 33.0 in stage 27.0 (TID 1273). 2592 bytes result sent to driver
+1603	Got assigned task 1275
+1604	Running task 35.0 in stage 27.0 (TID 1275)
+1605	Finished task 30.0 in stage 27.0 (TID 1270). 2859 bytes result sent to driver
+1606	Got assigned task 1276
+1607	Running task 36.0 in stage 27.0 (TID 1276)
+1608	Got assigned task 1277
+1609	Running task 37.0 in stage 27.0 (TID 1277)
+1610	Got assigned task 1278
+1611	Running task 38.0 in stage 27.0 (TID 1278)
+1612	Found block rdd_42_35 locally
+1613	Found block rdd_42_37 locally
+1614	Found block rdd_42_38 locally
+1615	Found block rdd_42_36 locally
+1616	"Times: total = 41, boot = 11, init = 29, finish = 1"
+1617	Finished task 34.0 in stage 27.0 (TID 1274). 2128 bytes result sent to driver
+1618	Got assigned task 1279
+1619	Running task 39.0 in stage 27.0 (TID 1279)
+1620	Found block rdd_42_39 locally
+1621	"Times: total = 41, boot = 31, init = 9, finish = 1"
+1622	"Times: total = 39, boot = 27, init = 11, finish = 1"
+1623	Finished task 35.0 in stage 27.0 (TID 1275). 2430 bytes result sent to driver
+1624	"Times: total = 40, boot = 20, init = 19, finish = 1"
+1625	Finished task 38.0 in stage 27.0 (TID 1278). 2882 bytes result sent to driver
+1626	"Times: total = 42, boot = 27, init = 14, finish = 1"
+1627	Finished task 37.0 in stage 27.0 (TID 1277). 2349 bytes result sent to driver
+1628	Finished task 36.0 in stage 27.0 (TID 1276). 2673 bytes result sent to driver
+1629	"Times: total = 39, boot = 17, init = 21, finish = 1"
+1630	Finished task 39.0 in stage 27.0 (TID 1279). 2267 bytes result sent to driver
+1631	Got assigned task 1280
+1632	Running task 0.0 in stage 28.0 (TID 1280)
+1633	Got assigned task 1281
+1634	Running task 1.0 in stage 28.0 (TID 1281)
+1635	Got assigned task 1282
+1636	Running task 2.0 in stage 28.0 (TID 1282)
+1637	Got assigned task 1283
+1638	Running task 3.0 in stage 28.0 (TID 1283)
+1639	Got assigned task 1284
+1640	Running task 4.0 in stage 28.0 (TID 1284)
+1641	Started reading broadcast variable 39
+1642	"Block broadcast_39_piece0 stored as bytes in memory (estimated size 5.4 KB, free 859.1 KB)"
+1643	Reading broadcast variable 39 took 716 ms
+1644	"Block broadcast_39 stored as values in memory (estimated size 9.2 KB, free 868.3 KB)"
+1645	Found block rdd_42_1 locally
+1646	Found block rdd_42_4 locally
+1647	Found block rdd_42_3 locally
+1648	Found block rdd_42_2 locally
+1649	Found block rdd_42_0 locally
+1650	"Times: total = 39, boot = -790, init = 829, finish = 0"
+1651	"Times: total = 38, boot = -784, init = 822, finish = 0"
+1652	"Times: total = 39, boot = -784, init = 823, finish = 0"
+1653	Finished task 4.0 in stage 28.0 (TID 1284). 2087 bytes result sent to driver
+1654	"Times: total = 41, boot = -768, init = 809, finish = 0"
+1655	Finished task 2.0 in stage 28.0 (TID 1282). 2087 bytes result sent to driver
+1656	Finished task 3.0 in stage 28.0 (TID 1283). 2087 bytes result sent to driver
+1657	"Times: total = 49, boot = -793, init = 841, finish = 1"
+1658	Got assigned task 1285
+1659	Running task 5.0 in stage 28.0 (TID 1285)
+1660	Finished task 0.0 in stage 28.0 (TID 1280). 2087 bytes result sent to driver
+1661	Got assigned task 1286
+1662	Running task 6.0 in stage 28.0 (TID 1286)
+1663	Got assigned task 1287
+1664	Finished task 1.0 in stage 28.0 (TID 1281). 2087 bytes result sent to driver
+1665	Running task 7.0 in stage 28.0 (TID 1287)
+1666	Got assigned task 1288
+1667	Running task 8.0 in stage 28.0 (TID 1288)
+1668	Found block rdd_42_5 locally
+1669	Found block rdd_42_6 locally
+1670	Got assigned task 1289
+1671	Running task 9.0 in stage 28.0 (TID 1289)
+1672	Found block rdd_42_7 locally
+1673	Found block rdd_42_8 locally
+1674	Found block rdd_42_9 locally
+1675	"Times: total = 38, boot = 23, init = 15, finish = 0"
+1676	"Times: total = 40, boot = 16, init = 24, finish = 0"
+1677	Finished task 6.0 in stage 28.0 (TID 1286). 2087 bytes result sent to driver
+1678	"Times: total = 42, boot = 13, init = 28, finish = 1"
+1679	Finished task 5.0 in stage 28.0 (TID 1285). 2087 bytes result sent to driver
+1680	"Times: total = 39, boot = 23, init = 16, finish = 0"
+1681	"Times: total = 42, boot = 13, init = 29, finish = 0"
+1682	Finished task 7.0 in stage 28.0 (TID 1287). 2087 bytes result sent to driver
+1683	Got assigned task 1290
+1684	Running task 10.0 in stage 28.0 (TID 1290)
+1685	Got assigned task 1291
+1686	Running task 11.0 in stage 28.0 (TID 1291)
+1687	Got assigned task 1292
+1688	Finished task 9.0 in stage 28.0 (TID 1289). 2087 bytes result sent to driver
+1689	Finished task 8.0 in stage 28.0 (TID 1288). 2087 bytes result sent to driver
+1690	Running task 12.0 in stage 28.0 (TID 1292)
+1691	Found block rdd_42_10 locally
+1692	Got assigned task 1293
+1693	Running task 13.0 in stage 28.0 (TID 1293)
+1694	Found block rdd_42_11 locally
+1695	Got assigned task 1294
+1696	Running task 14.0 in stage 28.0 (TID 1294)
+1697	Found block rdd_42_12 locally
+1698	Found block rdd_42_13 locally
+1699	Found block rdd_42_14 locally
+1700	"Times: total = 40, boot = 21, init = 19, finish = 0"
+1701	"Times: total = 39, boot = 19, init = 20, finish = 0"
+1702	"Times: total = 41, boot = 17, init = 24, finish = 0"
+1703	Finished task 10.0 in stage 28.0 (TID 1290). 2087 bytes result sent to driver
+1704	Finished task 12.0 in stage 28.0 (TID 1292). 2087 bytes result sent to driver
+1705	Got assigned task 1295
+1706	Running task 15.0 in stage 28.0 (TID 1295)
+1707	Finished task 11.0 in stage 28.0 (TID 1291). 2087 bytes result sent to driver
+1708	Got assigned task 1296
+1709	Running task 16.0 in stage 28.0 (TID 1296)
+1710	"Times: total = 41, boot = 12, init = 28, finish = 1"
+1711	"Times: total = 42, boot = 17, init = 24, finish = 1"
+1712	Got assigned task 1297
+1713	Running task 17.0 in stage 28.0 (TID 1297)
+1714	Found block rdd_42_15 locally
+1715	Finished task 14.0 in stage 28.0 (TID 1294). 2087 bytes result sent to driver
+1716	Finished task 13.0 in stage 28.0 (TID 1293). 2087 bytes result sent to driver
+1717	Found block rdd_42_17 locally
+1718	Got assigned task 1298
+1719	Found block rdd_42_16 locally
+1720	Running task 18.0 in stage 28.0 (TID 1298)
+1721	Got assigned task 1299
+1722	Running task 19.0 in stage 28.0 (TID 1299)
+1723	Found block rdd_42_18 locally
+1724	Found block rdd_42_19 locally
+1725	"Times: total = 40, boot = 19, init = 21, finish = 0"
+1726	"Times: total = 40, boot = 20, init = 20, finish = 0"
+1727	"Times: total = 39, boot = 15, init = 24, finish = 0"
+1728	Finished task 15.0 in stage 28.0 (TID 1295). 2087 bytes result sent to driver
+1729	Finished task 16.0 in stage 28.0 (TID 1296). 2087 bytes result sent to driver
+1730	Finished task 17.0 in stage 28.0 (TID 1297). 2087 bytes result sent to driver
+1731	Got assigned task 1300
+1732	Running task 20.0 in stage 28.0 (TID 1300)
+1733	"Times: total = 40, boot = 15, init = 25, finish = 0"
+1734	Got assigned task 1301
+1735	"Times: total = 42, boot = 16, init = 25, finish = 1"
+1736	Running task 21.0 in stage 28.0 (TID 1301)
+1737	Got assigned task 1302
+1738	Running task 22.0 in stage 28.0 (TID 1302)
+1739	Found block rdd_42_20 locally
+1740	Finished task 18.0 in stage 28.0 (TID 1298). 2087 bytes result sent to driver
+1741	Finished task 19.0 in stage 28.0 (TID 1299). 2087 bytes result sent to driver
+1742	Got assigned task 1303
+1743	Found block rdd_42_21 locally
+1744	Running task 23.0 in stage 28.0 (TID 1303)
+1745	Found block rdd_42_22 locally
+1746	Got assigned task 1304
+1747	Running task 24.0 in stage 28.0 (TID 1304)
+1748	Found block rdd_42_24 locally
+1749	Found block rdd_42_23 locally
+1750	"Times: total = 42, boot = 22, init = 19, finish = 1"
+1751	"Times: total = 38, boot = 18, init = 20, finish = 0"
+1752	Finished task 20.0 in stage 28.0 (TID 1300). 2087 bytes result sent to driver
+1753	Finished task 21.0 in stage 28.0 (TID 1301). 2087 bytes result sent to driver
+1754	"Times: total = 42, boot = 14, init = 28, finish = 0"
+1755	Got assigned task 1305
+1756	Running task 25.0 in stage 28.0 (TID 1305)
+1757	Got assigned task 1306
+1758	Finished task 22.0 in stage 28.0 (TID 1302). 2087 bytes result sent to driver
+1759	Running task 26.0 in stage 28.0 (TID 1306)
+1760	"Times: total = 39, boot = 15, init = 23, finish = 1"
+1761	Found block rdd_42_25 locally
+1762	Got assigned task 1307
+1763	Running task 27.0 in stage 28.0 (TID 1307)
+1764	Finished task 24.0 in stage 28.0 (TID 1304). 2087 bytes result sent to driver
+1765	"Times: total = 43, boot = 15, init = 27, finish = 1"
+1766	Found block rdd_42_26 locally
+1767	Finished task 23.0 in stage 28.0 (TID 1303). 2087 bytes result sent to driver
+1768	Got assigned task 1308
+1769	Running task 28.0 in stage 28.0 (TID 1308)
+1770	Found block rdd_42_27 locally
+1771	Got assigned task 1309
+1772	Running task 29.0 in stage 28.0 (TID 1309)
+1773	Found block rdd_42_28 locally
+1774	Found block rdd_42_29 locally
+1775	"Times: total = 41, boot = 17, init = 23, finish = 1"
+1776	"Times: total = 41, boot = 17, init = 24, finish = 0"
+1777	Finished task 25.0 in stage 28.0 (TID 1305). 2087 bytes result sent to driver
+1778	Finished task 26.0 in stage 28.0 (TID 1306). 2087 bytes result sent to driver
+1779	"Times: total = 40, boot = 27, init = 13, finish = 0"
+1780	Got assigned task 1310
+1781	Running task 30.0 in stage 28.0 (TID 1310)
+1782	Got assigned task 1311
+1783	Running task 31.0 in stage 28.0 (TID 1311)
+1784	"Times: total = 40, boot = 26, init = 14, finish = 0"
+1785	Finished task 27.0 in stage 28.0 (TID 1307). 2087 bytes result sent to driver
+1786	Found block rdd_42_30 locally
+1787	Finished task 28.0 in stage 28.0 (TID 1308). 2087 bytes result sent to driver
+1788	Got assigned task 1312
+1789	"Times: total = 42, boot = 16, init = 25, finish = 1"
+1790	Running task 32.0 in stage 28.0 (TID 1312)
+1791	Found block rdd_42_31 locally
+1792	Got assigned task 1313
+1793	Running task 33.0 in stage 28.0 (TID 1313)
+1794	Finished task 29.0 in stage 28.0 (TID 1309). 2087 bytes result sent to driver
+1795	Found block rdd_42_32 locally
+1796	Got assigned task 1314
+1797	Running task 34.0 in stage 28.0 (TID 1314)
+1798	Found block rdd_42_33 locally
+1799	Found block rdd_42_34 locally
+1800	"Times: total = 40, boot = 18, init = 22, finish = 0"
+1801	"Times: total = 41, boot = 19, init = 22, finish = 0"
+1802	Finished task 30.0 in stage 28.0 (TID 1310). 2087 bytes result sent to driver
+1803	Finished task 31.0 in stage 28.0 (TID 1311). 2087 bytes result sent to driver
+1804	"Times: total = 40, boot = 15, init = 25, finish = 0"
+1805	Got assigned task 1315
+1806	Running task 35.0 in stage 28.0 (TID 1315)
+1807	Got assigned task 1316
+1808	Running task 36.0 in stage 28.0 (TID 1316)
+1809	Finished task 32.0 in stage 28.0 (TID 1312). 2087 bytes result sent to driver
+1810	"Times: total = 42, boot = 16, init = 25, finish = 1"
+1811	Found block rdd_42_35 locally
+1812	Finished task 33.0 in stage 28.0 (TID 1313). 2087 bytes result sent to driver
+1813	Got assigned task 1317
+1814	Running task 37.0 in stage 28.0 (TID 1317)
+1815	"Times: total = 40, boot = 14, init = 25, finish = 1"
+1816	Found block rdd_42_36 locally
+1817	Got assigned task 1318
+1818	Finished task 34.0 in stage 28.0 (TID 1314). 2087 bytes result sent to driver
+1819	Running task 38.0 in stage 28.0 (TID 1318)
+1820	Found block rdd_42_37 locally
+1821	Got assigned task 1319
+1822	Running task 39.0 in stage 28.0 (TID 1319)
+1823	Found block rdd_42_38 locally
+1824	Found block rdd_42_39 locally
+1825	"Times: total = 41, boot = 23, init = 18, finish = 0"
+1826	"Times: total = 41, boot = 19, init = 22, finish = 0"
+1827	Finished task 35.0 in stage 28.0 (TID 1315). 2087 bytes result sent to driver
+1828	Finished task 36.0 in stage 28.0 (TID 1316). 2087 bytes result sent to driver
+1829	"Times: total = 38, boot = 14, init = 24, finish = 0"
+1830	Finished task 37.0 in stage 28.0 (TID 1317). 2087 bytes result sent to driver
+1831	"Times: total = 42, boot = 19, init = 22, finish = 1"
+1832	"Times: total = 40, boot = 14, init = 26, finish = 0"
+1833	Finished task 38.0 in stage 28.0 (TID 1318). 2087 bytes result sent to driver
+1834	Finished task 39.0 in stage 28.0 (TID 1319). 2087 bytes result sent to driver
+1835	Got assigned task 1320
+1836	Got assigned task 1321
+1837	Running task 0.0 in stage 29.0 (TID 1320)
+1838	Running task 1.0 in stage 29.0 (TID 1321)
+1839	Got assigned task 1322
+1840	Running task 2.0 in stage 29.0 (TID 1322)
+1841	Got assigned task 1323
+1842	Running task 3.0 in stage 29.0 (TID 1323)
+1843	Got assigned task 1324
+1844	Running task 4.0 in stage 29.0 (TID 1324)
+1845	Started reading broadcast variable 40
+1846	"Block broadcast_40_piece0 stored as bytes in memory (estimated size 6.0 KB, free 874.3 KB)"
+1847	Reading broadcast variable 40 took 10 ms
+1848	"Block broadcast_40 stored as values in memory (estimated size 9.9 KB, free 884.2 KB)"
+1849	Found block rdd_42_0 locally
+1850	Found block rdd_42_4 locally
+1851	Found block rdd_42_3 locally
+1852	Found block rdd_42_2 locally
+1853	Found block rdd_42_1 locally
+1854	"Times: total = 40, boot = -79, init = 118, finish = 1"
+1855	"Times: total = 39, boot = -75, init = 113, finish = 1"
+1856	"Times: total = 40, boot = -80, init = 119, finish = 1"
+1857	"Times: total = 41, boot = -85, init = 125, finish = 1"
+1858	Finished task 3.0 in stage 29.0 (TID 1323). 2128 bytes result sent to driver
+1859	"Times: total = 42, boot = -74, init = 115, finish = 1"
+1860	Finished task 4.0 in stage 29.0 (TID 1324). 2128 bytes result sent to driver
+1861	Finished task 0.0 in stage 29.0 (TID 1320). 2128 bytes result sent to driver
+1862	Finished task 2.0 in stage 29.0 (TID 1322). 2128 bytes result sent to driver
+1863	Finished task 1.0 in stage 29.0 (TID 1321). 2171 bytes result sent to driver
+1864	Got assigned task 1325
+1865	Running task 5.0 in stage 29.0 (TID 1325)
+1866	Got assigned task 1326
+1867	Running task 6.0 in stage 29.0 (TID 1326)
+1868	Got assigned task 1327
+1869	Running task 7.0 in stage 29.0 (TID 1327)
+1870	Got assigned task 1328
+1871	Running task 8.0 in stage 29.0 (TID 1328)
+1872	Got assigned task 1329
+1873	Running task 9.0 in stage 29.0 (TID 1329)
+1874	Found block rdd_42_5 locally
+1875	Found block rdd_42_7 locally
+1876	Found block rdd_42_8 locally
+1877	Found block rdd_42_6 locally
+1878	Found block rdd_42_9 locally
+1879	"Times: total = 39, boot = 18, init = 20, finish = 1"
+1880	"Times: total = 41, boot = 16, init = 24, finish = 1"
+1881	"Times: total = 43, boot = 25, init = 17, finish = 1"
+1882	"Times: total = 41, boot = 19, init = 21, finish = 1"
+1883	"Times: total = 42, boot = 24, init = 17, finish = 1"
+1884	Finished task 7.0 in stage 29.0 (TID 1327). 2171 bytes result sent to driver
+1885	Finished task 5.0 in stage 29.0 (TID 1325). 2171 bytes result sent to driver
+1886	Finished task 8.0 in stage 29.0 (TID 1328). 2128 bytes result sent to driver
+1887	Finished task 9.0 in stage 29.0 (TID 1329). 2128 bytes result sent to driver
+1888	Finished task 6.0 in stage 29.0 (TID 1326). 2171 bytes result sent to driver
+1889	Got assigned task 1330
+1890	Running task 10.0 in stage 29.0 (TID 1330)
+1891	Got assigned task 1331
+1892	Running task 11.0 in stage 29.0 (TID 1331)
+1893	Got assigned task 1332
+1894	Running task 12.0 in stage 29.0 (TID 1332)
+1895	Got assigned task 1333
+1896	Running task 13.0 in stage 29.0 (TID 1333)
+1897	Found block rdd_42_10 locally
+1898	Got assigned task 1334
+1899	Running task 14.0 in stage 29.0 (TID 1334)
+1900	Found block rdd_42_11 locally
+1901	Found block rdd_42_12 locally
+1902	Found block rdd_42_14 locally
+1903	Found block rdd_42_13 locally
+1904	"Times: total = 39, boot = 19, init = 19, finish = 1"
+1905	"Times: total = 41, boot = 21, init = 19, finish = 1"
+1906	Finished task 11.0 in stage 29.0 (TID 1331). 2128 bytes result sent to driver
+1907	"Times: total = 39, boot = 15, init = 23, finish = 1"
+1908	"Times: total = 42, boot = 18, init = 23, finish = 1"
+1909	Finished task 10.0 in stage 29.0 (TID 1330). 2128 bytes result sent to driver
+1910	"Times: total = 43, boot = 15, init = 27, finish = 1"
+1911	Got assigned task 1335
+1912	Running task 15.0 in stage 29.0 (TID 1335)
+1913	Got assigned task 1336
+1914	Finished task 14.0 in stage 29.0 (TID 1334). 2128 bytes result sent to driver
+1915	Finished task 12.0 in stage 29.0 (TID 1332). 2128 bytes result sent to driver
+1916	Running task 16.0 in stage 29.0 (TID 1336)
+1917	Finished task 13.0 in stage 29.0 (TID 1333). 2171 bytes result sent to driver
+1918	Got assigned task 1337
+1919	Running task 17.0 in stage 29.0 (TID 1337)
+1920	Got assigned task 1338
+1921	Running task 18.0 in stage 29.0 (TID 1338)
+1922	Found block rdd_42_16 locally
+1923	Got assigned task 1339
+1924	Running task 19.0 in stage 29.0 (TID 1339)
+1925	Found block rdd_42_15 locally
+1926	Found block rdd_42_17 locally
+1927	Found block rdd_42_18 locally
+1928	Found block rdd_42_19 locally
+1929	"Times: total = 40, boot = 20, init = 19, finish = 1"
+1930	"Times: total = 40, boot = 20, init = 19, finish = 1"
+1931	"Times: total = 39, boot = 18, init = 20, finish = 1"
+1932	"Times: total = 41, boot = 27, init = 14, finish = 0"
+1933	Finished task 15.0 in stage 29.0 (TID 1335). 2171 bytes result sent to driver
+1934	Finished task 16.0 in stage 29.0 (TID 1336). 2171 bytes result sent to driver
+1935	Finished task 18.0 in stage 29.0 (TID 1338). 2128 bytes result sent to driver
+1936	"Times: total = 41, boot = 15, init = 25, finish = 1"
+1937	Finished task 17.0 in stage 29.0 (TID 1337). 2128 bytes result sent to driver
+1938	Got assigned task 1340
+1939	Running task 20.0 in stage 29.0 (TID 1340)
+1940	Got assigned task 1341
+1941	Running task 21.0 in stage 29.0 (TID 1341)
+1942	Finished task 19.0 in stage 29.0 (TID 1339). 2128 bytes result sent to driver
+1943	Got assigned task 1342
+1944	Running task 22.0 in stage 29.0 (TID 1342)
+1945	Got assigned task 1343
+1946	Running task 23.0 in stage 29.0 (TID 1343)
+1947	Got assigned task 1344
+1948	Found block rdd_42_21 locally
+1949	Running task 24.0 in stage 29.0 (TID 1344)
+1950	Found block rdd_42_20 locally
+1951	Found block rdd_42_22 locally
+1952	Found block rdd_42_23 locally
+1953	Found block rdd_42_24 locally
+1954	"Times: total = 39, boot = 16, init = 22, finish = 1"
+1955	"Times: total = 41, boot = 18, init = 22, finish = 1"
+1956	"Times: total = 42, boot = 20, init = 21, finish = 1"
+1957	Finished task 21.0 in stage 29.0 (TID 1341). 2128 bytes result sent to driver
+1958	"Times: total = 43, boot = 15, init = 27, finish = 1"
+1959	Finished task 22.0 in stage 29.0 (TID 1342). 2171 bytes result sent to driver
+1960	Finished task 23.0 in stage 29.0 (TID 1343). 2171 bytes result sent to driver
+1961	"Times: total = 41, boot = 15, init = 25, finish = 1"
+1962	Got assigned task 1345
+1963	Running task 25.0 in stage 29.0 (TID 1345)
+1964	Finished task 20.0 in stage 29.0 (TID 1340). 2128 bytes result sent to driver
+1965	Finished task 24.0 in stage 29.0 (TID 1344). 2128 bytes result sent to driver
+1966	Got assigned task 1346
+1967	Running task 26.0 in stage 29.0 (TID 1346)
+1968	Got assigned task 1347
+1969	Running task 27.0 in stage 29.0 (TID 1347)
+1970	Got assigned task 1348
+1971	Found block rdd_42_25 locally
+1972	Running task 28.0 in stage 29.0 (TID 1348)
+1973	Got assigned task 1349
+1974	Running task 29.0 in stage 29.0 (TID 1349)
+1975	Found block rdd_42_26 locally
+1976	Found block rdd_42_28 locally
+1977	Found block rdd_42_27 locally
+1978	Found block rdd_42_29 locally
+1979	"Times: total = 41, boot = 23, init = 17, finish = 1"
+1980	"Times: total = 38, boot = 18, init = 20, finish = 0"
+1981	"Times: total = 42, boot = 18, init = 23, finish = 1"
+1982	"Times: total = 39, boot = 18, init = 20, finish = 1"
+1983	Finished task 25.0 in stage 29.0 (TID 1345). 2128 bytes result sent to driver
+1984	Finished task 28.0 in stage 29.0 (TID 1348). 2128 bytes result sent to driver
+1985	Finished task 27.0 in stage 29.0 (TID 1347). 2128 bytes result sent to driver
+1986	Finished task 26.0 in stage 29.0 (TID 1346). 2128 bytes result sent to driver
+1987	Got assigned task 1350
+1988	Running task 30.0 in stage 29.0 (TID 1350)
+1989	"Times: total = 43, boot = 14, init = 28, finish = 1"
+1990	Got assigned task 1351
+1991	Running task 31.0 in stage 29.0 (TID 1351)
+1992	Got assigned task 1352
+1993	Running task 32.0 in stage 29.0 (TID 1352)
+1994	Got assigned task 1353
+1995	Running task 33.0 in stage 29.0 (TID 1353)
+1996	Found block rdd_42_30 locally
+1997	Finished task 29.0 in stage 29.0 (TID 1349). 2128 bytes result sent to driver
+1998	Got assigned task 1354
+1999	Running task 34.0 in stage 29.0 (TID 1354)
+2000	Found block rdd_42_32 locally
