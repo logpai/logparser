@@ -1,0 +1,2 @@
+1035	attempt_1445144423722_0020_m_000002_0 TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+1064	attempt_1445144423722_0020_m_000001_0 TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED

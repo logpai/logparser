@@ -1,0 +1,1 @@
+60	yarn.client.max-cached-nodemanagers-proxies : 0

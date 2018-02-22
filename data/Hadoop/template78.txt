@@ -1,0 +1,1 @@
+5	OutputCommitter set in config null

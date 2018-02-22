@@ -1,0 +1,12 @@
+120	After Scheduling: PendingReds:1 ScheduledMaps:9 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:1 ContRel:0 HostLocal:0 RackLocal:1
+144	After Scheduling: PendingReds:1 ScheduledMaps:8 ScheduledReds:0 AssignedMaps:2 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:0 RackLocal:2
+163	After Scheduling: PendingReds:1 ScheduledMaps:7 ScheduledReds:0 AssignedMaps:3 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:3 ContRel:0 HostLocal:0 RackLocal:3
+298	After Scheduling: PendingReds:1 ScheduledMaps:6 ScheduledReds:0 AssignedMaps:4 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:1 RackLocal:3
+518	After Scheduling: PendingReds:1 ScheduledMaps:4 ScheduledReds:0 AssignedMaps:6 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:6 ContRel:0 HostLocal:3 RackLocal:3
+547	After Scheduling: PendingReds:1 ScheduledMaps:3 ScheduledReds:0 AssignedMaps:7 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:4 RackLocal:3
+596	After Scheduling: PendingReds:1 ScheduledMaps:2 ScheduledReds:0 AssignedMaps:8 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:8 ContRel:0 HostLocal:5 RackLocal:3
+626	After Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:9 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:9 ContRel:0 HostLocal:6 RackLocal:3
+645	After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:10 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:10 ContRel:0 HostLocal:7 RackLocal:3
+662	After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:10 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+813	After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:1 AssignedMaps:10 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+827	After Scheduling: PendingReds:0 ScheduledMaps:1 ScheduledReds:1 AssignedMaps:9 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3

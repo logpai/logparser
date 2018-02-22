@@ -1,0 +1,10 @@
+133	attempt_1445144423722_0020_m_000000_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+152	attempt_1445144423722_0020_m_000001_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+171	attempt_1445144423722_0020_m_000002_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+306	attempt_1445144423722_0020_m_000003_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+531	attempt_1445144423722_0020_m_000004_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+537	attempt_1445144423722_0020_m_000005_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+556	attempt_1445144423722_0020_m_000006_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+606	attempt_1445144423722_0020_m_000007_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+636	attempt_1445144423722_0020_m_000008_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+653	attempt_1445144423722_0020_m_000009_0 TaskAttempt Transitioned from ASSIGNED to RUNNING

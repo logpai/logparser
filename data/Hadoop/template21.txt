@@ -1,0 +1,10 @@
+131	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000000_0 : 13562
+150	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000001_0 : 13562
+169	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000002_0 : 13562
+304	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000003_0 : 13562
+529	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000004_0 : 13562
+534	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000005_0 : 13562
+554	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000006_0 : 13562
+604	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000007_0 : 13562
+634	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000008_0 : 13562
+651	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000009_0 : 13562

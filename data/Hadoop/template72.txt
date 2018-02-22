@@ -1,0 +1,1 @@
+28	"MRAppMaster launching normal, non-uberized, multi-container job job_1445144423722_0020."

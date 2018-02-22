@@ -1,0 +1,1 @@
+108	"reduceResourceRequest:<memory:1024, vCores:1>"

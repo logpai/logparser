@@ -1,0 +1,13 @@
+95	attempt_1445144423722_0020_m_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+96	attempt_1445144423722_0020_m_000001_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+97	attempt_1445144423722_0020_m_000002_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+98	attempt_1445144423722_0020_m_000003_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+99	attempt_1445144423722_0020_m_000004_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+100	attempt_1445144423722_0020_m_000005_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+101	attempt_1445144423722_0020_m_000006_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+102	attempt_1445144423722_0020_m_000007_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+103	attempt_1445144423722_0020_m_000008_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+104	attempt_1445144423722_0020_m_000009_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+822	attempt_1445144423722_0020_m_000000_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+1038	attempt_1445144423722_0020_m_000002_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+1067	attempt_1445144423722_0020_m_000001_1 TaskAttempt Transitioned from NEW to UNASSIGNED

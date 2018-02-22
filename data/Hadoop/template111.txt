@@ -1,0 +1,1 @@
+51	maxTaskFailuresPerNode is 3

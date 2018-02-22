@@ -1,0 +1,13 @@
+130	Opening proxy : 04DN8IQ.fareast.corp.microsoft.com:54883
+149	Opening proxy : MININT-FNANLI5.fareast.corp.microsoft.com:52368
+168	Opening proxy : MININT-FNANLI5.fareast.corp.microsoft.com:52368
+303	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+525	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+528	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+553	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+602	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+632	Opening proxy : MSRA-SA-39.fareast.corp.microsoft.com:28345
+650	Opening proxy : MSRA-SA-39.fareast.corp.microsoft.com:28345
+802	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+1026	Opening proxy : MININT-FNANLI5.fareast.corp.microsoft.com:52368
+1059	Opening proxy : MININT-FNANLI5.fareast.corp.microsoft.com:52368

@@ -1,0 +1,1 @@
+828	Diagnostics report from attempt_1445144423722_0020_m_000003_0: Container killed by the ApplicationMaster.

@@ -1,0 +1,12 @@
+785	jk2_init() Can't find child 1566 in scoreboard
+789	jk2_init() Can't find child 1567 in scoreboard
+1032	jk2_init() Can't find child 2082 in scoreboard
+1040	jk2_init() Can't find child 2085 in scoreboard
+1043	jk2_init() Can't find child 2086 in scoreboard
+1046	jk2_init() Can't find child 2087 in scoreboard
+1349	jk2_init() Can't find child 5053 in scoreboard
+1350	jk2_init() Can't find child 5054 in scoreboard
+1541	jk2_init() Can't find child 5619 in scoreboard
+1544	jk2_init() Can't find child 5620 in scoreboard
+1547	jk2_init() Can't find child 5621 in scoreboard
+1550	jk2_init() Can't find child 5622 in scoreboard
