@@ -21,7 +21,7 @@ The codes are [here](https://github.com/logpai/logparser/tree/master/logparser).
 * IPLoM (Iterative Partitioning Log Mining): [A Lightweight Algorithm for Message Type Extraction in System Application Logs](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5936060)
 * LKE (Log Key Extraction): [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](http://research.microsoft.com/pubs/102365/DM790-CR.pdf)
 * LogSig: [LogSig: Gnerating System Events from Raw Textual Logs](http://users.cis.fiu.edu/~taoli/pub/liang-cikm2011.pdf)
-* Drain: [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://appsrv.cse.cuhk.edu.hk/~pjhe/papers/ICWS17he.pdf)
+* DrainV1: [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://appsrv.cse.cuhk.edu.hk/~pjhe/papers/ICWS17he.pdf)
 * POP: a parallel log parsing method optimized on top of Spark.
 
 
