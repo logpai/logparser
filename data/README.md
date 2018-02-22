@@ -1,5 +1,5 @@
 # Datasets
-This page lists the 11 datasets used in our submission to TPDS, which are freely accessible for research purposes. Some of the logs are production data released from previous studies, while some others are collected from real systems in our lab environment.
+This page lists the 11 datasets used in our journal submission, which are freely accessible for research purposes. Some of the logs are production data released from previous studies, while some others are collected from real systems in our lab environment.
 
 Among these datasets, 6 of them (Hadoop, Spark, Windows, Linux, Apache, Thunderbird) are collected for the extended experiments in our journal submission. For datasets (BGL, HPC, HDFS, Zookeeper, Proxifier) used in the previous [conference paper](http://ieeexplore.ieee.org/document/8029742/), we host only sample datasets (2k lines) here due to their large size. If you are interested in the full datasets, please request the [logs at Zenodo](https://doi.org/10.5281/zenodo.1144100) or visit the source links wherever applicable. We will send you the full datasets upon requests.
 
