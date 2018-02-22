@@ -1,0 +1,2000 @@
+1	Created MRAppMaster for application appattempt_1445144423722_0020_000001
+2	Executing with tokens:
+3	"Kind: YARN_AM_RM_TOKEN, Service: , Ident: (appAttemptId { application_id { id: 20 cluster_timestamp: 1445144423722 } attemptId: 1 } keyId: -127633188)"
+4	Using mapred newApiCommitter.
+5	OutputCommitter set in config null
+6	OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+7	Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+8	Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+9	Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskEventDispatcher
+10	Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+11	Registering class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventType for class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler
+12	Registering class org.apache.hadoop.mapreduce.v2.app.speculate.Speculator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$SpeculatorEventDispatcher
+13	Registering class org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerAllocatorRouter
+14	Registering class org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerLauncherRouter
+15	Default file system [hdfs://msra-sa-41:9000]
+16	Default file system [hdfs://msra-sa-41:9000]
+17	Default file system [hdfs://msra-sa-41:9000]
+18	Emitting job history data to the timeline server is not enabled
+19	Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+20	loaded properties from hadoop-metrics2.properties
+21	Scheduled snapshot period at 10 second(s).
+22	MRAppMaster metrics system started
+23	Adding job token for job_1445144423722_0020 to jobTokenSecretManager
+24	Not uberizing job_1445144423722_0020 because: not enabled; too many maps; too much input;
+25	Input size for job job_1445144423722_0020 = 1256521728. Number of splits = 10
+26	Number of reduces for job job_1445144423722_0020 = 1
+27	job_1445144423722_0020Job Transitioned from NEW to INITED
+28	"MRAppMaster launching normal, non-uberized, multi-container job job_1445144423722_0020."
+29	Using callQueue class java.util.concurrent.LinkedBlockingQueue
+30	Starting Socket Reader #1 for port 62260
+31	Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+32	Instantiated MRClientService at MININT-FNANLI5.fareast.corp.microsoft.com/10.86.169.121:62260
+33	IPC Server Responder: starting
+34	IPC Server listener on 62260: starting
+35	Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+36	Http request log for http.requests.mapreduce is not defined
+37	Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+38	Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context mapreduce
+39	Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context static
+40	adding path spec: /mapreduce/*
+41	adding path spec: /ws/*
+42	Jetty bound to port 62267
+43	jetty-6.1.26
+44	Extract jar:file:/D:/hadoop-2.6.0-localbox/share/hadoop/yarn/hadoop-yarn-common-2.6.0-SNAPSHOT.jar!/webapps/mapreduce to C:\Users\msrabi\AppData\Local\Temp\Jetty_0_0_0_0_62267_mapreduce____.8n7xum\webapp
+45	Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:62267
+46	Web app /mapreduce started at 62267
+47	Registered webapp guice modules
+48	Using callQueue class java.util.concurrent.LinkedBlockingQueue
+49	JOB_CREATE job_1445144423722_0020
+50	nodeBlacklistingEnabled:true
+51	maxTaskFailuresPerNode is 3
+52	blacklistDisablePercent is 33
+53	Starting Socket Reader #1 for port 62270
+54	IPC Server listener on 62270: starting
+55	IPC Server Responder: starting
+56	Connecting to ResourceManager at msra-sa-41/10.190.173.170:8030
+57	"maxContainerCapability: <memory:8192, vCores:32>"
+58	queue: default
+59	Upper limit on the thread pool size is 500
+60	yarn.client.max-cached-nodemanagers-proxies : 0
+61	job_1445144423722_0020Job Transitioned from INITED to SETUP
+62	Processing the event EventType: JOB_SETUP
+63	job_1445144423722_0020Job Transitioned from SETUP to RUNNING
+64	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+65	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+66	task_1445144423722_0020_m_000000 Task Transitioned from NEW to SCHEDULED
+67	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+68	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+69	task_1445144423722_0020_m_000001 Task Transitioned from NEW to SCHEDULED
+70	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+71	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+72	task_1445144423722_0020_m_000002 Task Transitioned from NEW to SCHEDULED
+73	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+74	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+75	task_1445144423722_0020_m_000003 Task Transitioned from NEW to SCHEDULED
+76	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+77	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+78	task_1445144423722_0020_m_000004 Task Transitioned from NEW to SCHEDULED
+79	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+80	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+81	task_1445144423722_0020_m_000005 Task Transitioned from NEW to SCHEDULED
+82	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+83	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+84	task_1445144423722_0020_m_000006 Task Transitioned from NEW to SCHEDULED
+85	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+86	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+87	task_1445144423722_0020_m_000007 Task Transitioned from NEW to SCHEDULED
+88	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+89	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+90	task_1445144423722_0020_m_000008 Task Transitioned from NEW to SCHEDULED
+91	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+92	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+93	task_1445144423722_0020_m_000009 Task Transitioned from NEW to SCHEDULED
+94	task_1445144423722_0020_r_000000 Task Transitioned from NEW to SCHEDULED
+95	attempt_1445144423722_0020_m_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+96	attempt_1445144423722_0020_m_000001_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+97	attempt_1445144423722_0020_m_000002_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+98	attempt_1445144423722_0020_m_000003_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+99	attempt_1445144423722_0020_m_000004_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+100	attempt_1445144423722_0020_m_000005_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+101	attempt_1445144423722_0020_m_000006_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+102	attempt_1445144423722_0020_m_000007_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+103	attempt_1445144423722_0020_m_000008_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+104	attempt_1445144423722_0020_m_000009_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+105	attempt_1445144423722_0020_r_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+106	"mapResourceRequest:<memory:1024, vCores:1>"
+107	"Event Writer setup for JobId: job_1445144423722_0020, File: hdfs://msra-sa-41:9000/tmp/hadoop-yarn/staging/msrabi/.staging/job_1445144423722_0020/job_1445144423722_0020_1.jhist"
+108	"reduceResourceRequest:<memory:1024, vCores:1>"
+109	Before Scheduling: PendingReds:1 ScheduledMaps:10 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:0 ContRel:0 HostLocal:0 RackLocal:0
+110	"getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:10240, vCores:-17> knownNMs=4"
+111	"Recalculating schedule, headroom=<memory:10240, vCores:-17>"
+112	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+113	"Recalculating schedule, headroom=<memory:10240, vCores:-17>"
+114	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+115	Got allocated containers 1
+116	Resolved 04DN8IQ.fareast.corp.microsoft.com to /default-rack
+117	Assigned container container_1445144423722_0020_01_000002 to attempt_1445144423722_0020_m_000000_0
+118	"Recalculating schedule, headroom=<memory:8192, vCores:-19>"
+119	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+120	After Scheduling: PendingReds:1 ScheduledMaps:9 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:1 ContRel:0 HostLocal:0 RackLocal:1
+121	Resolved 04DN8IQ.fareast.corp.microsoft.com to /default-rack
+122	The job-jar file on the remote FS is hdfs://msra-sa-41:9000/tmp/hadoop-yarn/staging/msrabi/.staging/job_1445144423722_0020/job.jar
+123	The job-conf file on the remote FS is /tmp/hadoop-yarn/staging/msrabi/.staging/job_1445144423722_0020/job.xml
+124	Adding #0 tokens and #1 secret keys for NM use for launching container
+125	Size of containertokens_dob is 1
+126	Putting shuffle token in serviceData
+127	attempt_1445144423722_0020_m_000000_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+128	Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000002 taskAttempt attempt_1445144423722_0020_m_000000_0
+129	Launching attempt_1445144423722_0020_m_000000_0
+130	Opening proxy : 04DN8IQ.fareast.corp.microsoft.com:54883
+131	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000000_0 : 13562
+132	TaskAttempt: [attempt_1445144423722_0020_m_000000_0] using containerId: [container_1445144423722_0020_01_000002 on NM: [04DN8IQ.fareast.corp.microsoft.com:54883]
+133	attempt_1445144423722_0020_m_000000_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+134	ATTEMPT_START task_1445144423722_0020_m_000000
+135	task_1445144423722_0020_m_000000 Task Transitioned from SCHEDULED to RUNNING
+136	"getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:7168, vCores:-20> knownNMs=4"
+137	"Recalculating schedule, headroom=<memory:7168, vCores:-20>"
+138	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+139	Got allocated containers 1
+140	Resolved MININT-FNANLI5.fareast.corp.microsoft.com to /default-rack
+141	Assigned container container_1445144423722_0020_01_000003 to attempt_1445144423722_0020_m_000001_0
+142	"Recalculating schedule, headroom=<memory:5120, vCores:-22>"
+143	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+144	After Scheduling: PendingReds:1 ScheduledMaps:8 ScheduledReds:0 AssignedMaps:2 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:0 RackLocal:2
+145	Resolved MININT-FNANLI5.fareast.corp.microsoft.com to /default-rack
+146	attempt_1445144423722_0020_m_000001_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+147	Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000003 taskAttempt attempt_1445144423722_0020_m_000001_0
+148	Launching attempt_1445144423722_0020_m_000001_0
+149	Opening proxy : MININT-FNANLI5.fareast.corp.microsoft.com:52368
+150	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000001_0 : 13562
+151	TaskAttempt: [attempt_1445144423722_0020_m_000001_0] using containerId: [container_1445144423722_0020_01_000003 on NM: [MININT-FNANLI5.fareast.corp.microsoft.com:52368]
+152	attempt_1445144423722_0020_m_000001_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+153	ATTEMPT_START task_1445144423722_0020_m_000001
+154	task_1445144423722_0020_m_000001 Task Transitioned from SCHEDULED to RUNNING
+155	"getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:4096, vCores:-23> knownNMs=4"
+156	"Recalculating schedule, headroom=<memory:4096, vCores:-23>"
+157	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+158	Got allocated containers 1
+159	Resolved MININT-FNANLI5.fareast.corp.microsoft.com to /default-rack
+160	Assigned container container_1445144423722_0020_01_000004 to attempt_1445144423722_0020_m_000002_0
+161	"Recalculating schedule, headroom=<memory:3072, vCores:-24>"
+162	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+163	After Scheduling: PendingReds:1 ScheduledMaps:7 ScheduledReds:0 AssignedMaps:3 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:3 ContRel:0 HostLocal:0 RackLocal:3
+164	Resolved MININT-FNANLI5.fareast.corp.microsoft.com to /default-rack
+165	attempt_1445144423722_0020_m_000002_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+166	Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000004 taskAttempt attempt_1445144423722_0020_m_000002_0
+167	Launching attempt_1445144423722_0020_m_000002_0
+168	Opening proxy : MININT-FNANLI5.fareast.corp.microsoft.com:52368
+169	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000002_0 : 13562
+170	TaskAttempt: [attempt_1445144423722_0020_m_000002_0] using containerId: [container_1445144423722_0020_01_000004 on NM: [MININT-FNANLI5.fareast.corp.microsoft.com:52368]
+171	attempt_1445144423722_0020_m_000002_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+172	ATTEMPT_START task_1445144423722_0020_m_000002
+173	task_1445144423722_0020_m_000002 Task Transitioned from SCHEDULED to RUNNING
+174	"getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:1024, vCores:-26> knownNMs=4"
+175	"Recalculating schedule, headroom=<memory:1024, vCores:-26>"
+176	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+177	Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+178	JVM with ID : jvm_1445144423722_0020_m_000002 asked for a task
+179	JVM with ID: jvm_1445144423722_0020_m_000002 given task: attempt_1445144423722_0020_m_000000_0
+180	"Recalculating schedule, headroom=<memory:1024, vCores:-26>"
+181	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+182	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+183	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+184	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+185	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+186	Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+187	JVM with ID : jvm_1445144423722_0020_m_000003 asked for a task
+188	JVM with ID: jvm_1445144423722_0020_m_000003 given task: attempt_1445144423722_0020_m_000001_0
+189	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+190	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+191	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+192	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+193	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+194	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+195	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+196	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+197	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+198	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+199	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+200	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+201	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+202	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+203	Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+204	JVM with ID : jvm_1445144423722_0020_m_000004 asked for a task
+205	JVM with ID: jvm_1445144423722_0020_m_000004 given task: attempt_1445144423722_0020_m_000002_0
+206	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+207	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+208	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+209	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+210	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+211	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+212	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.023958297
+213	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+214	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+215	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+216	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+217	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+218	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+219	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+220	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+221	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.065791264
+222	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+223	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+224	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.05713628
+225	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+226	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+227	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+228	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+229	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+230	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+231	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10004553
+232	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.079464614
+233	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.06741504
+234	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+235	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+236	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+237	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+238	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+239	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+240	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+241	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+242	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+243	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.10501281
+244	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.103304505
+245	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+246	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+247	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+248	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+249	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+250	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+251	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+252	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.1066108
+253	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.10660437
+254	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+255	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+256	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+257	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+258	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+259	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+260	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+261	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.1066108
+262	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+263	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+264	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.10660437
+265	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+266	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+267	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+268	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+269	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+270	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.1066108
+271	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+272	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+273	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.10660437
+274	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+275	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+276	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+277	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+278	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+279	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+280	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+281	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.1066108
+282	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.10660437
+283	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+284	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+285	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+286	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+287	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+288	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+289	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+290	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+291	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+292	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.1066108
+293	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.10660437
+294	Got allocated containers 1
+295	Assigned container container_1445144423722_0020_01_000005 to attempt_1445144423722_0020_m_000003_0
+296	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+297	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+298	After Scheduling: PendingReds:1 ScheduledMaps:6 ScheduledReds:0 AssignedMaps:4 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:1 RackLocal:3
+299	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+300	attempt_1445144423722_0020_m_000003_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+301	Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000005 taskAttempt attempt_1445144423722_0020_m_000003_0
+302	Launching attempt_1445144423722_0020_m_000003_0
+303	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+304	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000003_0 : 13562
+305	TaskAttempt: [attempt_1445144423722_0020_m_000003_0] using containerId: [container_1445144423722_0020_01_000005 on NM: [MSRA-SA-41.fareast.corp.microsoft.com:7109]
+306	attempt_1445144423722_0020_m_000003_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+307	ATTEMPT_START task_1445144423722_0020_m_000003
+308	task_1445144423722_0020_m_000003 Task Transitioned from SCHEDULED to RUNNING
+309	"getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:0, vCores:-27> knownNMs=4"
+310	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+311	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+312	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+313	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+314	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+315	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.1066108
+316	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.10660437
+317	Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+318	JVM with ID : jvm_1445144423722_0020_m_000005 asked for a task
+319	JVM with ID: jvm_1445144423722_0020_m_000005 given task: attempt_1445144423722_0020_m_000003_0
+320	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+321	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+322	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+323	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+324	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+325	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+326	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+327	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.1066108
+328	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.10660437
+329	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+330	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+331	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+332	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+333	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+334	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+335	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+336	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+337	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+338	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.10875365
+339	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.10660437
+340	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.106493875
+341	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+342	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+343	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+344	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+345	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+346	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+347	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+348	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.14981231
+349	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.13841225
+350	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.106493875
+351	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+352	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+353	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+354	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+355	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.1430594
+356	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+357	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+358	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.19084874
+359	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.106493875
+360	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.17293417
+361	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+362	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+363	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+364	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+365	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+366	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+367	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.1795899
+368	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.17982168
+369	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.19211523
+370	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+371	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+372	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+373	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+374	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+375	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+376	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+377	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.19209063
+378	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+379	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.19211523
+380	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+381	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+382	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+383	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+384	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+385	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+386	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+387	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.19209063
+388	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+389	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+390	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+391	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.19211523
+392	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+393	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+394	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+395	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+396	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+397	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.20639901
+398	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+399	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+400	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+401	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.19211523
+402	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+403	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+404	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+405	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.27765483
+406	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+407	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+408	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+409	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+410	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+411	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.19211523
+412	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+413	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+414	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+415	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.27765483
+416	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+417	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+418	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+419	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+420	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+421	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+422	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+423	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.19211523
+424	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.27765483
+425	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+426	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+427	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+428	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+429	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+430	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+431	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.19211523
+432	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+433	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+434	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.358454
+435	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+436	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+437	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+438	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+439	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+440	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.36323506
+441	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+442	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+443	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+444	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.19211523
+445	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+446	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+447	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+448	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+449	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+450	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.36323506
+451	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+452	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+453	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+454	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.20757815
+455	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+456	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+457	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+458	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+459	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+460	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.36323506
+461	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+462	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+463	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+464	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.24035259
+465	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.22765201
+466	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+467	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+468	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.4486067
+469	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+470	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+471	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+472	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+473	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19716828
+474	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.26542902
+475	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.26314905
+476	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+477	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+478	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.4486067
+479	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+480	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+481	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+482	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+483	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.23859076
+484	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.27776006
+485	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+486	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+487	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.27772525
+488	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.4486067
+489	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+490	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+491	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+492	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+493	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.27776006
+494	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+495	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+496	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.2754006
+497	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.27772525
+498	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.5091932
+499	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+500	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+501	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+502	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+503	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+504	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+505	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.27776006
+506	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+507	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.5343203
+508	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.27772525
+509	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+510	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+511	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+512	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+513	Got allocated containers 2
+514	Assigned container container_1445144423722_0020_01_000006 to attempt_1445144423722_0020_m_000004_0
+515	Assigned container container_1445144423722_0020_01_000007 to attempt_1445144423722_0020_m_000005_0
+516	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+517	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+518	After Scheduling: PendingReds:1 ScheduledMaps:4 ScheduledReds:0 AssignedMaps:6 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:6 ContRel:0 HostLocal:3 RackLocal:3
+519	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+520	attempt_1445144423722_0020_m_000004_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+521	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+522	attempt_1445144423722_0020_m_000005_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+523	Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000006 taskAttempt attempt_1445144423722_0020_m_000004_0
+524	Launching attempt_1445144423722_0020_m_000004_0
+525	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+526	Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000007 taskAttempt attempt_1445144423722_0020_m_000005_0
+527	Launching attempt_1445144423722_0020_m_000005_0
+528	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+529	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000004_0 : 13562
+530	TaskAttempt: [attempt_1445144423722_0020_m_000004_0] using containerId: [container_1445144423722_0020_01_000006 on NM: [MSRA-SA-41.fareast.corp.microsoft.com:7109]
+531	attempt_1445144423722_0020_m_000004_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+532	ATTEMPT_START task_1445144423722_0020_m_000004
+533	task_1445144423722_0020_m_000004 Task Transitioned from SCHEDULED to RUNNING
+534	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000005_0 : 13562
+535	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.5343203
+536	TaskAttempt: [attempt_1445144423722_0020_m_000005_0] using containerId: [container_1445144423722_0020_01_000007 on NM: [MSRA-SA-41.fareast.corp.microsoft.com:7109]
+537	attempt_1445144423722_0020_m_000005_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+538	ATTEMPT_START task_1445144423722_0020_m_000005
+539	task_1445144423722_0020_m_000005 Task Transitioned from SCHEDULED to RUNNING
+540	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.27776006
+541	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+542	"getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=1 finishedContainers=0 resourcelimit=<memory:0, vCores:-27> knownNMs=4"
+543	Got allocated containers 1
+544	Assigned container container_1445144423722_0020_01_000008 to attempt_1445144423722_0020_m_000006_0
+545	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+546	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+547	After Scheduling: PendingReds:1 ScheduledMaps:3 ScheduledReds:0 AssignedMaps:7 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:4 RackLocal:3
+548	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+549	attempt_1445144423722_0020_m_000006_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+550	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.27772525
+551	Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000008 taskAttempt attempt_1445144423722_0020_m_000006_0
+552	Launching attempt_1445144423722_0020_m_000006_0
+553	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+554	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000006_0 : 13562
+555	TaskAttempt: [attempt_1445144423722_0020_m_000006_0] using containerId: [container_1445144423722_0020_01_000008 on NM: [MSRA-SA-41.fareast.corp.microsoft.com:7109]
+556	attempt_1445144423722_0020_m_000006_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+557	ATTEMPT_START task_1445144423722_0020_m_000006
+558	task_1445144423722_0020_m_000006 Task Transitioned from SCHEDULED to RUNNING
+559	Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+560	Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+561	JVM with ID : jvm_1445144423722_0020_m_000007 asked for a task
+562	JVM with ID : jvm_1445144423722_0020_m_000006 asked for a task
+563	JVM with ID: jvm_1445144423722_0020_m_000007 given task: attempt_1445144423722_0020_m_000005_0
+564	JVM with ID: jvm_1445144423722_0020_m_000006 given task: attempt_1445144423722_0020_m_000004_0
+565	"getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:0, vCores:-27> knownNMs=4"
+566	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+567	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+568	Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+569	JVM with ID : jvm_1445144423722_0020_m_000008 asked for a task
+570	JVM with ID: jvm_1445144423722_0020_m_000008 given task: attempt_1445144423722_0020_m_000006_0
+571	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+572	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+573	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.5343203
+574	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.27776006
+575	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+576	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+577	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.27772525
+578	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+579	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+580	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+581	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+582	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+583	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.5806522
+584	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+585	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+586	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.27776006
+587	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.27772525
+588	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+589	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+590	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+591	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.10685723
+592	Got allocated containers 1
+593	Assigned container container_1445144423722_0020_01_000009 to attempt_1445144423722_0020_m_000007_0
+594	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+595	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+596	After Scheduling: PendingReds:1 ScheduledMaps:2 ScheduledReds:0 AssignedMaps:8 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:8 ContRel:0 HostLocal:5 RackLocal:3
+597	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+598	attempt_1445144423722_0020_m_000007_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+599	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.10680563
+600	Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000009 taskAttempt attempt_1445144423722_0020_m_000007_0
+601	Launching attempt_1445144423722_0020_m_000007_0
+602	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+603	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.6199081
+604	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000007_0 : 13562
+605	TaskAttempt: [attempt_1445144423722_0020_m_000007_0] using containerId: [container_1445144423722_0020_01_000009 on NM: [MSRA-SA-41.fareast.corp.microsoft.com:7109]
+606	attempt_1445144423722_0020_m_000007_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+607	ATTEMPT_START task_1445144423722_0020_m_000007
+608	task_1445144423722_0020_m_000007 Task Transitioned from SCHEDULED to RUNNING
+609	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.106964506
+610	"getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:0, vCores:-27> knownNMs=4"
+611	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+612	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+613	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.27776006
+614	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.27772525
+615	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+616	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+617	Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+618	JVM with ID : jvm_1445144423722_0020_m_000009 asked for a task
+619	JVM with ID: jvm_1445144423722_0020_m_000009 given task: attempt_1445144423722_0020_m_000007_0
+620	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+621	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.10685723
+622	Got allocated containers 1
+623	Assigned container container_1445144423722_0020_01_000010 to attempt_1445144423722_0020_m_000008_0
+624	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+625	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+626	After Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:9 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:9 ContRel:0 HostLocal:6 RackLocal:3
+627	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+628	attempt_1445144423722_0020_m_000008_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+629	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.10680563
+630	Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000010 taskAttempt attempt_1445144423722_0020_m_000008_0
+631	Launching attempt_1445144423722_0020_m_000008_0
+632	Opening proxy : MSRA-SA-39.fareast.corp.microsoft.com:28345
+633	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.6199081
+634	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000008_0 : 13562
+635	TaskAttempt: [attempt_1445144423722_0020_m_000008_0] using containerId: [container_1445144423722_0020_01_000010 on NM: [MSRA-SA-39.fareast.corp.microsoft.com:28345]
+636	attempt_1445144423722_0020_m_000008_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+637	ATTEMPT_START task_1445144423722_0020_m_000008
+638	task_1445144423722_0020_m_000008 Task Transitioned from SCHEDULED to RUNNING
+639	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.106964506
+640	"getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=1 finishedContainers=0 resourcelimit=<memory:0, vCores:-27> knownNMs=4"
+641	Got allocated containers 1
+642	Assigned container container_1445144423722_0020_01_000011 to attempt_1445144423722_0020_m_000009_0
+643	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+644	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+645	After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:10 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:10 ContRel:0 HostLocal:7 RackLocal:3
+646	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+647	attempt_1445144423722_0020_m_000009_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+648	Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000011 taskAttempt attempt_1445144423722_0020_m_000009_0
+649	Launching attempt_1445144423722_0020_m_000009_0
+650	Opening proxy : MSRA-SA-39.fareast.corp.microsoft.com:28345
+651	Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000009_0 : 13562
+652	TaskAttempt: [attempt_1445144423722_0020_m_000009_0] using containerId: [container_1445144423722_0020_01_000011 on NM: [MSRA-SA-39.fareast.corp.microsoft.com:28345]
+653	attempt_1445144423722_0020_m_000009_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+654	ATTEMPT_START task_1445144423722_0020_m_000009
+655	task_1445144423722_0020_m_000009 Task Transitioned from SCHEDULED to RUNNING
+656	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.27776006
+657	"getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=1 finishedContainers=0 resourcelimit=<memory:0, vCores:-27> knownNMs=4"
+658	Got allocated containers 1
+659	"Cannot assign container Container: [ContainerId: container_1445144423722_0020_01_000012, NodeId: MSRA-SA-39.fareast.corp.microsoft.com:28345, NodeHttpAddress: MSRA-SA-39.fareast.corp.microsoft.com:8042, Resource: <memory:1024, vCores:1>, Priority: 20, Token: Token { kind: ContainerToken, service: 172.22.149.145:28345 }, ] for a map as either  container memory less than required <memory:1024, vCores:1> or no pending map tasks - maps.isEmpty=true"
+660	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+661	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+662	After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:10 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+663	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.27772525
+664	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+665	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.10685723
+666	"getResources() for application_1445144423722_0020: ask=0 release= 1 newContainers=0 finishedContainers=1 resourcelimit=<memory:1024, vCores:-26> knownNMs=4"
+667	Received completed container container_1445144423722_0020_01_000012
+668	Container complete event for unknown container id container_1445144423722_0020_01_000012
+669	"Recalculating schedule, headroom=<memory:1024, vCores:-26>"
+670	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+671	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.10680563
+672	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.6199081
+673	Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+674	JVM with ID : jvm_1445144423722_0020_m_000010 asked for a task
+675	JVM with ID: jvm_1445144423722_0020_m_000010 given task: attempt_1445144423722_0020_m_000008_0
+676	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.106964506
+677	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+678	Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+679	Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+680	JVM with ID : jvm_1445144423722_0020_m_000011 asked for a task
+681	JVM with ID: jvm_1445144423722_0020_m_000011 given task: attempt_1445144423722_0020_m_000009_0
+682	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.29115766
+683	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.6199081
+684	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.2898827
+685	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+686	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.19247705
+687	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.18529637
+688	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.10681946
+689	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.667
+690	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.19266446
+691	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.31981927
+692	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.32958937
+693	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.19247705
+694	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.19242907
+695	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.10681946
+696	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+697	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.667
+698	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.19266446
+699	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.106881365
+700	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.295472
+701	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.19247705
+702	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.3512319
+703	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.19242907
+704	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.10681946
+705	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.36317363
+706	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.667
+707	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+708	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.19266446
+709	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.106881365
+710	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.295472
+711	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.19247705
+712	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.19242907
+713	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.1337379
+714	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.6854124
+715	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.36319977
+716	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.36317363
+717	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.29998285
+718	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.19266446
+719	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.106881365
+720	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.295472
+721	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.27813601
+722	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.25258622
+723	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.19255035
+724	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.7198902
+725	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.36319977
+726	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.36317363
+727	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.27613032
+728	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.33995733
+729	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.106881365
+730	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.295472
+731	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.27813601
+732	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.2781602
+733	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.19255035
+734	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.7607953
+735	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.2783809
+736	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.36319977
+737	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.36317363
+738	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.106881365
+739	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.3624012
+740	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.295472
+741	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.27813601
+742	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.2781602
+743	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.19255035
+744	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.80356
+745	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.2783809
+746	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.36319977
+747	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.18216328
+748	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.36317363
+749	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.3624012
+750	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.4956123
+751	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.32285523
+752	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.25511068
+753	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.2781602
+754	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.83331466
+755	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.29597813
+756	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.19258286
+757	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.36319977
+758	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.5323719
+759	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.36317363
+760	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.3624012
+761	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.36390656
+762	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.27825075
+763	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.36388028
+764	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.87672114
+765	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.36404583
+766	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.19258286
+767	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.5323719
+768	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.36319977
+769	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.36390656
+770	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.36317363
+771	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.36388028
+772	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.27825075
+773	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.9185183
+774	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.3624012
+775	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.36404583
+776	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.19258286
+777	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.5323719
+778	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.36390656
+779	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.36319977
+780	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.36388028
+781	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.27825075
+782	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.36317363
+783	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.9543898
+784	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.36404583
+785	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.3624012
+786	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.5323719
+787	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.27811313
+788	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.667
+789	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.43890014
+790	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.36388028
+791	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.35880664
+792	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.9854844
+793	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.4156165
+794	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.3624012
+795	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.27811313
+796	Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 1.0
+797	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.36319977
+798	Done acknowledgement from attempt_1445144423722_0020_m_000003_0
+799	attempt_1445144423722_0020_m_000003_0 TaskAttempt Transitioned from RUNNING to SUCCESS_CONTAINER_CLEANUP
+800	Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1445144423722_0020_01_000005 taskAttempt attempt_1445144423722_0020_m_000003_0
+801	KILLING attempt_1445144423722_0020_m_000003_0
+802	Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+803	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.3673702
+804	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.667
+805	attempt_1445144423722_0020_m_000003_0 TaskAttempt Transitioned from SUCCESS_CONTAINER_CLEANUP to SUCCEEDED
+806	Task succeeded with attempt attempt_1445144423722_0020_m_000003_0
+807	task_1445144423722_0020_m_000003 Task Transitioned from RUNNING to SUCCEEDED
+808	Num completed Tasks: 1
+809	Before Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:10 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+810	"Recalculating schedule, headroom=<memory:0, vCores:-27>"
+811	Reduce slow start threshold reached. Scheduling reduces.
+812	All maps assigned. Ramping up all remaining reduces:1
+813	After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:1 AssignedMaps:10 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+814	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.3638923
+815	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.44950968
+816	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.44968578
+817	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1445144423722_0020_m_000000
+818	We launched 1 speculations.  Sleeping 15000 milliseconds.
+819	Scheduling a redundant attempt for task task_1445144423722_0020_m_000000
+820	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+821	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+822	attempt_1445144423722_0020_m_000000_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+823	Before Scheduling: PendingReds:0 ScheduledMaps:1 ScheduledReds:1 AssignedMaps:10 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+824	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.44980705
+825	"getResources() for application_1445144423722_0020: ask=5 release= 0 newContainers=0 finishedContainers=1 resourcelimit=<memory:0, vCores:-27> knownNMs=4"
+826	Received completed container container_1445144423722_0020_01_000005
+827	After Scheduling: PendingReds:0 ScheduledMaps:1 ScheduledReds:1 AssignedMaps:9 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+828	Diagnostics report from attempt_1445144423722_0020_m_000003_0: Container killed by the ApplicationMaster.
+829	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.3624012
+830	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37225527
+831	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.3787692
+832	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.667
+833	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.27811313
+834	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.3638923
+835	Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.44950968
+836	Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.44968578
+837	Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.44980705
+838	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37322965
+839	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38007197
+840	Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.3624012
+841	Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.76133776
+842	Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.34610128
+843	Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.3707891
+844	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+845	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+846	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+847	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+848	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+849	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 30 seconds.  Will retry shortly ...
+850	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+851	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 31 seconds.  Will retry shortly ...
+852	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+853	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 32 seconds.  Will retry shortly ...
+854	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+855	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 33 seconds.  Will retry shortly ...
+856	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+857	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 34 seconds.  Will retry shortly ...
+858	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+859	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 35 seconds.  Will retry shortly ...
+860	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+861	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 36 seconds.  Will retry shortly ...
+862	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+863	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 37 seconds.  Will retry shortly ...
+864	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+865	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 38 seconds.  Will retry shortly ...
+866	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+867	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 39 seconds.  Will retry shortly ...
+868	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+869	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 40 seconds.  Will retry shortly ...
+870	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+871	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 41 seconds.  Will retry shortly ...
+872	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+873	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 42 seconds.  Will retry shortly ...
+874	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+875	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 43 seconds.  Will retry shortly ...
+876	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+877	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 44 seconds.  Will retry shortly ...
+878	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+879	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 45 seconds.  Will retry shortly ...
+880	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+881	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 46 seconds.  Will retry shortly ...
+882	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+883	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 47 seconds.  Will retry shortly ...
+884	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+885	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 48 seconds.  Will retry shortly ...
+886	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+887	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 49 seconds.  Will retry shortly ...
+888	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+889	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 50 seconds.  Will retry shortly ...
+890	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+891	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 51 seconds.  Will retry shortly ...
+892	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+893	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 52 seconds.  Will retry shortly ...
+894	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+895	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 53 seconds.  Will retry shortly ...
+896	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+897	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 54 seconds.  Will retry shortly ...
+898	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+899	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 55 seconds.  Will retry shortly ...
+900	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+901	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 56 seconds.  Will retry shortly ...
+902	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+903	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 57 seconds.  Will retry shortly ...
+904	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+905	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 58 seconds.  Will retry shortly ...
+906	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+907	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 59 seconds.  Will retry shortly ...
+908	"Slow ReadProcessor read fields took 65020ms (threshold=30000ms); ack: seqno: -2 status: SUCCESS status: ERROR downstreamAckTimeNanos: 0, targets: [10.86.169.121:50010, 10.190.173.170:50010]"
+909	DFSOutputStream ResponseProcessor exception  for block BP-1347369012-10.190.173.170-1444972147527:blk_1073743512_2731
+910	"Error Recovery for block BP-1347369012-10.190.173.170-1444972147527:blk_1073743512_2731 in pipeline 10.86.169.121:50010, 10.190.173.170:50010: bad datanode 10.190.173.170:50010"
+911	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+912	DataStreamer Exception
+913	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+914	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 60 seconds.  Will retry shortly ...
+915	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+916	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 61 seconds.  Will retry shortly ...
+917	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+918	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 62 seconds.  Will retry shortly ...
+919	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+920	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 63 seconds.  Will retry shortly ...
+921	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+922	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 64 seconds.  Will retry shortly ...
+923	ERROR IN CONTACTING RM.
+924	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+925	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 65 seconds.  Will retry shortly ...
+926	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+927	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+928	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+929	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 66 seconds.  Will retry shortly ...
+930	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+931	ERROR IN CONTACTING RM.
+932	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+933	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 67 seconds.  Will retry shortly ...
+934	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+935	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+936	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 68 seconds.  Will retry shortly ...
+937	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+938	ERROR IN CONTACTING RM.
+939	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+940	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+941	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+942	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 69 seconds.  Will retry shortly ...
+943	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+944	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+945	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 70 seconds.  Will retry shortly ...
+946	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+947	ERROR IN CONTACTING RM.
+948	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+949	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 71 seconds.  Will retry shortly ...
+950	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+951	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+952	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+953	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+954	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 72 seconds.  Will retry shortly ...
+955	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+956	ERROR IN CONTACTING RM.
+957	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+958	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 73 seconds.  Will retry shortly ...
+959	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+960	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+961	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 74 seconds.  Will retry shortly ...
+962	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+963	ERROR IN CONTACTING RM.
+964	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+965	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+966	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+967	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 75 seconds.  Will retry shortly ...
+968	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+969	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+970	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 76 seconds.  Will retry shortly ...
+971	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+972	ERROR IN CONTACTING RM.
+973	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+974	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 77 seconds.  Will retry shortly ...
+975	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+976	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+977	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+978	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+979	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 78 seconds.  Will retry shortly ...
+980	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+981	ERROR IN CONTACTING RM.
+982	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+983	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 79 seconds.  Will retry shortly ...
+984	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+985	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+986	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 80 seconds.  Will retry shortly ...
+987	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+988	ERROR IN CONTACTING RM.
+989	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+990	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+991	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+992	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 81 seconds.  Will retry shortly ...
+993	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+994	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+995	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 82 seconds.  Will retry shortly ...
+996	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+997	ERROR IN CONTACTING RM.
+998	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+999	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 83 seconds.  Will retry shortly ...
+1000	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1001	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+1002	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1003	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 84 seconds.  Will retry shortly ...
+1004	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+1005	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1006	ERROR IN CONTACTING RM.
+1007	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1008	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 85 seconds.  Will retry shortly ...
+1009	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1010	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1011	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 86 seconds.  Will retry shortly ...
+1012	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1013	ERROR IN CONTACTING RM.
+1014	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1015	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 87 seconds.  Will retry shortly ...
+1016	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+1017	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1018	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+1019	Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+1020	Task: attempt_1445144423722_0020_m_000002_0 - exited : java.net.NoRouteToHostException: No Route to Host from  MININT-FNANLI5/127.0.0.1 to msra-sa-41:9000 failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+1021	Diagnostics report from attempt_1445144423722_0020_m_000002_0: Error: java.net.NoRouteToHostException: No Route to Host from  MININT-FNANLI5/127.0.0.1 to msra-sa-41:9000 failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+1022	Diagnostics report from attempt_1445144423722_0020_m_000002_0: Error: java.net.NoRouteToHostException: No Route to Host from  MININT-FNANLI5/127.0.0.1 to msra-sa-41:9000 failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+1023	attempt_1445144423722_0020_m_000002_0 TaskAttempt Transitioned from RUNNING to FAIL_CONTAINER_CLEANUP
+1024	Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1445144423722_0020_01_000004 taskAttempt attempt_1445144423722_0020_m_000002_0
+1025	KILLING attempt_1445144423722_0020_m_000002_0
+1026	Opening proxy : MININT-FNANLI5.fareast.corp.microsoft.com:52368
+1027	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1028	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 88 seconds.  Will retry shortly ...
+1029	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1030	ERROR IN CONTACTING RM.
+1031	attempt_1445144423722_0020_m_000002_0 TaskAttempt Transitioned from FAIL_CONTAINER_CLEANUP to FAIL_TASK_CLEANUP
+1032	Processing the event EventType: TASK_ABORT
+1033	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1034	Task cleanup failed for attempt attempt_1445144423722_0020_m_000002_0
+1035	attempt_1445144423722_0020_m_000002_0 TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+1036	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+1037	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+1038	attempt_1445144423722_0020_m_000002_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+1039	Error writing History Event: org.apache.hadoop.mapreduce.jobhistory.TaskAttemptUnsuccessfulCompletionEvent@7317849d
+1040	"Thread Thread[eventHandlingThread,5,main] threw an Exception."
+1041	1 failures on node MININT-FNANLI5.fareast.corp.microsoft.com
+1042	Added attempt_1445144423722_0020_m_000002_1 to list of failed maps
+1043	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1044	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 89 seconds.  Will retry shortly ...
+1045	Before Scheduling: PendingReds:0 ScheduledMaps:2 ScheduledReds:1 AssignedMaps:9 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+1046	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1047	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1048	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 90 seconds.  Will retry shortly ...
+1049	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1050	ERROR IN CONTACTING RM.
+1051	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+1052	Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+1053	Task: attempt_1445144423722_0020_m_000001_0 - exited : java.net.NoRouteToHostException: No Route to Host from  MININT-FNANLI5/127.0.0.1 to msra-sa-41:9000 failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+1054	Diagnostics report from attempt_1445144423722_0020_m_000001_0: Error: java.net.NoRouteToHostException: No Route to Host from  MININT-FNANLI5/127.0.0.1 to msra-sa-41:9000 failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+1055	Diagnostics report from attempt_1445144423722_0020_m_000001_0: Error: java.net.NoRouteToHostException: No Route to Host from  MININT-FNANLI5/127.0.0.1 to msra-sa-41:9000 failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+1056	attempt_1445144423722_0020_m_000001_0 TaskAttempt Transitioned from RUNNING to FAIL_CONTAINER_CLEANUP
+1057	Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1445144423722_0020_01_000003 taskAttempt attempt_1445144423722_0020_m_000001_0
+1058	KILLING attempt_1445144423722_0020_m_000001_0
+1059	Opening proxy : MININT-FNANLI5.fareast.corp.microsoft.com:52368
+1060	attempt_1445144423722_0020_m_000001_0 TaskAttempt Transitioned from FAIL_CONTAINER_CLEANUP to FAIL_TASK_CLEANUP
+1061	Processing the event EventType: TASK_ABORT
+1062	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1063	Task cleanup failed for attempt attempt_1445144423722_0020_m_000001_0
+1064	attempt_1445144423722_0020_m_000001_0 TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+1065	Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+1066	Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+1067	attempt_1445144423722_0020_m_000001_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+1068	2 failures on node MININT-FNANLI5.fareast.corp.microsoft.com
+1069	Added attempt_1445144423722_0020_m_000001_1 to list of failed maps
+1070	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1071	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 91 seconds.  Will retry shortly ...
+1072	Before Scheduling: PendingReds:0 ScheduledMaps:3 ScheduledReds:1 AssignedMaps:9 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+1073	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1074	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1075	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 92 seconds.  Will retry shortly ...
+1076	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1077	ERROR IN CONTACTING RM.
+1078	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1079	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 93 seconds.  Will retry shortly ...
+1080	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1081	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1082	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 94 seconds.  Will retry shortly ...
+1083	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1084	ERROR IN CONTACTING RM.
+1085	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1086	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 95 seconds.  Will retry shortly ...
+1087	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1088	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1089	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 96 seconds.  Will retry shortly ...
+1090	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1091	ERROR IN CONTACTING RM.
+1092	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1093	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 97 seconds.  Will retry shortly ...
+1094	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1095	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1096	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 98 seconds.  Will retry shortly ...
+1097	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1098	ERROR IN CONTACTING RM.
+1099	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1100	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1101	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 99 seconds.  Will retry shortly ...
+1102	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1103	ERROR IN CONTACTING RM.
+1104	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1105	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 100 seconds.  Will retry shortly ...
+1106	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1107	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1108	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 101 seconds.  Will retry shortly ...
+1109	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1110	ERROR IN CONTACTING RM.
+1111	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1112	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 102 seconds.  Will retry shortly ...
+1113	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1114	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1115	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 103 seconds.  Will retry shortly ...
+1116	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1117	ERROR IN CONTACTING RM.
+1118	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1119	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 104 seconds.  Will retry shortly ...
+1120	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1121	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1122	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 105 seconds.  Will retry shortly ...
+1123	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1124	ERROR IN CONTACTING RM.
+1125	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1126	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 106 seconds.  Will retry shortly ...
+1127	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1128	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1129	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 107 seconds.  Will retry shortly ...
+1130	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1131	ERROR IN CONTACTING RM.
+1132	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1133	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 108 seconds.  Will retry shortly ...
+1134	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1135	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1136	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 109 seconds.  Will retry shortly ...
+1137	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1138	ERROR IN CONTACTING RM.
+1139	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1140	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 110 seconds.  Will retry shortly ...
+1141	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1142	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1143	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 111 seconds.  Will retry shortly ...
+1144	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1145	ERROR IN CONTACTING RM.
+1146	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1147	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 112 seconds.  Will retry shortly ...
+1148	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1149	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1150	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 113 seconds.  Will retry shortly ...
+1151	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1152	ERROR IN CONTACTING RM.
+1153	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1154	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 114 seconds.  Will retry shortly ...
+1155	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1156	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1157	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 115 seconds.  Will retry shortly ...
+1158	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1159	ERROR IN CONTACTING RM.
+1160	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1161	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 116 seconds.  Will retry shortly ...
+1162	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1163	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1164	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 117 seconds.  Will retry shortly ...
+1165	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1166	ERROR IN CONTACTING RM.
+1167	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1168	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 118 seconds.  Will retry shortly ...
+1169	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1170	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1171	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 119 seconds.  Will retry shortly ...
+1172	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1173	ERROR IN CONTACTING RM.
+1174	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1175	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 120 seconds.  Will retry shortly ...
+1176	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1177	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1178	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 121 seconds.  Will retry shortly ...
+1179	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1180	ERROR IN CONTACTING RM.
+1181	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1182	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 122 seconds.  Will retry shortly ...
+1183	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1184	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1185	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 123 seconds.  Will retry shortly ...
+1186	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1187	ERROR IN CONTACTING RM.
+1188	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1189	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 124 seconds.  Will retry shortly ...
+1190	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1191	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1192	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 125 seconds.  Will retry shortly ...
+1193	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1194	ERROR IN CONTACTING RM.
+1195	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1196	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 126 seconds.  Will retry shortly ...
+1197	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1198	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1199	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 127 seconds.  Will retry shortly ...
+1200	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1201	ERROR IN CONTACTING RM.
+1202	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1203	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 128 seconds.  Will retry shortly ...
+1204	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1205	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1206	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 129 seconds.  Will retry shortly ...
+1207	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1208	ERROR IN CONTACTING RM.
+1209	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1210	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 130 seconds.  Will retry shortly ...
+1211	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1212	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1213	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 131 seconds.  Will retry shortly ...
+1214	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1215	ERROR IN CONTACTING RM.
+1216	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1217	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 132 seconds.  Will retry shortly ...
+1218	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1219	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1220	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 133 seconds.  Will retry shortly ...
+1221	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1222	ERROR IN CONTACTING RM.
+1223	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1224	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 134 seconds.  Will retry shortly ...
+1225	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1226	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1227	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 135 seconds.  Will retry shortly ...
+1228	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1229	ERROR IN CONTACTING RM.
+1230	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1231	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 136 seconds.  Will retry shortly ...
+1232	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1233	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1234	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 137 seconds.  Will retry shortly ...
+1235	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1236	ERROR IN CONTACTING RM.
+1237	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1238	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 138 seconds.  Will retry shortly ...
+1239	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1240	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1241	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 139 seconds.  Will retry shortly ...
+1242	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1243	ERROR IN CONTACTING RM.
+1244	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1245	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 140 seconds.  Will retry shortly ...
+1246	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1247	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1248	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 141 seconds.  Will retry shortly ...
+1249	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1250	ERROR IN CONTACTING RM.
+1251	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1252	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 142 seconds.  Will retry shortly ...
+1253	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1254	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1255	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 143 seconds.  Will retry shortly ...
+1256	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1257	ERROR IN CONTACTING RM.
+1258	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1259	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 144 seconds.  Will retry shortly ...
+1260	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1261	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1262	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 145 seconds.  Will retry shortly ...
+1263	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1264	ERROR IN CONTACTING RM.
+1265	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1266	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 146 seconds.  Will retry shortly ...
+1267	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1268	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1269	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 147 seconds.  Will retry shortly ...
+1270	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1271	ERROR IN CONTACTING RM.
+1272	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1273	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 148 seconds.  Will retry shortly ...
+1274	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1275	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1276	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 149 seconds.  Will retry shortly ...
+1277	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1278	ERROR IN CONTACTING RM.
+1279	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1280	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 150 seconds.  Will retry shortly ...
+1281	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1282	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1283	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 151 seconds.  Will retry shortly ...
+1284	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1285	ERROR IN CONTACTING RM.
+1286	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1287	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 152 seconds.  Will retry shortly ...
+1288	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1289	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1290	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 153 seconds.  Will retry shortly ...
+1291	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1292	ERROR IN CONTACTING RM.
+1293	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1294	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 154 seconds.  Will retry shortly ...
+1295	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1296	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1297	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 155 seconds.  Will retry shortly ...
+1298	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1299	ERROR IN CONTACTING RM.
+1300	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1301	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 156 seconds.  Will retry shortly ...
+1302	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1303	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1304	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 157 seconds.  Will retry shortly ...
+1305	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1306	ERROR IN CONTACTING RM.
+1307	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1308	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 158 seconds.  Will retry shortly ...
+1309	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1310	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1311	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 159 seconds.  Will retry shortly ...
+1312	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1313	ERROR IN CONTACTING RM.
+1314	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1315	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 160 seconds.  Will retry shortly ...
+1316	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1317	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1318	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 161 seconds.  Will retry shortly ...
+1319	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1320	ERROR IN CONTACTING RM.
+1321	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1322	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 162 seconds.  Will retry shortly ...
+1323	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1324	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1325	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 163 seconds.  Will retry shortly ...
+1326	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1327	ERROR IN CONTACTING RM.
+1328	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1329	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 164 seconds.  Will retry shortly ...
+1330	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1331	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1332	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 165 seconds.  Will retry shortly ...
+1333	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1334	ERROR IN CONTACTING RM.
+1335	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1336	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 166 seconds.  Will retry shortly ...
+1337	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1338	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1339	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 167 seconds.  Will retry shortly ...
+1340	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1341	ERROR IN CONTACTING RM.
+1342	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1343	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 168 seconds.  Will retry shortly ...
+1344	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1345	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1346	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 169 seconds.  Will retry shortly ...
+1347	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1348	ERROR IN CONTACTING RM.
+1349	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1350	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 171 seconds.  Will retry shortly ...
+1351	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1352	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1353	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 172 seconds.  Will retry shortly ...
+1354	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1355	ERROR IN CONTACTING RM.
+1356	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1357	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 173 seconds.  Will retry shortly ...
+1358	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1359	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1360	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 174 seconds.  Will retry shortly ...
+1361	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1362	ERROR IN CONTACTING RM.
+1363	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1364	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 175 seconds.  Will retry shortly ...
+1365	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1366	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1367	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 176 seconds.  Will retry shortly ...
+1368	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1369	ERROR IN CONTACTING RM.
+1370	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1371	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 177 seconds.  Will retry shortly ...
+1372	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1373	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1374	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 178 seconds.  Will retry shortly ...
+1375	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1376	ERROR IN CONTACTING RM.
+1377	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1378	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 179 seconds.  Will retry shortly ...
+1379	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1380	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1381	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 180 seconds.  Will retry shortly ...
+1382	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1383	ERROR IN CONTACTING RM.
+1384	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1385	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 181 seconds.  Will retry shortly ...
+1386	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1387	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1388	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 182 seconds.  Will retry shortly ...
+1389	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1390	ERROR IN CONTACTING RM.
+1391	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1392	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 183 seconds.  Will retry shortly ...
+1393	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1394	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1395	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 184 seconds.  Will retry shortly ...
+1396	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1397	ERROR IN CONTACTING RM.
+1398	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1399	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 185 seconds.  Will retry shortly ...
+1400	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1401	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1402	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 186 seconds.  Will retry shortly ...
+1403	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1404	ERROR IN CONTACTING RM.
+1405	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1406	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 187 seconds.  Will retry shortly ...
+1407	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1408	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1409	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 188 seconds.  Will retry shortly ...
+1410	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1411	ERROR IN CONTACTING RM.
+1412	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1413	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 189 seconds.  Will retry shortly ...
+1414	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1415	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1416	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 190 seconds.  Will retry shortly ...
+1417	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1418	ERROR IN CONTACTING RM.
+1419	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1420	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 191 seconds.  Will retry shortly ...
+1421	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1422	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1423	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 192 seconds.  Will retry shortly ...
+1424	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1425	ERROR IN CONTACTING RM.
+1426	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1427	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 193 seconds.  Will retry shortly ...
+1428	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1429	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1430	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 194 seconds.  Will retry shortly ...
+1431	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1432	ERROR IN CONTACTING RM.
+1433	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1434	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 195 seconds.  Will retry shortly ...
+1435	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1436	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1437	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 196 seconds.  Will retry shortly ...
+1438	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1439	ERROR IN CONTACTING RM.
+1440	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1441	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 197 seconds.  Will retry shortly ...
+1442	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1443	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1444	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 198 seconds.  Will retry shortly ...
+1445	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1446	ERROR IN CONTACTING RM.
+1447	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1448	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 199 seconds.  Will retry shortly ...
+1449	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1450	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1451	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 200 seconds.  Will retry shortly ...
+1452	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1453	ERROR IN CONTACTING RM.
+1454	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1455	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 201 seconds.  Will retry shortly ...
+1456	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1457	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1458	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 202 seconds.  Will retry shortly ...
+1459	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1460	ERROR IN CONTACTING RM.
+1461	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1462	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 203 seconds.  Will retry shortly ...
+1463	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1464	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1465	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 204 seconds.  Will retry shortly ...
+1466	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1467	ERROR IN CONTACTING RM.
+1468	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1469	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 205 seconds.  Will retry shortly ...
+1470	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1471	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1472	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 206 seconds.  Will retry shortly ...
+1473	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1474	ERROR IN CONTACTING RM.
+1475	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1476	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 207 seconds.  Will retry shortly ...
+1477	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1478	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1479	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 208 seconds.  Will retry shortly ...
+1480	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1481	ERROR IN CONTACTING RM.
+1482	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1483	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 209 seconds.  Will retry shortly ...
+1484	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1485	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1486	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 210 seconds.  Will retry shortly ...
+1487	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1488	ERROR IN CONTACTING RM.
+1489	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1490	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 211 seconds.  Will retry shortly ...
+1491	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1492	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1493	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 212 seconds.  Will retry shortly ...
+1494	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1495	ERROR IN CONTACTING RM.
+1496	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1497	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 213 seconds.  Will retry shortly ...
+1498	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1499	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1500	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 214 seconds.  Will retry shortly ...
+1501	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1502	ERROR IN CONTACTING RM.
+1503	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1504	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 215 seconds.  Will retry shortly ...
+1505	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1506	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1507	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 216 seconds.  Will retry shortly ...
+1508	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1509	ERROR IN CONTACTING RM.
+1510	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1511	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 217 seconds.  Will retry shortly ...
+1512	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1513	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1514	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 218 seconds.  Will retry shortly ...
+1515	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1516	ERROR IN CONTACTING RM.
+1517	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1518	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 219 seconds.  Will retry shortly ...
+1519	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1520	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1521	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 220 seconds.  Will retry shortly ...
+1522	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1523	ERROR IN CONTACTING RM.
+1524	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1525	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 221 seconds.  Will retry shortly ...
+1526	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1527	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1528	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 222 seconds.  Will retry shortly ...
+1529	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1530	ERROR IN CONTACTING RM.
+1531	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1532	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 223 seconds.  Will retry shortly ...
+1533	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1534	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1535	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 224 seconds.  Will retry shortly ...
+1536	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1537	ERROR IN CONTACTING RM.
+1538	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1539	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 225 seconds.  Will retry shortly ...
+1540	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1541	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1542	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 226 seconds.  Will retry shortly ...
+1543	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1544	ERROR IN CONTACTING RM.
+1545	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1546	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 227 seconds.  Will retry shortly ...
+1547	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1548	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1549	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 228 seconds.  Will retry shortly ...
+1550	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1551	ERROR IN CONTACTING RM.
+1552	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1553	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 229 seconds.  Will retry shortly ...
+1554	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1555	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1556	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 230 seconds.  Will retry shortly ...
+1557	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1558	ERROR IN CONTACTING RM.
+1559	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1560	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 231 seconds.  Will retry shortly ...
+1561	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1562	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1563	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 232 seconds.  Will retry shortly ...
+1564	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1565	ERROR IN CONTACTING RM.
+1566	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1567	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 233 seconds.  Will retry shortly ...
+1568	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1569	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1570	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 234 seconds.  Will retry shortly ...
+1571	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1572	ERROR IN CONTACTING RM.
+1573	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1574	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 235 seconds.  Will retry shortly ...
+1575	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1576	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1577	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 236 seconds.  Will retry shortly ...
+1578	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1579	ERROR IN CONTACTING RM.
+1580	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1581	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 237 seconds.  Will retry shortly ...
+1582	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1583	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1584	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 238 seconds.  Will retry shortly ...
+1585	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1586	ERROR IN CONTACTING RM.
+1587	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1588	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 239 seconds.  Will retry shortly ...
+1589	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1590	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1591	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 240 seconds.  Will retry shortly ...
+1592	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1593	ERROR IN CONTACTING RM.
+1594	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1595	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 241 seconds.  Will retry shortly ...
+1596	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1597	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1598	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 242 seconds.  Will retry shortly ...
+1599	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1600	ERROR IN CONTACTING RM.
+1601	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1602	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 243 seconds.  Will retry shortly ...
+1603	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1604	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1605	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 244 seconds.  Will retry shortly ...
+1606	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1607	ERROR IN CONTACTING RM.
+1608	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1609	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 245 seconds.  Will retry shortly ...
+1610	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1611	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1612	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 246 seconds.  Will retry shortly ...
+1613	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1614	ERROR IN CONTACTING RM.
+1615	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1616	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 247 seconds.  Will retry shortly ...
+1617	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1618	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1619	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 248 seconds.  Will retry shortly ...
+1620	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1621	ERROR IN CONTACTING RM.
+1622	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1623	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 249 seconds.  Will retry shortly ...
+1624	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1625	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1626	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 250 seconds.  Will retry shortly ...
+1627	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1628	ERROR IN CONTACTING RM.
+1629	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1630	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 251 seconds.  Will retry shortly ...
+1631	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1632	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1633	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 252 seconds.  Will retry shortly ...
+1634	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1635	ERROR IN CONTACTING RM.
+1636	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1637	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 253 seconds.  Will retry shortly ...
+1638	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1639	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1640	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 254 seconds.  Will retry shortly ...
+1641	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1642	ERROR IN CONTACTING RM.
+1643	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1644	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 255 seconds.  Will retry shortly ...
+1645	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1646	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1647	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 256 seconds.  Will retry shortly ...
+1648	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1649	ERROR IN CONTACTING RM.
+1650	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1651	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 257 seconds.  Will retry shortly ...
+1652	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1653	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1654	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 258 seconds.  Will retry shortly ...
+1655	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1656	ERROR IN CONTACTING RM.
+1657	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1658	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 259 seconds.  Will retry shortly ...
+1659	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1660	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1661	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 260 seconds.  Will retry shortly ...
+1662	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1663	ERROR IN CONTACTING RM.
+1664	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1665	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 261 seconds.  Will retry shortly ...
+1666	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1667	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1668	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 262 seconds.  Will retry shortly ...
+1669	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1670	ERROR IN CONTACTING RM.
+1671	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1672	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 263 seconds.  Will retry shortly ...
+1673	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1674	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1675	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 264 seconds.  Will retry shortly ...
+1676	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1677	ERROR IN CONTACTING RM.
+1678	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1679	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 265 seconds.  Will retry shortly ...
+1680	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1681	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1682	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 266 seconds.  Will retry shortly ...
+1683	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1684	ERROR IN CONTACTING RM.
+1685	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1686	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 267 seconds.  Will retry shortly ...
+1687	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1688	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1689	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 268 seconds.  Will retry shortly ...
+1690	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1691	ERROR IN CONTACTING RM.
+1692	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1693	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 269 seconds.  Will retry shortly ...
+1694	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1695	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1696	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 270 seconds.  Will retry shortly ...
+1697	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1698	ERROR IN CONTACTING RM.
+1699	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1700	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 271 seconds.  Will retry shortly ...
+1701	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1702	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1703	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 272 seconds.  Will retry shortly ...
+1704	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1705	ERROR IN CONTACTING RM.
+1706	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1707	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 273 seconds.  Will retry shortly ...
+1708	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1709	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1710	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 274 seconds.  Will retry shortly ...
+1711	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1712	ERROR IN CONTACTING RM.
+1713	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1714	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 275 seconds.  Will retry shortly ...
+1715	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1716	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1717	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 276 seconds.  Will retry shortly ...
+1718	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1719	ERROR IN CONTACTING RM.
+1720	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1721	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 277 seconds.  Will retry shortly ...
+1722	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1723	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1724	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 278 seconds.  Will retry shortly ...
+1725	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1726	ERROR IN CONTACTING RM.
+1727	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1728	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 279 seconds.  Will retry shortly ...
+1729	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1730	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1731	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 280 seconds.  Will retry shortly ...
+1732	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1733	ERROR IN CONTACTING RM.
+1734	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1735	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 281 seconds.  Will retry shortly ...
+1736	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1737	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1738	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 282 seconds.  Will retry shortly ...
+1739	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1740	ERROR IN CONTACTING RM.
+1741	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1742	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 283 seconds.  Will retry shortly ...
+1743	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1744	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1745	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 284 seconds.  Will retry shortly ...
+1746	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1747	ERROR IN CONTACTING RM.
+1748	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1749	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 285 seconds.  Will retry shortly ...
+1750	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1751	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1752	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 286 seconds.  Will retry shortly ...
+1753	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1754	ERROR IN CONTACTING RM.
+1755	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1756	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 287 seconds.  Will retry shortly ...
+1757	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1758	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1759	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 288 seconds.  Will retry shortly ...
+1760	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1761	ERROR IN CONTACTING RM.
+1762	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1763	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 289 seconds.  Will retry shortly ...
+1764	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1765	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1766	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 290 seconds.  Will retry shortly ...
+1767	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1768	ERROR IN CONTACTING RM.
+1769	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1770	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 291 seconds.  Will retry shortly ...
+1771	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1772	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1773	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 292 seconds.  Will retry shortly ...
+1774	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1775	ERROR IN CONTACTING RM.
+1776	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1777	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 293 seconds.  Will retry shortly ...
+1778	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1779	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1780	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 294 seconds.  Will retry shortly ...
+1781	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1782	ERROR IN CONTACTING RM.
+1783	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1784	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 295 seconds.  Will retry shortly ...
+1785	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1786	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1787	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 296 seconds.  Will retry shortly ...
+1788	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1789	ERROR IN CONTACTING RM.
+1790	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1791	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 297 seconds.  Will retry shortly ...
+1792	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1793	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1794	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 298 seconds.  Will retry shortly ...
+1795	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1796	ERROR IN CONTACTING RM.
+1797	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1798	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 299 seconds.  Will retry shortly ...
+1799	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1800	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1801	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 300 seconds.  Will retry shortly ...
+1802	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1803	ERROR IN CONTACTING RM.
+1804	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1805	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 301 seconds.  Will retry shortly ...
+1806	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1807	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1808	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 302 seconds.  Will retry shortly ...
+1809	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1810	ERROR IN CONTACTING RM.
+1811	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1812	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 303 seconds.  Will retry shortly ...
+1813	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1814	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1815	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 304 seconds.  Will retry shortly ...
+1816	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1817	ERROR IN CONTACTING RM.
+1818	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1819	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 305 seconds.  Will retry shortly ...
+1820	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1821	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1822	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 306 seconds.  Will retry shortly ...
+1823	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1824	ERROR IN CONTACTING RM.
+1825	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1826	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 307 seconds.  Will retry shortly ...
+1827	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1828	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1829	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 308 seconds.  Will retry shortly ...
+1830	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1831	ERROR IN CONTACTING RM.
+1832	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1833	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 309 seconds.  Will retry shortly ...
+1834	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1835	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1836	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 310 seconds.  Will retry shortly ...
+1837	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1838	ERROR IN CONTACTING RM.
+1839	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1840	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 311 seconds.  Will retry shortly ...
+1841	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1842	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1843	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 312 seconds.  Will retry shortly ...
+1844	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1845	ERROR IN CONTACTING RM.
+1846	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1847	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 313 seconds.  Will retry shortly ...
+1848	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1849	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1850	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 314 seconds.  Will retry shortly ...
+1851	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1852	ERROR IN CONTACTING RM.
+1853	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1854	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 315 seconds.  Will retry shortly ...
+1855	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1856	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1857	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 316 seconds.  Will retry shortly ...
+1858	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1859	ERROR IN CONTACTING RM.
+1860	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1861	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 317 seconds.  Will retry shortly ...
+1862	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1863	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1864	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 318 seconds.  Will retry shortly ...
+1865	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1866	ERROR IN CONTACTING RM.
+1867	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1868	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 319 seconds.  Will retry shortly ...
+1869	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1870	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1871	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 320 seconds.  Will retry shortly ...
+1872	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1873	ERROR IN CONTACTING RM.
+1874	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1875	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 321 seconds.  Will retry shortly ...
+1876	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1877	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1878	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 322 seconds.  Will retry shortly ...
+1879	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1880	ERROR IN CONTACTING RM.
+1881	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1882	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 323 seconds.  Will retry shortly ...
+1883	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1884	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1885	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 324 seconds.  Will retry shortly ...
+1886	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1887	ERROR IN CONTACTING RM.
+1888	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1889	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 325 seconds.  Will retry shortly ...
+1890	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1891	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1892	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 326 seconds.  Will retry shortly ...
+1893	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1894	ERROR IN CONTACTING RM.
+1895	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1896	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 327 seconds.  Will retry shortly ...
+1897	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1898	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1899	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 328 seconds.  Will retry shortly ...
+1900	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1901	ERROR IN CONTACTING RM.
+1902	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1903	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 329 seconds.  Will retry shortly ...
+1904	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1905	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1906	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 330 seconds.  Will retry shortly ...
+1907	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1908	ERROR IN CONTACTING RM.
+1909	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1910	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 331 seconds.  Will retry shortly ...
+1911	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1912	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1913	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 332 seconds.  Will retry shortly ...
+1914	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1915	ERROR IN CONTACTING RM.
+1916	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1917	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 333 seconds.  Will retry shortly ...
+1918	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1919	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1920	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 334 seconds.  Will retry shortly ...
+1921	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1922	ERROR IN CONTACTING RM.
+1923	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1924	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 335 seconds.  Will retry shortly ...
+1925	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1926	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1927	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 336 seconds.  Will retry shortly ...
+1928	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1929	ERROR IN CONTACTING RM.
+1930	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1931	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 337 seconds.  Will retry shortly ...
+1932	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1933	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1934	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 338 seconds.  Will retry shortly ...
+1935	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1936	ERROR IN CONTACTING RM.
+1937	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1938	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 339 seconds.  Will retry shortly ...
+1939	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1940	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1941	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 340 seconds.  Will retry shortly ...
+1942	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1943	ERROR IN CONTACTING RM.
+1944	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1945	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 341 seconds.  Will retry shortly ...
+1946	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1947	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1948	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 342 seconds.  Will retry shortly ...
+1949	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1950	ERROR IN CONTACTING RM.
+1951	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1952	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 343 seconds.  Will retry shortly ...
+1953	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1954	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1955	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 344 seconds.  Will retry shortly ...
+1956	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1957	ERROR IN CONTACTING RM.
+1958	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1959	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 345 seconds.  Will retry shortly ...
+1960	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1961	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1962	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 346 seconds.  Will retry shortly ...
+1963	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1964	ERROR IN CONTACTING RM.
+1965	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1966	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 347 seconds.  Will retry shortly ...
+1967	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1968	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1969	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 348 seconds.  Will retry shortly ...
+1970	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1971	ERROR IN CONTACTING RM.
+1972	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1973	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 349 seconds.  Will retry shortly ...
+1974	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1975	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1976	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 350 seconds.  Will retry shortly ...
+1977	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1978	ERROR IN CONTACTING RM.
+1979	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1980	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 351 seconds.  Will retry shortly ...
+1981	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1982	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1983	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 352 seconds.  Will retry shortly ...
+1984	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1985	ERROR IN CONTACTING RM.
+1986	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1987	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 353 seconds.  Will retry shortly ...
+1988	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1989	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1990	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 354 seconds.  Will retry shortly ...
+1991	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1992	ERROR IN CONTACTING RM.
+1993	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1994	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 355 seconds.  Will retry shortly ...
+1995	Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+1996	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+1997	Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 356 seconds.  Will retry shortly ...
+1998	"Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"
+1999	ERROR IN CONTACTING RM.
+2000	Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
