@@ -1,0 +1,1 @@
+1971	Linux Plug and Play Support v0.97 (c) Adam Belay

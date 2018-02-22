@@ -1,0 +1,1 @@
+898	session opened for user root by LOGIN(uid=0)

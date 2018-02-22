@@ -1,0 +1,2 @@
+12	SQM: Failed to start standard sample upload. [HRESULT = 0x80004005 - E_FAIL]
+966	SQM: Failed to start standard sample upload. [HRESULT = 0x80004005 - E_FAIL]

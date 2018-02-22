@@ -1,0 +1,5 @@
+1254	Physical Processor ID: 0
+1255	Physical Processor ID: 0
+1256	Physical Processor ID: 0
+1257	Physical Processor ID: 3
+1258	Physical Processor ID: 3

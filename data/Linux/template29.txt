@@ -1,0 +1,1 @@
+1953	"Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)"

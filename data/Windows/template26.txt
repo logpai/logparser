@@ -1,0 +1,2 @@
+14	SQM: Warning: Failed to upload all unsent reports. [HRESULT = 0x80004005 - E_FAIL]
+968	SQM: Warning: Failed to upload all unsent reports. [HRESULT = 0x80004005 - E_FAIL]

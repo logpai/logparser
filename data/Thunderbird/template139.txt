@@ -1,0 +1,1 @@
+1360	probe of vesafb0 failed with error -6

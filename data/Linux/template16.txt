@@ -1,0 +1,8 @@
+539	Authentication failed from 163.27.187.39 (163.27.187.39): Permission denied in replay cache code
+541	Authentication failed from 163.27.187.39 (163.27.187.39): Permission denied in replay cache code
+543	Authentication failed from 163.27.187.39 (163.27.187.39): Permission denied in replay cache code
+545	Authentication failed from 163.27.187.39 (163.27.187.39): Permission denied in replay cache code
+547	Authentication failed from 163.27.187.39 (163.27.187.39): Permission denied in replay cache code
+549	Authentication failed from 163.27.187.39 (163.27.187.39): Permission denied in replay cache code
+551	Authentication failed from 163.27.187.39 (163.27.187.39): Permission denied in replay cache code
+552	Authentication failed from 163.27.187.39 (163.27.187.39): Permission denied in replay cache code

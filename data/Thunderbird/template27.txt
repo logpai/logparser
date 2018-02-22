@@ -1,0 +1,5 @@
+1259	"Trace cache: 12K uops, L1 D cache: 16K"
+1260	"Trace cache: 12K uops, L1 D cache: 16K"
+1261	"Trace cache: 12K uops, L1 D cache: 16K"
+1262	"Trace cache: 12K uops, L1 D cache: 16K"
+1263	"Trace cache: 12K uops, L1 D cache: 16K"

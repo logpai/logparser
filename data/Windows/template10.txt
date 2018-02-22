@@ -1,0 +1,3 @@
+18	"00000005 Creating NT transaction (seq 1), objectname [6]""(null)"""
+944	"0000000d Creating NT transaction (seq 2), objectname [6]""(null)"""
+972	"00000005 Creating NT transaction (seq 1), objectname [6]""(null)"""

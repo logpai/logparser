@@ -1,0 +1,1 @@
+1272	"routing cache hash table of 65536 buckets, 1024Kbytes"

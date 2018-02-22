@@ -1,0 +1,1 @@
+1973	usbcore: registered new driver usbfs

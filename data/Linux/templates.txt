@@ -1,0 +1,123 @@
+E1,connection from [IP] ([*]) at [*] [*] [NUM] [NUM]:[NUM]:[NUM] [NUM],909
+E2,authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=[*]  user=root,351
+E3,authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=[*],117
+E4,check pass; user unknown,117
+E5,ALERT exited abnormally with [1],43
+E6,session closed for user cyrus,43
+E7,session closed for user news,43
+E8,session opened for user cyrus by (uid=0),43
+E9,session opened for user news by (uid=0),43
+E10,session closed for user test,36
+E11,session opened for user test by (uid=509),36
+E12,Kerberos authentication failed,23
+E13,authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=[IP]  user=guest,17
+E14,notify question section contains no SOA,16
+E15,Authentication failed from [IP] ([IP]): Software caused connection abort,15
+E16,Authentication failed from [IP] ([IP]): Permission denied in replay cache code,8
+E17,restart.,7
+E18,cupsd shutdown succeeded,6
+E19,cupsd startup succeeded,6
+E20,authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=[IP]  user=test,4
+E21,creating device node '/udev/[*]',4
+E22,getpeername (ftpd): Transport endpoint is not connected,4
+E23,removing device node '/udev/[*]',4
+E24,BIOS-e820: [NUM] - [NUM] (reserved),3
+E25,"ANONYMOUS FTP LOGIN FROM [IP],  (anonymous)",2
+E26,BIOS-e820: [NUM] - [NUM] (usable),2
+E27,warning: can't get client address: Connection reset by peer,2
+E28,"Dentry cache hash table entries: [NUM] (order: [NUM], [NUM] bytes)",1
+E29,"Inode-cache hash table entries: [NUM] (order: [NUM], [NUM] bytes)",1
+E30,"Mount-cache hash table entries: [NUM] (order: [NUM], [NUM] bytes)",1
+E31,authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=,1
+E32,*** info [mice.c([NUM])]:,1
+E33,ACPI disabled because your bios is from [NUM] and too old,1
+E34,ACPI: ACPI tables contain no PCI IRQ routing entries,1
+E35,ACPI: Interpreter disabled.,1
+E36,ACPI: Subsystem revision [NUM],1
+E37,BIOS-provided physical RAM map:,1
+E38,Bringing up loopback interface:  succeeded,1
+E39,Built [NUM] zonelists,1
+E40,"CPU [NUM] irqstacks, hard=[NUM] soft=[NUM]",1
+E41,CPU: Intel Pentium III (Coppermine) stepping [NUM],1
+E42,"CPU: L1 I cache: [*], L1 D cache: [*]",1
+E43,CPU: L2 cache: [*],1
+E44,Calibrating delay loop... [NUM].[NUM] BogoMIPS,1
+E45,Capability LSM initialized,1
+E46,Checking 'hlt' instruction... OK.,1
+E47,Console: colour VGA+ [*],1
+E48,Couldn't authenticate user,1
+E49,"DMA zone: [NUM] pages, LIFO batch:[NUM]",1
+E50,DMI [NUM].[NUM] present.,1
+E51,PID hash table entries: 512 (order [NUM]: [NUM] bytes),1
+E52,"Dquot-cache hash table entries: [NUM] (order [NUM], [NUM] bytes)",1
+E53,Detected [NUM].[NUM] MHz processor.,1
+E54,Enabling fast FPU save and restore... done.,1
+E55,Enabling unmasked SIMD FPU exception support... done.,1
+E56,Failure registering capabilities with the kernel,1
+E57,HCI daemon ver [NUM].[NUM] started,1
+E58,"HighMem zone: [NUM] pages, LIFO batch:[NUM]",1
+E59,Initializing CPU#[NUM],1
+E60,Initializing Cryptographic API,1
+E61,Initializing random number generator:  succeeded,1
+E62,Intel machine check architecture supported.,1
+E63,Intel machine check reporting enabled on CPU#[NUM].,1
+E64,Kernel command line: ro root=LABEL=/ rhgb quiet,1
+E65,Linux Plug and Play Support v[NUM].[NUM] (c) Adam Belay,1
+E66,Linux version [NUM].[NUM].[NUM][NUM].[NUM] (bhcompile@bugs.build.redhat.com) (gcc version [NUM].[NUM].[NUM] [NUM] (Red Hat Linux [NUM].[NUM].[NUM][NUM])) #[NUM] [*] [*] [NUM] [NUM]:[NUM]:[NUM] EDT [NUM],1
+E67,"Memory: [*] available ([*] kernel code, [*] reserved, [*] data, [*] init, [*] highmem)",1
+E68,NET: Registered protocol family [NUM],1
+E69,"Normal zone: [NUM] pages, LIFO batch:[NUM]",1
+E70,On node [NUM] totalpages: [NUM],1
+E71,PCI: Invalid ACPI-PCI IRQ routing table,1
+E72,"PCI: PCI BIOS revision [NUM].[NUM] entry at [NUM], last bus=[NUM]",1
+E73,PCI: Probing PCI hardware,1
+E74,PCI: Probing PCI hardware (bus [NUM]),1
+E75,PCI: Using IRQ router PIIX/ICH [[NUM]/[NUM]] at [*],1
+E76,PCI: Using configuration type [NUM],1
+E77,POSIX conformance testing by UNIFIX,1
+E78,ROOT LOGIN ON tty2,1
+E79,Received SNMP packet(s) from [IP],1
+E80,SELinux:  Initializing.,1
+E81,SELinux:  Registering netfilter hooks,1
+E82,SELinux:  Starting in permissive mode,1
+E83,Security Scaffold v[NUM].[NUM].[NUM] initialized,1
+E84,Setting network parameters:  succeeded,1
+E85,Starting pcmcia:  succeeded,1
+E86,"There is already a security framework initialized, register_security failed.",1
+E87,"Total HugeTLB memory allocated, [NUM]",1
+E88,Transparent bridge - [*],1
+E89,User unknown timed out after [NUM] seconds at [*] [*] [NUM] [NUM]:[NUM]:[NUM] [NUM],1
+E90,Using tsc for high-res timesource,1
+E91,VFS: Disk quotas dquot_[NUM].[NUM].[NUM],1
+E92,Version [NUM].[NUM].[NUM] Starting,1
+E93,You can enable it with acpi=force,1
+E94,[NUM]MB HIGHMEM available.,1
+E95,[NUM]MB LOWMEM available.,1
+E96,syslogd startup succeeded,1
+E97,klogd startup succeeded,1
+E98,irqbalance startup succeeded,1
+E99,portmap startup succeeded,1
+E100,rpc.statd startup succeeded,1
+E101,hcid startup succeeded,1
+E102,rpc.idmapd startup succeeded,1
+E103,imps2: Auto-detected intellimouse PS/[NUM],1
+E104,apm: BIOS version [NUM].[NUM] Flags [NUM] (Driver version [*]),1
+E105,audit([NUM].[NUM]:[NUM]): initialized,1
+E106,audit: initializing netlink socket (disabled),1
+E107,isapnp: Scanning for PnP cards...,1
+E108,kernel.core_uses_pid = [NUM],1
+E109,"klogd [NUM].[NUM].[NUM], log source = /proc/kmsg started.",1
+E110,mapped 4G/4G trampoline to [NUM].,1
+E111,mtrr: v[NUM].[NUM] ([NUM]),1
+E112,pci_hotplug: PCI Hot Plug PCI Core version: [NUM].[NUM],1
+E113,sdpd v[NUM].[NUM] started,1
+E114,sdpd startup succeeded,1
+E115,selinux_register_security:  Registering secondary module capability,1
+E116,session closed for user root,1
+E117,session opened for user root by LOGIN(uid=0),1
+E118,usbcore: registered new driver hub,1
+E119,usbcore: registered new driver usbfs,1
+E120,zapping low mappings.,1
+E121,isapnp: No Plug & Play device found,1
+E122,Real Time Clock Driver v[NUM].[NUM],1
+E123,Linux agpgart interface v[NUM].[NUM] (c) Dave Jones,1

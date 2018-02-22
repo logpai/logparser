@@ -1,0 +1,1 @@
+1226	PCI Root Bridge [PCI0] (00:00)

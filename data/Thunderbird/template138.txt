@@ -1,0 +1,1 @@
+1334	probe new device 0x1028:0x0013:0x1028:0x016c: bus 2:slot 14:func 0

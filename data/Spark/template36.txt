@@ -1,0 +1,1 @@
+51	"mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap"

@@ -1,0 +1,2 @@
+1304	not allocating divert_blk for non-ethernet device lo
+1463	not allocating divert_blk for non-ethernet device sit0

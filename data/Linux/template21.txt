@@ -1,0 +1,4 @@
+903	creating device node '/udev/vcs2'
+904	creating device node '/udev/vcsa2'
+907	creating device node '/udev/vcs2'
+908	creating device node '/udev/vcsa2'

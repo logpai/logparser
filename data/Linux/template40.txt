@@ -1,0 +1,1 @@
+1934	"CPU 0 irqstacks, hard=02345000 soft=02344000"

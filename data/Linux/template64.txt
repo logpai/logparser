@@ -1,0 +1,1 @@
+1931	Kernel command line: ro root=LABEL=/ rhgb quiet

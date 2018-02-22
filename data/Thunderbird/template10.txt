@@ -1,0 +1,16 @@
+1504	removing chargen
+1505	removing chargen
+1506	removing daytime
+1507	removing daytime
+1508	removing echo
+1509	removing echo
+1510	removing eklogin
+1511	removing ftp
+1512	removing klogin
+1513	removing kshell
+1514	removing ntalk
+1515	removing printer
+1516	removing rsync
+1517	removing telnet
+1518	removing time
+1519	removing time

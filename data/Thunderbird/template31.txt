@@ -1,0 +1,4 @@
+1201	LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+1202	LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+1203	LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+1204	LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])

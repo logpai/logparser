@@ -1,0 +1,2 @@
+1302	allocating divert_blk for eth0
+1303	allocating divert_blk for eth1

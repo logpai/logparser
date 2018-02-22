@@ -1,0 +1,1 @@
+1305	v2.0:USB HID core driver

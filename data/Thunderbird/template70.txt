@@ -1,0 +1,1 @@
+1248	Intel(R) Xeon(TM) CPU 3.60GHz stepping 03

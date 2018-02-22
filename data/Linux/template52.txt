@@ -1,0 +1,1 @@
+1993	"Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)"

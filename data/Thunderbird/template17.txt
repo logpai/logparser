@@ -1,0 +1,10 @@
+96	unable to qualify my own domain name (eadmin1) -- using short name
+101	unable to qualify my own domain name (badmin1) -- using short name
+102	unable to qualify my own domain name (cadmin1) -- using short name
+104	unable to qualify my own domain name (dadmin1) -- using short name
+125	unable to qualify my own domain name (aadmin1) -- using short name
+1572	unable to qualify my own domain name (eadmin1) -- using short name
+1574	unable to qualify my own domain name (aadmin1) -- using short name
+1575	unable to qualify my own domain name (badmin1) -- using short name
+1577	unable to qualify my own domain name (cadmin1) -- using short name
+1578	unable to qualify my own domain name (dadmin1) -- using short name

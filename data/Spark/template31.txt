@@ -1,0 +1,1 @@
+14	Connecting to driver: spark://CoarseGrainedScheduler@10.10.34.11:48069

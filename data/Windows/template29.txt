@@ -1,0 +1,2 @@
+7	TrustedInstaller service starts successfully.
+961	TrustedInstaller service starts successfully.

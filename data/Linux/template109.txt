@@ -1,0 +1,1 @@
+1910	"klogd 1.4.1, log source = /proc/kmsg started."

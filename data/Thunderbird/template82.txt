@@ -1,0 +1,1 @@
+1211	"PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 7 10 11 12) *0, disabled."

@@ -1,0 +1,3 @@
+1193	IRQ0 used by override.
+1194	IRQ2 used by override.
+1195	IRQ9 used by override.

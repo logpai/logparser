@@ -1,0 +1,1 @@
+1359	registered new driver usbhid

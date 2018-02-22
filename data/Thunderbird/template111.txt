@@ -1,0 +1,1 @@
+1353	Using 14.318180 MHz HPET timer.

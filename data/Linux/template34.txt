@@ -1,0 +1,1 @@
+1975	ACPI: ACPI tables contain no PCI IRQ routing entries

@@ -1,0 +1,5 @@
+1162	My unqualified host name (eadmin1) unknown; sleeping for retry
+1163	My unqualified host name (aadmin1) unknown; sleeping for retry
+1164	My unqualified host name (badmin1) unknown; sleeping for retry
+1168	My unqualified host name (cadmin1) unknown; sleeping for retry
+1170	My unqualified host name (dadmin1) unknown; sleeping for retry

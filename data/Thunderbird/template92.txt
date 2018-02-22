@@ -1,0 +1,1 @@
+1293	Processor ANSI SCSI revision: 02

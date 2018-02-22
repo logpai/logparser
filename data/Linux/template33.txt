@@ -1,0 +1,1 @@
+1928	ACPI disabled because your bios is from 2000 and too old

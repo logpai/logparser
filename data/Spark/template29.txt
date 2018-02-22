@@ -1,0 +1,1 @@
+13	MemoryStore started with capacity 17.7 GB

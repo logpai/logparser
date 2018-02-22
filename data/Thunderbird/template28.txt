@@ -1,0 +1,5 @@
+1249	L2 cache: 2048K
+1250	L2 cache: 2048K
+1251	L2 cache: 2048K
+1252	L2 cache: 2048K
+1253	L2 cache: 2048K

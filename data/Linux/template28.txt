@@ -1,0 +1,1 @@
+1952	"Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)"

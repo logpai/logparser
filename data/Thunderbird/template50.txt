@@ -1,0 +1,2 @@
+1306	eth0: e1000_probe: Intel(R) PRO/1000 Network Connection
+1308	eth1: e1000_probe: Intel(R) PRO/1000 Network Connection

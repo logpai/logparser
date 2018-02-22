@@ -1,0 +1,1 @@
+1291	Hash tables configured (established 262144 bind 65536)

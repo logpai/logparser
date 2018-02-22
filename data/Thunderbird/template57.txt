@@ -1,0 +1,1 @@
+1471	Changing permissions on special file /dev/logsurfer

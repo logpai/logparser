@@ -1,0 +1,154 @@
+E1,data_thread() got not answer from any [Thunderbird_[*]] datasource,819
+E2,"synchronized to [*], stratum [NUM]",568
+E3,[ib_sm_sweep.c:1455]: No topology change,62
+E4,[ib_sm_sweep.c:1482]: No configuration change required,62
+E5,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************,62
+E6,Warning: we failed to resolve data source name [*],34
+E7,session closed for user root,24
+E8,session opened for user root by (uid=0),19
+E9,Reading included configuration file: [*] [file=[*]] [line=[NUM]],17
+E10,removing [*],16
+E11,DHCPDISCOVER from [*] via eth1: network A_net: no free leases,15
+E12,(root) CMD (run-parts /etc/cron.hourly),14
+E13,"PCI interrupt [*] -> GSI [NUM] (level, low) -> IRQ [NUM]",11
+E14,PCI Interrupt Routing Table [[*]],10
+E15,"[*]: from=root, size=[NUM], class=[NUM], nrcpts=[NUM], msgid=<[*]>, relay=#[NUM]#@localhost",10
+E16,"[*]: to=root, ctladdr=root (0/0), delay=[NUM]:[NUM]:[NUM], xdelay=[NUM]:[NUM]:[NUM], mailer=relay, pri=[NUM], relay=[[IP]] [[IP]], dsn=[NUM].[NUM].[NUM], stat=Deferred: Connection refused by [[IP]]",10
+E17,unable to qualify my own domain name ([*]) -- using short name,10
+E18,DHCPREQUEST for [IP] ([IP]) from [*] via eth1: unknown lease [IP].,9
+E19,[*] (v001 DELL PE BKC [NUM] MSFT [NUM]) @ [NUM],7
+E20,Wait for ready failed before probe !,6
+E21,(root) CMD (/projects/tbird/temps/get_temps [*]),5
+E22,DHCPDISCOVER from [*] via eth1,5
+E23,DHCPOFFER on [IP] to [*] via eth1,5
+E24,My unqualified host name ([*]) unknown; sleeping for retry,5
+E25,Physical Processor ID: [NUM],5
+E26,Registered protocol family [NUM],5
+E27,"Trace cache: [*] uops, L1 D cache: [*]",5
+E28,L2 cache: [NUM]K,5
+E29,(C) [NUM]-[NUM] Netfilter core team,4
+E30,LAPIC (acpi_id[[NUM]] lapic_id[[NUM]] enabled),4
+E31,LAPIC_NMI (acpi_id[[NUM]] high edge lint[[NUM]]),4
+E32,Processor [CPU[NUM]] (supports C1),4
+E33,DHCPACK on [IP] to [*] via eth1,3
+E34,DHCPREQUEST for [IP] ([IP]) from [*] via eth1,3
+E35,IOAPIC (id[[NUM]] address[[NUM]] gsi_base[[NUM]]),3
+E36,IRQ[NUM] used by override.,3
+E37,Local disconnected: Connection closed.,3
+E38,RRD_update (/var/lib/ganglia/rrds/[*].rrd): illegal attempt to update using time [NUM] when last update time is [NUM] (minimum one second step),11
+E39,"apic_id [NUM], version [NUM], address [NUM], GSI [NUM][NUM]",3
+E40,connection lost: 'Connection closed.',3
+E41,mounted filesystem with ordered data mode.,3
+E42,[*] (Release Date: [*] [NUM]),2
+E43,... autorun DONE.,2
+E44,Autodetecting RAID arrays.,2
+E45,Now running on #[NUM]#'s privileges.,2
+E46,"User #[NUM]#, coming from #[NUM]#, authenticated.",2
+E47,allocating divert_blk for eth[NUM],2
+E48,autorun ...,2
+E49,"connection from ""#[NUM]#""",2
+E50,eth[NUM]: [*]: Intel(R) PRO/[NUM] Network Connection,2
+E51,not allocating divert_blk for non-ethernet device [*],2
+E52,succeeded,2
+E53,(supports [*]),1
+E54,Assuming [NUM]MHz system bus speed for PIO modes; override with idebus=xx,1
+E55,Cannot open file /dev/logsurfer for writing (No such file or directory),1
+E56,CentOS-[NUM] (Kernel Module GPG key),1
+E57,Changing permissions on special file /dev/logsurfer,1
+E58,Compressed image found at block [NUM],1
+E59,Creating Topspin /dev entries:,1
+E60,Detected [NUM].[NUM] MHz processor.,1
+E61,"Device: /dev/sda, Temperature changed [NUM] Celsius to [NUM] Celsius since last report",1
+E62,Direct-Access ANSI SCSI revision: [NUM],1
+E63,Disabled at runtime.,1
+E64,Disk quotas dquot_[NUM].[NUM].[NUM],1
+E65,HPET id: [NUM] base: [NUM],1
+E66,Hash tables configured (established [NUM] bind [NUM]),1
+E67,INT_SRC_OVR (bus [NUM] bus_irq [NUM] global_irq [NUM] dfl dfl),1
+E68,INT_SRC_OVR (bus [NUM] bus_irq [NUM] global_irq [NUM] high level),1
+E69,Installing public key data,1
+E70,Intel(R) Xeon(TM) CPU [*] stepping [NUM],1
+E71,Interpreter enabled,1
+E72,LSI Logic MegaRAID driver,1
+E73,Local APIC address [NUM],1
+E74,MegaRAID Model: LD [NUM] RAID1 [*] Rev: [*],1
+E75,Mounted root (ext2 filesystem).,1
+E76,Mounting NFS filesystems: succeeded,1
+E77,Mounting other filesystems: failed,1
+E78,PCI Hot Plug PCI Core version: [NUM].[NUM],1
+E79,PCI Interrupt Link [LNKA] (IRQs [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM]) *[NUM],1
+E80,PCI Interrupt Link [LNKB] (IRQs [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] *[NUM] [NUM]),1
+E81,PCI Interrupt Link [LNKC] (IRQs [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM]) *[NUM],1
+E82,"PCI Interrupt Link [LNKD] (IRQs [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM]) *[NUM], disabled.",1
+E83,"PCI Interrupt Link [LNKE] (IRQs [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM]) *[NUM], disabled.",1
+E84,"PCI Interrupt Link [LNKF] (IRQs [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM]) *[NUM], disabled.",1
+E85,"PCI Interrupt Link [LNKG] (IRQs [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM]) *[NUM], disabled.",1
+E86,"PCI Interrupt Link [LNKH] (IRQs [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM] [NUM]) *[NUM], disabled.",1
+E87,PCI Root Bridge [PCI0] ([NUM]:[NUM]),1
+E88,PE/PV Model: [*] SCSI BP Rev: [NUM].[NUM],1
+E89,PS/[NUM] mouse device common for all mice,1
+E90,Power Button (FF) [PWRF],1
+E91,Probing PCI hardware (bus [NUM]),1
+E92,Processor ANSI SCSI revision: [NUM],1
+E93,RNG not detected,1
+E94,RSDP ([*] DELL ) @ [NUM],1
+E95,Received SNMP packet(s) from #[NUM]#,1
+E96,Registering netfilter hooks,1
+E97,Registering secondary module capability,1
+E98,START: tftp pid=[NUM] from=[IP],1
+E99,Server listening on :: port [NUM].,1
+E100,Started working: [NUM] available service,1
+E101,Starting in permissive mode,1
+E102,Starting ts_fixup: succeeded,1
+E103,Subsystem revision [NUM],1
+E104,Transparent bridge - [*],1
+E105,Unknown cmd fd([NUM]) cmd([NUM]){[NUM]} arg([NUM]) on /dev/sda,1
+E106,Unregistering netfilter hooks,1
+E107,Using ACPI for IRQ routing,1
+E108,Using HPET based timekeeping.,1
+E109,Using IOAPIC for interrupt routing,1
+E110,Using MMCONFIG at [NUM],1
+E111,Using [NUM].[NUM] MHz HPET timer.,1
+E112,Using configuration type [NUM],1
+E113,Using software bounce buffering for IO (SWIOTLB),1
+E114,Version [NUM].[NUM].[NUM] Starting,1
+E115,Warning: we failed to resolve trusted host name [*],1
+E116,"[*] AUX port at [NUM],[NUM] irq [NUM]",1
+E117,"[*] KBD port at [NUM],[NUM] irq [NUM]",1
+E118,v[NUM].[NUM]:USB HID core driver,1
+E119,eth0: [*]: NIC Link is Up [NUM] Mbps Full Duplex,1
+E120,Initializing.,1
+E121,passed.,1
+E122,v[NUM].[NUM] ([NUM]),1
+E123,sda1 sda2 sda3 sda4,1
+E124,[NUM].[NUM].[NUM]-ioctl ([NUM][NUM][NUM]) initialised: #[NUM]#@#[NUM]#,1
+E125,asking for cache data failed,1
+E126,assuming drive cache: write through,1
+E127,colour VGA+ [*],1
+E128,error: Bind to port [NUM] on [IP] failed: Address already in use.,1
+E129,fw version:[[*]] bios version:[[*]],1
+E130,gmetad startup succeeded,1
+E131,initialized,1
+E132,initializing netlink socket (disabled),1
+E133,kernel time sync disabled [NUM],1
+E134,kernel time sync enabled [NUM],1
+E135,"md driver [NUM].[NUM].[NUM] MAX_MD_DEVS=[NUM], MD_SB_DISKS=[NUM]",1
+E136,no floppy controllers found,1
+E137,portmap startup succeeded,1
+E138,probe new device [NUM]:[NUM]:[NUM]:[NUM]: bus [NUM]:slot [NUM]:func [NUM],1
+E139,probe of vesafb0 failed with error [NUM],1
+E140,registered new driver hiddev,1
+E141,registered new driver hub,1
+E142,registered new driver usbfs,1
+E143,registered new driver usbhid,1
+E144,"root=LABEL=/ initrd=/[*] console=[*] console=[*],[NUM] fastboot BOOT_IMAGE=[*]",1
+E145,"routing cache hash table of [NUM] buckets, [NUM]Kbytes",1
+E146,rpc.statd startup succeeded,1
+E147,scanning scsi channel [NUM] [Phy [NUM]] for non-raid devices,1
+E148,scanning scsi channel [NUM] [virtual] for logical drives,1
+E149,[*] [NUM].[NUM] [NUM]/[NUM]/[NUM] [NUM]:[NUM]:[NUM] ak Exp $,1
+E150,syslog-ng startup succeeded,1
+E151,syslog-ng version [NUM].[NUM].[NUM] starting,1
+E152,time reset +[NUM].[NUM] s,1
+E153,xinetd Version [NUM].[NUM].[NUM] started with libwrap loadavg options compiled in.,1
+E154,xinetd startup succeeded,1

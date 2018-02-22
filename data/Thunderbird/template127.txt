@@ -1,0 +1,1 @@
+1264	colour VGA+ 80x25

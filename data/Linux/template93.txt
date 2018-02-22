@@ -1,0 +1,1 @@
+1929	You can enable it with acpi=force

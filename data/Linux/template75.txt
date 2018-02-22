@@ -1,0 +1,1 @@
+1980	PCI: Using IRQ router PIIX/ICH [8086/2410] at 0000:00:1f.0

@@ -1,0 +1,1 @@
+1946	SELinux:  Starting in permissive mode

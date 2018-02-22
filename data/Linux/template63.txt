@@ -1,0 +1,1 @@
+1958	Intel machine check reporting enabled on CPU#0.

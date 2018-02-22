@@ -1,0 +1,2 @@
+5	Ending TrustedInstaller initialization.
+959	Ending TrustedInstaller initialization.

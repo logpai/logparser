@@ -1,0 +1,1 @@
+948	00000010@2016/9/27:20:40:54.787 CSI Transaction @0x47e9e0 destroyed

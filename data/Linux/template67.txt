@@ -1,0 +1,1 @@
+1942	"Memory: 125312k/129720k available (1540k kernel code, 3860k reserved, 599k data, 144k init, 0k highmem)"

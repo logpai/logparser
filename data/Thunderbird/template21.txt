@@ -1,0 +1,5 @@
+1101	(root) CMD (/projects/tbird/temps/get_temps a)
+1103	(root) CMD (/projects/tbird/temps/get_temps b)
+1105	(root) CMD (/projects/tbird/temps/get_temps c)
+1107	(root) CMD (/projects/tbird/temps/get_temps d)
+1109	(root) CMD (/projects/tbird/temps/get_temps e)

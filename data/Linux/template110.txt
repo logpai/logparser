@@ -1,0 +1,1 @@
+1932	mapped 4G/4G trampoline to ffff3000.

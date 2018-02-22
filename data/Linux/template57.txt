@@ -1,0 +1,1 @@
+1984	HCI daemon ver 2.4 started

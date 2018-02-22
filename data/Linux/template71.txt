@@ -1,0 +1,1 @@
+1976	PCI: Invalid ACPI-PCI IRQ routing table

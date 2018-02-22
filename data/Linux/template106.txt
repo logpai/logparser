@@ -1,0 +1,1 @@
+1982	audit: initializing netlink socket (disabled)

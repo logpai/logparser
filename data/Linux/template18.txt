@@ -1,0 +1,6 @@
+144	cupsd shutdown succeeded
+372	cupsd shutdown succeeded
+712	cupsd shutdown succeeded
+1084	cupsd shutdown succeeded
+1362	cupsd shutdown succeeded
+1752	cupsd shutdown succeeded

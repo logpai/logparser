@@ -1,0 +1,1 @@
+1981	apm: BIOS version 1.2 Flags 0x03 (Driver version 1.16ac)

@@ -1,0 +1,1 @@
+1350	syslog-ng startup succeeded

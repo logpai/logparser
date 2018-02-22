@@ -1,0 +1,15 @@
+553	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+557	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+559	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+561	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+563	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+565	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+567	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+569	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+571	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+573	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+574	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+575	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+577	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+579	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort
+580	Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort

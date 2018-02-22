@@ -1,0 +1,1 @@
+1966	"PCI: PCI BIOS revision 2.10 entry at 0xfc0ce, last bus=1"

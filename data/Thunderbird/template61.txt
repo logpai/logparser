@@ -1,0 +1,1 @@
+1953	"Device: /dev/sda, Temperature changed -2 Celsius to 26 Celsius since last report"

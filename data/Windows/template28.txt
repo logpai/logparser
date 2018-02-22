@@ -1,0 +1,2 @@
+22	Startup processing thread terminated normally
+976	Startup processing thread terminated normally

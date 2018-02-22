@@ -1,0 +1,1 @@
+1349	"i8042 KBD port at 0x60,0x64 irq 1"

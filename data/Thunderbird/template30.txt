@@ -1,0 +1,4 @@
+1197	LAPIC (acpi_id[0x01] lapic_id[0x00] enabled)
+1198	LAPIC (acpi_id[0x02] lapic_id[0x06] enabled)
+1199	LAPIC (acpi_id[0x03] lapic_id[0x01] enabled)
+1200	LAPIC (acpi_id[0x04] lapic_id[0x07] enabled)

@@ -1,0 +1,4 @@
+1826	getpeername (ftpd): Transport endpoint is not connected
+1827	getpeername (ftpd): Transport endpoint is not connected
+1829	getpeername (ftpd): Transport endpoint is not connected
+1831	getpeername (ftpd): Transport endpoint is not connected

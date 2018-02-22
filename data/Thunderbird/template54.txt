@@ -1,0 +1,1 @@
+1317	Assuming 33MHz system bus speed for PIO modes; override with idebus=xx

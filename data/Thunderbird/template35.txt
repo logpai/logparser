@@ -1,0 +1,3 @@
+1190	IOAPIC (id[0x08] address[0xfec00000] gsi_base[0])
+1191	IOAPIC (id[0x09] address[0xfec80000] gsi_base[32])
+1192	IOAPIC (id[0x0a] address[0xfec83000] gsi_base[64])

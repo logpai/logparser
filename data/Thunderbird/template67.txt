@@ -1,0 +1,1 @@
+1188	INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)

@@ -1,0 +1,1 @@
+1280	Probing PCI hardware (bus 00)

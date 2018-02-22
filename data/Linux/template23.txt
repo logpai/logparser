@@ -1,0 +1,4 @@
+901	removing device node '/udev/vcsa2'
+902	removing device node '/udev/vcs2'
+905	removing device node '/udev/vcs2'
+906	removing device node '/udev/vcsa2'

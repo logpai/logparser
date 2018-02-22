@@ -1,0 +1,1 @@
+1187	HPET id: 0xffffffff base: 0xfed00000

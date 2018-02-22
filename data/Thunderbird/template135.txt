@@ -1,0 +1,1 @@
+1330	"md driver 0.90.0 MAX_MD_DEVS=256, MD_SB_DISKS=27"

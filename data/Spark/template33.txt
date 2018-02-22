@@ -1,0 +1,1 @@
+53	"mapred.task.partition is deprecated. Instead, use mapreduce.task.partition"

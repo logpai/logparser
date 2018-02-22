@@ -1,0 +1,6 @@
+145	cupsd startup succeeded
+373	cupsd startup succeeded
+713	cupsd startup succeeded
+1085	cupsd startup succeeded
+1363	cupsd startup succeeded
+1753	cupsd startup succeeded

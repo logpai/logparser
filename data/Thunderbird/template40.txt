@@ -1,0 +1,3 @@
+75	connection lost: 'Connection closed.'
+1382	connection lost: 'Connection closed.'
+1844	connection lost: 'Connection closed.'

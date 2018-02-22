@@ -1,0 +1,2 @@
+936	Failed to create backup log cab. [HRESULT = 0x80070001 - ERROR_INVALID_FUNCTION]
+1103	Failed to create backup log cab. [HRESULT = 0x80070001 - ERROR_INVALID_FUNCTION]

@@ -1,0 +1,4 @@
+1239	Processor [CPU0] (supports C1)
+1240	Processor [CPU1] (supports C1)
+1241	Processor [CPU2] (supports C1)
+1242	Processor [CPU3] (supports C1)

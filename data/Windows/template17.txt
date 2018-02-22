@@ -1,0 +1,2 @@
+15	"No startup processing required, TrustedInstaller service was not set as autostart, or else a reboot is still pending."
+969	"No startup processing required, TrustedInstaller service was not set as autostart, or else a reboot is still pending."

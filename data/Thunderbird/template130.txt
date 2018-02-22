@@ -1,0 +1,1 @@
+1455	gmetad startup succeeded

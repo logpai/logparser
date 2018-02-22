@@ -1,0 +1,2 @@
+8	SQM: Initializing online with Windows opt-in: False
+962	SQM: Initializing online with Windows opt-in: False

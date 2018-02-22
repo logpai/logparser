@@ -1,0 +1,1 @@
+1991	Bringing up loopback interface:  succeeded

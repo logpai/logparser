@@ -1,0 +1,1 @@
+1307	eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex
