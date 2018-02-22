@@ -19,7 +19,7 @@ Details
 | Apache Web server        |      [Apache](./Apache)      | 2,000 |   5-10    |  6  |               |
 | **Supercomputers**       |                              |            |             |          |                      |
 | Blue Gene/L              |         [BGL](./2kBGL)        | 4,747,963 |  10-102  | 376 |  [Link](https://www.usenix.org/cfdr-data) |
-| HPC                      |         [HPC](./2kHPC)         |    433,489    |   6-104   | 105  |            |
+| HPC                      |         [HPC](./2kHPC)         |    433,490    |   6-104   | 105  |            |
 | Thunderbird              | [Thunderbird](./Thunderbird) |  2,000  | 11-133 | 154  |                |
 | **On-premises software** |                              |            |             |          |                      |
 | Proxifier                |   [Proxifier](./2kProxifier)   |    10,108    |   10-27    |  8  |               |
