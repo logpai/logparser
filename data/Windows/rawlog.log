@@ -1,0 +1,2000 @@
+1	Loaded Servicing Stack v6.1.7601.23505 with Core: C:\Windows\winsxs\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_6.1.7601.23505_none_681aa442f6fed7f0\cbscore.dll
+2	00000001@2016/9/27:20:30:31.455 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7fed806eb5d @0x7fef9fb9b6d @0x7fef9f8358f @0xff83e97c @0xff83d799 @0xff83db2f)
+3	00000002@2016/9/27:20:30:31.458 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7fed806eb5d @0x7fefa006ade @0x7fef9fd2984 @0x7fef9f83665 @0xff83e97c @0xff83d799)
+4	00000003@2016/9/27:20:30:31.458 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7fed806eb5d @0x7fefa1c8728 @0x7fefa1c8856 @0xff83e474 @0xff83d7de @0xff83db2f)
+5	Ending TrustedInstaller initialization.
+6	Starting the TrustedInstaller main loop.
+7	TrustedInstaller service starts successfully.
+8	SQM: Initializing online with Windows opt-in: False
+9	SQM: Cleaning up report files older than 10 days.
+10	SQM: Requesting upload of all unsent reports.
+11	"SQM: Failed to start upload with file pattern: C:\Windows\servicing\sqm\*_std.sqm, flags: 0x2 [HRESULT = 0x80004005 - E_FAIL]"
+12	SQM: Failed to start standard sample upload. [HRESULT = 0x80004005 - E_FAIL]
+13	"SQM: Queued 0 file(s) for upload with pattern: C:\Windows\servicing\sqm\*_all.sqm, flags: 0x6"
+14	SQM: Warning: Failed to upload all unsent reports. [HRESULT = 0x80004005 - E_FAIL]
+15	"No startup processing required, TrustedInstaller service was not set as autostart, or else a reboot is still pending."
+16	NonStart: Checking to ensure startup processing was not required.
+17	"00000004 IAdvancedInstallerAwareStore_ResolvePendingTransactions (call 1) (flags = 00000004, progress = NULL, phase = 0, pdwDisposition = @0xb6fd90"
+18	"00000005 Creating NT transaction (seq 1), objectname [6]""(null)"""
+19	"00000006 Created NT transaction (seq 1) result 0x00000000, handle @0x214"
+20	00000007@2016/9/27:20:30:31.462 CSI perf trace:
+21	"NonStart: Success, startup processing not required as expected."
+22	Startup processing thread terminated normally
+23	00000008 CSI Store 4991456 (0x00000000004c29e0) initialized
+24	Session: 30546173_4261722401 initialized by client WindowsUpdateAgent.
+25	Session: 30546173_4262462443 initialized by client WindowsUpdateAgent.
+26	Warning: Unrecognized packageExtended attribute.
+27	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+28	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+29	Warning: Unrecognized packageExtended attribute.
+30	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+31	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+32	Warning: Unrecognized packageExtended attribute.
+33	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+34	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+35	Warning: Unrecognized packageExtended attribute.
+36	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+37	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+38	Warning: Unrecognized packageExtended attribute.
+39	Warning: Unrecognized packageExtended attribute.
+40	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+41	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+42	Warning: Unrecognized packageExtended attribute.
+43	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+44	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+45	Warning: Unrecognized packageExtended attribute.
+46	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+47	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+48	Warning: Unrecognized packageExtended attribute.
+49	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+50	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+51	Warning: Unrecognized packageExtended attribute.
+52	Warning: Unrecognized packageExtended attribute.
+53	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+54	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+55	Warning: Unrecognized packageExtended attribute.
+56	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+57	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+58	Warning: Unrecognized packageExtended attribute.
+59	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+60	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+61	Warning: Unrecognized packageExtended attribute.
+62	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+63	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+64	Warning: Unrecognized packageExtended attribute.
+65	Warning: Unrecognized packageExtended attribute.
+66	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+67	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+68	Warning: Unrecognized packageExtended attribute.
+69	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+70	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+71	Warning: Unrecognized packageExtended attribute.
+72	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+73	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+74	Warning: Unrecognized packageExtended attribute.
+75	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+76	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+77	Warning: Unrecognized packageExtended attribute.
+78	Warning: Unrecognized packageExtended attribute.
+79	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+80	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+81	Warning: Unrecognized packageExtended attribute.
+82	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+83	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+84	Warning: Unrecognized packageExtended attribute.
+85	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+86	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+87	Warning: Unrecognized packageExtended attribute.
+88	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+89	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+90	Warning: Unrecognized packageExtended attribute.
+91	Warning: Unrecognized packageExtended attribute.
+92	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+93	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+94	Warning: Unrecognized packageExtended attribute.
+95	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+96	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+97	Warning: Unrecognized packageExtended attribute.
+98	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+99	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+100	Warning: Unrecognized packageExtended attribute.
+101	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+102	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+103	Warning: Unrecognized packageExtended attribute.
+104	Warning: Unrecognized packageExtended attribute.
+105	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+106	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+107	Warning: Unrecognized packageExtended attribute.
+108	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+109	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+110	Warning: Unrecognized packageExtended attribute.
+111	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+112	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+113	Warning: Unrecognized packageExtended attribute.
+114	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+115	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+116	Warning: Unrecognized packageExtended attribute.
+117	Warning: Unrecognized packageExtended attribute.
+118	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+119	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+120	Warning: Unrecognized packageExtended attribute.
+121	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+122	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+123	Warning: Unrecognized packageExtended attribute.
+124	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+125	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+126	Warning: Unrecognized packageExtended attribute.
+127	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+128	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+129	Warning: Unrecognized packageExtended attribute.
+130	Session: 30546173_4267072707 initialized by client WindowsUpdateAgent.
+131	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+132	Session: 30546173_4268042763 initialized by client WindowsUpdateAgent.
+133	Session: 30546173_4271022933 initialized by client WindowsUpdateAgent.
+134	Warning: Unrecognized packageExtended attribute.
+135	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+136	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+137	Warning: Unrecognized packageExtended attribute.
+138	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+139	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+140	Warning: Unrecognized packageExtended attribute.
+141	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+142	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+143	Warning: Unrecognized packageExtended attribute.
+144	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+145	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+146	Warning: Unrecognized packageExtended attribute.
+147	Warning: Unrecognized packageExtended attribute.
+148	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+149	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+150	Warning: Unrecognized packageExtended attribute.
+151	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+152	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+153	Warning: Unrecognized packageExtended attribute.
+154	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+155	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+156	Warning: Unrecognized packageExtended attribute.
+157	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+158	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+159	Warning: Unrecognized packageExtended attribute.
+160	Warning: Unrecognized packageExtended attribute.
+161	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+162	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+163	Warning: Unrecognized packageExtended attribute.
+164	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+165	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+166	Warning: Unrecognized packageExtended attribute.
+167	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+168	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+169	Warning: Unrecognized packageExtended attribute.
+170	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+171	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+172	Warning: Unrecognized packageExtended attribute.
+173	Warning: Unrecognized packageExtended attribute.
+174	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+175	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+176	Warning: Unrecognized packageExtended attribute.
+177	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+178	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+179	Warning: Unrecognized packageExtended attribute.
+180	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+181	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+182	Warning: Unrecognized packageExtended attribute.
+183	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+184	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+185	Warning: Unrecognized packageExtended attribute.
+186	Warning: Unrecognized packageExtended attribute.
+187	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+188	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+189	Warning: Unrecognized packageExtended attribute.
+190	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+191	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+192	Warning: Unrecognized packageExtended attribute.
+193	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+194	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+195	Warning: Unrecognized packageExtended attribute.
+196	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+197	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+198	Warning: Unrecognized packageExtended attribute.
+199	Warning: Unrecognized packageExtended attribute.
+200	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+201	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+202	Warning: Unrecognized packageExtended attribute.
+203	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+204	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+205	Warning: Unrecognized packageExtended attribute.
+206	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+207	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+208	Warning: Unrecognized packageExtended attribute.
+209	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+210	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+211	Warning: Unrecognized packageExtended attribute.
+212	Warning: Unrecognized packageExtended attribute.
+213	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+214	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+215	Warning: Unrecognized packageExtended attribute.
+216	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+217	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+218	Warning: Unrecognized packageExtended attribute.
+219	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+220	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+221	Warning: Unrecognized packageExtended attribute.
+222	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+223	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+224	Warning: Unrecognized packageExtended attribute.
+225	Warning: Unrecognized packageExtended attribute.
+226	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+227	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+228	Warning: Unrecognized packageExtended attribute.
+229	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+230	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+231	Warning: Unrecognized packageExtended attribute.
+232	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+233	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+234	Warning: Unrecognized packageExtended attribute.
+235	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+236	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+237	Warning: Unrecognized packageExtended attribute.
+238	Session: 30546173_4275933214 initialized by client WindowsUpdateAgent.
+239	Warning: Unrecognized packageExtended attribute.
+240	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+241	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+242	Warning: Unrecognized packageExtended attribute.
+243	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+244	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+245	Warning: Unrecognized packageExtended attribute.
+246	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+247	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+248	Warning: Unrecognized packageExtended attribute.
+249	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+250	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+251	Warning: Unrecognized packageExtended attribute.
+252	Warning: Unrecognized packageExtended attribute.
+253	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+254	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+255	Warning: Unrecognized packageExtended attribute.
+256	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+257	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+258	Warning: Unrecognized packageExtended attribute.
+259	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+260	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+261	Warning: Unrecognized packageExtended attribute.
+262	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+263	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+264	Warning: Unrecognized packageExtended attribute.
+265	Warning: Unrecognized packageExtended attribute.
+266	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+267	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+268	Warning: Unrecognized packageExtended attribute.
+269	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+270	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+271	Warning: Unrecognized packageExtended attribute.
+272	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+273	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+274	Warning: Unrecognized packageExtended attribute.
+275	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+276	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+277	Warning: Unrecognized packageExtended attribute.
+278	Warning: Unrecognized packageExtended attribute.
+279	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+280	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+281	Warning: Unrecognized packageExtended attribute.
+282	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+283	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+284	Warning: Unrecognized packageExtended attribute.
+285	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+286	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+287	Warning: Unrecognized packageExtended attribute.
+288	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+289	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+290	Warning: Unrecognized packageExtended attribute.
+291	Warning: Unrecognized packageExtended attribute.
+292	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+293	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+294	Warning: Unrecognized packageExtended attribute.
+295	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+296	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+297	Warning: Unrecognized packageExtended attribute.
+298	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+299	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+300	Warning: Unrecognized packageExtended attribute.
+301	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+302	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+303	Warning: Unrecognized packageExtended attribute.
+304	Warning: Unrecognized packageExtended attribute.
+305	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+306	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+307	Warning: Unrecognized packageExtended attribute.
+308	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+309	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+310	Warning: Unrecognized packageExtended attribute.
+311	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+312	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+313	Warning: Unrecognized packageExtended attribute.
+314	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+315	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+316	Warning: Unrecognized packageExtended attribute.
+317	Warning: Unrecognized packageExtended attribute.
+318	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+319	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+320	Warning: Unrecognized packageExtended attribute.
+321	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+322	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+323	Warning: Unrecognized packageExtended attribute.
+324	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+325	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+326	Warning: Unrecognized packageExtended attribute.
+327	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+328	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+329	Warning: Unrecognized packageExtended attribute.
+330	Warning: Unrecognized packageExtended attribute.
+331	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+332	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+333	Warning: Unrecognized packageExtended attribute.
+334	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+335	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+336	Warning: Unrecognized packageExtended attribute.
+337	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+338	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+339	Warning: Unrecognized packageExtended attribute.
+340	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+341	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+342	Warning: Unrecognized packageExtended attribute.
+343	Session: 30546173_4280593480 initialized by client WindowsUpdateAgent.
+344	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+345	Session: 30546173_4280603481 initialized by client WindowsUpdateAgent.
+346	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+347	Session: 30546173_4280613482 initialized by client WindowsUpdateAgent.
+348	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+349	Session: 30546173_4280613483 initialized by client WindowsUpdateAgent.
+350	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+351	Session: 30546173_4280623482 initialized by client WindowsUpdateAgent.
+352	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+353	Session: 30546173_4280633483 initialized by client WindowsUpdateAgent.
+354	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+355	Session: 30546173_4280633484 initialized by client WindowsUpdateAgent.
+356	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+357	Session: 30546173_4281313522 initialized by client WindowsUpdateAgent.
+358	Session: 30546173_4285113739 initialized by client WindowsUpdateAgent.
+359	"Read out cached package applicability for package: Package_for_KB3121255~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+360	Session: 30546173_4286503818 initialized by client WindowsUpdateAgent.
+361	"Read out cached package applicability for package: Package_for_KB2656356~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+362	Session: 30546173_4286853838 initialized by client WindowsUpdateAgent.
+363	"Read out cached package applicability for package: Package_for_KB3108664~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+364	Session: 30546173_4286873840 initialized by client WindowsUpdateAgent.
+365	"Read out cached package applicability for package: Package_for_KB3115858~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+366	Session: 30546173_4289083966 initialized by client WindowsUpdateAgent.
+367	"Read out cached package applicability for package: Package_for_KB3127220~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+368	Session: 30546173_4289704001 initialized by client WindowsUpdateAgent.
+369	"Read out cached package applicability for package: Package_for_KB3060716~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+370	Session: 30546173_4294144255 initialized by client WindowsUpdateAgent.
+371	"Read out cached package applicability for package: Package_for_KB3006137~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+372	Session: 30546173_4294174257 initialized by client WindowsUpdateAgent.
+373	"Read out cached package applicability for package: Package_for_KB3067903~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+374	Session: 30546174_187017 initialized by client WindowsUpdateAgent.
+375	"Read out cached package applicability for package: Package_for_KB3086255~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+376	Session: 30546174_857056 initialized by client WindowsUpdateAgent.
+377	"Read out cached package applicability for package: Package_for_KB3146706~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+378	Session: 30546174_1497092 initialized by client WindowsUpdateAgent.
+379	"Read out cached package applicability for package: Package_for_KB3182203~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+380	Session: 30546174_1767108 initialized by client WindowsUpdateAgent.
+381	"Read out cached package applicability for package: Package_for_KB3075226~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+382	Session: 30546174_2037123 initialized by client WindowsUpdateAgent.
+383	"Read out cached package applicability for package: Package_for_KB3185319~31bf3856ad364e35~amd64~~11.2.1.0, ApplicableState: 112, CurrentState:112"
+384	Session: 30546174_2217133 initialized by client WindowsUpdateAgent.
+385	Session: 30546174_2817168 initialized by client WindowsUpdateAgent.
+386	"Read out cached package applicability for package: Package_for_KB3033929~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+387	Session: 30546174_8087469 initialized by client WindowsUpdateAgent.
+388	"Read out cached package applicability for package: Package_for_KB2978742~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+389	Session: 30546174_9517551 initialized by client WindowsUpdateAgent.
+390	"Read out cached package applicability for package: Package_for_KB3177186~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+391	Session: 30546174_9817568 initialized by client WindowsUpdateAgent.
+392	"Read out cached package applicability for package: Package_for_KB3055642~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+393	Session: 30546174_9927574 initialized by client WindowsUpdateAgent.
+394	"Read out cached package applicability for package: Package_for_KB3078601~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 112, CurrentState:112"
+395	Session: 30546174_10127586 initialized by client WindowsUpdateAgent.
+396	"Read out cached package applicability for package: Package_for_KB3147071~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+397	Session: 30546174_10517608 initialized by client WindowsUpdateAgent.
+398	"Read out cached package applicability for package: Package_for_KB3019978~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:0"
+399	Session: 30546174_10537609 initialized by client WindowsUpdateAgent.
+400	"Read out cached package applicability for package: Package_for_KB2563227~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+401	Session: 30546174_11037638 initialized by client WindowsUpdateAgent.
+402	"Read out cached package applicability for package: Package_for_KB3126587~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+403	Session: 30546174_17007979 initialized by client WindowsUpdateAgent.
+404	"Read out cached package applicability for package: Package_for_KB2789645~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+405	Session: 30546174_17668017 initialized by client WindowsUpdateAgent.
+406	"Read out cached package applicability for package: Package_for_KB3138901~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+407	Session: 30546174_17818026 initialized by client WindowsUpdateAgent.
+408	"Read out cached package applicability for package: Package_for_KB2607047~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 0, CurrentState:0"
+409	Session: 30546174_18178046 initialized by client WindowsUpdateAgent.
+410	Session: 30546174_18398059 initialized by client WindowsUpdateAgent.
+411	"Read out cached package applicability for package: Package_for_KB3011780~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 112, CurrentState:112"
+412	Session: 30546174_20238164 initialized by client WindowsUpdateAgent.
+413	"Read out cached package applicability for package: Package_for_KB3170455~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+414	Session: 30546174_20328169 initialized by client WindowsUpdateAgent.
+415	"Read out cached package applicability for package: Package_for_KB2891804~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+416	Session: 30546174_20448176 initialized by client WindowsUpdateAgent.
+417	"Read out cached package applicability for package: Package_for_KB3156017~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+418	Session: 30546174_20458177 initialized by client WindowsUpdateAgent.
+419	"Read out cached package applicability for package: Package_for_KB3084135~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+420	Session: 30546174_20518180 initialized by client WindowsUpdateAgent.
+421	"Read out cached package applicability for package: Package_for_KB2560656~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+422	Session: 30546174_20798196 initialized by client WindowsUpdateAgent.
+423	"Read out cached package applicability for package: Package_for_KB3184471~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 0, CurrentState:0"
+424	Session: 30546174_21498236 initialized by client WindowsUpdateAgent.
+425	"Read out cached package applicability for package: Package_for_KB3146963~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+426	Session: 30546174_21518237 initialized by client WindowsUpdateAgent.
+427	"Read out cached package applicability for package: Package_for_KB2918077~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+428	Session: 30546174_21788253 initialized by client WindowsUpdateAgent.
+429	"Read out cached package applicability for package: Package_for_KB2716513~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+430	Session: 30546174_21808254 initialized by client WindowsUpdateAgent.
+431	"Read out cached package applicability for package: Package_for_KB2489256~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:0"
+432	Session: 30546174_21868257 initialized by client WindowsUpdateAgent.
+433	"Read out cached package applicability for package: Package_for_KB3138962~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+434	Session: 30546174_21888258 initialized by client WindowsUpdateAgent.
+435	"Read out cached package applicability for package: Package_for_KB2552343~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+436	Session: 30546174_21968263 initialized by client WindowsUpdateAgent.
+437	"Read out cached package applicability for package: Package_for_KB3059317~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+438	Session: 30546174_22008265 initialized by client WindowsUpdateAgent.
+439	"Read out cached package applicability for package: Package_for_KB2973201~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+440	Session: 30546174_22048268 initialized by client WindowsUpdateAgent.
+441	"Read out cached package applicability for package: Package_for_KB3072305~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+442	Session: 30546174_22448291 initialized by client WindowsUpdateAgent.
+443	"Read out cached package applicability for package: Package_for_KB3078667~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+444	Session: 30546174_22538296 initialized by client WindowsUpdateAgent.
+445	"Read out cached package applicability for package: Package_for_KB3020369~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+446	Session: 30546174_22828312 initialized by client WindowsUpdateAgent.
+447	"Read out cached package applicability for package: Package_for_KB2943357~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+448	Session: 30546174_23648359 initialized by client WindowsUpdateAgent.
+449	"Read out cached package applicability for package: Package_for_KB3168965~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112"
+450	Session: 30546174_23668360 initialized by client WindowsUpdateAgent.
+451	"Read out cached package applicability for package: Package_for_KB2620704~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+452	Session: 30546174_23938376 initialized by client WindowsUpdateAgent.
+453	"Read out cached package applicability for package: Microsoft-Windows-PlatformUpdate-Win7-SRV08R2-Package-TopLevel~31bf3856ad364e35~amd64~~7.1.7601.16492, ApplicableState: 112, CurrentState:112"
+454	Session: 30546174_24168389 initialized by client WindowsUpdateAgent.
+455	"Read out cached package applicability for package: Package_for_KB2763523~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+456	Session: 30546174_25138444 initialized by client WindowsUpdateAgent.
+457	"Read out cached package applicability for package: Package_for_KB3075220~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+458	Session: 30546174_25988493 initialized by client WindowsUpdateAgent.
+459	"Read out cached package applicability for package: Package_for_KB2813347~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+460	Session: 30546174_27448577 initialized by client WindowsUpdateAgent.
+461	"Read out cached package applicability for package: Package_for_KB3080446~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112"
+462	Session: 30546174_27518581 initialized by client WindowsUpdateAgent.
+463	"Read out cached package applicability for package: Package_for_KB2515325~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+464	Session: 30546174_27548582 initialized by client WindowsUpdateAgent.
+465	"Read out cached package applicability for package: Package_for_KB2957189~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+466	Session: 30546174_27568583 initialized by client WindowsUpdateAgent.
+467	"Read out cached package applicability for package: Package_for_KB2718704~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+468	Session: 30546174_27758594 initialized by client WindowsUpdateAgent.
+469	"Read out cached package applicability for package: Package_for_KB2479943~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+470	Session: 30546174_27818598 initialized by client WindowsUpdateAgent.
+471	"Read out cached package applicability for package: Package_for_KB3138612~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+472	Session: 30546174_28288625 initialized by client WindowsUpdateAgent.
+473	"Read out cached package applicability for package: Microsoft-Hyper-V-Integration-Services-Package~31bf3856ad364e35~amd64~~6.3.9600.17681, ApplicableState: 112, CurrentState:0"
+474	Session: 30546174_28528638 initialized by client WindowsUpdateAgent.
+475	"Read out cached package applicability for package: Package_for_KB3107998~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+476	Session: 30546174_30478750 initialized by client WindowsUpdateAgent.
+477	"Read out cached package applicability for package: Package_for_KB3071756~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+478	Session: 30546174_35199020 initialized by client WindowsUpdateAgent.
+479	"Read out cached package applicability for package: Package_for_KB2840631~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+480	Session: 30546174_35469035 initialized by client WindowsUpdateAgent.
+481	"Read out cached package applicability for package: Package_for_KB2631813~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+482	Session: 30546174_35509038 initialized by client WindowsUpdateAgent.
+483	"Read out cached package applicability for package: Package_for_KB2640148~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+484	Session: 30546174_35659046 initialized by client WindowsUpdateAgent.
+485	"Read out cached package applicability for package: Package_for_KB3093513~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+486	Session: 30546174_35689048 initialized by client WindowsUpdateAgent.
+487	"Read out cached package applicability for package: Package_for_KB2894844~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+488	Session: 30546174_36019067 initialized by client WindowsUpdateAgent.
+489	"Read out cached package applicability for package: Package_for_KB3108670~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+490	Session: 30546174_40939348 initialized by client WindowsUpdateAgent.
+491	"Read out cached package applicability for package: Package_for_KB2547666~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+492	Session: 30546174_41309369 initialized by client WindowsUpdateAgent.
+493	"Read out cached package applicability for package: Package_for_KB2798162~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 80, CurrentState:112"
+494	Session: 30546174_43049469 initialized by client WindowsUpdateAgent.
+495	"Read out cached package applicability for package: Package_for_KB2574819~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+496	Session: 30546174_43479493 initialized by client WindowsUpdateAgent.
+497	"Read out cached package applicability for package: Microsoft-Windows-RDP-BlueIP-Package-TopLevel~31bf3856ad364e35~amd64~~7.2.7601.16415, ApplicableState: 112, CurrentState:112"
+498	Session: 30546174_43599500 initialized by client WindowsUpdateAgent.
+499	"Read out cached package applicability for package: Package_for_KB2857650~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+500	Session: 30546174_44439548 initialized by client WindowsUpdateAgent.
+501	"Read out cached package applicability for package: Package_for_KB3118401~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+502	Session: 30546174_44469550 initialized by client WindowsUpdateAgent.
+503	"Read out cached package applicability for package: Package_for_KB2585542~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 80, CurrentState:112"
+504	Session: 30546174_44629559 initialized by client WindowsUpdateAgent.
+505	"Read out cached package applicability for package: Package_for_KB2931356~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+506	Session: 30546174_45239594 initialized by client WindowsUpdateAgent.
+507	"Read out cached package applicability for package: Package_for_KB2900986~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+508	Session: 30546174_45309598 initialized by client WindowsUpdateAgent.
+509	"Read out cached package applicability for package: Package_for_KB2985461~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+510	Session: 30546174_46439663 initialized by client WindowsUpdateAgent.
+511	"Read out cached package applicability for package: Package_for_KB3092601~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+512	Session: 30546174_46879688 initialized by client WindowsUpdateAgent.
+513	"Read out cached package applicability for package: Package_for_KB2836942~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+514	Session: 30546174_46979694 initialized by client WindowsUpdateAgent.
+515	"Read out cached package applicability for package: Package_for_KB2937610~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+516	Session: 30546174_48029754 initialized by client WindowsUpdateAgent.
+517	"Read out cached package applicability for package: Package_for_KB3035126~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+518	Session: 30546174_48659790 initialized by client WindowsUpdateAgent.
+519	"Read out cached package applicability for package: Package_for_KB3076895~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+520	Session: 30546174_48769796 initialized by client WindowsUpdateAgent.
+521	"Read out cached package applicability for package: Package_for_KB3021674~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+522	Session: 30546174_48809798 initialized by client WindowsUpdateAgent.
+523	"Read out cached package applicability for package: Package_for_KB2919469~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+524	Session: 30546174_49059813 initialized by client WindowsUpdateAgent.
+525	"Read out cached package applicability for package: Package_for_KB2823180~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0"
+526	Session: 30546174_49089814 initialized by client WindowsUpdateAgent.
+527	"Read out cached package applicability for package: Package_for_KB2809215~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:0"
+528	Session: 30546174_49109815 initialized by client WindowsUpdateAgent.
+529	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+530	Session: 30546174_49119816 initialized by client WindowsUpdateAgent.
+531	"Read out cached package applicability for package: Package_for_KB2809900~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0"
+532	Session: 30546174_49199821 initialized by client WindowsUpdateAgent.
+533	"Read out cached package applicability for package: Package_for_KB3150220~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+534	Session: 30546174_49409833 initialized by client WindowsUpdateAgent.
+535	"Read out cached package applicability for package: Package_for_KB3175024~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+536	Session: 30546174_49899861 initialized by client WindowsUpdateAgent.
+537	"Read out cached package applicability for package: Package_for_KB3126446~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+538	Session: 30546174_50419890 initialized by client WindowsUpdateAgent.
+539	"Read out cached package applicability for package: Package_for_KB2968294~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+540	Session: 30546174_50799912 initialized by client WindowsUpdateAgent.
+541	"Read out cached package applicability for package: Package_for_KB3080079~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+542	Session: 30546174_79961580 initialized by client WindowsUpdateAgent.
+543	"Read out cached package applicability for package: Package_for_KB2868626~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112"
+544	Session: 30546174_84291828 initialized by client WindowsUpdateAgent.
+545	"Read out cached package applicability for package: Package_for_KB2929733~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+546	Session: 30546174_84441836 initialized by client WindowsUpdateAgent.
+547	"Read out cached package applicability for package: Package_for_KB2893294~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+548	Session: 30546174_84491839 initialized by client WindowsUpdateAgent.
+549	"Read out cached package applicability for package: Package_for_KB3145739~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+550	Session: 30546174_84891862 initialized by client WindowsUpdateAgent.
+551	"Read out cached package applicability for package: Package_for_KB2972211~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+552	Session: 30546174_85221881 initialized by client WindowsUpdateAgent.
+553	"Read out cached package applicability for package: Package_for_KB947821~31bf3856ad364e35~amd64~~6.1.34.0, ApplicableState: 112, CurrentState:0"
+554	Session: 30546174_85241882 initialized by client WindowsUpdateAgent.
+555	"Read out cached package applicability for package: Package_for_KB3020370~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+556	Session: 30546174_85811915 initialized by client WindowsUpdateAgent.
+557	"Read out cached package applicability for package: Package_for_KB3003743~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+558	Session: 30546174_88182050 initialized by client WindowsUpdateAgent.
+559	"Read out cached package applicability for package: Package_for_KB3020387~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:0"
+560	Session: 30546174_88262055 initialized by client WindowsUpdateAgent.
+561	"Read out cached package applicability for package: Package_for_KB2884256~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+562	Session: 30546174_88342059 initialized by client WindowsUpdateAgent.
+563	"Read out cached package applicability for package: Package_for_KB3163245~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+564	Session: 30546174_88462066 initialized by client WindowsUpdateAgent.
+565	"Read out cached package applicability for package: Package_for_KB2660075~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+566	Session: 30546174_88482067 initialized by client WindowsUpdateAgent.
+567	"Read out cached package applicability for package: Package_for_KB3022777~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+568	Session: 30546174_88742082 initialized by client WindowsUpdateAgent.
+569	"Read out cached package applicability for package: Package_for_KB3161561~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+570	Session: 30546174_89042099 initialized by client WindowsUpdateAgent.
+571	"Read out cached package applicability for package: Package_for_KB2800095~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+572	Session: 30546174_89092102 initialized by client WindowsUpdateAgent.
+573	"Read out cached package applicability for package: Package_for_KB2818604~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:0"
+574	Session: 30546174_89122104 initialized by client WindowsUpdateAgent.
+575	"Read out cached package applicability for package: Package_for_KB2570947~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+576	Session: 30546174_89272113 initialized by client WindowsUpdateAgent.
+577	"Read out cached package applicability for package: Package_for_KB3035132~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+578	Session: 30546174_89322115 initialized by client WindowsUpdateAgent.
+579	"Read out cached package applicability for package: Package_for_KB2972100~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+580	Session: 30546174_89562129 initialized by client WindowsUpdateAgent.
+581	"Read out cached package applicability for package: Package_for_KB2966583~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+582	Session: 30546174_89962152 initialized by client WindowsUpdateAgent.
+583	"Read out cached package applicability for package: Package_for_KB2685811~31bf3856ad364e35~amd64~~6.1.1.11, ApplicableState: 112, CurrentState:112"
+584	Session: 30546174_90352174 initialized by client WindowsUpdateAgent.
+585	"Read out cached package applicability for package: Package_for_KB3110329~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+586	Session: 30546174_90632190 initialized by client WindowsUpdateAgent.
+587	"Read out cached package applicability for package: Package_for_KB2545698~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+588	Session: 30546174_90692194 initialized by client WindowsUpdateAgent.
+589	"Read out cached package applicability for package: Package_for_KB3124280~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+590	Session: 30546174_90722196 initialized by client WindowsUpdateAgent.
+591	"Read out cached package applicability for package: Microsoft-Hyper-V-Integration-Services-Package~31bf3856ad364e35~amd64~~6.3.9600.17388, ApplicableState: 112, CurrentState:0"
+592	Session: 30546174_90802200 initialized by client WindowsUpdateAgent.
+593	Session: 30546174_90832202 initialized by client WindowsUpdateAgent.
+594	"Read out cached package applicability for package: Package_for_KB2676562~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+595	Session: 30546174_90912206 initialized by client WindowsUpdateAgent.
+596	"Read out cached package applicability for package: Package_for_KB2970228~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+597	Session: 30546174_91002212 initialized by client WindowsUpdateAgent.
+598	"Read out cached package applicability for package: Package_for_KB2512715~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 0, CurrentState:0"
+599	Session: 30546174_91262226 initialized by client WindowsUpdateAgent.
+600	"Read out cached package applicability for package: Package_for_KB2965788~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+601	Session: 30546174_91282228 initialized by client WindowsUpdateAgent.
+602	"Read out cached package applicability for package: Package_for_KB3030377~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+603	Session: 30546174_91382233 initialized by client WindowsUpdateAgent.
+604	"Read out cached package applicability for package: Package_for_KB3021917~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+605	Session: 30546174_91422236 initialized by client WindowsUpdateAgent.
+606	"Read out cached package applicability for package: Package_for_KB2853952~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+607	Session: 30546174_91472238 initialized by client WindowsUpdateAgent.
+608	"Read out cached package applicability for package: Package_for_KB2706045~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+609	Session: 30546174_91532242 initialized by client WindowsUpdateAgent.
+610	"Read out cached package applicability for package: Package_for_KB2510531~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+611	Session: 30546174_91592245 initialized by client WindowsUpdateAgent.
+612	"Read out cached package applicability for package: Package_for_KB2847927~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+613	Session: 30546174_91672250 initialized by client WindowsUpdateAgent.
+614	"Read out cached package applicability for package: Package_for_KB2604115~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+615	Session: 30546174_92052272 initialized by client WindowsUpdateAgent.
+616	"Read out cached package applicability for package: Package_for_KB3013531~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+617	Session: 30546174_92302286 initialized by client WindowsUpdateAgent.
+618	"Read out cached package applicability for package: Package_for_KB2893519~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+619	Session: 30546174_93492354 initialized by client WindowsUpdateAgent.
+620	"Read out cached package applicability for package: Package_for_KB2703157~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+621	Session: 30546174_93642363 initialized by client WindowsUpdateAgent.
+622	"Read out cached package applicability for package: Package_for_KB3133977~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+623	Session: 30546174_94042385 initialized by client WindowsUpdateAgent.
+624	"Read out cached package applicability for package: Package_for_KB3109094~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+625	Session: 30546174_94182393 initialized by client WindowsUpdateAgent.
+626	"Read out cached package applicability for package: Package_for_KB2506212~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+627	Session: 30546174_94222396 initialized by client WindowsUpdateAgent.
+628	"Read out cached package applicability for package: Package_for_KB3076949~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+629	Session: 30546174_94392405 initialized by client WindowsUpdateAgent.
+630	Session: 30546174_94722424 initialized by client WindowsUpdateAgent.
+631	"Read out cached package applicability for package: Package_for_KB2871997~31bf3856ad364e35~amd64~~6.1.2.5, ApplicableState: 112, CurrentState:112"
+632	Session: 30546174_97232568 initialized by client WindowsUpdateAgent.
+633	"Read out cached package applicability for package: Package_for_KB3164035~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+634	Session: 30546174_97282571 initialized by client WindowsUpdateAgent.
+635	Session: 30546174_97402578 initialized by client WindowsUpdateAgent.
+636	"Read out cached package applicability for package: Package_for_KB2574819~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+637	Session: 30546174_97982611 initialized by client WindowsUpdateAgent.
+638	"Read out cached package applicability for package: Microsoft-Windows-RDP-WinIP-Package-TopLevel~31bf3856ad364e35~amd64~~7.1.7601.16398, ApplicableState: 112, CurrentState:112"
+639	Session: 30546174_98162621 initialized by client WindowsUpdateAgent.
+640	"Read out cached package applicability for package: Package_for_KB2843630~31bf3856ad364e35~amd64~~6.1.3.1, ApplicableState: 112, CurrentState:112"
+641	Session: 30546174_99082674 initialized by client WindowsUpdateAgent.
+642	"Read out cached package applicability for package: Package_for_KB2862330~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+643	Session: 30546174_99222682 initialized by client WindowsUpdateAgent.
+644	"Read out cached package applicability for package: Package_for_KB2834140~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:0"
+645	Session: 30546174_99252683 initialized by client WindowsUpdateAgent.
+646	Session: 30546174_99402692 initialized by client WindowsUpdateAgent.
+647	"Read out cached package applicability for package: Package_for_KB2726535~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+648	Session: 30546174_100742769 initialized by client WindowsUpdateAgent.
+649	Session: 30546174_100772770 initialized by client WindowsUpdateAgent.
+650	"Read out cached package applicability for package: Package_for_KB3046269~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+651	Session: 30546174_100922779 initialized by client WindowsUpdateAgent.
+652	"Read out cached package applicability for package: Package_for_KB3139398~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+653	Session: 30546174_100952781 initialized by client WindowsUpdateAgent.
+654	"Read out cached package applicability for package: Package_for_KB2719857~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+655	Session: 30546174_100982782 initialized by client WindowsUpdateAgent.
+656	"Read out cached package applicability for package: Package_for_KB2603229~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+657	Session: 30546174_101102789 initialized by client WindowsUpdateAgent.
+658	"Read out cached package applicability for package: Package_for_KB3109560~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+659	Session: 30546174_101172793 initialized by client WindowsUpdateAgent.
+660	"Read out cached package applicability for package: Package_for_KB2807986~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+661	Session: 30546174_101232797 initialized by client WindowsUpdateAgent.
+662	"Read out cached package applicability for package: Package_for_KB3135983~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+663	Session: 30546174_101272799 initialized by client WindowsUpdateAgent.
+664	"Read out cached package applicability for package: Package_for_KB2667402~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+665	Session: 30546174_101322802 initialized by client WindowsUpdateAgent.
+666	"Read out cached package applicability for package: Package_for_KB2791765~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+667	Session: 30546174_101632820 initialized by client WindowsUpdateAgent.
+668	"Read out cached package applicability for package: Microsoft-Hyper-V-Integration-Services-Package~31bf3856ad364e35~amd64~~6.3.9600.18080, ApplicableState: 112, CurrentState:0"
+669	Session: 30546174_101752826 initialized by client WindowsUpdateAgent.
+670	"Read out cached package applicability for package: Package_for_KB3139940~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+671	Session: 30546174_101792829 initialized by client WindowsUpdateAgent.
+672	"Read out cached package applicability for package: Package_for_KB2719033~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+673	Session: 30546174_101842832 initialized by client WindowsUpdateAgent.
+674	"Read out cached package applicability for package: Package_for_KB3109103~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+675	Session: 30546174_101902835 initialized by client WindowsUpdateAgent.
+676	"Read out cached package applicability for package: Package_for_KB2864202~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+677	Session: 30546174_102002841 initialized by client WindowsUpdateAgent.
+678	"Read out cached package applicability for package: Package_for_KB3074543~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+679	Session: 30546174_102442866 initialized by client WindowsUpdateAgent.
+680	"Read out cached package applicability for package: Package_for_KB3040272~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+681	Session: 30546174_103902949 initialized by client WindowsUpdateAgent.
+682	"Read out cached package applicability for package: Package_for_KB3142042~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+683	Session: 30546174_104472982 initialized by client WindowsUpdateAgent.
+684	"Read out cached package applicability for package: Package_for_KB3042058~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+685	Session: 30546174_106683108 initialized by client WindowsUpdateAgent.
+686	"Read out cached package applicability for package: Package_for_KB3023215~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+687	Session: 30546174_106973125 initialized by client WindowsUpdateAgent.
+688	"Read out cached package applicability for package: Package_for_KB3108381~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+689	Session: 30546174_107003127 initialized by client WindowsUpdateAgent.
+690	"Read out cached package applicability for package: Package_for_KB2868038~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+691	Session: 30546174_107053130 initialized by client WindowsUpdateAgent.
+692	"Read out cached package applicability for package: Package_for_KB2750841~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+693	Session: 30546174_107333146 initialized by client WindowsUpdateAgent.
+694	"Read out cached package applicability for package: Package_for_KB3185911~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+695	Session: 30546174_107363147 initialized by client WindowsUpdateAgent.
+696	"Read out cached package applicability for package: Package_for_KB3138910~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+697	Session: 30546174_107383149 initialized by client WindowsUpdateAgent.
+698	"Read out cached package applicability for package: Package_for_KB2862335~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+699	Session: 30546174_107523157 initialized by client WindowsUpdateAgent.
+700	"Read out cached package applicability for package: Package_for_KB2908783~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+701	Session: 30546174_108313202 initialized by client WindowsUpdateAgent.
+702	"Read out cached package applicability for package: Package_for_KB3020393~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 64, CurrentState:0"
+703	Session: 30546174_108353204 initialized by client WindowsUpdateAgent.
+704	"Read out cached package applicability for package: Package_for_KB2772930~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 0, CurrentState:0"
+705	Session: 30546174_108613219 initialized by client WindowsUpdateAgent.
+706	"Read out cached package applicability for package: Package_for_KB2621146~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0"
+707	Session: 30546174_108633220 initialized by client WindowsUpdateAgent.
+708	"Read out cached package applicability for package: Package_for_KB2601626~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0"
+709	Session: 30546174_108683223 initialized by client WindowsUpdateAgent.
+710	"Read out cached package applicability for package: Package_for_KB2923545~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+711	Session: 30546174_108903235 initialized by client WindowsUpdateAgent.
+712	"Read out cached package applicability for package: Package_for_KB2509553~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+713	Session: 30546174_109123248 initialized by client WindowsUpdateAgent.
+714	"Read out cached package applicability for package: Package_for_KB2758857~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+715	Session: 30546174_110243312 initialized by client WindowsUpdateAgent.
+716	"Read out cached package applicability for package: Package_for_KB2846960~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 80, CurrentState:112"
+717	Session: 30546174_110453324 initialized by client WindowsUpdateAgent.
+718	"Read out cached package applicability for package: Package_for_KB2770660~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+719	Session: 30546174_130874492 initialized by client WindowsUpdateAgent.
+720	"Read out cached package applicability for package: Package_for_KB3123479~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+721	Session: 30546174_131324518 initialized by client WindowsUpdateAgent.
+722	"Read out cached package applicability for package: Package_for_KB3072630~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+723	Session: 30546174_132374578 initialized by client WindowsUpdateAgent.
+724	"Read out cached package applicability for package: Package_for_KB3179573~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+725	Session: 30546174_132424581 initialized by client WindowsUpdateAgent.
+726	"Read out cached package applicability for package: Microsoft-Hyper-V-Integration-Services-Package~31bf3856ad364e35~amd64~~6.3.9600.17903, ApplicableState: 112, CurrentState:0"
+727	Session: 30546174_132514586 initialized by client WindowsUpdateAgent.
+728	"Read out cached package applicability for package: Package_for_KB2952664~31bf3856ad364e35~amd64~~6.1.19.0, ApplicableState: 112, CurrentState:112"
+729	Session: 30546174_132544588 initialized by client WindowsUpdateAgent.
+730	"Read out cached package applicability for package: Package_for_KB3149090~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+731	Session: 30546174_132944611 initialized by client WindowsUpdateAgent.
+732	"Read out cached package applicability for package: Package_for_KB3178034~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+733	Session: 30546174_132984613 initialized by client WindowsUpdateAgent.
+734	"Read out cached package applicability for package: Package_for_KB3097989~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+735	Session: 30546174_133134621 initialized by client WindowsUpdateAgent.
+736	"Read out cached package applicability for package: Package_for_KB2853587~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 0, CurrentState:0"
+737	Session: 30546174_137784887 initialized by client WindowsUpdateAgent.
+738	"Read out cached package applicability for package: Package_for_KB2732059~31bf3856ad364e35~amd64~~6.1.5.1, ApplicableState: 112, CurrentState:112"
+739	Session: 30546174_138284916 initialized by client WindowsUpdateAgent.
+740	"Read out cached package applicability for package: Package_for_KB3164033~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+741	Session: 30546174_138824947 initialized by client WindowsUpdateAgent.
+742	"Read out cached package applicability for package: Package_for_KB3080149~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+743	Session: 30546174_143845234 initialized by client WindowsUpdateAgent.
+744	"Read out cached package applicability for package: Package_for_KB3046017~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+745	Session: 30546174_143875236 initialized by client WindowsUpdateAgent.
+746	"Read out cached package applicability for package: Package_for_KB3067904~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:0"
+747	Session: 30546174_143895237 initialized by client WindowsUpdateAgent.
+748	"Read out cached package applicability for package: Package_for_KB2912390~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+749	Session: 30546174_144035245 initialized by client WindowsUpdateAgent.
+750	"Read out cached package applicability for package: Package_for_KB2632503~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+751	Session: 30546174_144085248 initialized by client WindowsUpdateAgent.
+752	"Read out cached package applicability for package: Package_for_KB2991963~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+753	Session: 30546174_144115249 initialized by client WindowsUpdateAgent.
+754	"Read out cached package applicability for package: Package_for_KB2911501~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+755	Session: 30546174_144435268 initialized by client WindowsUpdateAgent.
+756	"Read out cached package applicability for package: Package_for_KB2984972~31bf3856ad364e35~amd64~~6.1.1.4, ApplicableState: 112, CurrentState:112"
+757	Session: 30546174_147195426 initialized by client WindowsUpdateAgent.
+758	"Read out cached package applicability for package: Package_for_KB3121461~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112"
+759	Session: 30546174_147205426 initialized by client WindowsUpdateAgent.
+760	"Read out cached package applicability for package: Package_for_KB3161958~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+761	Session: 30546174_147585448 initialized by client WindowsUpdateAgent.
+762	"Read out cached package applicability for package: Package_for_KB2888049~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+763	Session: 30546174_147765458 initialized by client WindowsUpdateAgent.
+764	"Read out cached package applicability for package: Package_for_KB2773072~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 112, CurrentState:112"
+765	Session: 30546174_149225542 initialized by client WindowsUpdateAgent.
+766	"Read out cached package applicability for package: Package_for_KB2579686~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+767	Session: 30546174_149265544 initialized by client WindowsUpdateAgent.
+768	"Read out cached package applicability for package: Package_for_KB3075222~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:0"
+769	Session: 30546174_149285545 initialized by client WindowsUpdateAgent.
+770	"Read out cached package applicability for package: Microsoft-Windows-Embedded-EmbeddedLockdown-Package-TopLevel~31bf3856ad364e35~amd64~~7.1.7601.16511, ApplicableState: 112, CurrentState:0"
+771	Session: 30546174_149295546 initialized by client WindowsUpdateAgent.
+772	"Read out cached package applicability for package: Package_for_KB2544893~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+773	Session: 30546174_149325547 initialized by client WindowsUpdateAgent.
+774	"Read out cached package applicability for package: Package_for_KB2685939~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112"
+775	Session: 30546174_149405552 initialized by client WindowsUpdateAgent.
+776	"Read out cached package applicability for package: Package_for_KB2729452~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+777	Session: 30546174_154395837 initialized by client WindowsUpdateAgent.
+778	"Read out cached package applicability for package: Package_for_KB3020388~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+779	Session: 30546174_154615850 initialized by client WindowsUpdateAgent.
+780	"Read out cached package applicability for package: Package_for_KB2742599~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+781	Session: 30546174_155085877 initialized by client WindowsUpdateAgent.
+782	"Read out cached package applicability for package: Package_for_KB3181988~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+783	Session: 30546174_155245886 initialized by client WindowsUpdateAgent.
+784	"Read out cached package applicability for package: Package_for_KB2685813~31bf3856ad364e35~amd64~~6.1.1.11, ApplicableState: 112, CurrentState:112"
+785	Session: 30546174_155605907 initialized by client WindowsUpdateAgent.
+786	"Read out cached package applicability for package: Package_for_KB2690533~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+787	Session: 30546174_155755915 initialized by client WindowsUpdateAgent.
+788	"Read out cached package applicability for package: Package_for_KB3075249~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+789	Session: 30546174_156625965 initialized by client WindowsUpdateAgent.
+790	"Read out cached package applicability for package: Package_for_KB3156016~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+791	Session: 30546174_156695969 initialized by client WindowsUpdateAgent.
+792	"Read out cached package applicability for package: Package_for_KB3139914~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+793	Session: 30546174_156715970 initialized by client WindowsUpdateAgent.
+794	"Read out cached package applicability for package: Package_for_KB2621440~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 112, CurrentState:112"
+795	Session: 30546174_156785974 initialized by client WindowsUpdateAgent.
+796	"Read out cached package applicability for package: Package_for_KB3054476~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+797	Session: 30546174_156825976 initialized by client WindowsUpdateAgent.
+798	"Read out cached package applicability for package: Package_for_KB3122648~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+799	Session: 30546174_157005987 initialized by client WindowsUpdateAgent.
+800	"Read out cached package applicability for package: Package_for_KB3042553~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+801	Session: 30546174_157105992 initialized by client WindowsUpdateAgent.
+802	"Read out cached package applicability for package: Package_for_KB2732487~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+803	Session: 30546174_157135994 initialized by client WindowsUpdateAgent.
+804	"Read out cached package applicability for package: Package_for_KB3005607~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+805	Session: 30546174_157145995 initialized by client WindowsUpdateAgent.
+806	Session: 30546174_157205998 initialized by client WindowsUpdateAgent.
+807	"Read out cached package applicability for package: Package_for_KB3184143~31bf3856ad364e35~amd64~~6.1.1.4, ApplicableState: 112, CurrentState:112"
+808	Session: 30546174_157616022 initialized by client WindowsUpdateAgent.
+809	"Read out cached package applicability for package: Package_for_KB2992611~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+810	Session: 30546174_159636137 initialized by client WindowsUpdateAgent.
+811	"Read out cached package applicability for package: Package_for_KB2727528~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+812	Session: 30546174_159666139 initialized by client WindowsUpdateAgent.
+813	"Read out cached package applicability for package: Package_for_KB2506014~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+814	Session: 30546174_164936440 initialized by client WindowsUpdateAgent.
+815	"Read out cached package applicability for package: Package_for_KB2868116~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+816	Session: 30546174_165556476 initialized by client WindowsUpdateAgent.
+817	"Read out cached package applicability for package: Package_for_KB2861698~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+818	Session: 30546174_165596478 initialized by client WindowsUpdateAgent.
+819	"Read out cached package applicability for package: Package_for_KB3092627~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+820	Session: 30546174_165696484 initialized by client WindowsUpdateAgent.
+821	"Read out cached package applicability for package: Package_for_KB2984976~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 80, CurrentState:112"
+822	Session: 30546174_165966499 initialized by client WindowsUpdateAgent.
+823	"Read out cached package applicability for package: Package_for_KB3102429~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+824	Session: 30546174_166396524 initialized by client WindowsUpdateAgent.
+825	"Read out cached package applicability for package: Package_for_KB3005788~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+826	Session: 30546174_167286575 initialized by client WindowsUpdateAgent.
+827	"Read out cached package applicability for package: Package_for_KB3006121~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+828	Session: 30546174_167476586 initialized by client WindowsUpdateAgent.
+829	"Read out cached package applicability for package: Package_for_KB2813430~31bf3856ad364e35~amd64~~6.1.1.4, ApplicableState: 112, CurrentState:112"
+830	Session: 30546174_169016674 initialized by client WindowsUpdateAgent.
+831	"Read out cached package applicability for package: Package_for_KB3033889~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+832	Session: 30546174_169066677 initialized by client WindowsUpdateAgent.
+833	"Read out cached package applicability for package: Package_for_KB3037574~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+834	Session: 30546174_169296690 initialized by client WindowsUpdateAgent.
+835	"Read out cached package applicability for package: Package_for_KB2977292~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+836	Session: 30546174_169316691 initialized by client WindowsUpdateAgent.
+837	"Read out cached package applicability for package: Package_for_KB3161949~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+838	Session: 30546174_169366694 initialized by client WindowsUpdateAgent.
+839	"Read out cached package applicability for package: Package_for_KB3006625~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+840	Session: 30546174_169406696 initialized by client WindowsUpdateAgent.
+841	"Read out cached package applicability for package: Package_for_KB3159398~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+842	Session: 30546174_169616708 initialized by client WindowsUpdateAgent.
+843	"Read out cached package applicability for package: Package_for_KB3035017~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+844	Session: 30546174_169636709 initialized by client WindowsUpdateAgent.
+845	"Read out cached package applicability for package: Package_for_KB2993651~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 80, CurrentState:112"
+846	Session: 30546174_169666711 initialized by client WindowsUpdateAgent.
+847	"Read out cached package applicability for package: Package_for_KB3184122~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+848	Session: 30546174_169696713 initialized by client WindowsUpdateAgent.
+849	"Read out cached package applicability for package: Package_for_KB2786081~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+850	Session: 30546174_169726714 initialized by client WindowsUpdateAgent.
+851	"Read out cached package applicability for package: Package_for_KB2761217~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+852	Session: 30546174_169836721 initialized by client WindowsUpdateAgent.
+853	"Read out cached package applicability for package: Package_for_KB3142024~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+854	Session: 30546174_170026732 initialized by client WindowsUpdateAgent.
+855	"Read out cached package applicability for package: Package_for_KB2835174~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0"
+856	Session: 30546174_170246744 initialized by client WindowsUpdateAgent.
+857	"Read out cached package applicability for package: Package_for_KB2808679~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+858	Session: 30546174_171486815 initialized by client WindowsUpdateAgent.
+859	"Read out cached package applicability for package: Package_for_KB2552343~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+860	Session: 30546174_171536818 initialized by client WindowsUpdateAgent.
+861	"Read out cached package applicability for package: Package_for_KB2532531~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+862	Session: 30546174_171646824 initialized by client WindowsUpdateAgent.
+863	"Read out cached package applicability for package: Package_for_KB2973112~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+864	Session: 30546174_172076849 initialized by client WindowsUpdateAgent.
+865	"Read out cached package applicability for package: Package_for_KB2653956~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 80, CurrentState:112"
+866	Session: 30546174_172126852 initialized by client WindowsUpdateAgent.
+867	"Read out cached package applicability for package: Package_for_KB3101722~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+868	Session: 30546174_172246858 initialized by client WindowsUpdateAgent.
+869	"Read out cached package applicability for package: Package_for_KB3155178~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+870	Session: 30546174_172276860 initialized by client WindowsUpdateAgent.
+871	"Read out cached package applicability for package: Package_for_KB2978120~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+872	Session: 30546174_172546876 initialized by client WindowsUpdateAgent.
+873	"Read out cached package applicability for package: Package_for_KB3140245~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+874	Session: 30546174_172566877 initialized by client WindowsUpdateAgent.
+875	"Read out cached package applicability for package: Package_for_KB3010788~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+876	Session: 30546174_172676883 initialized by client WindowsUpdateAgent.
+877	"Read out cached package applicability for package: Package_for_KB982018~31bf3856ad364e35~amd64~~6.1.3.2, ApplicableState: 112, CurrentState:112"
+878	Session: 30546174_173216914 initialized by client WindowsUpdateAgent.
+879	"Read out cached package applicability for package: Package_for_KB2705219~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+880	Session: 30546174_173266917 initialized by client WindowsUpdateAgent.
+881	Session: 30546174_173636938 initialized by client WindowsUpdateAgent.
+882	"Read out cached package applicability for package: Package_for_KB3004375~31bf3856ad364e35~amd64~~6.1.3.1, ApplicableState: 112, CurrentState:112"
+883	Session: 30546174_176877123 initialized by client WindowsUpdateAgent.
+884	"Read out cached package applicability for package: Package_for_KB3138378~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+885	Session: 30546174_176887124 initialized by client WindowsUpdateAgent.
+886	"Read out cached package applicability for package: Package_for_KB2506928~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+887	Session: 30546174_176917126 initialized by client WindowsUpdateAgent.
+888	"Read out cached package applicability for package: Package_for_KB2799926~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+889	Session: 30546174_176947127 initialized by client WindowsUpdateAgent.
+890	"Read out cached package applicability for package: Package_for_KB2491683~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+891	Session: 30546174_176967128 initialized by client WindowsUpdateAgent.
+892	"Read out cached package applicability for package: Package_for_KB2654428~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+893	Session: 30546174_177007131 initialized by client WindowsUpdateAgent.
+894	"Read out cached package applicability for package: Package_for_KB3004361~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+895	Session: 30546174_177047133 initialized by client WindowsUpdateAgent.
+896	"Read out cached package applicability for package: Package_for_KB3108371~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+897	Session: 30546174_177107136 initialized by client WindowsUpdateAgent.
+898	"Read out cached package applicability for package: Package_for_KB2892074~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+899	Session: 30546174_177417154 initialized by client WindowsUpdateAgent.
+900	"Read out cached package applicability for package: Package_for_KB2973351~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+901	Session: 30546174_179617280 initialized by client WindowsUpdateAgent.
+902	"Read out cached package applicability for package: Package_for_KB2729094~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+903	Session: 30546174_179737287 initialized by client WindowsUpdateAgent.
+904	"Read out cached package applicability for package: Package_for_KB2511455~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+905	Session: 30546174_179777289 initialized by client WindowsUpdateAgent.
+906	"Read out cached package applicability for package: Package_for_KB2564958~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+907	Session: 30546174_179827292 initialized by client WindowsUpdateAgent.
+908	"Read out cached package applicability for package: Package_for_KB3045685~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+909	Session: 30546174_179897296 initialized by client WindowsUpdateAgent.
+910	"Read out cached package applicability for package: Package_for_KB2836943~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 80, CurrentState:112"
+911	Session: 30546174_180077306 initialized by client WindowsUpdateAgent.
+912	"Read out cached package applicability for package: Package_for_KB2698365~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+913	Session: 30546174_180217314 initialized by client WindowsUpdateAgent.
+914	Session: 30546174_180377324 initialized by client WindowsUpdateAgent.
+915	"Read out cached package applicability for package: Package_for_KB3031432~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+916	Session: 30546174_181797405 initialized by client WindowsUpdateAgent.
+917	"Read out cached package applicability for package: Package_for_KB3004375~31bf3856ad364e35~amd64~~6.1.3.1, ApplicableState: 112, CurrentState:112"
+918	Session: 30546174_184807577 initialized by client WindowsUpdateAgent.
+919	"Read out cached package applicability for package: Package_for_KB2928120~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 0, CurrentState:0"
+920	Session: 30546174_185287604 initialized by client WindowsUpdateAgent.
+921	"Read out cached package applicability for package: Package_for_KB3087039~31bf3856ad364e35~amd64~~6.1.1.4, ApplicableState: 80, CurrentState:112"
+922	Session: 30546174_185317606 initialized by client WindowsUpdateAgent.
+923	"Read out cached package applicability for package: Package_for_KB2736422~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+924	Session: 30546174_185407611 initialized by client WindowsUpdateAgent.
+925	"Read out cached package applicability for package: Package_for_KB3156019~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+926	Session: 30546174_185487616 initialized by client WindowsUpdateAgent.
+927	"Read out cached package applicability for package: Package_for_RollupFix~31bf3856ad364e35~amd64~~7601.23545.1.4, ApplicableState: 112, CurrentState:112"
+928	Session: 30546174_186107651 initialized by client WindowsUpdateAgent.
+929	"Read out cached package applicability for package: Package_for_KB2862152~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+930	Session: 30546174_186137653 initialized by client WindowsUpdateAgent.
+931	"Read out cached package applicability for package: Package_for_KB2852386~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+932	Session: 30546174_186257660 initialized by client WindowsUpdateAgent.
+933	"Read out cached package applicability for package: Package_for_KB2647753~31bf3856ad364e35~amd64~~6.1.4.0, ApplicableState: 112, CurrentState:112"
+934	Session: 30546174_186297662 initialized by client WindowsUpdateAgent.
+935	"Read out cached package applicability for package: Package_for_KB3177467~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+936	Failed to create backup log cab. [HRESULT = 0x80070001 - ERROR_INVALID_FUNCTION]
+937	Reboot mark refs incremented to: 1
+938	Scavenge: Starts
+939	"00000009@2016/9/27:20:40:53.744 CSI Transaction @0x47e9e0 initialized for deployment engine {d16d444c-56d8-11d5-882d-0080c847b195} with flags 00000002 and client id [10]""TI6.0_0:0/"""
+940	Scavenge: Begin CSI Store
+941	0000000a Performing 1 operations; 1 are not lock/unlock and follow:
+942	"0000000b Store coherency cookie matches last scavenge cookie, skipping scavenge."
+943	0000000c ICSITransaction::Commit calling IStorePendingTransaction::Apply - coldpatching=FALSE applyflags=7
+944	"0000000d Creating NT transaction (seq 2), objectname [6]""(null)"""
+945	"0000000e Created NT transaction (seq 2) result 0x00000000, handle @0xb8"
+946	0000000f@2016/9/27:20:40:54.786 CSI perf trace:
+947	"Scavenge: Completed, disposition: 0X1"
+948	00000010@2016/9/27:20:40:54.787 CSI Transaction @0x47e9e0 destroyed
+949	Reboot mark refs: 0
+950	Idle processing thread terminated normally
+951	Ending the TrustedInstaller main loop.
+952	Starting TrustedInstaller finalization.
+953	Ending TrustedInstaller finalization.
+954	Starting TrustedInstaller initialization.
+955	Loaded Servicing Stack v6.1.7601.23505 with Core: C:\Windows\winsxs\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_6.1.7601.23505_none_681aa442f6fed7f0\cbscore.dll
+956	00000001@2016/9/28:16:00:46.160 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7fed875eb5d @0x7fee5c39b6d @0x7fee5c0358f @0xffeee97c @0xffeed799 @0xffeedb2f)
+957	00000002@2016/9/28:16:00:46.200 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7fed875eb5d @0x7fee5c86ade @0x7fee5c52984 @0x7fee5c03665 @0xffeee97c @0xffeed799)
+958	00000003@2016/9/28:16:00:46.213 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7fed875eb5d @0x7fef9d98728 @0x7fef9d98856 @0xffeee474 @0xffeed7de @0xffeedb2f)
+959	Ending TrustedInstaller initialization.
+960	Starting the TrustedInstaller main loop.
+961	TrustedInstaller service starts successfully.
+962	SQM: Initializing online with Windows opt-in: False
+963	SQM: Cleaning up report files older than 10 days.
+964	SQM: Requesting upload of all unsent reports.
+965	"SQM: Failed to start upload with file pattern: C:\Windows\servicing\sqm\*_std.sqm, flags: 0x2 [HRESULT = 0x80004005 - E_FAIL]"
+966	SQM: Failed to start standard sample upload. [HRESULT = 0x80004005 - E_FAIL]
+967	"SQM: Queued 0 file(s) for upload with pattern: C:\Windows\servicing\sqm\*_all.sqm, flags: 0x6"
+968	SQM: Warning: Failed to upload all unsent reports. [HRESULT = 0x80004005 - E_FAIL]
+969	"No startup processing required, TrustedInstaller service was not set as autostart, or else a reboot is still pending."
+970	NonStart: Checking to ensure startup processing was not required.
+971	"00000004 IAdvancedInstallerAwareStore_ResolvePendingTransactions (call 1) (flags = 00000004, progress = NULL, phase = 0, pdwDisposition = @0x116fa70"
+972	"00000005 Creating NT transaction (seq 1), objectname [6]""(null)"""
+973	"00000006 Created NT transaction (seq 1) result 0x00000000, handle @0x218"
+974	00000007@2016/9/28:16:00:46.260 CSI perf trace:
+975	"NonStart: Success, startup processing not required as expected."
+976	Startup processing thread terminated normally
+977	"Loading offline registry hive: SOFTWARE, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SOFTWARE' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\SOFTWARE'."
+978	"Loading offline registry hive: SYSTEM, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SYSTEM' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\SYSTEM'."
+979	"Loading offline registry hive: SECURITY, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SECURITY' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\SECURITY'."
+980	"Loading offline registry hive: SAM, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SAM' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\SAM'."
+981	"Loading offline registry hive: COMPONENTS, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/COMPONENTS' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\COMPONENTS'."
+982	"Loading offline registry hive: DEFAULT, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/DEFAULT' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\DEFAULT'."
+983	"Loading offline registry hive: ntuser.dat, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Users/default/ntuser.dat' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\default\ntuser.dat'."
+984	"Loading offline registry hive: schema.dat, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/system32/smi/store/Machine/schema.dat' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\system32\smi\store\Machine\schema.dat'."
+985	Offline image is: read-only
+986	"Disabling manifest caching, because the image is not writeable."
+987	00000008@2016/9/28:16:00:46.635 PopulateComponentFamiliesKey - Begin
+988	00000009@2016/9/28:16:01:03.072 PopulateComponentFamiliesKey - End
+989	0000000a CSI Store 17159600 (0x000000000105d5b0) initialized
+990	Session: 11152_142416105 initialized by client SPP.
+991	Warning: Unrecognized packageExtended attribute.
+992	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+993	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+994	Warning: Unrecognized packageExtended attribute.
+995	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+996	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+997	Warning: Unrecognized packageExtended attribute.
+998	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+999	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1000	Warning: Unrecognized packageExtended attribute.
+1001	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1002	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1003	Warning: Unrecognized packageExtended attribute.
+1004	Warning: Unrecognized packageExtended attribute.
+1005	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1006	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1007	Warning: Unrecognized packageExtended attribute.
+1008	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1009	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1010	Warning: Unrecognized packageExtended attribute.
+1011	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1012	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1013	Warning: Unrecognized packageExtended attribute.
+1014	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1015	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1016	Warning: Unrecognized packageExtended attribute.
+1017	Warning: Unrecognized packageExtended attribute.
+1018	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1019	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1020	Warning: Unrecognized packageExtended attribute.
+1021	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1022	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1023	Warning: Unrecognized packageExtended attribute.
+1024	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1025	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1026	Warning: Unrecognized packageExtended attribute.
+1027	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1028	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1029	Warning: Unrecognized packageExtended attribute.
+1030	Warning: Unrecognized packageExtended attribute.
+1031	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1032	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1033	Warning: Unrecognized packageExtended attribute.
+1034	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1035	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1036	Warning: Unrecognized packageExtended attribute.
+1037	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1038	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1039	Warning: Unrecognized packageExtended attribute.
+1040	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1041	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1042	Warning: Unrecognized packageExtended attribute.
+1043	Warning: Unrecognized packageExtended attribute.
+1044	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1045	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1046	Warning: Unrecognized packageExtended attribute.
+1047	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1048	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1049	Warning: Unrecognized packageExtended attribute.
+1050	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1051	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1052	Warning: Unrecognized packageExtended attribute.
+1053	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1054	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1055	Warning: Unrecognized packageExtended attribute.
+1056	Warning: Unrecognized packageExtended attribute.
+1057	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1058	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1059	Warning: Unrecognized packageExtended attribute.
+1060	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1061	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1062	Warning: Unrecognized packageExtended attribute.
+1063	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1064	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1065	Warning: Unrecognized packageExtended attribute.
+1066	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1067	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1068	Warning: Unrecognized packageExtended attribute.
+1069	Warning: Unrecognized packageExtended attribute.
+1070	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1071	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1072	Warning: Unrecognized packageExtended attribute.
+1073	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1074	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1075	Warning: Unrecognized packageExtended attribute.
+1076	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1077	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1078	Warning: Unrecognized packageExtended attribute.
+1079	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1080	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1081	Warning: Unrecognized packageExtended attribute.
+1082	Warning: Unrecognized packageExtended attribute.
+1083	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1084	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1085	Warning: Unrecognized packageExtended attribute.
+1086	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1087	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1088	Warning: Unrecognized packageExtended attribute.
+1089	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1090	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1091	Warning: Unrecognized packageExtended attribute.
+1092	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1093	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1094	Warning: Unrecognized packageExtended attribute.
+1095	Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SOFTWARE
+1096	Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SYSTEM
+1097	Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SECURITY
+1098	Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SAM
+1099	Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/COMPONENTS
+1100	Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/DEFAULT
+1101	Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Users/default/ntuser.dat
+1102	Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/system32/smi/store/Machine/schema.dat
+1103	Failed to create backup log cab. [HRESULT = 0x80070001 - ERROR_INVALID_FUNCTION]
+1104	0000000b CSI Store 3065408 (0x00000000002ec640) initialized
+1105	Session: 30546354_2823393669 initialized by client WindowsUpdateAgent.
+1106	Session: 30546354_2824723745 initialized by client WindowsUpdateAgent.
+1107	Warning: Unrecognized packageExtended attribute.
+1108	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1109	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1110	Warning: Unrecognized packageExtended attribute.
+1111	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1112	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1113	Warning: Unrecognized packageExtended attribute.
+1114	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1115	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1116	Warning: Unrecognized packageExtended attribute.
+1117	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1118	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1119	Warning: Unrecognized packageExtended attribute.
+1120	Warning: Unrecognized packageExtended attribute.
+1121	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1122	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1123	Warning: Unrecognized packageExtended attribute.
+1124	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1125	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1126	Warning: Unrecognized packageExtended attribute.
+1127	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1128	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1129	Warning: Unrecognized packageExtended attribute.
+1130	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1131	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1132	Warning: Unrecognized packageExtended attribute.
+1133	Warning: Unrecognized packageExtended attribute.
+1134	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1135	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1136	Warning: Unrecognized packageExtended attribute.
+1137	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1138	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1139	Warning: Unrecognized packageExtended attribute.
+1140	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1141	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1142	Warning: Unrecognized packageExtended attribute.
+1143	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1144	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1145	Warning: Unrecognized packageExtended attribute.
+1146	Warning: Unrecognized packageExtended attribute.
+1147	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1148	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1149	Warning: Unrecognized packageExtended attribute.
+1150	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1151	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1152	Warning: Unrecognized packageExtended attribute.
+1153	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1154	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1155	Warning: Unrecognized packageExtended attribute.
+1156	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1157	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1158	Warning: Unrecognized packageExtended attribute.
+1159	Warning: Unrecognized packageExtended attribute.
+1160	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1161	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1162	Warning: Unrecognized packageExtended attribute.
+1163	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1164	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1165	Warning: Unrecognized packageExtended attribute.
+1166	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1167	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1168	Warning: Unrecognized packageExtended attribute.
+1169	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1170	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1171	Warning: Unrecognized packageExtended attribute.
+1172	Warning: Unrecognized packageExtended attribute.
+1173	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1174	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1175	Warning: Unrecognized packageExtended attribute.
+1176	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1177	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1178	Warning: Unrecognized packageExtended attribute.
+1179	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1180	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1181	Warning: Unrecognized packageExtended attribute.
+1182	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1183	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1184	Warning: Unrecognized packageExtended attribute.
+1185	Warning: Unrecognized packageExtended attribute.
+1186	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1187	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1188	Warning: Unrecognized packageExtended attribute.
+1189	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1190	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1191	Warning: Unrecognized packageExtended attribute.
+1192	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1193	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1194	Warning: Unrecognized packageExtended attribute.
+1195	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1196	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1197	Warning: Unrecognized packageExtended attribute.
+1198	Warning: Unrecognized packageExtended attribute.
+1199	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1200	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1201	Warning: Unrecognized packageExtended attribute.
+1202	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1203	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1204	Warning: Unrecognized packageExtended attribute.
+1205	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1206	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1207	Warning: Unrecognized packageExtended attribute.
+1208	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1209	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1210	Warning: Unrecognized packageExtended attribute.
+1211	Session: 30546354_2830724089 initialized by client WindowsUpdateAgent.
+1212	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+1213	Session: 30546354_2833204231 initialized by client WindowsUpdateAgent.
+1214	Session: 30546354_2839784607 initialized by client WindowsUpdateAgent.
+1215	Warning: Unrecognized packageExtended attribute.
+1216	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1217	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1218	Warning: Unrecognized packageExtended attribute.
+1219	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1220	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1221	Warning: Unrecognized packageExtended attribute.
+1222	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1223	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1224	Warning: Unrecognized packageExtended attribute.
+1225	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1226	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1227	Warning: Unrecognized packageExtended attribute.
+1228	Warning: Unrecognized packageExtended attribute.
+1229	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1230	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1231	Warning: Unrecognized packageExtended attribute.
+1232	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1233	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1234	Warning: Unrecognized packageExtended attribute.
+1235	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1236	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1237	Warning: Unrecognized packageExtended attribute.
+1238	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1239	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1240	Warning: Unrecognized packageExtended attribute.
+1241	Warning: Unrecognized packageExtended attribute.
+1242	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1243	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1244	Warning: Unrecognized packageExtended attribute.
+1245	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1246	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1247	Warning: Unrecognized packageExtended attribute.
+1248	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1249	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1250	Warning: Unrecognized packageExtended attribute.
+1251	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1252	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1253	Warning: Unrecognized packageExtended attribute.
+1254	Warning: Unrecognized packageExtended attribute.
+1255	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1256	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1257	Warning: Unrecognized packageExtended attribute.
+1258	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1259	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1260	Warning: Unrecognized packageExtended attribute.
+1261	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1262	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1263	Warning: Unrecognized packageExtended attribute.
+1264	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1265	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1266	Warning: Unrecognized packageExtended attribute.
+1267	Warning: Unrecognized packageExtended attribute.
+1268	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1269	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1270	Warning: Unrecognized packageExtended attribute.
+1271	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1272	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1273	Warning: Unrecognized packageExtended attribute.
+1274	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1275	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1276	Warning: Unrecognized packageExtended attribute.
+1277	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1278	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1279	Warning: Unrecognized packageExtended attribute.
+1280	Warning: Unrecognized packageExtended attribute.
+1281	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1282	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1283	Warning: Unrecognized packageExtended attribute.
+1284	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1285	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1286	Warning: Unrecognized packageExtended attribute.
+1287	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1288	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1289	Warning: Unrecognized packageExtended attribute.
+1290	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1291	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1292	Warning: Unrecognized packageExtended attribute.
+1293	Warning: Unrecognized packageExtended attribute.
+1294	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1295	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1296	Warning: Unrecognized packageExtended attribute.
+1297	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1298	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1299	Warning: Unrecognized packageExtended attribute.
+1300	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1301	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1302	Warning: Unrecognized packageExtended attribute.
+1303	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1304	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1305	Warning: Unrecognized packageExtended attribute.
+1306	Warning: Unrecognized packageExtended attribute.
+1307	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1308	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1309	Warning: Unrecognized packageExtended attribute.
+1310	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1311	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1312	Warning: Unrecognized packageExtended attribute.
+1313	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1314	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1315	Warning: Unrecognized packageExtended attribute.
+1316	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1317	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1318	Warning: Unrecognized packageExtended attribute.
+1319	Session: 30546354_2845524935 initialized by client WindowsUpdateAgent.
+1320	Warning: Unrecognized packageExtended attribute.
+1321	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1322	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1323	Warning: Unrecognized packageExtended attribute.
+1324	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1325	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1326	Warning: Unrecognized packageExtended attribute.
+1327	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1328	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1329	Warning: Unrecognized packageExtended attribute.
+1330	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1331	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1332	Warning: Unrecognized packageExtended attribute.
+1333	Warning: Unrecognized packageExtended attribute.
+1334	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1335	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1336	Warning: Unrecognized packageExtended attribute.
+1337	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1338	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1339	Warning: Unrecognized packageExtended attribute.
+1340	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1341	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1342	Warning: Unrecognized packageExtended attribute.
+1343	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1344	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1345	Warning: Unrecognized packageExtended attribute.
+1346	Warning: Unrecognized packageExtended attribute.
+1347	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1348	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1349	Warning: Unrecognized packageExtended attribute.
+1350	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1351	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1352	Warning: Unrecognized packageExtended attribute.
+1353	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1354	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1355	Warning: Unrecognized packageExtended attribute.
+1356	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1357	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1358	Warning: Unrecognized packageExtended attribute.
+1359	Warning: Unrecognized packageExtended attribute.
+1360	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1361	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1362	Warning: Unrecognized packageExtended attribute.
+1363	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1364	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1365	Warning: Unrecognized packageExtended attribute.
+1366	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1367	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1368	Warning: Unrecognized packageExtended attribute.
+1369	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1370	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1371	Warning: Unrecognized packageExtended attribute.
+1372	Warning: Unrecognized packageExtended attribute.
+1373	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1374	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1375	Warning: Unrecognized packageExtended attribute.
+1376	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1377	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1378	Warning: Unrecognized packageExtended attribute.
+1379	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1380	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1381	Warning: Unrecognized packageExtended attribute.
+1382	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1383	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1384	Warning: Unrecognized packageExtended attribute.
+1385	Warning: Unrecognized packageExtended attribute.
+1386	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1387	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1388	Warning: Unrecognized packageExtended attribute.
+1389	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1390	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1391	Warning: Unrecognized packageExtended attribute.
+1392	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1393	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1394	Warning: Unrecognized packageExtended attribute.
+1395	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1396	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1397	Warning: Unrecognized packageExtended attribute.
+1398	Warning: Unrecognized packageExtended attribute.
+1399	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1400	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1401	Warning: Unrecognized packageExtended attribute.
+1402	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1403	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1404	Warning: Unrecognized packageExtended attribute.
+1405	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1406	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1407	Warning: Unrecognized packageExtended attribute.
+1408	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1409	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1410	Warning: Unrecognized packageExtended attribute.
+1411	Warning: Unrecognized packageExtended attribute.
+1412	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1413	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1414	Warning: Unrecognized packageExtended attribute.
+1415	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1416	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1417	Warning: Unrecognized packageExtended attribute.
+1418	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1419	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1420	Warning: Unrecognized packageExtended attribute.
+1421	Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1422	Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+1423	Warning: Unrecognized packageExtended attribute.
+1424	Session: 30546354_2850645228 initialized by client WindowsUpdateAgent.
+1425	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+1426	Session: 30546354_2850655229 initialized by client WindowsUpdateAgent.
+1427	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+1428	Session: 30546354_2850665229 initialized by client WindowsUpdateAgent.
+1429	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+1430	Session: 30546354_2850685230 initialized by client WindowsUpdateAgent.
+1431	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+1432	Session: 30546354_2850695231 initialized by client WindowsUpdateAgent.
+1433	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+1434	Session: 30546354_2850705232 initialized by client WindowsUpdateAgent.
+1435	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+1436	Session: 30546354_2850715232 initialized by client WindowsUpdateAgent.
+1437	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+1438	Session: 30546354_2852095311 initialized by client WindowsUpdateAgent.
+1439	Session: 30546354_2868336240 initialized by client WindowsUpdateAgent.
+1440	"Read out cached package applicability for package: Package_for_KB3121255~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1441	Session: 30546354_2875796667 initialized by client WindowsUpdateAgent.
+1442	"Read out cached package applicability for package: Package_for_KB2656356~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1443	Session: 30546354_2879516879 initialized by client WindowsUpdateAgent.
+1444	"Read out cached package applicability for package: Package_for_KB3108664~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1445	Session: 30546354_2879836898 initialized by client WindowsUpdateAgent.
+1446	"Read out cached package applicability for package: Package_for_KB3115858~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1447	Session: 30546354_2894197719 initialized by client WindowsUpdateAgent.
+1448	"Read out cached package applicability for package: Package_for_KB3127220~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1449	Session: 30546354_2896247836 initialized by client WindowsUpdateAgent.
+1450	"Read out cached package applicability for package: Package_for_KB3060716~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1451	Session: 30546354_2902428190 initialized by client WindowsUpdateAgent.
+1452	"Read out cached package applicability for package: Package_for_KB3006137~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1453	Session: 30546354_2902518195 initialized by client WindowsUpdateAgent.
+1454	"Read out cached package applicability for package: Package_for_KB3067903~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1455	Session: 30546354_2908448534 initialized by client WindowsUpdateAgent.
+1456	"Read out cached package applicability for package: Package_for_KB3086255~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1457	Session: 30546354_2912518767 initialized by client WindowsUpdateAgent.
+1458	"Read out cached package applicability for package: Package_for_KB3146706~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1459	Session: 30546354_2914788897 initialized by client WindowsUpdateAgent.
+1460	"Read out cached package applicability for package: Package_for_KB3182203~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1461	Session: 30546354_2915778954 initialized by client WindowsUpdateAgent.
+1462	"Read out cached package applicability for package: Package_for_KB3075226~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1463	Session: 30546354_2916919019 initialized by client WindowsUpdateAgent.
+1464	"Read out cached package applicability for package: Package_for_KB3185319~31bf3856ad364e35~amd64~~11.2.1.0, ApplicableState: 112, CurrentState:112"
+1465	Session: 30546354_2917229036 initialized by client WindowsUpdateAgent.
+1466	Session: 30546354_2919539169 initialized by client WindowsUpdateAgent.
+1467	"Read out cached package applicability for package: Package_for_KB3033929~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1468	Session: 30546354_2926539569 initialized by client WindowsUpdateAgent.
+1469	"Read out cached package applicability for package: Package_for_KB2978742~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1470	Session: 30546354_2932399904 initialized by client WindowsUpdateAgent.
+1471	"Read out cached package applicability for package: Package_for_KB3177186~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1472	Session: 30546354_2934110002 initialized by client WindowsUpdateAgent.
+1473	"Read out cached package applicability for package: Package_for_KB3055642~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1474	Session: 30546354_2934760039 initialized by client WindowsUpdateAgent.
+1475	"Read out cached package applicability for package: Package_for_KB3078601~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 112, CurrentState:112"
+1476	Session: 30546354_2936720151 initialized by client WindowsUpdateAgent.
+1477	"Read out cached package applicability for package: Package_for_KB3147071~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1478	Session: 30546354_2937490195 initialized by client WindowsUpdateAgent.
+1479	"Read out cached package applicability for package: Package_for_KB3019978~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:0"
+1480	Session: 30546354_2937600202 initialized by client WindowsUpdateAgent.
+1481	"Read out cached package applicability for package: Package_for_KB2563227~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1482	Session: 30546354_2939830329 initialized by client WindowsUpdateAgent.
+1483	"Read out cached package applicability for package: Package_for_KB3126587~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1484	Session: 30546354_2950240925 initialized by client WindowsUpdateAgent.
+1485	"Read out cached package applicability for package: Package_for_KB2789645~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1486	Session: 30546354_2953481110 initialized by client WindowsUpdateAgent.
+1487	"Read out cached package applicability for package: Package_for_KB3138901~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1488	Session: 30546354_2955011197 initialized by client WindowsUpdateAgent.
+1489	"Read out cached package applicability for package: Package_for_KB2607047~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 0, CurrentState:0"
+1490	Session: 30546354_2955431222 initialized by client WindowsUpdateAgent.
+1491	Session: 30546354_2956421278 initialized by client WindowsUpdateAgent.
+1492	"Read out cached package applicability for package: Package_for_KB3011780~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 112, CurrentState:112"
+1493	Session: 30546354_2958491397 initialized by client WindowsUpdateAgent.
+1494	"Read out cached package applicability for package: Package_for_KB3170455~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1495	Session: 30546354_2958821415 initialized by client WindowsUpdateAgent.
+1496	"Read out cached package applicability for package: Package_for_KB2891804~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1497	Session: 30546354_2959411449 initialized by client WindowsUpdateAgent.
+1498	"Read out cached package applicability for package: Package_for_KB3156017~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1499	Session: 30546354_2959511455 initialized by client WindowsUpdateAgent.
+1500	"Read out cached package applicability for package: Package_for_KB3084135~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1501	Session: 30546354_2960071487 initialized by client WindowsUpdateAgent.
+1502	"Read out cached package applicability for package: Package_for_KB2560656~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1503	Session: 30546354_2961511569 initialized by client WindowsUpdateAgent.
+1504	"Read out cached package applicability for package: Package_for_KB3184471~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 0, CurrentState:0"
+1505	Session: 30546354_2965511798 initialized by client WindowsUpdateAgent.
+1506	"Read out cached package applicability for package: Package_for_KB3146963~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1507	Session: 30546354_2965591803 initialized by client WindowsUpdateAgent.
+1508	"Read out cached package applicability for package: Package_for_KB2918077~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1509	Session: 30546354_2966751869 initialized by client WindowsUpdateAgent.
+1510	"Read out cached package applicability for package: Package_for_KB2716513~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+1511	Session: 30546354_2966921879 initialized by client WindowsUpdateAgent.
+1512	"Read out cached package applicability for package: Package_for_KB2489256~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:0"
+1513	Session: 30546354_2967631919 initialized by client WindowsUpdateAgent.
+1514	"Read out cached package applicability for package: Package_for_KB3138962~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1515	Session: 30546354_2967771927 initialized by client WindowsUpdateAgent.
+1516	"Read out cached package applicability for package: Package_for_KB2552343~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1517	Session: 30546354_2968461967 initialized by client WindowsUpdateAgent.
+1518	"Read out cached package applicability for package: Package_for_KB3059317~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1519	Session: 30546354_2968771985 initialized by client WindowsUpdateAgent.
+1520	"Read out cached package applicability for package: Package_for_KB2973201~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1521	Session: 30546354_2968971996 initialized by client WindowsUpdateAgent.
+1522	"Read out cached package applicability for package: Package_for_KB3072305~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1523	Session: 30546354_2970472082 initialized by client WindowsUpdateAgent.
+1524	"Read out cached package applicability for package: Package_for_KB3078667~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1525	Session: 30546354_2971152121 initialized by client WindowsUpdateAgent.
+1526	"Read out cached package applicability for package: Package_for_KB3020369~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1527	Session: 30546354_2972312187 initialized by client WindowsUpdateAgent.
+1528	"Read out cached package applicability for package: Package_for_KB2943357~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+1529	Session: 30546354_2973852275 initialized by client WindowsUpdateAgent.
+1530	"Read out cached package applicability for package: Package_for_KB3168965~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112"
+1531	Session: 30546354_2973972282 initialized by client WindowsUpdateAgent.
+1532	"Read out cached package applicability for package: Package_for_KB2620704~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1533	Session: 30546354_2975752384 initialized by client WindowsUpdateAgent.
+1534	"Read out cached package applicability for package: Microsoft-Windows-PlatformUpdate-Win7-SRV08R2-Package-TopLevel~31bf3856ad364e35~amd64~~7.1.7601.16492, ApplicableState: 112, CurrentState:112"
+1535	Session: 30546354_2976462424 initialized by client WindowsUpdateAgent.
+1536	"Read out cached package applicability for package: Package_for_KB2763523~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1537	Session: 30546354_2979852618 initialized by client WindowsUpdateAgent.
+1538	"Read out cached package applicability for package: Package_for_KB3075220~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+1539	Session: 30546354_2981802730 initialized by client WindowsUpdateAgent.
+1540	"Read out cached package applicability for package: Package_for_KB2813347~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1541	Session: 30546354_2983612833 initialized by client WindowsUpdateAgent.
+1542	"Read out cached package applicability for package: Package_for_KB3080446~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112"
+1543	Session: 30546354_2984842904 initialized by client WindowsUpdateAgent.
+1544	"Read out cached package applicability for package: Package_for_KB2515325~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1545	Session: 30546354_2984902907 initialized by client WindowsUpdateAgent.
+1546	"Read out cached package applicability for package: Package_for_KB2957189~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1547	Session: 30546354_2985172923 initialized by client WindowsUpdateAgent.
+1548	"Read out cached package applicability for package: Package_for_KB2718704~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1549	Session: 30546354_2986142978 initialized by client WindowsUpdateAgent.
+1550	"Read out cached package applicability for package: Package_for_KB2479943~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1551	Session: 30546354_2986352990 initialized by client WindowsUpdateAgent.
+1552	"Read out cached package applicability for package: Package_for_KB3138612~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1553	Session: 30546354_2988103090 initialized by client WindowsUpdateAgent.
+1554	"Read out cached package applicability for package: Microsoft-Hyper-V-Integration-Services-Package~31bf3856ad364e35~amd64~~6.3.9600.17681, ApplicableState: 112, CurrentState:0"
+1555	Session: 30546354_2989623177 initialized by client WindowsUpdateAgent.
+1556	"Read out cached package applicability for package: Package_for_KB3107998~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1557	Session: 30546354_2999883764 initialized by client WindowsUpdateAgent.
+1558	"Read out cached package applicability for package: Package_for_KB3071756~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1559	Session: 30546354_3005294074 initialized by client WindowsUpdateAgent.
+1560	"Read out cached package applicability for package: Package_for_KB2840631~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1561	Session: 30546354_3007094176 initialized by client WindowsUpdateAgent.
+1562	"Read out cached package applicability for package: Package_for_KB2631813~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1563	Session: 30546354_3007214183 initialized by client WindowsUpdateAgent.
+1564	"Read out cached package applicability for package: Package_for_KB2640148~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1565	Session: 30546354_3008284245 initialized by client WindowsUpdateAgent.
+1566	"Read out cached package applicability for package: Package_for_KB3093513~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1567	Session: 30546354_3008494257 initialized by client WindowsUpdateAgent.
+1568	"Read out cached package applicability for package: Package_for_KB2894844~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1569	Session: 30546354_3009694325 initialized by client WindowsUpdateAgent.
+1570	"Read out cached package applicability for package: Package_for_KB3108670~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1571	Session: 30546354_3037265902 initialized by client WindowsUpdateAgent.
+1572	"Read out cached package applicability for package: Package_for_KB2547666~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1573	Session: 30546354_3041116122 initialized by client WindowsUpdateAgent.
+1574	"Read out cached package applicability for package: Package_for_KB2798162~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 80, CurrentState:112"
+1575	Session: 30546354_3044096293 initialized by client WindowsUpdateAgent.
+1576	"Read out cached package applicability for package: Package_for_KB2574819~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1577	Session: 30546354_3044886338 initialized by client WindowsUpdateAgent.
+1578	"Read out cached package applicability for package: Microsoft-Windows-RDP-BlueIP-Package-TopLevel~31bf3856ad364e35~amd64~~7.2.7601.16415, ApplicableState: 112, CurrentState:112"
+1579	Session: 30546354_3045146353 initialized by client WindowsUpdateAgent.
+1580	"Read out cached package applicability for package: Package_for_KB2857650~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1581	Session: 30546354_3047006459 initialized by client WindowsUpdateAgent.
+1582	"Read out cached package applicability for package: Package_for_KB3118401~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1583	Session: 30546354_3047216471 initialized by client WindowsUpdateAgent.
+1584	"Read out cached package applicability for package: Package_for_KB2585542~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 80, CurrentState:112"
+1585	Session: 30546354_3048226529 initialized by client WindowsUpdateAgent.
+1586	"Read out cached package applicability for package: Package_for_KB2931356~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1587	Session: 30546354_3049686613 initialized by client WindowsUpdateAgent.
+1588	"Read out cached package applicability for package: Package_for_KB2900986~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1589	Session: 30546354_3050066634 initialized by client WindowsUpdateAgent.
+1590	"Read out cached package applicability for package: Package_for_KB2985461~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1591	Session: 30546354_3058807134 initialized by client WindowsUpdateAgent.
+1592	"Read out cached package applicability for package: Package_for_KB3092601~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1593	Session: 30546354_3061267275 initialized by client WindowsUpdateAgent.
+1594	"Read out cached package applicability for package: Package_for_KB2836942~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1595	Session: 30546354_3061697300 initialized by client WindowsUpdateAgent.
+1596	"Read out cached package applicability for package: Package_for_KB2937610~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+1597	Session: 30546354_3063077379 initialized by client WindowsUpdateAgent.
+1598	"Read out cached package applicability for package: Package_for_KB3035126~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1599	Session: 30546354_3066077550 initialized by client WindowsUpdateAgent.
+1600	"Read out cached package applicability for package: Package_for_KB3076895~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1601	Session: 30546354_3067097608 initialized by client WindowsUpdateAgent.
+1602	"Read out cached package applicability for package: Package_for_KB3021674~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1603	Session: 30546354_3067367624 initialized by client WindowsUpdateAgent.
+1604	"Read out cached package applicability for package: Package_for_KB2919469~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1605	Session: 30546354_3070257789 initialized by client WindowsUpdateAgent.
+1606	"Read out cached package applicability for package: Package_for_KB2823180~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0"
+1607	Session: 30546354_3070387797 initialized by client WindowsUpdateAgent.
+1608	"Read out cached package applicability for package: Package_for_KB2809215~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:0"
+1609	Session: 30546354_3070417798 initialized by client WindowsUpdateAgent.
+1610	Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+1611	Session: 30546354_3070457801 initialized by client WindowsUpdateAgent.
+1612	"Read out cached package applicability for package: Package_for_KB2809900~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0"
+1613	Session: 30546354_3070727816 initialized by client WindowsUpdateAgent.
+1614	"Read out cached package applicability for package: Package_for_KB3150220~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1615	Session: 30546354_3072147897 initialized by client WindowsUpdateAgent.
+1616	"Read out cached package applicability for package: Package_for_KB3175024~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1617	Session: 30546354_3072677928 initialized by client WindowsUpdateAgent.
+1618	"Read out cached package applicability for package: Package_for_KB3126446~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1619	Session: 30546354_3074888054 initialized by client WindowsUpdateAgent.
+1620	"Read out cached package applicability for package: Package_for_KB2968294~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1621	Session: 30546354_3077138183 initialized by client WindowsUpdateAgent.
+1622	"Read out cached package applicability for package: Package_for_KB3080079~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1623	Session: 30546354_3167883373 initialized by client WindowsUpdateAgent.
+1624	"Read out cached package applicability for package: Package_for_KB2868626~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112"
+1625	Session: 30546354_3172813655 initialized by client WindowsUpdateAgent.
+1626	"Read out cached package applicability for package: Package_for_KB2929733~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1627	Session: 30546354_3173223679 initialized by client WindowsUpdateAgent.
+1628	"Read out cached package applicability for package: Package_for_KB2893294~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1629	Session: 30546354_3173453692 initialized by client WindowsUpdateAgent.
+1630	"Read out cached package applicability for package: Package_for_KB3145739~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1631	Session: 30546354_3175093786 initialized by client WindowsUpdateAgent.
+1632	"Read out cached package applicability for package: Package_for_KB2972211~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1633	Session: 30546354_3176343857 initialized by client WindowsUpdateAgent.
+1634	"Read out cached package applicability for package: Package_for_KB947821~31bf3856ad364e35~amd64~~6.1.34.0, ApplicableState: 112, CurrentState:0"
+1635	Session: 30546354_3176413861 initialized by client WindowsUpdateAgent.
+1636	"Read out cached package applicability for package: Package_for_KB3020370~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1637	Session: 30546354_3178803998 initialized by client WindowsUpdateAgent.
+1638	"Read out cached package applicability for package: Package_for_KB3003743~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1639	Session: 30546354_3181864173 initialized by client WindowsUpdateAgent.
+1640	"Read out cached package applicability for package: Package_for_KB3020387~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:0"
+1641	Session: 30546354_3182094186 initialized by client WindowsUpdateAgent.
+1642	"Read out cached package applicability for package: Package_for_KB2884256~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1643	Session: 30546354_3183124245 initialized by client WindowsUpdateAgent.
+1644	"Read out cached package applicability for package: Package_for_KB3163245~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1645	Session: 30546354_3183554269 initialized by client WindowsUpdateAgent.
+1646	"Read out cached package applicability for package: Package_for_KB2660075~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1647	Session: 30546354_3183714279 initialized by client WindowsUpdateAgent.
+1648	"Read out cached package applicability for package: Package_for_KB3022777~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1649	Session: 30546354_3184784340 initialized by client WindowsUpdateAgent.
+1650	"Read out cached package applicability for package: Package_for_KB3161561~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1651	Session: 30546354_3185364373 initialized by client WindowsUpdateAgent.
+1652	"Read out cached package applicability for package: Package_for_KB2800095~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1653	Session: 30546354_3185714393 initialized by client WindowsUpdateAgent.
+1654	"Read out cached package applicability for package: Package_for_KB2818604~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:0"
+1655	Session: 30546354_3185874402 initialized by client WindowsUpdateAgent.
+1656	"Read out cached package applicability for package: Package_for_KB2570947~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1657	Session: 30546354_3186424434 initialized by client WindowsUpdateAgent.
+1658	"Read out cached package applicability for package: Package_for_KB3035132~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1659	Session: 30546354_3186634446 initialized by client WindowsUpdateAgent.
+1660	"Read out cached package applicability for package: Package_for_KB2972100~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1661	Session: 30546354_3187144475 initialized by client WindowsUpdateAgent.
+1662	"Read out cached package applicability for package: Package_for_KB2966583~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1663	Session: 30546354_3188034526 initialized by client WindowsUpdateAgent.
+1664	"Read out cached package applicability for package: Package_for_KB2685811~31bf3856ad364e35~amd64~~6.1.1.11, ApplicableState: 112, CurrentState:112"
+1665	Session: 30546354_3188974579 initialized by client WindowsUpdateAgent.
+1666	"Read out cached package applicability for package: Package_for_KB3110329~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1667	Session: 30546354_3189744623 initialized by client WindowsUpdateAgent.
+1668	"Read out cached package applicability for package: Package_for_KB2545698~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+1669	Session: 30546354_3189934634 initialized by client WindowsUpdateAgent.
+1670	"Read out cached package applicability for package: Package_for_KB3124280~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1671	Session: 30546354_3190064642 initialized by client WindowsUpdateAgent.
+1672	"Read out cached package applicability for package: Microsoft-Hyper-V-Integration-Services-Package~31bf3856ad364e35~amd64~~6.3.9600.17388, ApplicableState: 112, CurrentState:0"
+1673	Session: 30546354_3190364659 initialized by client WindowsUpdateAgent.
+1674	Session: 30546354_3190684677 initialized by client WindowsUpdateAgent.
+1675	"Read out cached package applicability for package: Package_for_KB2676562~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+1676	Session: 30546354_3190944692 initialized by client WindowsUpdateAgent.
+1677	"Read out cached package applicability for package: Package_for_KB2970228~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1678	Session: 30546354_3191224708 initialized by client WindowsUpdateAgent.
+1679	"Read out cached package applicability for package: Package_for_KB2512715~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 0, CurrentState:0"
+1680	Session: 30546354_3191744738 initialized by client WindowsUpdateAgent.
+1681	"Read out cached package applicability for package: Package_for_KB2965788~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1682	Session: 30546354_3191924748 initialized by client WindowsUpdateAgent.
+1683	"Read out cached package applicability for package: Package_for_KB3030377~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1684	Session: 30546354_3192394775 initialized by client WindowsUpdateAgent.
+1685	"Read out cached package applicability for package: Package_for_KB3021917~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+1686	Session: 30546354_3192854801 initialized by client WindowsUpdateAgent.
+1687	"Read out cached package applicability for package: Package_for_KB2853952~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1688	Session: 30546354_3193054813 initialized by client WindowsUpdateAgent.
+1689	"Read out cached package applicability for package: Package_for_KB2706045~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+1690	Session: 30546354_3193214822 initialized by client WindowsUpdateAgent.
+1691	"Read out cached package applicability for package: Package_for_KB2510531~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1692	Session: 30546354_3193364831 initialized by client WindowsUpdateAgent.
+1693	"Read out cached package applicability for package: Package_for_KB2847927~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1694	Session: 30546354_3193904861 initialized by client WindowsUpdateAgent.
+1695	"Read out cached package applicability for package: Package_for_KB2604115~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+1696	Session: 30546354_3194774911 initialized by client WindowsUpdateAgent.
+1697	"Read out cached package applicability for package: Package_for_KB3013531~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1698	Session: 30546354_3195614959 initialized by client WindowsUpdateAgent.
+1699	"Read out cached package applicability for package: Package_for_KB2893519~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1700	Session: 30546354_3196675020 initialized by client WindowsUpdateAgent.
+1701	"Read out cached package applicability for package: Package_for_KB2703157~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+1702	Session: 30546354_3197115045 initialized by client WindowsUpdateAgent.
+1703	"Read out cached package applicability for package: Package_for_KB3133977~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1704	Session: 30546354_3198015097 initialized by client WindowsUpdateAgent.
+1705	"Read out cached package applicability for package: Package_for_KB3109094~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1706	Session: 30546354_3198305113 initialized by client WindowsUpdateAgent.
+1707	"Read out cached package applicability for package: Package_for_KB2506212~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1708	Session: 30546354_3198345115 initialized by client WindowsUpdateAgent.
+1709	"Read out cached package applicability for package: Package_for_KB3076949~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1710	Session: 30546354_3198805142 initialized by client WindowsUpdateAgent.
+1711	Session: 30546354_3200035212 initialized by client WindowsUpdateAgent.
+1712	"Read out cached package applicability for package: Package_for_KB2871997~31bf3856ad364e35~amd64~~6.1.2.5, ApplicableState: 112, CurrentState:112"
+1713	Session: 30546354_3202615360 initialized by client WindowsUpdateAgent.
+1714	"Read out cached package applicability for package: Package_for_KB3164035~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1715	Session: 30546354_3203065385 initialized by client WindowsUpdateAgent.
+1716	Session: 30546354_3203755425 initialized by client WindowsUpdateAgent.
+1717	"Read out cached package applicability for package: Package_for_KB2574819~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1718	Session: 30546354_3204535469 initialized by client WindowsUpdateAgent.
+1719	"Read out cached package applicability for package: Microsoft-Windows-RDP-WinIP-Package-TopLevel~31bf3856ad364e35~amd64~~7.1.7601.16398, ApplicableState: 112, CurrentState:112"
+1720	Session: 30546354_3204965494 initialized by client WindowsUpdateAgent.
+1721	"Read out cached package applicability for package: Package_for_KB2843630~31bf3856ad364e35~amd64~~6.1.3.1, ApplicableState: 112, CurrentState:112"
+1722	Session: 30546354_3205955551 initialized by client WindowsUpdateAgent.
+1723	"Read out cached package applicability for package: Package_for_KB2862330~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1724	Session: 30546354_3206305571 initialized by client WindowsUpdateAgent.
+1725	"Read out cached package applicability for package: Package_for_KB2834140~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:0"
+1726	Session: 30546354_3206335572 initialized by client WindowsUpdateAgent.
+1727	Session: 30546354_3207045613 initialized by client WindowsUpdateAgent.
+1728	"Read out cached package applicability for package: Package_for_KB2726535~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1729	Session: 30546354_3208475695 initialized by client WindowsUpdateAgent.
+1730	Session: 30546354_3208835715 initialized by client WindowsUpdateAgent.
+1731	"Read out cached package applicability for package: Package_for_KB3046269~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1732	Session: 30546354_3209665763 initialized by client WindowsUpdateAgent.
+1733	"Read out cached package applicability for package: Package_for_KB3139398~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1734	Session: 30546354_3209785770 initialized by client WindowsUpdateAgent.
+1735	"Read out cached package applicability for package: Package_for_KB2719857~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1736	Session: 30546354_3209865774 initialized by client WindowsUpdateAgent.
+1737	"Read out cached package applicability for package: Package_for_KB2603229~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1738	Session: 30546354_3214976067 initialized by client WindowsUpdateAgent.
+1739	"Read out cached package applicability for package: Package_for_KB3109560~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1740	Session: 30546354_3215266083 initialized by client WindowsUpdateAgent.
+1741	"Read out cached package applicability for package: Package_for_KB2807986~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1742	Session: 30546354_3215406091 initialized by client WindowsUpdateAgent.
+1743	"Read out cached package applicability for package: Package_for_KB3135983~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1744	Session: 30546354_3215566100 initialized by client WindowsUpdateAgent.
+1745	"Read out cached package applicability for package: Package_for_KB2667402~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1746	Session: 30546354_3215916120 initialized by client WindowsUpdateAgent.
+1747	"Read out cached package applicability for package: Package_for_KB2791765~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1748	Session: 30546354_3216576158 initialized by client WindowsUpdateAgent.
+1749	"Read out cached package applicability for package: Microsoft-Hyper-V-Integration-Services-Package~31bf3856ad364e35~amd64~~6.3.9600.18080, ApplicableState: 112, CurrentState:0"
+1750	Session: 30546354_3217166192 initialized by client WindowsUpdateAgent.
+1751	"Read out cached package applicability for package: Package_for_KB3139940~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1752	Session: 30546354_3217316200 initialized by client WindowsUpdateAgent.
+1753	"Read out cached package applicability for package: Package_for_KB2719033~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+1754	Session: 30546354_3217556214 initialized by client WindowsUpdateAgent.
+1755	"Read out cached package applicability for package: Package_for_KB3109103~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1756	Session: 30546354_3217926235 initialized by client WindowsUpdateAgent.
+1757	"Read out cached package applicability for package: Package_for_KB2864202~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1758	Session: 30546354_3218366261 initialized by client WindowsUpdateAgent.
+1759	"Read out cached package applicability for package: Package_for_KB3074543~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1760	Session: 30546354_3219376318 initialized by client WindowsUpdateAgent.
+1761	"Read out cached package applicability for package: Package_for_KB3040272~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1762	Session: 30546354_3220876404 initialized by client WindowsUpdateAgent.
+1763	"Read out cached package applicability for package: Package_for_KB3142042~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1764	Session: 30546354_3222456494 initialized by client WindowsUpdateAgent.
+1765	"Read out cached package applicability for package: Package_for_KB3042058~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1766	Session: 30546354_3225106646 initialized by client WindowsUpdateAgent.
+1767	"Read out cached package applicability for package: Package_for_KB3023215~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1768	Session: 30546354_3225556672 initialized by client WindowsUpdateAgent.
+1769	"Read out cached package applicability for package: Package_for_KB3108381~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1770	Session: 30546354_3225636676 initialized by client WindowsUpdateAgent.
+1771	"Read out cached package applicability for package: Package_for_KB2868038~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1772	Session: 30546354_3225896691 initialized by client WindowsUpdateAgent.
+1773	"Read out cached package applicability for package: Package_for_KB2750841~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112"
+1774	Session: 30546354_3226336716 initialized by client WindowsUpdateAgent.
+1775	"Read out cached package applicability for package: Package_for_KB3185911~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1776	Session: 30546354_3226626733 initialized by client WindowsUpdateAgent.
+1777	"Read out cached package applicability for package: Package_for_KB3138910~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1778	Session: 30546354_3226836745 initialized by client WindowsUpdateAgent.
+1779	"Read out cached package applicability for package: Package_for_KB2862335~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1780	Session: 30546354_3227386776 initialized by client WindowsUpdateAgent.
+1781	"Read out cached package applicability for package: Package_for_KB2908783~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1782	Session: 30546354_3228776856 initialized by client WindowsUpdateAgent.
+1783	"Read out cached package applicability for package: Package_for_KB3020393~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 64, CurrentState:0"
+1784	Session: 30546354_3228966867 initialized by client WindowsUpdateAgent.
+1785	"Read out cached package applicability for package: Package_for_KB2772930~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 0, CurrentState:0"
+1786	Session: 30546354_3229296886 initialized by client WindowsUpdateAgent.
+1787	"Read out cached package applicability for package: Package_for_KB2621146~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0"
+1788	Session: 30546354_3229346889 initialized by client WindowsUpdateAgent.
+1789	"Read out cached package applicability for package: Package_for_KB2601626~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0"
+1790	Session: 30546354_3229556901 initialized by client WindowsUpdateAgent.
+1791	"Read out cached package applicability for package: Package_for_KB2923545~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1792	Session: 30546354_3230196937 initialized by client WindowsUpdateAgent.
+1793	"Read out cached package applicability for package: Package_for_KB2509553~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1794	Session: 30546354_3230936980 initialized by client WindowsUpdateAgent.
+1795	"Read out cached package applicability for package: Package_for_KB2758857~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1796	Session: 30546354_3232347060 initialized by client WindowsUpdateAgent.
+1797	"Read out cached package applicability for package: Package_for_KB2846960~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 80, CurrentState:112"
+1798	Session: 30546354_3233207109 initialized by client WindowsUpdateAgent.
+1799	"Read out cached package applicability for package: Package_for_KB2770660~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1800	Session: 30546354_3271199282 initialized by client WindowsUpdateAgent.
+1801	"Read out cached package applicability for package: Package_for_KB3123479~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1802	Session: 30546354_3273319404 initialized by client WindowsUpdateAgent.
+1803	"Read out cached package applicability for package: Package_for_KB3072630~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1804	Session: 30546354_3274739485 initialized by client WindowsUpdateAgent.
+1805	"Read out cached package applicability for package: Package_for_KB3179573~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1806	Session: 30546354_3274949497 initialized by client WindowsUpdateAgent.
+1807	"Read out cached package applicability for package: Microsoft-Hyper-V-Integration-Services-Package~31bf3856ad364e35~amd64~~6.3.9600.17903, ApplicableState: 112, CurrentState:0"
+1808	Session: 30546354_3275569532 initialized by client WindowsUpdateAgent.
+1809	"Read out cached package applicability for package: Package_for_KB2952664~31bf3856ad364e35~amd64~~6.1.19.0, ApplicableState: 112, CurrentState:112"
+1810	Session: 30546354_3275839548 initialized by client WindowsUpdateAgent.
+1811	"Read out cached package applicability for package: Package_for_KB3149090~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1812	Session: 30546354_3276819604 initialized by client WindowsUpdateAgent.
+1813	"Read out cached package applicability for package: Package_for_KB3178034~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1814	Session: 30546354_3276969612 initialized by client WindowsUpdateAgent.
+1815	"Read out cached package applicability for package: Package_for_KB3097989~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1816	Session: 30546354_3277269630 initialized by client WindowsUpdateAgent.
+1817	"Read out cached package applicability for package: Package_for_KB2853587~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 0, CurrentState:0"
+1818	Session: 30546354_3282399923 initialized by client WindowsUpdateAgent.
+1819	"Read out cached package applicability for package: Package_for_KB2732059~31bf3856ad364e35~amd64~~6.1.5.1, ApplicableState: 112, CurrentState:112"
+1820	Session: 30546354_3283119964 initialized by client WindowsUpdateAgent.
+1821	"Read out cached package applicability for package: Package_for_KB3164033~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1822	Session: 30546354_3284880065 initialized by client WindowsUpdateAgent.
+1823	"Read out cached package applicability for package: Package_for_KB3080149~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1824	Session: 30546354_3290590392 initialized by client WindowsUpdateAgent.
+1825	"Read out cached package applicability for package: Package_for_KB3046017~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1826	Session: 30546354_3290750401 initialized by client WindowsUpdateAgent.
+1827	"Read out cached package applicability for package: Package_for_KB3067904~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:0"
+1828	Session: 30546354_3290900409 initialized by client WindowsUpdateAgent.
+1829	"Read out cached package applicability for package: Package_for_KB2912390~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1830	Session: 30546354_3291640452 initialized by client WindowsUpdateAgent.
+1831	"Read out cached package applicability for package: Package_for_KB2632503~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+1832	Session: 30546354_3292390494 initialized by client WindowsUpdateAgent.
+1833	"Read out cached package applicability for package: Package_for_KB2991963~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1834	Session: 30546354_3292510501 initialized by client WindowsUpdateAgent.
+1835	"Read out cached package applicability for package: Package_for_KB2911501~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1836	Session: 30546354_3293810576 initialized by client WindowsUpdateAgent.
+1837	"Read out cached package applicability for package: Package_for_KB2984972~31bf3856ad364e35~amd64~~6.1.1.4, ApplicableState: 112, CurrentState:112"
+1838	Session: 30546354_3297200770 initialized by client WindowsUpdateAgent.
+1839	"Read out cached package applicability for package: Package_for_KB3121461~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112"
+1840	Session: 30546354_3297210770 initialized by client WindowsUpdateAgent.
+1841	"Read out cached package applicability for package: Package_for_KB3161958~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1842	Session: 30546354_3298080820 initialized by client WindowsUpdateAgent.
+1843	"Read out cached package applicability for package: Package_for_KB2888049~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1844	Session: 30546354_3298800861 initialized by client WindowsUpdateAgent.
+1845	"Read out cached package applicability for package: Package_for_KB2773072~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 112, CurrentState:112"
+1846	Session: 30546354_3300650967 initialized by client WindowsUpdateAgent.
+1847	"Read out cached package applicability for package: Package_for_KB2579686~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1848	Session: 30546354_3300820977 initialized by client WindowsUpdateAgent.
+1849	"Read out cached package applicability for package: Package_for_KB3075222~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:0"
+1850	Session: 30546354_3300870980 initialized by client WindowsUpdateAgent.
+1851	"Read out cached package applicability for package: Microsoft-Windows-Embedded-EmbeddedLockdown-Package-TopLevel~31bf3856ad364e35~amd64~~7.1.7601.16511, ApplicableState: 112, CurrentState:0"
+1852	Session: 30546354_3300980986 initialized by client WindowsUpdateAgent.
+1853	"Read out cached package applicability for package: Package_for_KB2544893~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112"
+1854	Session: 30546354_3301050990 initialized by client WindowsUpdateAgent.
+1855	"Read out cached package applicability for package: Package_for_KB2685939~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112"
+1856	Session: 30546354_3301471014 initialized by client WindowsUpdateAgent.
+1857	"Read out cached package applicability for package: Package_for_KB2729452~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1858	Session: 30546354_3306751316 initialized by client WindowsUpdateAgent.
+1859	"Read out cached package applicability for package: Package_for_KB3020388~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1860	Session: 30546354_3307521360 initialized by client WindowsUpdateAgent.
+1861	"Read out cached package applicability for package: Package_for_KB2742599~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1862	Session: 30546354_3308511417 initialized by client WindowsUpdateAgent.
+1863	"Read out cached package applicability for package: Package_for_KB3181988~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1864	Session: 30546354_3309061448 initialized by client WindowsUpdateAgent.
+1865	"Read out cached package applicability for package: Package_for_KB2685813~31bf3856ad364e35~amd64~~6.1.1.11, ApplicableState: 112, CurrentState:112"
+1866	Session: 30546354_3309721486 initialized by client WindowsUpdateAgent.
+1867	"Read out cached package applicability for package: Package_for_KB2690533~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1868	Session: 30546354_3310261517 initialized by client WindowsUpdateAgent.
+1869	"Read out cached package applicability for package: Package_for_KB3075249~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1870	Session: 30546354_3311291576 initialized by client WindowsUpdateAgent.
+1871	"Read out cached package applicability for package: Package_for_KB3156016~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1872	Session: 30546354_3311811605 initialized by client WindowsUpdateAgent.
+1873	"Read out cached package applicability for package: Package_for_KB3139914~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1874	Session: 30546354_3311911611 initialized by client WindowsUpdateAgent.
+1875	"Read out cached package applicability for package: Package_for_KB2621440~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 112, CurrentState:112"
+1876	Session: 30546354_3312101622 initialized by client WindowsUpdateAgent.
+1877	"Read out cached package applicability for package: Package_for_KB3054476~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1878	Session: 30546354_3312401639 initialized by client WindowsUpdateAgent.
+1879	"Read out cached package applicability for package: Package_for_KB3122648~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1880	Session: 30546354_3312641653 initialized by client WindowsUpdateAgent.
+1881	"Read out cached package applicability for package: Package_for_KB3042553~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1882	Session: 30546354_3313121680 initialized by client WindowsUpdateAgent.
+1883	"Read out cached package applicability for package: Package_for_KB2732487~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1884	Session: 30546354_3313241687 initialized by client WindowsUpdateAgent.
+1885	"Read out cached package applicability for package: Package_for_KB3005607~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1886	Session: 30546354_3313271689 initialized by client WindowsUpdateAgent.
+1887	Session: 30546354_3315431812 initialized by client WindowsUpdateAgent.
+1888	"Read out cached package applicability for package: Package_for_KB3184143~31bf3856ad364e35~amd64~~6.1.1.4, ApplicableState: 112, CurrentState:112"
+1889	Session: 30546354_3319352037 initialized by client WindowsUpdateAgent.
+1890	"Read out cached package applicability for package: Package_for_KB2992611~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1891	Session: 30546354_3321642168 initialized by client WindowsUpdateAgent.
+1892	"Read out cached package applicability for package: Package_for_KB2727528~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1893	Session: 30546354_3321782176 initialized by client WindowsUpdateAgent.
+1894	"Read out cached package applicability for package: Package_for_KB2506014~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1895	Session: 30546354_3327172484 initialized by client WindowsUpdateAgent.
+1896	"Read out cached package applicability for package: Package_for_KB2868116~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1897	Session: 30546354_3328072535 initialized by client WindowsUpdateAgent.
+1898	"Read out cached package applicability for package: Package_for_KB2861698~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1899	Session: 30546354_3328272547 initialized by client WindowsUpdateAgent.
+1900	"Read out cached package applicability for package: Package_for_KB3092627~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1901	Session: 30546354_3328722573 initialized by client WindowsUpdateAgent.
+1902	"Read out cached package applicability for package: Package_for_KB2984976~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 80, CurrentState:112"
+1903	Session: 30546354_3329762632 initialized by client WindowsUpdateAgent.
+1904	"Read out cached package applicability for package: Package_for_KB3102429~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1905	Session: 30546354_3330712686 initialized by client WindowsUpdateAgent.
+1906	"Read out cached package applicability for package: Package_for_KB3005788~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+1907	Session: 30546354_3332522790 initialized by client WindowsUpdateAgent.
+1908	"Read out cached package applicability for package: Package_for_KB3006121~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1909	Session: 30546354_3334232888 initialized by client WindowsUpdateAgent.
+1910	"Read out cached package applicability for package: Package_for_KB2813430~31bf3856ad364e35~amd64~~6.1.1.4, ApplicableState: 112, CurrentState:112"
+1911	Session: 30546354_3336152998 initialized by client WindowsUpdateAgent.
+1912	"Read out cached package applicability for package: Package_for_KB3033889~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1913	Session: 30546354_3336463015 initialized by client WindowsUpdateAgent.
+1914	"Read out cached package applicability for package: Package_for_KB3037574~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1915	Session: 30546354_3336883039 initialized by client WindowsUpdateAgent.
+1916	"Read out cached package applicability for package: Package_for_KB2977292~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1917	Session: 30546354_3337033048 initialized by client WindowsUpdateAgent.
+1918	"Read out cached package applicability for package: Package_for_KB3161949~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1919	Session: 30546354_3337223059 initialized by client WindowsUpdateAgent.
+1920	"Read out cached package applicability for package: Package_for_KB3006625~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1921	Session: 30546354_3337373067 initialized by client WindowsUpdateAgent.
+1922	"Read out cached package applicability for package: Package_for_KB3159398~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1923	Session: 30546354_3337653083 initialized by client WindowsUpdateAgent.
+1924	"Read out cached package applicability for package: Package_for_KB3035017~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0"
+1925	Session: 30546354_3337743089 initialized by client WindowsUpdateAgent.
+1926	"Read out cached package applicability for package: Package_for_KB2993651~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 80, CurrentState:112"
+1927	Session: 30546354_3337823093 initialized by client WindowsUpdateAgent.
+1928	"Read out cached package applicability for package: Package_for_KB3184122~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1929	Session: 30546354_3337953101 initialized by client WindowsUpdateAgent.
+1930	"Read out cached package applicability for package: Package_for_KB2786081~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1931	Session: 30546354_3338053106 initialized by client WindowsUpdateAgent.
+1932	"Read out cached package applicability for package: Package_for_KB2761217~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1933	Session: 30546354_3338453129 initialized by client WindowsUpdateAgent.
+1934	"Read out cached package applicability for package: Package_for_KB3142024~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1935	Session: 30546354_3338913155 initialized by client WindowsUpdateAgent.
+1936	"Read out cached package applicability for package: Package_for_KB2835174~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0"
+1937	Session: 30546354_3339973216 initialized by client WindowsUpdateAgent.
+1938	"Read out cached package applicability for package: Package_for_KB2808679~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1939	Session: 30546354_3341763318 initialized by client WindowsUpdateAgent.
+1940	"Read out cached package applicability for package: Package_for_KB2552343~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1941	Session: 30546354_3341883325 initialized by client WindowsUpdateAgent.
+1942	"Read out cached package applicability for package: Package_for_KB2532531~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1943	Session: 30546354_3342443357 initialized by client WindowsUpdateAgent.
+1944	"Read out cached package applicability for package: Package_for_KB2973112~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1945	Session: 30546354_3342893383 initialized by client WindowsUpdateAgent.
+1946	"Read out cached package applicability for package: Package_for_KB2653956~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 80, CurrentState:112"
+1947	Session: 30546354_3343043392 initialized by client WindowsUpdateAgent.
+1948	"Read out cached package applicability for package: Package_for_KB3101722~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1949	Session: 30546354_3343473416 initialized by client WindowsUpdateAgent.
+1950	"Read out cached package applicability for package: Package_for_KB3155178~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1951	Session: 30546354_3343653427 initialized by client WindowsUpdateAgent.
+1952	"Read out cached package applicability for package: Package_for_KB2978120~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1953	Session: 30546354_3344023448 initialized by client WindowsUpdateAgent.
+1954	"Read out cached package applicability for package: Package_for_KB3140245~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1955	Session: 30546354_3344103452 initialized by client WindowsUpdateAgent.
+1956	"Read out cached package applicability for package: Package_for_KB3010788~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1957	Session: 30546354_3344683485 initialized by client WindowsUpdateAgent.
+1958	"Read out cached package applicability for package: Package_for_KB982018~31bf3856ad364e35~amd64~~6.1.3.2, ApplicableState: 112, CurrentState:112"
+1959	Session: 30546354_3345573536 initialized by client WindowsUpdateAgent.
+1960	"Read out cached package applicability for package: Package_for_KB2705219~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1961	Session: 30546354_3345633540 initialized by client WindowsUpdateAgent.
+1962	Session: 30546354_3347003618 initialized by client WindowsUpdateAgent.
+1963	"Read out cached package applicability for package: Package_for_KB3004375~31bf3856ad364e35~amd64~~6.1.3.1, ApplicableState: 112, CurrentState:112"
+1964	Session: 30546354_3350523820 initialized by client WindowsUpdateAgent.
+1965	"Read out cached package applicability for package: Package_for_KB3138378~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1966	Session: 30546354_3350703830 initialized by client WindowsUpdateAgent.
+1967	"Read out cached package applicability for package: Package_for_KB2506928~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1968	Session: 30546354_3350783834 initialized by client WindowsUpdateAgent.
+1969	"Read out cached package applicability for package: Package_for_KB2799926~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1970	Session: 30546354_3350953844 initialized by client WindowsUpdateAgent.
+1971	"Read out cached package applicability for package: Package_for_KB2491683~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1972	Session: 30546354_3351103853 initialized by client WindowsUpdateAgent.
+1973	"Read out cached package applicability for package: Package_for_KB2654428~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1974	Session: 30546354_3351293864 initialized by client WindowsUpdateAgent.
+1975	"Read out cached package applicability for package: Package_for_KB3004361~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1976	Session: 30546354_3351423871 initialized by client WindowsUpdateAgent.
+1977	"Read out cached package applicability for package: Package_for_KB3108371~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1978	Session: 30546354_3351723888 initialized by client WindowsUpdateAgent.
+1979	"Read out cached package applicability for package: Package_for_KB2892074~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1980	Session: 30546354_3352763948 initialized by client WindowsUpdateAgent.
+1981	"Read out cached package applicability for package: Package_for_KB2973351~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1982	Session: 30546354_3355304093 initialized by client WindowsUpdateAgent.
+1983	"Read out cached package applicability for package: Package_for_KB2729094~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112"
+1984	Session: 30546354_3355724117 initialized by client WindowsUpdateAgent.
+1985	"Read out cached package applicability for package: Package_for_KB2511455~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1986	Session: 30546354_3355864125 initialized by client WindowsUpdateAgent.
+1987	"Read out cached package applicability for package: Package_for_KB2564958~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112"
+1988	Session: 30546354_3356114139 initialized by client WindowsUpdateAgent.
+1989	"Read out cached package applicability for package: Package_for_KB3045685~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112"
+1990	Session: 30546354_3356384155 initialized by client WindowsUpdateAgent.
+1991	"Read out cached package applicability for package: Package_for_KB2836943~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 80, CurrentState:112"
+1992	Session: 30546354_3356844181 initialized by client WindowsUpdateAgent.
+1993	"Read out cached package applicability for package: Package_for_KB2698365~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112"
+1994	Session: 30546354_3357084195 initialized by client WindowsUpdateAgent.
+1995	Session: 30546354_3357894241 initialized by client WindowsUpdateAgent.
+1996	"Read out cached package applicability for package: Package_for_KB3031432~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112"
+1997	Session: 30546354_3360174372 initialized by client WindowsUpdateAgent.
+1998	"Read out cached package applicability for package: Package_for_KB3004375~31bf3856ad364e35~amd64~~6.1.3.1, ApplicableState: 112, CurrentState:112"
+1999	Session: 30546354_3363894584 initialized by client WindowsUpdateAgent.
+2000	"Read out cached package applicability for package: Package_for_KB2928120~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 0, CurrentState:0"
