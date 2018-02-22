@@ -27,7 +27,7 @@ The codes are [here](https://github.com/logpai/logparser/tree/master/logparser).
 
 Data
 --------------
-In [data](https://github.com/logpai/logparser/tree/master/data), there are 5 datasets for you to play with. Each dataset contains several text files.
+In [data](https://github.com/logpai/logparser/tree/master/data), there are 11 datasets for you to play with. Each dataset contains several text files.
 * rawlog.log: The raw log messages with ID. "ID\tword1 word2 word3"
 * template[0-9]+: The log messages belong to a certain template.
 * templates: The text of templates.
