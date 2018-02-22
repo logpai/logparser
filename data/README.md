@@ -1,28 +1,27 @@
-# Logparser
-A python package of log parsers with benchmarks for log template/event extraction
+# Datasets
+Log datasets for log parsing task.
 
-Paper
-------
-If you use these parsers, please cite our paper using the following reference:<br /><br />
-@Conference{He16DSN,<br />
-  Title                    = {An Evaluation Study on Log Parsing and Its Use in Log Mining},<br />
-  Author                   = {He, P. and Zhu, J. and He, S. and Li, J. and Lyu, M. R.},<br />
-  Booktitle                = {DSN'16: Proc. of the 46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks},<br />
-  Year                     = {2016}<br />
-}
-
-
-Parsers
+Details
 --------
-If you are not familiar with log parser, please check the [Principles of Parsers](https://github.com/logpai/logparser/blob/master/tutorials/PARSERS.md) <br />
-The codes are [here](https://github.com/logpai/logparser/tree/master/logparser).
-
-* SLCT (Simple Logfile Clustering Tool): [A Data Clustering Algorithm for Mining Patterns from Event Logs](http://ristov.github.io/publications/slct-ipom03-web.pdf) (SLCT is wrapped around on the [C source code](http://ristov.github.io/slct/) provided by the author.)
-* IPLoM (Iterative Partitioning Log Mining): [A Lightweight Algorithm for Message Type Extraction in System Application Logs](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5936060)
-* LKE (Log Key Extraction): [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](http://research.microsoft.com/pubs/102365/DM790-CR.pdf)
-* LogSig: [LogSig: Gnerating System Events from Raw Textual Logs](http://users.cis.fiu.edu/~taoli/pub/liang-cikm2011.pdf)
-* Drain: [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://appsrv.cse.cuhk.edu.hk/~pjhe/papers/ICWS17he.pdf)
-* POP: a parallel log parsing method optimized on top of Spark.
+| Software System          |         Dataset Name         | Time Span  |  #Messages  |   Size   | Compressed (.tar.gz) | Source Link | 
+| :----------------------- | :--------------------------: | :--------: | :---------: | :------: | :------------------: | :------------------: |
+| **Distributed systems**     |                              |            |             |          |                      |
+| HDFS                     |   [HDFS-1](./HDFS/HDFS-1)    | 38.7 hours | 11,175,629  |  1.54GB  |       152.01MB       | [Link](http://iiis.tsinghua.edu.cn/~weixu/sospdata.html) |
+|                          |   [HDFS-2](./HDFS/HDFS-2)    |    N.A.    | 71,118,073  | 16.84GB  |       877.38MB       |
+| Hadoop                   |      [Hadoop](./Hadoop)      |    N.A.    |   394,308   | 49.78MB  |        2.50MB        |
+| Spark                    |       [Spark](./Spark)       |    N.A.    | 33,236,604  |  2.88GB  |       179.18MB       |
+| Zookeeper                |   [Zookeeper](./Zookeeper)   | 26.7 days  |   74,380    | 10.18MB  |        452KB         |
+| **Operating systems**    |                              |            |             |          |                      |
+| Windows                  |     [Windows](./Windows)     | 226.7 days | 114,608,388 | 27.36GB  |        1.63GB        |
+| Linux                    |       [Linux](./Linux)       | 263.9 days |   25,567    |  2.30MB  |        228KB         |
+| **Server applications**     |                              |            |             |          |                      |
+| Apache Web server        |      [Apache](./Apache)      | 263.9 days |   56,481    |  5.02MB  |        260KB         |
+| **Supercomputers**       |                              |            |             |          |                      |
+| Blue Gene/L              |         [BGL](./BGL)         | 214.7 days |  4,747,963  | 725.77MB |       61.46MB        | [Link](https://www.usenix.org/cfdr-data)
+| HPC                      |         [HPC](./HPC)         |    N.A.    |   433,489   | 32.77MB  |        3.21MB        |
+| Thunderbird              | [Thunderbird](./Thunderbird) |  244 days  | 211,212,192 | 31.04GB  |        1.97GB        |
+| **On-premises software** |                              |            |             |          |                      |
+| Proxifier                |   [Proxifier](./Proxifier)   |    N.A.    |   10,108    |  1.19MB  |        172KB         |
 
 
 Data
@@ -33,22 +32,7 @@ In [data](https://github.com/logpai/logparser/tree/master/data), there are 5 dat
 * templates: The text of templates.
 
 
-Quick Start
---------------
-***Input***: A raw log file. Each line of the file follows "ID\tword1 word2 word3" <br />
-***Output***: Two parts. One is splitted log messages (only contains log ID) in different text files. The other is the ***templates*** file which contains all templates. <br />
+### License
+The log datasets are freely available ONLY for research purposes. 
 
-***Examples***: Before running the examples, please copy the parser source file to the same directory.
-* [Example1](https://github.com/logpai/logparser/blob/master/demo/example1.py): This file is a simple example to demonstrate the usage of LogSig. The usage of other log parsers is similar.
-* [Example2](https://github.com/logpai/logparser/blob/master/demo/example2.py): This file is to demonstrate the usage of POP.
-* [Example3](https://github.com/logpai/logparser/blob/master/demo/example3.py): This file is used to evaluate the performance of LogSig. It iterates 10 times and record several important information (e.g., TP, FP, time). To play with your own dataset, you could modify the path and files name in the code. You should also modify the path for ground truth data in [RI_precision](https://github.com/logpai/logparser/blob/master/demo/RI_precision.py). For the ground truth data format, you can refer to our provided [datasets](https://github.com/logpai/logparser/blob/master/data/).
-* [Evaluation of LogSig](https://github.com/logpai/logparser/tree/master/demo/LogSigEvaluation): This folder provides a package for you to evaluate the LogSig log parser on 2k HDFS dataset. You could simply run the [evaluateLogSig.py](https://github.com/logpai/logparser/blob/master/demo/LogSigEvaluation/evaluateLogSig.py) file.
-
-<br /> For SLCT, because it is based on the original C code, the running example is [here](https://github.com/logpai/logparser/blob/master/logparser/SLCT/demo/SLCT_demo_BGL/precision_10_times.py). This program is platform-dependent because the .so files are only valid in Linux.
-
-
-License
---------
-[The MIT License (MIT)](https://github.com/logpai/logparser/blob/master/LICENSE.md)
-
-Copyright © 2017, [LogPAI](https://github.com/logpai), CUHK
+[LogPAI Team](https://github.com/orgs/logpai/people), 2018
