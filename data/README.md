@@ -3,24 +3,24 @@ Log datasets for log parsing task.
 
 Details
 --------
-| Software System          |         Dataset Name         | Time Span  |  #Messages  |   Size   | Compressed (.tar.gz) | Source Link | 
-| :----------------------- | :--------------------------: | :--------: | :---------: | :------: | :------------------: | :------------------: |
+| Software System          |         Dataset Name         |  #Messages  |   Message Length   | #Events | Source Link | 
+| :----------------------- | :--------------------------: | :--------: | :---------: | :------------------: | :------------------: |
 | **Distributed systems**     |                              |            |             |          |                      |
-| HDFS                     |   HDFS    | 38.7 hours | 11,175,629  |  1.54GB  |       152.01MB       | [Link](http://iiis.tsinghua.edu.cn/~weixu/sospdata.html) |
-| Hadoop                   |      [Hadoop](./Hadoop)      |    N.A.    |   394,308   | 49.78MB  |        2.50MB        |
-| Spark                    |       [Spark](./Spark)       |    N.A.    | 33,236,604  |  2.88GB  |       179.18MB       |
-| Zookeeper                |   Zookeeper   | 26.7 days  |   74,380    | 10.18MB  |        452KB         |
+| HDFS                     |   HDFS    | 4,747,963 | 10-102  |  376  |     [Link](http://iiis.tsinghua.edu.cn/~weixu/sospdata.html) |
+| Hadoop                   |      [Hadoop](./Hadoop)      |    2,000    |   6-48    |        116        | |
+| Spark                    |       [Spark](./Spark)       |    2,000    | 6-22    |     36   | |
+| Zookeeper                |   Zookeeper   | 74,380  |   8-27    | 80  |
 | **Operating systems**    |                              |            |             |          |                      |
-| Windows                  |     [Windows](./Windows)     | 226.7 days | 114,608,388 | 27.36GB  |        1.63GB        |
-| Linux                    |       [Linux](./Linux)       | 263.9 days |   25,567    |  2.30MB  |        228KB         |
+| Windows                  |     [Windows](./Windows)     | 2,000 | 6-22 | 50  |                |
+| Linux                    |       [Linux](./Linux)       | 2,000 |   7-25    |  123  |              |
 | **Server applications**     |                              |            |             |          |                      |
-| Apache Web server        |      [Apache](./Apache)      | 263.9 days |   56,481    |  5.02MB  |        260KB         |
+| Apache Web server        |      [Apache](./Apache)      | 2,000 |   5-10    |  6  |               |
 | **Supercomputers**       |                              |            |             |          |                      |
-| Blue Gene/L              |         BGL         | 214.7 days |  4,747,963  | 725.77MB |       61.46MB        | [Link](https://www.usenix.org/cfdr-data)
-| HPC                      |         HPC         |    N.A.    |   433,489   | 32.77MB  |        3.21MB        |
-| Thunderbird              | [Thunderbird](./Thunderbird) |  244 days  | 211,212,192 | 31.04GB  |        1.97GB        |
+| Blue Gene/L              |         BGL         | 4,747,963 |  10-102  | 376 |  [Link](https://www.usenix.org/cfdr-data) |
+| HPC                      |         HPC         |    433,489    |   6-104   | 105  |            |
+| Thunderbird              | [Thunderbird](./Thunderbird) |  2,000  | 11-133 | 154  |                |
 | **On-premises software** |                              |            |             |          |                      |
-| Proxifier                |   Proxifier   |    N.A.    |   10,108    |  1.19MB  |        92KB         |
+| Proxifier                |   Proxifier   |    N.A.    |   10,108    |  10-27  |        8         |
 
 
 
