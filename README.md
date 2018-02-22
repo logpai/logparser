@@ -4,28 +4,28 @@ A python package of log parsers with benchmarks for log template/event extractio
 Paper
 ------
 If you use these parsers, please cite our paper using the following reference:<br /><br />
-@Conference{He16DSN,<br />
+*@Conference{He16DSN,<br />
   Title                    = {An Evaluation Study on Log Parsing and Its Use in Log Mining},<br />
   Author                   = {He, P. and Zhu, J. and He, S. and Li, J. and Lyu, M. R.},<br />
   Booktitle                = {DSN'16: Proc. of the 46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks},<br />
   Year                     = {2016}<br />
-}
+}<br /><br />*
 
-You are also welcome to cite our other related log parser papers:
-@Conference{He17ICWS,<br />
+You are also welcome to cite our other related log parser papers:<br /><br />
+*@Conference{He17ICWS,<br />
   Title                    = {Drain: An Online Log Parsing Approach with Fixed Depth Tree},<br />
   Author                   = {He, P. and Zhu, J. and Zheng, Z. and Lyu, M. R.},<br />
   Booktitle                = {ICWS'17: Proc. of the 24th International Conference on Web Services},<br />
   Year                     = {2017}<br />
-}
+}<br />*
 
-@Article{HeTDSC17,<br />
+*@Article{HeTDSC17,<br />
   Title                    = {Towards Automated Log Parsing for Large-Scale Log Data Analysis},<br />
   Author                   = {He, P. and Zhu, J. and He, S. and Li, J. and Lyu, M. R.},<br />
   Booktitle                = {IEEE Transactions on Dependable and Secure Computing},<br />
   doi={10.1109/TDSC.2017.2762673}, <br />
   ISSN={1545-5971}<br />
-}
+}*
 
 Parsers
 --------
