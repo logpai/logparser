@@ -494,3 +494,69 @@ class Drain:
 		print('*********************************************')
 		gc.collect()
 		return t2-t1
+
+# Experimental Settings
+# if dataset == 1:
+# 	dataPath = '../data/datasets/BGL/'
+# 	# removeCol = [0,1,2,3,4,5,6,7,8,9,10]
+# 	removeCol = [0,1,2,3,4,5,6,7,8]
+
+# 	rex = [('core\.[0-9]*', 'coreNum')]
+# 	mt = 1
+
+# elif dataset == 2:
+# 	dataPath = '../data/datasets/HPC/'
+# 	removeCol = [0]
+# 	rex = [('([0-9]+\.){3}[0-9]', 'IPAdd'), ('node-[0-9]+', 'nodeNum')]
+# 	mt = 1
+
+# elif dataset == 3:
+# 	dataPath = '../data/datasets/Thunderbird/'
+# 	rex = [('([0-9]+\.){3}[0-9]+', 'IPAdd')]
+# 	mt = 1
+
+# elif dataset == 4:
+# 	dataPath = '../data/datasets/HDFS/'
+# 	removeCol = [0,1,2,3,4]
+# 	rex = [('blk_(|-)[0-9]+', 'blkID'), ('(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)', 'IPAddandPortID')]
+# 	mt = 1
+# 	delimiters = '\s+'
+
+# elif dataset == 5:
+# 	dataPath = '../data/datasets/Zookeeper/'
+# 	# removeCol = [0,1,2,3,4,5,6,7,8]
+# 	removeCol = [0,1,2,3,4,5]
+
+# 	rex = [('(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)', 'IPAddandPortID')]
+# 	mt = 1.0
+
+# elif dataset == 6:
+# 	dataPath = '../data/datasets/Hadoop/'
+# 	rex = []
+# 	mt = 1
+
+# elif dataset == 7:
+# 	dataPath = '../data/datasets/Spark/'
+# 	rex = []
+# 	mt = 1
+
+# elif dataset == 8:
+# 	dataPath = '../data/datasets/Windows/'
+# 	rex = []
+# 	mt = 1
+
+# elif dataset == 9:
+# 	dataPath = '../data/datasets/Linux/'
+# 	rex = [('([0-9]+\.){3}[0-9]+', 'IPAdd')]
+# 	mt = 1
+
+# elif dataset == 10:
+# 	dataPath = '../data/datasets/Apache/'
+# 	rex = []
+# 	mt = 1
+
+# else:
+# 	dataPath = '../data/datasets/Proxifier/'
+# 	removeCol = [0,1,3,4]
+# 	rex = []
+# 	mt = 0.95
