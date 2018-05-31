@@ -1,7 +1,6 @@
 # Self-defined
-logs/
-result/
-
+*result/
+slct
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -54,3 +53,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+Unused/
+.idea/
+POP/
