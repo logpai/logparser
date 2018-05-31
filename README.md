@@ -80,5 +80,4 @@ Contributions and suggestions are welcome! For any bugs or enquiries, please pos
 ### License
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](./LICENSE.md)
-
 [![copyright](https://img.shields.io/badge/Copyright-2018%20LogPAI%20Team-blue.svg)](https://github.com/orgs/logpai/people)
