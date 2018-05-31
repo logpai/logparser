@@ -4,12 +4,12 @@ Install docker
 This is a note showing the steps of installing docker on Ubuntu platforms. If you need more detailed information, please check docker documentaion at: https://docs.docker.com/install/linux/docker-ce/ubuntu
 
 
-.. note::
+.. warning::
     Uninstall old docker versions if any::
 
         $ sudo apt-get remove docker docker-engine docker.io
 
-+ **Ubuntu 14.04**
+- **Ubuntu 14.04**
 
     Install `linux-image-extra-*` to allow Docker to use the aufs storage drivers.
     ::
@@ -26,7 +26,7 @@ This is a note showing the steps of installing docker on Ubuntu platforms. If yo
         $ sudo dpkg -i ~/docker/docker-ce_17.03.2~ce-0~ubuntu-trusty_amd64.deb
 
 
-+ **Ubuntu 16.04**
+- **Ubuntu 16.04**
 
     Download docker package file at: https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_17.03.2~ce-0~ubuntu-xenial_amd64.deb
     ::
