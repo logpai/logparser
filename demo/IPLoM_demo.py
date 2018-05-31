@@ -1,23 +1,21 @@
 #!/usr/bin/env python
+
 import sys
-sys.path.append('../IPLoM')
-sys.path.append('../logparser')
-import IPLoM
-import evaluator
-import os
+sys.path.append('../')
+from logparser import IPLoM
 
-input_dir = '../logs/HDFS/'
-output_dir = 'IPLoM_result/'
+input_dir    = '../logs/HDFS/'  # The input directory of log file
+output_dir   = 'IPLoM_result/'  # The output directory of parsing results
+log_file     = 'HDFS_2k.log'  # The input log file name
+log_format   = '<Date> <Time> <Pid> <Level> <Component>: <Content>'  # HDFS log format
+maxEventLen  = 120  # The maximal token number of log messages (default: 200)
+step2Support = 0  # The minimal support for creating a new partition (default: 0)
+CT           = 0.35  # The cluster goodness threshold (default: 0.35)
+lowerBound   = 0.25  # The lower bound distance (default: 0.25)
+upperBound   = 0.9  # The upper bound distance (default: 0.9)
+regex        = []  # Regular expression list for optional preprocessing (default: [])
 
-log_file = 'HDFS_2k.log'
-log_format = 'Date Time Pid Level Component: Content' # HDFS log format
-regex = ['blk_(|-)[0-9]+', '(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)']
-
-parser = IPLoM.LogParser(log_format=log_format,indir=input_dir,outdir=output_dir,
-                         maxEventLen=120, step2Support=0, CT=0.35, lowerBound=0.25,
-                         upperBound=0.9, rex=regex)
-
+parser = IPLoM.LogParser(log_format=log_format, indir=input_dir, outdir=output_dir,
+                         maxEventLen=maxEventLen, step2Support=step2Support, CT=CT, 
+                         lowerBound=lowerBound, upperBound=upperBound, rex=regex)
 parser.parse(log_file)
-
-evaluator.evaluate(os.path.join(input_dir, 'HDFS_2k.log_structured.csv'),
-                   os.path.join(output_dir, 'HDFS_2k.log_structured.csv'))

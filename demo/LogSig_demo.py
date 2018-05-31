@@ -1,22 +1,15 @@
+#!/usr/bin/env python
+
 import sys
-sys.path.append('../LogSig')
-sys.path.append('../logparser')
+sys.path.append('../')
+from logparser import LogSig
 
-from LogSig import *
-import evaluator
+input_dir    = '../logs/HDFS/' # The input directory of log file
+output_dir   = 'LogSig_result/' # The output directory of parsing results
+log_file     = 'HDFS_2k.log' # The input log file name
+log_format   = '<Date> <Time> <Pid> <Level> <Component>: <Content>' # HDFS log format
+regex        = []  # Regular expression list for optional preprocessing (default: [])
+group_number = 14 # The number of message groups to partition
 
-input_dir = '../logs/HDFS/'
-output_dir = 'LogSig_result/'
-
-log_file = 'HDFS_2k.log'
-log_format = 'Date Time Pid Level Component: Content' # HDFS log format
-
-regex = ['blk_(|-)[0-9]+', '(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)']
-
-parser=LogSig(path=input_dir, savePath=output_dir, rex=regex,
-                groupNum=14, logformat=log_format)
-
+parser = LogSig.LogParser(input_dir, output_dir, group_number, log_format, rex=regex)
 parser.parse(log_file)
-
-evaluator.evaluate(os.path.join(input_dir, 'HDFS_2k.log_structured.csv'),
-                   os.path.join(output_dir, 'HDFS_2k.log_structured.csv'))
