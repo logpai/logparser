@@ -10,7 +10,7 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 
 .. toctree::
    :maxdepth: 1
-   :caption: INSTALLATION
+   :caption: Installation
 
    installation/install_docker
 
