@@ -1,7 +1,9 @@
 # Logparser
+***News***: Please check our new progress at: https://github.com/logpai/logparser/tree/dev
+
 A python package of log parsers with benchmarks for log template/event extraction
 
-**News**: Please check a new version of logparser at: https://github.com/logpai/logparser/tree/dev
+
 
 Parsers
 --------
