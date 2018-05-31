@@ -4,7 +4,7 @@ Install docker
 This is a note showing the steps of installing docker on Ubuntu platforms. If you need more detailed information, please check docker documentaion at: https://docs.docker.com/install/linux/docker-ce/ubuntu
 
 
-.. warning::
+.. note::
     Uninstall old docker versions if any::
 
         $ sudo apt-get remove docker docker-engine docker.io
