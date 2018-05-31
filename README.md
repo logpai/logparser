@@ -1,3 +1,5 @@
+[![Documentation Status](https://readthedocs.org/projects/logparser/badge/?version=latest)](https://logparser.readthedocs.io/en/latest/?badge=latest)
+
 # Logparser
 Logparser provides a toolkit and benchmarks for automated log parsing, which is a crucial step towards structured log analytics. Logparser implements a number of state-of-the-art data-driven approaches for this goal. By applying logparser, users can automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is sometimes refered to as message template extraction, log key extraction, or log message clustering. 
 
@@ -64,21 +66,6 @@ All the log parsers have been evaluated on [loghub](https://github.com/logpai/lo
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](http://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), 2016.
 
 
-### Dependency
-The logparser toolkit has the following requirements by default. We suggest to use the [Anaconda environment](https://www.anaconda.com/download/#linux).
-+ python 2.7
-+ scipy 
-+ numpy
-+ scikit-learn 
-+ pandas
-
-Some tools have more specific dependency requirements:
-+ SLCT: gcc 4.8.5
-+ LogCluster: perl 5.22
-+ MoLFI: python 3.6, deap 1.2.2
-+ POP: pyspark
-
-
 ### Acknowledgement
 Logparser is implemented based on a number of existing open-source projects:
 + [SLCT](http://ristov.github.io/slct/) (c++)
@@ -92,7 +79,6 @@ Contributions and suggestions are welcome! For any bugs or enquiries, please pos
 
 ### License
 
-![license](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](./LICENSE.md)
 
-Copyright &copy; 2018, [LogPAI Team](https://github.com/orgs/logpai/people)
-
+[![copyright](https://img.shields.io/badge/Copyright-2018%20LogPAI%20Team-blue.svg)](https://github.com/orgs/logpai/people)
