@@ -8,7 +8,7 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 Log parsers currently made available: (**currently in beta release!**)
 
 | Tools | References |
-| :---: | :--- |
+| :--- | :--- |
 | SLCT | [**IPOM'03**] Risto Vaarandi. [A Data Clustering Algorithm for Mining Patterns from Event Logs](http://www.quretec.com/u/vilo/edu/2003-04/DM_seminar_2003_II/ver1/P12/slct-ipom03-web.pdf), 2003 |
 | AEL | [**QSIC'08**] Zhen Ming Jiang, Ahmed E. Hassan, Parminder Flora, Gilbert Hamann. [Abstracting Execution Logs to Execution Events for Enterprise Applications](https://www.researchgate.net/publication/4366728_Abstracting_Execution_Logs_to_Execution_Events_for_Enterprise_Applications_Short_Paper), 2008<br> [**JSME'08**] Zhen Ming Jiang, Ahmed E. Hassan, Gilbert Hamann, Parminder Flora. [An Automated Approach for Abstracting Execution Logs to Execution Events](http://www.cse.yorku.ca/~zmjiang/publications/jsme2008.pdf), 2008 |
 | IPLoM | [**KDD'09**] Adetokunbo Makanju, A. Nur Zincir-Heywood, Evangelos E. Milios. [Clustering Event Logs Using Iterative Partitioning](https://web.cs.dal.ca/~makanju/publications/paper/kdd09.pdf), 2009<br> [**TKDE'12**] Adetokunbo Makanju, A. Nur Zincir-Heywood, Evangelos E. Milios. [A Lightweight Algorithm for Message Type Extraction in System Application Logs](http://ieeexplore.ieee.org/abstract/document/5936060/), 2012 |
@@ -68,7 +68,7 @@ All the log parsers have been evaluated on [loghub](https://github.com/logpai/lo
 
 ### Acknowledgement
 Logparser is implemented based on a number of existing open-source projects:
-+ [SLCT](http://ristov.github.io/slct/) (c++)
++ [SLCT](http://ristov.github.io/slct/) (C++)
 + [LogCluster](https://github.com/ristov/logcluster) (perl)
 + [LenMa](https://github.com/keiichishima/templateminer)
 + [MoLFI](https://github.com/SalmaMessaoudi/MoLFI) (python 3)
@@ -80,4 +80,4 @@ Contributions and suggestions are welcome! For any bugs or enquiries, please pos
 ### License
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](./LICENSE.md)
-[![copyright](https://img.shields.io/badge/Copyright-2018%20LogPAI%20Team-blue.svg)](https://github.com/orgs/logpai/people)
+[![copyright](https://img.shields.io/badge/copyright-2018%20LogPAI%20Team-blue.svg)](https://github.com/orgs/logpai/people)
