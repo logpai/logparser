@@ -70,7 +70,7 @@ All the log parsers have been evaluated on [loghub](https://github.com/logpai/lo
 Logparser is implemented based on a number of existing open-source projects:
 + [SLCT](http://ristov.github.io/slct/) (C++)
 + [LogCluster](https://github.com/ristov/logcluster) (perl)
-+ [LenMa](https://github.com/keiichishima/templateminer)
++ [LenMa](https://github.com/keiichishima/templateminer) (python 2)
 + [MoLFI](https://github.com/SalmaMessaoudi/MoLFI) (python 3)
 
 ### Contribution
@@ -80,4 +80,4 @@ Contributions and suggestions are welcome! For any bugs or enquiries, please pos
 ### License
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](./LICENSE.md)
-[![copyright](https://img.shields.io/badge/copyright-2018%20LogPAI%20Team-blue.svg)](https://github.com/orgs/logpai/people)
+[![copyright](https://img.shields.io/badge/copyright-2018%20LogPAI-blue.svg)](https://github.com/orgs/logpai/people)
