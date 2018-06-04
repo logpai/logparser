@@ -20,7 +20,7 @@ This is a note showing the steps of installing docker on Ubuntu platforms. If yo
             linux-image-extra-$(uname -r) \
             linux-image-extra-virtual
 
-    Download docker package file at: https://download.docker.com/linux/ubuntu/dists/trusty/pool/stable/amd64/docker-ce_17.03.2~ce-0~ubuntu-trusty_amd64.deb
+    Download docker package file `docker-ce_17.03.2~ce-0~ubuntu-trusty_amd64.deb <https://download.docker.com/linux/ubuntu/dists/trusty/pool/stable/amd64/docker-ce_17.03.2~ce-0~ubuntu-trusty_amd64.deb>`_.
     ::
 
         $ sudo dpkg -i ~/docker/docker-ce_17.03.2~ce-0~ubuntu-trusty_amd64.deb
@@ -28,7 +28,7 @@ This is a note showing the steps of installing docker on Ubuntu platforms. If yo
 
 - **Ubuntu 16.04**
 
-    Download docker package file at: https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_17.03.2~ce-0~ubuntu-xenial_amd64.deb
+    Download docker package file `docker-ce_17.03.2~ce-0~ubuntu-xenial_amd64.deb <https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_17.03.2~ce-0~ubuntu-xenial_amd64.deb>`_.
     ::
 
         $ sudo dpkg -i ~/docker/docker-ce_17.03.2~ce-0~ubuntu-xenial_amd64.deb
