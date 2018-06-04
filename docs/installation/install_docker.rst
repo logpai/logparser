@@ -11,7 +11,7 @@ This is a note showing the steps of installing docker on Ubuntu platforms. If yo
 
 - **Ubuntu 14.04**
 
-    Install `linux-image-extra-*` to allow Docker to use the aufs storage drivers.
+    Install `**linux-image-extra-***` to allow Docker to use the aufs storage drivers.
     ::
 
         $ sudo apt-get update
