@@ -9,6 +9,7 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 
    demo
 
+
 .. toctree::
    :maxdepth: 1
    :caption: Installation
