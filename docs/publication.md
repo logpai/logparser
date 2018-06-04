@@ -1,17 +1,17 @@
 Publications
 ============
 
-#. [**ICPC'18**] Salma Messaoudi, Annibale Panichella, Domenico Bianculli, Lionel Briand, Raimondas Sasnauskas. `A Search-based Approach for Accurate Identification of Log Message Formats <http://publications.uni.lu/bitstream/10993/35286/1/ICPC-2018.pdf>`_, *IEEE/ACM International Conference on Program Comprehension (ICPC)*, 2018.
+1. [**ICPC'18**] Salma Messaoudi, Annibale Panichella, Domenico Bianculli, Lionel Briand, Raimondas Sasnauskas. [A Search-based Approach for Accurate Identification of Log Message Formats](http://publications.uni.lu/bitstream/10993/35286/1/ICPC-2018.pdf), *IEEE/ACM International Conference on Program Comprehension (ICPC)*, 2018.
 
-#. [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. `Drain: An Online Log Parsing Approach with Fixed Depth Tree <http://jiemingzhu.github.io/pub/pjhe_icws2017.pdf>`_, *IEEE International Conference on Web Services (ICWS)*, 2017.
+1. [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), *IEEE International Conference on Web Services (ICWS)*, 2017.
 
-#. [**ICDM'16**] Min Du, Feifei Li. `Spell: Streaming Parsing of System Event Logs <https://www.cs.utah.edu/~lifeifei/papers/spell.pdf>`_, *IEEE International Conference on Data Mining (ICDM)*, 2016.
+1. [**ICDM'16**] Min Du, Feifei Li. [Spell: Streaming Parsing of System Event Logs](https://www.cs.utah.edu/~lifeifei/papers/spell.pdf), *IEEE International Conference on Data Mining (ICDM)*, 2016.
 
-#. [**CNSM'15**] Risto Vaarandi, Mauno Pihelgas. `LogCluster - A Data Clustering and Pattern Mining Algorithm for Event Logs <http://ristov.github.io/publications/cnsm15-logcluster-web.pdf>`_, *International Conference on Network and Service Management (CNSM)*, 2015.
+1. [**CNSM'15**] Risto Vaarandi, Mauno Pihelgas. [LogCluster - A Data Clustering and Pattern Mining Algorithm for Event Logs](http://ristov.github.io/publications/cnsm15-logcluster-web.pdf), *International Conference on Network and Service Management (CNSM)*, 2015.
 
-#. [**CNSM'15**] Keiichi Shima. `Length Matters: Clustering System Log Messages using Length of Words <https://arxiv.org/pdf/1611.03213.pdf>`_, *International Conference on Network and Service Management (CNSM)*, 2015.
+1. [**CNSM'15**] Keiichi Shima. [Length Matters: Clustering System Log Messages using Length of Words](https://arxiv.org/pdf/1611.03213.pdf), *International Conference on Network and Service Management (CNSM)*, 2015.
 
-#. [**TKDE'12**] Adetokunbo Makanju, A. Nur Zincir-Heywood, Evangelos E. Milios. `A Lightweight Algorithm for Message Type Extraction in System Application Logs <http://ieeexplore.ieee.org/abstract/document/5936060/>`_, *IEEE Transactions on Knowledge and Data Engineering (TKDE)*, 2012.
+1. [**TKDE'12**] Adetokunbo Makanju, A. Nur Zincir-Heywood, Evangelos E. Milios. [A Lightweight Algorithm for Message Type Extraction in System Application Logs](http://ieeexplore.ieee.org/abstract/document/5936060/), *IEEE Transactions on Knowledge and Data Engineering (TKDE)*, 2012.
 
 1. Liang Tang, Tao Li, Chang-Shing Perng. [LogSig: Generating System Events from Raw Textual Logs](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.222.9320&rep=rep1&type=pdf), *ACM International Conference on Information and Knowledge Management (CIKM)*, 2011.
 
