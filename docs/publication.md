@@ -3,7 +3,7 @@ Publications
 
 1. [**ICPC'18**] Salma Messaoudi, Annibale Panichella, Domenico Bianculli, Lionel Briand, Raimondas Sasnauskas. [A Search-based Approach for Accurate Identification of Log Message Formats](http://publications.uni.lu/bitstream/10993/35286/1/ICPC-2018.pdf), *IEEE/ACM International Conference on Program Comprehension (ICPC)*, 2018.
 1. **[ICMD'18]** Gao Y, Huang S, Parameswaran A. [Navigating the Data Lake with Datamaran: Automatically Extracting Structure from Log Datasets](https://arxiv.org/pdf/1708.08905.pdf), *InProceedings of the 2018 International Conference on Management of Data (ICMD)*, 2018.
-1. **[ISDFS'17]**Thaler S, Menkonvski V, Petkovic M. [Towards a neural language model for signature extraction from forensic logs](https://ieeexplore.ieee.org/abstract/document/7916497/), *InDigital Forensic and Security (ISDFS), 2017*
+1. **[ISDFS'17]**Thaler S, Menkonvski V, Petkovic M. [Towards a neural language model for signature extraction from forensic logs](https://ieeexplore.ieee.org/abstract/document/7916497/), *InDigital Forensic and Security (ISDFS)*, 2017
 1. [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), *IEEE International Conference on Web Services (ICWS)*, 2017.
 1. [**ICDM'16**] Min Du, Feifei Li. [Spell: Streaming Parsing of System Event Logs](https://www.cs.utah.edu/~lifeifei/papers/spell.pdf), *IEEE International Conference on Data Mining (ICDM)*, 2016.
 1. **[MILCOM'16]** Vaarandi R, Kont M, Pihelgas M. [Event log analysis with the LogCluster tool](https://ieeexplore.ieee.org/abstract/document/7795458/). *InMilitary Communications Conference (MILCOM)*, 2016.
