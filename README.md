@@ -61,6 +61,8 @@ All the log parsers have been evaluated on [loghub](https://github.com/logpai/lo
 
 
 ### Publications about logparser
+**Note**: If you use our tools in your research for publication, please kindly cite our [logparser project](https://github.com/logpai/logparser) and papers when possible.
+
 + [**TDSC'17**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [Towards Automated Log Parsing for Large-Scale Log Data Analysis](http://jiemingzhu.github.io/pub/pjhe_tdsc2017.pdf). IEEE Transactions on Dependable and Secure Computing (TDSC), 2017.
 + [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://jiemingzhu.github.io/pub/pjhe_icws2017.pdf). IEEE International Conference on Web Services (ICWS), 2017.
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](http://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), 2016.
@@ -79,5 +81,5 @@ Contributions and suggestions are welcome! For any bugs or enquiries, please pos
 
 ### License
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](./LICENSE.md)
-[![copyright](https://img.shields.io/badge/copyright-2018%20LogPAI-blue.svg)](https://github.com/orgs/logpai/people)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE.md)
+[![copyright](https://img.shields.io/badge/Copyright-2018%20LogPAI-blue.svg)](https://github.com/orgs/logpai/people)
