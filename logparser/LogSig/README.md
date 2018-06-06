@@ -1,4 +1,4 @@
-#LogSig
+# LogSig
 
 LogSig is a message signature based algorithm to generate system events from textual log messages. By searching
 the most representative message signatures, logSig categorizes log messages into a set of event types. logSig can

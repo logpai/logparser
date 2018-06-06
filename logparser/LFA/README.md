@@ -1,4 +1,4 @@
-#LFA - Log File Abstraction
+# LFA - Log File Abstraction
 
 LFA is a log parsing approach that extends over SLCT. SLCT cannot abstract event templates for all log messages. In LFA, token frequencies are compared within each log message instead of across all log messages, thus parameters can be identified by distinguishing token frequencies within a log message.
 

@@ -1,4 +1,4 @@
-#AEL - Abstracting Execution Logs
+# AEL - Abstracting Execution Logs
 
 AEL is one of the state-of-the-art log parsing approaches, which comprises four steps: anonymize, tokenize, categorize, and reconcile. In particular, in the reconcile step, the original algorithm merges events that have only a different token. However, this process cannot handle the cases where one single template multiple different parameter tokens. To improve the generability of this algorithm, we use a parameter merge_percent to set the percentage of different tokens when merging two events.
 

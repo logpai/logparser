@@ -8,10 +8,10 @@ output_dir  = 'SHISO_result/' # The output directory of parsing results
 log_file    = 'HDFS_2k.log' # The input log file name
 log_format  = '<Date> <Time> <Pid> <Level> <Component>: <Content>' # HDFS log format
 regex       = [r'blk_-?\d+', r'(\d+\.){3}\d+(:\d+)?'] # Regular expression list for optional preprocessing (default: [])
-maxChildNum = 4 # Maximum number of childs for each internal node
-mergeThreshold = 0.1 # Threshold for the search of the most similar template in the children
-formatLookupThreshold = 0.3 # Lowerbound to find the most similar node to Adjust
-superFormatThreshold  = 0.85 # Threshold compared with float(lcslen)/averagelen, and decide whether merge or not to create a super format
+maxChildNum = 4 # The maximum number of children for each internal node
+mergeThreshold = 0.1 # Threshold for searching the most similar template in the children
+formatLookupThreshold = 0.3 # Lowerbound to find the most similar node to adjust
+superFormatThreshold  = 0.85 # Threshold of average LCS length, determing whether or not to create a super format
 
 parser = SHISO.LogParser(log_format,indir=input_dir,outdir=output_dir, rex=regex, maxChildNum=maxChildNum, 
                          mergeThreshold=mergeThreshold, formatLookupThreshold=formatLookupThreshold, 

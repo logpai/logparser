@@ -1,4 +1,4 @@
-#SLCT - simple logfile clustering tool
+# SLCT - simple logfile clustering tool
 
 [SLCT](http://ristov.github.io/slct/) is a tool that was designed to find clusters in logfile(s), so that each cluster corresponds to a certain line pattern that occurs frequently enough. With the help of SLCT, one can quickly build a model of logfile(s), and also identify rare lines that do not fit the model (and are possibly anomalous).
 

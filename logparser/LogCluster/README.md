@@ -1,4 +1,4 @@
-#LogCluster
+# LogCluster
 
 [LogCluster](http://ristov.github.io/logcluster/) is a Perl-based tool for log file clustering and mining line patterns from log files. The development of LogCluster was inspired by [SLCT](http://ristov.github.io/slct/), but LogCluster includes a number of novel features and data processing options. 
 

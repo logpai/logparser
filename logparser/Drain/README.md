@@ -1,4 +1,4 @@
-#Drain
+# Drain
 
 Drain is an online log parser that can parse logs into structured events in a streaming and timely manner. It employs
 a parse tree with fixed depth to guide the log group search process, which effectively avoids constructing a very deep and unbalanced tree. 
