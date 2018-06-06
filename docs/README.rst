@@ -22,9 +22,12 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
    :maxdepth: 1
    :caption: Tools
 
+   tools/overview
+   tools/SLCT
+   tools/IPLoM
+   tools/LKE
+   tools/LogSig
    publication
-
-
 
 .. toctree::
    :maxdepth: 1
