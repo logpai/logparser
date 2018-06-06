@@ -31,6 +31,12 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 
 .. toctree::
    :maxdepth: 1
+   :caption: Benchmarks
+
+   benchmark
+
+.. toctree::
+   :maxdepth: 1
    :caption: Contributors
 
    contributor
