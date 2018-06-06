@@ -12,7 +12,7 @@ Note that if you are going to try MoLFI, which requires Python 3, please run the
     $ docker run --name logparser_py3 -it -v logparser:/logparser logpai/logparser:py3 bash
 
 
-After starting the docker containers, you can run the demos of logparser on `HDFS sample log <https://github.com/logpai/loghub/tree/master/HDFS>`_::
+After starting the docker containers, you can run the demos of logparser on the `HDFS sample log <https://github.com/logpai/loghub/tree/master/HDFS>`_::
 
     $ git clone https://github.com/logpai/logparser.git /logparser/
     $ cd /logparser/
