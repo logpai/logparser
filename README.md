@@ -53,7 +53,7 @@ All the log parsers have been evaluated on [loghub](https://github.com/logpai/lo
 | LogSig      |    0.689    |   0.169    |   0.478    |     0.548     |     0.235     |   0.582    |    0.373    |      0.494      |
 | SHISO       |    0.701    |   0.672    |   0.595    |     0.585     |     0.397     |   **1***   |    0.619    |      0.755      |
 | LogCluster  |    0.713    |   0.629    |   0.604    |     0.798     |     0.531     |   0.709    |    0.426    |      0.656      |
-| LenMa       |    0.566    |   0.701    |   0.698    |     0.880     |     0.174     |   **1***   |    0.925    |      0.508      |
+| LenMa       |    0.566    |   0.701    |   0.698    |     0.880     |     0.174     |   **1***   |    **0.925**    |      0.508      |
 | LogMine     |  **0.993**  |   0.612    |   0.872    |     0.504     |     0.684     |   **1***   |    0.431    |      0.517      |
 | Spell       |  **0.989**  |   0.605    |   0.757    |   **0.919**   |     0.639     |   **1***   |    0.554    |      0.527      |
 | Drain       |  **0.997**  |   0.690    |   0.787    |   **0.911**   |     0.780     |   **1***   |    0.788    |      0.765      |
@@ -81,5 +81,5 @@ Contributions and suggestions are welcome! For any bugs or enquiries, please pos
 
 ### License
 
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE.md)
-[![copyright](https://img.shields.io/badge/Copyright-2018%20LogPAI-blue.svg)](https://github.com/orgs/logpai/people)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE.md)
+[![copyright](https://img.shields.io/badge/copyright-2018%20LogPAI-blue.svg)](https://github.com/orgs/logpai/people)
