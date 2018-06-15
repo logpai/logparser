@@ -16,7 +16,7 @@ The codes are [here](https://github.com/logpai/logparser/tree/master/logparser).
 * LogSig: [LogSig: Gnerating System Events from Raw Textual Logs](http://users.cis.fiu.edu/~taoli/pub/liang-cikm2011.pdf)
 * POP: [Towards Automated Log Parsing for Large-Scale Log Data Analysis](http://ieeexplore.ieee.org/document/8067504/)
 * DrainV1: [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://appsrv.cse.cuhk.edu.hk/~pjhe/papers/ICWS17he.pdf)
-* Drain: A Directed Acyclic Graph Approach to Online Log Parsing, extended from DrainV1.
+* Drain: [A Directed Acyclic Graph Approach to Online Log Parsing](https://arxiv.org/abs/1806.04356), extended from DrainV1.
 
 
 Data
