@@ -27,6 +27,8 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
    tools/IPLoM
    tools/LKE
    tools/LogSig
+   tools/Spell
+   tools/Drain
    publication
 
 .. toctree::
