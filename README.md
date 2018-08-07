@@ -16,7 +16,7 @@ Log parsers currently made available: (**currently in beta release!**)
 | LFA | [**MSR'10**] Meiyappan Nagappan, Mladen A. Vouk. [Abstracting Log Lines to Log Event Types for Mining Software System Logs](http://www.se.rit.edu/~mei/publications/pdfs/Abstracting-Log-Lines-to-Log-Event-Types-for-Mining-Software-System-Logs.pdf), 2010|
 | LogSig | [**CIKM'11**] Liang Tang, Tao Li, Chang-Shing Perng. [LogSig: Generating System Events from Raw Textual Logs](https://users.cs.fiu.edu/~taoli/pub/liang-cikm2011.pdf), 2011 |
 | SHISO | [**SCC'13**] Masayoshi Mizutani. [Incremental Mining of System Log Format](http://ieeexplore.ieee.org/document/6649746/), 2013|
-| LogCluster | [**CNSM'15**] Risto Vaarandi, Mauno Pihelgas. [LogCluster - A Data Clustering and Pattern Mining Algorithm for Event Logs](http://dl.ifip.org/db/conf/cnsm/cnsm2015/1570161213.pdf), 2015 | 
+| LogCluster | [**CNSM'15**] Risto Vaarandi, Mauno Pihelgas. [LogCluster - A Data Clustering and Pattern Mining Algorithm for Event Logs](http://dl.ifip.org/db/conf/cnsm/cnsm2015/1570161213.pdf), 2015 |
 | LenMa | [**CNSM'15**] Keiichi Shima. [Length Matters: Clustering System Log Messages using Length of Words](https://arxiv.org/pdf/1611.03213.pdf), 2015. |
 | LogMine | [**CIKM'16**] Hossein Hamooni, Biplob Debnath, Jianwu Xu, Hui Zhang, Geoff Jiang, Adbullah Mueen. [LogMine: Fast Pattern Recognition for Log Analytics](http://www.cs.unm.edu/~mueen/Papers/LogMine.pdf), 2016 |
 | Spell | [**ICDM'16**] Min Du, Feifei Li. [Spell: Streaming Parsing of System Event Logs](https://www.cs.utah.edu/~lifeifei/papers/spell.pdf), 2016 |
@@ -45,19 +45,19 @@ All the log parsers have been evaluated on [loghub](https://github.com/logpai/lo
 | MoLFI       |  **0.998**  | **0.957**  |   0.418    |     0.839     |     0.213     | **0.960**  |    0.824    |      0.646      |
 |             |             |            |            |               |               |            |             |                 |
 | **Tools**   | **Windows** | **Linux**  |  **Mac**   |  **Android**  | **HealthApp** | **Apache** | **OpenSSH** |  **Proxifier**  |
-| SLCT        |    0.697    |   0.297    |   0.558    |     0.882     |     0.331     |   0.731    |    0.521    |      0.670      |
-| AEL         |    0.690    |   0.673    |   0.764    |     0.682     |     0.568     |   **1***   |    0.538    |    **0.969**    |
-| IPLoM       |    0.567    |   0.672    |   0.673    |     0.712     |     0.822     |   **1***   |    0.802    |    **0.989**    |
-| LKE         |  **0.990**  |   0.519    |   0.369    |   **0.909**   |     0.592     |   **1***   |    0.426    |      0.673      |
-| LFA         |    0.588    |   0.279    |   0.599    |     0.616     |     0.549     |   **1***   |    0.501    |      0.355      |
-| LogSig      |    0.689    |   0.169    |   0.478    |     0.548     |     0.235     |   0.582    |    0.373    |      0.494      |
-| SHISO       |    0.701    |   0.672    |   0.595    |     0.585     |     0.397     |   **1***   |    0.619    |      0.755      |
-| LogCluster  |    0.713    |   0.629    |   0.604    |     0.798     |     0.531     |   0.709    |    0.426    |      0.656      |
+| SLCT        |    0.697    |   0.297    |   0.558    |     0.882     |     0.331     |   0.731    |    0.521    |      0.518      |
+| AEL         |    0.690    |   0.673    |   0.764    |     0.682     |     0.568     |   **1***   |    0.538    |    0.518    |
+| IPLoM       |    0.567    |   0.672    |   0.673    |     0.712     |     0.822     |   **1***   |    0.802    |    0.515    |
+| LKE         |  **0.990**  |   0.519    |   0.369    |   **0.909**   |     0.592     |   **1***   |    0.426    |      0.495      |
+| LFA         |    0.588    |   0.279    |   0.599    |     0.616     |     0.549     |   **1***   |    0.501    |      0.026      |
+| LogSig      |    0.689    |   0.169    |   0.478    |     0.548     |     0.235     |   0.582    |    0.373    |      **0.967**      |
+| SHISO       |    0.701    |   0.672    |   0.595    |     0.585     |     0.397     |   **1***   |    0.619    |      0.517      |
+| LogCluster  |    0.713    |   0.629    |   0.604    |     0.798     |     0.531     |   0.709    |    0.426    |      **0.951**      |
 | LenMa       |    0.566    |   0.701    |   0.698    |     0.880     |     0.174     |   **1***   |    **0.925**    |      0.508      |
 | LogMine     |  **0.993**  |   0.612    |   0.872    |     0.504     |     0.684     |   **1***   |    0.431    |      0.517      |
 | Spell       |  **0.989**  |   0.605    |   0.757    |   **0.919**   |     0.639     |   **1***   |    0.554    |      0.527      |
-| Drain       |  **0.997**  |   0.690    |   0.787    |   **0.911**   |     0.780     |   **1***   |    0.788    |      0.765      |
-| MoLFI       |    0.406    |   0.284    |   0.636    |   **0.788**   |     0.440     |   **1***   |    0.50    |        0        |
+| Drain       |  **0.997**  |   0.690    |   0.787    |   **0.911**   |     0.780     |   **1***   |    0.788    |      0.527      |
+| MoLFI       |    0.406    |   0.284    |   0.636    |   **0.788**   |     0.440     |   **1***   |    0.50    |        0.013        |
 
 
 ### Publications about logparser
