@@ -1,12 +1,9 @@
-EventId,EventTemplate
-E1,"<*> close, <*> bytes sent, <*> bytes received, lifetime <*>"
-E2,"<*> close, <*> bytes sent, <*> bytes (<*>) received, lifetime <*>"
-E3,"<*> close, <*> bytes (<*>) sent, <*> bytes received, lifetime <*>"
-E4,"<*> close, <*> bytes (<*>) sent, <*> bytes (<*>) received, lifetime <*>"
-E5,<*>:<*> error : A connection request was canceled before the completion.
-E6,<*>:<*> error : Could not connect through proxy <*>:<*> - Proxy closed the connection unexpectedly.
-E7,"<*>:<*> error : Could not connect through proxy <*>:<*> - Proxy server cannot establish a connection with the target, status code <*>"
-E8,<*>:<*> error : Could not connect to proxy <*>:<*> - connection attempt failed with error <*>
-E9,<*>:<*> error : Could not connect to proxy <*>:<*> - Could not resolve <*> error <*>
-E10,<*>:<*> open through proxy <*>:<*> HTTPS
-E11,<*>:<*> open through proxy <*>:<*> SOCKS5
+EventId,EventTemplate,Occurrences
+E1,<*>:<*> open through proxy <*>:<*> HTTPS,954
+E2,"<*> close, <*> bytes<*>sent, <*> bytes<*>received, lifetime <*>",947
+E3,<*>:<*> open through proxy <*>:<*> SOCKS5,2
+E4,<*>:<*> error : A connection request was canceled before the completion.,31
+E5,<*>:<*> error : Could not connect through proxy <*>:<*> - Proxy closed the connection unexpectedly.,3
+E6,"<*>:<*> error : Could not connect through proxy <*>:<*> - Proxy server cannot establish a connection with the target, status code <*>",17
+E7,<*>:<*> error : Could not connect to proxy <*>:<*> - Could not resolve <*> error <*>,20
+E8,<*>:<*> error : Could not connect to proxy <*>:<*> - connection attempt failed with error <*>,26
