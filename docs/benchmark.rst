@@ -2,6 +2,7 @@ Benchmarks
 ==========
 
 All the log parsers have been evaluated on [loghub](https://github.com/logpai/loghub) log samples. We report parsing accuracy as the percentage of accurately parsed log messages. Note that accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*. 
+
 | **Tools**   |  **HDFS**   | **Hadoop** | **Spark**  | **Zookeeper** | **OpenStack** |  **BGL**   |   **HPC**   | **Thunderbird** |
 | :---------- | :---------: | :--------: | :--------: | :-----------: | :-----------: | :--------: | :---------: | :-------------: |
 | SLCT        |    0.545    |   0.423    |   0.685    |     0.726     |     0.867     |   0.573    |    0.839    |      0.882      |
@@ -24,10 +25,10 @@ All the log parsers have been evaluated on [loghub](https://github.com/logpai/lo
 | IPLoM       |    0.567    |   0.672    |   0.673    |     0.712     |     0.822     |   **1***   |    0.802    |      0.515      |
 | LKE         |  **0.990**  |   0.519    |   0.369    |   **0.909**   |     0.592     |   **1***   |    0.426    |      0.495      |
 | LFA         |    0.588    |   0.279    |   0.599    |     0.616     |     0.549     |   **1***   |    0.501    |      0.026      |
-| LogSig      |    0.689    |   0.169    |   0.478    |     0.548     |     0.235     |   0.582    |    0.373    |      **0.967**  |
+| LogSig      |    0.689    |   0.169    |   0.478    |     0.548     |     0.235     |   0.582    |    0.373    |    **0.967**    |
 | SHISO       |    0.701    |   0.672    |   0.595    |     0.585     |     0.397     |   **1***   |    0.619    |      0.517      |
-| LogCluster  |    0.713    |   0.629    |   0.604    |     0.798     |     0.531     |   0.709    |    0.426    |      **0.951**  |
-| LenMa       |    0.566    |   0.701    |   0.698    |     0.880     |     0.174     |   **1***   |    **0.925**|      0.508      |
+| LogCluster  |    0.713    |   0.629    |   0.604    |     0.798     |     0.531     |   0.709    |    0.426    |    **0.951**    |
+| LenMa       |    0.566    |   0.701    |   0.698    |     0.880     |     0.174     |   **1***   |  **0.925**  |      0.508      |
 | LogMine     |  **0.993**  |   0.612    |   0.872    |     0.504     |     0.684     |   **1***   |    0.431    |      0.517      |
 | Spell       |  **0.989**  |   0.605    |   0.757    |   **0.919**   |     0.639     |   **1***   |    0.554    |      0.527      |
 | Drain       |  **0.997**  |   0.690    |   0.787    |   **0.911**   |     0.780     |   **1***   |    0.788    |      0.527      |
