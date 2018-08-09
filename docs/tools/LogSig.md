@@ -16,5 +16,5 @@ handle various types of log data, and is able to incorporate human’s domain kn
 
 Read more information about LogSig from the following papers:
 
-+ Liang Tang, Tao Li, Chang-Shing Perng. [LogSig: Generating System Events from Raw Textual Logs](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.222.9320&rep=rep1&type=pdf), *Proceedings of the 20th ACM International Conference on Information and Knowledge Management (CIKM)*, 2011.
++ Liang Tang, Tao Li, Chang-Shing Perng. [LogSig: Generating System Events from Raw Textual Logs](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.222.9320&rep=rep1&type=pdf), *ACM International Conference on Information and Knowledge Management (CIKM)*, 2011.
   
