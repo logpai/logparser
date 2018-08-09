@@ -45,7 +45,7 @@ Add user to the docker group to run docker commands without sudo::
 
 
 Build docker image (optional)
-=============================
+-----------------------------
 
 Build logpai/logparser:py2
 ::
