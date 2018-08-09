@@ -44,6 +44,6 @@ Add user to the docker group to run docker commands without sudo::
 
 
 .. toctree::
-   :maxdepth: 1
+
 
    build_docker_image
