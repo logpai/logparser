@@ -41,3 +41,9 @@ Add user to the docker group to run docker commands without sudo::
 
     $ sudo groupadd docker
     $ sudo usermod -aG docker $USER
+
+
+.. toctree::
+   :maxdepth: 1
+
+   build_docker_image
