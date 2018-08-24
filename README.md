@@ -1,3 +1,7 @@
+<p align="center"> <img src="https://github.com/logpai/logpai.github.io/blob/master/img/logpai_logo.jpg" width="500" height="125"/>
+</p>
+
+
 # Logparser
 ***News***: Please check our new progress at: https://github.com/logpai/logparser/tree/dev
 
