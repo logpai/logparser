@@ -152,6 +152,23 @@ class LogParser:
             retVal.append('*')
         return retVal
 
+
+    def getParameterVector(self, template, seq):
+        parameter_vector = []
+        if not template:
+            return parameter_vector
+
+        template = template.split()
+
+        for i in range(len(template)):
+            try:
+                if template[i] != seq[i]:
+                    parameter_vector.append(seq[i])
+            except:
+                print("can not find parameter value from template: " + str(template) + ". Seq is: "+str(seq))
+                pass
+        return parameter_vector
+
     def addSeqToPrefixTree(self, rootn, newCluster):
         parentn = rootn
         seq = newCluster.logTemplate
@@ -186,12 +203,12 @@ class LogParser:
                     matchedNode.templateNo -= 1
                     parentn = matchedNode
 
-
     def outputResult(self, logClustL):
-        
         templates = [0] * self.df_log.shape[0]
         ids = [0] * self.df_log.shape[0]
+        vectors = [0] * self.df_log.shape[0]
         df_event = []
+
 
         for logclust in logClustL:
             template_str = ' '.join(logclust.logTemplate)
@@ -199,12 +216,17 @@ class LogParser:
             for logid in logclust.logIDL:
                 templates[logid - 1] = template_str
                 ids[logid - 1] = eid
+
+                logmessageL = filter(lambda x: x != '', re.split(r'[\s=:,]', self.df_log['Content'][logid - 1]))
+                vectors[logid - 1] = self.getParameterVector(template_str, logmessageL)
+
             df_event.append([eid, template_str, len(logclust.logIDL)])
 
         df_event = pd.DataFrame(df_event, columns=['EventId', 'EventTemplate', 'Occurrences'])
 
         self.df_log['EventId'] = ids
         self.df_log['EventTemplate'] = templates
+        self.df_log['ParameterVector'] = vectors
         self.df_log.to_csv(os.path.join(self.savePath, self.logname + '_structured.csv'), index=False)
         df_event.to_csv(os.path.join(self.savePath, self.logname + '_templates.csv'), index=False)
 
@@ -224,7 +246,6 @@ class LogParser:
 
         for child in node.childD:
             self.printTree(node.childD[child], dep + 1)
-
 
     def parse(self, logname):
         starttime = datetime.now()  
@@ -256,9 +277,9 @@ class LogParser:
                         self.addSeqToPrefixTree(rootNode, newCluster)
                     #Add the new log message to the existing cluster
                     else:
-                        newTemplate = self.getTemplate(self.LCS(logmessageL, matchCluster.logTemplate), 
+                        newTemplate = self.getTemplate(self.LCS(logmessageL, matchCluster.logTemplate),
                                                        matchCluster.logTemplate)
-                        if ' '.join(newTemplate) != ' '.join(matchCluster.logTemplate): 
+                        if ' '.join(newTemplate) != ' '.join(matchCluster.logTemplate):
                             self.removeSeqFromPrefixTree(rootNode, matchCluster)
                             matchCluster.logTemplate = newTemplate
                             self.addSeqToPrefixTree(rootNode, matchCluster)
@@ -267,7 +288,7 @@ class LogParser:
             count += 1
             if count % 1000 == 0 or count == len(self.df_log):
                 print 'Processed {0:.1f}% of log lines.'.format(count * 100.0 / len(self.df_log))
-            
+
         if not os.path.exists(self.savePath):
             os.makedirs(self.savePath)
 
