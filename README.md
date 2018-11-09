@@ -10,7 +10,7 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 + [**Arxiv'18**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). arXiv:1811.03509, 2018.
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](http://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), 2016.
 
-Log parsers currently made available: (**currently in beta release!**)
+### Log parsers currently available: (still in beta release!)
 
 | Tools | References |
 | :--- | :--- |
