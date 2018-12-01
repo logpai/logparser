@@ -1,10 +1,13 @@
+<p align="center"> <a href="https://github.com/logpai"> <img src="https://github.com/logpai/logpai.github.io/blob/master/img/logpai_logo.jpg" width="400"></a></p>
+
+
+# Logparser
 [![Documentation Status](https://readthedocs.org/projects/logparser/badge/?version=latest)](https://logparser.readthedocs.io/en/latest/?badge=latest)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE.md)
 
-# Logparser
 Logparser provides a toolkit and benchmarks for automated log parsing, which is a crucial step towards structured log analytics. By applying logparser, users can automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is sometimes refered to as message template extraction, log key extraction, or log message clustering. 
 
-<p align="center"><img src="./docs/img/example.png" width="552"></p>
+<p align="center"><img src="./docs/img/example.png" width="502"></p>
 
 :point_right: Read the docs: https://logparser.readthedocs.io
 
@@ -33,15 +36,17 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 
 
 ### Benchmarking results
-All the log parsers have been evaluated on [loghub](https://github.com/logpai/loghub) log samples. We report parsing accuracy as the percentage of accurately parsed log messages. Note that accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*. 
+All the log parsers have been evaluated across 16 different logs available in [loghub](https://github.com/logpai/loghub). We report parsing accuracy as the percentage of accurately parsed log messages. 
 
-<p align="center"><img src="./docs/img/parsers.png" width="845"></p>
+<p align="center"><a href="https://arxiv.org/abs/1811.03509"><img src="./docs/img/parsers.png" width="768"></a></p>
 
 
 <details>
- <summary>Check the detailed bechmarking result table (click to expand)</summary>
+ <summary>:point_down: Check the detailed bechmarking result table (click to expand)</summary>
  
-<br><p align="center"><img src="./docs/img/accuracy.png" width="999"></p>
+ Note that accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*.  
+ 
+ <p align="center"><a href="https://arxiv.org/abs/1811.03509"><img src="./docs/img/accuracy.png" width="908"></a></p>
 
 </details>
 
