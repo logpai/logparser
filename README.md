@@ -2,15 +2,17 @@
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE.md)
 
 # Logparser
-Logparser provides a toolkit and benchmarks for automated log parsing, which is a crucial step towards structured log analytics. Logparser implements a number of state-of-the-art data-driven approaches for this goal. By applying logparser, users can automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is sometimes refered to as message template extraction, log key extraction, or log message clustering. 
+Logparser provides a toolkit and benchmarks for automated log parsing, which is a crucial step towards structured log analytics. By applying logparser, users can automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is sometimes refered to as message template extraction, log key extraction, or log message clustering. 
 
-Read the docs: https://logparser.readthedocs.io
+![Log parsing example](./docs/img/example.png)
 
-**Note**: If you use any of our tools or benchmarks in your research for publication, please kindly cite the following papers.
+:point_right: Read the docs: https://logparser.readthedocs.io
+
+:telescope: If you use any of our tools or benchmarks in your research for publication, please kindly cite the following papers.
 + [**Arxiv'18**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). arXiv:1811.03509, 2018.
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](http://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), 2016.
 
-### Log parsers currently available: (still in beta release!)
+### Log parsers currently available:
 
 | Tools | References |
 | :--- | :--- |
@@ -33,41 +35,19 @@ Read the docs: https://logparser.readthedocs.io
 ### Benchmarking results
 All the log parsers have been evaluated on [loghub](https://github.com/logpai/loghub) log samples. We report parsing accuracy as the percentage of accurately parsed log messages. Note that accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*. 
 
-| **Tools**   |  **HDFS**   | **Hadoop** | **Spark**  | **Zookeeper** | **OpenStack** |  **BGL**   |   **HPC**   | **Thunderbird** |
-| :---------- | :---------: | :--------: | :--------: | :-----------: | :-----------: | :--------: | :---------: | :-------------: |
-| SLCT        |    0.545    |   0.423    |   0.685    |     0.726     |     0.867     |   0.573    |    0.839    |      0.882      |
-| AEL         |  **0.998**  |   0.538    | **0.905**  |   **0.921**   |     0.758     | **0.957**  |  **0.903**  |    **0.941**    |
-| IPLoM       |   **1***    | **0.954**  | **0.920**  |   **0.962**   |     0.871     | **0.939**  |    0.824    |      0.663      |
-| LKE         |   **1***    |   0.670    |   0.634    |     0.438     |     0.787     |   0.128    |    0.574    |      0.813      |
-| LFA         |    0.885    | **0.900**  | **0.994**  |     0.839     |     0.200     |   0.854    |    0.817    |      0.649      |
-| LogSig      |    0.850    |   0.633    |   0.544    |     0.738     |     0.866     |   0.227    |    0.354    |      0.694      |
-| SHISO       |  **0.998**  |   0.867    | **0.906**  |     0.660     |     0.722     |   0.711    |    0.325    |      0.576      |
-| LogCluster  |    0.546    |   0.563    |   0.799    |     0.732     |     0.696     |   0.835    |    0.788    |      0.599      |
-| LenMa       |  **0.998**  |   0.885    |   0.884    |     0.841     |     0.743     |   0.690    |    0.830    |    **0.943**    |
-| LogMine     |    0.851    |   0.870    |   0.576    |     0.688     |     0.743     |   0.723    |    0.784    |    **0.919**    |
-| Spell       |   **1***    |   0.778    | **0.905**  |   **0.964**   |     0.764     |   0.787    |    0.654    |      0.844      |
-| Drain       |  **0.998**  | **0.948**  | **0.920**  |   **0.967**   |     0.733     | **0.963**  |    0.887    |    **0.955**    |
-| MoLFI       |  **0.998**  | **0.957**  |   0.418    |     0.839     |     0.213     | **0.960**  |    0.824    |      0.646      |
-|             |             |            |            |               |               |            |             |                 |
-| **Tools**   | **Windows** | **Linux**  |  **Mac**   |  **Android**  | **HealthApp** | **Apache** | **OpenSSH** |  **Proxifier**  |
-| SLCT        |    0.697    |   0.297    |   0.558    |     0.882     |     0.331     |   0.731    |    0.521    |      0.518      |
-| AEL         |    0.690    |   0.673    |   0.764    |     0.682     |     0.568     |   **1***   |    0.538    |    0.518    |
-| IPLoM       |    0.567    |   0.672    |   0.673    |     0.712     |     0.822     |   **1***   |    0.802    |    0.515    |
-| LKE         |  **0.990**  |   0.519    |   0.369    |   **0.909**   |     0.592     |   **1***   |    0.426    |      0.495      |
-| LFA         |    0.588    |   0.279    |   0.599    |     0.616     |     0.549     |   **1***   |    0.501    |      0.026      |
-| LogSig      |    0.689    |   0.169    |   0.478    |     0.548     |     0.235     |   0.582    |    0.373    |      **0.967**      |
-| SHISO       |    0.701    |   0.672    |   0.595    |     0.585     |     0.397     |   **1***   |    0.619    |      0.517      |
-| LogCluster  |    0.713    |   0.629    |   0.604    |     0.798     |     0.531     |   0.709    |    0.426    |      **0.951**      |
-| LenMa       |    0.566    |   0.701    |   0.698    |     0.880     |     0.174     |   **1***   |    **0.925**    |      0.508      |
-| LogMine     |  **0.993**  |   0.612    |   0.872    |     0.504     |     0.684     |   **1***   |    0.431    |      0.517      |
-| Spell       |  **0.989**  |   0.605    |   0.757    |   **0.919**   |     0.639     |   **1***   |    0.554    |      0.527      |
-| Drain       |  **0.997**  |   0.690    |   0.787    |   **0.911**   |     0.780     |   **1***   |    0.788    |      0.527      |
-| MoLFI       |    0.406    |   0.284    |   0.636    |   **0.788**   |     0.440     |   **1***   |    0.50    |        0.013        |
+![Benchmarking results](./docs/img/parsers.png)
+
+<details>
+ <summary>Check the detailed bechmarking result table (click to expand)</summary>
+
+![Benchmarking table](./docs/img/accuracy.png)
+
+</details>
 
 
 ### Publications about logparser
 + [**Arxiv'18**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). arXiv:1811.03509, 2018.
-+ [**TDSC'17**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [Towards Automated Log Parsing for Large-Scale Log Data Analysis](http://jiemingzhu.github.io/pub/pjhe_tdsc2017.pdf). IEEE Transactions on Dependable and Secure Computing (TDSC), 2017.
++ [**TDSC'18**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [Towards Automated Log Parsing for Large-Scale Log Data Analysis](http://jiemingzhu.github.io/pub/pjhe_tdsc2017.pdf). IEEE Transactions on Dependable and Secure Computing (TDSC), 2018.
 + [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://jiemingzhu.github.io/pub/pjhe_icws2017.pdf). IEEE International Conference on Web Services (ICWS), 2017.
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](http://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), 2016.
 
@@ -78,7 +58,8 @@ Logparser is implemented based on a number of existing open-source projects:
 + [LenMa](https://github.com/keiichishima/templateminer) (python 2)
 + [MoLFI](https://github.com/SalmaMessaoudi/MoLFI) (python 3)
 
-### Contribution
-Contributions and suggestions are welcome! For any bugs or enquiries, please post to [the issue page](https://github.com/logpai/logparser/issues). 
+### Feedback
+For any questions or feedback, please post to [the issue page](https://github.com/logpai/logparser/issues). 
+
 
 
