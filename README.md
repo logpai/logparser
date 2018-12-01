@@ -4,7 +4,7 @@
 # Logparser
 Logparser provides a toolkit and benchmarks for automated log parsing, which is a crucial step towards structured log analytics. By applying logparser, users can automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is sometimes refered to as message template extraction, log key extraction, or log message clustering. 
 
-<img src="./docs/img/example.png" width="552">
+<img src="./docs/img/example.png" width="552" align="middle">
 
 :point_right: Read the docs: https://logparser.readthedocs.io
 
