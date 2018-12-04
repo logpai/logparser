@@ -2,7 +2,7 @@
 
 -----------------
 
-## Logparser  
+# Logparser  
 [![Documentation Status](https://readthedocs.org/projects/logparser/badge/?version=latest)](https://logparser.readthedocs.io/en/latest/?badge=latest)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE.md)
 
