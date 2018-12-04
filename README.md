@@ -1,6 +1,5 @@
 <p align="center"> <a href="https://github.com/logpai"> <img src="https://github.com/logpai/logpai.github.io/blob/master/img/logpai_logo.jpg" width="425"></a></p>
 
------------------
 
 # Logparser  
 [![Documentation Status](https://readthedocs.org/projects/logparser/badge/?version=latest)](https://logparser.readthedocs.io/en/latest/?badge=latest)
@@ -8,7 +7,7 @@
 
 Logparser provides a toolkit and benchmarks for automated log parsing, which is a crucial step towards structured log analytics. By applying logparser, users can automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is sometimes refered to as message template extraction, log key extraction, or log message clustering. 
 
-<p align="center"><img src="./docs/img/example.png" width="502"></p>
+<p align="center"><img src="./docs/img/example.png" width="502"><br>An illustrative example of log parsing</p>
 
 :point_right: Read the docs: https://logparser.readthedocs.io
 
