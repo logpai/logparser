@@ -2,7 +2,9 @@
 
 -----------------
 
-# Logparser  [![Documentation Status](https://readthedocs.org/projects/logparser/badge/?version=latest)](https://logparser.readthedocs.io/en/latest/?badge=latest)[![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE.md)
+## Logparser  
+[![Documentation Status](https://readthedocs.org/projects/logparser/badge/?version=latest)](https://logparser.readthedocs.io/en/latest/?badge=latest)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE.md)
 
 Logparser provides a toolkit and benchmarks for automated log parsing, which is a crucial step towards structured log analytics. By applying logparser, users can automatically learn event templates from unstructured logs and convert raw log messages into a sequence of structured events. In the literature, the process of log parsing is sometimes refered to as message template extraction, log key extraction, or log message clustering. 
 
