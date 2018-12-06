@@ -33,6 +33,8 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 | Drain | [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), 2017 |
 | MoLFI | [**ICPC'18**] Salma Messaoudi, Annibale Panichella, Domenico Bianculli, Lionel Briand, Raimondas Sasnauskas. [A Search-based Approach for Accurate Identification of Log Message Formats](http://publications.uni.lu/bitstream/10993/35286/1/ICPC-2018.pdf), 2018 |
 
+### Usage
+Please follow the [installation steps](https://logparser.readthedocs.io/en/latest/installation/dependency.html) and [demo](https://logparser.readthedocs.io/en/latest/demo.html) in the docs to get started.
 
 ### Benchmarking results
 All the log parsers have been evaluated across 16 different logs available in [loghub](https://github.com/logpai/loghub). We report parsing accuracy as the percentage of accurately parsed log messages. 
