@@ -1,9 +1,17 @@
-Publications
-============
+Papers
+======
+
+**A list of papers about log parsing**
+
+1. [**ICSE'19**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/abs/1811.03509), *International Conference on Software Engineering (ICSE)*, 2019.
 
 1. [**ICPC'18**] Salma Messaoudi, Annibale Panichella, Domenico Bianculli, Lionel Briand, Raimondas Sasnauskas. [A Search-based Approach for Accurate Identification of Log Message Formats](http://publications.uni.lu/bitstream/10993/35286/1/ICPC-2018.pdf), *IEEE/ACM International Conference on Program Comprehension (ICPC)*, 2018.
 
 1. [**SIGMOD'18**] Yihan Gao, Silu Huang, Aditya Parameswaran. [Navigating the Data Lake with DATAMARAN: Automatically Extracting Structure from Log Datasets](https://arxiv.org/pdf/1708.08905.pdf), *International Conference on Management of Data (SIGMOD)*, 2018.
+
+1. [**MASCOTS'18**] Nicolas Aussel, Yohan Petetin, Sophie Chabridon. [Improving Performances of Log Mining for Anomaly Prediction Through NLP-Based Log Parsing](https://ieeexplore.ieee.org/abstract/document/8526889), *International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)*, 2018.
+
+1. [**ICICS'18**] Zhiyuan Zhao, Chenxu Wang, Wei Rao. [Slop: Towards an Efficient and Universal Streaming Log Parser](https://link.springer.com/chapter/10.1007/978-3-030-01950-1_19), *International Conference on Information and Communications Security (ICICS)*, 2018.
 
 1. [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), *IEEE International Conference on Web Services (ICWS)*, 2017.
 
