@@ -28,7 +28,7 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
    tools/LogSig
    tools/Spell
    tools/Drain
-   publication
+   papers
 
 .. toctree::
    :maxdepth: 1
