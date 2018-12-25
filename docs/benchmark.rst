@@ -1,7 +1,7 @@
 Benchmarks
 ==========
 
-All the log parsers have been evaluated on [loghub](https://github.com/logpai/loghub) log samples. We report parsing accuracy as the percentage of accurately parsed log messages. Note that accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*. 
+All the log parsers have been evaluated on `loghub <https://github.com/logpai/loghub>`_ log samples. We report parsing accuracy as the percentage of accurately parsed log messages. Note that accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*. 
 
 +-------------+-------------+------------+------------+---------------+---------------+------------+-------------+-----------------+
 | **Tools**   |  **HDFS**   | **Hadoop** | **Spark**  | **Zookeeper** | **OpenStack** |  **BGL**   |   **HPC**   | **Thunderbird** |
