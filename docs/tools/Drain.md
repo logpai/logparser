@@ -11,4 +11,4 @@ Drain first preprocess logs according to user-defined domain knowledge, ie. rege
 
 Read more information about Drain from the following paper:
 
-+ Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), *IEEE International Conference on Web Services (ICWS)*, 2017.
++ Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), *IEEE International Conference on Web Services (ICWS)*, 2017.
