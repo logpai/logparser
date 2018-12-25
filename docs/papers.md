@@ -5,6 +5,10 @@ Papers
 
 1. [**ICSE'19**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/abs/1811.03509), *International Conference on Software Engineering (ICSE)*, 2019.
 
+1. [**TDSC'18**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [Towards Automated Log Parsing for Large-Scale Log Data Analysis](https://jiemingzhu.github.io/pub/pjhe_tdsc2017.pdf), *IEEE Transactions on Dependable and Secure Computing (TDSC)*, 2018.
+
+1. [**TKDE'18**] Min Du, Feifei Li. [Spell: Online Streaming Parsing of Large Unstructured System Logs](https://ieeexplore.ieee.org/abstract/document/8489912), *IEEE Transactions on Knowledge and Data Engineering (TKDE)*, 2018.
+
 1. [**ICPC'18**] Salma Messaoudi, Annibale Panichella, Domenico Bianculli, Lionel Briand, Raimondas Sasnauskas. [A Search-based Approach for Accurate Identification of Log Message Formats](http://publications.uni.lu/bitstream/10993/35286/1/ICPC-2018.pdf), *IEEE/ACM International Conference on Program Comprehension (ICPC)*, 2018.
 
 1. [**SIGMOD'18**] Yihan Gao, Silu Huang, Aditya Parameswaran. [Navigating the Data Lake with DATAMARAN: Automatically Extracting Structure from Log Datasets](https://arxiv.org/pdf/1708.08905.pdf), *International Conference on Management of Data (SIGMOD)*, 2018.
@@ -13,11 +17,13 @@ Papers
 
 1. [**ICICS'18**] Zhiyuan Zhao, Chenxu Wang, Wei Rao. [Slop: Towards an Efficient and Universal Streaming Log Parser](https://link.springer.com/chapter/10.1007/978-3-030-01950-1_19), *International Conference on Information and Communications Security (ICICS)*, 2018.
 
-1. [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), *IEEE International Conference on Web Services (ICWS)*, 2017.
+1. [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), *IEEE International Conference on Web Services (ICWS)*, 2017.
 
 1. [**Benelearn'17**] Stefan Thaler, Vlado Menkovski, Milan Petkovic. [Towards Unsupervised Signature Extraction of Forensic Logs](https://pure.tue.nl/ws/files/72619856/benelearn_2017.pdf#page=155), *The Twenty-Sixth Benelux Conference on Machine Learning (Benelearn)*, 2017.
 
 1. [**ISDFS'17**] Stefan Thaler, Vlado Menkonvski, Milan Petkovic. [Towards A Neural Language Model for Signature Extraction From Forensic Logs](https://ieeexplore.ieee.org/abstract/document/7916497/), *International Symposium on Digital Forensic and Security (ISDFS)*, 2017.
+
+1. [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](https://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf), *IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)*, 2016.
 
 1. [**ICDM'16**] Min Du, Feifei Li. [Spell: Streaming Parsing of System Event Logs](https://www.cs.utah.edu/~lifeifei/papers/spell.pdf), *IEEE International Conference on Data Mining (ICDM)*, 2016.
 
