@@ -26,7 +26,6 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 
 ***Examples***: Before running the examples, please copy the parser source file to the same directory.
 * [Example1](https://github.com/logpai/logparser/blob/dev/demo/example1.py): This file is a simple example to demonstrate the usage of Drain. The usage of other log parsers is similar.
-* [Example2](https://github.com/logpai/logparser/blob/dev/demo/example2.py): This file is to demonstrate the usage of POP.
 * [Evaluation of Drain](https://github.com/logpai/logparser/tree/dev/demo/DrainEvaluation): This folder provides a package for you to evaluate the Drain log parser on 2k HDFS dataset. You could simply run the [evaluateDrain.py](https://github.com/logpai/logparser/blob/dev/demo/DrainEvaluation/evaluateDrain.py) file.
 
 
