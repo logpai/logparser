@@ -23,14 +23,6 @@ myParser = Drain(myPara)
 runningTime = myParser.mainProcess()
 
 
-#Evaluate code
-result = zeros((1,9))
-evaPara = prePara(groundTruthDataPath=dataPath, geneDataPath='./results/')
-TP,FP,TN,FN,p,r,f,RI=process(evaPara)
-result[0,:]=TP,FP,TN,FN,p,r,f,RI,runningTime
-	
-pprint(result)
-
 # if dataset == 1:
 # 	dataPath = './datasets/BGL/'
 # 	# removeCol = [0,1,2,3,4,5,6,7,8,9,10]
