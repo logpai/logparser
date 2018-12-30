@@ -16,6 +16,9 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 + [**ICSE'19**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). *To appear in International Conference on Software Engineering (ICSE)*, 2019.
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](https://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). *IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)*, 2016.
 
+## Recent Journal Submission
+
++ [**Arxiv'18**] Pinjia He, Jieming Zhu, Hongyu Zhang, Pengcheng Xu, Zibin Zheng, and Michael R. Lyu. [A Directed Acyclic Graph Approach to Online Log Parsing](https://arxiv.org/abs/1806.04356), 2018.
 
 ### Quick Start
 ***Input***: A raw log file. Each line of the file follows "ID\tword1 word2 word3" <br />
@@ -27,12 +30,13 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 * [Evaluation of Drain](https://github.com/logpai/logparser/tree/dev/demo/DrainEvaluation): This folder provides a package for you to evaluate the Drain log parser on 2k HDFS dataset. You could simply run the [evaluateDrain.py](https://github.com/logpai/logparser/blob/dev/demo/DrainEvaluation/evaluateDrain.py) file.
 
 
-### Data
+### Dataset
 In [data](https://github.com/logpai/logparser/tree/dev/data), there are 11 datasets for you to play with. Each dataset contains several text files.
 * rawlog.log: The raw log messages with ID. "ID\tword1 word2 word3"
 * template[0-9]+: The log messages belong to a certain template.
 * templates: The text of templates.
 
+## Our Parsing Toolkit
 
 ### Log parsers currently available:
 
@@ -49,11 +53,12 @@ In [data](https://github.com/logpai/logparser/tree/dev/data), there are 11 datas
 | LenMa | [**CNSM'15**] Keiichi Shima. [Length Matters: Clustering System Log Messages using Length of Words](https://arxiv.org/pdf/1611.03213.pdf), 2015. |
 | LogMine | [**CIKM'16**] Hossein Hamooni, Biplob Debnath, Jianwu Xu, Hui Zhang, Geoff Jiang, Adbullah Mueen. [LogMine: Fast Pattern Recognition for Log Analytics](http://www.cs.unm.edu/~mueen/Papers/LogMine.pdf), 2016 |
 | Spell | [**ICDM'16**] Min Du, Feifei Li. [Spell: Streaming Parsing of System Event Logs](https://www.cs.utah.edu/~lifeifei/papers/spell.pdf), 2016 |
-| Drain | [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), 2017 |
+| Drainconf | [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), 2017 |
 | MoLFI | [**ICPC'18**] Salma Messaoudi, Annibale Panichella, Domenico Bianculli, Lionel Briand, Raimondas Sasnauskas. [A Search-based Approach for Accurate Identification of Log Message Formats](http://publications.uni.lu/bitstream/10993/35286/1/ICPC-2018.pdf), 2018 |
+| Drainjournal | [**Arxiv'18**] Pinjia He, Jieming Zhu, Hongyu Zhang, Pengcheng Xu, Zibin Zheng, and Michael R. Lyu. [A Directed Acyclic Graph Approach to Online Log Parsing](https://arxiv.org/abs/1806.04356), 2018 |
 
 
-### Usage
+### Usage Details for Toolkit
 Please follow the [installation steps](https://logparser.readthedocs.io/en/latest/installation/dependency.html) and [demo](https://logparser.readthedocs.io/en/latest/demo.html) in the docs to get started.
 
 
