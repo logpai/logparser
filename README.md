@@ -16,6 +16,23 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 + [**ICSE'19**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). *To appear in International Conference on Software Engineering (ICSE)*, 2019.
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](https://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). *IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)*, 2016.
 
+### Data
+--------------
+In [data](https://github.com/logpai/logparser/tree/dev/data), there are 11 datasets for you to play with. Each dataset contains several text files.
+* rawlog.log: The raw log messages with ID. "ID\tword1 word2 word3"
+* template[0-9]+: The log messages belong to a certain template.
+* templates: The text of templates.
+
+
+### Quick Start
+--------------
+***Input***: A raw log file. Each line of the file follows "ID\tword1 word2 word3" <br />
+***Output***: Two parts. One is splitted log messages (only contains log ID for simplicity) in different text files. The other is the ***templates*** file which contains all templates. <br />
+
+***Examples***: Before running the examples, please copy the parser source file to the same directory.
+* [Example1](https://github.com/logpai/logparser/blob/dev/demo/example1.py): This file is a simple example to demonstrate the usage of Drain. The usage of other log parsers is similar.
+* [Example2](https://github.com/logpai/logparser/blob/dev/demo/example2.py): This file is to demonstrate the usage of POP.
+* [Evaluation of Drain](https://github.com/logpai/logparser/tree/dev/demo/DrainEvaluation): This folder provides a package for you to evaluate the Drain log parser on 2k HDFS dataset. You could simply run the [evaluateDrain.py](https://github.com/logpai/logparser/blob/dev/demo/DrainEvaluation/evaluateDrain.py) file.
 
 
 ### Log parsers currently available:
@@ -39,27 +56,6 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 
 ### Usage
 Please follow the [installation steps](https://logparser.readthedocs.io/en/latest/installation/dependency.html) and [demo](https://logparser.readthedocs.io/en/latest/demo.html) in the docs to get started.
-
-
-### Data
---------------
-In [data](https://github.com/logpai/logparser/tree/dev/data), there are 11 datasets for you to play with. Each dataset contains several text files.
-* rawlog.log: The raw log messages with ID. "ID\tword1 word2 word3"
-* template[0-9]+: The log messages belong to a certain template.
-* templates: The text of templates.
-
-
-### Quick Start
---------------
-***Input***: A raw log file. Each line of the file follows "ID\tword1 word2 word3" <br />
-***Output***: Two parts. One is splitted log messages (only contains log ID for simplicity) in different text files. The other is the ***templates*** file which contains all templates. <br />
-
-***Examples***: Before running the examples, please copy the parser source file to the same directory.
-* [Example1](https://github.com/logpai/logparser/blob/dev/demo/example1.py): This file is a simple example to demonstrate the usage of Drain. The usage of other log parsers is similar.
-* [Example2](https://github.com/logpai/logparser/blob/dev/demo/example2.py): This file is to demonstrate the usage of POP.
-* [Evaluation of Drain](https://github.com/logpai/logparser/tree/dev/demo/DrainEvaluation): This folder provides a package for you to evaluate the Drain log parser on 2k HDFS dataset. You could simply run the [evaluateDrain.py](https://github.com/logpai/logparser/blob/dev/demo/DrainEvaluation/evaluateDrain.py) file.
-
-<br /> For SLCT, because it is based on the original C code, the running example is [here](https://github.com/logpai/logparser/blob/dev/logparser/SLCT/demo/SLCT_demo_BGL/precision_10_times.py). This program is platform-dependent because the .so files are only valid in Linux.
 
 
 ### Publications about logparser
