@@ -95,53 +95,83 @@ class Drain:
 			return False
 		return True
 
-
 	def treeSearch(self, rn, seq):
-		retLogClust = None
+		"""
+            Browses the tree in order to find a matching cluster to a log sequence
+        :param rn: Root node
+        :param seq: Log sequence to test
+        :return: The matching log cluster
+        """
 
+		retLogCluster = None
+
+		# Check if there is a key with the same length
+		seqLen = len(seq)
+		if seqLen in rn.childD:
+			retLogCluster = self.keyTreeSearch(seq)
+			if retLogCluster is None:
+				tokenLayerNode = self.tokenTreeSearch(rn, seq)
+				if tokenLayerNode is not None:
+					logClusterList = tokenLayerNode.childD
+
+					retLogCluster = self.FastMatch(logClusterList, seq)
+
+					# Update the pointer
+					if retLogCluster is not None:
+						self.pointer[len(seq)] = retLogCluster
+		return retLogCluster
+
+	def keyTreeSearch(self, seq):
+		"""
+            Browses the tree in order to find a matching cluster to a log sequence
+        :param seq: Log sequence to test
+        :return: The matching log cluster
+        """
 		seqLen = len(seq)
 
-		if seqLen not in rn.childD:
-			return retLogClust
+		# If the pointer exist, compare the pointer and the new log first
+		logCluster = self.pointer[seqLen]
+		retLogCluster  = None
+		# If first token or last token matches with the key in the tree, then calculate similarity; otherwise, skip
+		if (logCluster.logTemplate[0] == seq[0] and not self.hasNumbers(seq[0]) and not self.hasPun(seq[0])) \
+				or (logCluster.logTemplate[-1] == seq[-1] and not self.hasNumbers(seq[-1]) and not self.hasPun(seq[-1])) \
+				or (logCluster.logTemplate[0] == '<*>' and logCluster.logTemplate[-1] == '<*>'):
 
-		#if the pointer exist, compare the pointer and the new log first
-		logClust = self.pointer[seqLen]
+			curSim, curNumOfPara = self.SeqDist(logCluster.logTemplate, seq)
 
+			if curSim >= logCluster.st:
+				retLogCluster = logCluster
+		return retLogCluster
 
-		# if first token or last token matches with the key in the tree, them calculate similarity; otherwise, skip
-		if (logClust.logTemplate[0]==seq[0] and not self.hasNumbers(seq[0]) and not self.hasPun(seq[0])) or (logClust.logTemplate[-1]==seq[-1] and not self.hasNumbers(seq[-1]) and not self.hasPun(seq[-1])) or (logClust.logTemplate[0]=='*' and logClust.logTemplate[-1]=='*'):
-			curSim, curNumOfPara = self.SeqDist(logClust.logTemplate, seq)
-			if  curSim >= logClust.st:
-				retLogClust = logClust
-				return retLogClust
-
+	def tokenTreeSearch(self, rn, seq):
+		"""
+            Browses the tree in order to find a matching cluster to a log sequence
+        :param rn: Root node
+        :param seq: Log sequence to test
+        :return: The matching log cluster
+        """
+		seqLen = len(seq)
 		lenLayerNode = rn.childD[seqLen]
 
+		# Get the differentiating tokens
 		tokenFirst = seq[0]
 		tokenLast = seq[-1]
 
 		tokenFirstKey = '00_Drain_' + tokenFirst
 		tokenLastKey = '-1_Drain_' + tokenLast
 
+		# Check if the tokens are in the children nodes
 		tokenLayerNode = None
 		if tokenFirstKey in lenLayerNode.childD:
 			tokenLayerNode = lenLayerNode.childD[tokenFirstKey]
+
 		elif tokenLastKey in lenLayerNode.childD:
 			tokenLayerNode = lenLayerNode.childD[tokenLastKey]
-		elif self.hasNumbers(tokenFirst) and self.hasNumbers(tokenLast) and '*' in lenLayerNode.childD:
-			tokenLayerNode = lenLayerNode.childD['*']
-		else:
-			return retLogClust
 
-		logClustL = tokenLayerNode.childD
+		elif self.hasNumbers(tokenFirst) and self.hasNumbers(tokenLast) and '<*>' in lenLayerNode.childD:
+			tokenLayerNode = lenLayerNode.childD['<*>']
 
-		retLogClust = self.FastMatch(logClustL, seq)
-
-		# update the pointer
-		if retLogClust is not None:
-			self.pointer[len(seq)] = retLogClust
-
-		return retLogClust
+		return tokenLayerNode
 
 
 	def addSeqToTree(self, rn, logClust):
