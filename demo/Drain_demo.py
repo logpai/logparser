@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import sys
 sys.path.append('../')
-from logparser import Drain
+from logparser.Drain import Drain
 
 input_dir  = '../logs/HDFS/'  # The input directory of log file
 output_dir = 'Drain_result/'  # The output directory of parsing results
