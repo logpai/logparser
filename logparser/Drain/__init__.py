@@ -1,1 +1,1 @@
-from logparser.Drain import *
+from .Drain import *
