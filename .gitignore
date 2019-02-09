@@ -57,7 +57,5 @@ target/
 Unused/
 .idea/
 POP/
-demo/.ipynb_checkpoints/
-demo/DrainEvaluation/.ipynb_checkpoints/
-logparser/Drain/.ipynb_checkpoints/
+.ipynb_checkpoints/
 *.ipynb
