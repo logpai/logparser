@@ -224,7 +224,7 @@ class LogParser:
 
     def printTree(self, node, dep):
         pStr = ''   
-        for i in xrange(dep):
+        for i in range(dep):
             pStr += '\t'
 
         if node.depth == 0:
@@ -234,7 +234,7 @@ class LogParser:
         else:
             pStr += node.digitOrtoken
 
-        print pStr
+        print(pStr)
 
         if node.depth == self.depth:
             return 1
@@ -273,7 +273,7 @@ class LogParser:
 
             count += 1
             if count % 1000 == 0 or count == len(self.df_log):
-                print 'Processed {0:.1f}% of log lines.'.format(count * 100.0 / len(self.df_log))
+                print('Processed {0:.1f}% of log lines.'.format(count * 100.0 / len(self.df_log)))
 
 
         if not os.path.exists(self.savePath):
@@ -320,7 +320,7 @@ class LogParser:
         regex = ''
         for k in range(len(splitters)):
             if k % 2 == 0:
-                splitter = re.sub(' +', '\s+', splitters[k])
+                splitter = re.sub(' +', '\\\s+', splitters[k])
                 regex += splitter
             else:
                 header = splitters[k].strip('<').strip('>')
