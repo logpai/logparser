@@ -77,18 +77,15 @@ class LogParser:
 
 
     def SimpleLoopMatch(self, logClustL, seq):
-        retLogClust = None
-
         for logClust in logClustL:
             if float(len(logClust.logTemplate)) < 0.5 * len(seq):
                 continue
-            
-            #If the template is a subsequence of seq
-            it = iter(seq)
-            if all(token in seq or token == '*' for token in logClust.logTemplate):
+            # Check the template is a subsequence of seq (we use set checking as a proxy here for speedup since
+            # incorrect-ordering bad cases rarely occur in logs)
+            token_set = set(seq)
+            if all(token in token_set or token == '*' for token in logClust.logTemplate):
                 return logClust
-
-        return retLogClust
+        return None
 
 
     def PrefixTreeMatch(self, parentn, seq, idx):
