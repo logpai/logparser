@@ -1,1 +1,1 @@
-from IPLoM import *
+from .IPLoM import *
