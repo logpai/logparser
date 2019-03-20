@@ -105,7 +105,7 @@ class LogParser:
                 for currentRex in self.para.rex:
                     line = re.sub(currentRex, '', line)
 
-            wordSeq = filter(lambda x: x != '', re.split(r'[\s=:,]', line))
+            wordSeq = list(filter(lambda x: x != '', re.split(r'[\s=:,]', line)))
             if not wordSeq:
                 wordSeq = [' ']
 
