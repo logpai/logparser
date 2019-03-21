@@ -41,7 +41,7 @@ All the log parsers have been evaluated across 16 different logs available in [l
 
 <p align="center"><a href="https://arxiv.org/abs/1811.03509"><img src="./docs/img/parsers.png" width="768"></a></p>
 
-Note: You may have noticed that some of the above accuracy numbers are lower than what have been reported by previous studies (e.g., LogMine). The reasons are two-fold: 1) We use a more rigorous accuracy metric which rejects events that are only partially matched. 2)  For fairness of comparison, we apply only a few preprocessing regular expressions (e.g., IP or number replacement) to each log parser. Adding more preprocessing rules can boost parsing accuracy, but meanwhile requires more effort.
+Note: You may have noticed that some of the above accuracy numbers are lower than what have been reported by previous studies (e.g., LogMine). The reasons are two-fold: 1) We use a more rigorous accuracy metric which rejects events that are only partially matched. 2)  For fairness of comparison, we apply only a few preprocessing regular expressions (e.g., IP or number replacement) to each log parser. Adding more preprocessing rules can boost parsing accuracy, but meanwhile requires more manual effort.
 
 <details>
  <summary>:point_down: Check the detailed bechmarking result table (click to expand)</summary>
