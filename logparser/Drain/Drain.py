@@ -102,7 +102,7 @@ class LogParser:
                     parentn.childD = [logClust]
                 else:
                     parentn.childD.append(logClust)
-                break
+                return
 
             #If token not matched in this layer of existing tree. 
             if token not in parentn.childD:
@@ -139,6 +139,12 @@ class LogParser:
                 parentn = parentn.childD[token]
 
             currentDepth += 1
+        # Add current log cluster to the leaf node when there is only one token in template
+        if currentDepth > seqLen:
+            if len(parentn.childD) == 0:
+                parentn.childD = [logClust]
+            else:
+                parentn.childD.append(logClust)
 
     #seq1 is template
     def seqDist(self, seq1, seq2):
