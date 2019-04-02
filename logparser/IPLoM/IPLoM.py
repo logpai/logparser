@@ -12,7 +12,7 @@ import gc
 import re
 import pandas as pd
 import hashlib
-
+import string
 
 class Partition:
     """ Wrap around the logs and the step number
@@ -64,13 +64,14 @@ class LogParser:
     def __init__(self, log_format, indir='../logs/', outdir='./result/',
                  maxEventLen=200, step2Support=0, PST=0,
                  CT=0.35, lowerBound=0.25, upperBound=0.9,
-                 rex=[]):
+                 rex=[], keep_para=True):
 
         self.para = Para(log_format=log_format, indir=indir, outdir=outdir, maxEventLen=maxEventLen, step2Support=step2Support,
                          PST=PST, CT=CT, lowerBound=lowerBound, upperBound=upperBound, rex=rex)
         self.partitionsL = []
         self.eventsL = []
         self.output = []
+        self.keep_para = keep_para
 
         if not os.path.exists(self.para.savePath):
             os.makedirs(self.para.savePath)
@@ -407,7 +408,6 @@ class LogParser:
             for logL in partition.logLL:
                 self.output.append(logL[-2:] + logL[:-2])
 
-
     def WriteEventToFile(self):
         eventID_template = {event.eventId : ' '.join(event.eventStr) for event in self.eventsL}
         eventList = [[event.eventId, ' '.join(event.eventStr), event.eventCount] for event in self.eventsL]
@@ -417,6 +417,8 @@ class LogParser:
         self.output.sort(key=lambda x: int(x[0]))
         self.df_log['EventId'] = [str(logL[1]) for logL in self.output]
         self.df_log['EventTemplate'] = [eventID_template[logL[1]] for logL in self.output]
+        if self.keep_para:
+            self.df_log["ParameterList"] = self.df_log.apply(self.get_parameter_list, axis=1) 
         self.df_log.to_csv(os.path.join(self.para.savePath, self.logname + '_structured.csv'), index=False)
 
     """
@@ -619,3 +621,14 @@ class LogParser:
         regex = re.compile('^' + regex + '$')
         return headers, regex
 
+    def get_parameter_list(self, row):
+        template_regex = re.sub(r"\s<.{1,5}>\s", "<*>", row["EventTemplate"])
+        if "<*>" not in template_regex: return []
+        template_regex = re.sub(r'([^A-Za-z0-9])', r'\\\1', template_regex)
+        template_regex = re.sub(r'\\ +', r'[^A-Za-z0-9]+', template_regex)
+        template_regex = "^" + template_regex.replace("\<\*\>", "(.*?)") + "$"
+        parameter_list = re.findall(template_regex, row["Content"])
+        parameter_list = parameter_list[0] if parameter_list else ()
+        parameter_list = list(parameter_list) if isinstance(parameter_list, tuple) else [parameter_list]
+        parameter_list = [para.strip(string.punctuation).strip(' ') for para in parameter_list]
+        return parameter_list

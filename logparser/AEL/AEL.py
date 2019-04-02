@@ -26,7 +26,8 @@ class Event():
 
 
 class LogParser():
-    def __init__(self, indir, outdir, log_format, minEventCount=2, merge_percent=1, rex=[]):
+    def __init__(self, indir, outdir, log_format, minEventCount=2, merge_percent=1, 
+                 rex=[], keep_para=True):
         self.logformat = log_format
         self.path = indir
         self.savePath = outdir
@@ -37,6 +38,7 @@ class LogParser():
         self.logname = None
         self.merged_events = []
         self.bins = defaultdict(dict)
+        self.keep_para = keep_para
 
     def parse(self, logname):
         start_time = datetime.now()
@@ -137,6 +139,8 @@ class LogParser():
         self.df_log['EventId'] = idL
         self.df_log['EventTemplate'] = templateL
         self.df_log.drop("Content_", axis=1, inplace=True)
+        if self.keep_para:
+            self.df_log["ParameterList"] = self.df_log.apply(self.get_parameter_list, axis=1) 
         self.df_log.to_csv(os.path.join(self.savePath, self.logname + '_structured.csv'), index=False)
 
         occ_dict = dict(self.df_log['EventTemplate'].value_counts())
@@ -214,3 +218,14 @@ class LogParser():
                 headers.append(header)
         regex = re.compile('^' + regex + '$')
         return headers, regex
+
+    def get_parameter_list(self, row):
+        template_regex = re.sub(r"<.{1,5}>", "<*>", row["EventTemplate"])
+        if "<*>" not in template_regex: return []
+        template_regex = re.sub(r'([^A-Za-z0-9])', r'\\\1', template_regex)
+        template_regex = re.sub(r'\\ +', r'\s+', template_regex)
+        template_regex = "^" + template_regex.replace("\<\*\>", "(.*?)") + "$"
+        parameter_list = re.findall(template_regex, row["Content"])
+        parameter_list = parameter_list[0] if parameter_list else ()
+        parameter_list = list(parameter_list) if isinstance(parameter_list, tuple) else [parameter_list]
+        return parameter_list
