@@ -12,7 +12,7 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 :point_right: Read the docs: https://logparser.readthedocs.io
 
 :telescope: If you use any of our tools or benchmarks in your research for publication, please kindly cite the following papers.
-+ [**ICSE'19**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). *To appear in International Conference on Software Engineering (ICSE)*, 2019.
++ [**ICSE'19**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). *International Conference on Software Engineering (ICSE)*, 2019.
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](https://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). *IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)*, 2016.
 
 ### Log parsers currently available:
@@ -41,12 +41,10 @@ All the log parsers have been evaluated across 16 different logs available in [l
 
 <p align="center"><a href="https://arxiv.org/abs/1811.03509"><img src="./docs/img/parsers.png" width="768"></a></p>
 
-Note: You may have noticed that some of the above accuracy numbers are lower than what have been reported by previous studies (e.g., LogMine). The reasons are two-fold: 1) We use a more rigorous accuracy metric which rejects events that are only partially matched. 2)  For fairness of comparison, we apply only a few preprocessing regular expressions (e.g., IP or number replacement) to each log parser. Adding more preprocessing rules can boost parsing accuracy, but meanwhile requires more manual effort.
-
 <details>
  <summary>:point_down: Check the detailed bechmarking result table (click to expand)</summary>
  
- Note that accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*.  
+In the table, accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*. Some of the accuracy values may be lower than what have been reported by previous studies (e.g., Drain, LogMine). The reasons are two-fold: 1) We use a more rigorous accuracy metric which rejects events that are only partially matched. 2)  For fairness of comparison, we apply only a few preprocessing regular expressions (e.g., IP or number replacement) to each log parser. Adding more preprocessing rules can boost parsing accuracy, but meanwhile requires more manual effort.
  
  <p align="center"><a href="https://arxiv.org/abs/1811.03509"><img src="./docs/img/accuracy.png" width="908"></a></p>
 
@@ -54,7 +52,7 @@ Note: You may have noticed that some of the above accuracy numbers are lower tha
 
 
 ### Publications about logparser
-+ [**ICSE'19**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). To appear in International Conference on Software Engineering (ICSE), 2019.
++ [**ICSE'19**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). International Conference on Software Engineering (ICSE), 2019.
 + [**TDSC'18**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [Towards Automated Log Parsing for Large-Scale Log Data Analysis](https://jiemingzhu.github.io/pub/pjhe_tdsc2017.pdf). IEEE Transactions on Dependable and Secure Computing (TDSC), 2018.
 + [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf). IEEE International Conference on Web Services (ICWS), 2017.
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](https://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), 2016.
