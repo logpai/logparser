@@ -11,7 +11,7 @@ import hashlib
 import pandas as pd
 from datetime import datetime
 from collections import defaultdict
-
+from functools import reduce
 
 class Event():
     def __init__(self, logidx, Eventstr=""):

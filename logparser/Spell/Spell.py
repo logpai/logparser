@@ -5,8 +5,6 @@ License     : MIT
 """
 
 import sys
-reload(sys)  
-sys.setdefaultencoding('utf-8')
 import re
 import os
 import numpy as np
@@ -93,7 +91,7 @@ class LogParser:
     def PrefixTreeMatch(self, parentn, seq, idx):
         retLogClust = None
         length = len(seq)
-        for i in xrange(idx, length):
+        for i in range(idx, length):
             if seq[i] in parentn.childD:
                 childn = parentn.childD[seq[i]]
                 if (childn.logClust is not None):
@@ -156,7 +154,7 @@ class LogParser:
         seq = newCluster.logTemplate
         seq = [w for w in seq if w != '<*>']
 
-        for i in xrange(len(seq)):
+        for i in range(len(seq)):
             tokenInSeq = seq[i]
             # Match
             if tokenInSeq in parentn.childD:
@@ -220,7 +218,7 @@ class LogParser:
             pStr += node.token
             if node.logClust is not None:
                 pStr += '-->' + ' '.join(node.logClust.logTemplate)
-        print pStr +' ('+ str(node.templateNo) + ')'
+        print(pStr + ' ('+ str(node.templateNo) + ')')
 
         for child in node.childD:
             self.printTree(node.childD[child], dep + 1)
@@ -237,7 +235,7 @@ class LogParser:
         count = 0
         for idx, line in self.df_log.iterrows():
             logID = line['LineId']
-            logmessageL = filter(lambda x: x != '', re.split(r'[\s=:,]', self.preprocess(line['Content'])))
+            logmessageL = list(filter(lambda x: x != '', re.split(r'[\s=:,]', self.preprocess(line['Content']))))
             constLogMessL = [w for w in logmessageL if w != '<*>']
 
             #Find an existing matched log cluster
@@ -266,7 +264,7 @@ class LogParser:
                 matchCluster.logIDL.append(logID)
             count += 1
             if count % 1000 == 0 or count == len(self.df_log):
-                print 'Processed {0:.1f}% of log lines.'.format(count * 100.0 / len(self.df_log))
+                print('Processed {0:.1f}% of log lines.'.format(count * 100.0 / len(self.df_log)))
             
         if not os.path.exists(self.savePath):
             os.makedirs(self.savePath)
