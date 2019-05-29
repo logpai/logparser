@@ -1,0 +1,1000 @@
+081110 220658 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_7017399031777870797 is added to invalidSet of 10.250.5.161:50010
+081110 220708 19 INFO dfs.FSDataset: Deleting block blk_-6891122177443047531 file /mnt/hadoop/dfs/data/current/subdir36/blk_-6891122177443047531
+081110 220711 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_000190_0/part-00190. blk_641646158310569454
+081110 220749 19 INFO dfs.FSDataset: Deleting block blk_-9171930401624803515 file /mnt/hadoop/dfs/data/current/subdir56/blk_-9171930401624803515
+081110 220801 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.42.84:50010 is added to blk_5938666289587069744 size 67108864
+081110 220804 19 INFO dfs.FSDataset: Deleting block blk_-8294986551316947211 file /mnt/hadoop/dfs/data/current/subdir34/blk_-8294986551316947211
+081110 220811 19 INFO dfs.FSDataset: Deleting block blk_-5718504625725408070 file /mnt/hadoop/dfs/data/current/blk_-5718504625725408070
+081110 220830 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_000374_0/part-00374. blk_-1941312615450572331
+081110 220853 19 INFO dfs.FSDataset: Deleting block blk_2353918919834315845 file /mnt/hadoop/dfs/data/current/subdir35/blk_2353918919834315845
+081110 220907 19 INFO dfs.FSDataset: Deleting block blk_391507259220628397 file /mnt/hadoop/dfs/data/current/blk_391507259220628397
+081110 220909 19 INFO dfs.FSDataset: Deleting block blk_-1263913006422225885 file /mnt/hadoop/dfs/data/current/subdir2/blk_-1263913006422225885
+081110 220911 19 INFO dfs.FSDataset: Deleting block blk_6542592144596063478 file /mnt/hadoop/dfs/data/current/subdir35/blk_6542592144596063478
+081110 220916 15860 INFO dfs.DataNode$DataXceiver: Receiving block blk_-4473277914543734578 src: /10.251.215.16:34762 dest: /10.251.215.16:50010
+081110 220921 19 INFO dfs.FSDataset: Deleting block blk_1689772850125323349 file /mnt/hadoop/dfs/data/current/subdir27/blk_1689772850125323349
+081110 220923 19 INFO dfs.FSDataset: Deleting block blk_8615522912610884162 file /mnt/hadoop/dfs/data/current/subdir35/blk_8615522912610884162
+081110 220925 19 INFO dfs.FSDataset: Deleting block blk_107727140948970996 file /mnt/hadoop/dfs/data/current/subdir33/blk_107727140948970996
+081110 220936 19 INFO dfs.FSDataset: Deleting block blk_-1598760065436384831 file /mnt/hadoop/dfs/data/current/subdir53/blk_-1598760065436384831
+081110 220955 19 INFO dfs.FSDataset: Deleting block blk_8950932638808086257 file /mnt/hadoop/dfs/data/current/subdir18/blk_8950932638808086257
+081110 221033 15695 INFO dfs.DataNode$PacketResponder: Received block blk_-8835758154471700679 of size 67108864 from /10.251.73.188
+081110 221038 16067 INFO dfs.DataNode$DataXceiver: Receiving block blk_323887415551221572 src: /10.251.39.144:46278 dest: /10.251.39.144:50010
+081110 221125 15347 INFO dfs.DataNode$PacketResponder: Received block blk_231502148921342925 of size 67108864 from /10.251.215.192
+081110 221134 16153 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_1349228381785843634 terminating
+081110 221212 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_000186_0/part-00186. blk_-6754647973871368247
+081110 221253 15107 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7539658633533020967 src: /10.250.5.161:52151 dest: /10.250.5.161:50010
+081110 221343 15521 INFO dfs.DataNode$PacketResponder: Received block blk_6406847509870023726 of size 67108864 from /10.251.106.50
+081110 221447 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.43.115:50010 is added to blk_-7893636450787030202 size 67108864
+081110 221653 15684 INFO dfs.DataNode$PacketResponder: Received block blk_-5777981614298940026 of size 67108864 from /10.251.214.67
+081110 221803 15957 INFO dfs.DataNode$PacketResponder: Received block blk_4231049049582051919 of size 28496610 from /10.250.19.227
+081110 221932 19 INFO dfs.FSNamesystem: BLOCK* ask 10.251.122.79:50010 to delete  blk_8048594464172649365
+081110 221943 15858 INFO dfs.DataNode$DataXceiver: Receiving block blk_4414644179961808738 src: /10.251.107.98:46161 dest: /10.251.107.98:50010
+081110 222039 16041 INFO dfs.DataNode$DataXceiver: Receiving block blk_7661189768086976193 src: /10.251.195.52:56915 dest: /10.251.195.52:50010
+081110 222052 16100 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-7170175035335391571 terminating
+081110 222130 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.15.198:50010 is added to blk_4992622607400168655 size 67108864
+081110 222221 15824 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_8971893898579544235 terminating
+081110 222321 16072 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7418372263556457716 src: /10.251.89.155:53560 dest: /10.251.89.155:50010
+081110 222413 16030 INFO dfs.DataNode$DataXceiver: Receiving block blk_-3417101330634563680 src: /10.251.110.68:44200 dest: /10.251.110.68:50010
+081110 222455 16220 INFO dfs.DataNode$PacketResponder: Received block blk_4294115716822011564 of size 67108864 from /10.251.43.210
+081110 222459 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.39.160:50010 is added to blk_1865953191447352631 size 67108864
+081110 222511 16129 INFO dfs.DataNode$DataXceiver: Receiving block blk_2147212041377545584 src: /10.251.75.49:34485 dest: /10.251.75.49:50010
+081110 222512 16222 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_708101772844351082 terminating
+081110 222529 15925 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-5610308397633191834 terminating
+081110 222621 16005 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-7159695919045792245 terminating
+081110 222712 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.71.68:50010 is added to blk_8850044049297409379 size 67108864
+081110 222946 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_000585_0/part-00585. blk_8561332122820208519
+081110 222948 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.67.113:50010 is added to blk_-8393060055740236791 size 67108864
+081110 222951 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.122.38:50010 is added to blk_-5861348317118763621 size 28500222
+081110 223000 16174 INFO dfs.DataNode$PacketResponder: Received block blk_5174461779237739025 of size 67108864 from /10.250.14.143
+081110 223002 15950 INFO dfs.DataNode$DataXceiver: Receiving block blk_1463530401988623658 src: /10.251.111.37:41293 dest: /10.251.111.37:50010
+081110 223032 16147 INFO dfs.DataNode$PacketResponder: Received block blk_-8377763431920892140 of size 67108864 from /10.250.6.223
+081110 223108 16252 INFO dfs.DataNode$DataXceiver: Receiving block blk_-1728983474612515818 src: /10.251.70.211:39459 dest: /10.251.70.211:50010
+081110 223140 15976 INFO dfs.DataNode$DataXceiver: Receiving block blk_8007544297333060851 src: /10.251.90.134:47340 dest: /10.251.90.134:50010
+081110 223206 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.230:50010 is added to blk_6238543795209416553 size 67108864
+081110 223311 16266 INFO dfs.DataNode$DataXceiver: Receiving block blk_4599950495841528213 src: /10.251.194.102:59433 dest: /10.251.194.102:50010
+081110 223410 16237 INFO dfs.DataNode$PacketResponder: Received block blk_-8524952715666214329 of size 67108864 from /10.251.90.64
+081110 223615 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.127.243:50010 is added to blk_-5882295985950637419 size 67108864
+081110 223623 16188 INFO dfs.DataNode$PacketResponder: Received block blk_-1485109068671160157 of size 67108864 from /10.251.71.68
+081110 223802 15593 INFO dfs.DataNode$PacketResponder: Received block blk_3586596428873150919 of size 67108864 from /10.251.26.131
+081110 223833 16297 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7815259387557421424 src: /10.250.13.240:50649 dest: /10.250.13.240:50010
+081110 223849 16493 INFO dfs.DataNode$DataXceiver: Receiving block blk_3358274959811806117 src: /10.251.106.214:51334 dest: /10.251.106.214:50010
+081110 223854 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.90.239:50010 is added to blk_-5927343391895571936 size 67108864
+081110 223905 16320 INFO dfs.DataNode$DataXceiver: Receiving block blk_8907528844412790999 src: /10.251.126.227:42572 dest: /10.251.126.227:50010
+081110 224059 16244 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_5262186175243998904 terminating
+081110 224154 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.215.192:50010 is added to blk_-1704027189958470814 size 67108864
+081110 224209 16540 INFO dfs.DataNode$DataXceiver: Receiving block blk_-337665304078248571 src: /10.251.106.37:55462 dest: /10.251.106.37:50010
+081110 224212 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.106.50:50010 is added to blk_-2023442822091562967 size 67108864
+081110 224218 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.198.196:50010 is added to blk_1779145401405339993 size 28499417
+081110 224338 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.159:50010 is added to blk_7705518309270121951 size 67108864
+081110 224437 16512 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-9120005470237070778 terminating
+081110 224504 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.32:50010 is added to blk_3849239820458663566 size 67108864
+081110 224632 16607 INFO dfs.DataNode$DataXceiver: Receiving block blk_-1657856234642335063 src: /10.251.38.197:44516 dest: /10.251.38.197:50010
+081110 224636 16576 INFO dfs.DataNode$PacketResponder: Received block blk_6490003020931145707 of size 67108864 from /10.251.42.246
+081110 224637 16371 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_6048652012880073760 terminating
+081110 224652 16437 INFO dfs.DataNode$PacketResponder: Received block blk_5648034804629064273 of size 67108864 from /10.251.91.159
+081110 224732 16377 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_5912213716795619450 terminating
+081110 224746 16694 INFO dfs.DataNode$PacketResponder: Received block blk_-5534560875087182998 of size 67108864 from /10.250.7.230
+081110 224755 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_001560_0/part-01560. blk_3376391218693716925
+081110 224817 16597 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_2691304991047255190 terminating
+081110 224932 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_001230_0/part-01230. blk_8708862520108736953
+081110 224938 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.75.79:50010 is added to blk_-5718873743060788176 size 67108864
+081110 224958 16603 INFO dfs.DataNode$DataXceiver: Receiving block blk_-2989288139685694818 src: /10.250.19.227:60160 dest: /10.250.19.227:50010
+081110 225056 16728 INFO dfs.DataNode$DataXceiver: Receiving block blk_6245594177708848366 src: /10.250.15.198:46793 dest: /10.250.15.198:50010
+081110 225124 16591 INFO dfs.DataNode$PacketResponder: Received block blk_4433676399725693167 of size 67108864 from /10.251.37.240
+081110 225213 16632 INFO dfs.DataNode$PacketResponder: Received block blk_-5644397018622018109 of size 67108864 from /10.251.109.236
+081110 225305 16687 INFO dfs.DataNode$PacketResponder: Received block blk_-6986311820863339652 of size 67108864 from /10.251.71.240
+081110 225351 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.39.64:50010 is added to blk_207875475387433291 size 67108864
+081110 225400 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.225:50010 is added to blk_-7115635482536854135 size 67108864
+081110 225423 16747 INFO dfs.DataNode$PacketResponder: Received block blk_-1956140031907143783 of size 67108864 from /10.251.70.112
+081110 225642 16655 INFO dfs.DataNode$PacketResponder: Received block blk_7534378757788640871 of size 67108864 from /10.251.214.130
+081110 225740 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_001662_0/part-01662. blk_8196657927516481490
+081110 225813 16867 INFO dfs.DataNode$DataXceiver: Receiving block blk_-5029807829679779067 src: /10.251.122.79:49600 dest: /10.251.122.79:50010
+081110 225905 16532 INFO dfs.DataNode$DataXceiver: Receiving block blk_-3657751236932275338 src: /10.251.123.99:50481 dest: /10.251.123.99:50010
+081110 225947 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.74.227:50010 is added to blk_1594026090263820445 size 67108864
+081110 230105 13 INFO dfs.DataBlockScanner: Verification succeeded for blk_3894335463008345041
+081110 230202 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.193.224:50010 is added to blk_-6299730951392868297 size 67108864
+081110 230314 16898 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_157913239647511296 terminating
+081110 230315 16811 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-6454539193224916125 terminating
+081110 230338 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.194.213:50010 is added to blk_-3575568207121859434 size 67108864
+081110 230457 16876 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-4325209272072286951 terminating
+081110 230508 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.91.159:50010 is added to blk_-5739126205963920408 size 67108864
+081110 230524 16637 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-9056865861421808370 terminating
+081110 230536 16598 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-6934248664959947757 terminating
+081110 230545 16742 INFO dfs.DataNode$PacketResponder: Received block blk_-2082401934988378573 of size 67108864 from /10.251.214.112
+081110 230627 16366 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_7627900514276120558 terminating
+081110 230628 16721 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-1250775350296476256 terminating
+081110 230633 16678 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_2389216938154332862 terminating
+081110 230859 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.38.53:50010 is added to blk_7430820184211246929 size 67108864
+081110 231236 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-608202790716579401 is added to invalidSet of 10.251.198.33:50010
+081110 231241 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1335063409877429524 is added to invalidSet of 10.251.107.196:50010
+081110 231556 16543 INFO dfs.DataNode$DataXceiver: 10.251.202.181:50010 Served block blk_-5236655516146555545 to /10.251.31.5
+081110 231904 17028 WARN dfs.DataNode$DataXceiver: 10.251.75.143:50010:Got exception while serving blk_2262752117989012641 to /10.250.13.188:
+081110 231911 16933 WARN dfs.DataNode$DataXceiver: 10.251.126.227:50010:Got exception while serving blk_-4181768899028058192 to /10.251.26.177:
+081110 232739 16715 INFO dfs.DataNode$DataXceiver: 10.251.123.99:50010 Served block blk_-7990763409688650846 to /10.251.197.161
+081110 233940 17094 INFO dfs.DataNode$DataXceiver: 10.250.17.225:50010 Served block blk_-2656323385657954732 to /10.250.17.225
+081110 233954 17191 WARN dfs.DataNode$DataXceiver: 10.250.7.230:50010:Got exception while serving blk_-7029628814943626474 to /10.251.38.197:
+081110 235445 16879 INFO dfs.DataNode$DataXceiver: 10.251.127.243:50010 Served block blk_8711213005689112399 to /10.251.74.134
+081111 000037 17163 INFO dfs.DataNode$DataXceiver: 10.251.195.70:50010 Served block blk_-3696162841836791939 to /10.251.195.70
+081111 000626 17362 INFO dfs.DataNode$DataXceiver: 10.251.91.84:50010 Served block blk_-8915491531889006304 to /10.251.91.84
+081111 000932 16928 INFO dfs.DataNode$DataXceiver: 10.251.90.64:50010 Served block blk_-657087263710195616 to /10.250.14.196
+081111 002741 17343 INFO dfs.DataNode$DataXceiver: 10.250.10.213:50010 Served block blk_-1125621902344947014 to /10.250.10.213
+081111 004102 17259 WARN dfs.DataNode$DataXceiver: 10.251.214.175:50010:Got exception while serving blk_481857539063371482 to /10.251.105.189:
+081111 004657 17337 INFO dfs.DataNode$DataXceiver: 10.250.10.6:50010 Served block blk_1200136320542454615 to /10.250.10.6
+081111 011254 17716 WARN dfs.DataNode$DataXceiver: 10.251.39.144:50010:Got exception while serving blk_-8083036675630459841 to /10.251.39.209:
+081111 012254 17517 WARN dfs.DataNode$DataXceiver: 10.250.7.32:50010:Got exception while serving blk_-1508527605812345693 to /10.251.74.192:
+081111 013241 17501 INFO dfs.DataNode$DataXceiver: 10.251.31.180:50010 Served block blk_3905759687686730625 to /10.251.31.180
+081111 013322 17524 INFO dfs.DataNode$DataXceiver: 10.251.121.224:50010 Served block blk_342378162324355732 to /10.251.121.224
+081111 013400 17543 INFO dfs.DataNode$DataXceiver: 10.250.14.38:50010 Served block blk_-8674089929114017279 to /10.250.14.38
+081111 014431 17416 WARN dfs.DataNode$DataXceiver: 10.251.107.98:50010:Got exception while serving blk_-3140031507252212554 to /10.250.7.244:
+081111 020752 17598 INFO dfs.DataNode$DataXceiver: 10.251.125.237:50010 Served block blk_-309134958179110212 to /10.251.125.237
+081111 022143 17663 INFO dfs.DataNode$DataXceiver: 10.250.13.240:50010 Served block blk_-3134225108208373949 to /10.250.13.240
+081111 023010 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8887373200836701910 is added to invalidSet of 10.251.193.224:50010
+081111 023011 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1162676743264290624 is added to invalidSet of 10.251.194.213:50010
+081111 023011 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5513640508500780385 is added to invalidSet of 10.251.203.179:50010
+081111 023011 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7767902948513849386 is added to invalidSet of 10.251.71.146:50010
+081111 023013 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5382946262718129284 is added to invalidSet of 10.250.5.161:50010
+081111 023013 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5668137923110942035 is added to invalidSet of 10.251.91.229:50010
+081111 023013 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_7197514030988119866 is added to invalidSet of 10.251.75.49:50010
+081111 023015 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5362598472846558076 is added to invalidSet of 10.250.14.143:50010
+081111 023017 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4269939382058952254 is added to invalidSet of 10.251.203.129:50010
+081111 023017 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6978845808078082463 is added to invalidSet of 10.251.109.209:50010
+081111 023022 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1071115021179995772 is added to invalidSet of 10.250.11.53:50010
+081111 023022 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_7336636250384047238 is added to invalidSet of 10.251.26.177:50010
+081111 023022 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_8493856762887493521 is added to invalidSet of 10.251.26.131:50010
+081111 023024 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_1043487525777829194 is added to invalidSet of 10.251.110.8:50010
+081111 023024 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-3225035678192156905 is added to invalidSet of 10.251.38.214:50010
+081111 023025 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5572208681898881669 is added to invalidSet of 10.251.38.197:50010
+081111 023027 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2225353020301959077 is added to invalidSet of 10.251.125.237:50010
+081111 023027 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3946183108430554053 is added to invalidSet of 10.250.11.100:50010
+081111 023033 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-3681974396824196300 is added to invalidSet of 10.250.17.177:50010
+081111 023037 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2736251498135196075 is added to invalidSet of 10.251.90.64:50010
+081111 023039 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_1275198635723397883 is added to invalidSet of 10.251.202.134:50010
+081111 023039 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3428998332517532825 is added to invalidSet of 10.251.43.192:50010
+081111 023139 19 INFO dfs.FSDataset: Deleting block blk_-7106479503467535906 file /mnt/hadoop/dfs/data/current/subdir32/blk_-7106479503467535906
+081111 023149 19 INFO dfs.FSDataset: Deleting block blk_-7411858598798393933 file /mnt/hadoop/dfs/data/current/subdir24/blk_-7411858598798393933
+081111 023156 19 INFO dfs.FSDataset: Deleting block blk_-5429479049793046826 file /mnt/hadoop/dfs/data/current/subdir34/blk_-5429479049793046826
+081111 023158 19 INFO dfs.FSDataset: Deleting block blk_-6431101765137189231 file /mnt/hadoop/dfs/data/current/subdir33/blk_-6431101765137189231
+081111 023216 19 INFO dfs.FSDataset: Deleting block blk_-2923662094689783995 file /mnt/hadoop/dfs/data/current/subdir38/blk_-2923662094689783995
+081111 023222 17683 INFO dfs.DataNode$DataXceiver: 10.250.14.143:50010 Served block blk_-664656559337730574 to /10.250.7.96
+081111 023222 17788 INFO dfs.DataNode$PacketResponder: Received block blk_3224393364314749254 of size 67108864 from /10.251.37.240
+081111 023229 19 INFO dfs.FSDataset: Deleting block blk_1483582953997932733 file /mnt/hadoop/dfs/data/current/subdir7/blk_1483582953997932733
+081111 023230 19 INFO dfs.FSDataset: Deleting block blk_-3607708283707030582 file /mnt/hadoop/dfs/data/current/subdir31/blk_-3607708283707030582
+081111 023234 19 INFO dfs.FSDataset: Deleting block blk_4365203784873840210 file /mnt/hadoop/dfs/data/current/subdir1/blk_4365203784873840210
+081111 023243 19 INFO dfs.FSDataset: Deleting block blk_1920931690498309324 file /mnt/hadoop/dfs/data/current/subdir42/blk_1920931690498309324
+081111 023243 19 INFO dfs.FSDataset: Deleting block blk_2731746367139956284 file /mnt/hadoop/dfs/data/current/subdir15/blk_2731746367139956284
+081111 023247 19 INFO dfs.FSDataset: Deleting block blk_3312198496468502316 file /mnt/hadoop/dfs/data/current/subdir36/blk_3312198496468502316
+081111 023247 19 INFO dfs.FSDataset: Deleting block blk_-626413149556394155 file /mnt/hadoop/dfs/data/current/subdir26/blk_-626413149556394155
+081111 023248 18 INFO dfs.FSDataset: Deleting block blk_1350741653957819140 file /mnt/hadoop/dfs/data/current/subdir32/blk_1350741653957819140
+081111 023248 19 INFO dfs.FSDataset: Deleting block blk_6675564098604634452 file /mnt/hadoop/dfs/data/current/subdir1/blk_6675564098604634452
+081111 023249 19 INFO dfs.FSDataset: Deleting block blk_1692958087244489888 file /mnt/hadoop/dfs/data/current/subdir62/blk_1692958087244489888
+081111 023250 18 INFO dfs.FSDataset: Deleting block blk_5528471097481810388 file /mnt/hadoop/dfs/data/current/subdir5/blk_5528471097481810388
+081111 023250 19 INFO dfs.FSDataset: Deleting block blk_797263375273454863 file /mnt/hadoop/dfs/data/current/subdir16/blk_797263375273454863
+081111 023255 19 INFO dfs.FSDataset: Deleting block blk_5209577451013188921 file /mnt/hadoop/dfs/data/current/subdir24/blk_5209577451013188921
+081111 023304 18 INFO dfs.FSDataset: Deleting block blk_4713539908695785630 file /mnt/hadoop/dfs/data/current/subdir39/blk_4713539908695785630
+081111 023310 19 INFO dfs.FSDataset: Deleting block blk_6148201552996212693 file /mnt/hadoop/dfs/data/current/subdir15/blk_6148201552996212693
+081111 023328 19 INFO dfs.FSDataset: Deleting block blk_9014154925388243050 file /mnt/hadoop/dfs/data/current/subdir28/blk_9014154925388243050
+081111 023330 19 INFO dfs.FSDataset: Deleting block blk_8761138012128091849 file /mnt/hadoop/dfs/data/current/subdir33/blk_8761138012128091849
+081111 023749 17857 INFO dfs.DataNode$PacketResponder: Received block blk_-4071286774767564790 of size 67108864 from /10.251.197.226
+081111 023914 17773 INFO dfs.DataNode$DataXceiver: 10.251.122.65:50010 Served block blk_2866275036574950116 to /10.250.11.53
+081111 024105 17911 INFO dfs.DataNode$PacketResponder: Received block blk_-6811519872198278365 of size 67108864 from /10.250.6.4
+081111 024133 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.19:50010 is added to blk_6748710057489679257 size 67108864
+081111 024247 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.39.209:50010 is added to blk_1833093108290599780 size 67108864
+081111 024304 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.146:50010 is added to blk_9163807899833139121 size 67108864
+081111 024309 17772 INFO dfs.DataNode$DataXceiver: Receiving block blk_3941798034503185737 src: /10.250.11.85:42358 dest: /10.250.11.85:50010
+081111 024325 17904 INFO dfs.DataNode$PacketResponder: Received block blk_6894918622505820383 of size 67108864 from /10.250.14.143
+081111 024443 17867 INFO dfs.DataNode$DataXceiver: Receiving block blk_6491424745418112176 src: /10.251.214.130:57008 dest: /10.251.214.130:50010
+081111 024443 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_000115_0/part-00115. blk_-17685631368401548
+081111 024724 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_000176_0/part-00176. blk_8924207394547472950
+081111 024742 17976 INFO dfs.DataNode$DataXceiver: Receiving block blk_-4526931594457272384 src: /10.251.43.147:40348 dest: /10.251.43.147:50010
+081111 024831 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.31.242:50010 is added to blk_5390763359901143305 size 67108864
+081111 024901 18086 INFO dfs.DataNode$DataXceiver: Receiving block blk_-11867600358649678 src: /10.251.75.79:46421 dest: /10.251.75.79:50010
+081111 024901 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.11.194:50010 is added to blk_2430417102497887445 size 67108864
+081111 024901 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.18:50010 is added to blk_-747046374856916711 size 67108864
+081111 025101 18187 INFO dfs.DataNode$PacketResponder: Received block blk_5062112794659861146 of size 67108864 from /10.251.91.84
+081111 025208 18218 INFO dfs.DataNode$DataXceiver: Receiving block blk_-116589515245909549 src: /10.251.203.179:33198 dest: /10.251.203.179:50010
+081111 025335 17997 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_4628975089896927394 terminating
+081111 025336 18090 INFO dfs.DataNode$DataXceiver: Receiving block blk_-764747190320632607 src: /10.251.127.191:49914 dest: /10.251.127.191:50010
+081111 025346 18124 INFO dfs.DataNode$PacketResponder: Received block blk_-8015797075596093783 of size 67108864 from /10.250.11.194
+081111 025424 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.110.160:50010 is added to blk_-1675768179383804109 size 67108864
+081111 025607 18122 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_1155029843511109085 terminating
+081111 025619 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.67.113:50010 is added to blk_9060964400089016309 size 67108864
+081111 025634 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.67:50010 is added to blk_-1417908110808566576 size 67108864
+081111 025653 18457 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-7483426835701512490 terminating
+081111 025732 18087 INFO dfs.DataNode$DataXceiver: Receiving block blk_-3752135158991310104 src: /10.251.70.5:44375 dest: /10.251.70.5:50010
+081111 025811 18303 INFO dfs.DataNode$DataXceiver: Receiving block blk_-8649503431827393598 src: /10.251.199.19:48778 dest: /10.251.199.19:50010
+081111 025903 18116 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-6883339133893273874 terminating
+081111 025915 18170 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_3695169334833427187 terminating
+081111 025945 18127 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_6055109613223910610 terminating
+081111 030015 18180 INFO dfs.DataNode$DataXceiver: Receiving block blk_-1868325377308234190 src: /10.251.42.207:50666 dest: /10.251.42.207:50010
+081111 030017 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.26.177:50010 is added to blk_-6338549285508312302 size 3530010
+081111 030051 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.179:50010 is added to blk_-900758580041645081 size 3543900
+081111 030153 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.66.3:50010 is added to blk_1756478622414930264 size 67108864
+081111 030225 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.127.47:50010 is added to blk_-6555060221133060529 size 67108864
+081111 030233 18516 INFO dfs.DataNode$DataXceiver: Receiving block blk_9076677650086747187 src: /10.251.35.1:52094 dest: /10.251.35.1:50010
+081111 030236 18183 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-4165562468976768862 terminating
+081111 030240 18460 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-3295982945091621137 terminating
+081111 030300 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.15.240:50010 is added to blk_-7637577152926063076 size 67108864
+081111 030318 18190 INFO dfs.DataNode$DataXceiver: Receiving block blk_3181161977343808286 src: /10.251.43.21:40127 dest: /10.251.43.21:50010
+081111 030414 18143 INFO dfs.DataNode$DataXceiver: Receiving block blk_6807535563873595117 src: /10.250.17.177:48934 dest: /10.250.17.177:50010
+081111 030416 18548 INFO dfs.DataNode$DataXceiver: Receiving block blk_7513976340045981966 src: /10.251.42.207:36468 dest: /10.251.42.207:50010
+081111 030418 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001061_0/part-01061. blk_-749176535135404637
+081111 030501 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.245:50010 is added to blk_-7909610753867924116 size 67108864
+081111 030726 18409 INFO dfs.DataNode$PacketResponder: Received block blk_-7247291679155656679 of size 67108864 from /10.250.10.176
+081111 030736 18126 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-6369730481066968769 terminating
+081111 030745 18290 INFO dfs.DataNode$DataXceiver: Receiving block blk_7780461223860192433 src: /10.251.127.191:58148 dest: /10.251.127.191:50010
+081111 030942 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001281_0/part-01281. blk_2084123600915946046
+081111 030946 18336 INFO dfs.DataNode$DataXceiver: Receiving block blk_92273823183917102 src: /10.250.15.67:53441 dest: /10.250.15.67:50010
+081111 030950 18479 INFO dfs.DataNode$PacketResponder: Received block blk_-1141332313413855099 of size 67108864 from /10.251.89.155
+081111 030958 18454 INFO dfs.DataNode$DataXceiver: Receiving block blk_3016571528120363023 src: /10.251.194.102:60235 dest: /10.251.194.102:50010
+081111 031106 18346 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7678242108759603056 src: /10.251.125.193:33553 dest: /10.251.125.193:50010
+081111 031143 18339 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7526023914950151999 src: /10.250.5.161:48457 dest: /10.250.5.161:50010
+081111 031257 18567 INFO dfs.DataNode$DataXceiver: Receiving block blk_-6380328072112550668 src: /10.250.6.191:37701 dest: /10.250.6.191:50010
+081111 031258 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.11.100:50010 is added to blk_3222673463853349950 size 67108864
+081111 031307 18432 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-3183355402229300197 terminating
+081111 031334 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.26.8:50010 is added to blk_-5963475042722370536 size 67108864
+081111 031436 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001398_0/part-01398. blk_-7527506469734664572
+081111 031541 18484 INFO dfs.DataNode$PacketResponder: Received block blk_9072486569292195232 of size 67108864 from /10.251.71.68
+081111 031621 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.159:50010 is added to blk_-4455205822455130625 size 67108864
+081111 031650 18225 INFO dfs.DataNode$PacketResponder: Received block blk_3777399812922072863 of size 67108864 from /10.251.199.225
+081111 031730 18310 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-4633546693082073737 terminating
+081111 031735 18435 INFO dfs.DataNode$PacketResponder: Received block blk_6799391641508508235 of size 67108864 from /10.251.107.98
+081111 031811 18619 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_1002945451269828722 terminating
+081111 031900 18547 INFO dfs.DataNode$PacketResponder: Received block blk_566413670355737377 of size 67108864 from /10.251.122.79
+081111 031938 16978 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_2819581679409796253 terminating
+081111 031951 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.127.243:50010 is added to blk_1512923509505250283 size 67108864
+081111 032053 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001611_0/part-01611. blk_285336326661214154
+081111 032121 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.90.134:50010 is added to blk_5955377624764578810 size 67108864
+081111 032357 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001574_0/part-01574. blk_-7458279618877678162
+081111 032416 18576 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_5018765878120211503 terminating
+081111 032531 18607 INFO dfs.DataNode$DataXceiver: Receiving block blk_313888672758374538 src: /10.251.39.179:40031 dest: /10.251.39.179:50010
+081111 032544 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.109.209:50010 is added to blk_3764801892187716497 size 67108864
+081111 032612 18586 INFO dfs.DataNode$PacketResponder: Received block blk_-3491385689517593364 of size 67108864 from /10.251.193.224
+081111 032655 18710 INFO dfs.DataNode$PacketResponder: Received block blk_-2243784245784480521 of size 67108864 from /10.250.6.191
+081111 032813 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.6.223:50010 is added to blk_-4052810234606327693 size 67108864
+081111 032825 18758 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-6695620358347030339 terminating
+081111 032828 18581 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-5102453487463005287 terminating
+081111 032900 18814 INFO dfs.DataNode$DataXceiver: Receiving block blk_7924393760966842810 src: /10.251.202.209:59148 dest: /10.251.202.209:50010
+081111 032917 18710 INFO dfs.DataNode$PacketResponder: Received block blk_5915244038969911075 of size 67108864 from /10.250.11.53
+081111 033110 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.144:50010 is added to blk_3243316191092266549 size 67108864
+081111 033125 18859 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_8229768485681546149 terminating
+081111 033211 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.43.21:50010 is added to blk_3206064173813164493 size 67108864
+081111 033426 18894 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-1957299792594627113 terminating
+081111 033444 18940 INFO dfs.DataNode$DataXceiver: Receiving block blk_-1690784932539647416 src: /10.251.31.180:50205 dest: /10.251.31.180:50010
+081111 033505 18847 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_6745520736924802462 terminating
+081111 033819 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1525964299678787959 is added to invalidSet of 10.251.37.240:50010
+081111 033823 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_7045475543362904558 is added to invalidSet of 10.251.106.214:50010
+081111 033824 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6802124772693111025 is added to invalidSet of 10.251.66.63:50010
+081111 033829 18 INFO dfs.FSDataset: Deleting block blk_-5205950257901523262 file /mnt/hadoop/dfs/data/current/subdir40/blk_-5205950257901523262
+081111 033925 18906 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-1649239999940418046 terminating
+081111 033927 19172 INFO dfs.DataNode$PacketResponder: Received block blk_6880728743505526406 of size 67108864 from /10.251.197.226
+081111 033935 18945 INFO dfs.DataNode$DataXceiver: Receiving block blk_5256716488526744434 src: /10.251.73.220:42064 dest: /10.251.73.220:50010
+081111 033953 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.26.177:50010 is added to blk_6928449948805597176 size 67108864
+081111 034105 18847 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_2529569087635823495 terminating
+081111 034252 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt4/_temporary/_task_200811101024_0010_m_000222_0/part-00222. blk_3764836840384130740
+081111 034323 19025 INFO dfs.DataNode$DataXceiver: Receiving block blk_3020717811556957482 src: /10.251.90.81:48077 dest: /10.251.90.81:50010
+081111 034351 18690 INFO dfs.DataNode$PacketResponder: Received block blk_-577659324269246113 of size 67108864 from /10.251.203.179
+081111 034456 18909 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_6137960563260046065 terminating
+081111 034600 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.203.246:50010 is added to blk_-6909400912794057067 size 67108864
+081111 034712 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.43.192:50010 is added to blk_8249475180346179102 size 67108864
+081111 034726 19054 INFO dfs.DataNode$PacketResponder: Received block blk_-5045144756510626150 of size 67108864 from /10.251.39.160
+081111 034742 19142 INFO dfs.DataNode$PacketResponder: Received block blk_752365829198406123 of size 67108864 from /10.250.6.214
+081111 034937 19166 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_5663417083925711869 terminating
+081111 034945 19257 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-2014243777892518956 terminating
+081111 035010 19149 INFO dfs.DataNode$DataXceiver: Receiving block blk_-8123824094195108685 src: /10.251.194.213:54308 dest: /10.251.194.213:50010
+081111 035113 19229 INFO dfs.DataNode$DataXceiver: Receiving block blk_2080318574920472813 src: /10.251.39.64:40530 dest: /10.251.39.64:50010
+081111 035115 18830 INFO dfs.DataNode$PacketResponder: Received block blk_-290874442865281380 of size 28497700 from /10.251.203.179
+081111 035152 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.73.220:50010 is added to blk_5953577136151423920 size 67108864
+081111 035247 19144 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-2780312306380730204 terminating
+081111 035417 19387 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-633826175832239328 terminating
+081111 035532 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.15.101:50010 is added to blk_-6540455811923725840 size 67108864
+081111 035620 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.123.1:50010 is added to blk_6308888821787547357 size 67108864
+081111 035834 19205 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_4638603954320058978 terminating
+081111 035913 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.91.229:50010 is added to blk_-4651707530079874243 size 67108864
+081111 035915 19117 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_5115892145206906855 terminating
+081111 035948 19511 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-2421414377433740760 terminating
+081111 035957 19217 INFO dfs.DataNode$PacketResponder: Received block blk_-420564586555502239 of size 67108864 from /10.251.90.64
+081111 040107 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt4/_temporary/_task_200811101024_0010_m_000881_0/part-00881. blk_-3091906986951252347
+081111 040246 19412 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-4068751061953213467 terminating
+081111 040251 19350 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-3025440686907267472 terminating
+081111 040402 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.215.70:50010 is added to blk_-420818767915591010 size 67108864
+081111 040405 19541 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_8422946850755720617 terminating
+081111 040425 19408 INFO dfs.DataNode$DataXceiver: Receiving block blk_-5646228903161999640 src: /10.251.71.97:60870 dest: /10.251.71.97:50010
+081111 040521 19253 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-7024895786822269814 terminating
+081111 040537 19518 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-4430291708660291878 terminating
+081111 040543 19431 INFO dfs.DataNode$DataXceiver: Receiving block blk_-6250368566161066085 src: /10.251.31.180:42992 dest: /10.251.31.180:50010
+081111 040544 19362 INFO dfs.DataNode$DataXceiver: Receiving block blk_-6213380972217661202 src: /10.251.203.149:40478 dest: /10.251.203.149:50010
+081111 040604 19555 INFO dfs.DataNode$PacketResponder: Received block blk_3813891701916249413 of size 67108864 from /10.251.121.224
+081111 040626 19526 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_903961454948542202 terminating
+081111 040653 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.42.16:50010 is added to blk_3954386352306480748 size 67108864
+081111 040658 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.105.189:50010 is added to blk_4812792845864526586 size 67108864
+081111 040728 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.70.211:50010 is added to blk_5570475465835003801 size 67108864
+081111 040751 19585 INFO dfs.DataNode$PacketResponder: Received block blk_-9190864897806028230 of size 67108864 from /10.251.214.130
+081111 040754 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.31.242:50010 is added to blk_-4342304152206614489 size 67108864
+081111 040857 19185 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-190773840747023361 terminating
+081111 041004 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.71.240:50010 is added to blk_-5580048401594934039 size 67108864
+081111 041039 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.39.242:50010 is added to blk_6640583412927022083 size 67108864
+081111 041111 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.65.203:50010 is added to blk_-1332315107905285608 size 67108864
+081111 041218 19235 INFO dfs.DataNode$PacketResponder: Received block blk_3550669278239526374 of size 67108864 from /10.251.123.1
+081111 041219 19820 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_4873550540813847659 terminating
+081111 041252 19248 INFO dfs.DataNode$DataXceiver: Receiving block blk_-1133573997287815203 src: /10.251.123.195:59430 dest: /10.251.123.195:50010
+081111 041349 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.74.134:50010 is added to blk_2740792916077430444 size 28482383
+081111 041425 19630 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_2851869865185325732 terminating
+081111 041443 19498 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-1842096107468319932 terminating
+081111 041509 20066 INFO dfs.DataNode$PacketResponder: Received block blk_-8965508153794244104 of size 28494398 from /10.251.70.112
+081111 041532 19592 INFO dfs.DataNode$DataXceiver: Receiving block blk_1074754942323612586 src: /10.251.202.181:45279 dest: /10.251.202.181:50010
+081111 041534 19842 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7727864185516010230 src: /10.251.43.192:36039 dest: /10.251.43.192:50010
+081111 041701 19403 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-4779205255695723216 terminating
+081111 041734 19799 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_2261089810991980611 terminating
+081111 041811 19543 INFO dfs.DataNode$DataXceiver: Receiving block blk_5335498635665743905 src: /10.251.73.220:50095 dest: /10.251.73.220:50010
+081111 041926 19700 INFO dfs.DataNode$DataXceiver: Receiving block blk_-5144503768267321004 src: /10.251.107.19:36862 dest: /10.251.107.19:50010
+081111 042009 19800 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_1927336911952959118 terminating
+081111 042024 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.203.166:50010 is added to blk_-2332150303475653460 size 67108864
+081111 042042 19757 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_2111886617384066018 terminating
+081111 042100 19804 INFO dfs.DataNode$DataXceiver: Receiving block blk_-2506231977021079951 src: /10.251.31.160:57634 dest: /10.251.31.160:50010
+081111 042129 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.86:50010 is added to blk_4330492872922862223 size 67108864
+081111 042353 19811 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_6918427074195439966 terminating
+081111 042416 19265 INFO dfs.DataNode$DataXceiver: Receiving block blk_4284688617983009262 src: /10.251.91.32:57548 dest: /10.251.91.32:50010
+081111 042427 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.31.5:50010 is added to blk_5813361416484537967 size 67108864
+081111 042456 19952 INFO dfs.DataNode$DataXceiver: Receiving block blk_-2313277713021896570 src: /10.251.123.195:58823 dest: /10.251.123.195:50010
+081111 042457 19726 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-7778922135767840250 terminating
+081111 042625 19958 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7350482598011027441 src: /10.250.7.96:41476 dest: /10.250.7.96:50010
+081111 042735 19901 INFO dfs.DataNode$PacketResponder: Received block blk_-3607860197409267245 of size 28503188 from /10.251.31.180
+081111 042824 18264 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_4178945095089206682 terminating
+081111 043015 19875 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-3363550789841756902 terminating
+081111 043042 20058 INFO dfs.DataNode$DataXceiver: Receiving block blk_345577139488306634 src: /10.251.37.240:38873 dest: /10.251.37.240:50010
+081111 043106 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.71.193:50010 is added to blk_4577632468651859430 size 67108864
+081111 043132 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt4/_temporary/_task_200811101024_0010_m_001716_0/part-01716. blk_-2051219911597308805
+081111 043140 19599 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-2680500627064966252 terminating
+081111 043222 20077 INFO dfs.DataNode$DataXceiver: Receiving block blk_-9092685890953655332 src: /10.250.15.240:43274 dest: /10.250.15.240:50010
+081111 043341 19898 INFO dfs.DataNode$DataXceiver: Receiving block blk_-4473020641607592551 src: /10.251.42.191:48114 dest: /10.251.42.191:50010
+081111 043358 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.37:50010 is added to blk_-524128780228307052 size 67108864
+081111 043515 20251 INFO dfs.DataNode$PacketResponder: Received block blk_4443043493758564822 of size 67108864 from /10.251.106.37
+081111 043630 20253 INFO dfs.DataNode$PacketResponder: Received block blk_5118390778403008591 of size 67108864 from /10.251.30.101
+081111 043746 20226 INFO dfs.DataNode$DataXceiver: Receiving block blk_2737505352081488746 src: /10.251.194.245:52516 dest: /10.251.194.245:50010
+081111 043825 20130 INFO dfs.DataNode$PacketResponder: Received block blk_-9013487557842539661 of size 28485342 from /10.251.215.192
+081111 043903 20003 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-8638442557570632582 terminating
+081111 044041 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.202.209:50010 is added to blk_111759050707136656 size 67108864
+081111 044304 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2259206517962925438 is added to invalidSet of 10.251.215.16:50010
+081111 044304 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-3854777877236596649 is added to invalidSet of 10.251.39.160:50010
+081111 044305 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4265150363959543078 is added to invalidSet of 10.251.39.160:50010
+081111 044309 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3729730843466061623 is added to invalidSet of 10.251.27.63:50010
+081111 044310 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3876184938151091897 is added to invalidSet of 10.251.30.85:50010
+081111 044311 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1227720343537039835 is added to invalidSet of 10.251.202.134:50010
+081111 044314 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6921441628286995043 is added to invalidSet of 10.251.126.83:50010
+081111 044315 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3539852484771802299 is added to invalidSet of 10.250.19.227:50010
+081111 044316 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2341651676737321162 is added to invalidSet of 10.251.203.129:50010
+081111 044318 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-765820154946060546 is added to invalidSet of 10.251.65.203:50010
+081111 044319 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2492400942012223395 is added to invalidSet of 10.251.202.209:50010
+081111 044320 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8351015090014570293 is added to invalidSet of 10.251.199.86:50010
+081111 044328 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-328970571549408286 is added to invalidSet of 10.251.214.32:50010
+081111 044328 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8130925109202184099 is added to invalidSet of 10.251.125.193:50010
+081111 044331 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-3242342105286997235 is added to invalidSet of 10.251.71.97:50010
+081111 044332 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2468407162668753567 is added to invalidSet of 10.251.106.37:50010
+081111 044335 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_7841365850685201915 is added to invalidSet of 10.251.110.68:50010
+081111 044337 13 INFO dfs.DataBlockScanner: Verification succeeded for blk_-6160667975382232149
+081111 044338 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2426255659473300323 is added to invalidSet of 10.251.106.37:50010
+081111 044338 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5203504995927133832 is added to invalidSet of 10.250.13.240:50010
+081111 044340 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_815809455641029563 is added to invalidSet of 10.251.111.37:50010
+081111 044343 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_6413710007211667486 is added to invalidSet of 10.251.30.179:50010
+081111 044345 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2907776069874917892 is added to invalidSet of 10.251.215.16:50010
+081111 044347 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5802915611610989626 is added to invalidSet of 10.251.110.196:50010
+081111 044349 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7668075074035173978 is added to invalidSet of 10.251.31.5:50010
+081111 044351 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1573544581830458089 is added to invalidSet of 10.251.122.65:50010
+081111 044353 19 INFO dfs.FSDataset: Deleting block blk_-1180596628202464893 file /mnt/hadoop/dfs/data/current/subdir52/blk_-1180596628202464893
+081111 044427 20289 INFO dfs.DataNode$DataXceiver: Receiving block blk_1407935810673971357 src: /10.251.123.99:54184 dest: /10.251.123.99:50010
+081111 044522 18 INFO dfs.FSDataset: Deleting block blk_-8167717961644709843 file /mnt/hadoop/dfs/data/current/blk_-8167717961644709843
+081111 044543 19 INFO dfs.FSDataset: Deleting block blk_-7464161062429228045 file /mnt/hadoop/dfs/data/current/subdir19/blk_-7464161062429228045
+081111 044546 19 INFO dfs.FSDataset: Deleting block blk_-5934436507161953485 file /mnt/hadoop/dfs/data/current/subdir33/blk_-5934436507161953485
+081111 044546 20347 INFO dfs.DataNode$PacketResponder: Received block blk_-3922743468150895472 of size 67108864 from /10.251.39.179
+081111 044550 19 INFO dfs.FSDataset: Deleting block blk_-7832937837605180330 file /mnt/hadoop/dfs/data/current/subdir49/blk_-7832937837605180330
+081111 044554 19 INFO dfs.FSDataset: Deleting block blk_-8547071368131084410 file /mnt/hadoop/dfs/data/current/subdir38/blk_-8547071368131084410
+081111 044556 19 INFO dfs.FSDataset: Deleting block blk_-5429042599096020592 file /mnt/hadoop/dfs/data/current/subdir34/blk_-5429042599096020592
+081111 044612 19 INFO dfs.FSDataset: Deleting block blk_-6350492516478706425 file /mnt/hadoop/dfs/data/current/subdir36/blk_-6350492516478706425
+081111 044624 19 INFO dfs.FSDataset: Deleting block blk_-6053005391233809507 file /mnt/hadoop/dfs/data/current/subdir27/blk_-6053005391233809507
+081111 044624 20167 INFO dfs.DataNode$PacketResponder: Received block blk_-1522998827901549925 of size 67108864 from /10.251.127.47
+081111 044630 19 INFO dfs.FSDataset: Deleting block blk_-4311652947826112510 file /mnt/hadoop/dfs/data/current/subdir57/blk_-4311652947826112510
+081111 044635 19 INFO dfs.FSDataset: Deleting block blk_-1754204887541031211 file /mnt/hadoop/dfs/data/current/subdir58/blk_-1754204887541031211
+081111 044639 19 INFO dfs.FSDataset: Deleting block blk_-4165176068096983220 file /mnt/hadoop/dfs/data/current/subdir34/blk_-4165176068096983220
+081111 044648 19 INFO dfs.FSDataset: Deleting block blk_4863571548336254624 file /mnt/hadoop/dfs/data/current/subdir5/blk_4863571548336254624
+081111 044650 19 INFO dfs.FSDataset: Deleting block blk_-4844505495441326897 file /mnt/hadoop/dfs/data/current/subdir36/blk_-4844505495441326897
+081111 044652 19 INFO dfs.FSDataset: Deleting block blk_-7513928662244669476 file /mnt/hadoop/dfs/data/current/subdir11/blk_-7513928662244669476
+081111 044654 19 INFO dfs.FSDataset: Deleting block blk_-5014786445735476734 file /mnt/hadoop/dfs/data/current/subdir9/blk_-5014786445735476734
+081111 044700 19 INFO dfs.FSDataset: Deleting block blk_-1046472716157313227 file /mnt/hadoop/dfs/data/current/subdir62/blk_-1046472716157313227
+081111 044700 19 INFO dfs.FSDataset: Deleting block blk_-1281276222788579863 file /mnt/hadoop/dfs/data/current/subdir30/blk_-1281276222788579863
+081111 044704 19 INFO dfs.FSDataset: Deleting block blk_449049393237281194 file /mnt/hadoop/dfs/data/current/subdir18/blk_449049393237281194
+081111 044716 19 INFO dfs.FSDataset: Deleting block blk_352185875883785141 file /mnt/hadoop/dfs/data/current/subdir44/blk_352185875883785141
+081111 044720 19 INFO dfs.FSDataset: Deleting block blk_-2890295200276774269 file /mnt/hadoop/dfs/data/current/subdir29/blk_-2890295200276774269
+081111 044728 18 INFO dfs.FSDataset: Deleting block blk_1379455396847512711 file /mnt/hadoop/dfs/data/current/blk_1379455396847512711
+081111 044740 19 INFO dfs.FSDataset: Deleting block blk_2180875151184358991 file /mnt/hadoop/dfs/data/current/subdir31/blk_2180875151184358991
+081111 044749 19766 INFO dfs.DataNode$DataXceiver: Receiving block blk_-8879979113392880065 src: /10.251.202.181:33345 dest: /10.251.202.181:50010
+081111 044752 19 INFO dfs.FSDataset: Deleting block blk_1553688227908800900 file /mnt/hadoop/dfs/data/current/subdir15/blk_1553688227908800900
+081111 044757 19 INFO dfs.FSDataset: Deleting block blk_6138894560185644209 file /mnt/hadoop/dfs/data/current/subdir42/blk_6138894560185644209
+081111 044759 19 INFO dfs.FSDataset: Deleting block blk_-1368324087589035770 file /mnt/hadoop/dfs/data/current/blk_-1368324087589035770
+081111 044759 19 INFO dfs.FSDataset: Deleting block blk_3274968259628929519 file /mnt/hadoop/dfs/data/current/subdir19/blk_3274968259628929519
+081111 044806 19 INFO dfs.FSDataset: Deleting block blk_5736622945587812309 file /mnt/hadoop/dfs/data/current/subdir19/blk_5736622945587812309
+081111 044812 19 INFO dfs.FSDataset: Deleting block blk_9142114171015520823 file /mnt/hadoop/dfs/data/current/subdir48/blk_9142114171015520823
+081111 044822 19 INFO dfs.FSDataset: Deleting block blk_8556592730481313831 file /mnt/hadoop/dfs/data/current/blk_8556592730481313831
+081111 044834 19 INFO dfs.FSDataset: Deleting block blk_6147898566868510104 file /mnt/hadoop/dfs/data/current/subdir36/blk_6147898566868510104
+081111 044847 20391 INFO dfs.DataNode$DataXceiver: Receiving block blk_-4334868513923498900 src: /10.251.91.15:35440 dest: /10.251.91.15:50010
+081111 044855 19 INFO dfs.FSDataset: Deleting block blk_9081834782322008396 file /mnt/hadoop/dfs/data/current/subdir40/blk_9081834782322008396
+081111 044913 18 INFO dfs.FSDataset: Deleting block blk_8962411947457130719 file /mnt/hadoop/dfs/data/current/subdir16/blk_8962411947457130719
+081111 045125 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.75.143:50010 is added to blk_2312679955495839894 size 67108864
+081111 045125 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.75.143:50010 is added to blk_7434237665308221519 size 67108864
+081111 045222 20321 INFO dfs.DataNode$DataXceiver: Receiving block blk_2380775154966815858 src: /10.251.107.50:33333 dest: /10.251.107.50:50010
+081111 045224 20229 INFO dfs.DataNode$PacketResponder: Received block blk_3777389444004341563 of size 67108864 from /10.251.214.175
+081111 045252 20089 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-4578850505370039622 terminating
+081111 045430 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.6.214:50010 is added to blk_4893049344332234616 size 67108864
+081111 045614 20587 INFO dfs.DataNode$DataXceiver: Receiving block blk_9131004320470011870 src: /10.251.123.132:52815 dest: /10.251.123.132:50010
+081111 045623 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_000040_0/part-00040. blk_1253515519191706153
+081111 045628 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.130:50010 is added to blk_-9056748866943837167 size 67108864
+081111 045751 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.126.22:50010 is added to blk_-8298519990603402919 size 67108864
+081111 045804 20338 INFO dfs.DataNode$PacketResponder: Received block blk_-337972286882621518 of size 67108864 from /10.250.10.144
+081111 045834 19263 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-4411589101766563890 terminating
+081111 045903 20579 INFO dfs.DataNode$DataXceiver: Receiving block blk_-8838632285969241889 src: /10.251.43.21:35844 dest: /10.251.43.21:50010
+081111 045904 20552 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-8225435781013159573 terminating
+081111 045911 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.27.63:50010 is added to blk_-7985144765168396303 size 67108864
+081111 050045 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_000541_0/part-00541. blk_-6841570414687342011
+081111 050105 20507 INFO dfs.DataNode$PacketResponder: Received block blk_3924177422736829493 of size 67108864 from /10.251.66.102
+081111 050307 20305 INFO dfs.DataNode$DataXceiver: Receiving block blk_9074726164158535746 src: /10.251.214.32:34409 dest: /10.251.214.32:50010
+081111 050313 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.107.242:50010 is added to blk_-5773244829531118765 size 67108864
+081111 050334 20441 INFO dfs.DataNode$DataXceiver: Received block blk_-4411589101766563890 src: /10.250.14.38:37362 dest: /10.250.14.38:50010 of size 67108864
+081111 050346 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.90.64:50010 is added to blk_-8923923031063738809 size 67108864
+081111 050414 20630 INFO dfs.DataNode$DataXceiver: Receiving block blk_-8703611999267892995 src: /10.250.15.101:32889 dest: /10.250.15.101:50010
+081111 050426 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.15.101:50010 is added to blk_-5352085087037370841 size 67108864
+081111 050534 20462 INFO dfs.DataNode$PacketResponder: Received block blk_1411218759880637753 of size 67108864 from /10.251.123.20
+081111 050710 20499 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-2268450354164990110 terminating
+081111 051005 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.122.79:50010 is added to blk_-3622135859810774312 size 67108864
+081111 051007 21019 INFO dfs.DataNode$DataXceiver: Receiving block blk_-2667669005094349452 src: /10.251.203.149:41751 dest: /10.251.203.149:50010
+081111 051128 20647 INFO dfs.DataNode$PacketResponder: Received block blk_-2935178173527646581 of size 67108864 from /10.251.65.237
+081111 051129 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.107.227:50010 is added to blk_5781791720343455145 size 67108864
+081111 051130 20759 INFO dfs.DataNode$PacketResponder: Received block blk_49420377461855719 of size 67108864 from /10.251.70.112
+081111 051331 20788 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-805262942087665153 terminating
+081111 051411 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.225:50010 is added to blk_8323519561483823145 size 67108864
+081111 051513 20482 INFO dfs.DataNode$DataXceiver: Receiving block blk_2208589726473895860 src: /10.251.199.245:33914 dest: /10.251.199.245:50010
+081111 051517 20834 INFO dfs.DataNode$DataXceiver: Receiving block blk_-6618090096819679591 src: /10.251.214.67:58610 dest: /10.251.214.67:50010
+081111 051555 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.42.16:50010 is added to blk_-3253005280055520211 size 67108864
+081111 051726 20622 INFO dfs.DataNode$PacketResponder: Received block blk_-6832799704680039005 of size 67108864 from /10.250.17.225
+081111 051744 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.65.203:50010 is added to blk_4777657900314457675 size 3546628
+081111 051819 20803 INFO dfs.DataNode$PacketResponder: Received block blk_-6464892000340112134 of size 67108864 from /10.250.5.161
+081111 051953 20767 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-8435779070374485499 terminating
+081111 052017 20779 INFO dfs.DataNode$PacketResponder: Received block blk_8993862241777591326 of size 67108864 from /10.250.15.240
+081111 052103 20872 INFO dfs.DataNode$DataXceiver: Receiving block blk_8452214765874767801 src: /10.251.38.197:60409 dest: /10.251.38.197:50010
+081111 052348 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.90.239:50010 is added to blk_-2281067667503210140 size 67108864
+081111 052507 21174 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-4424971182856566289 terminating
+081111 052633 21162 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_2040222317555585426 terminating
+081111 052716 20795 INFO dfs.DataNode$DataXceiver: Receiving block blk_-663653551898848389 src: /10.251.203.149:42756 dest: /10.251.203.149:50010
+081111 052803 21053 INFO dfs.DataNode$DataXceiver: Receiving block blk_-5836693155656083066 src: /10.251.214.67:41233 dest: /10.251.214.67:50010
+081111 052812 21102 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7228803354694123939 src: /10.251.195.70:50389 dest: /10.251.195.70:50010
+081111 052842 21012 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_2953550760670423417 terminating
+081111 052846 21358 INFO dfs.DataNode$PacketResponder: Received block blk_5348548743130215090 of size 67108864 from /10.251.39.179
+081111 052853 20914 INFO dfs.DataNode$PacketResponder: Received block blk_7413830214932763926 of size 67108864 from /10.251.125.174
+081111 053001 20539 INFO dfs.DataNode$PacketResponder: Received block blk_6329639726609402522 of size 67108864 from /10.251.107.19
+081111 053010 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_001408_0/part-01408. blk_6601059760261449131
+081111 053158 21003 INFO dfs.DataNode$DataXceiver: Receiving block blk_-5439682406172672049 src: /10.251.42.207:36091 dest: /10.251.42.207:50010
+081111 053245 21296 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7492294065771709299 src: /10.251.203.149:41058 dest: /10.251.203.149:50010
+081111 053325 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.39.144:50010 is added to blk_1526403491950199810 size 3534443
+081111 053347 21024 INFO dfs.DataNode$PacketResponder: Received block blk_8902425017314766082 of size 67108864 from /10.251.26.131
+081111 053359 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_001730_0/part-01730. blk_6400082566804273401
+081111 053400 21069 INFO dfs.DataNode$DataXceiver: Receiving block blk_6400082566804273401 src: /10.251.38.214:42160 dest: /10.251.38.214:50010
+081111 053431 20804 INFO dfs.DataNode$PacketResponder: Received block blk_4989329877491629543 of size 67108864 from /10.250.15.67
+081111 053619 21091 INFO dfs.DataNode$DataXceiver: Receiving block blk_-6608350831463251448 src: /10.251.107.196:43317 dest: /10.251.107.196:50010
+081111 053916 21341 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-5580322334454533924 terminating
+081111 053932 21163 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_7500282100357271699 terminating
+081111 053958 21262 INFO dfs.DataNode$DataXceiver: Receiving block blk_8087142318511408355 src: /10.250.15.67:55334 dest: /10.250.15.67:50010
+081111 054004 21237 INFO dfs.DataNode$PacketResponder: Received block blk_-997605125898553536 of size 67108864 from /10.251.30.179
+081111 054018 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.106.37:50010 is added to blk_-4510259260131940043 size 3552141
+081111 054135 21577 INFO dfs.DataNode$PacketResponder: Received block blk_2270593866672608129 of size 67108864 from /10.250.11.53
+081111 054310 21173 INFO dfs.DataNode$PacketResponder: Received block blk_6685663454079607598 of size 10157271 from /10.251.66.3
+081111 054323 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.179:50010 is added to blk_-4347054230277727863 size 67108864
+081111 054342 20995 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-1067234447809438340 terminating
+081111 054443 21162 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-1096621677333075077 terminating
+081111 054449 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.125.193:50010 is added to blk_-8657800226489501791 size 3550839
+081111 054504 21552 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_2151150262081352617 terminating
+081111 054731 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3280859030919654043 is added to invalidSet of 10.251.214.130:50010
+081111 054811 21215 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-6811828069408410657 terminating
+081111 054914 21234 INFO dfs.DataNode$PacketResponder: Received block blk_4967370797322420259 of size 67108864 from /10.251.39.192
+081111 055147 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.127.243:50010 is added to blk_-719178972315562824 size 67108864
+081111 055219 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.67.4:50010 is added to blk_9093176996492793041 size 67108864
+081111 055444 21503 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-7200400342436668240 terminating
+081111 055501 21608 INFO dfs.DataNode$PacketResponder: Received block blk_7213990003235926706 of size 67108864 from /10.250.11.100
+081111 055640 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.32:50010 is added to blk_-2125743956855238111 size 67108864
+081111 055936 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.244:50010 is added to blk_-4875138366845786590 size 67108864
+081111 060015 21733 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_2508619583759354778 terminating
+081111 060043 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.244:50010 is added to blk_6095704128062577668 size 28484260
+081111 060104 21535 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_6123232805286187512 terminating
+081111 060154 21461 INFO dfs.DataNode$DataXceiver: Receiving block blk_6413965758113058023 src: /10.251.199.150:45184 dest: /10.251.199.150:50010
+081111 060244 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.197.226:50010 is added to blk_7275457888263057111 size 67108864
+081111 060510 21849 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_6818232325322327288 terminating
+081111 061043 21809 INFO dfs.DataNode$PacketResponder: Received block blk_-5954527587435406374 of size 67108864 from /10.251.106.10
+081111 061200 21837 INFO dfs.DataNode$PacketResponder: Received block blk_-4358842839092719327 of size 67108864 from /10.250.15.67
+081111 061202 22063 INFO dfs.DataNode$PacketResponder: Received block blk_1489031087420498797 of size 67108864 from /10.251.71.193
+081111 061534 21779 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-615578808743808725 terminating
+081111 061549 21862 INFO dfs.DataNode$PacketResponder: Received block blk_4588471931728384541 of size 67108864 from /10.251.90.81
+081111 061602 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001192_0/part-01192. blk_7720864196601815614
+081111 061707 21528 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-9098645110390099509 terminating
+081111 061713 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.109.209:50010 is added to blk_1129715194117079802 size 67108864
+081111 061730 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_000900_0/part-00900. blk_6690143611140381289
+081111 061739 21895 INFO dfs.DataNode$PacketResponder: Received block blk_7463248820468902190 of size 67108864 from /10.251.91.15
+081111 061857 17075 INFO dfs.DataNode$PacketResponder: Received block blk_3961831045048378097 of size 67108864 from /10.251.39.160
+081111 061900 21890 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-6220821375880228145 terminating
+081111 061909 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.66.192:50010 is added to blk_-4405302133414008227 size 67108864
+081111 061921 21913 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_8854625173826438305 terminating
+081111 061926 22010 INFO dfs.DataNode$PacketResponder: Received block blk_8699194381234371727 of size 67108864 from /10.251.214.67
+081111 062002 21694 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-8389657728641837382 terminating
+081111 062029 21573 INFO dfs.DataNode$DataXceiver: Receiving block blk_-5145508449157510071 src: /10.251.203.246:48508 dest: /10.251.203.246:50010
+081111 062038 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.215.50:50010 is added to blk_6675543598756975559 size 67108864
+081111 062102 22250 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-8364400144313355814 terminating
+081111 062238 21812 INFO dfs.DataNode$DataXceiver: Receiving block blk_6108023147232847992 src: /10.251.42.9:43819 dest: /10.251.42.9:50010
+081111 062311 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.66.102:50010 is added to blk_-1932467763723526131 size 67108864
+081111 062353 22087 INFO dfs.DataNode$DataXceiver: Receiving block blk_-8834022217832819265 src: /10.251.105.189:53216 dest: /10.251.105.189:50010
+081111 062628 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001314_0/part-01314. blk_5872617224009342667
+081111 062735 22030 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_4877808040461609832 terminating
+081111 062905 21843 INFO dfs.DataNode$PacketResponder: Received block blk_3049351456771045311 of size 67108864 from /10.251.199.159
+081111 062911 22258 INFO dfs.DataNode$PacketResponder: Received block blk_1247599917761164561 of size 67108864 from /10.251.37.240
+081111 063053 21803 INFO dfs.DataNode$PacketResponder: Received block blk_2616961363639592748 of size 67108864 from /10.251.202.134
+081111 063138 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001529_0/part-01529. blk_-826920518336899809
+081111 063241 22074 INFO dfs.DataNode$PacketResponder: Received block blk_-3436382429367583573 of size 67108864 from /10.251.107.19
+081111 063244 22352 INFO dfs.DataNode$DataXceiver: Receiving block blk_2824047463816148563 src: /10.251.42.84:35776 dest: /10.251.42.84:50010
+081111 063302 21914 INFO dfs.DataNode$PacketResponder: Received block blk_-9211699406261033878 of size 67108864 from /10.251.30.85
+081111 063305 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.67:50010 is added to blk_-5961895238114806886 size 28508403
+081111 063316 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.107.19:50010 is added to blk_-2654726224018724510 size 67108864
+081111 063323 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.67.225:50010 is added to blk_-3955287039966096707 size 67108864
+081111 063402 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.75.143:50010 is added to blk_-1379379987510648393 size 67108864
+081111 063413 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001726_0/part-01726. blk_1858805942071850133
+081111 063451 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001554_0/part-01554. blk_5183831565578080242
+081111 063459 21912 INFO dfs.DataNode$DataXceiver: Receiving block blk_3248835454898465560 src: /10.251.42.84:40950 dest: /10.251.42.84:50010
+081111 063514 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001709_0/part-01709. blk_3776895047834644694
+081111 063636 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.43.192:50010 is added to blk_8521306385156958668 size 67108864
+081111 063859 22169 INFO dfs.DataNode$DataXceiver: Receiving block blk_1606295458729964667 src: /10.251.214.32:47910 dest: /10.251.214.32:50010
+081111 063923 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.203.149:50010 is added to blk_-7282356322111075290 size 67108864
+081111 063944 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.122.65:50010 is added to blk_-5330522460969948971 size 67108864
+081111 064011 22583 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_1077394056781488 terminating
+081111 064106 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001709_0/part-01709. blk_6054235487623373096
+081111 064209 22299 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-7256345477493725857 terminating
+081111 064322 6765 INFO dfs.DataNode$PacketResponder: Received block blk_3480684347183600958 of size 67108864 from /10.251.111.209
+081111 064501 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001635_0/part-01635. blk_9034993982993401678
+081111 064603 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.31.5:50010 is added to blk_-1821104627978106102 size 67108864
+081111 064615 22671 INFO dfs.DataNode$DataXceiver: Receiving block blk_8116683912654412228 src: /10.251.39.179:42019 dest: /10.251.39.179:50010
+081111 064710 22306 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-8329840785892216949 terminating
+081111 064806 22602 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_8254500345987409515 terminating
+081111 064823 22556 INFO dfs.DataNode$DataXceiver: Receiving block blk_-4657886075935807358 src: /10.251.31.160:53084 dest: /10.251.31.160:50010
+081111 064835 22032 INFO dfs.DataNode$DataXceiver: Receiving block blk_8201813022998766557 src: /10.251.203.4:51404 dest: /10.251.203.4:50010
+081111 065205 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4438918035940270891 is added to invalidSet of 10.251.71.193:50010
+081111 065205 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5616920288053661280 is added to invalidSet of 10.251.42.9:50010
+081111 065206 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_1815340037591016775 is added to invalidSet of 10.250.9.207:50010
+081111 065208 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2154193600525549460 is added to invalidSet of 10.251.43.147:50010
+081111 065211 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5580254744888391593 is added to invalidSet of 10.251.201.204:50010
+081111 065217 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1641081065757890722 is added to invalidSet of 10.251.107.242:50010
+081111 065217 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5505696082121135363 is added to invalidSet of 10.251.214.130:50010
+081111 065218 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5689009809369418749 is added to invalidSet of 10.251.91.84:50010
+081111 065220 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_8155177385081669900 is added to invalidSet of 10.251.197.161:50010
+081111 065224 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_247452006316846355 is added to invalidSet of 10.250.6.191:50010
+081111 065224 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2657997043417110888 is added to invalidSet of 10.250.13.240:50010
+081111 065225 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-323838382557775734 is added to invalidSet of 10.251.202.209:50010
+081111 065225 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-719470845056640928 is added to invalidSet of 10.251.90.64:50010
+081111 065225 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7999375661905777727 is added to invalidSet of 10.251.106.37:50010
+081111 065226 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2451769929123196359 is added to invalidSet of 10.251.199.159:50010
+081111 065227 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3231389654886008065 is added to invalidSet of 10.251.195.52:50010
+081111 065227 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3637945019239882309 is added to invalidSet of 10.251.198.196:50010
+081111 065229 19 INFO dfs.FSDataset: Deleting block blk_-7423574498760490375 file /mnt/hadoop/dfs/data/current/subdir58/blk_-7423574498760490375
+081111 065254 19 INFO dfs.FSNamesystem: BLOCK* ask 10.250.17.177:50010 to delete  blk_-8570780307468499817 blk_-9122557405432088649 blk_-4393063808227796056 blk_8767569714374844347 blk_7079754042611867581 blk_7608961006114219538 blk_-5017273584996436939 blk_-6537833125980536955 blk_7610838808763810123 blk_3300803097775546532 blk_-5120750586032922592 blk_1577274266662884430 blk_765879159867598347 blk_-9076085976403711202 blk_-3198963348573340497 blk_-4645750029177277209 blk_-5136142986912961316 blk_5677959846373741243 blk_2107477892986152528 blk_-4235116161537008844 blk_6082535783543982566 blk_-4809870147222033236 blk_8818706925296961012 blk_-5203577173046267127 blk_189089569009261656 blk_446299976487589160 blk_-3916247521166632303 blk_-3324962406687427922 blk_-1807424528783081572 blk_-6858401049333055963 blk_6036564204960295926 blk_-8140723044408248078 blk_-3800132731140204959 blk_1716344083117307767 blk_-5194808114606613364 blk_-5473871016976323232 blk_2920934363167004552 blk_8736689095894369097 blk_-7642734632751940776 blk_3408482260833769309 blk_118013751374560901 blk_7963891081239759520 blk_3813114133944383323 blk_3042818489384932576 blk_-4570173726231458270 blk_-1564644006975920581 blk_338095650783321996 blk_3150135312641203550 blk_4285859645577726288 blk_3438772130782939627 blk_2634772258588877972 blk_-6795664812575964130 blk_3923069610304693233 blk_-1782996202120067721 blk_2004418049430157212 blk_1932147224007687756 blk_-582901062969027153 blk_5072240701440032119 blk_-7919006477393039068 blk_-7318022361288598312 blk_-6974693594143537436 blk_-5435767047126325206 blk_-5805500288959332434 blk_-7109885589081848850 blk_2161580591957523893 blk_7240227881194993860 blk_-8298405680648445349 blk_-4253026248821272215 blk_8377661448601579317 blk_8029153852899017155 blk_-8754388319080705916 blk_-7844092300527332901 blk_710178463364063355 blk_-5136849989188547884 blk_8393887138377503163 blk_-6950176077776664217 blk_-6488701068659548195 blk_2537458728254532453 blk_364441107933628577 blk_6207861897580168557 blk_8814943807366894581 blk_-4150682644311695471 blk_9174833667156726933 blk_649427218152856001 blk_-7403541028238011236 blk_-334982586592048773 blk_61908781908925992 blk_6385574357371832424 blk_-66376131060945541 blk_1372596948297458670 blk_-3389135155401857220 blk_-6035411221441929663 blk_-5127580069634421247 blk_-5685246533892022418 blk_4977937528993040451 blk_5680538862600094527 blk_-8378747462487962732 blk_425101290285860876 blk_6306622708327890839 blk_-1067866602168873257
+081111 065258 19 INFO dfs.FSDataset: Deleting block blk_-9169228974826183399 file /mnt/hadoop/dfs/data/current/subdir5/blk_-9169228974826183399
+081111 065303 19 INFO dfs.FSNamesystem: BLOCK* ask 10.250.10.213:50010 to delete  blk_4029139044660806713 blk_-5471189807977280544 blk_6708643067868168687 blk_-500678958150296008 blk_-8597840983621849778 blk_-3610057702150392748 blk_-1709606535283888232 blk_-4154362211643572668 blk_-8892080524136798472 blk_5356427838869009345 blk_-6987238639050161133 blk_-5215128860160823363 blk_7186692462976470823 blk_-6538449588297475521 blk_-2165930080589343952 blk_-5524899010031625427 blk_6384439316405471171 blk_-2965258329365213675 blk_118950937507976810 blk_-1717088081766373300 blk_-3911466865418055820 blk_1237334407720045724 blk_-760015977981369567 blk_-6802007379650646616 blk_-7667535133893574689 blk_6865645438678864855 blk_4633996820313194570 blk_7225301266481603731 blk_-4930257130609958866 blk_-4124845864570823487 blk_4927011145115127531 blk_7234346856930822716 blk_7159969052744592746 blk_1296823600557793869 blk_2209319141644287774 blk_-622218131799806364 blk_-8154516246083521409 blk_4466433199471909449 blk_8406894133999850666 blk_991075908349619367 blk_-2081474832657208733 blk_-5573393775847919985 blk_2004177185950968695 blk_4041319486058127641 blk_6449230045010995668 blk_5978265573904271474 blk_-4813738732036414715 blk_4389340532803855247 blk_-857151863616763327 blk_-7200136644339435027 blk_-1454962873426270839 blk_-5012294311590635938 blk_7112727670634942639 blk_3335012758760643328 blk_3382627815322561484 blk_825124020036421636 blk_-8040559034239258688 blk_-5415591001139074826 blk_-1052513063506891954 blk_-1155882018729560343 blk_-5679835604685169040 blk_-4498808851217768984 blk_8345415947062862337 blk_8521655806854586696 blk_7602939593939794410 blk_-4833650023923869528 blk_7237730029042141635 blk_2860897425785746911 blk_-1937193099911148343 blk_5740615689780260922 blk_963252337613423037 blk_5537011318013544619 blk_2626057344048606017 blk_8296499240199635880 blk_7211071078501521087 blk_8823112510768971040 blk_-3366974935992288326 blk_-2947778702643296262 blk_7693891282153136044 blk_4644812717442758529 blk_-5724970555730638200 blk_-3039294462945223064 blk_-1729755380346651221 blk_-6448673813272428418 blk_-7724282460846954976 blk_2698691234887375588 blk_-4043525878322523713 blk_-5195120009388265 blk_8879208244602324204 blk_-5784376901556131897 blk_-5201149273969117873 blk_5253889604362640423 blk_7067050654303940677 blk_8992626816092659826 blk_-488462739843441981 blk_8543991617360374935 blk_1943146154560599630 blk_-9194660123773136535 blk_3351984198891394382 blk_-6759123807563555545
+081111 065339 22547 INFO dfs.DataNode$PacketResponder: Received block blk_5406084276349645828 of size 67108864 from /10.250.10.223
+081111 065404 22999 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_2016964533702776852 terminating
+081111 065418 18 INFO dfs.FSDataset: Deleting block blk_-1306900105984505600 file /mnt/hadoop/dfs/data/current/subdir31/blk_-1306900105984505600
+081111 065420 19 INFO dfs.FSDataset: Deleting block blk_-1312981516354612257 file /mnt/hadoop/dfs/data/current/subdir29/blk_-1312981516354612257
+081111 065420 19 INFO dfs.FSDataset: Deleting block blk_-2658615574293326723 file /mnt/hadoop/dfs/data/current/subdir37/blk_-2658615574293326723
+081111 065423 19 INFO dfs.FSDataset: Deleting block blk_2107487634698646045 file /mnt/hadoop/dfs/data/current/subdir3/blk_2107487634698646045
+081111 065426 19 INFO dfs.FSDataset: Deleting block blk_-253282915050290778 file /mnt/hadoop/dfs/data/current/subdir23/blk_-253282915050290778
+081111 065435 19 INFO dfs.FSDataset: Deleting block blk_1587615395786683981 file /mnt/hadoop/dfs/data/current/subdir14/blk_1587615395786683981
+081111 065437 19 INFO dfs.FSDataset: Deleting block blk_3706543205492061794 file /mnt/hadoop/dfs/data/current/subdir1/blk_3706543205492061794
+081111 065440 19 INFO dfs.FSDataset: Deleting block blk_3862032846413436284 file /mnt/hadoop/dfs/data/current/subdir28/blk_3862032846413436284
+081111 065444 18 INFO dfs.FSDataset: Deleting block blk_4632283243694149854 file /mnt/hadoop/dfs/data/current/subdir40/blk_4632283243694149854
+081111 065444 19 INFO dfs.FSDataset: Deleting block blk_1018961650823645078 file /mnt/hadoop/dfs/data/current/subdir60/blk_1018961650823645078
+081111 065444 19 INFO dfs.FSDataset: Deleting block blk_1213582438865696738 file /mnt/hadoop/dfs/data/current/subdir56/blk_1213582438865696738
+081111 065445 19 INFO dfs.FSDataset: Deleting block blk_2473550781612396886 file /mnt/hadoop/dfs/data/current/subdir54/blk_2473550781612396886
+081111 065500 19 INFO dfs.FSDataset: Deleting block blk_8102707766842966459 file /mnt/hadoop/dfs/data/current/subdir29/blk_8102707766842966459
+081111 065500 22388 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-352190670750948803 terminating
+081111 065503 19 INFO dfs.FSDataset: Deleting block blk_6491888411266994867 file /mnt/hadoop/dfs/data/current/subdir39/blk_6491888411266994867
+081111 065504 18 INFO dfs.FSDataset: Deleting block blk_3336810835691486095 file /mnt/hadoop/dfs/data/current/subdir11/blk_3336810835691486095
+081111 065510 19 INFO dfs.FSDataset: Deleting block blk_4367982328407767477 file /mnt/hadoop/dfs/data/current/subdir28/blk_4367982328407767477
+081111 065511 19 INFO dfs.FSDataset: Deleting block blk_6943254721518837570 file /mnt/hadoop/dfs/data/current/subdir41/blk_6943254721518837570
+081111 065515 19 INFO dfs.FSDataset: Deleting block blk_6077744985764117617 file /mnt/hadoop/dfs/data/current/subdir17/blk_6077744985764117617
+081111 065526 22651 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_6975937964598933356 terminating
+081111 065538 19 INFO dfs.FSDataset: Deleting block blk_5771906433100975293 file /mnt/hadoop/dfs/data/current/subdir37/blk_5771906433100975293
+081111 065605 22827 INFO dfs.DataNode$DataXceiver: Receiving block blk_-3884471885525630813 src: /10.251.106.50:60327 dest: /10.251.106.50:50010
+081111 065705 22525 INFO dfs.DataNode$DataXceiver: Receiving block blk_8596624696139957935 src: /10.251.214.175:41468 dest: /10.251.214.175:50010
+081111 065705 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000153_0/part-00153. blk_8596624696139957935
+081111 065803 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.67:50010 is added to blk_-8483420270408348004 size 67108864
+081111 065804 19 INFO dfs.FSDataset: Deleting block blk_4506604798892399878 file /mnt/hadoop/dfs/data/current/subdir0/blk_4506604798892399878
+081111 065920 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000197_0/part-00197. blk_1832308388558480
+081111 065936 22801 INFO dfs.DataNode$PacketResponder: Received block blk_2247786307216183697 of size 67108864 from /10.251.67.4
+081111 070022 22093 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-4289592006812254261 terminating
+081111 070040 22706 INFO dfs.DataNode$DataXceiver: Receiving block blk_5989505185938770383 src: /10.251.67.4:53429 dest: /10.251.67.4:50010
+081111 070055 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.121.224:50010 is added to blk_3134656542322449478 size 67108864
+081111 070232 13 INFO dfs.DataBlockScanner: Verification succeeded for blk_-8050165297538775793
+081111 070246 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.90.134:50010 is added to blk_-3184700311670257792 size 67108864
+081111 070258 22788 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_5114572025256210948 terminating
+081111 070301 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000451_0/part-00451. blk_-8744988583359134013
+081111 070326 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000079_0/part-00079. blk_4225726256421431188
+081111 070458 22933 INFO dfs.DataNode$PacketResponder: Received block blk_1060814796407897179 of size 67108864 from /10.251.109.209
+081111 070505 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.25.237:50010 is added to blk_-1496429201748767714 size 67108864
+081111 070519 22971 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-4684475480143348818 terminating
+081111 070519 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000077_0/part-00077. blk_608957629753483727
+081111 070635 22203 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-7937864120968665564 terminating
+081111 070735 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.130:50010 is added to blk_-4427507243535536615 size 67108864
+081111 070823 22537 INFO dfs.DataNode$PacketResponder: Received block blk_7830067201550857864 of size 67108864 from /10.251.105.189
+081111 070836 22330 INFO dfs.DataNode$PacketResponder: Received block blk_-2194976790278647102 of size 67108864 from /10.251.110.8
+081111 070836 23168 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_8459274965060101250 terminating
+081111 070912 22946 INFO dfs.DataNode$PacketResponder: Received block blk_1561008813520212225 of size 67108864 from /10.250.7.230
+081111 070918 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.6.214:50010 is added to blk_5963655886023015963 size 67108864
+081111 070928 23133 INFO dfs.DataNode$DataXceiver: Receiving block blk_2377944115560974127 src: /10.251.75.163:55681 dest: /10.251.75.163:50010
+081111 071020 22762 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_6030936529326346827 terminating
+081111 071027 22865 INFO dfs.DataNode$DataXceiver: Receiving block blk_3322875843051058970 src: /10.250.7.244:40195 dest: /10.250.7.244:50010
+081111 071037 21663 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-7269672042149855641 terminating
+081111 071042 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.134:50010 is added to blk_-5214060566378896158 size 67108864
+081111 071112 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000523_0/part-00523. blk_-4801855948459616884
+081111 071205 23083 INFO dfs.DataNode$PacketResponder: Received block blk_-4846710336436578833 of size 67108864 from /10.251.203.129
+081111 071331 22956 INFO dfs.DataNode$PacketResponder: Received block blk_-1522107359378428427 of size 67108864 from /10.251.125.174
+081111 071510 22974 INFO dfs.DataNode$PacketResponder: Received block blk_-1846853350696018836 of size 67108864 from /10.250.15.67
+081111 071611 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000997_0/part-00997. blk_-500534246236005335
+081111 071713 23240 INFO dfs.DataNode$PacketResponder: Received block blk_-1236077201457689973 of size 67108864 from /10.251.35.1
+081111 071731 23039 INFO dfs.DataNode$PacketResponder: Received block blk_8474920544984206742 of size 67108864 from /10.251.91.229
+081111 071746 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.71.16:50010 is added to blk_-6464763289185102366 size 67108864
+081111 071904 22560 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7646004878694144580 src: /10.251.202.181:47130 dest: /10.251.202.181:50010
+081111 071912 23232 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-41928108292416895 terminating
+081111 071939 22914 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7389979618829759505 src: /10.251.127.47:58395 dest: /10.251.127.47:50010
+081111 072053 23570 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_2096030750186708493 terminating
+081111 072059 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.6:50010 is added to blk_-2345355483730155757 size 67108864
+081111 072214 23052 INFO dfs.DataNode$PacketResponder: Received block blk_5834218936335592624 of size 67108864 from /10.251.111.228
+081111 072224 23062 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-5504500392858491441 terminating
+081111 072300 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.17.177:50010 is added to blk_4385764838827095986 size 3541872
+081111 072355 22702 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-3710747952520609225 terminating
+081111 072356 23300 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_707166530951154301 terminating
+081111 072356 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.126.22:50010 is added to blk_707166530951154301 size 67108864
+081111 072403 23051 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_2241654010576170013 terminating
+081111 072447 23098 INFO dfs.DataNode$DataXceiver: Receiving block blk_-8475679647841427708 src: /10.251.75.49:58661 dest: /10.251.75.49:50010
+081111 072523 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.27.63:50010 is added to blk_-7794786562417612249 size 67108864
+081111 072710 22924 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-2068111211565768713 terminating
+081111 072733 23446 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7238035741206373733 src: /10.251.202.209:59561 dest: /10.251.202.209:50010
+081111 072818 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_001195_0/part-01195. blk_5708405953850477535
+081111 072857 23371 INFO dfs.DataNode$PacketResponder: Received block blk_2253084440592362960 of size 67108864 from /10.251.199.19
+081111 072901 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.91.32:50010 is added to blk_-8127580564011467092 size 67108864
+081111 072903 23158 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-8568673600040025636 terminating
+081111 072921 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.107.242:50010 is added to blk_621685330749869453 size 67108864
+081111 072948 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.230:50010 is added to blk_8663640697928077697 size 67108864
+081111 072949 23644 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_1508705816376906895 terminating
+081111 072956 23082 INFO dfs.DataNode$PacketResponder: Received block blk_-6441360440068187612 of size 67108864 from /10.250.10.100
+081111 073005 23505 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_2128110944185709079 terminating
+081111 073013 23372 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_871974742726663441 terminating
+081111 073059 23319 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_8049943837789435742 terminating
+081111 073109 23004 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-8246207776580662770 terminating
+081111 073148 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.11.100:50010 is added to blk_3406384548372443486 size 67108864
+081111 073230 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.193.175:50010 is added to blk_2460145905812664251 size 67108864
+081111 073302 23438 INFO dfs.DataNode$PacketResponder: Received block blk_-7207514537719465756 of size 67108864 from /10.251.75.143
+081111 073314 23367 INFO dfs.DataNode$DataXceiver: Receiving block blk_5216491057643255876 src: /10.251.105.189:55126 dest: /10.251.105.189:50010
+081111 073350 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.96:50010 is added to blk_4641147544753118391 size 67108864
+081111 073403 23490 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-85872290979354091 terminating
+081111 073406 23140 INFO dfs.DataNode$PacketResponder: Received block blk_-8310554294841246175 of size 67108864 from /10.251.123.132
+081111 073441 17869 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7293871043749246063 src: /10.251.193.175:59757 dest: /10.251.193.175:50010
+081111 073507 23329 INFO dfs.DataNode$PacketResponder: Received block blk_3107521534415119817 of size 67108864 from /10.251.193.224
+081111 073525 23203 INFO dfs.DataNode$PacketResponder: Received block blk_7194943883245628915 of size 67108864 from /10.251.71.193
+081111 073610 23484 INFO dfs.DataNode$PacketResponder: Received block blk_-3816036740130815667 of size 3547785 from /10.250.19.227
+081111 073704 23532 INFO dfs.DataNode$PacketResponder: Received block blk_-5450224419450631495 of size 67108864 from /10.251.42.84
+081111 073746 23412 INFO dfs.DataNode$DataXceiver: Receiving block blk_5881782374981838094 src: /10.251.214.18:43091 dest: /10.251.214.18:50010
+081111 073802 23624 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_7078766226078740026 terminating
+081111 073914 23367 INFO dfs.DataNode$PacketResponder: Received block blk_-7380871572601322244 of size 67108864 from /10.251.121.224
+081111 073943 23467 INFO dfs.DataNode$DataXceiver: Receiving block blk_3846795603907041885 src: /10.250.10.176:47296 dest: /10.250.10.176:50010
+081111 073949 23599 INFO dfs.DataNode$PacketResponder: Received block blk_7922331746517419368 of size 67108864 from /10.251.199.19
+081111 074108 23144 INFO dfs.DataNode$PacketResponder: Received block blk_155320394753274773 of size 67108864 from /10.251.201.204
+081111 074200 23325 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-5722491454804415982 terminating
+081111 074309 23736 INFO dfs.DataNode$PacketResponder: Received block blk_-3482997549732691785 of size 67108864 from /10.251.122.79
+081111 074409 23194 INFO dfs.DataNode$DataXceiver: Receiving block blk_6417614801998326532 src: /10.251.214.67:48694 dest: /10.251.214.67:50010
+081111 074431 23560 INFO dfs.DataNode$PacketResponder: Received block blk_-1090213273274684471 of size 67108864 from /10.251.214.130
+081111 074449 23551 INFO dfs.DataNode$DataXceiver: Receiving block blk_-3738901473077208093 src: /10.251.199.150:49679 dest: /10.251.199.150:50010
+081111 074540 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_001850_0/part-01850. blk_-4312777901444596370
+081111 074548 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_001835_0/part-01835. blk_6178964531181542074
+081111 074653 23823 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_8550326614414622861 terminating
+081111 074955 23635 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-6525012344542022819 terminating
+081111 074958 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_001983_0/part-01983. blk_8861349372992394289
+081111 075054 23885 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-1049340855430710153 terminating
+081111 075114 23523 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_703049809255765647 terminating
+081111 075129 23397 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7460532841070848624 src: /10.250.15.67:55076 dest: /10.250.15.67:50010
+081111 075151 23925 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7623732795385061487 src: /10.251.122.65:40641 dest: /10.251.122.65:50010
+081111 075158 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_002009_1/part-02009. blk_-7367386750462511488
+081111 075212 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.228:50010 is added to blk_-1237539644269634790 size 67108864
+081111 075317 23851 INFO dfs.DataNode$DataXceiver: Receiving block blk_7713504868233504097 src: /10.251.127.191:36437 dest: /10.251.127.191:50010
+081111 075345 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.65.203:50010 is added to blk_8005746184358076390 size 67108864
+081111 075408 23362 INFO dfs.DataNode$PacketResponder: Received block blk_955083461510572332 of size 41287838 from /10.251.107.242
+081111 075537 23945 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_283922378823540530 terminating
+081111 075616 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4471044334742081825 is added to invalidSet of 10.250.15.198:50010
+081111 075619 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-3671953658029337449 is added to invalidSet of 10.250.14.143:50010
+081111 075623 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-75893538967225087 is added to invalidSet of 10.250.15.198:50010
+081111 075626 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_805187982300776163 is added to invalidSet of 10.251.73.188:50010
+081111 075628 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4631777956354958682 is added to invalidSet of 10.251.30.134:50010
+081111 075629 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7595375726951801956 is added to invalidSet of 10.251.122.79:50010
+081111 075631 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4681205519208992498 is added to invalidSet of 10.250.6.191:50010
+081111 075632 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5702487846232575705 is added to invalidSet of 10.250.14.38:50010
+081111 075634 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4834069779372284635 is added to invalidSet of 10.251.71.97:50010
+081111 075636 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3735517274901501821 is added to invalidSet of 10.250.6.4:50010
+081111 075637 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5018797996887008111 is added to invalidSet of 10.251.89.155:50010
+081111 075638 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-566178736644429906 is added to invalidSet of 10.251.70.37:50010
+081111 075640 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8121498678081035000 is added to invalidSet of 10.250.11.100:50010
+081111 075657 23748 INFO dfs.DataNode$DataXceiver: Receiving block blk_7996616083434301906 src: /10.251.123.195:53947 dest: /10.251.123.195:50010
+081111 075727 19 INFO dfs.FSDataset: Deleting block blk_6888300867578983331 file /mnt/hadoop/dfs/data/current/subdir46/blk_6888300867578983331
+081111 075743 23596 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_7625391056418655045 terminating
+081111 075746 19 INFO dfs.FSDataset: Deleting block blk_-8443921001690182522 file /mnt/hadoop/dfs/data/current/subdir33/blk_-8443921001690182522
+081111 075747 23844 INFO dfs.DataNode$DataXceiver: Receiving block blk_706826531153199550 src: /10.250.5.161:58254 dest: /10.250.5.161:50010
+081111 075753 19 INFO dfs.FSDataset: Deleting block blk_-7446091384471755694 file /mnt/hadoop/dfs/data/current/subdir30/blk_-7446091384471755694
+081111 075759 19 INFO dfs.FSDataset: Deleting block blk_-4352313989800650828 file /mnt/hadoop/dfs/data/current/subdir56/blk_-4352313989800650828
+081111 075809 19 INFO dfs.FSDataset: Deleting block blk_-6292499669518281202 file /mnt/hadoop/dfs/data/current/subdir26/blk_-6292499669518281202
+081111 075809 23659 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-4582442491366282435 terminating
+081111 075810 19 INFO dfs.FSDataset: Deleting block blk_-6750694665033046901 file /mnt/hadoop/dfs/data/current/subdir63/blk_-6750694665033046901
+081111 075814 19 INFO dfs.FSDataset: Deleting block blk_-6131345369657245178 file /mnt/hadoop/dfs/data/current/blk_-6131345369657245178
+081111 075824 19 INFO dfs.FSDataset: Deleting block blk_-3575718350717794894 file /mnt/hadoop/dfs/data/current/blk_-3575718350717794894
+081111 075833 19 INFO dfs.FSDataset: Deleting block blk_-4380385204018751771 file /mnt/hadoop/dfs/data/current/subdir38/blk_-4380385204018751771
+081111 075838 19 INFO dfs.FSDataset: Deleting block blk_-3594701313167635091 file /mnt/hadoop/dfs/data/current/subdir54/blk_-3594701313167635091
+081111 075844 18 INFO dfs.FSDataset: Deleting block blk_-1693418636466747515 file /mnt/hadoop/dfs/data/current/subdir16/blk_-1693418636466747515
+081111 075854 19 INFO dfs.FSDataset: Deleting block blk_5806397523737304814 file /mnt/hadoop/dfs/data/current/subdir34/blk_5806397523737304814
+081111 075901 18 INFO dfs.FSDataset: Deleting block blk_-1345585044778938153 file /mnt/hadoop/dfs/data/current/subdir45/blk_-1345585044778938153
+081111 075901 19 INFO dfs.FSDataset: Deleting block blk_2489882700357182381 file /mnt/hadoop/dfs/data/current/blk_2489882700357182381
+081111 075902 19 INFO dfs.FSDataset: Deleting block blk_-1800458850981311953 file /mnt/hadoop/dfs/data/current/subdir57/blk_-1800458850981311953
+081111 075905 19 INFO dfs.FSDataset: Deleting block blk_6373260430960091026 file /mnt/hadoop/dfs/data/current/subdir43/blk_6373260430960091026
+081111 075907 19 INFO dfs.FSDataset: Deleting block blk_-1278725622357466169 file /mnt/hadoop/dfs/data/current/subdir0/blk_-1278725622357466169
+081111 075911 19 INFO dfs.FSDataset: Deleting block blk_4513772639980123655 file /mnt/hadoop/dfs/data/current/blk_4513772639980123655
+081111 075914 19 INFO dfs.FSDataset: Deleting block blk_1838564958520120941 file /mnt/hadoop/dfs/data/current/subdir39/blk_1838564958520120941
+081111 075915 19 INFO dfs.FSDataset: Deleting block blk_7985460426680885040 file /mnt/hadoop/dfs/data/current/blk_7985460426680885040
+081111 075920 19 INFO dfs.FSDataset: Deleting block blk_2215517976324634098 file /mnt/hadoop/dfs/data/current/subdir4/blk_2215517976324634098
+081111 075920 19 INFO dfs.FSDataset: Deleting block blk_5453150794205420798 file /mnt/hadoop/dfs/data/current/subdir24/blk_5453150794205420798
+081111 075933 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.194.102:50010 is added to blk_-7522572236891389139 size 67108864
+081111 075957 19 INFO dfs.FSDataset: Deleting block blk_6163400028286940197 file /mnt/hadoop/dfs/data/current/subdir7/blk_6163400028286940197
+081111 080006 19 INFO dfs.FSDataset: Deleting block blk_7583807825342916938 file /mnt/hadoop/dfs/data/current/subdir13/blk_7583807825342916938
+081111 080019 23787 INFO dfs.DataNode$DataXceiver: Receiving block blk_-5957060034695163774 src: /10.251.29.239:56334 dest: /10.251.29.239:50010
+081111 080108 24040 INFO dfs.DataNode$DataXceiver: Receiving block blk_-2250942073136893488 src: /10.251.126.22:59179 dest: /10.251.126.22:50010
+081111 080118 23798 INFO dfs.DataNode$PacketResponder: Received block blk_-3693786175267111588 of size 67108864 from /10.251.71.97
+081111 080151 19 INFO dfs.FSDataset: Deleting block blk_8384967715738359346 file /mnt/hadoop/dfs/data/current/subdir27/blk_8384967715738359346
+081111 080256 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.223:50010 is added to blk_-1948505589144820414 size 67108864
+081111 080309 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.202.209:50010 is added to blk_-6224982681533811277 size 67108864
+081111 080329 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.107.196:50010 is added to blk_-2843780069100181052 size 67108864
+081111 080505 23478 INFO dfs.DataNode$DataXceiver: Receiving block blk_8083872765147994327 src: /10.250.15.67:41990 dest: /10.250.15.67:50010
+081111 080554 24194 INFO dfs.DataNode$PacketResponder: Received block blk_-6502143621885580798 of size 67108864 from /10.251.39.179
+081111 080645 23938 INFO dfs.DataNode$DataXceiver: Receiving block blk_-8323785930877970805 src: /10.250.13.240:40589 dest: /10.250.13.240:50010
+081111 080654 23600 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-7587189852169913514 terminating
+081111 080710 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.74.192:50010 is added to blk_7439201509602018752 size 67108864
+081111 080803 24149 INFO dfs.DataNode$PacketResponder: Received block blk_3224184805694764748 of size 67108864 from /10.250.18.114
+081111 080934 19 INFO dfs.FSNamesystem: BLOCK* ask 10.250.14.38:50010 to replicate blk_-7571492020523929240 to datanode(s) 10.251.122.38:50010
+081111 081027 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.6:50010 is added to blk_1119272693889755844 size 67108864
+081111 081029 24268 INFO dfs.DataNode$PacketResponder: Received block blk_1600228140214754078 of size 67108864 from /10.251.90.81
+081111 081055 24136 INFO dfs.DataNode$DataXceiver: Received block blk_1473949624670719319 src: /10.251.29.239:35617 dest: /10.251.29.239:50010 of size 67108864
+081111 081145 23823 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7227576651324043655 src: /10.251.107.227:40740 dest: /10.251.107.227:50010
+081111 081406 18 INFO dfs.FSDataset: Deleting block blk_-7606467001548719462 file /mnt/hadoop/dfs/data/current/subdir2/blk_-7606467001548719462
+081111 081416 24027 INFO dfs.DataNode$PacketResponder: Received block blk_2771018387166611008 of size 67108864 from /10.251.26.131
+081111 081534 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.110.160:50010 is added to blk_-2852294661215451806 size 67108864
+081111 081606 23925 INFO dfs.DataNode$DataXceiver: Receiving block blk_7891129742741763034 src: /10.251.107.227:57000 dest: /10.251.107.227:50010
+081111 081617 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.15.240:50010 is added to blk_8512974147315737844 size 67108864
+081111 081640 23985 INFO dfs.DataNode$PacketResponder: Received block blk_427477290315080955 of size 67108864 from /10.251.123.132
+081111 081702 24075 INFO dfs.DataNode$PacketResponder: Received block blk_-7630699912570186723 of size 67108864 from /10.251.71.240
+081111 081847 24224 INFO dfs.DataNode$DataXceiver: Receiving block blk_1512136249403454074 src: /10.250.7.244:47958 dest: /10.250.7.244:50010
+081111 081938 23963 INFO dfs.DataNode$PacketResponder: Received block blk_8655748951361667770 of size 67108864 from /10.251.109.236
+081111 081954 24553 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_8487226415276391460 terminating
+081111 082005 23974 INFO dfs.DataNode$DataXceiver: Receiving block blk_-8162657657061473938 src: /10.251.26.131:35484 dest: /10.251.26.131:50010
+081111 082039 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.66.3:50010 is added to blk_-4970213618915792510 size 67108864
+081111 082108 24348 INFO dfs.DataNode$DataXceiver: Receiving block blk_9034824096129858680 src: /10.250.6.223:45371 dest: /10.250.6.223:50010
+081111 082322 24292 INFO dfs.DataNode$PacketResponder: Received block blk_-4775386099844009890 of size 67108864 from /10.251.107.19
+081111 082527 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001049_0/part-01049. blk_-1533191386601391937
+081111 082528 24365 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_2096199637324483321 terminating
+081111 082541 24284 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_3433046099598424314 terminating
+081111 082650 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.13.240:50010 is added to blk_4170936278386288557 size 67108864
+081111 082730 24531 INFO dfs.DataNode$PacketResponder: Received block blk_-3023983271692989109 of size 67108864 from /10.251.110.68
+081111 082809 24442 INFO dfs.DataNode$DataXceiver: Receiving block blk_469126362137371425 src: /10.251.199.245:53897 dest: /10.251.199.245:50010
+081111 082902 24331 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_3922791077126964673 terminating
+081111 082952 24363 INFO dfs.DataNode$PacketResponder: Received block blk_5813923864071791162 of size 67108864 from /10.251.125.193
+081111 082955 24432 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_7412933088374169877 terminating
+081111 083120 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.39.192:50010 is added to blk_-3888538223380979891 size 67108864
+081111 083143 24261 INFO dfs.DataNode$PacketResponder: Received block blk_-5970165518655489569 of size 67108864 from /10.250.14.196
+081111 083148 24344 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-7319442762668598889 terminating
+081111 083212 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_000973_0/part-00973. blk_5844313985011885282
+081111 083219 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001348_0/part-01348. blk_4531288786306744275
+081111 083336 24444 INFO dfs.DataNode$PacketResponder: Received block blk_-3845286823494684378 of size 67108864 from /10.251.107.196
+081111 083338 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.203.129:50010 is added to blk_6170586659371027531 size 67108864
+081111 083418 24490 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-808401720390253471 terminating
+081111 083426 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.123.33:50010 is added to blk_1447281351164457761 size 67108864
+081111 083427 24635 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7911408976820434495 src: /10.251.42.191:35834 dest: /10.251.42.191:50010
+081111 083439 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.89.155:50010 is added to blk_-5455316994110506037 size 67108864
+081111 083443 24635 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-917268749136585019 terminating
+081111 083506 24609 INFO dfs.DataNode$DataXceiver: Receiving block blk_1122812501843755360 src: /10.251.198.196:51036 dest: /10.251.198.196:50010
+081111 083742 24575 INFO dfs.DataNode$DataXceiver: Receiving block blk_5983149244832683042 src: /10.251.42.191:52748 dest: /10.251.42.191:50010
+081111 083753 24539 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-5263787695149681326 terminating
+081111 083755 24394 INFO dfs.DataNode$DataXceiver: Receiving block blk_5781019224640206392 src: /10.250.11.194:37060 dest: /10.250.11.194:50010
+081111 083839 24534 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_4786794545180705888 terminating
+081111 083839 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.73.220:50010 is added to blk_1303107722036031233 size 67108864
+081111 083955 24547 INFO dfs.DataNode$PacketResponder: Received block blk_4539833452749813987 of size 67108864 from /10.251.42.16
+081111 084003 24758 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_703387617548630438 terminating
+081111 084102 24677 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_5689516499354445029 terminating
+081111 084148 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.11.100:50010 is added to blk_-4595094649363595358 size 67108864
+081111 084149 24657 INFO dfs.DataNode$DataXceiver: Receiving block blk_-1733026139299872187 src: /10.251.29.239:52800 dest: /10.251.29.239:50010
+081111 084214 24555 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-1910608563003942187 terminating
+081111 084228 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001394_0/part-01394. blk_-1101091099241306483
+081111 084233 24661 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_7901008236334420364 terminating
+081111 084322 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.42.207:50010 is added to blk_2119401975697524206 size 67108864
+081111 084405 24786 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_6204056282927975796 terminating
+081111 084423 24772 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_215466486430758887 terminating
+081111 084619 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001736_0/part-01736. blk_-3055230140330616860
+081111 084721 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.73.220:50010 is added to blk_4473390551542202999 size 67108864
+081111 084728 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001649_0/part-01649. blk_-5581540863377925517
+081111 084732 24650 INFO dfs.DataNode$PacketResponder: Received block blk_7864850143895703065 of size 67108864 from /10.251.107.98
+081111 084757 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.91.32:50010 is added to blk_423916008836295480 size 67108864
+081111 084759 24704 INFO dfs.DataNode$DataXceiver: Receiving block blk_2166777223671724319 src: /10.251.214.175:52741 dest: /10.251.214.175:50010
+081111 084818 25055 INFO dfs.DataNode$PacketResponder: Received block blk_4031738712701565209 of size 67108864 from /10.251.199.150
+081111 084831 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001940_0/part-01940. blk_1910319264393500537
+081111 084842 24787 INFO dfs.DataNode$PacketResponder: Received block blk_-8789402864074203800 of size 67108864 from /10.251.193.224
+081111 084906 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.17.177:50010 is added to blk_5733038550092620376 size 67108864
+081111 085059 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001642_0/part-01642. blk_8215843708467112607
+081111 085146 24834 INFO dfs.DataNode$PacketResponder: Received block blk_-954856062493437881 of size 67108864 from /10.251.106.10
+081111 085221 24607 INFO dfs.DataNode$PacketResponder: Received block blk_241585185788373386 of size 67108864 from /10.251.111.80
+081111 085351 24958 INFO dfs.DataNode$DataXceiver: Receiving block blk_3808164640986377400 src: /10.251.75.79:36685 dest: /10.251.75.79:50010
+081111 085429 25314 INFO dfs.DataNode$PacketResponder: Received block blk_-6719337521981113643 of size 3538321 from /10.250.15.198
+081111 085432 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.197.226:50010 is added to blk_-23492739449820023 size 67108864
+081111 085502 24832 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-8969188698416564850 terminating
+081111 085529 24695 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-5144548163293169177 terminating
+081111 085620 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.122.79:50010 is added to blk_-2895171018912807248 size 67108864
+081111 085634 24881 INFO dfs.DataNode$DataXceiver: Receiving block blk_-5892603381347650390 src: /10.250.14.143:57484 dest: /10.250.14.143:50010
+081111 085634 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_002007_0/part-02007. blk_7908524857056299716
+081111 085859 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3492869167398569662 is added to invalidSet of 10.250.5.161:50010
+081111 085906 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-3894803026385053344 is added to invalidSet of 10.251.43.21:50010
+081111 085906 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7873581794069372986 is added to invalidSet of 10.251.194.147:50010
+081111 085907 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2060553104861908174 is added to invalidSet of 10.251.201.204:50010
+081111 085909 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6783506473540833076 is added to invalidSet of 10.251.202.209:50010
+081111 085910 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8863130543753323383 is added to invalidSet of 10.251.123.1:50010
+081111 085911 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8769398708439834546 is added to invalidSet of 10.251.127.243:50010
+081111 085912 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-3316519570098743145 is added to invalidSet of 10.251.70.211:50010
+081111 085912 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6068451475575444798 is added to invalidSet of 10.251.43.210:50010
+081111 085912 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7709713535298137702 is added to invalidSet of 10.251.215.50:50010
+081111 085914 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1030832046197982436 is added to invalidSet of 10.251.89.155:50010
+081111 085914 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4738781172941319823 is added to invalidSet of 10.251.91.32:50010
+081111 085916 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2869833078504290822 is added to invalidSet of 10.251.123.132:50010
+081111 085916 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6261136177206340449 is added to invalidSet of 10.251.70.37:50010
+081111 085917 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1755309160709170318 is added to invalidSet of 10.251.39.209:50010
+081111 085917 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8312238797251504127 is added to invalidSet of 10.251.89.155:50010
+081111 085922 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2713941272199175167 is added to invalidSet of 10.251.38.53:50010
+081111 085922 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7846283874350947646 is added to invalidSet of 10.251.199.150:50010
+081111 085924 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-793506372912437289 is added to invalidSet of 10.250.17.225:50010
+081111 085926 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5293091556505218722 is added to invalidSet of 10.251.125.237:50010
+081111 085929 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4516306414837452219 is added to invalidSet of 10.251.127.47:50010
+081111 090008 19 INFO dfs.FSDataset: Deleting block blk_-8792837405349224102 file /mnt/hadoop/dfs/data/current/subdir35/blk_-8792837405349224102
+081111 090031 19 INFO dfs.FSDataset: Deleting block blk_-8131422413299851907 file /mnt/hadoop/dfs/data/current/subdir46/blk_-8131422413299851907
+081111 090034 24870 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-2268477281422551537 terminating
+081111 090056 19 INFO dfs.FSDataset: Deleting block blk_-6177194341369822651 file /mnt/hadoop/dfs/data/current/subdir38/blk_-6177194341369822651
+081111 090113 18 INFO dfs.FSDataset: Deleting block blk_1369784431092292099 file /mnt/hadoop/dfs/data/current/subdir36/blk_1369784431092292099
+081111 090113 19 INFO dfs.FSDataset: Deleting block blk_-8060252929692927663 file /mnt/hadoop/dfs/data/current/subdir21/blk_-8060252929692927663
+081111 090118 19 INFO dfs.FSDataset: Deleting block blk_-5344266425789048231 file /mnt/hadoop/dfs/data/current/subdir47/blk_-5344266425789048231
+081111 090126 19 INFO dfs.FSDataset: Deleting block blk_-2518425063392446785 file /mnt/hadoop/dfs/data/current/subdir6/blk_-2518425063392446785
+081111 090129 19 INFO dfs.FSDataset: Deleting block blk_-5598693099021996971 file /mnt/hadoop/dfs/data/current/subdir19/blk_-5598693099021996971
+081111 090131 19 INFO dfs.FSDataset: Deleting block blk_901963876338651405 file /mnt/hadoop/dfs/data/current/subdir1/blk_901963876338651405
+081111 090136 19 INFO dfs.FSDataset: Deleting block blk_-2722768686407017386 file /mnt/hadoop/dfs/data/current/subdir36/blk_-2722768686407017386
+081111 090138 19 INFO dfs.FSDataset: Deleting block blk_92946806844541836 file /mnt/hadoop/dfs/data/current/subdir59/blk_92946806844541836
+081111 090139 19 INFO dfs.FSDataset: Deleting block blk_1824928871191121429 file /mnt/hadoop/dfs/data/current/subdir2/blk_1824928871191121429
+081111 090140 18 INFO dfs.FSDataset: Deleting block blk_-4301178988618507084 file /mnt/hadoop/dfs/data/current/subdir46/blk_-4301178988618507084
+081111 090140 19 INFO dfs.FSDataset: Deleting block blk_-2098161025946048013 file /mnt/hadoop/dfs/data/current/subdir17/blk_-2098161025946048013
+081111 090149 19 INFO dfs.FSDataset: Deleting block blk_-1451819169209310732 file /mnt/hadoop/dfs/data/current/subdir23/blk_-1451819169209310732
+081111 090150 19 INFO dfs.FSDataset: Deleting block blk_2403370969415186087 file /mnt/hadoop/dfs/data/current/subdir6/blk_2403370969415186087
+081111 090154 19 INFO dfs.FSDataset: Deleting block blk_5701964561533648583 file /mnt/hadoop/dfs/data/current/subdir10/blk_5701964561533648583
+081111 090159 19 INFO dfs.FSDataset: Deleting block blk_4007982883396598426 file /mnt/hadoop/dfs/data/current/subdir13/blk_4007982883396598426
+081111 090207 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.197.161:50010 is added to blk_-3724350946705225881 size 67108864
+081111 090208 19 INFO dfs.FSDataset: Deleting block blk_6051144263842600010 file /mnt/hadoop/dfs/data/current/subdir42/blk_6051144263842600010
+081111 090223 19 INFO dfs.FSDataset: Deleting block blk_8436095180790908547 file /mnt/hadoop/dfs/data/current/subdir43/blk_8436095180790908547
+081111 090229 18 INFO dfs.FSDataset: Deleting block blk_5100975846124291571 file /mnt/hadoop/dfs/data/current/subdir38/blk_5100975846124291571
+081111 090246 19 INFO dfs.FSDataset: Deleting block blk_-4941547144875557718 file /mnt/hadoop/dfs/data/current/subdir61/blk_-4941547144875557718
+081111 090339 24904 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_6791628131402590260 terminating
+081111 090816 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.107.196:50010 is added to blk_-6308508598639278892 size 67108864
+081111 090818 25109 INFO dfs.DataNode$DataXceiver: Receiving block blk_6585429064641693815 src: /10.250.10.6:38158 dest: /10.250.10.6:50010
+081111 091002 25162 INFO dfs.DataNode$PacketResponder: Received block blk_6000837850922531821 of size 67108864 from /10.251.197.226
+081111 091027 25209 INFO dfs.DataNode$PacketResponder: Received block blk_7330803663603700184 of size 67108864 from /10.251.42.246
+081111 091200 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_000480_0/part-00480. blk_-5613694521084380933
+081111 091244 19683 INFO dfs.DataNode$DataXceiver: Receiving block blk_-4967783186426171722 src: /10.251.39.192:57105 dest: /10.251.39.192:50010
+081111 091317 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.11.100:50010 is added to blk_-1970947032352756307 size 67108864
+081111 091351 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_000737_0/part-00737. blk_5894088883762961800
+081111 091439 25116 INFO dfs.DataNode$DataXceiver: Receiving block blk_-4861262918414696307 src: /10.251.198.196:34168 dest: /10.251.198.196:50010
+081111 091555 25051 INFO dfs.DataNode$DataXceiver: Receiving block blk_2583600095045026513 src: /10.250.15.67:59629 dest: /10.250.15.67:50010
+081111 091647 25353 INFO dfs.DataNode$PacketResponder: Received block blk_7872746846750105239 of size 67108864 from /10.251.43.21
+081111 091728 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.39.160:50010 is added to blk_-3510473878877779134 size 67108864
+081111 091733 19 INFO dfs.FSNamesystem: BLOCK* ask 10.251.126.5:50010 to delete  blk_-9016567407076718172 blk_-8695715290502978219 blk_-7168328752988473716 blk_-4355192005224403537 blk_-3757501769775889193 blk_-154600013573668394 blk_167132135416677587 blk_2654596473569751784 blk_5202581916713319258
+081111 091742 19 INFO dfs.FSDataset: Deleting block blk_-2808875502459981198 file /mnt/hadoop/dfs/data/current/subdir3/blk_-2808875502459981198
+081111 091837 24935 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_34905976850091068 terminating
+081111 092003 25315 INFO dfs.DataNode$PacketResponder: Received block blk_4774383661473695119 of size 67108864 from /10.251.110.68
+081111 092023 25367 INFO dfs.DataNode$DataXceiver: Receiving block blk_465845235850106928 src: /10.251.70.112:39499 dest: /10.251.70.112:50010
+081111 092213 25595 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_8882415653769775762 terminating
+081111 092239 25403 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_4207359722112667226 terminating
+081111 092311 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_000882_0/part-00882. blk_-3152434225121092058
+081111 092425 25331 INFO dfs.DataNode$DataXceiver: Receiving block blk_4820650745157199554 src: /10.251.127.243:49726 dest: /10.251.127.243:50010
+081111 092436 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.6.223:50010 is added to blk_-6390296685077811803 size 3546314
+081111 092617 19 INFO dfs.FSDataset: Deleting block blk_9173199815015538212 file /mnt/hadoop/dfs/data/current/subdir24/blk_9173199815015538212
+081111 092649 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001033_0/part-01033. blk_-8948316319329891645
+081111 092720 27 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.42.207:50010 is added to blk_-6314365697827006048 size 67108864
+081111 092751 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_000939_0/part-00939. blk_-3522956055443924791
+081111 092821 25409 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_5454423648092670683 terminating
+081111 092915 25283 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_4565822428702518889 terminating
+081111 093026 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.29.239:50010 is added to blk_-409558225151784282 size 67108864
+081111 093208 25332 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-3967261531426400230 terminating
+081111 093316 25596 INFO dfs.DataNode$DataXceiver: Receiving block blk_-4655280636272058732 src: /10.251.26.8:48892 dest: /10.251.26.8:50010
+081111 093350 25537 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-5799866343936729403 terminating
+081111 093407 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001294_0/part-01294. blk_4214952053910973364
+081111 093429 25813 INFO dfs.DataNode$DataXceiver: Receiving block blk_-6135061626100136978 src: /10.251.31.180:48900 dest: /10.251.31.180:50010
+081111 093513 25793 INFO dfs.DataNode$DataXceiver: Receiving block blk_-5057534532247887258 src: /10.250.5.237:45766 dest: /10.250.5.237:50010
+081111 093550 25550 INFO dfs.DataNode$PacketResponder: Received block blk_9103049989653819836 of size 67108864 from /10.250.10.223
+081111 093657 25789 INFO dfs.DataNode$DataXceiver: Receiving block blk_-4365612131648152536 src: /10.251.107.227:57736 dest: /10.251.107.227:50010
+081111 093701 24237 INFO dfs.DataNode$DataXceiver: Receiving block blk_3598226258881465924 src: /10.251.199.159:41752 dest: /10.251.199.159:50010
+081111 093703 25622 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_3378157549705391333 terminating
+081111 093742 13 INFO dfs.DataBlockScanner: Verification succeeded for blk_-8347949825960763812
+081111 093814 25929 INFO dfs.DataNode$PacketResponder: Received block blk_-2934265883100282310 of size 67108864 from /10.251.39.144
+081111 093823 25642 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_1259893634804870815 terminating
+081111 093913 25312 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_412956398445037066 terminating
+081111 093952 25849 INFO dfs.DataNode$PacketResponder: Received block blk_-9167880724995702718 of size 67108864 from /10.251.214.225
+081111 094008 26005 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7764040409370932316 src: /10.251.125.237:58496 dest: /10.251.125.237:50010
+081111 094052 25242 INFO dfs.DataNode$DataXceiver: Receiving block blk_931297048899943584 src: /10.251.67.113:54324 dest: /10.251.67.113:50010
+081111 094221 25770 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_2833019093942278701 terminating
+081111 094319 25340 INFO dfs.DataNode$PacketResponder: Received block blk_-5785220384376578831 of size 67108864 from /10.251.203.80
+081111 094331 26028 INFO dfs.DataNode$PacketResponder: Received block blk_3386670145292909259 of size 67108864 from /10.251.110.68
+081111 094415 25901 INFO dfs.DataNode$DataXceiver: Receiving block blk_1859772752119590543 src: /10.251.42.246:57741 dest: /10.251.42.246:50010
+081111 094439 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001425_0/part-01425. blk_2630223487595425525
+081111 094633 25926 INFO dfs.DataNode$PacketResponder: Received block blk_-5385105076403314787 of size 67108864 from /10.251.42.9
+081111 094713 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001757_0/part-01757. blk_-5343533992609553091
+081111 094825 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001473_0/part-01473. blk_-4390972361898978900
+081111 094832 26039 INFO dfs.DataNode$PacketResponder: Received block blk_1190791818440776717 of size 67108864 from /10.251.43.147
+081111 094918 25951 INFO dfs.DataNode$PacketResponder: Received block blk_-7202857144668308473 of size 67108864 from /10.251.43.21
+081111 094921 25993 INFO dfs.DataNode$DataXceiver: Receiving block blk_5565611615515783341 src: /10.251.126.5:35656 dest: /10.251.126.5:50010
+081111 094930 26178 INFO dfs.DataNode$PacketResponder: Received block blk_-3283153974358895314 of size 67108864 from /10.251.111.228
+081111 094936 25537 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-1484647023667047838 terminating
+081111 094939 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.6.223:50010 is added to blk_7474737521119026445 size 67108864
+081111 095020 25962 INFO dfs.DataNode$DataXceiver: Receiving block blk_-8571819028995448536 src: /10.251.197.226:34801 dest: /10.251.197.226:50010
+081111 095035 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.67:50010 is added to blk_-8428590803682810851 size 67108864
+081111 095039 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001860_0/part-01860. blk_8716294289715825928
+081111 095238 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.123.132:50010 is added to blk_8527475857502481768 size 67108864
+081111 095309 26010 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_406835586147450451 terminating
+081111 095434 26090 INFO dfs.DataNode$PacketResponder: Received block blk_7294821275446427348 of size 67108864 from /10.251.43.210
+081111 095535 28 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.127.243:50010 is added to blk_1793140687921032046 size 67108864
+081111 095618 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.126.5:50010 is added to blk_4361294871479973840 size 67108864
+081111 095632 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.6.4:50010 is added to blk_-6945615463687647586 size 67108864
+081111 095636 26319 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_1216611589160220108 terminating
+081111 095653 25890 INFO dfs.DataNode$DataXceiver: Receiving block blk_-3265479347842446682 src: /10.250.14.224:47278 dest: /10.250.14.224:50010
+081111 095702 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.6:50010 is added to blk_8527562124953828227 size 67108864
+081111 095726 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.134:50010 is added to blk_2749066163012162435 size 67108864
+081111 095733 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.228:50010 is added to blk_-1305222006484630743 size 67108864
+081111 095813 26362 INFO dfs.DataNode$PacketResponder: Received block blk_-3702595599317472079 of size 67108864 from /10.251.25.237
+081111 095840 26225 INFO dfs.DataNode$PacketResponder: Received block blk_6446927133528675675 of size 67108864 from /10.251.39.209
+081111 095844 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.215.192:50010 is added to blk_2015610615789582788 size 67108864
+081111 095957 26 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.75.49:50010 is added to blk_-2959268996938658555 size 15715490
+081111 100210 19 INFO dfs.FSDataset: Deleting block blk_-1082541280306680938 file /mnt/hadoop/dfs/data/current/subdir38/blk_-1082541280306680938
+081111 100223 26181 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-191333338640084691 terminating
+081111 100226 26261 INFO dfs.DataNode$DataXceiver: Receiving block blk_3972778210951456006 src: /10.251.121.224:56526 dest: /10.251.121.224:50010
+081111 100245 26152 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_1408672604432845193 terminating
+081111 100323 14118 INFO dfs.DataNode$PacketResponder: Received block blk_7679838117000095334 of size 67108864 from /10.251.30.85
+081111 100350 32 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.13.240:50010 is added to blk_2593937801738981947 size 67108864
+081111 100414 35 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.71.193:50010 is added to blk_5489815612272797790 size 67108864
+081111 100417 30 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.101:50010 is added to blk_6451403582950672007 size 67108864
+081111 100646 26268 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7048088870427586736 src: /10.250.10.100:56512 dest: /10.250.10.100:50010
+081111 100729 26320 INFO dfs.DataNode$PacketResponder: Received block blk_7589872946955471867 of size 67108864 from /10.251.195.70
+081111 100752 26527 INFO dfs.DataNode$DataXceiver: Receiving block blk_-178934379749864379 src: /10.251.71.97:55517 dest: /10.251.71.97:50010
+081111 100820 26329 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_2026200052147887341 terminating
+081111 100824 26391 INFO dfs.DataNode$DataXceiver: Receiving block blk_8303284829424905326 src: /10.251.70.37:47359 dest: /10.251.70.37:50010
+081111 100903 33 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.130:50010 is added to blk_5646792755154529338 size 67108864
+081111 101115 26281 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_712730845180531820 terminating
+081111 101117 26526 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_8418106412701718933 terminating
+081111 101120 31 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.67.225:50010 is added to blk_-6325232815283133921 size 67108864
+081111 101131 26402 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-800664075087524591 terminating
+081111 101153 26436 INFO dfs.DataNode$PacketResponder: Received block blk_6516880861186877710 of size 67108864 from /10.251.42.84
+081111 101206 26380 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-3228470001178394592 terminating
+081111 101225 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt9/_temporary/_task_200811101024_0016_m_000347_0/part-00347. blk_-8426741581316629266
+081111 101230 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.29.239:50010 is added to blk_-762982068597249045 size 67108864
+081111 101238 26399 INFO dfs.DataNode$DataXceiver: Receiving block blk_-5224756755359850354 src: /10.251.43.192:38028 dest: /10.251.43.192:50010
+081111 101243 26312 INFO dfs.DataNode$PacketResponder: Received block blk_-1440254020029439248 of size 67108864 from /10.251.30.85
+081111 101316 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.90.64:50010 is added to blk_1441315972355360459 size 67108864
+081111 101356 26434 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-9001895211102825241 terminating
+081111 101415 26449 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-2025617675484194470 terminating
+081111 101444 26469 INFO dfs.DataNode$PacketResponder: Received block blk_-1592043549272047369 of size 67108864 from /10.251.105.189
+081111 101455 26895 INFO dfs.DataNode$DataXceiver: Receiving block blk_2583125615128303019 src: /10.251.71.97:54431 dest: /10.251.71.97:50010
+081111 101621 24902 INFO dfs.DataNode$DataXceiver: Receiving block blk_4198733391373026104 src: /10.251.106.10:46843 dest: /10.251.106.10:50010
+081111 101735 26595 INFO dfs.DataNode$PacketResponder: Received block blk_-5815145248455404269 of size 67108864 from /10.251.121.224
+081111 101804 26494 INFO dfs.DataNode$DataXceiver: Receiving block blk_-295306975763175640 src: /10.250.9.207:53270 dest: /10.250.9.207:50010
+081111 101954 26414 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_5225719677049010638 terminating
+081111 102017 26347 INFO dfs.DataNode$DataXceiver: Receiving block blk_4343207286455274569 src: /10.250.9.207:59759 dest: /10.250.9.207:50010

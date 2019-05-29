@@ -3,9 +3,12 @@ import sys
 sys.path.append('../')
 from logparser import Drain
 
+resume_training = True
+
 input_dir  = '../logs/HDFS/'  # The input directory of log file
 output_dir = 'Drain_result/'  # The output directory of parsing results
-log_file   = 'HDFS_2k.log'  # The input log file name
+history = "history"
+log_file   = 'HDFS_1k_2.log'  # The input log file name
 log_format = '<Date> <Time> <Pid> <Level> <Component>: <Content>'  # HDFS log format
 # Regular expression list for optional preprocessing (default: [])
 regex      = [
@@ -16,6 +19,6 @@ regex      = [
 st         = 0.5  # Similarity threshold
 depth      = 4  # Depth of all leaf nodes
 
-parser = Drain.LogParser(log_format, indir=input_dir, outdir=output_dir,  depth=depth, st=st, rex=regex)
+parser = Drain.LogParser(log_format, indir=input_dir, outdir=output_dir,  depth=depth, st=st, rex=regex, resume_training=resume_training, history=history)
 parser.parse(log_file)
 
