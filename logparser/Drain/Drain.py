@@ -13,6 +13,12 @@ from datetime import datetime
 
 
 class HistoryManager:
+    """
+    Imports and exports history. History consists of the tree (recursively retrieved from
+    rootNode), the log clusters (logCluL), total number of log lines read (use to extract
+    only the new log lines to save to {}_structured.csv)
+    """
+
     rootNode = None
     logCluL = None
     rootDict = None
@@ -45,11 +51,11 @@ class HistoryManager:
         with open(history, 'wb') as fwb:
             pickle.dump(raw_history_data, fwb)
 
-    """
-    Recreates logCluL using the tree instead of generating from history to match pointers between
-    the objects
-    """
     def recreate_log_clusters(self):
+        """
+        Recreates logCluL using the tree instead of generating from history to match pointers between
+        the objects
+        """
         self.logCluL = self.recursive_subroutine_recreate_log_clusters(self.rootNode)
 
     def recursive_subroutine_recreate_log_clusters(self, node):
@@ -195,14 +201,6 @@ class LogParser:
         currentDepth = 1
         for token in logClust.logTemplate:
 
-            # Add current log cluster to the leaf node
-            if currentDepth >= self.depth or currentDepth > seqLen:
-                if len(parentn.childD) == 0:
-                    parentn.childD = [logClust]
-                else:
-                    parentn.childD.append(logClust)
-                break
-
             # If token not matched in this layer of existing tree.
             if token not in parentn.childD:
                 if not self.hasNumbers(token):
@@ -239,7 +237,7 @@ class LogParser:
 
             currentDepth += 1
 
-    # seq1 is template
+    #seq1 is template
     def seqDist(self, seq1, seq2):
         assert len(seq1) == len(seq2)
         simTokens = 0
@@ -256,6 +254,7 @@ class LogParser:
 
         return retVal, numOfPar
 
+
     def fastMatch(self, logClustL, seq):
         retLogClust = None
 
@@ -265,7 +264,7 @@ class LogParser:
 
         for logClust in logClustL:
             curSim, curNumOfPara = self.seqDist(logClust.logTemplate, seq)
-            if curSim > maxSim or (curSim == maxSim and curNumOfPara > maxNumOfPara):
+            if curSim>maxSim or (curSim==maxSim and curNumOfPara>maxNumOfPara):
                 maxSim = curSim
                 maxNumOfPara = curNumOfPara
                 maxClust = logClust
@@ -293,17 +292,18 @@ class LogParser:
     def outputResult(self, logClustL, last_line_count=0):
         log_templates = [0] * (self.df_log.shape[0] + last_line_count)
         log_templateids = [0] * (self.df_log.shape[0] + last_line_count)
-
-        offset = -1
-
+        df_events = []
         for logClust in logClustL:
             template_str = ' '.join(logClust.logTemplate)
+            occurrence = len(logClust.logIDL)
             template_id = hashlib.md5(template_str.encode('utf-8')).hexdigest()[0:8]
             for logID in logClust.logIDL:
-                logID += offset
+                logID -= 1
                 log_templates[logID] = template_str
                 log_templateids[logID] = template_id
+            df_events.append([template_id, template_str, occurrence])
 
+        df_event = pd.DataFrame(df_events, columns=['EventId', 'EventTemplate', 'Occurrences'])
         self.df_log['EventId'] = log_templateids[-self.df_log.shape[0]:]
         self.df_log['EventTemplate'] = log_templates[-self.df_log.shape[0]:]
 
@@ -315,11 +315,11 @@ class LogParser:
         self.df_log.to_csv(structured_log_path, index=False)
 
         templates_series = pd.Series(log_templates)
-        templates_series_count = dict(templates_series.value_counts())
+        occ_dict = dict(templates_series.value_counts())
         df_event = pd.DataFrame()
         df_event['EventTemplate'] = templates_series.unique()
         df_event['EventId'] = df_event['EventTemplate'].map(lambda x: hashlib.md5(x.encode('utf-8')).hexdigest()[0:8])
-        df_event['Occurrences'] = df_event['EventTemplate'].map(templates_series_count)
+        df_event['Occurrences'] = df_event['EventTemplate'].map(occ_dict)
         df_event.to_csv(os.path.join(self.savePath, self.logName + '_templates.csv'), index=False,
                         columns=["EventId", "EventTemplate", "Occurrences"])
 
@@ -342,7 +342,8 @@ class LogParser:
         if node.depth == self.depth:
             return 1
         for child in node.childD:
-            self.printTree(node.childD[child], dep + 1)
+            self.printTree(node.childD[child], dep+1)
+
 
     def parse(self, logName):
         print('Parsing file: ' + os.path.join(self.path, logName))
@@ -369,13 +370,13 @@ class LogParser:
             # logmessageL = filter(lambda x: x != '', re.split('[\s=:,]', self.preprocess(line['Content'])))
             matchCluster = self.treeSearch(rootNode, logmessageL)
 
-            # Match no existing log cluster
+            #Match no existing log cluster
             if matchCluster is None:
                 newCluster = Logcluster(logTemplate=logmessageL, logIDL=[logID])
                 logCluL.append(newCluster)
                 self.addSeqToPrefixTree(rootNode, newCluster)
 
-            # Add the new log message to the existing cluster
+            #Add the new log message to the existing cluster
             else:
                 newTemplate = self.getTemplate(logmessageL, matchCluster.logTemplate)
                 matchCluster.logIDL.append(logID)
@@ -398,14 +399,14 @@ class LogParser:
 
     def load_data(self):
         headers, regex = self.generate_logformat_regex(self.log_format)
-        self.df_log = self.log_to_dataframe(os.path.join(self.path, self.logName), regex, headers)
+        self.df_log = self.log_to_dataframe(os.path.join(self.path, self.logName), regex, headers, self.log_format)
 
     def preprocess(self, line):
         for currentRex in self.rex:
             line = re.sub(currentRex, '<*>', line)
         return line
 
-    def log_to_dataframe(self, log_file, regex, headers):
+    def log_to_dataframe(self, log_file, regex, headers, logformat):
         """ Function to transform log file to dataframe
         """
         log_messages = []
@@ -451,4 +452,3 @@ class LogParser:
         parameter_list = parameter_list[0] if parameter_list else ()
         parameter_list = list(parameter_list) if isinstance(parameter_list, tuple) else [parameter_list]
         return parameter_list
-

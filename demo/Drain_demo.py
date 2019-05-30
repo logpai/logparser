@@ -4,7 +4,6 @@ sys.path.append('../')
 from logparser import Drain
 
 resume_training = True
-
 input_dir  = '../logs/HDFS/'  # The input directory of log file
 output_dir = 'Drain_result/'  # The output directory of parsing results
 history = "history"
