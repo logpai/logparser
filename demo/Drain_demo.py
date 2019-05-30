@@ -8,7 +8,7 @@ resume_training = True
 input_dir  = '../logs/HDFS/'  # The input directory of log file
 output_dir = 'Drain_result/'  # The output directory of parsing results
 history = "history"
-log_file   = 'HDFS_1k_2.log'  # The input log file name
+log_file   = 'HDFS_1k_1.log'  # The input log file name
 log_format = '<Date> <Time> <Pid> <Level> <Component>: <Content>'  # HDFS log format
 # Regular expression list for optional preprocessing (default: [])
 regex      = [

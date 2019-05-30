@@ -17,23 +17,21 @@ class HistoryManager:
     logCluL = None
     rootDict = None
     logClustersList = None
-    logTemplates = None
-    logTemplateIds = None
+    lastLineCount = 0
 
-    def __init__(self, rootNode=None, logCluL=None, history=None):
+    def __init__(self, rootNode=None, logCluL=None, history=None, lastLineCount=0):
         if history is not None:
             self.import_history(history)
         else:
             self.rootNode = rootNode
             self.logCluL = logCluL
+            self.lastLineCount = lastLineCount
 
     def import_history(self, history):
         with open(history, 'rb') as frb:
             raw_history_data = pickle.load(frb)
         self.rootDict = raw_history_data["rootDict"]
-        self.logClustersList = raw_history_data["logClustersList"]
-        self.logTemplates = raw_history_data["logTemplates"]
-        self.logTemplateIds = raw_history_data["logTemplateIds"]
+        self.lastLineCount = raw_history_data["lastLineCount"]
         self.recreate_tree()
         self.recreate_log_clusters()
 
@@ -43,17 +41,25 @@ class HistoryManager:
                 os.remove(history + "_backup")
             os.rename(history, history + "_backup")
         raw_history_data = {'rootDict': self.rootNode.export_as_dict(),
-                            'logClustersList': [x.export_as_dict() for x in self.logCluL],
-                            'logTemplates': self.logTemplates,
-                            'logTemplateIds': self.logTemplateIds}
+                            'lastLineCount': self.lastLineCount}
         with open(history, 'wb') as fwb:
             pickle.dump(raw_history_data, fwb)
 
+    """
+    Recreates logCluL using the tree instead of generating from history to match pointers between
+    the objects
+    """
     def recreate_log_clusters(self):
-        logClustersList = []
-        for x in self.logClustersList:
-            logClustersList.append(Logcluster(dict_input=x))
-        self.logCluL = logClustersList
+        self.logCluL = self.recursive_subroutine_recreate_log_clusters(self.rootNode)
+
+    def recursive_subroutine_recreate_log_clusters(self, node):
+        if isinstance(node.childD, list):  # Is leaf
+            return node.childD
+        else:
+            result = list()
+            for child_id, child_item in node.childD.items():
+                result.extend(self.recursive_subroutine_recreate_log_clusters(child_item))
+            return result
 
     def recreate_tree(self):
         self.rootNode = self.recursive_subroutine_recreate_tree(self.rootDict)
@@ -358,7 +364,7 @@ class LogParser:
         self.load_data()
 
         count = 0
-        last_line = 0 if hm.logTemplates is None else len(hm.logTemplates)
+        last_line = hm.lastLineCount
         for idx, line in self.df_log.iterrows():
             logID = line['LineId'] + last_line
             logmessageL = self.preprocess(line['Content']).strip().split()
@@ -383,25 +389,18 @@ class LogParser:
                 print('Proscessed {0:.1f}% of log lines.'.format(count * 100.0 / len(self.df_log)))
 
         if not self.resume_training:
-            log_templates, log_templateids = self.outputResult(logCluL)
+            last_line_count = self.outputResult(logCluL)
         else:
-            log_templates, log_templateids = self.outputResult(logCluL, hm.logTemplates, hm.logTemplateIds)
+            last_line_count = self.outputResult(logCluL, hm.lastLineCount)
 
-        hm.logTemplates = log_templates
-        hm.logTemplateIds = log_templateids
+        hm.lastLineCount = last_line_count
         hm.export_history(self.history, force=not self.resume_training)
 
         print('Parsing done. [Time taken: {!s}]'.format(datetime.now() - start_time))
 
-    def outputResult(self, logClustL, old_log_templates=None, old_log_templateids=None):
-        if old_log_templates is None or old_log_templateids is None:
-            log_templates = list()
-            log_templateids = list()
-        else:
-            log_templates = old_log_templates
-            log_templateids = old_log_templateids
-        log_templates = log_templates + [0] * self.df_log.shape[0]
-        log_templateids = log_templateids + [0] * self.df_log.shape[0]
+    def outputResult(self, logClustL, last_line_count=0):
+        log_templates = [0] * (self.df_log.shape[0] + last_line_count)
+        log_templateids = [0] * (self.df_log.shape[0] + last_line_count)
 
         offset = -1
 
@@ -432,7 +431,7 @@ class LogParser:
         df_event.to_csv(os.path.join(self.savePath, self.logName + '_templates.csv'), index=False,
                         columns=["EventId", "EventTemplate", "Occurrences"])
 
-        return log_templates, log_templateids
+        return len(log_templates)
 
     def printTree(self, node, dep):
         pStr = ''
