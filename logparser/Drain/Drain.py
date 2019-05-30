@@ -84,7 +84,7 @@ class HistoryManager:
 
 
 class Logcluster:
-    def __init__(self, logTemplate='', logIDL=None, dict_input=None):
+    def __init__(self, logTemplate='', logIDL=None):
         self.logTemplate = logTemplate
         if logIDL is None:
             logIDL = []
@@ -322,8 +322,7 @@ class LogParser:
         df_event['EventTemplate'] = templates_series.unique()
         df_event['EventId'] = df_event['EventTemplate'].map(lambda x: hashlib.md5(x.encode('utf-8')).hexdigest()[0:8])
         df_event['Occurrences'] = df_event['EventTemplate'].map(occ_dict)
-        df_event.to_csv(os.path.join(self.savePath, self.logName + '_templates.csv'), index=False,
-                        columns=["EventId", "EventTemplate", "Occurrences"])
+        df_event.to_csv(os.path.join(self.savePath, self.logName + '_templates.csv'), index=False, columns=["EventId", "EventTemplate", "Occurrences"])
 
         return len(log_templates)
 
@@ -389,10 +388,7 @@ class LogParser:
             if count % 1000 == 0 or count == len(self.df_log):
                 print('Proscessed {0:.1f}% of log lines.'.format(count * 100.0 / len(self.df_log)))
 
-        if not self.resume_training:
-            last_line_count = self.outputResult(logCluL)
-        else:
-            last_line_count = self.outputResult(logCluL, hm.lastLineCount)
+        last_line_count = self.outputResult(logCluL, hm.lastLineCount)
 
         hm.lastLineCount = last_line_count
         hm.export_history(self.history, force=not self.resume_training)
@@ -426,6 +422,7 @@ class LogParser:
         logdf.insert(0, 'LineId', None)
         logdf['LineId'] = [i + 1 for i in range(linecount)]
         return logdf
+
 
     def generate_logformat_regex(self, logformat):
         """ Function to generate regular expression to split log messages
