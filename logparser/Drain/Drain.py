@@ -74,7 +74,7 @@ class HistoryManager:
         if isinstance(node['childD'], list):  # Is leaf
             logClustersList = []
             for x in node['childD']:
-                logClustersList.append(Logcluster(dict_input=x))
+                logClustersList.append(Logcluster(logTemplate=x['logTemplate'], logIDL=x['logIDL']))
             return Node(childD=logClustersList, depth=node['depth'], digitOrtoken=node['digitOrtoken'])
         else:
             temp_child_dict = dict()
@@ -85,14 +85,10 @@ class HistoryManager:
 
 class Logcluster:
     def __init__(self, logTemplate='', logIDL=None, dict_input=None):
-        if dict_input is not None:
-            self.logTemplate = dict_input['logTemplate']
-            self.logIDL = dict_input['logIDL']
-        else:
-            self.logTemplate = logTemplate
-            if logIDL is None:
-                logIDL = []
-            self.logIDL = logIDL
+        self.logTemplate = logTemplate
+        if logIDL is None:
+            logIDL = []
+        self.logIDL = logIDL
 
     def export_as_dict(self):
         return {"logIDL": self.logIDL,
