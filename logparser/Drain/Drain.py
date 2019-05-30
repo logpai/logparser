@@ -201,7 +201,15 @@ class LogParser:
         currentDepth = 1
         for token in logClust.logTemplate:
 
-            # If token not matched in this layer of existing tree.
+            #Add current log cluster to the leaf node
+            if currentDepth >= self.depth or currentDepth > seqLen:
+                if len(parentn.childD) == 0:
+                    parentn.childD = [logClust]
+                else:
+                    parentn.childD.append(logClust)
+                break
+
+            #If token not matched in this layer of existing tree. 
             if token not in parentn.childD:
                 if not self.hasNumbers(token):
                     if '<*>' in parentn.childD:
@@ -212,26 +220,26 @@ class LogParser:
                         else:
                             parentn = parentn.childD['<*>']
                     else:
-                        if len(parentn.childD) + 1 < self.maxChild:
-                            newNode = Node(depth=currentDepth + 1, digitOrtoken=token)
+                        if len(parentn.childD)+1 < self.maxChild:
+                            newNode = Node(depth=currentDepth+1, digitOrtoken=token)
                             parentn.childD[token] = newNode
                             parentn = newNode
-                        elif len(parentn.childD) + 1 == self.maxChild:
-                            newNode = Node(depth=currentDepth + 1, digitOrtoken='<*>')
+                        elif len(parentn.childD)+1 == self.maxChild:
+                            newNode = Node(depth=currentDepth+1, digitOrtoken='<*>')
                             parentn.childD['<*>'] = newNode
                             parentn = newNode
                         else:
                             parentn = parentn.childD['<*>']
-
+            
                 else:
                     if '<*>' not in parentn.childD:
-                        newNode = Node(depth=currentDepth + 1, digitOrtoken='<*>')
+                        newNode = Node(depth=currentDepth+1, digitOrtoken='<*>')
                         parentn.childD['<*>'] = newNode
                         parentn = newNode
                     else:
                         parentn = parentn.childD['<*>']
 
-            # If the token is matched
+            #If the token is matched
             else:
                 parentn = parentn.childD[token]
 
@@ -248,7 +256,7 @@ class LogParser:
                 numOfPar += 1
                 continue
             if token1 == token2:
-                simTokens += 1
+                simTokens += 1 
 
         retVal = float(simTokens) / len(seq1)
 
@@ -270,7 +278,7 @@ class LogParser:
                 maxClust = logClust
 
         if maxSim >= self.st:
-            retLogClust = maxClust
+            retLogClust = maxClust  
 
         return retLogClust
 
@@ -309,10 +317,8 @@ class LogParser:
 
         if self.keep_para:
             self.df_log["ParameterList"] = self.df_log.apply(self.get_parameter_list, axis=1)
-        structured_log_path = os.path.join(self.savePath, '{}_structured_{}.csv'.format(self.logName,
-                                                                                        datetime.now().strftime(
-                                                                                            "%Y%m%d_%H%M%S")))
-        self.df_log.to_csv(structured_log_path, index=False)
+        self.df_log.to_csv(os.path.join(self.savePath, self.logName + '_structured.csv'), index=False)
+
 
         templates_series = pd.Series(log_templates)
         occ_dict = dict(templates_series.value_counts())
@@ -326,7 +332,7 @@ class LogParser:
         return len(log_templates)
 
     def printTree(self, node, dep):
-        pStr = ''
+        pStr = ''   
         for i in range(dep):
             pStr += '\t'
 
@@ -380,7 +386,7 @@ class LogParser:
             else:
                 newTemplate = self.getTemplate(logmessageL, matchCluster.logTemplate)
                 matchCluster.logIDL.append(logID)
-                if ' '.join(newTemplate) != ' '.join(matchCluster.logTemplate):
+                if ' '.join(newTemplate) != ' '.join(matchCluster.logTemplate): 
                     matchCluster.logTemplate = newTemplate
 
             count += 1
@@ -407,7 +413,7 @@ class LogParser:
         return line
 
     def log_to_dataframe(self, log_file, regex, headers, logformat):
-        """ Function to transform log file to dataframe
+        """ Function to transform log file to dataframe 
         """
         log_messages = []
         linecount = 0
