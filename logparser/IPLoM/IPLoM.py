@@ -501,6 +501,8 @@ class LogParser:
             maxIdx = secondMaxIdx = -1
             maxCount = secondMaxCount = 0
             for key in numOfUniqueTokensD:
+                if key == 1:
+                    continue
                 if numOfUniqueTokensD[key] > maxCount:
                     secondMaxIdx = maxIdx
                     secondMaxCount = maxCount
@@ -511,31 +513,31 @@ class LogParser:
                     secondMaxCount = numOfUniqueTokensD[key]
 
             # If the frequency of the freq_card>1 then
-            if maxIdx > 1:
+            if maxCount > 1:
                 for columnIdx in range(partition.lenOfLogs):
-                    if numOfUniqueTokensD[len(uniqueTokensCountLS[columnIdx])] == maxCount:
+                    if len(uniqueTokensCountLS[columnIdx]) == maxIdx:
                         if p1 == -1:
                             p1 = columnIdx
                         else:
                             p2 = columnIdx
                             break
 
-                for columnIdx in range(partition.lenOfLogs):
-                    if p2 != -1:
-                        break
-                    if numOfUniqueTokensD[len(uniqueTokensCountLS[columnIdx])] == secondMaxCount:
-                        p2 = columnIdx
-                        break
+#                 for columnIdx in range(partition.lenOfLogs):
+#                     if p2 != -1:
+#                         break
+#                     if numOfUniqueTokensD[len(uniqueTokensCountLS[columnIdx])] == secondMaxCount:
+#                         p2 = columnIdx
+#                         break
 
             # If the frequency of the freq_card==1 then
             else:
-                for columnIdx in range(len(uniqueTokensCountLS)):
-                    if numOfUniqueTokensD[len(uniqueTokensCountLS[columnIdx])] == maxCount:
+                for columnIdx in range(partition.lenOfLogs):
+                    if len(uniqueTokensCountLS[columnIdx]) == maxIdx:
                         p1 = columnIdx
                         break
 
-                for columnIdx in range(len(uniqueTokensCountLS)):
-                    if numOfUniqueTokensD[len(uniqueTokensCountLS[columnIdx])] == secondMaxCount:
+                for columnIdx in range(partition.lenOfLogs):
+                    if len(uniqueTokensCountLS[columnIdx]) == secondMaxIdx:
                         p2 = columnIdx
                         break
 
