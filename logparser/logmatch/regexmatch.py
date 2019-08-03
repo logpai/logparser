@@ -22,6 +22,7 @@
 """ 
 This file implements the regular expression based algorithm for log 
 template matching. The algorithm is described in the following paper:
+
 [1] Jieming Zhu, Jingyang Liu, Pinjia He, Zibin Zheng, Michael R. Lyu. 
     "Real-Time Log Event Matching at Scale", XXX, 2018.
 """
@@ -72,19 +73,22 @@ class PatternMatch(object):
 
     def match_event(self, event_list):
         match_list = []
+        paras = []
         if self.n_workers == 1:
-            match_list = match_event(event_list, self.template_match_dict, self.optimized)
+            results = match_fn(event_list, self.template_match_dict, self.optimized)
         else:
-            chunks = np.array_split(event_list, self.n_workers)
             pool = mp.Pool(processes=self.n_workers)
-            result_chunks = [pool.apply_async(match_event, args=(chunk, self.template_match_dict, self.optimized))\
-                             for chunk in chunks]
+            chunk_size = len(event_list) / self.n_workers + 1
+            result_chunks = [pool.apply_async(match_fn, args=(event_list[i:i + chunk_size], self.template_match_dict, self.optimized))\
+                             for i in xrange(0, len(event_list), chunk_size)]
             pool.close()
             pool.join()
-            match_list = list(itertools.chain(*[result.get() for result in result_chunks]))
-        for event in match_list:
+            results = list(itertools.chain(*[result.get() for result in result_chunks]))
+        for event, parameter_list in results:
             self.template_freq_dict[event] += 1
-        return match_list
+            paras.append(parameter_list)
+            match_list.append(event)
+        return match_list, paras
 
     def read_template_from_csv(self, template_filepath):
         template_dataframe = pd.read_csv(template_filepath)
@@ -93,6 +97,7 @@ class PatternMatch(object):
             event_template = row['EventTemplate']
             self.add_event_template(event_template, event_Id)
 
+
     def match(self, log_filepath, template_filepath):
         print('Processing log file: {}'.format(log_filepath))
         start_time = datetime.now()
@@ -100,8 +105,9 @@ class PatternMatch(object):
         self.read_template_from_csv(template_filepath)
         log_dataframe = loader.load_to_dataframe(log_filepath)
         print('Matching event templates...')
-        match_list = self.match_event(log_dataframe['Content'].tolist())
+        match_list, paras = self.match_event(log_dataframe['Content'].tolist())
         log_dataframe = pd.concat([log_dataframe, pd.DataFrame(match_list, columns=['EventId', 'EventTemplate'])], axis=1)
+        log_dataframe['ParameterList'] = paras
         self._dump_match_result(os.path.basename(log_filepath), log_dataframe)
         match_rate = sum(log_dataframe['EventId'] != 'NONE') / float(len(log_dataframe))
         print('Matching done, matching rate: {:.1%} [Time taken: {!s}]'.format(match_rate, datetime.now() - start_time))
@@ -116,8 +122,16 @@ class PatternMatch(object):
     def _generate_hash_eventId(self, template_str):
         return hashlib.md5(template_str.encode('utf-8')).hexdigest()[0:8]
 
+    def _get_parameter_list(self, row):
+        template_regex = re.sub(r'([^A-Za-z0-9])', r'\\\1', row["EventTemplate"])
+        template_regex = "^" + template_regex.replace("\<\*\>", "(.*?)") + "$"
+        parameter_list = re.findall(template_regex, row["Content"])
+        parameter_list = parameter_list[0] if parameter_list else ()
+        parameter_list = list(parameter_list) if isinstance(parameter_list, tuple) else [parameter_list]
+        return parameter_list
 
-def match_event(event_list, template_match_dict, optimized=True):
+def match_fn(event_list, template_match_dict, optimized=True):
+    print("Worker {} start matching {} lines.".format(os.getpid(), len(event_list)))
     match_list = [regex_match(event_content, template_match_dict, optimized)
                   for event_content in event_list]
     return match_list
@@ -126,7 +140,7 @@ def regex_match(msg, template_match_dict, optimized):
     matched_event = None
     template_freq_dict = Counter()
     match_dict = template_match_dict
-    
+    parameter_list = []
     if optimized:
         start_token = msg.split(' ')[0]
         if start_token in template_match_dict:
@@ -135,7 +149,8 @@ def regex_match(msg, template_match_dict, optimized):
                 match_dict = OrderedDict(sorted(match_dict.items(), 
                      key=lambda x: (len(x[1][1]), -x[1][1].count('<*>')), reverse=True))
             for regex, event in match_dict.iteritems():
-                if re.search(regex, msg.strip()):
+                parameter_list = re.findall(regex, msg.strip())
+                if parameter_list:
                     matched_event = event
                     break    
     
@@ -146,11 +161,14 @@ def regex_match(msg, template_match_dict, optimized):
             match_dict = OrderedDict(sorted(match_dict.items(), 
                  key=lambda x: (len(x[1][1]), -x[1][1].count('<*>')), reverse=True))
         for regex, event in match_dict.iteritems():
-            if re.search(regex, msg.strip()):
+            parameter_list = re.findall(regex, msg.strip())
+            if parameter_list:
                 matched_event = event
-                break
+                break    
 
     if not matched_event:
         matched_event = ('NONE', 'NONE')
-    return matched_event
+    if parameter_list:
+        parameter_list = list(parameter_list[0])
+    return matched_event, parameter_list
 

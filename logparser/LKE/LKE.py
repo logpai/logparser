@@ -272,7 +272,7 @@ def mergeLists(initGroup,flatLogLineGroups):
 #find out whether a list contained a list 
 def listContained(group):
     for i in range(len(group)):
-        if str(type(group[i]))=="<type 'list'>":
+        if type(group[i])==list:
             return True
     return False
 

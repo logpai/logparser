@@ -1,1 +1,1 @@
-from Spell import *
+from .Spell import *
