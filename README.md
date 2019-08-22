@@ -33,8 +33,16 @@ Logparser provides a toolkit and benchmarks for automated log parsing, which is 
 | Drain | [**ICWS'17**] [Drain: An Online Log Parsing Approach with Fixed Depth Tree](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), by Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu.  |
 | MoLFI | [**ICPC'18**] [A Search-based Approach for Accurate Identification of Log Message Formats](http://publications.uni.lu/bitstream/10993/35286/1/ICPC-2018.pdf), by Salma Messaoudi, Annibale Panichella, Domenico Bianculli, Lionel Briand, Raimondas Sasnauskas.  |
 
-### Demo
-Please follow the [installation steps](https://logparser.readthedocs.io/en/latest/installation/dependency.html) and [demo](https://logparser.readthedocs.io/en/latest/demo.html) in the docs to get started.
+### Get started
+
+Code organization:
+
++ [benchmark](./benchmark): the benchmark scripts to reproduce the evaluation results of log parsing 
++ [demo](./demo): the demo files to show how to run logparser on HDFS logs.
++ [logparser](./logparser): the logparser package
++ [logs](./logs): Some 2k log samples and manually parsed structured logs with their templates (ground truth).
+
+Please follow the [installation steps](https://logparser.readthedocs.io/en/latest/installation/dependency.html) and [demo](https://logparser.readthedocs.io/en/latest/demo.html) in the docs to get started. To reproduce the experimental results, please run the [benchmark](./benchmark) scripts.
 
 ### Benchmarking results
 All the log parsers have been evaluated across 16 different logs available in [loghub](https://github.com/logpai/loghub). We report parsing accuracy as the percentage of accurately parsed log messages. 
@@ -44,9 +52,9 @@ All the log parsers have been evaluated across 16 different logs available in [l
 <details>
  <summary>:point_down: Check the detailed bechmarking result table (click to expand)</summary>
  
-In the table, accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*. Some of the accuracy values may be lower than what have been reported by previous studies (e.g., Drain, LogMine). The reasons are two-fold: 1) We use a more rigorous accuracy metric which rejects events that are only partially matched. 2)  For fairness of comparison, we apply only a few preprocessing regular expressions (e.g., IP or number replacement) to each log parser. Adding more preprocessing rules can boost parsing accuracy, but meanwhile requires more manual effort.
- 
  <p align="center"><a href="https://arxiv.org/abs/1811.03509"><img src="./docs/img/accuracy.png" width="908"></a></p>
+ 
+ In the table, accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*. Some of the accuracy values may be lower than what have been reported by previous studies (e.g., Drain, LogMine). The reasons are two-fold: 1) We use a more rigorous accuracy metric which rejects events that are only partially matched. 2)  For fairness of comparison, we apply only a few preprocessing regular expressions (e.g., IP or number replacement) to each log parser. Adding more preprocessing rules can boost parsing accuracy, but requires more manual efforts as well.
 
 </details>
 
