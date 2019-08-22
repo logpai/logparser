@@ -40,7 +40,7 @@ Code organization:
 + [benchmark](./benchmark): the benchmark scripts to reproduce the evaluation results of log parsing 
 + [demo](./demo): the demo files to show how to run logparser on HDFS logs.
 + [logparser](./logparser): the logparser package
-+ [logs](./logs): Some 2k log samples and manually parsed structured logs with their templates (ground truth).
++ [logs](./logs): Some log samples and manually parsed structured logs with their templates (ground truth).
 
 Please follow the [installation steps](https://logparser.readthedocs.io/en/latest/installation/dependency.html) and [demo](https://logparser.readthedocs.io/en/latest/demo.html) in the docs to get started. To reproduce the experimental results, please run the [benchmark](./benchmark) scripts.
 
