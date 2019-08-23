@@ -42,10 +42,10 @@ Code organization:
 + [logparser](./logparser): the logparser package
 + [logs](./logs): Some log samples and manually parsed structured logs with their templates (ground truth).
 
-Please follow the [installation steps](https://logparser.readthedocs.io/en/latest/installation/dependency.html) and [demo](https://logparser.readthedocs.io/en/latest/demo.html) in the docs to get started. To reproduce the experimental results, please run the [benchmark](./benchmark) scripts.
+Please follow the [installation steps](https://logparser.readthedocs.io/en/latest/installation/dependency.html) and [demo](https://logparser.readthedocs.io/en/latest/demo.html) in the docs to get started. 
 
 ### Benchmarking results
-All the log parsers have been evaluated across 16 different logs available in [loghub](https://github.com/logpai/loghub). We report parsing accuracy as the percentage of accurately parsed log messages. 
+All the log parsers have been evaluated across 16 different logs available in [loghub](https://github.com/logpai/loghub). We report parsing accuracy as the percentage of accurately parsed log messages. To reproduce the experimental results, please run the [benchmark](./benchmark) scripts.
 
 <p align="center"><a href="https://arxiv.org/abs/1811.03509"><img src="./docs/img/parsers.png" width="768"></a></p>
 
