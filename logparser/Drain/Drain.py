@@ -340,9 +340,11 @@ class LogParser:
         if version_info.major == 2: # 判断python主版本
             template_regex = re.sub(r'\\ +', r'\s+', template_regex)
         else:
-            template_regex = re.sub(r'\\', r'', template_regex)
+            template_regex = re.sub(r'\\ ', r' ', template_regex)
         template_regex = "^" + template_regex.replace("\<\*\>", "(.*?)") + "$"
+        print(template_regex)
         parameter_list = re.findall(template_regex, row["Content"])
         parameter_list = parameter_list[0] if parameter_list else ()
         parameter_list = list(parameter_list) if isinstance(parameter_list, tuple) else [parameter_list]
+        print(parameter_list)
         return parameter_list
