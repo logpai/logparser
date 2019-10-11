@@ -69,8 +69,8 @@ All the log parsers have been evaluated across 16 different logs available in [l
 Logparser is implemented based on a number of existing open-source projects:
 + [SLCT](http://ristov.github.io/slct/) (C++)
 + [LogCluster](https://github.com/ristov/logcluster) (perl)
-+ [LenMa](https://github.com/keiichishima/templateminer) (python 2)
-+ [MoLFI](https://github.com/SalmaMessaoudi/MoLFI) (python 3)
++ [LenMa](https://github.com/keiichishima/templateminer) (python 2.7)
++ [MoLFI](https://github.com/SalmaMessaoudi/MoLFI) (python 3.6)
 
 ### Feedback
 For any questions or feedback, please post to [the issue page](https://github.com/logpai/logparser/issues). 
