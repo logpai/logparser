@@ -7,8 +7,9 @@ License     : MIT
 import re
 import os
 import time
+import multiprocessing as mp
 from nltk import ngrams
-from Queue import *
+# from Queue import *
 import numpy as np
 import pandas as pd
 import hashlib
@@ -293,7 +294,7 @@ class LogParser:
 
     def outputResult(self, node):
         templateNo = 1
-        nodeQ = Queue()
+        nodeQ = mp.Queue()
         nodeQ.put(node)
 
         templates = [0] * self.df_log.shape[0]
