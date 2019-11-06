@@ -1,1 +1,1 @@
-from LogCluster import *
+from .LogCluster import *
