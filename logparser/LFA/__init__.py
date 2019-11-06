@@ -1,1 +1,1 @@
-from LFA import *
+from .LFA import *
