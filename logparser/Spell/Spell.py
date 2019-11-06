@@ -7,6 +7,7 @@ License     : MIT
 import sys
 import re
 import os
+from sys import version_info
 import numpy as np
 import pandas as pd
 import hashlib
@@ -309,7 +310,10 @@ class LogParser:
         regex = ''
         for k in range(len(splitters)):
             if k % 2 == 0:
-                splitter = re.sub(' +', '\s+', splitters[k])
+                if version_info.major == 2:#for Python 2 
+                    splitter = re.sub(' +', '\s+', splitters[k])
+                else:
+                    splitter = re.sub(r'\s+', ' ', splitters[k])
                 regex += splitter
             else:
                 header = splitters[k].strip('<').strip('>')
