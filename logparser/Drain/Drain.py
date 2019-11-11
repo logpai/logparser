@@ -212,7 +212,8 @@ class LogParser:
         self.df_log['EventId'] = log_templateids
         self.df_log['EventTemplate'] = log_templates
 
-        if self.keep_para:
+#         if self.keep_para:
+        if log_templates:
             self.df_log["ParameterList"] = self.df_log.apply(self.get_parameter_list, axis=1) 
         self.df_log.to_csv(os.path.join(self.savePath, self.logName + '_structured.csv'), index=False)
 
