@@ -7,4 +7,4 @@ Read more information about Drain from the following papers:
 
 + Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](http://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), *Proceedings of the 24th International Conference on Web Services (ICWS)*, 2017.
 
-
+Researchers from IBM made an upgrade version of Drain in Python 3.6 with additional features: [https://github.com/IBM/Drain3](https://github.com/IBM/Drain3)
