@@ -213,7 +213,12 @@ class LogParser:
         self.df_log['EventTemplate'] = log_templates
 
         if self.keep_para:
-            self.df_log["ParameterList"] = self.df_log.apply(self.get_parameter_list, axis=1) 
+            parameter_list=[]
+            for i, row in self.df_log.iterrows():
+                parameter_list.append(self.get_parameter_list(row))
+            p_series=pd.Series(parameter_list, name='ParameterList')
+            self.df_log = pd.concat([self.df_log, p_series], axis=1)
+
         self.df_log.to_csv(os.path.join(self.savePath, self.logName + '_structured.csv'), index=False)
 
 
