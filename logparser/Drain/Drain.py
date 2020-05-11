@@ -10,7 +10,8 @@ import numpy as np
 import pandas as pd
 import hashlib
 from datetime import datetime
-
+import math
+from collections import Counter
 
 class Logcluster:
     def __init__(self, logTemplate='', logIDL=None):
@@ -333,6 +334,15 @@ class LogParser:
         regex = re.compile('^' + regex + '$')
         return headers, regex
 
+    def entropy(self, string):
+    ''' Used to encrypt the string parameter in ParameterList.
+
+    :param string: the string parameter
+    :return: the encrypted number
+    '''
+        letter_num, length_string = Counter(string), float(len(string))
+        return np.round(-sum(count/length_string * math.log(count/length_string, 10) for count in letter_num.values()),5)
+    
     def get_parameter_list(self, row):
         template_regex = re.sub(r"<.{1,5}>", "<*>", row["EventTemplate"])
         if "<*>" not in template_regex: return []
@@ -342,4 +352,5 @@ class LogParser:
         parameter_list = re.findall(template_regex, row["Content"])
         parameter_list = parameter_list[0] if parameter_list else ()
         parameter_list = list(parameter_list) if isinstance(parameter_list, tuple) else [parameter_list]
+        parameter_list = [self.entropy(string) for string in parameter_list]
         return parameter_list
