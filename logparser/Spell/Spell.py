@@ -233,9 +233,11 @@ class LogParser:
         logCluL = []
 
         count = 0
+        f = open("file.txt", "w")
         for idx, line in self.df_log.iterrows():
             logID = line['LineId']
             logmessageL = list(filter(lambda x: x != '', re.split(r'[\s=:,]', self.preprocess(line['Content']))))
+            f.write(str(line))
             constLogMessL = [w for w in logmessageL if w != '<*>']
 
             #Find an existing matched log cluster
@@ -271,6 +273,7 @@ class LogParser:
 
         self.outputResult(logCluL)
         print('Parsing done. [Time taken: {!s}]'.format(datetime.now() - starttime))
+        f.close()
 
     def load_data(self):
         headers, regex = self.generate_logformat_regex(self.logformat)
