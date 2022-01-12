@@ -1,5 +1,6 @@
 # Self-defined
 *result/
+*benchmark_result.csv
 slct
 
 # Byte-compiled / optimized / DLL files
