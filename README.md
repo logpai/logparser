@@ -50,7 +50,7 @@ All the log parsers have been evaluated across 16 different logs available in [l
 <p align="center"><a href="https://arxiv.org/abs/1811.03509"><img src="./docs/img/parsers.png" width="768"></a></p>
 
 <details>
- <summary>:point_down: Check the detailed bechmarking result table (click to expand)</summary>
+ <summary>:point_down: Check the detailed benchmarking result table (click to expand)</summary>
  
  <p align="center"><a href="https://arxiv.org/abs/1811.03509"><img src="./docs/img/accuracy.png" width="908"></a></p>
  

@@ -8,7 +8,7 @@ from LogSettings import benchmark_settings, input_dir
 
 output_dir = 'SLCT_result/' # The output directory of parsing results
 
-bechmark_result = []
+benchmark_result = []
 for dataset, setting in benchmark_settings.iteritems():
     print('\n=== Evaluation on %s ==='%dataset)
     indir = os.path.join(input_dir, os.path.dirname(setting['log_file']))
@@ -22,11 +22,11 @@ for dataset, setting in benchmark_settings.iteritems():
                            groundtruth=os.path.join(indir, log_file + '_structured.csv'),
                            parsedresult=os.path.join(output_dir, log_file + '_structured.csv')
                            )
-    bechmark_result.append([dataset, F1_measure, accuracy])
+    benchmark_result.append([dataset, F1_measure, accuracy])
 
 
 print('\n=== Overall evaluation results ===')
-df_result = pd.DataFrame(bechmark_result, columns=['Dataset', 'F1_measure', 'Accuracy'])
+df_result = pd.DataFrame(benchmark_result, columns=['Dataset', 'F1_measure', 'Accuracy'])
 df_result.set_index('Dataset', inplace=True)
 print(df_result)
 df_result.T.to_csv('SLCT_benchmark_result.csv')
