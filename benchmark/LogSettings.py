@@ -14,11 +14,11 @@ benchmark_settings = {
         'threshold': 0.9, # TODO Lenma: description (default: 0.9)
         'split_threshold': 3, # LKE: The threshold used to determine group splitting (default: 4)
         'rsupport': 10, # LogCluster: The minimum threshold of relative support, 10 denotes 10%
-        'max_dist': 0.005,
+        'max_dist': 0.005, # LogMine: The maximum distance between any log message in a cluster and the cluster representative
         'k': 1, # LogMine: The message distance weight (default: 1)
         'levels': 2, # LogMine: The levels of hierarchy of patterns
         'groupNum': 15, # LogSig: The number of message groups to partition
-        'maxChildNum': 4,
+        'maxChildNum': 4, # SHISO: The maximum number of children for each internal node
         'mergeThreshold': 0.1, # SHISO: Threshold for searching the most similar template in the children
         'formatLookupThreshold': 0.3, # SHISO: Lowerbound to find the most similar node to adjust
         'superFormatThreshold': 0.85, # SHISO: Threshold of average LCS length, determing whether or not to create a super format
@@ -380,6 +380,30 @@ benchmark_settings = {
         'log_file': 'Mac/Mac_2k.log',
         'log_format': '<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>',
         'regex': [r'([\w-]+\.){2,}[\w-]+'],
+        'minEventCount': 2,
+        'merge_percent': 0.6,
+        'st': 0.7,
+        'depth': 6,
+        'CT': 0.3,
+        'lowerBound': 0.25,
+        'threshold': 0.86,
+        'split_threshold': 600,
+        'rsupport': 0.2,
+        'max_dist': 0.004,
+        'k': 1,
+        'levels': 2,
+        'groupNum': 250,
+        'maxChildNum': 4,
+        'mergeThreshold': 0.002,
+        'formatLookupThreshold': 0.3,
+        'superFormatThreshold': 0.85,
+        'support': 3,
+        'tau': 0.6
+    },
+    'messages': {
+        'log_file': 'SSH.log',
+        'log_format': '<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>',
+        'regex': [],
         'minEventCount': 2,
         'merge_percent': 0.6,
         'st': 0.7,
