@@ -2,3 +2,5 @@ deap
 numpy
 nltk
 pandas
+scipy
+sklearn
