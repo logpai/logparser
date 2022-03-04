@@ -2,7 +2,7 @@
 
 import sys
 sys.path.append('../')
-from logparser import evaluator, AEL, Drain, IPLoM, LenMa, LFA, LKE, LogCluster, LogMine, LogSig,  SHISO, SLCT, Spell
+from logparser import evaluator, AEL, Drain, IPLoM, LenMa, LFA, LKE, LogCluster, LogMine, LogSig, MoLFI, SHISO, SLCT, Spell
 from LogSettings import benchmark_settings, input_dir
 import pandas as pd
 import os
@@ -24,7 +24,7 @@ parsers = {
                                                  rex=setting['regex'], max_dist=setting['max_dist'], k=setting['k'],
                                                  levels=setting['levels']),
     "LogSig": lambda setting: LogSig.LogParser(log_format=setting['log_format'], indir=indir, outdir=output_dir, rex=setting['regex'], groupNum=setting['groupNum']),
-    #"MoLFI": lambda setting: MoLFI.LogParser(log_format=setting['log_format'], indir=indir, outdir=output_dir, rex=setting['regex']),
+    "MoLFI": lambda setting: MoLFI.LogParser(log_format=setting['log_format'], indir=indir, outdir=output_dir, rex=setting['regex']),
     "SHISO": lambda setting: SHISO.LogParser(log_format=setting['log_format'], indir=indir, outdir=output_dir, rex=setting['regex'],
                                              maxChildNum=setting['maxChildNum'], mergeThreshold=setting['mergeThreshold'],
                                              formatLookupThreshold=setting['formatLookupThreshold'], superFormatThreshold=setting['superFormatThreshold']),
