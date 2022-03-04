@@ -1,4 +1,4 @@
-import re
+import regex as re
 import unittest
 
 from numpy.core.defchararray import startswith

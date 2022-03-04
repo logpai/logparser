@@ -7,7 +7,7 @@ License: MIT
 import sys
 import os
 import gc
-import re
+import regex as re
 import hashlib
 import math
 import pandas as pd

@@ -1,1 +1,1 @@
-from LenMa import *
+from .LenMa import *

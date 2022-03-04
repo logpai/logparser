@@ -5,7 +5,7 @@ License: MIT
 """
 
 import sys
-import re
+import regex as re
 import os
 import hashlib
 import pandas as pd

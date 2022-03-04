@@ -1,5 +1,5 @@
 import random
-import re
+import regex as re
 import hashlib
 import sys
 from contextlib import suppress

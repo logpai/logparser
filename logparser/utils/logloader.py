@@ -24,7 +24,7 @@
 
 import sys
 import pandas as pd
-import re
+import regex as re
 import multiprocessing as mp
 from itertools import groupby, count, chain
 import numpy as np

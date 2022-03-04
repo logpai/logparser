@@ -7,7 +7,7 @@ License     : MIT
 import math
 from datetime import datetime
 from ..logmatch import regexmatch
-import re
+import regex as re
 import os
 import sys
 import pandas as pd

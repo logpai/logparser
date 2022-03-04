@@ -29,7 +29,7 @@ template matching. The algorithm is described in the following paper:
 
 from ..utils import logloader
 from collections import defaultdict, Counter, OrderedDict
-import re
+import regex as re
 import pandas as pd
 import os
 from datetime import datetime

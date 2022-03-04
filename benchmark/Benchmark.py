@@ -55,7 +55,7 @@ for bm_parser_name in bm_parsers:
     # The output directory of parsing results
     output_dir = bm_parser_name + '_result/'
     benchmark_result = []
-    for dataset, setting in benchmark_settings.iteritems():
+    for dataset, setting in benchmark_settings.items():
         if not (dataset in bm_datasets):
           continue
         print('\n=== Evaluation of %s on %s ===' % (bm_parser_name, dataset))

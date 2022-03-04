@@ -8,9 +8,9 @@ import json
 import numpy as np
 from sklearn.metrics import accuracy_score
 from sklearn.metrics.pairwise import cosine_similarity
-import template
+from .template import Template, TemplateManager
 
-class LenmaTemplate(template.Template):
+class LenmaTemplate(Template):
     def __init__(self, index=None, words=None, logid=None, json=None):
         if json is not None:
             # restore from the jsonized data.
@@ -146,7 +146,7 @@ class LenmaTemplate(template.Template):
     def get_logids(self):
         return self._logid
 
-class LenmaTemplateManager(template.TemplateManager):
+class LenmaTemplateManager(TemplateManager):
     def __init__(self,
                  threshold=0.9,
                  predefined_templates=None):

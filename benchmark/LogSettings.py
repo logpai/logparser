@@ -399,29 +399,5 @@ benchmark_settings = {
         'superFormatThreshold': 0.85,
         'support': 3,
         'tau': 0.6
-    },
-    'messages': {
-        'log_file': 'SSH.log',
-        'log_format': '<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>',
-        'regex': [],
-        'minEventCount': 2,
-        'merge_percent': 0.6,
-        'st': 0.7,
-        'depth': 6,
-        'CT': 0.3,
-        'lowerBound': 0.25,
-        'threshold': 0.86,
-        'split_threshold': 600,
-        'rsupport': 0.2,
-        'max_dist': 0.004,
-        'k': 1,
-        'levels': 2,
-        'groupNum': 250,
-        'maxChildNum': 4,
-        'mergeThreshold': 0.002,
-        'formatLookupThreshold': 0.3,
-        'superFormatThreshold': 0.85,
-        'support': 3,
-        'tau': 0.6
     }
 }

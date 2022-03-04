@@ -4,9 +4,9 @@ Author: LogPAI team
 License: MIT
 """
 
-from templateminer import lenma_template 
+from .templateminer import lenma_template 
 import pandas as pd
-import re
+import regex as re
 import os
 import hashlib
 from collections import defaultdict

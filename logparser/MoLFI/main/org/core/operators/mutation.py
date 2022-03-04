@@ -1,5 +1,5 @@
 import random
-import re
+import regex as re
 
 from numpy.core.defchararray import startswith
 from ..chromosome.chromosome import Chromosome

@@ -7,7 +7,7 @@ License     : MIT
 import sys
 import pandas as pd
 from collections import defaultdict
-import scipy.misc
+import scipy.special
 
 
 def evaluate(groundtruth, parsedresult):
@@ -58,13 +58,13 @@ def get_accuracy(series_groundtruth, series_parsedlog, debug=False):
     real_pairs = 0
     for count in series_groundtruth_valuecounts:
         if count > 1:
-            real_pairs += scipy.misc.comb(count, 2)
+            real_pairs += scipy.special.comb(count, 2)
 
     series_parsedlog_valuecounts = series_parsedlog.value_counts()
     parsed_pairs = 0
     for count in series_parsedlog_valuecounts:
         if count > 1:
-            parsed_pairs += scipy.misc.comb(count, 2)
+            parsed_pairs += scipy.special.comb(count, 2)
 
     accurate_pairs = 0
     accurate_events = 0 # determine how many lines are correctly parsed
@@ -82,7 +82,7 @@ def get_accuracy(series_groundtruth, series_parsedlog, debug=False):
             print('(parsed_eventId, groundtruth_eventId) =', error_eventIds, 'failed', logIds.size, 'messages')
         for count in series_groundtruth_logId_valuecounts:
             if count > 1:
-                accurate_pairs += scipy.misc.comb(count, 2)
+                accurate_pairs += scipy.special.comb(count, 2)
 
     precision = float(accurate_pairs) / parsed_pairs
     recall = float(accurate_pairs) / real_pairs

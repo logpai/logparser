@@ -5,9 +5,9 @@ License     : MIT
 """
 
 import sys
-import re
+import regex as re
 import os
-import alignment
+from .alignment import *
 import copy
 import hashlib
 import pandas as pd
@@ -126,14 +126,14 @@ class LogParser():
         return " ".join(logn)
 
     def print_cluster(self, cluster):
-        print "------start------"
-        print "level: {}".format(cluster.level)
-        print "idxs: {}".format(cluster.logs_idx)
-        print "patterns: {}".format(cluster.patterns)
-        print "count: {}".format(len(cluster.patterns))
+        print("------start------")
+        print("level: {}".format(cluster.level))
+        print("idxs: {}".format(cluster.logs_idx))
+        print("patterns: {}".format(cluster.patterns))
+        print("count: {}".format(len(cluster.patterns)))
         for idx in cluster.logs_idx:
-            print self.df_log.iloc[idx]['Content_']
-        print "------end------"
+            print(self.df_log.iloc[idx]['Content_'])
+        print("------end------")
 
     def msgDist(self, seqP, seqQ):
         dis = 1
