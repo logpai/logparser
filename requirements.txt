@@ -1,0 +1,4 @@
+deap
+numpy
+nltk
+pandas
