@@ -135,7 +135,7 @@ class LogParser:
             i += 1
 
 
-        for idx in xrange(i, len(largeSeq)):
+        for idx in range(i, len(largeSeq)):
             word2 = largeSeq[i]
             numerator += self.wordDist( '', word2 )
 
@@ -326,7 +326,7 @@ class LogParser:
 
     def printTree(self, node, dep):
         pStr = ''   
-        for i in xrange(dep):
+        for i in range(dep):
             pStr += '\t'
 
         if len(node.format) == 0:
