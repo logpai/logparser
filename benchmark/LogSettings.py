@@ -211,7 +211,7 @@ benchmark_settings = {
         'depth': 6,
         'CT': 0.3,
         'lowerBound': 0.3,
-        'threshold': 0.88,
+        'threshold': 0.8,
         'split_threshold': 10,
         'rsupport': 40,
         'max_dist': 0.006,
@@ -223,7 +223,7 @@ benchmark_settings = {
         'formatLookupThreshold': 0.3,
         'superFormatThreshold': 0.4,
         'support': 100,
-        'tau': 0.55
+        'tau': 0.6
     },
 
     'Andriod': {
