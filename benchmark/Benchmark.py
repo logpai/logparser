@@ -15,7 +15,7 @@ parsers = {
     "Drain": lambda setting: Drain.LogParser(log_format=setting['log_format'], indir=indir, outdir=output_dir, rex=setting['regex'], depth=setting['depth'], st=setting['st']),
     "IPLoM": lambda setting: IPLoM.LogParser(log_format=setting['log_format'], indir=indir, outdir=output_dir,
                                              CT=setting['CT'], lowerBound=setting['lowerBound'], rex=setting['regex']),
-    "Lenma": lambda setting: LenMa.LogParser(log_format=setting['log_format'], indir=indir, outdir=output_dir, rex=setting['regex'], threshold=setting['threshold']),
+    "LenMa": lambda setting: LenMa.LogParser(log_format=setting['log_format'], indir=indir, outdir=output_dir, rex=setting['regex'], threshold=setting['threshold']),
     "LFA": lambda setting: LFA.LogParser(log_format=setting['log_format'], indir=indir, outdir=output_dir, rex=setting['regex']),
     "LKE": lambda setting: LKE.LogParser(log_format=setting['log_format'], indir=indir, outdir=output_dir, rex=setting['regex'],
                                          split_threshold=setting['split_threshold']),
