@@ -141,7 +141,7 @@ benchmark_settings = {
 }
 
 bechmark_result = []
-for dataset, setting in benchmark_settings.iteritems():
+for dataset, setting in benchmark_settings.items():
     print('\n=== Evaluation on %s ==='%dataset)
     indir = os.path.join(input_dir, os.path.dirname(setting['log_file']))
     log_file = os.path.basename(setting['log_file'])
