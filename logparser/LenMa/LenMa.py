@@ -4,7 +4,7 @@ Author: LogPAI team
 License: MIT
 """
 
-from templateminer import lenma_template 
+from .templateminer import lenma_template 
 import pandas as pd
 import re
 import os
@@ -90,7 +90,7 @@ class LogParser(object):
         regex = ''
         for k in range(len(splitters)):
             if k % 2 == 0:
-                splitter = re.sub(' +', '\s+', splitters[k])
+                splitter = re.sub(' +', '\\\s+', splitters[k])
                 regex += splitter
             else:
                 header = splitters[k].strip('<').strip('>')
