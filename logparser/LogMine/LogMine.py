@@ -126,14 +126,14 @@ class LogParser():
         return " ".join(logn)
 
     def print_cluster(self, cluster):
-        print "------start------"
-        print "level: {}".format(cluster.level)
-        print "idxs: {}".format(cluster.logs_idx)
-        print "patterns: {}".format(cluster.patterns)
-        print "count: {}".format(len(cluster.patterns))
+        print ("------start------")
+        print ("level: {}".format(cluster.level))
+        print ("idxs: {}".format(cluster.logs_idx))
+        print ("patterns: {}".format(cluster.patterns))
+        print ("count: {}".format(len(cluster.patterns)))
         for idx in cluster.logs_idx:
-            print self.df_log.iloc[idx]['Content_']
-        print "------end------"
+            print (self.df_log.iloc[idx]['Content_'])
+        print ("------end------")
 
     def msgDist(self, seqP, seqQ):
         dis = 1
@@ -196,7 +196,7 @@ class LogParser():
         regex = ''
         for k in range(len(splitters)):
             if k % 2 == 0:
-                splitter = re.sub(' +', '\s+', splitters[k])
+                splitter = re.sub(' +', '\\\s+', splitters[k])
                 regex += splitter
             else:
                 header = splitters[k].strip('<').strip('>')
