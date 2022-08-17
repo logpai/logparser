@@ -7,7 +7,7 @@ License     : MIT
 import sys
 import re
 import os
-import alignment
+from .alignment import *
 import copy
 import hashlib
 import pandas as pd
@@ -119,7 +119,7 @@ class LogParser():
         return log_merged
 
     def pair_merge(self, loga, logb):
-        loga, logb = alignment.water(loga.split(), logb.split())
+        loga, logb = water(loga.split(), logb.split())
         logn = []
         for idx, value in enumerate(loga):
             logn.append('<*>' if value != logb[idx] else value)
