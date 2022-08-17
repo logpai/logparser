@@ -77,7 +77,7 @@ class LogParser(object):
                 self.templates[template]['count'] += 1
         print('Second pass done.')
 
-        self.df_log['EventId'] = map(lambda x: self.templates[x]['id'], templatel)
+        self.df_log['EventId'] = list(map(lambda x: self.templates[x]['id'], templatel))
         self.df_log['EventTemplate'] = templatel
         self.dump_results()
 
@@ -118,7 +118,7 @@ class LogParser(object):
         regex = ''
         for k in range(len(splitters)):
             if k % 2 == 0:
-                splitter = re.sub(' +', '\s+', splitters[k])
+                splitter = re.sub(' +', '\\\s+', splitters[k])
                 regex += splitter
             else:
                 header = splitters[k].strip('<').strip('>')
