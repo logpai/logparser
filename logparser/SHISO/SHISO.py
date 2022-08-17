@@ -8,7 +8,7 @@ import re
 import os
 import time
 from nltk import ngrams
-from Queue import *
+from queue import *
 import numpy as np
 import pandas as pd
 import hashlib
@@ -135,7 +135,7 @@ class LogParser:
             i += 1
 
 
-        for idx in xrange(i, len(largeSeq)):
+        for idx in range(i, len(largeSeq)):
             word2 = largeSeq[i]
             numerator += self.wordDist( '', word2 )
 
@@ -405,7 +405,7 @@ class LogParser:
         regex = ''
         for k in range(len(splitters)):
             if k % 2 == 0:
-                splitter = re.sub(' +', '\s+', splitters[k])
+                splitter = re.sub(' +', '\\\s+', splitters[k])
                 regex += splitter
             else:
                 header = splitters[k].strip('<').strip('>')
