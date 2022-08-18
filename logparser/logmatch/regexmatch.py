@@ -115,7 +115,7 @@ class PatternMatch(object):
 
     def _dump_match_result(self, log_filename, log_dataframe):
         log_dataframe.to_csv(os.path.join(self.outdir, log_filename + '_structured.csv'), index=False)
-        template_freq_list = [[eventId, template, freq] for (eventId, template), freq in self.template_freq_dict.iteritems()]
+        template_freq_list = [[eventId, template, freq] for (eventId, template), freq in self.template_freq_dict.items()]
         template_freq_df = pd.DataFrame(template_freq_list, columns=['EventId', 'EventTemplate', 'Occurrences'])
         template_freq_df.to_csv(os.path.join(self.outdir, log_filename + '_templates.csv'), index=False)
 
@@ -160,7 +160,7 @@ def regex_match(msg, template_match_dict, optimized):
         if len(match_dict) > 1:
             match_dict = OrderedDict(sorted(match_dict.items(), 
                  key=lambda x: (len(x[1][1]), -x[1][1].count('<*>')), reverse=True))
-        for regex, event in match_dict.iteritems():
+        for regex, event in match_dict.items():
             parameter_list = re.findall(regex, msg.strip())
             if parameter_list:
                 matched_event = event
