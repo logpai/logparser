@@ -1,0 +1,105 @@
+EventId,EventTemplate
+E1,<*> failures on node <*>
+E2,Added <*> to list of failed maps
+E3,Added filter AM_PROXY_FILTER (class=<*>) to context mapreduce
+E4,Added filter AM_PROXY_FILTER (class=<*>) to context static
+E5,Added global filter '<*>' (class=<*>)
+E6,Adding <*> tokens and <*> secret keys for NM use for launching container
+E7,Adding job token for <*> to jobTokenSecretManager
+E8,adding path spec: <*>
+E9,Adding protocol <*> to the server
+E10,Address change detected. Old: <*> New: <*>
+E11,After Scheduling: PendingReds:<*> ScheduledMaps:<*> ScheduledReds:<*> AssignedMaps:<*> AssignedReds:<*> CompletedMaps:<*> CompletedReds:<*> ContAlloc:<*> ContRel:<*> HostLocal:<*> RackLocal:<*>
+E12,All maps assigned. Ramping up all remaining reduces:<*>
+E13,Assigned container <*> to <*>
+E14,<*> TaskAttempt Transitioned from <*> to <*>
+E15,Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container <*> taskAttempt <*>
+E22,ATTEMPT_START <*>
+E23,Auth successful for <*> (auth:SIMPLE)
+E24,Before Scheduling: PendingReds:<*> ScheduledMaps:<*> ScheduledReds:<*> AssignedMaps:<*> AssignedReds:<*> CompletedMaps:<*> CompletedReds:<*> ContAlloc:<*> ContRel:<*> HostLocal:<*> RackLocal:<*>
+E25,blacklistDisablePercent is <*>
+E26,"Cannot assign container Container: [ContainerId: <*>, NodeId: <*>, NodeHttpAddress: <*>, Resource: <memory:<*>, vCores:<*>>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ] for a map as either  container memory less than required <memory:<*>, vCores:<*>> or no pending map tasks - <*>=<*>"
+E27,Connecting to ResourceManager at <*>
+E28,Container complete event for unknown container id <*>
+E29,Created MRAppMaster for application <*>
+E30,DataStreamer Exception
+E31,Default file system [<*>]
+E32,<*> -- we are speculating <*>
+E33,DFSOutputStream ResponseProcessor exception  for block <*>
+E34,Diagnostics report from <*>: Container killed by the ApplicationMaster.
+E35,Diagnostics report from <*>: Error: <*>: No Route to Host from  <*> to <*> failed on socket timeout exception: <*>: No route to host: no further information; For more details see:  <*>
+E36,Done acknowledgement from <*>
+E37,Emitting job history data to the timeline server is not enabled
+E38,ERROR IN CONTACTING RM.
+E39,"Error Recovery for block <*> in pipeline <*>, <*>: bad datanode <*>"
+E40,Error writing History Event: <*>
+E41,"Event Writer setup for JobId: <*>, File: <*>"
+E42,Executing with tokens:
+E43,Extract jar:file:<*> to <*>
+E44,Failed to renew lease for [<*>] for <*> seconds.  Will retry shortly ...
+E45,"getResources() for <*>: ask=<*> release= <*> newContainers=<*> finishedContainers=<*> resourcelimit=<memory:<*>, vCores:<*>> knownNMs=<*>"
+E46,Got allocated containers <*>
+E47,Http request log for <*> is not defined
+E48,Input size for job <*> = <*>. Number of splits = <*>
+E49,Instantiated MRClientService at <*>
+E50,IPC Server listener on <*>: starting
+E51,IPC Server Responder: starting
+E52,Jetty bound to port <*>
+E53,<*>
+E54,<*>Job Transitioned from <*> to <*>
+E57,JOB_CREATE <*>
+E58,JVM with ID : <*> asked for a task
+E59,JVM with ID: <*> given task: <*>
+E60,KILLING <*>
+E61,"Kind: YARN_AM_RM_TOKEN, Service: , Ident: (appAttemptId { application_id { id: <*> cluster_timestamp: <*> } attemptId: <*> } keyId: <*>)"
+E62,Launching <*>
+E63,loaded properties from <*>
+E64,Logging to <*>(org.mortbay.log) via <*>
+E65,"mapResourceRequest:<memory:<*>, vCores:<*>>"
+E66,"maxContainerCapability: <memory:<*>, vCores:<*>>"
+E67,maxTaskFailuresPerNode is <*>
+E68,"MRAppMaster launching normal, non-uberized, multi-container job <*>."
+E69,MRAppMaster metrics system started
+E70,nodeBlacklistingEnabled:<*>
+E71,Not uberizing <*> because: not enabled; too many maps; too much input;
+E72,Num completed Tasks: <*>
+E73,Number of reduces for job <*> = <*>
+E74,Opening proxy : <*>
+E75,OutputCommitter is <*>
+E76,OutputCommitter set in config <*>
+E77,Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container <*> taskAttempt <*>
+E78,Processing the event EventType: JOB_SETUP
+E79,Processing the event EventType: TASK_ABORT
+E80,Progress of TaskAttempt <*> is : <*>
+E81,Putting shuffle token in serviceData
+E82,queue: default
+E83,"Recalculating schedule, headroom=<memory:<*>, vCores:<*>>"
+E84,Received completed container <*>
+E85,Reduce slow start threshold not met. completedMapsForReduceSlowstart <*>
+E86,Reduce slow start threshold reached. Scheduling reduces.
+E87,"reduceResourceRequest:<memory:<*>, vCores:<*>>"
+E88,Registered webapp guice modules
+E89,Registering class <*> for class <*>
+E90,Resolved <*> to <*>
+E91,"Retrying connect to server: <*>. Already tried <*> time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=<*>, sleepTime=<*> MILLISECONDS)"
+E92,Scheduled snapshot period at <*> second(s).
+E93,Scheduling a redundant attempt for task <*>
+E94,Shuffle port returned by ContainerManager for <*> : <*>
+E95,Size of containertokens_dob is <*>
+E96,"Slow ReadProcessor read fields took <*> (threshold=<*>); ack: seqno: <*> status: SUCCESS status: ERROR downstreamAckTimeNanos: <*>, targets: [<*>, <*>]"
+E97,Started <*>
+E98,Starting Socket Reader <*> for port <*>
+E99,Task cleanup failed for attempt <*>
+E100,Task succeeded with attempt <*>
+E101,Task: <*> - exited : <*>: No Route to Host from  <*> to <*> failed on socket timeout exception: <*>: No route to host: no further information; For more details see:  <*>
+E102,<*> Task Transitioned from <*> to <*>
+E105,TaskAttempt: [<*>] using containerId: [<*> on NM: [<*>]
+E106,The job-conf file on the remote FS is <*>
+E107,The job-jar file on the remote FS is <*>
+E108,"Thread Thread[eventHandlingThread,<*>,main] threw an Exception."
+E109,Upper limit on the thread pool size is <*>
+E110,Using callQueue class <*>
+E111,Using mapred newApiCommitter.
+E112,We launched <*> speculations.  Sleeping <*> milliseconds.
+E113,Web app <*> started at <*>
+E114,<*> : <*>
