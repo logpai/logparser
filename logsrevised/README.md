@@ -26,6 +26,8 @@ For the logs that can be confirmed by the source code, we alter the files in acc
 
 Present
 
+![image](https://user-images.githubusercontent.com/24251293/215432750-f86c7c58-afe2-41a5-aab5-1840568dd896.png)
+
 We have not made any changes for some particular circumstances or issues with the original data. After adjustment, the type and quantity of templates will change. We provide some details, such as how many template types have been edited, the number of original template types, and how many template types existed.
 
 ![image](https://user-images.githubusercontent.com/24251293/215428722-941099bc-799c-4f22-bbdd-d2b423b270f8.png)
