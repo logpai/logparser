@@ -51,9 +51,9 @@ All the log parsers have been evaluated across 16 different logs available in [l
 
 <details>
  <summary>:point_down: Check the detailed bechmarking result table (click to expand)</summary>
- 
+
  <p align="center"><a href="https://arxiv.org/abs/1811.03509"><img src="./docs/img/accuracy.png" width="908"></a></p>
- 
+
  In the table, accuracy values above 0.9 are marked in bold, and the best accuracy results achieved are marked with \*. Some of the accuracy values may be lower than what have been reported by previous studies (e.g., Drain, LogMine). The reasons are two-fold: 1) We use a more rigorous accuracy metric which rejects events that are only partially matched. 2)  For fairness of comparison, we apply only a few preprocessing regular expressions (e.g., IP or number replacement) to each log parser. Adding more preprocessing rules can boost parsing accuracy, but requires more manual efforts as well.
 
 </details>
@@ -65,7 +65,36 @@ All the log parsers have been evaluated across 16 different logs available in [l
 + [**ICWS'17**] Pinjia He, Jieming Zhu, Zibin Zheng, Michael R. Lyu. [Drain: An Online Log Parsing Approach with Fixed Depth Tree](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf). IEEE International Conference on Web Services (ICWS), 2017.
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](https://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), 2016.
 
+### Publications using logparser
+
+| Year | Conference                                          | Paper Title                                                  | Code                                              |
+| ---- | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------- |
+| 2023 | ICSE                                                | Van-Hoang Le, Hongyu Zhang. [Log Parsing with Prompt-based Few-shot Learning](https://arxiv.org/abs/2302.07435) | [Link](https://github.com/LogIntelligence/LogPPT) |
+| 2023 | ICSE                                                | Zhenhao Li, Chuan Luo, Tse-Hsun Chen, Weiyi Shang, Shilin He, Qingwei Lin, Dongmei Zhang. [Did We Miss Something Important? Studying and Exploring Variable-Aware Log Abstraction](https://arxiv.org/abs/2304.11391) |                                                   |
+| 2023 | ICSE                                                | Yintong Huo, Yuxin Su, Cheryl Lee, Michael R. Lyu. [SemParser: A Semantic Parser for Log Analysis](https://arxiv.org/abs/2112.12636) | [Link](https://github.com/YintongHuo/SemParser.
+)  |
+| 2023 | IEEE Transaction on Severice Computing              | Siyu Yu, Pinjia He, Ningjiang Chen, Yifan Wu. [Brain: Log Parsing with Bidirectional Parallel Tree](https://ieeexplore.ieee.org/document/10109145) | [Link](https://github.com/gaiusyu/Brain)          |
+| 2023 | IEEE Transactions on Network and Service Management | Xiao T, Quan Z, Wang Z J, et al. [LPV: A Log Parsing Framework Based on Vectorization](https://ieeexplore.ieee.org/iel7/4275028/5699970/10050551.pdf?casa_token=-AJXiduy4wwAAAAA:_m2W_1uCYaqgW8UQ-l_F_paLRo8axYTvw5O0w1YsCNoGTbcf1nxVEi5g8izd0eoX6NdxTw-CdOk) |                                                   |
+| 2023 | WWW                                                 | Liming Wang, Hong Xie, Ye Li, Jian Tan, John C.S. Lui. [Interactive Log Parsing via Light-weight User Feedback](https://arxiv.org/abs/2301.12225) |                                                   |
+| 2023 | TKDE                                                | [Zhang T, Qiu H, Castellano G, et al. System Log Parsing: A Survey](https://ieeexplore.ieee.org/iel7/69/4358933/10025560.pdf?casa_token=-f9GU67NplgAAAAA:pjc2PafAjd-wqkHZfXvcOlLaEp8DlF6_tVHCLFSG1d6Xakv83sLHfOFGrk-v1IKNmyMC3Fyx). IEEE Transactions on Knowledge and Data Engineering, 2023. |                                                   |
+| 2022 | ICSME                                               | I. Sedki, A. Hamou-Lhadj, O. Ait-Mohamed, M. Shehab. [An Effective Approach for Parsing Large Log Files](https://ieeexplore.ieee.org/iel7/9977440/9977441/09978179.pdf?casa_token=_OS4R1AgdhQAAAAA:t-lzlYfc8kPrspY2btSU6mGTVTC-KLY2Uk4QK1iMcuuOFzHi-xQ-ffm0Ba3Y-EgMlh1jxMyE) | [Link](https://github.com/SRT-Lab/ULP)            |
+| 2022 | FSE (**best paper**)                                | Xuheng Wang, Xu Zhang, Liqun Li, Shilin He, et al. [SPINE: a scalable log parser with feedback guidance](https://dl.acm.org/doi/abs/10.1145/3540250.3549176?casa_token=cKh8puONUA8AAAAA:iFgQWoWJbwdJFVf23aMiPpLAETPV_CpGdWiSyZjaCFaNXSEK2ErqKxQeQ9a9YmnVKiRWwNy-2kce) |                                                   |
+| 2022 | WWW                                                 | Liu Y, Zhang X, He S, et al. [Uniparser: A unified log parser for heterogeneous log data](https://dl.acm.org/doi/pdf/10.1145/3485447.3511993?casa_token=_ThuiSd7bO4AAAAA:Cr-8Yo1O2Z8S_YdNmiuj7m80RPZLoJhI_Gzidn1fntdcZh-chcnEr3Mvi2urjdiVtaxocxVndSSf) |                                                   |
+| 2021 | ICDE                                                | Chu G, Wang J, Qi Q, et al. [Prefix-Graph: A Versatile Log Parsing Approach Merging Prefix Tree with Probabilistic Graph](https://ieeexplore.ieee.org/iel7/9458599/9458600/09458609.pdf?casa_token=-JCm_FmC0gMAAAAA:-_A_ZmFmSIsPJcwFFuJmCgueEf8rRRi59800lIHRCclm_l0kbYVMnOZ-STK7uC9nd7qZ50Hq) |                                                   |
+| 2020 | TSE                                                 | Dai H, Li H, Chen C S, et al. [Logram: Efficient Log Parsing Using n-Gram Dictionaries](https://ieeexplore.ieee.org/iel7/32/4359463/09134790.pdf?casa_token=TfhNtJnLWrUAAAAA:q1Gc9DVCaGgfZGu_9JB5RS7kxOtfAnHUUZGupZpOcKBMsTSN2g6YLMzWL1yVBvh4MwfYm3xP) | Link                                              |
+| 2020 | PKDD                                                | Nedelkoski S, Bogatinovski J, Acker A, et al. [https://arxiv.org/pdf/2003.07905](https://arxiv.org/pdf/2003.07905) |                                                   |
+|      |                                                     |                                                              |                                                   |
+|      |                                                     |                                                              |                                                   |
+|      |                                                     |                                                              |                                                   |
+|      |                                                     |                                                              |                                                   |
+|      |                                                     |                                                              |                                                   |
+
+
+
+
+
 ### Acknowledgement
+
 Logparser is implemented based on a number of existing open-source projects:
 + [SLCT](http://ristov.github.io/slct/) (C++)
 + [LogCluster](https://github.com/ristov/logcluster) (perl)
