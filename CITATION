@@ -1,0 +1,14 @@
+@inproceedings{logparser,
+  author       = {Jieming Zhu and
+                  Shilin He and
+                  Jinyang Liu and
+                  Pinjia He and
+                  Qi Xie and
+                  Zibin Zheng and
+                  Michael R. Lyu},
+  title        = {Tools and benchmarks for automated log parsing},
+  booktitle    = {Proceedings of the 41st International Conference on Software Engineering:
+                  Software Engineering in Practice (ICSE)},
+  pages        = {121--130},
+  publisher    = {{IEEE} / {ACM}},
+  year         = {2019}}
