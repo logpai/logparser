@@ -1,1 +1,1 @@
-from SLCT import *
+from .src.SLCT import *

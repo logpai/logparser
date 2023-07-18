@@ -1,22 +1,31 @@
-"""
-Description : This file implements the IPLoM algorithm for log parsing
-Author      : LogPAI team
-License     : MIT
-"""
+# =========================================================================
+# Copyright (C) 2016-2023 LOGPAI (https://github.com/logpai).
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# =========================================================================
 
 import copy
 import sys
 from datetime import datetime
 import os
-import gc
-import re
+import regex as re
 import pandas as pd
 import hashlib
-import string
+
 
 class Partition:
-    """ Wrap around the logs and the step number
-    """
+    """Wrap around the logs and the step number"""
+
     def __init__(self, stepNo, numOfLogs=0, lenOfLogs=0):
         self.logLL = []
         self.stepNo = stepNo
@@ -28,27 +37,38 @@ class Partition:
 class Event:
     def __init__(self, eventStr):
         self.eventStr = eventStr
-        self.eventId = hashlib.md5(' '.join(eventStr).encode('utf-8')).hexdigest()[0:8]
+        self.eventId = hashlib.md5(" ".join(eventStr).encode("utf-8")).hexdigest()[0:8]
         self.eventCount = 0
 
 
 class Para:
-    """ Para class
+    """Para class
 
     Attributes
     ----------
-        maxEventLen : the length of the longest log/event, which is used in step 1 to split logs into partitions 
+        maxEventLen : the length of the longest log/event, which is used in step 1 to split logs into partitions
             according to their length
         path : the path of the input file
-        step2Support : the support threshold to create a new partition, partitions which contains less than 
+        step2Support : the support threshold to create a new partition, partitions which contains less than
             step2Support logs will not go through step 2
         PST : Partition support ratio threshold
-        CT : Cluster goodness threshold used in DetermineP1P2 in step3. If the columns with unique term more 
+        CT : Cluster goodness threshold used in DetermineP1P2 in step3. If the columns with unique term more
             than CT, we skip step 3
     """
 
-    def __init__(self, log_format, indir, outdir, maxEventLen, step2Support, PST, CT, lowerBound,
-                 upperBound, rex):
+    def __init__(
+        self,
+        log_format,
+        indir,
+        outdir,
+        maxEventLen,
+        step2Support,
+        PST,
+        CT,
+        lowerBound,
+        upperBound,
+        rex,
+    ):
         self.maxEventLen = maxEventLen
         self.path = indir
         self.savePath = outdir
@@ -60,14 +80,34 @@ class Para:
         self.rex = rex
         self.logformat = log_format
 
-class LogParser:
-    def __init__(self, log_format, indir='../logs/', outdir='./result/',
-                 maxEventLen=200, step2Support=0, PST=0,
-                 CT=0.35, lowerBound=0.25, upperBound=0.9,
-                 rex=[], keep_para=True):
 
-        self.para = Para(log_format=log_format, indir=indir, outdir=outdir, maxEventLen=maxEventLen, step2Support=step2Support,
-                         PST=PST, CT=CT, lowerBound=lowerBound, upperBound=upperBound, rex=rex)
+class LogParser:
+    def __init__(
+        self,
+        log_format,
+        indir="../logs/",
+        outdir="./result/",
+        maxEventLen=200,
+        step2Support=0,
+        PST=0,
+        CT=0.35,
+        lowerBound=0.25,
+        upperBound=0.9,
+        rex=[],
+        keep_para=True,
+    ):
+        self.para = Para(
+            log_format=log_format,
+            indir=indir,
+            outdir=outdir,
+            maxEventLen=maxEventLen,
+            step2Support=step2Support,
+            PST=PST,
+            CT=CT,
+            lowerBound=lowerBound,
+            upperBound=upperBound,
+            rex=rex,
+        )
         self.partitionsL = []
         self.eventsL = []
         self.output = []
@@ -81,7 +121,7 @@ class LogParser:
             self.partitionsL.append(Partition(stepNo=1, numOfLogs=0, lenOfLogs=logLen))
 
     def parse(self, logname):
-        print('Parsing file: ' + os.path.join(self.para.path, logname))
+        print("Parsing file: " + os.path.join(self.para.path, logname))
         self.logname = logname
         starttime = datetime.now()
         self.Step1()
@@ -90,25 +130,30 @@ class LogParser:
         self.Step4()
         self.getOutput()
         self.WriteEventToFile()
-        print('Parsing done. [Time taken: {!s}]'.format(datetime.now() - starttime))
+        print("Parsing done. [Time taken: {!s}]".format(datetime.now() - starttime))
 
     def Step1(self):
         headers, regex = self.generate_logformat_regex(self.para.logformat)
-        self.df_log = self.log_to_dataframe(os.path.join(self.para.path, self.logname), regex, headers, self.para.logformat)
+        self.df_log = self.log_to_dataframe(
+            os.path.join(self.para.path, self.logname),
+            regex,
+            headers,
+            self.para.logformat,
+        )
         lineCount = 1
         for idx, line in self.df_log.iterrows():
-            line = line['Content']
+            line = line["Content"]
             # If line is empty, skip
             if line.strip() == "":
                 continue
 
             if self.para.rex:
                 for currentRex in self.para.rex:
-                    line = re.sub(currentRex, '', line)
+                    line = re.sub(currentRex, "", line)
 
-            wordSeq = list(filter(lambda x: x != '', re.split(r'[\s=:,]', line)))
+            wordSeq = list(filter(lambda x: x != "", re.split(r"[\s=:,]", line)))
             if not wordSeq:
-                wordSeq = [' ']
+                wordSeq = [" "]
 
             # Generate terms list, with ID in the end
             wordSeq.append(str(lineCount))
@@ -122,16 +167,17 @@ class LogParser:
             if partition.numOfLogs == 0:
                 partition.valid = False
 
-            elif self.para.PST != 0 and 1.0 * partition.numOfLogs / lineCount < self.para.PST:
+            elif (
+                self.para.PST != 0
+                and 1.0 * partition.numOfLogs / lineCount < self.para.PST
+            ):
                 for logL in partition.logLL:
                     self.partitionsL[0].logLL.append(logL)
                     self.partitionsL[0].numOfLogs += 1
                 partition.valid = False
 
     def Step2(self):
-
         for partition in self.partitionsL:
-
             if not partition.valid:
                 continue
 
@@ -142,7 +188,7 @@ class LogParser:
             if partition.stepNo == 2:
                 break
 
-            # For each column, create a set to hold the unique tokens in that column. 
+            # For each column, create a set to hold the unique tokens in that column.
             # And finally, calculate the number of the unique tokens in each column
             uniqueTokensCountLS = []
             for columnIdx in range(partition.lenOfLogs):
@@ -173,20 +219,25 @@ class LogParser:
                 logDLL[logL[minColumnIdx]].append(logL)
 
             for key in logDLL:
-                if self.para.PST != 0 and 1.0 * len(logDLL[key]) / partition.numOfLogs < self.para.PST:
+                if (
+                    self.para.PST != 0
+                    and 1.0 * len(logDLL[key]) / partition.numOfLogs < self.para.PST
+                ):
                     self.partitionsL[0].logLL += logDLL[key]
                     self.partitionsL[0].numOfLogs += len(logDLL[key])
                 else:
-                    newPartition = Partition(stepNo=2, numOfLogs=len(logDLL[key]), lenOfLogs=partition.lenOfLogs)
+                    newPartition = Partition(
+                        stepNo=2,
+                        numOfLogs=len(logDLL[key]),
+                        lenOfLogs=partition.lenOfLogs,
+                    )
                     newPartition.logLL = logDLL[key]
                     self.partitionsL.append(newPartition)
 
             partition.valid = False
 
     def Step3(self):
-
         for partition in self.partitionsL:
-
             if not partition.valid:
                 continue
 
@@ -200,7 +251,6 @@ class LogParser:
                 continue
 
             try:
-
                 p1Set = set()
                 p2Set = set()
                 mapRelation1DS = {}
@@ -211,8 +261,8 @@ class LogParser:
                     p1Set.add(logL[p1])
                     p2Set.add(logL[p2])
 
-                    if (logL[p1] == logL[p2]):
-                        print ("Warning: p1 may be equal to p2")
+                    if logL[p1] == logL[p2]:
+                        print("Warning: p1 may be equal to p2")
 
                     if logL[p1] not in mapRelation1DS:
                         mapRelation1DS[logL[p1]] = set()
@@ -222,7 +272,7 @@ class LogParser:
                         mapRelation2DS[logL[p2]] = set()
                     mapRelation2DS[logL[p2]].add(logL[p1])
 
-                # Construct sets to record the tokens in 1-1, 1-M, M-1 relationships, the left-tokens in p1Set & p2Set 
+                # Construct sets to record the tokens in 1-1, 1-M, M-1 relationships, the left-tokens in p1Set & p2Set
                 # are in M-M relationships
                 oneToOneS = set()
                 oneToMP1D = {}
@@ -280,76 +330,101 @@ class LogParser:
                         oneToMP2D[logL[p2]] += 1
 
             except KeyError as er:
-                print (er)
-                print ('error: ' + str(p1) + '\t' + str(p2))
+                print(er)
+                print("error: " + str(p1) + "\t" + str(p2))
 
             newPartitionsD = {}
             if partition.stepNo == 2:
-                newPartitionsD["dumpKeyforMMrelationInStep2__"] = Partition(stepNo=3, numOfLogs=0,
-                                                                            lenOfLogs=partition.lenOfLogs)
+                newPartitionsD["dumpKeyforMMrelationInStep2__"] = Partition(
+                    stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs
+                )
             # Split partition
             for logL in partition.logLL:
                 # If is 1-1
                 if logL[p1] in oneToOneS:
                     if logL[p1] not in newPartitionsD:
-                        newPartitionsD[logL[p1]] = Partition(stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs)
+                        newPartitionsD[logL[p1]] = Partition(
+                            stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs
+                        )
                     newPartitionsD[logL[p1]].logLL.append(logL)
                     newPartitionsD[logL[p1]].numOfLogs += 1
 
                 # This part can be improved. The split_rank can be calculated once.
                 # If is 1-M
                 elif logL[p1] in oneToMP1D:
-                    split_rank = self.Get_Rank_Posistion(len(mapRelation1DS[logL[p1]]), oneToMP1D[logL[p1]], True)
+                    split_rank = self.Get_Rank_Posistion(
+                        len(mapRelation1DS[logL[p1]]), oneToMP1D[logL[p1]], True
+                    )
                     if split_rank == 1:
                         if logL[p1] not in newPartitionsD:
-                            newPartitionsD[logL[p1]] = Partition(stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs)
+                            newPartitionsD[logL[p1]] = Partition(
+                                stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs
+                            )
                         newPartitionsD[logL[p1]].logLL.append(logL)
                         newPartitionsD[logL[p1]].numOfLogs += 1
                     else:
                         if logL[p2] not in newPartitionsD:
-                            newPartitionsD[logL[p2]] = Partition(stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs)
+                            newPartitionsD[logL[p2]] = Partition(
+                                stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs
+                            )
                         newPartitionsD[logL[p2]].logLL.append(logL)
                         newPartitionsD[logL[p2]].numOfLogs += 1
 
                 # If is M-1
                 elif logL[p2] in oneToMP2D:
-                    split_rank = self.Get_Rank_Posistion(len(mapRelation2DS[logL[p2]]), oneToMP2D[logL[p2]], False)
+                    split_rank = self.Get_Rank_Posistion(
+                        len(mapRelation2DS[logL[p2]]), oneToMP2D[logL[p2]], False
+                    )
                     if split_rank == 1:
                         if logL[p1] not in newPartitionsD:
-                            newPartitionsD[logL[p1]] = Partition(stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs)
+                            newPartitionsD[logL[p1]] = Partition(
+                                stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs
+                            )
                         newPartitionsD[logL[p1]].logLL.append(logL)
                         newPartitionsD[logL[p1]].numOfLogs += 1
                     else:
                         if logL[p2] not in newPartitionsD:
-                            newPartitionsD[logL[p2]] = Partition(stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs)
+                            newPartitionsD[logL[p2]] = Partition(
+                                stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs
+                            )
                         newPartitionsD[logL[p2]].logLL.append(logL)
                         newPartitionsD[logL[p2]].numOfLogs += 1
 
                 # M-M
                 else:
                     if partition.stepNo == 2:
-                        newPartitionsD["dumpKeyforMMrelationInStep2__"].logLL.append(logL)
+                        newPartitionsD["dumpKeyforMMrelationInStep2__"].logLL.append(
+                            logL
+                        )
                         newPartitionsD["dumpKeyforMMrelationInStep2__"].numOfLogs += 1
                     else:
                         if len(p1Set) < len(p2Set):
                             if logL[p1] not in newPartitionsD:
-                                newPartitionsD[logL[p1]] = Partition(stepNo=3, numOfLogs=0,
-                                                                     lenOfLogs=partition.lenOfLogs)
+                                newPartitionsD[logL[p1]] = Partition(
+                                    stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs
+                                )
                             newPartitionsD[logL[p1]].logLL.append(logL)
                             newPartitionsD[logL[p1]].numOfLogs += 1
                         else:
                             if logL[p2] not in newPartitionsD:
-                                newPartitionsD[logL[p2]] = Partition(stepNo=3, numOfLogs=0,
-                                                                     lenOfLogs=partition.lenOfLogs)
+                                newPartitionsD[logL[p2]] = Partition(
+                                    stepNo=3, numOfLogs=0, lenOfLogs=partition.lenOfLogs
+                                )
                             newPartitionsD[logL[p2]].logLL.append(logL)
                             newPartitionsD[logL[p2]].numOfLogs += 1
 
-            if "dumpKeyforMMrelationInStep2__" in newPartitionsD and newPartitionsD[
-                "dumpKeyforMMrelationInStep2__"].numOfLogs == 0:
+            if (
+                "dumpKeyforMMrelationInStep2__" in newPartitionsD
+                and newPartitionsD["dumpKeyforMMrelationInStep2__"].numOfLogs == 0
+            ):
                 newPartitionsD["dumpKeyforMMrelationInStep2__"].valid = False
             # Add all the new partitions to collection
             for key in newPartitionsD:
-                if self.para.PST != 0 and 1.0 * newPartitionsD[key].numOfLogs / partition.numOfLogs < self.para.PST:
+                if (
+                    self.para.PST != 0
+                    and 1.0 * newPartitionsD[key].numOfLogs / partition.numOfLogs
+                    < self.para.PST
+                ):
                     self.partitionsL[0].logLL += newPartitionsD[key].logLL
                     self.partitionsL[0].numOfLogs += newPartitionsD[key].numOfLogs
                 else:
@@ -360,7 +435,7 @@ class LogParser:
     def Step4(self):
         self.partitionsL[0].valid = False
         if self.para.PST == 0 and self.partitionsL[0].numOfLogs != 0:
-            event = Event(['Outlier'])
+            event = Event(["Outlier"])
             event.eventCount = self.partitionsL[0].numOfLogs
             self.eventsL.append(event)
 
@@ -372,7 +447,7 @@ class LogParser:
                 continue
 
             if partition.numOfLogs == 0:
-                print (str(partition.stepNo) + '\t')
+                print(str(partition.stepNo) + "\t")
 
             uniqueTokensCountLS = []
             for columnIdx in range(partition.lenOfLogs):
@@ -382,13 +457,13 @@ class LogParser:
                 for columnIdx in range(partition.lenOfLogs):
                     uniqueTokensCountLS[columnIdx].add(logL[columnIdx])
 
-            e = copy.deepcopy(partition.logLL[0])[:partition.lenOfLogs]
+            e = copy.deepcopy(partition.logLL[0])[: partition.lenOfLogs]
 
             for columnIdx in range(partition.lenOfLogs):
                 if len(uniqueTokensCountLS[columnIdx]) == 1:
                     continue
                 else:
-                    e[columnIdx] = '<*>'
+                    e[columnIdx] = "<*>"
 
             event = Event(e)
             event.eventCount = partition.numOfLogs
@@ -409,17 +484,34 @@ class LogParser:
                 self.output.append(logL[-2:] + logL[:-2])
 
     def WriteEventToFile(self):
-        eventID_template = {event.eventId : ' '.join(event.eventStr) for event in self.eventsL}
-        eventList = [[event.eventId, ' '.join(event.eventStr), event.eventCount] for event in self.eventsL]
-        eventDf = pd.DataFrame(eventList, columns=['EventId', 'EventTemplate', 'Occurrences'])
-        eventDf.to_csv(os.path.join(self.para.savePath, self.logname + '_templates.csv'), index=False)
+        eventID_template = {
+            event.eventId: " ".join(event.eventStr) for event in self.eventsL
+        }
+        eventList = [
+            [event.eventId, " ".join(event.eventStr), event.eventCount]
+            for event in self.eventsL
+        ]
+        eventDf = pd.DataFrame(
+            eventList, columns=["EventId", "EventTemplate", "Occurrences"]
+        )
+        eventDf.to_csv(
+            os.path.join(self.para.savePath, self.logname + "_templates.csv"),
+            index=False,
+        )
 
         self.output.sort(key=lambda x: int(x[0]))
-        self.df_log['EventId'] = [str(logL[1]) for logL in self.output]
-        self.df_log['EventTemplate'] = [eventID_template[logL[1]] for logL in self.output]
+        self.df_log["EventId"] = [str(logL[1]) for logL in self.output]
+        self.df_log["EventTemplate"] = [
+            eventID_template[logL[1]] for logL in self.output
+        ]
         if self.keep_para:
-            self.df_log["ParameterList"] = self.df_log.apply(self.get_parameter_list, axis=1) 
-        self.df_log.to_csv(os.path.join(self.para.savePath, self.logname + '_structured.csv'), index=False)
+            self.df_log["ParameterList"] = self.df_log.apply(
+                self.get_parameter_list, axis=1
+            )
+        self.df_log.to_csv(
+            os.path.join(self.para.savePath, self.logname + "_structured.csv"),
+            index=False,
+        )
 
     """
     For 1-M and M-1 mappings, you need to decide whether M side are constants or variables. This method is to decide which side to split
@@ -433,8 +525,14 @@ class LogParser:
         try:
             distance = 1.0 * cardOfS / Lines_that_match_S
         except ZeroDivisionError as er1:
-            print (er1)
-            print ("cardOfS: " + str(cardOfS) + '\t' + 'Lines_that_match_S: ' + str(Lines_that_match_S))
+            print(er1)
+            print(
+                "cardOfS: "
+                + str(cardOfS)
+                + "\t"
+                + "Lines_that_match_S: "
+                + str(Lines_that_match_S)
+            )
 
         if distance <= self.para.lowerBound:
             if one_m:
@@ -479,7 +577,6 @@ class LogParser:
             else:
                 return (-1, -1)
 
-
         elif partition.lenOfLogs == 2:
             return (0, 1)
         else:
@@ -496,7 +593,6 @@ class LogParser:
             numOfUniqueTokensD[len(uniqueTokensCountLS[columnIdx])] += 1
 
         if partition.stepNo == 2:
-
             # Find the largest card and second largest card
             maxIdx = secondMaxIdx = -1
             maxCount = secondMaxCount = 0
@@ -508,7 +604,10 @@ class LogParser:
                     secondMaxCount = maxCount
                     maxIdx = key
                     maxCount = numOfUniqueTokensD[key]
-                elif numOfUniqueTokensD[key] > secondMaxCount and numOfUniqueTokensD[key] != maxCount:
+                elif (
+                    numOfUniqueTokensD[key] > secondMaxCount
+                    and numOfUniqueTokensD[key] != maxCount
+                ):
                     secondMaxIdx = key
                     secondMaxCount = numOfUniqueTokensD[key]
 
@@ -521,13 +620,6 @@ class LogParser:
                         else:
                             p2 = columnIdx
                             break
-
-#                 for columnIdx in range(partition.lenOfLogs):
-#                     if p2 != -1:
-#                         break
-#                     if numOfUniqueTokensD[len(uniqueTokensCountLS[columnIdx])] == secondMaxCount:
-#                         p2 = columnIdx
-#                         break
 
             # If the frequency of the freq_card==1 then
             else:
@@ -556,7 +648,10 @@ class LogParser:
                     secondMinCount = minCount
                     minIdx = key
                     minCount = numOfUniqueTokensD[key]
-                elif numOfUniqueTokensD[key] < secondMinCount and numOfUniqueTokensD[key] != minCount:
+                elif (
+                    numOfUniqueTokensD[key] < secondMinCount
+                    and numOfUniqueTokensD[key] != minCount
+                ):
                     secondMinIdx = key
                     secondMinCount = numOfUniqueTokensD[key]
 
@@ -567,7 +662,10 @@ class LogParser:
                         break
 
             for columnIdx in range(len(uniqueTokensCountLS)):
-                if numOfUniqueTokensD[len(uniqueTokensCountLS[columnIdx])] == secondMinCount:
+                if (
+                    numOfUniqueTokensD[len(uniqueTokensCountLS[columnIdx])]
+                    == secondMinCount
+                ):
                     p2 = columnIdx
                     break
 
@@ -575,24 +673,26 @@ class LogParser:
 
     def PrintPartitions(self):
         for idx in range(len(self.partitionsL)):
-            print ('Partition {}:(from step {})    Valid:{}'.format(idx, self.partitionsL[idx].stepNo,
-                                                                    self.partitionsL[idx].valid))
+            print(
+                "Partition {}:(from step {})    Valid:{}".format(
+                    idx, self.partitionsL[idx].stepNo, self.partitionsL[idx].valid
+                )
+            )
 
             for log in self.partitionsL[idx].logLL:
-                print (log)
+                print(log)
 
     def PrintEventStats(self):
         for event in self.eventsL:
             if event.eventCount > 1:
-                print (str(event.eventId) + '\t' + str(event.eventCount))
-                print (event.eventStr)
+                print(str(event.eventId) + "\t" + str(event.eventCount))
+                print(event.eventStr)
 
     def log_to_dataframe(self, log_file, regex, headers, logformat):
-        """ Function to transform log file to dataframe 
-        """
+        """Function to transform log file to dataframe"""
         log_messages = []
         linecount = 0
-        with open(log_file, 'r') as fin:
+        with open(log_file, "r") as fin:
             for line in fin.readlines():
                 try:
                     match = regex.search(line.strip())
@@ -600,37 +700,40 @@ class LogParser:
                     log_messages.append(message)
                     linecount += 1
                 except Exception as e:
-                    pass
+                    print("Skip line: " + line)
         logdf = pd.DataFrame(log_messages, columns=headers)
-        logdf.insert(0, 'LineId', None)
-        logdf['LineId'] = [i + 1 for i in range(linecount)]
+        logdf.insert(0, "LineId", None)
+        logdf["LineId"] = [i + 1 for i in range(linecount)]
         return logdf
 
     def generate_logformat_regex(self, logformat):
-        """ Function to generate regular expression to split log messages
-        """
+        """Function to generate regular expression to split log messages"""
         headers = []
-        splitters = re.split(r'(<[^<>]+>)', logformat)
-        regex = ''
+        splitters = re.split(r"(<[^<>]+>)", logformat)
+        regex = ""
         for k in range(len(splitters)):
             if k % 2 == 0:
-                splitter = re.sub(' +', '\s+', splitters[k])
+                splitter = re.sub(" +", "\s+", splitters[k])
                 regex += splitter
             else:
-                header = splitters[k].strip('<').strip('>')
-                regex += '(?P<%s>.*?)' % header
+                header = splitters[k].strip("<").strip(">")
+                regex += "(?P<%s>.*?)" % header
                 headers.append(header)
-        regex = re.compile('^' + regex + '$')
+        regex = re.compile("^" + regex + "$")
         return headers, regex
 
     def get_parameter_list(self, row):
-        template_regex = re.sub(r"\s<.{1,5}>\s", "<*>", row["EventTemplate"])
-        if "<*>" not in template_regex: return []
-        template_regex = re.sub(r'([^A-Za-z0-9])', r'\\\1', template_regex)
-        template_regex = re.sub(r'\\ +', r'[^A-Za-z0-9]+', template_regex)
+        template_regex = re.sub(r"<.{1,5}>", "<*>", row["EventTemplate"])
+        if "<*>" not in template_regex:
+            return []
+        template_regex = re.sub(r"([^A-Za-z0-9])", r"\\\1", template_regex)
+        template_regex = re.sub(r"\\ +", r"\\s+", template_regex)
         template_regex = "^" + template_regex.replace("\<\*\>", "(.*?)") + "$"
         parameter_list = re.findall(template_regex, row["Content"])
         parameter_list = parameter_list[0] if parameter_list else ()
-        parameter_list = list(parameter_list) if isinstance(parameter_list, tuple) else [parameter_list]
-        parameter_list = [para.strip(string.punctuation).strip(' ') for para in parameter_list]
+        parameter_list = (
+            list(parameter_list)
+            if isinstance(parameter_list, tuple)
+            else [parameter_list]
+        )
         return parameter_list

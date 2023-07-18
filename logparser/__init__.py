@@ -1,1 +1,1 @@
-from .utils import evaluator
+from .version import __version__

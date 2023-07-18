@@ -1,1 +1,1 @@
-from LogMine import *
+from .src.LogMine import *

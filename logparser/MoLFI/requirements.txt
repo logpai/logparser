@@ -1,2 +1,5 @@
-deap
+pandas
+regex==2022.3.2
 numpy
+scipy
+deap==1.4.1

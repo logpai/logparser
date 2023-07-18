@@ -1,4 +1,4 @@
-@inproceedings{logparser,
+@inproceedings{Logparser,
   author       = {Jieming Zhu and
                   Shilin He and
                   Jinyang Liu and
@@ -10,5 +10,17 @@
   booktitle    = {Proceedings of the 41st International Conference on Software Engineering:
                   Software Engineering in Practice (ICSE)},
   pages        = {121--130},
-  publisher    = {{IEEE} / {ACM}},
   year         = {2019}}
+
+@inproceedings{DSN16,
+  author       = {Pinjia He and
+                  Jieming Zhu and
+                  Shilin He and
+                  Jian Li and
+                  Michael R. Lyu},
+  title        = {An Evaluation Study on Log Parsing and Its Use in Log Mining},
+  booktitle    = {Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks (DSN)},
+  pages        = {654--661},
+  year         = {2016}
+}

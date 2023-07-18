@@ -1,0 +1,15 @@
+EventId,EventTemplate
+E1,<*> Served block <*> to <*>
+E2,<*> Starting thread to transfer block <*> to <*>
+E3,<*>:Got exception while serving <*> to <*>:
+E4,BLOCK* ask <*> to delete <*>
+E5,BLOCK* ask <*> to replicate <*> to datanode(s) <*>
+E6,BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>
+E7,BLOCK* NameSystem.allocateBlock: <*> <*>
+E8,BLOCK* NameSystem.delete: <*> is added to invalidSet of <*>
+E9,Deleting block <*> file <*>
+E10,PacketResponder <*> for block <*> terminating
+E11,Received block <*> of size <*> from <*>
+E12,Received block <*> src: <*> dest: <*> of size <*>
+E13,Receiving block <*> src: <*> dest: <*>
+E14,Verification succeeded for <*>
