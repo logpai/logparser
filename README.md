@@ -5,7 +5,7 @@
 <div>
 <a href="https://pypi.org/project/logparser3"><img src="https://img.shields.io/badge/python-3.6+-blue" style="max-width: 100%;" alt="Python version"></a>
 <a href="https://pypi.org/project/logparser3"><img src="https://img.shields.io/pypi/v/logparser3.svg" style="max-width: 100%;" alt="Pypi version"></a>
-<a href="https://github.com/logpai/logparser/actions/workflows/ci.yml"><img src="https://github.com/logpai/logparser/workflows/CI/badge.svg" style="max-width: 100%;" alt="Pypi version"></a>
+<a href="https://github.com/logpai/logparser/actions/workflows/ci.yml"><img src="https://github.com/logpai/logparser/workflows/CI/badge.svg?event=push" style="max-width: 100%;" alt="Pypi version"></a>
 <a href="https://pepy.tech/project/logparser3"><img src="https://static.pepy.tech/badge/logparser3" style="max-width: 100%;" alt="Downloads"></a>
 <a href="https://github.com/logpai/logparser/blob/main/LICENSE"><img src="https://img.shields.io/github/license/logpai/logparser.svg" style="max-width: 100%;" alt="License"></a>
 <a href="https://github.com/logpai/logparser#discussion"><img src="https://img.shields.io/badge/chat-wechat-brightgreen?style=flat" style="max-width: 100%;" alt="License"></a>
@@ -22,7 +22,7 @@ Logparser provides a machine learning toolkit and benchmarks for automated log p
 
 ### 🌈 New updates
 
-+ Since the first release of logparser, many PRs and issues have been submitted due to incompatibility with Python 3. Finally, we update logparser v1.0.0 with support for Python 3. Thanks for all the contributions! ([#PR86](https://github.com/logpai/logparser/pull/86), [#PR85](https://github.com/logpai/logparser/pull/85), [#PR83](https://github.com/logpai/logparser/pull/83), [#PR80](https://github.com/logpai/logparser/pull/80), [#PR65](https://github.com/logpai/logparser/pull/65), [#PR57](https://github.com/logpai/logparser/pull/57), [#PR53](https://github.com/logpai/logparser/pull/53), [#PR52](https://github.com/logpai/logparser/pull/52), [#PR51](https://github.com/logpai/logparser/pull/51), [#PR49](https://github.com/logpai/logparser/pull/49), [#PR18](https://github.com/logpai/logparser/pull/18), [#PR22](https://github.com/logpai/logparser/pull/22))
++ Since the first release of logparser, many PRs and issues have been submitted due to incompatibility with Python 3. Finally, we update logparser v1.0.0 with support for Python 3. Thanks for all the contributions ([#PR86](https://github.com/logpai/logparser/pull/86), [#PR85](https://github.com/logpai/logparser/pull/85), [#PR83](https://github.com/logpai/logparser/pull/83), [#PR80](https://github.com/logpai/logparser/pull/80), [#PR65](https://github.com/logpai/logparser/pull/65), [#PR57](https://github.com/logpai/logparser/pull/57), [#PR53](https://github.com/logpai/logparser/pull/53), [#PR52](https://github.com/logpai/logparser/pull/52), [#PR51](https://github.com/logpai/logparser/pull/51), [#PR49](https://github.com/logpai/logparser/pull/49), [#PR18](https://github.com/logpai/logparser/pull/18), [#PR22](https://github.com/logpai/logparser/pull/22))!
 + We build the package wheel logparser3 and release it on pypi. Please install via `pip install logparser3`.
 + We refactor the code structure and beautify the code via the Python code formatter black.
 
@@ -43,6 +43,7 @@ Logparser provides a machine learning toolkit and benchmarks for automated log p
 | ICDM'16 | [Spell](https://github.com/logpai/logparser/tree/main/logparser/Spell#spell) | [Spell: Streaming Parsing of System Event Logs](https://www.cs.utah.edu/~lifeifei/papers/spell.pdf), by Min Du, Feifei Li.  |
 | ICWS'17 | [Drain](https://github.com/logpai/logparser/tree/main/logparser/Drain#drain) | [Drain: An Online Log Parsing Approach with Fixed Depth Tree](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf), by Pinjia He, Jieming Zhu, Zibin Zheng, and Michael R. Lyu.|
 | ICPC'18 | [MoLFI](https://github.com/logpai/logparser/tree/main/logparser/MoLFI#molfi) | [A Search-based Approach for Accurate Identification of Log Message Formats](http://publications.uni.lu/bitstream/10993/35286/1/ICPC-2018.pdf), by Salma Messaoudi, Annibale Panichella, Domenico Bianculli, Lionel Briand, Raimondas Sasnauskas.  |
+| TSE'20 | [Logram](https://github.com/logpai/logparser/tree/main/logparser/Logram#logram) | [Logram: Efficient Log Parsing Using n-Gram Dictionaries](https://arxiv.org/pdf/2001.03038.pdf), by Hetong Dai, Heng Li, Che-Shao Chen, Weiyi Shang, and Tse-Hsun (Peter) Chen. |
 
 :bulb: Welcome to submit a PR to push your parser code to logparser and add your paper to the table.
 
@@ -121,7 +122,7 @@ The main goal of logparser is used for research and benchmark purpose. Researche
 
 + Please be aware of the licenses of [third-party libraries](https://github.com/logpai/logparser/blob/main/THIRD_PARTIES.md) used in logparser. We suggest to keep one parser and delete the others and then re-build the package wheel. This would not break the use of logparser.
 + Please enhance logparser with efficiency and scalability with multi-processing, add failure recovery, add persistence to disk or message queue Kafka.
-+ [Drain3](https://github.com/logpai/Drain3) provides a good example for your reference that is built with [practical enhancements] for production scenarios.
++ [Drain3](https://github.com/logpai/Drain3) provides a good example for your reference that is built with [practical enhancements](https://github.com/logpai/Drain3#new-features) for production scenarios.
 
 ### Citation
 👋 If you use our logparser tools or benchmarking results in your publication, please cite the following papers.

@@ -7,3 +7,4 @@ The logparser package is built on top of the following third-party libraries:
 |    LenMa   |        https://github.com/keiichishima/templateminer       |     BSD    |
 | MoLFI  |  https://github.com/SalmaMessaoudi/MoLFI  |     Apache-2.0     |
 |    alignment (LogMine)  |      https://gist.github.com/aziele/6192a38862ce569fe1b9cbe377339fbe      | GPL |
+|    Logram  |      https://github.com/BlueLionLogram/Logram      | NA |
