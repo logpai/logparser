@@ -5,8 +5,10 @@
 <div>
 <a href="https://pypi.org/project/logparser3"><img src="https://img.shields.io/badge/python-3.6+-blue" style="max-width: 100%;" alt="Python version"></a>
 <a href="https://pypi.org/project/logparser3"><img src="https://img.shields.io/pypi/v/logparser3.svg" style="max-width: 100%;" alt="Pypi version"></a>
+<a href="https://github.com/logpai/logparser/actions/workflows/ci.yml"><img src="https://github.com/logpai/logparser/workflows/CI/badge.svg" style="max-width: 100%;" alt="Pypi version"></a>
 <a href="https://pepy.tech/project/logparser3"><img src="https://static.pepy.tech/badge/logparser3" style="max-width: 100%;" alt="Downloads"></a>
 <a href="https://github.com/logpai/logparser/blob/main/LICENSE"><img src="https://img.shields.io/github/license/logpai/logparser.svg" style="max-width: 100%;" alt="License"></a>
+<a href="https://github.com/logpai/logparser#discussion"><img src="https://img.shields.io/badge/chat-wechat-brightgreen?style=flat" style="max-width: 100%;" alt="License"></a>
 </div>
 <hr/>
 
@@ -59,8 +61,13 @@ In particular, the package depends on the following requirements.
 + numpy
 + pandas
 + scipy
++ scikit-learn
 + deap (if using logparser.MoLFI)
++ nltk (if using logparser.SHISO)
 + gcc (if using logparser.SLCT)
++ perl (if using logparser.LogCluster)
+
+Note that regex matching in Python is brittle, so we recommend fixing the regex library to version 2022.3.2.
 
 ### Get started
 

@@ -9,11 +9,11 @@ echo "=== Testing LenMa ===" && cd $home/LenMa && python demo.py && \
 echo "=== Testing LFA ===" && cd $home/LFA && python demo.py && \
 echo "=== Testing LKE ===" && cd $home/LKE && python demo.py && \
 echo "=== Testing LogCluster ===" && cd $home/LogCluster && python demo.py && \
+echo "=== Testing LogMine ===" && cd $home/LogMine && python demo.py && \
 echo "=== Testing LogSig ===" && cd $home/LogSig && python demo.py && \
 echo "=== Testing MoLFI ===" && cd $home/MoLFI && python demo.py && \
 echo "=== Testing SHISO ===" && cd $home/SHISO && python demo.py && \
 echo "=== Testing SLCT ===" && cd $home/SLCT && python demo.py && \
 echo "=== Testing Spell ===" && cd $home/Spell && python demo.py && \
-echo "=== Testing logmatch ===" && cd $home/logmatch && python demo.py
-
+echo "=== Testing logmatch ===" && cd $home/logmatch && python demo.py &&\
 echo "All tests succeed!"

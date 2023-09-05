@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    path:
+      - 'logparser/*'
+      - 'tests/*'
+  pull_request:
+    path:
+      - 'logparser/*'
+      - 'tests/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.6, 3.7, 3.8, 3.9, 3.10.13, 3.11]
+    
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup python environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{matrix.python-version}}
+
+      - name: Install dependencies
+        run: |
+          pip install -q deap==1.4.1
+          pip install -q nltk
+          pip install -e .
+          
+      - name: Run test
+        timeout-minutes: 180
+        run: |
+          cd tests
+          bash test_all.sh

@@ -14,6 +14,7 @@ The code has been tested in the following enviornment:
 + pandas 1.0.1
 + numpy 1.18.1
 + scipy 1.4.1
++ sklearn 0.22.1
 
 Run the following scripts to start the demo:
 

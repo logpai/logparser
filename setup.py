@@ -8,7 +8,7 @@ setuptools.setup(
     version="1.0.0",
     author="logpai",
     author_email="logpai@users.noreply.github.com",
-    description="A machine learning toolkit for log parsing",
+    description="A machine learning toolkit for log parsing from LOGPAI",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/logpai/logparser",
@@ -17,7 +17,7 @@ setuptools.setup(
         exclude=["tests", "data", "docs", "example"]),
     include_package_data=True,
     python_requires=">=3.6",
-    install_requires=["regex==2022.3.2", "numpy", "pandas", "scipy", "tqdm"],
+    install_requires=["regex==2022.3.2", "numpy", "pandas", "scipy", "tqdm", "scikit-learn"],
     classifiers=(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
