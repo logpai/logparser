@@ -1,6 +1,6 @@
 # LKE
 
-LKE (Log Key Extraction) is one of the representative algorithms for log parsing. It first leverages empirical rules for preprocessing and then uses weighted edit distance for hierarchical clustering of log messsages. After further group splitting with fine tuning, log keys are generated from the resulting clusters.
+LKE (Log Key Extraction) is one of the representative algorithms for log parsing. It first leverages empirical rules for preprocessing and then uses weighted edit distance for hierarchical clustering of log messages. After further group splitting with fine tuning, log keys are generated from the resulting clusters.
 
 Read more information about LKE from the following paper:
 

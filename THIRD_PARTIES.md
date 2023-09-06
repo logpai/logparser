@@ -8,3 +8,4 @@ The logparser package is built on top of the following third-party libraries:
 | MoLFI  |  https://github.com/SalmaMessaoudi/MoLFI  |     Apache-2.0     |
 |    alignment (LogMine)  |      https://gist.github.com/aziele/6192a38862ce569fe1b9cbe377339fbe      | GPL |
 |    Logram  |      https://github.com/BlueLionLogram/Logram      | NA |
+|    ULP     | https://github.com/SRT-Lab/ULP | MIT |
