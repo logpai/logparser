@@ -7,8 +7,8 @@
 <a href="https://pypi.org/project/logparser3"><img src="https://img.shields.io/pypi/v/logparser3.svg" style="max-width: 100%;" alt="Pypi version"></a>
 <a href="https://github.com/logpai/logparser/actions/workflows/ci.yml"><img src="https://github.com/logpai/logparser/workflows/CI/badge.svg?event=push" style="max-width: 100%;" alt="Pypi version"></a>
 <a href="https://pepy.tech/project/logparser3"><img src="https://static.pepy.tech/badge/logparser3" style="max-width: 100%;" alt="Downloads"></a>
-<a href="https://github.com/logpai/logparser/blob/main/LICENSE"><img src="https://img.shields.io/github/license/logpai/logparser.svg" style="max-width: 100%;" alt="License"></a>
-<a href="https://github.com/logpai/logparser#discussion"><img src="https://img.shields.io/badge/chat-wechat-brightgreen?style=flat" style="max-width: 100%;" alt="License"></a>
+<a href="https://github.com/logpai/logparser/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-view-brightgreen" style="max-width: 100%;" alt="License"></a>
+<a href="https://github.com/logpai/logparser#discussion"><img src="https://img.shields.io/badge/chat-wechat-brightgreen?style=flat" style="max-width: 100%;"></a>
 </div>
 <hr/>
 
@@ -95,6 +95,8 @@ Note that regex matching in Python is brittle, so we recommend fixing the regex 
     python benchmark.py
     ```
 
+    The benchmarking results can be found at the Readme file of each parser, e.g., https://github.com/logpai/logparser/tree/main/logparser/Drain#benchmark.
+
 3. Parse your own logs:
 
     It is easy to apply logparser to parsing your own log data. To do so, you need to install the logparser3 package first. Then you can develop your own script following the below code snippet to start log parsing.
@@ -121,7 +123,7 @@ Note that regex matching in Python is brittle, so we recommend fixing the regex 
 ### Production use
 The main goal of logparser is used for research and benchmark purpose. Researchers can use logparser as a code base to develop new log parsers while practitioners could assess the performance and scalability of current log parsing methods through our benchmarking. We strongly recommend practitioners to try logparser in your production environment. But be aware that the current implementation of logparser is far from ready for production use. Whereas we currently have no plan to do that, we do have a few suggestions for developers who want to build an intelligent production-level log parser.
 
-+ Please be aware of the licenses of [third-party libraries](https://github.com/logpai/logparser/blob/main/THIRD_PARTIES.md) used in logparser. We suggest to keep one parser and delete the others and then re-build the package wheel. This would not break the use of logparser.
++ Please be aware of the [licenses of third-party libraries](https://github.com/logpai/logparser/blob/main/LICENSE.md) used in logparser. We suggest to keep one parser and delete the others and then re-build the package wheel. This would not break the use of logparser.
 + Please enhance logparser with efficiency and scalability with multi-processing, add failure recovery, add persistence to disk or message queue Kafka.
 + [Drain3](https://github.com/logpai/Drain3) provides a good example for your reference that is built with [practical enhancements](https://github.com/logpai/Drain3#new-features) for production scenarios.
 
