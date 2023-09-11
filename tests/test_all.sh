@@ -16,4 +16,5 @@ echo "=== Testing SHISO ===" && cd $home/SHISO && python demo.py && \
 echo "=== Testing SLCT ===" && cd $home/SLCT && python demo.py && \
 echo "=== Testing Spell ===" && cd $home/Spell && python demo.py && \
 echo "=== Testing logmatch ===" && cd $home/logmatch && python demo.py &&\
+echo "=== Testing Brain ===" && cd $home/Brain && python demo.py &&\
 echo "All tests succeed!"
