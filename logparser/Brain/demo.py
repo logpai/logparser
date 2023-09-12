@@ -1,8 +1,10 @@
 #!/usr/bin/env python
+
 import sys
-sys.path.append('../')
-from logparser import Brain
-dataset='HDFS'
+sys.path.append('../../')
+from logparser.Brain import LogParser
+
+dataset    = 'HDFS'
 input_dir  = '../../data/loghub_2k/HDFS/' # The input directory of log file
 output_dir = 'demo_result/'  # The output directory of parsing results
 log_file   = 'HDFS_2k.log'  # The input log file name
@@ -13,8 +15,9 @@ regex      = [
     r'(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)', # IP
     r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$', # Numbers
 ]
-threshold= 2  # Similarity threshold
-delimeter= []  # Depth of all leaf nodes
+threshold  = 2  # Similarity threshold
+delimeter  = []  # Depth of all leaf nodes
 
-parser = Brain.LogParser(logname=dataset,log_format=log_format, indir=input_dir, outdir=output_dir,  threshold=threshold, delimeter=delimeter, rex=regex)
+parser = LogParser(logname=dataset, log_format=log_format, indir=input_dir, 
+                   outdir=output_dir, threshold=threshold, delimeter=delimeter, rex=regex)
 parser.parse(log_file)

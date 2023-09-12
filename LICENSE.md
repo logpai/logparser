@@ -20,4 +20,4 @@ The logparser package contains a set of open-source log parsers. Some of them ar
 |  LogMine   |   GPL  | https://gist.github.com/aziele/6192a38862ce569fe1b9cbe377339fbe |
 |   Logram   |  Apache-2.0  | https://github.com/BlueLionLogram/Logram                        | 
 |    ULP     | MIT | https://github.com/SRT-Lab/ULP                                  | 
-|   Brain    | MIT | https://github.com/gaiusyu/Brain                                | 
+|   Brain    | Apache-2.0 | https://github.com/gaiusyu/Brain                                | 
