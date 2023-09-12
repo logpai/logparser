@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fd:
 
 setuptools.setup(
     name="logparser3",
-    version="1.0.2",
+    version="1.0.3",
     author="logpai",
     author_email="logpai@users.noreply.github.com",
     description="A machine learning toolkit for log parsing from LOGPAI",
