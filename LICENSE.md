@@ -21,3 +21,4 @@ The logparser package contains a set of open-source log parsers. Some of them ar
 |   Logram   |  Apache-2.0  | https://github.com/BlueLionLogram/Logram                        | 
 |    ULP     | MIT | https://github.com/SRT-Lab/ULP                                  | 
 |   Brain    | Apache-2.0 | https://github.com/gaiusyu/Brain                                | 
+|   NuLog    |  BSD-3 | https://github.com/nulog/nulog  |
