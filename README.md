@@ -28,7 +28,7 @@ Logparser provides a machine learning toolkit and benchmarks for automated log p
 
 ### Log parsers available:
 
-| Publication |                                           Parser                                            | Paper Reference                                                                                                                                                                                                                                                                              | Benchmark |
+| Publication |                                           Parser                                            | Paper Title                                                                                                                                                                                                                                                                              | Benchmark |
 |:-----------:|:-------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------:|
 |   IPOM'03   |          [SLCT](https://github.com/logpai/logparser/tree/main/logparser/SLCT#slct)          | [A Data Clustering Algorithm for Mining Patterns from Event Logs](https://ristov.github.io/publications/slct-ipom03-web.pdf), by Risto Vaarandi.                                                                                                                                             | [:arrow_upper_right:](https://github.com/logpai/logparser/tree/main/logparser/SLCT#benchmark)           |
 |   QSIC'08   |           [AEL](https://github.com/logpai/logparser/tree/main/logparser/AEL#ael)            | [Abstracting Execution Logs to Execution Events for Enterprise Applications](https://www.researchgate.net/publication/4366728_Abstracting_Execution_Logs_to_Execution_Events_for_Enterprise_Applications_Short_Paper), by Zhen Ming Jiang, Ahmed E. Hassan, Parminder Flora, Gilbert Hamann. | [:arrow_upper_right:](https://github.com/logpai/logparser/tree/main/logparser/AEL#benchmark)           |
@@ -58,20 +58,22 @@ We recommend installing the logparser package and requirements via pip install.
 pip install logparser3
 ```
 
-In particular, the package depends on the following requirements.
+In particular, the package depends on the following requirements. Note that regex matching in Python is brittle, so we recommend fixing the regex library to version 2022.3.2.
 
-+ Python 3.6+
++ python 3.6+
 + regex 2022.3.2
 + numpy
 + pandas
 + scipy
 + scikit-learn
-+ deap (if using logparser.MoLFI)
-+ nltk (if using logparser.SHISO)
-+ gcc (if using logparser.SLCT)
-+ perl (if using logparser.LogCluster)
 
-Note that regex matching in Python is brittle, so we recommend fixing the regex library to version 2022.3.2.
+Conditional requirements:
+
++ If using MoLFI: `deap`
++ If using SHISO: `nltk`
++ If using SLCT: `gcc`
++ If using LogCluster: `perl`
++ If using NuLog: `torch`, `torchvision`, `keras_preprocessing`
 
 ### Get started
 
@@ -83,10 +85,6 @@ Note that regex matching in Python is brittle, so we recommend fixing the regex 
     cd logparser/Drain
     python demo.py
     ```
-    After finishing running the demo, you can obtain extracted event templates and parsed structured logs in the result folder.
-
-    + [HDFS_2k.log_templates.csv](https://github.com/logpai/logparser/blob/main/logparser/Drain/demo_result/HDFS_2k.log_templates.csv)
-    + [HDFS_2k.log_structured.csv](https://github.com/logpai/logparser/blob/main/logparser/Drain/demo_result/HDFS_2k.log_structured.csv)
 
 2. Run the benchmark:
   
@@ -97,11 +95,11 @@ Note that regex matching in Python is brittle, so we recommend fixing the regex 
     python benchmark.py
     ```
 
-    The benchmarking results can be found at the Readme file of each parser, e.g., https://github.com/logpai/logparser/tree/main/logparser/Drain#benchmark.
+    The benchmarking results can be found at the readme file of each parser, e.g., https://github.com/logpai/logparser/tree/main/logparser/Drain#benchmark.
 
 3. Parse your own logs:
 
-    It is easy to apply logparser to parsing your own log data. To do so, you need to install the logparser3 package first. Then you can develop your own script following the below code snippet to start log parsing.
+    It is easy to apply logparser to parsing your own log data. To do so, you need to install the logparser3 package first. Then you can develop your own script following the below code snippet to start log parsing. See the full example code at [example/parse_your_own_logs.py](https://github.com/logpai/logparser/blob/main/example/parse_your_own_logs.py).
 
     ```python
     from logparser.Drain import LogParser
@@ -120,7 +118,25 @@ Note that regex matching in Python is brittle, so we recommend fixing the regex 
     parser = LogParser(log_format, indir=input_dir, outdir=output_dir,  depth=depth, st=st, rex=regex)
     parser.parse(log_file)
     ```
-    The full example is shown as [example/parse_your_own_logs.py](https://github.com/logpai/logparser/blob/main/example/parse_your_own_logs.py).
+
+    After running logparser, you can obtain extracted event templates and parsed structured logs in the output folder.
+
+    + `*_templates.csv` (See example [HDFS_2k.log_templates.csv](https://github.com/logpai/logparser/blob/main/logparser/Drain/demo_result/HDFS_2k.log_templates.csv))
+    
+        | EventId  | EventTemplate                                  | Occurrences |
+        |----------|------------------------------------------------|-------------|
+        | dc2c74b7 | PacketResponder <*> for block <*> terminating                                    | 311 |
+        | e3df2680 | Received block <*> of size <*> from <*>                                          | 292 |
+        | 09a53393 | Receiving block <*> src: <*> dest: <*>                                           | 292 |
+
+    + `*_structured.csv` (See example [HDFS_2k.log_structured.csv](https://github.com/logpai/logparser/blob/main/logparser/Drain/demo_result/HDFS_2k.log_structured.csv))
+    
+        | ... | Level | Content                                                                                       | EventId  | EventTemplate                                                       | ParameterList                              |
+        |-----|-------|-----------------------------------------------------------------------------------------------|----------|---------------------------------------------------------------------|--------------------------------------------|
+        | ... | INFO  | PacketResponder 1 for block blk_38865049064139660 terminating | dc2c74b7 | PacketResponder <*> for block <*> terminating | ['1', 'blk_38865049064139660'] |
+        | ... | INFO  | Received block blk_3587508140051953248 of size 67108864 from /10.251.42.84                              | e3df2680 | Received block <*> of size <*> from <*>  | ['blk_3587508140051953248', '67108864', '/10.251.42.84']                                     |
+        | ... | INFO  | Verification succeeded for blk_-4980916519894289629    | 32777b38 | Verification succeeded for <*> |  ['blk_-4980916519894289629']   |
+
 
 ### Production use
 The main goal of logparser is used for research and benchmark purpose. Researchers can use logparser as a code base to develop new log parsers while practitioners could assess the performance and scalability of current log parsing methods through our benchmarking. We strongly recommend practitioners to try logparser in your production environment. But be aware that the current implementation of logparser is far from ready for production use. Whereas we currently have no plan to do that, we do have a few suggestions for developers who want to build an intelligent production-level log parser.
