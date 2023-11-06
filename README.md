@@ -13,7 +13,7 @@
 <hr/>
 
 <div>
-<a href="https://github.com/logpai/logparser/stargazers"><img src="http://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=logpai&repo=logparser" width="550"/><a/>
+<a href="https://github.com/logpai/logparser/stargazers"><img src="http://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=logpai&repo=logparser" width="600"/><a/>
 </div>
 
 Logparser provides a machine learning toolkit and benchmarks for automated log parsing, which is a crucial step for structured log analytics. By applying logparser, users can automatically extract event templates from unstructured logs and convert raw log messages into a sequence of structured events. The process of log parsing is also known as message template extraction, log key extraction, or log message clustering in the literature.
