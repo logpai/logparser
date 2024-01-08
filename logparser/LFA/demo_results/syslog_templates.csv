@@ -1,0 +1,8 @@
+EventId,EventTemplate,Occurrences
+98636255,"{ <*> Major network physical port status change, port <*> <*> <*>",4
+0587b0c3,{ <*> <*> <*> <*> <*>,16
+d56ae2aa,"{ ""issuerAddr"":""172.16.0.24"",""peerId"":""(null)"",""peerAddr"":""(null)"",""type"":""20"",""appMsg"":""B: Major network physical port status change, port 3 Port <*>",223
+9fb2eac3,{ <*> <*> <*> <*> <*> <*>,13
+a053df41,"{ <*> Major network physical port status change, port 3 <*> <*>",9
+9af821e7,"{ ""issuerAddr"":""172.16.0.24"",""peerId"":""(null)"",""peerAddr"":""(null)"",""type"":""20"",""appMsg"":""B: Major <*> <*> <*> <*>",5
+5cf7e85a,{ <*> <*> <*>,1

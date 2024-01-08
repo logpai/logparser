@@ -128,7 +128,7 @@ class LogParser(object):
         """Function to transform log file to dataframe"""
         log_messages = []
         linecount = 0
-        with open(log_file, "r") as fin:
+        with open(log_file, "r",encoding="ISO-8859-1") as fin:
             for line in fin.readlines():
                 try:
                     match = regex.search(line.strip())

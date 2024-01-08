@@ -1,0 +1,645 @@
+172.16.0.24	Nov 07 12:10:52	1	authpriv	warning		1970-01-01T00:00:17.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 1 Link up","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 07 12:10:52	1	kern	info		1970-01-01T00:00:17.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 07 12:10:53	1	authpriv	warning		1970-01-01T00:00:19.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 1 Link up","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 07 12:10:53	1	kern	info		1970-01-01T00:00:19.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 07 12:10:54	1	kern	info		1970-01-01T00:00:19.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 07 12:10:54	1	authpriv	emerg		1970-01-01T00:00:19.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 07 12:10:55	1	authpriv	emerg		1970-01-01T00:00:19.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 07 13:55:47	1	kern	info		1970-01-04T18:32:26.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'root' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:37	1	authpriv	warning		1970-01-01T00:00:17.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 1 Link up","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:37	1	kern	info		1970-01-01T00:00:17.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:38	1	authpriv	warning		1970-01-01T00:00:19.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 1 Link up","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:38	1	kern	info		1970-01-01T00:00:19.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:39	1	kern	info		1970-01-01T00:00:19.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:39	1	authpriv	emerg		1970-01-01T00:00:19.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:40	1	authpriv	emerg		1970-01-01T00:00:19.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:40	1	authpriv	emerg		1970-01-09T06:59:59.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:41	1	authpriv	warning		1970-01-09T06:59:59.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 3 Link down","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:42	1	authpriv	emerg		1970-01-09T06:59:59.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major Network Topology Change Detected","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:42	1	authpriv	warning		1970-01-09T07:36:28.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 3 Link up","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:42	1	authpriv	emerg		1970-01-09T07:36:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Nov 23 15:00:43	1	authpriv	emerg		1970-01-09T07:36:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:15	1	kern	info		1970-01-16T03:34:18.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.222","type":"21","appMsg":"B: FTP user 'ftpuser' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:16	1	kern	info		1970-01-16T03:35:00.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.222","type":"21","appMsg":"B: FTP user 'ftpuser' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:16	1	authpriv	emerg		1970-01-16T03:59:55.000Z 172.16.0.24 csbrick NILVALUE EIP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.222","type":"1","appMsg":"B: Successful connection","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:17	1	kern	info		1970-01-17T07:34:40.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:17	1	kern	info		1970-01-17T07:34:40.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:18	1	kern	info		1970-01-17T07:35:17.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:18	1	kern	info		1970-01-17T07:35:17.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:19	1	authpriv	emerg		1970-01-17T08:22:17.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:19	1	authpriv	warning		1970-01-17T08:22:17.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 3 Link down","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:20	1	authpriv	emerg		1970-01-17T08:22:17.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major Network Topology Change Detected","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:20	1	authpriv	warning		1970-01-18T07:49:20.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 3 Link up","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:21	1	authpriv	emerg		1970-01-18T07:49:22.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:21	1	authpriv	emerg		1970-01-18T07:49:22.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:22	1	authpriv	emerg		1970-01-21T08:04:06.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:22	1	authpriv	warning		1970-01-21T08:04:06.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 3 Link down","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:23	1	authpriv	emerg		1970-01-21T08:04:06.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major Network Topology Change Detected","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:23	1	authpriv	warning		1970-01-21T08:04:49.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 3 Link up","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:24	1	authpriv	emerg		1970-01-21T08:04:51.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:24	1	authpriv	emerg		1970-01-21T08:04:51.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:25	1	authpriv	emerg		1970-01-21T08:08:14.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:25	1	authpriv	warning		1970-01-21T08:08:14.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 3 Link down","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:26	1	authpriv	emerg		1970-02-01T16:53:44.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:26	1	authpriv	emerg		1970-02-01T16:53:44.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:27	1	authpriv	emerg		1970-02-01T16:53:44.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:27	1	authpriv	emerg		1970-02-01T16:53:44.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:28	1	authpriv	emerg		1970-02-01T16:53:44.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:28	1	authpriv	emerg		1970-02-01T16:53:44.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:29	1	authpriv	emerg		1970-02-01T16:53:44.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:29	1	authpriv	emerg		1970-02-01T16:53:45.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:30	1	authpriv	emerg		1970-02-01T16:53:45.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:30	1	authpriv	emerg		1970-02-01T16:53:46.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:31	1	authpriv	emerg		1970-02-01T16:53:46.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:31	1	authpriv	emerg		1970-02-01T16:54:03.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:32	1	authpriv	emerg		1970-02-01T16:54:03.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:32	1	authpriv	emerg		1970-02-01T16:54:03.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:33	1	authpriv	emerg		1970-02-01T16:54:03.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:33	1	authpriv	emerg		1970-02-01T16:54:03.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:34	1	authpriv	emerg		1970-02-01T16:54:03.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:34	1	authpriv	emerg		1970-02-01T16:54:03.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:35	1	authpriv	emerg		1970-02-01T16:54:03.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:35	1	authpriv	emerg		1970-02-01T16:54:03.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:36	1	authpriv	emerg		1970-02-01T16:54:03.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:36	1	authpriv	emerg		1970-02-01T16:54:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:37	1	authpriv	emerg		1970-02-01T16:54:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:37	1	authpriv	emerg		1970-02-01T16:54:05.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:38	1	authpriv	emerg		1970-02-01T16:54:05.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:38	1	authpriv	emerg		1970-02-01T16:54:20.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:39	1	authpriv	emerg		1970-02-01T16:54:20.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:39	1	authpriv	emerg		1970-02-01T16:54:20.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:40	1	authpriv	emerg		1970-02-01T16:54:20.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:40	1	authpriv	emerg		1970-02-01T16:54:20.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:41	1	authpriv	emerg		1970-02-01T16:54:20.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:41	1	authpriv	emerg		1970-02-01T16:54:20.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:42	1	authpriv	emerg		1970-02-01T16:54:20.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:42	1	authpriv	emerg		1970-02-01T16:54:20.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:43	1	authpriv	emerg		1970-02-01T16:54:20.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:43	1	authpriv	emerg		1970-02-01T16:54:21.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:44	1	authpriv	emerg		1970-02-01T16:54:21.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:44	1	authpriv	emerg		1970-02-01T16:54:22.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:45	1	authpriv	emerg		1970-02-01T16:54:22.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:45	1	authpriv	emerg		1970-02-01T16:54:39.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:46	1	authpriv	emerg		1970-02-01T16:54:39.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:46	1	authpriv	emerg		1970-02-01T16:54:39.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:47	1	authpriv	emerg		1970-02-01T16:54:39.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:47	1	authpriv	emerg		1970-02-01T16:54:39.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:48	1	authpriv	emerg		1970-02-01T16:54:39.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:48	1	authpriv	emerg		1970-02-01T16:54:39.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:49	1	authpriv	emerg		1970-02-01T16:54:39.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:49	1	authpriv	emerg		1970-02-01T16:54:39.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:50	1	authpriv	emerg		1970-02-01T16:54:39.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:50	1	authpriv	emerg		1970-02-01T16:54:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:51	1	authpriv	emerg		1970-02-01T16:54:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:51	1	authpriv	emerg		1970-02-01T16:54:41.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:52	1	authpriv	emerg		1970-02-01T16:54:41.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:52	1	authpriv	emerg		1970-02-01T16:54:56.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:53	1	authpriv	emerg		1970-02-01T16:54:56.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:53	1	authpriv	emerg		1970-02-01T16:54:56.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:54	1	authpriv	emerg		1970-02-01T16:54:56.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:54	1	authpriv	emerg		1970-02-01T16:54:56.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:55	1	authpriv	emerg		1970-02-01T16:54:56.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:55	1	authpriv	emerg		1970-02-01T16:54:56.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:56	1	authpriv	emerg		1970-02-01T16:54:56.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:56	1	authpriv	emerg		1970-02-01T16:54:56.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:57	1	authpriv	emerg		1970-02-01T16:54:56.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:57	1	authpriv	emerg		1970-02-01T16:54:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:58	1	authpriv	emerg		1970-02-01T16:54:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:58	1	authpriv	emerg		1970-02-01T16:54:58.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:59	1	authpriv	emerg		1970-02-01T16:54:58.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:40:59	1	authpriv	emerg		1970-02-01T16:55:13.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:00	1	authpriv	emerg		1970-02-01T16:55:13.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:00	1	authpriv	emerg		1970-02-01T16:55:13.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:01	1	authpriv	emerg		1970-02-01T16:55:13.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:01	1	authpriv	emerg		1970-02-01T16:55:13.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:02	1	authpriv	emerg		1970-02-01T16:55:13.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:02	1	authpriv	emerg		1970-02-01T16:55:13.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:03	1	authpriv	emerg		1970-02-01T16:55:13.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:03	1	authpriv	emerg		1970-02-01T16:55:13.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:04	1	authpriv	emerg		1970-02-01T16:55:13.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:04	1	authpriv	emerg		1970-02-01T16:55:14.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:05	1	authpriv	emerg		1970-02-01T16:55:14.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:05	1	authpriv	emerg		1970-02-01T16:55:15.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:06	1	authpriv	emerg		1970-02-01T16:55:15.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:06	1	authpriv	emerg		1970-02-01T16:55:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:07	1	authpriv	emerg		1970-02-01T16:55:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:07	1	authpriv	emerg		1970-02-01T16:55:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:08	1	authpriv	emerg		1970-02-01T16:55:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:08	1	authpriv	emerg		1970-02-01T16:55:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:09	1	authpriv	emerg		1970-02-01T16:55:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:09	1	authpriv	emerg		1970-02-01T16:55:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:10	1	authpriv	emerg		1970-02-01T16:55:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:10	1	authpriv	emerg		1970-02-01T16:55:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:11	1	authpriv	emerg		1970-02-01T16:55:30.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:11	1	authpriv	emerg		1970-02-01T16:55:31.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:12	1	authpriv	emerg		1970-02-01T16:55:31.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:12	1	authpriv	emerg		1970-02-01T16:55:32.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:13	1	authpriv	emerg		1970-02-01T16:55:32.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:13	1	authpriv	emerg		1970-02-01T16:55:47.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:14	1	authpriv	emerg		1970-02-01T16:55:47.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:14	1	authpriv	emerg		1970-02-01T16:55:47.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:15	1	authpriv	emerg		1970-02-01T16:55:47.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:15	1	authpriv	emerg		1970-02-01T16:55:47.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:16	1	authpriv	emerg		1970-02-01T16:55:47.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:16	1	authpriv	emerg		1970-02-01T16:55:47.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:17	1	authpriv	emerg		1970-02-01T16:55:47.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:17	1	authpriv	emerg		1970-02-01T16:55:47.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:18	1	authpriv	emerg		1970-02-01T16:55:47.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:18	1	authpriv	emerg		1970-02-01T16:55:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:19	1	authpriv	emerg		1970-02-01T16:55:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:19	1	authpriv	emerg		1970-02-01T16:55:49.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:20	1	authpriv	emerg		1970-02-01T16:55:49.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:20	1	authpriv	emerg		1970-02-01T16:56:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:21	1	authpriv	emerg		1970-02-01T16:56:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:21	1	authpriv	emerg		1970-02-01T16:56:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:22	1	authpriv	emerg		1970-02-01T16:56:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:22	1	authpriv	emerg		1970-02-01T16:56:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:23	1	authpriv	emerg		1970-02-01T16:56:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:23	1	authpriv	emerg		1970-02-01T16:56:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:24	1	authpriv	emerg		1970-02-01T16:56:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:24	1	authpriv	emerg		1970-02-01T16:56:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:25	1	authpriv	emerg		1970-02-01T16:56:04.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:25	1	authpriv	emerg		1970-02-01T16:56:05.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:26	1	authpriv	emerg		1970-02-01T16:56:05.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:26	1	authpriv	emerg		1970-02-01T16:56:06.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:27	1	authpriv	emerg		1970-02-01T16:56:06.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:27	1	authpriv	emerg		1970-02-01T16:56:23.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:28	1	authpriv	emerg		1970-02-01T16:56:23.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:28	1	authpriv	emerg		1970-02-01T16:56:23.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:29	1	authpriv	emerg		1970-02-01T16:56:23.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:29	1	authpriv	emerg		1970-02-01T16:56:23.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:30	1	authpriv	emerg		1970-02-01T16:56:23.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:30	1	authpriv	emerg		1970-02-01T16:56:23.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:31	1	authpriv	emerg		1970-02-01T16:56:23.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:31	1	authpriv	emerg		1970-02-01T16:56:23.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:32	1	authpriv	emerg		1970-02-01T16:56:23.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:32	1	authpriv	emerg		1970-02-01T16:56:24.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:33	1	authpriv	emerg		1970-02-01T16:56:24.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:33	1	authpriv	emerg		1970-02-01T16:56:25.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:34	1	authpriv	emerg		1970-02-01T16:56:25.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:34	1	authpriv	emerg		1970-02-01T16:56:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:35	1	authpriv	emerg		1970-02-01T16:56:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:36	1	authpriv	emerg		1970-02-01T16:56:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:36	1	authpriv	emerg		1970-02-01T16:56:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:37	1	authpriv	emerg		1970-02-01T16:56:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:37	1	authpriv	emerg		1970-02-01T16:56:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:38	1	authpriv	emerg		1970-02-01T16:56:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:38	1	authpriv	emerg		1970-02-01T16:56:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:39	1	authpriv	emerg		1970-02-01T16:56:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:39	1	authpriv	emerg		1970-02-01T16:56:40.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:39	1	authpriv	emerg		1970-02-01T16:56:41.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:40	1	authpriv	emerg		1970-02-01T16:56:41.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:41	1	authpriv	emerg		1970-02-01T16:56:42.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:41	1	authpriv	emerg		1970-02-01T16:56:42.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:42	1	authpriv	emerg		1970-02-01T16:56:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:42	1	authpriv	emerg		1970-02-01T16:56:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:43	1	authpriv	emerg		1970-02-01T16:56:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:43	1	authpriv	emerg		1970-02-01T16:56:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:44	1	authpriv	emerg		1970-02-01T16:56:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:44	1	authpriv	emerg		1970-02-01T16:56:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:45	1	authpriv	emerg		1970-02-01T16:56:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:45	1	authpriv	emerg		1970-02-01T16:56:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:46	1	authpriv	emerg		1970-02-01T16:56:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:46	1	authpriv	emerg		1970-02-01T16:56:57.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:47	1	authpriv	emerg		1970-02-01T16:56:58.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:47	1	authpriv	emerg		1970-02-01T16:56:58.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:48	1	authpriv	emerg		1970-02-01T16:56:59.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:48	1	authpriv	emerg		1970-02-01T16:56:59.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:49	1	authpriv	emerg		1970-02-01T16:57:16.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:49	1	authpriv	emerg		1970-02-01T16:57:16.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:50	1	authpriv	emerg		1970-02-01T16:57:16.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:50	1	authpriv	emerg		1970-02-01T16:57:16.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:51	1	authpriv	emerg		1970-02-01T16:57:16.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:51	1	authpriv	emerg		1970-02-01T16:57:16.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:52	1	authpriv	emerg		1970-02-01T16:57:16.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:52	1	authpriv	emerg		1970-02-01T16:57:16.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:53	1	authpriv	emerg		1970-02-01T16:57:16.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:53	1	authpriv	emerg		1970-02-01T16:57:16.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:54	1	authpriv	emerg		1970-02-01T16:57:17.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:54	1	authpriv	emerg		1970-02-01T16:57:17.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:55	1	authpriv	emerg		1970-02-01T16:57:18.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:55	1	authpriv	emerg		1970-02-01T16:57:18.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:56	1	authpriv	emerg		1970-02-01T16:57:35.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:56	1	authpriv	emerg		1970-02-01T16:57:35.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:57	1	authpriv	emerg		1970-02-01T16:57:35.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:57	1	authpriv	emerg		1970-02-01T16:57:35.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:58	1	authpriv	emerg		1970-02-01T16:57:35.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:58	1	authpriv	emerg		1970-02-01T16:57:35.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:59	1	authpriv	emerg		1970-02-01T16:57:35.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:41:59	1	authpriv	emerg		1970-02-01T16:57:35.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:00	1	authpriv	emerg		1970-02-01T16:57:35.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:00	1	authpriv	emerg		1970-02-01T16:57:35.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:01	1	authpriv	emerg		1970-02-01T16:57:36.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:01	1	authpriv	emerg		1970-02-01T16:57:36.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:02	1	authpriv	emerg		1970-02-01T16:57:37.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:02	1	authpriv	emerg		1970-02-01T16:57:37.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:03	1	authpriv	emerg		1970-02-01T16:57:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:03	1	authpriv	emerg		1970-02-01T16:57:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:04	1	authpriv	emerg		1970-02-01T16:57:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:04	1	authpriv	emerg		1970-02-01T16:57:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:05	1	authpriv	emerg		1970-02-01T16:57:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:05	1	authpriv	emerg		1970-02-01T16:57:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:06	1	authpriv	emerg		1970-02-01T16:57:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:07	1	authpriv	emerg		1970-02-01T16:57:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:07	1	authpriv	emerg		1970-02-01T16:57:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:08	1	authpriv	emerg		1970-02-01T16:57:48.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major Network Topology Change Detected","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:08	1	authpriv	emerg		1970-02-01T16:57:49.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:09	1	authpriv	emerg		1970-02-01T16:57:49.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:09	1	authpriv	emerg		1970-02-01T16:57:50.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 18 13:42:10	1	authpriv	emerg		1970-02-01T16:57:50.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.222	Dec 18 16:12:13	GET				/ HTTP/1.0
+172.16.0.222	Dec 18 16:12:18	OPTIONS				/ HTTP/1.0
+172.16.0.222	Dec 18 16:12:23	OPTIONS				/ RTSP/1.0
+172.16.0.222	Dec 18 16:12:28					€
+172.16.0.222	Dec 18 16:12:28					(rþ..
+172.16.0.222	Dec 18 16:12:28					.
+172.16.0.222	Dec 18 16:12:28					.† 
+172.16.0.222	Dec 18 16:12:28					.—|
+172.16.0.222	Dec 18 16:12:33					.
+172.16.0.222	Dec 18 16:12:33					..
+172.16.0.222	Dec 18 16:12:33					.
+172.16.0.222	Dec 18 16:12:33					.version.bind
+172.16.0.222	Dec 18 16:12:33					.
+172.16.0.222	Dec 18 16:12:38					.
+172.16.0.222	Dec 18 16:12:38					.
+172.16.0.222	Dec 18 16:12:43					HELP
+172.16.0.222	Dec 18 16:12:50					..
+172.16.0.222	Dec 18 16:12:50					S.
+172.16.0.222	Dec 18 16:12:50					O.
+172.16.0.222	Dec 18 16:12:50					?G×÷º,îê²`~ó
+172.16.0.222	Dec 18 16:12:50					ý‚{¹Õ–Èw›æÄÛ<=Ûoï.n
+172.16.0.222	Dec 18 16:12:50					(
+172.16.0.222	Dec 18 16:12:50					.
+172.16.0.222	Dec 18 16:12:50					.
+172.16.0.222	Dec 18 16:12:50					f
+172.16.0.222	Dec 18 16:12:50					.
+172.16.0.222	Dec 18 16:12:50					.
+172.16.0.222	Dec 18 16:12:50					e
+172.16.0.222	Dec 18 16:12:50					d
+172.16.0.222	Dec 18 16:12:50					c
+172.16.0.222	Dec 18 16:12:50					b
+172.16.0.222	Dec 18 16:12:50					a
+172.16.0.222	Dec 18 16:12:50					`
+172.16.0.222	Dec 18 16:12:50					.
+172.16.0.222	Dec 18 16:12:50					.
+172.16.0.222	Dec 18 16:12:50					 
+172.16.0.222	Dec 18 16:12:50					.
+172.16.0.222	Dec 18 16:12:50					.
+172.16.0.222	Dec 18 16:12:50					.
+172.16.0.222	Dec 18 16:12:50					.
+172.16.0.222	Dec 18 16:12:50					..
+172.16.0.222	Dec 18 16:12:55					.
+172.16.0.222	Dec 18 16:12:55					*%à
+172.16.0.222	Dec 18 16:12:55				Cookie	mstshash=nmap
+172.16.0.222	Dec 18 16:12:55					.
+172.16.0.222	Dec 18 16:12:55					.
+172.16.0.222	Dec 18 16:12:55					.
+172.16.0.222	Dec 18 16:13:00					..
+172.16.0.222	Dec 18 16:13:00					i.
+172.16.0.222	Dec 18 16:13:00					e..U.§ärandom1random2random3random4
+172.16.0.222	Dec 18 16:13:00					.
+172.16.0.222	Dec 18 16:13:00					/
+172.16.0.222	Dec 18 16:13:00					.
+172.16.0.222	Dec 18 16:13:00					9
+172.16.0.222	Dec 18 16:13:00					.
+172.16.0.222	Dec 18 16:13:00					ÿ.
+172.16.0.222	Dec 18 16:13:00					0
+172.16.0.222	Dec 18 16:13:00					,
+172.16.0.222	Dec 18 16:13:00					*
+172.16.0.222	Dec 18 16:13:00					.
+172.16.0.222	Dec 18 16:13:00					.
+172.16.0.222	Dec 18 16:13:05					qjn0k¡....¢...
+172.16.0.222	Dec 18 16:13:05					¤^0\ ...
+172.16.0.222	Dec 18 16:13:05					P€
+172.16.0.222	Dec 18 16:13:05					.¢...NM£.0. ...
+172.16.0.222	Dec 18 16:13:10					¤ÿSMBr
+172.16.0.222	Dec 18 16:13:10					..@
+172.16.0.222	Dec 18 16:13:10					@.
+172.16.0.222	Dec 18 16:13:10					.
+172.16.0.222	Dec 18 16:13:10					
+172.16.0.222	Dec 18 16:13:10	PC				NETWORK PROGRAM 1.0
+172.16.0.222	Dec 18 16:13:10	MICROSOFT				NETWORKS 1.03
+172.16.0.222	Dec 18 16:13:10	MICROSOFT				NETWORKS 3.0
+172.16.0.222	Dec 18 16:13:10					.LANMAN1.0
+172.16.0.222	Dec 18 16:13:10					.LM1.2X002
+172.16.0.222	Dec 18 16:13:10					.Samba
+172.16.0.222	Dec 18 16:13:10	NT				LANMAN 1.0
+172.16.0.222	Dec 18 16:13:10	NT				LM 0.12
+172.16.0.222	Dec 18 16:13:15					l
+172.16.0.222	Dec 18 16:13:15					.
+172.16.0.222	Dec 18 16:13:20	GET				/nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0
+172.16.0.222	Dec 18 16:13:25					.default
+172.16.0.222	Dec 18 16:13:30					0„
+172.16.0.222	Dec 18 16:13:30					-...c„
+172.16.0.222	Dec 18 16:13:30					$.
+172.16.0.222	Dec 18 16:13:30					.
+172.16.0.222	Dec 18 16:13:30					.
+172.16.0.222	Dec 18 16:13:30					..
+172.16.0.222	Dec 18 16:13:30					..d..
+172.16.0.222	Dec 18 16:13:30					‡.objectClass0„
+172.16.0.222	Dec 18 16:13:35					0....`.....
+172.16.0.222	Dec 18 16:13:35					€
+172.16.0.222	Dec 18 16:13:40	OPTIONS				sip:nm SIP/2.0
+172.16.0.222	Dec 18 16:13:40				Via	SIP/2.0/TCP nm;branch=foo
+172.16.0.222	Dec 18 16:13:40				From	<sip:nm@nm>;tag=root
+172.16.0.222	Dec 18 16:13:40				To	<sip:nm2@nm2>
+172.16.0.222	Dec 18 16:13:40				Call-ID	50000
+172.16.0.222	Dec 18 16:13:40				CSeq	42 OPTIONS
+172.16.0.222	Dec 18 16:13:40				Max-Forwards	70
+172.16.0.222	Dec 18 16:13:40				Content-Length	0
+172.16.0.222	Dec 18 16:13:40				Contact	<sip:nm@nm>
+172.16.0.222	Dec 18 16:13:40				Accept	application/sdp
+172.16.0.222	Dec 18 16:13:48					TNMP.
+172.16.0.222	Dec 18 16:13:48					TNME
+172.16.0.222	Dec 18 16:13:48					.
+172.16.0.222	Dec 18 16:13:53					.
+172.16.0.222	Dec 18 16:13:53					..à
+172.16.0.222	Dec 18 16:13:58					DmdT
+172.16.0.222	Dec 18 16:13:58					.
+172.16.0.222	Dec 18 16:13:58					.
+172.16.0.222	Dec 18 16:13:58					..
+172.16.0.222	Dec 18 16:14:03					:
+172.16.0.222	Dec 18 16:14:03					/
+172.16.0.222	Dec 18 16:14:03					.
+172.16.0.222	Dec 18 16:14:03					@..
+172.16.0.222	Dec 18 16:14:03					.
+172.16.0.222	Dec 18 16:14:03					=.
+172.16.0.222	Dec 18 16:14:03					/
+172.16.0.222	Dec 18 16:14:03					@.
+172.16.0.222	Dec 18 16:14:08					JRMI
+172.16.0.222	Dec 18 16:14:13					.
+172.16.0.222	Dec 18 16:14:13					ýÎú.° 
+172.16.0.222	Dec 18 16:14:13					MMS.
+172.16.0.222	Dec 18 16:14:13					.
+172.16.0.222	Dec 18 16:14:13					.
+172.16.0.222	Dec 18 16:14:13					.
+172.16.0.222	Dec 18 16:14:13					ðððð.
+172.16.0.222	Dec 18 16:14:13					.
+172.16.0.222	Dec 18 16:14:13					.
+172.16.0.222	Dec 18 16:14:13					.
+172.16.0.222	Dec 18 16:14:13					N
+172.16.0.222	Dec 18 16:14:13					S
+172.16.0.222	Dec 18 16:14:13					P
+172.16.0.222	Dec 18 16:14:13					l
+172.16.0.222	Dec 18 16:14:13					a
+172.16.0.222	Dec 18 16:14:13					y
+172.16.0.222	Dec 18 16:14:13					e
+172.16.0.222	Dec 18 16:14:13					r
+172.16.0.222	Dec 18 16:14:13					/
+172.16.0.222	Dec 18 16:14:13					9
+172.16.0.222	Dec 18 16:14:13					.
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					.
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					.
+172.16.0.222	Dec 18 16:14:13					2
+172.16.0.222	Dec 18 16:14:13					9
+172.16.0.222	Dec 18 16:14:13					8
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					;
+172.16.0.222	Dec 18 16:14:13					
+172.16.0.222	Dec 18 16:14:13					{
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					-
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					-
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					a
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					-
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					-
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					A
+172.16.0.222	Dec 18 16:14:13					0
+172.16.0.222	Dec 18 16:14:13					}
+172.16.0.222	Dec 18 16:14:18					Z
+172.16.0.222	Dec 18 16:14:18					.
+172.16.0.222	Dec 18 16:14:18					.6.,
+172.16.0.222	Dec 18 16:14:18					.
+172.16.0.222	Dec 18 16:14:18					ÿ.
+172.16.0.222	Dec 18 16:14:18					.
+172.16.0.222	Dec 18 16:14:18					
+172.16.0.222	Dec 18 16:14:18					:
+172.16.0.222	Dec 18 16:14:18					4æ
+172.16.0.222	Dec 18 16:14:18					.
+172.16.0.222	Dec 18 16:14:23					..
+172.16.0.222	Dec 18 16:14:23					4
+172.16.0.222	Dec 18 16:14:23					.
+172.16.0.222	Dec 18 16:14:23					..
+172.16.0.222	Dec 18 16:14:23					.
+172.16.0.222	Dec 18 16:14:23					..
+172.16.0.222	Dec 18 16:14:23					.
+172.16.0.222	Dec 18 16:14:23					..
+172.16.0.222	Dec 18 16:14:23					(
+172.16.0.222	Dec 18 16:14:23					.ÿ.
+172.16.0.222	Dec 18 16:14:23					.U
+172.16.0.222	Dec 18 16:14:23					MSSQLServer
+172.16.0.222	Dec 18 16:14:23					H.
+172.16.0.222	Dec 18 16:14:28					.
+172.16.0.222	Dec 18 16:14:28					.
+172.16.0.222	Dec 18 16:14:28					.
+172.16.0.222	Dec 18 16:14:28					.
+172.16.0.222	Dec 18 16:14:33					GIOP.
+172.16.0.222	Dec 18 16:14:33					.
+172.16.0.222	Dec 18 16:14:33					$
+172.16.0.222	Dec 18 16:14:33					.
+172.16.0.222	Dec 18 16:14:33					.
+172.16.0.222	Dec 18 16:14:33					.
+172.16.0.222	Dec 18 16:14:33					abcdef
+172.16.0.222	Dec 18 16:14:33					.
+172.16.0.222	Dec 18 16:14:33					get
+172.16.0.222	Dec 18 16:15:08					..
+172.16.0.222	Dec 18 16:15:08					i.
+172.16.0.222	Dec 18 16:15:08					e..U.§ärandom1random2random3random4
+172.16.0.222	Dec 18 16:15:08					.
+172.16.0.222	Dec 18 16:15:08					/
+172.16.0.222	Dec 18 16:15:08					.
+172.16.0.222	Dec 18 16:15:08					9
+172.16.0.222	Dec 18 16:15:08					.
+172.16.0.222	Dec 18 16:15:08					ÿ.
+172.16.0.222	Dec 18 16:15:08					0
+172.16.0.222	Dec 18 16:15:08					,
+172.16.0.222	Dec 18 16:15:08					*
+172.16.0.222	Dec 18 16:15:08					.
+172.16.0.222	Dec 18 16:15:08					.
+172.16.0.222	Dec 18 16:15:15					..
+172.16.0.222	Dec 18 16:15:15					S.
+172.16.0.222	Dec 18 16:15:15					O.
+172.16.0.222	Dec 18 16:15:15					?G×÷º,îê²`~ó
+172.16.0.222	Dec 18 16:15:15					ý‚{¹Õ–Èw›æÄÛ<=Ûoï.n
+172.16.0.222	Dec 18 16:15:15					(
+172.16.0.222	Dec 18 16:15:15					.
+172.16.0.222	Dec 18 16:15:15					.
+172.16.0.222	Dec 18 16:15:15					f
+172.16.0.222	Dec 18 16:15:15					.
+172.16.0.222	Dec 18 16:15:15					.
+172.16.0.222	Dec 18 16:15:15					e
+172.16.0.222	Dec 18 16:15:15					d
+172.16.0.222	Dec 18 16:15:15					c
+172.16.0.222	Dec 18 16:15:15					b
+172.16.0.222	Dec 18 16:15:15					a
+172.16.0.222	Dec 18 16:15:15					`
+172.16.0.222	Dec 18 16:15:15					.
+172.16.0.222	Dec 18 16:15:15					.
+172.16.0.222	Dec 18 16:15:15					 
+172.16.0.222	Dec 18 16:15:15					.
+172.16.0.222	Dec 18 16:15:15					.
+172.16.0.222	Dec 18 16:15:15					.
+172.16.0.222	Dec 18 16:15:15					.
+172.16.0.222	Dec 18 16:15:15					..
+172.16.0.222	Dec 18 16:16:20					€
+172.16.0.222	Dec 18 16:16:20					(6ÏÕì
+172.16.0.222	Dec 18 16:16:20					.
+172.16.0.222	Dec 18 16:16:20					.† 
+172.16.0.222	Dec 18 16:16:20					.
+172.16.0.20	Dec 19 13:00:52	1	kern	info		1970-02-05T04:43:59.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'anonymous' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 13:00:55	1	kern	info		1970-02-05T04:44:01.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'anonymous' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 13:00:55	1	kern	info		1970-02-05T04:44:01.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'anonymous' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 13:03:09	1	kern	info		1970-02-05T04:46:16.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'anonymous' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 13:08:33	1	kern	info		1970-02-05T04:51:38.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'anonymous' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 13:08:45	1	kern	info		1970-02-05T04:51:51.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'admin' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 13:12:16	1	kern	info		1970-02-05T04:55:21.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'anonymous' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.24	Dec 19 14:06:52	1	kern	info		1970-02-05T05:49:56.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: STOP","repNb":"0","repLastTime":"(null)"}
+172.16.0.249	Dec 19 15:09:16	GET				/ HTTP/1.0
+172.16.0.249	Dec 19 15:09:21	OPTIONS				/ HTTP/1.0
+172.16.0.249	Dec 19 15:09:26	OPTIONS				/ RTSP/1.0
+172.16.0.249	Dec 19 15:09:31					€
+172.16.0.249	Dec 19 15:09:31					(rþ..
+172.16.0.249	Dec 19 15:09:31					.
+172.16.0.249	Dec 19 15:09:31					.† 
+172.16.0.249	Dec 19 15:09:31					.—|
+172.16.0.249	Dec 19 15:09:36					.
+172.16.0.249	Dec 19 15:09:36					..
+172.16.0.249	Dec 19 15:09:36					.
+172.16.0.249	Dec 19 15:09:36					.version.bind
+172.16.0.249	Dec 19 15:09:36					.
+172.16.0.249	Dec 19 15:09:41					.
+172.16.0.249	Dec 19 15:09:41					.
+172.16.0.249	Dec 19 15:09:46					HELP
+172.16.0.249	Dec 19 15:09:54					..
+172.16.0.249	Dec 19 15:09:54					S.
+172.16.0.249	Dec 19 15:09:54					O.
+172.16.0.249	Dec 19 15:09:54					?G×÷º,îê²`~ó
+172.16.0.249	Dec 19 15:09:54					ý‚{¹Õ–Èw›æÄÛ<=Ûoï.n
+172.16.0.249	Dec 19 15:09:54					(
+172.16.0.249	Dec 19 15:09:54					.
+172.16.0.249	Dec 19 15:09:54					.
+172.16.0.249	Dec 19 15:09:54					f
+172.16.0.249	Dec 19 15:09:54					.
+172.16.0.249	Dec 19 15:09:54					.
+172.16.0.249	Dec 19 15:09:54					e
+172.16.0.249	Dec 19 15:09:54					d
+172.16.0.249	Dec 19 15:09:54					c
+172.16.0.249	Dec 19 15:09:54					b
+172.16.0.249	Dec 19 15:09:54					a
+172.16.0.249	Dec 19 15:09:54					`
+172.16.0.249	Dec 19 15:09:54					.
+172.16.0.249	Dec 19 15:09:54					.
+172.16.0.249	Dec 19 15:09:54					 
+172.16.0.249	Dec 19 15:09:54					.
+172.16.0.249	Dec 19 15:09:54					.
+172.16.0.249	Dec 19 15:09:54					.
+172.16.0.249	Dec 19 15:09:54					.
+172.16.0.249	Dec 19 15:09:54					..
+172.16.0.249	Dec 19 15:09:59					.
+172.16.0.249	Dec 19 15:09:59					*%à
+172.16.0.249	Dec 19 15:09:59				Cookie	mstshash=nmap
+172.16.0.249	Dec 19 15:09:59					.
+172.16.0.249	Dec 19 15:09:59					.
+172.16.0.249	Dec 19 15:09:59					.
+172.16.0.20	Dec 19 15:10:02	1	kern	info		1970-02-05T06:53:05.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.249	Dec 19 15:10:04					..
+172.16.0.249	Dec 19 15:10:04					i.
+172.16.0.249	Dec 19 15:10:04					e..U.§ärandom1random2random3random4
+172.16.0.249	Dec 19 15:10:04					.
+172.16.0.249	Dec 19 15:10:04					/
+172.16.0.249	Dec 19 15:10:04					.
+172.16.0.249	Dec 19 15:10:04					9
+172.16.0.249	Dec 19 15:10:04					.
+172.16.0.249	Dec 19 15:10:04					ÿ.
+172.16.0.249	Dec 19 15:10:04					0
+172.16.0.249	Dec 19 15:10:04					,
+172.16.0.249	Dec 19 15:10:04					*
+172.16.0.249	Dec 19 15:10:04					.
+172.16.0.249	Dec 19 15:10:04					.
+172.16.0.249	Dec 19 15:10:09					qjn0k¡....¢...
+172.16.0.249	Dec 19 15:10:09					¤^0\ ...
+172.16.0.249	Dec 19 15:10:09					P€
+172.16.0.249	Dec 19 15:10:09					.¢...NM£.0. ...
+172.16.0.249	Dec 19 15:10:14					¤ÿSMBr
+172.16.0.249	Dec 19 15:10:14					..@
+172.16.0.249	Dec 19 15:10:14					@.
+172.16.0.249	Dec 19 15:10:14					.
+172.16.0.249	Dec 19 15:10:14					
+172.16.0.249	Dec 19 15:10:14	PC				NETWORK PROGRAM 1.0
+172.16.0.249	Dec 19 15:10:14	MICROSOFT				NETWORKS 1.03
+172.16.0.249	Dec 19 15:10:14	MICROSOFT				NETWORKS 3.0
+172.16.0.249	Dec 19 15:10:14					.LANMAN1.0
+172.16.0.249	Dec 19 15:10:14					.LM1.2X002
+172.16.0.249	Dec 19 15:10:14					.Samba
+172.16.0.249	Dec 19 15:10:14	NT				LANMAN 1.0
+172.16.0.249	Dec 19 15:10:14	NT				LM 0.12
+172.16.0.249	Dec 19 15:10:19					l
+172.16.0.249	Dec 19 15:10:19					.
+172.16.0.20	Dec 19 15:10:19	1	kern	info		1970-02-05T06:53:23.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: STOP","repNb":"0","repLastTime":"(null)"}
+172.16.0.249	Dec 19 15:10:24	GET				/nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0
+172.16.0.20	Dec 19 15:10:26	1	kern	info		1970-02-05T06:53:29.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.249	Dec 19 15:10:29					.default
+172.16.0.249	Dec 19 15:10:34					0„
+172.16.0.249	Dec 19 15:10:34					-...c„
+172.16.0.249	Dec 19 15:10:34					$.
+172.16.0.249	Dec 19 15:10:34					.
+172.16.0.249	Dec 19 15:10:34					.
+172.16.0.249	Dec 19 15:10:34					..
+172.16.0.249	Dec 19 15:10:34					..d..
+172.16.0.249	Dec 19 15:10:34					‡.objectClass0„
+172.16.0.249	Dec 19 15:10:39					0....`.....
+172.16.0.249	Dec 19 15:10:39					€
+172.16.0.249	Dec 19 15:10:44	OPTIONS				sip:nm SIP/2.0
+172.16.0.249	Dec 19 15:10:44				Via	SIP/2.0/TCP nm;branch=foo
+172.16.0.249	Dec 19 15:10:44				From	<sip:nm@nm>;tag=root
+172.16.0.249	Dec 19 15:10:44				To	<sip:nm2@nm2>
+172.16.0.249	Dec 19 15:10:44				Call-ID	50000
+172.16.0.249	Dec 19 15:10:44				CSeq	42 OPTIONS
+172.16.0.249	Dec 19 15:10:44				Max-Forwards	70
+172.16.0.249	Dec 19 15:10:44				Content-Length	0
+172.16.0.249	Dec 19 15:10:44				Contact	<sip:nm@nm>
+172.16.0.249	Dec 19 15:10:44				Accept	application/sdp
+172.16.0.249	Dec 19 15:10:52					TNMP.
+172.16.0.249	Dec 19 15:10:52					TNME
+172.16.0.249	Dec 19 15:10:52					.
+172.16.0.20	Dec 19 15:11:40	1	kern	info		1970-02-05T06:54:43.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: STOP","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 15:11:49	1	kern	info		1970-02-05T06:54:52.000Z 172.16.0.24 csbrick NILVALUE DeviceManager @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"7","appMsg":"B: PLC state update: RUN","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 15:31:18	1	authpriv	emerg		1970-02-05T07:14:09.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Blocking","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 15:31:19	1	authpriv	warning		1970-02-05T07:14:09.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 3 Link down","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 15:31:19	1	authpriv	emerg		1970-02-05T07:14:09.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major Network Topology Change Detected","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 15:31:20	1	authpriv	warning		1970-02-05T07:14:15.000Z 172.16.0.24 csbrick NILVALUE ETH @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"19","appMsg":"B: Major network physical port status change, port 3 Link up","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 15:31:20	1	authpriv	emerg		1970-02-05T07:14:18.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Learning","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 15:31:21	1	authpriv	emerg		1970-02-05T07:14:18.000Z 172.16.0.24 csbrick NILVALUE RSTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"(null)","type":"20","appMsg":"B: Major network physical port status change, port 3 Port Forward","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 15:49:13	1	kern	info		1970-02-05T07:32:16.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'anonymous' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 15:49:14	1	kern	info		1970-02-05T07:32:16.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'anonymous' login FAILED","repNb":"0","repLastTime":"(null)"}
+172.16.0.20	Dec 19 15:50:58	1	kern	info		1970-02-05T07:34:01.000Z 172.16.0.24 csbrick NILVALUE FTP @cee: { "issuerAddr":"172.16.0.24","peerId":"(null)","peerAddr":"172.16.0.76","type":"21","appMsg":"B: FTP user 'anonymous' login FAILED","repNb":"0","repLastTime":"(null)"}
