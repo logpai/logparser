@@ -1,0 +1,6 @@
+EventId,EventTemplate,Occurrences
+3b6015d0,"{ <*> Major network physical port status change, port <*> <*> <*>",236
+f9e996f5,"{ ""issuerAddr"":""172.16.0.24"",""peerId"":""(null)"",""peerAddr"":""(null)"",""type"":""7"",""appMsg"":""B: PLC state update: <*>",16
+0d406373,"{ <*> FTP user <*> login FAILED"",""repNb"":""0"",""repLastTime"":""(null)""}",13
+c4207333,"{ ""issuerAddr"":""172.16.0.24"",""peerId"":""(null)"",""peerAddr"":""(null)"",""type"":""20"",""appMsg"":""B: Major Network Topology Change Detected"",""repNb"":""0"",""repLastTime"":""(null)""}",5
+e4210fee,"{ ""issuerAddr"":""172.16.0.24"",""peerId"":""(null)"",""peerAddr"":""172.16.0.222"",""type"":""1"",""appMsg"":""B: Successful connection"",""repNb"":""0"",""repLastTime"":""(null)""}",1
