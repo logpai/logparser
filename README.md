@@ -75,6 +75,7 @@ Conditional requirements:
 + If using SLCT: `gcc`
 + If using LogCluster: `perl`
 + If using NuLog: `torch`, `torchvision`, `keras_preprocessing`
++ If using DivLog: `openai`, `tiktoken` (require python 3.8+)
 
 ### Get started
 

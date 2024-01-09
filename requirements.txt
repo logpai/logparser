@@ -6,3 +6,5 @@ scikit-learn
 tqdm
 nltk
 deap
+openai
+tiktoken
