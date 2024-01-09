@@ -76,7 +76,7 @@ class RegexMatch:
             results = match_fn(event_list, self.template_match_dict, self.optimized)
         else:
             pool = mp.Pool(processes=self.n_workers)
-            chunk_size = len(event_list) / self.n_workers + 1
+            chunk_size = len(event_list) // self.n_workers + 1
             result_chunks = [
                 pool.apply_async(
                     match_fn,
@@ -86,7 +86,7 @@ class RegexMatch:
                         self.optimized,
                     ),
                 )
-                for i in xrange(0, len(event_list), chunk_size)
+                for i in range(0, len(event_list), chunk_size)
             ]
             pool.close()
             pool.join()
