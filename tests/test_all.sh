@@ -18,4 +18,5 @@ echo "=== Testing Spell ===" && cd $home/Spell && python demo.py && \
 echo "=== Testing logmatch ===" && cd $home/logmatch && python demo.py &&\
 # echo "=== Testing NuLog ===" && cd $home/NuLog && python demo.py &&\
 echo "=== Testing Brain ===" && cd $home/Brain && python demo.py &&\
+echo "=== Testing DivLog ===" && cd $home/DivLog && python demo.py &&\
 echo "All tests succeed!"
