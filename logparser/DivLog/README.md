@@ -40,6 +40,22 @@ If you wish to re-run all the results (which may cost much time and api budget),
 rm -r results
 ```
 
+#### Attention:
+
+OpenAI has [shut down](https://platform.openai.com/docs/deprecations/2023-07-06-gpt-and-embeddings) the *Text Completion API* for the GPT-3 model series (`ada`,`babbage`,`curie`,`davinci`) as of January 4th, 2024. If you wish to apply the DivLog framework on other OpenAI *Chat Completion APIs* and re-run all the results, you may need to modify the API request in `BatchParse` of `DivLog.py`. Specifically, you need to replace the original API request design for GPT-3 models with the latest Chat Completion API:
+
+```python
+### Replace it
+response = openai.Completion.create(
+                                    model=model, 
+                                    prompt=instruction + "\n\n\n" + prompt + "<prompt>:" + line.strip() + "\n<extraction>: ", 
+                                    temperature=temperature,
+                                    max_tokens=token_len)
+```
+
+More details about APIs can be found [here](https://platform.openai.com/docs/api-reference/chat).
+
+
 ### Benchmark
 
 Running the benchmark script on Loghub_2k datasets, you could obtain the following results.
