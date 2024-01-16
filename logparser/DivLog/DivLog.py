@@ -11,6 +11,7 @@ from tqdm import tqdm
 from random import sample
 from sklearn.model_selection import train_test_split
 from openai.embeddings_utils import get_embedding, cosine_similarity
+from collections import Counter
 
 
 def dpp(kernel_matrix, max_length, epsilon=1E-10):
@@ -63,15 +64,73 @@ def DPPsplit(log_list, groundtruth_template, candidate_idx):
     test_templates = [groundtruth_template[idx] for idx in test_idx]
     return test_logs, cand_logs, test_templates, cand_templates
 
-def evaluateGA(dataset, groundtruth, result):
+# calculate parsing accuracy
+def evaluatePA(groundtruth, result):
+    # len(predicted_list) may smaller than len(groundtruth)
+    length = len(result['template'])
+    if length == 0: return 0
+    correct = 0
+    for i in range(length):
+        if result['template'][i] == groundtruth.loc[groundtruth['Content'] == result['log'][i]]['EventTemplate'].values[0]:
+            correct += 1
+    return correct/length
+
+# correctly identified templates over total num of identified template
+def evaluatePTA(groundtruth, result):
+    # generate a "template: log indexes list" mapping for groundtruth
+    oracle_tem_dict = {}
+    for idx in range(len(result['template'])):
+        if groundtruth['EventTemplate'][idx] not in oracle_tem_dict:
+          oracle_tem_dict[groundtruth['EventTemplate'][idx]] = [groundtruth['Content'][idx]]
+        else: oracle_tem_dict[groundtruth['EventTemplate'][idx]].append(groundtruth['Content'][idx])
+
+    # generate mapping for identified template
+    result_tem_dict = {}
+    for idx in range(len(result['template'])):
+        if result['template'][idx] not in result_tem_dict:
+          result_tem_dict[result['template'][idx]] = [result['log'][idx]]
+        else: result_tem_dict[result['template'][idx]].append(result['log'][idx])
+
+    correct_num = 0
+    for key in result_tem_dict.keys():
+        if key not in oracle_tem_dict: continue
+        else:
+          if Counter(oracle_tem_dict[key]) == Counter(result_tem_dict[key]): correct_num += 1
+    
+    return correct_num/len(result_tem_dict)
+
+# correctly identified templates over total num of oracle template
+def evaluateRTA(groundtruth, result):
+    # generate a "template: log indexes list" mapping for groundtruth
+    oracle_tem_dict = {}
+    for idx in range(len(result['template'])):
+        if groundtruth['EventTemplate'][idx] not in oracle_tem_dict:
+          oracle_tem_dict[groundtruth['EventTemplate'][idx]] = [groundtruth['Content'][idx]]
+        else: oracle_tem_dict[groundtruth['EventTemplate'][idx]].append(groundtruth['Content'][idx])
+
+    # generate mapping for identified template
+    result_tem_dict = {}
+    for idx in range(len(result['template'])):
+        if result['template'][idx] not in result_tem_dict:
+          result_tem_dict[result['template'][idx]] = [result['log'][idx]]
+        else: result_tem_dict[result['template'][idx]].append(result['log'][idx])
+
+    correct_num = 0
+    for key in oracle_tem_dict.keys():
+        if key not in result_tem_dict: continue
+        else:
+          if Counter(oracle_tem_dict[key]) == Counter(result_tem_dict[key]): correct_num += 1
+    
+    return correct_num/len(oracle_tem_dict)
+
+# calculate grouping accuracy
+def evaluateGA(groundtruth, result):
     # load logs and templates
-    df_groundtruth = pd.read_csv(groundtruth)
-    df_parsedlog = pd.read_csv(result)
-    compared_list = df_parsedlog['log'].tolist()
+    compared_list = result['log'].tolist()
 
     # select groundtruth logs that have been parsed
     parsed_idx = []
-    for idx, row in df_groundtruth.iterrows():
+    for idx, row in groundtruth.iterrows():
         if row['Content'] in compared_list:
             parsed_idx.append(idx)
             compared_list.remove(row['Content'])
@@ -81,11 +140,11 @@ def evaluateGA(dataset, groundtruth, result):
         print("Wrong number of groundtruth logs!")
         return 0
 
-    df_groundtruth = df_groundtruth.loc[parsed_idx]
+    groundtruth = groundtruth.loc[parsed_idx]
 
     # grouping
     groundtruth_dict = {}
-    for idx, row in df_groundtruth.iterrows():
+    for idx, row in groundtruth.iterrows():
         if row['EventTemplate'] not in groundtruth_dict:
             # create a new key
             groundtruth_dict[row['EventTemplate']] = [row['Content']]
@@ -94,7 +153,7 @@ def evaluateGA(dataset, groundtruth, result):
             groundtruth_dict[row['EventTemplate']].append(row['Content'])
 
     result_dict = {}
-    for idx, row in df_parsedlog.iterrows():
+    for idx, row in result.iterrows():
         if row['template'] not in result_dict:
             # create a new key
             result_dict[row['template']] = [row['log']]
@@ -153,7 +212,7 @@ class ModelParser():
     self.log_test, self.log_cand, self.gt_test, self.gt_cand = self.splitCandidates(self.log_path, self.cand_ratio, self.split_method)
 
     # build lookup map
-    # self.lookUpMap = self.buildLookupMap(self.map_path)
+    self.lookUpMap = self.buildLookupMap(self.map_path)
   
   # generate lookup map
   def buildLookupMap(self, map_path):
@@ -267,73 +326,6 @@ class ModelParser():
       similarist_gt = self.gt_cand[idxes[0]]
       return prompt, similarist_gt
 
-  # compare if template is correctly extracted: if yes, return 1; else return 0
-  def compareTemplate(self, tpl_1, tpl_2):
-      token_list_1 = tpl_1.split()
-      token_list_2 = tpl_2.split()
-      if (len(token_list_1) != len(token_list_2)): return 0
-      length = len(token_list_1)
-      for i in range(length):
-        if (token_list_1[i] != token_list_2[i]): return 0
-      return 1;
-  
-  # calculate parsing accuracy
-  def evaluatePA(self, result):
-      # len(result) may smaller than len(groundtruth)
-      length = len(result)
-      if length == 0: return 0
-      correct = 0
-      for i in range(length):
-        correct += self.compareTemplate(result[i], self.gt_test[i])
-      return correct/length
-
-  # correctly identified templates over total num of identified template
-  def evaluatePTA(self, result):
-      # generate a "template: log indexes list" mapping for groundtruth
-      oracle_tem_dict = {}
-      for idx in range(len(result)):
-          if self.gt_test[idx] not in oracle_tem_dict:
-            oracle_tem_dict[self.gt_test[idx]] = [idx]
-          else: oracle_tem_dict[self.gt_test[idx]].append(idx)
-
-      # generate mapping for identified template
-      result_tem_dict = {}
-      for idx in range(len(result)):
-          if result[idx] not in result_tem_dict:
-            result_tem_dict[result[idx]] = [idx]
-          else: result_tem_dict[result[idx]].append(idx)
-
-      correct_num = 0
-      for key in result_tem_dict.keys():
-          if key not in oracle_tem_dict: continue
-          else:
-            if oracle_tem_dict[key] == result_tem_dict[key]: correct_num += 1
-      
-      return correct_num/len(result_tem_dict)
-
-  # correctly identified templates over total num of oracle template
-  def evaluateRTA(self, result):
-      oracle_tem_dict = {}
-      for idx in range(len(result)):
-          if self.gt_test[idx] not in oracle_tem_dict:
-            oracle_tem_dict[self.gt_test[idx]] = [idx]
-          else: oracle_tem_dict[self.gt_test[idx]].append(idx)
-
-      # generate mapping for identified template
-      result_tem_dict = {}
-      for idx in range(len(result)):
-          if result[idx] not in result_tem_dict:
-            result_tem_dict[result[idx]] = [idx]
-          else: result_tem_dict[result[idx]].append(idx)
-
-      correct_num = 0
-      for key in oracle_tem_dict.keys():
-          if key not in result_tem_dict: continue
-          else:
-            if oracle_tem_dict[key] == result_tem_dict[key]: correct_num += 1
-      
-      return correct_num/len(oracle_tem_dict)
-
   def writeResult(self, result, path, limit):
       output = pd.DataFrame(data={"log": self.log_test[:limit], "template": result})
       output.to_csv(path, index=False)
@@ -380,8 +372,8 @@ and put the template after <extraction> tag and between <START> and <END> tags."
                                                   prompt=instruction + "\n\n\n" + prompt + "<prompt>:" + line.strip() + "\n<extraction>: ", 
                                                   temperature=temperature,
                                                   max_tokens=token_len)
-            except: # if interrupt by request busy
-              print("Request busy, log {} is now waiting ...".format(line_idx))
+            except Exception as e: # if exception occurs
+              print(e)
               re_id += 1
               if re_id < 5:
                 time.sleep(0.1)
@@ -417,10 +409,12 @@ and put the template after <extraction> tag and between <START> and <END> tags."
           df = pd.DataFrame(columns=['Dataset', 'Parsing Accuracy', 'Precision Template Accuracy', 'Recall Template Accuracy', 'Grouping Accuracy'])
         else:
           df = pd.read_csv("DivLog_bechmark_result.csv")
-        PA = self.evaluatePA(answer_list)
-        PTA = self.evaluatePTA(answer_list)
-        RTA = self.evaluateRTA(answer_list)
-        GA = evaluateGA(self.dataset, self.log_path, self.result_path)
+        df_groundtruth = pd.read_csv(self.log_path)
+        df_parsedlog = pd.read_csv(self.result_path)
+        PA = evaluatePA(df_groundtruth, df_parsedlog)
+        PTA = evaluatePTA(df_groundtruth, df_parsedlog)
+        RTA = evaluateRTA(df_groundtruth, df_parsedlog)
+        GA = evaluateGA(df_groundtruth, df_parsedlog)
         print("{}:\t PA:\t{:.6f}\tPTA:\t{:.6f}\tRTA:\t{:.6f}\tGA:\t{:.6f}".format(self.dataset, PA, PTA, RTA, GA))
         if self.dataset not in df['Dataset'].values:
           df.loc[len(df)] = [self.dataset, PA, PTA, RTA, GA]
