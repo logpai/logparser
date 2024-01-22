@@ -1,4 +1,4 @@
-pillow==10.0.1
+pillow==10.2.0
 pandas
 regex==2022.3.2
 numpy
