@@ -147,11 +147,17 @@ The main goal of logparser is used for research and benchmark purpose. Researche
 + Please enhance logparser with efficiency and scalability with multi-processing, add failure recovery, add persistence to disk or message queue Kafka.
 + [Drain3](https://github.com/logpai/Drain3) provides a good example for your reference that is built with [practical enhancements](https://github.com/logpai/Drain3#new-features) for production scenarios.
 
-### Citation
-👋 If you use our logparser tools or benchmarking results in your publication, please cite the following papers.
+### 🔥 Citation
+If you use our logparser tools or benchmarking results in your publication, please cite the following papers.
 
 + [**ICSE'19**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). *International Conference on Software Engineering (ICSE)*, 2019.
 + [**DSN'16**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [An Evaluation Study on Log Parsing and Its Use in Log Mining](https://jiemingzhu.github.io/pub/pjhe_dsn2016.pdf). *IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)*, 2016.
+
+
+### 🤗 Contributors
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
 
 ### Discussion
 Welcome to join our WeChat group for any question and discussion. Alternatively, you can [open an issue here](https://github.com/logpai/logparser/issues/new).
