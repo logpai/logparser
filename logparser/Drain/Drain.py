@@ -320,44 +320,76 @@ class LogParser:
         )
 
     def preprocess(self, line):
+        """Sanitize and prepare a log line by applying regex substitutions."""
+        # Confirm line is string before applying regex
+        line = str(line) if not isinstance(line, str) else line
+
         for currentRex in self.rex:
-            line = re.sub(currentRex, "<*>", line)
+            try:
+                line = re.sub(currentRex, "<*>", line)
+            except TypeError as e:
+                print(f"Error in preprocessing line: {e}")
+                print(f"Regex caused issue: {currentRex}")
         return line
 
-    def log_to_dataframe(self, log_file, regex, headers, logformat):
-        """Function to transform log file to dataframe"""
+    def log_to_dataframe(self, log_file, regex, headers, log_format):
+        """Transform log file to a structured DataFrame."""
         log_messages = []
         linecount = 0
+        pattern = self.generate_logformat_regex(log_format)[1]
+
         with open(log_file, "r") as fin:
             for line in fin.readlines():
+                line = str(line).strip()  # Ensure it's a string
+
                 try:
-                    match = regex.search(line.strip())
-                    message = [match.group(header) for header in headers]
+                    match = re.match(pattern, line)
+                    if match:
+                        message = [match.group(header) or "" for header in headers] 
+                    else:
+                        # Handle malformed line
+                        message = self.handle_malformed_line(line)
                     log_messages.append(message)
                     linecount += 1
                 except Exception as e:
-                    print("[Warning] Skip line: " + line)
-        logdf = pd.DataFrame(log_messages, columns=headers)
-        logdf.insert(0, "LineId", None)
-        logdf["LineId"] = [i + 1 for i in range(linecount)]
+                    print("[Warning] Skip line:", line)
+                    print("Error Exception:", str(e))
+        
+        # Preparing DataFrame
+        cols = headers + (["Extra"] if len(headers) < len(log_messages[0]) else [])
+        logdf = pd.DataFrame(log_messages, columns=cols)
+        logdf.insert(0, "LineId", range(1, linecount + 1))
         print("Total lines: ", len(logdf))
         return logdf
 
+    def handle_malformed_line(self, line):
+        """Extract information from incomplete or malformed log lines."""
+        # Ensure line is string
+        line = str(line).strip() if line else ""
+        log_parts = line.split(" ", 4)
+        
+        date = log_parts[0] if len(log_parts) > 0 else ""
+        time = log_parts[1] if len(log_parts) > 1 else ""
+        level = log_parts[2] if len(log_parts) > 2 else ""
+        content = log_parts[4] if len(log_parts) > 4 else line  # Default to full line
+
+        return [date, time, level, "", "", "", "", content]
+
     def generate_logformat_regex(self, logformat):
-        """Function to generate regular expression to split log messages"""
+        """Generate a regex pattern to match log lines based on format string."""
         headers = []
         splitters = re.split(r"(<[^<>]+>)", logformat)
         regex = ""
-        for k in range(len(splitters)):
+        
+        for k, splitter in enumerate(splitters):
             if k % 2 == 0:
-                splitter = re.sub(" +", "\\\s+", splitters[k])
-                regex += splitter
+                regex += re.escape(splitter)
             else:
-                header = splitters[k].strip("<").strip(">")
-                regex += "(?P<%s>.*?)" % header
+                header = splitter.strip("<>").strip()
+                regex += "(?P<%s>.*?)" % re.escape(header)
                 headers.append(header)
-        regex = re.compile("^" + regex + "$")
-        return headers, regex
+
+        return headers, re.compile("^" + regex + "$")
 
     def get_parameter_list(self, row):
         template_regex = re.sub(r"<.{1,5}>", "<*>", row["EventTemplate"])
