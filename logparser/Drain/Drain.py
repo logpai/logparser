@@ -218,6 +218,13 @@ class LogParser:
         for logClust in logClustL:
             template_str = " ".join(logClust.logTemplate)
             occurrence = len(logClust.logIDL)
+            '''
+            这行代码的作用是生成一个基于给定字符串的 MD5 哈希值的 8 位十六进制字符串。下面是每个部分的详细解释：
+            template_str.encode("utf-8")：将字符串 template_str 使用 UTF-8 编码转换为字节对象。这是因为 MD5 哈希函数需要一个字节对象作为输入。
+            hashlib.md5(...).hexdigest()：使用 hashlib 模块生成 MD5 哈希值，并将其转换为十六进制字符串表示。
+            [0:8]：截取生成的十六进制哈希值的前 8 个字符。
+            总结来说，这行代码的目的是基于输入字符串 template_str 生成一个唯一的 8 位标识符 template_id
+            '''
             template_id = hashlib.md5(template_str.encode("utf-8")).hexdigest()[0:8]
             for logID in logClust.logIDL:
                 logID -= 1
@@ -319,6 +326,10 @@ class LogParser:
             os.path.join(self.path, self.logName), regex, headers, self.log_format
         )
 
+    '''
+    通过遍历正则表达式列表并替换匹配的部分，这段代码实现了日志行的归一化处理，将日志行中的动态内容替换为通配符 <*>。
+    这有助于在后续的日志分析和模板挖掘中发现日志消息的结构化模式。
+    '''
     def preprocess(self, line):
         for currentRex in self.rex:
             line = re.sub(currentRex, "<*>", line)
@@ -346,6 +357,13 @@ class LogParser:
     def generate_logformat_regex(self, logformat):
         """Function to generate regular expression to split log messages"""
         headers = []
+        '''
+        通过将 logformat 按照占位符拆分为若干部分，可以更方便地处理日志格式，提取日志中的各个字段。
+        随后可以使用这些部分生成正则表达式，用于解析具体的日志条目。
+        log_format = '<Date> <Time> <Pid> <Level> <Component>: <Content>'
+        拆分结果 splitters 将是：
+        ['', '<Date>', ' ', '<Time>', ' ', '<Pid>', ' ', '<Level>', ' ', '<Component>', ': ', '<Content>', '']
+        '''
         splitters = re.split(r"(<[^<>]+>)", logformat)
         regex = ""
         for k in range(len(splitters)):
