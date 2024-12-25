@@ -23,15 +23,15 @@ from datetime import datetime
 
 class LCSObject:
     """Class object to store a log group with the same template"""
-
     def __init__(self, logTemplate="", logIDL=[]):
         self.logTemplate = logTemplate
+        if logIDL is None:
+            logIDL = []
         self.logIDL = logIDL
 
 
 class Node:
     """A node in prefix tree data structure"""
-
     def __init__(self, token="", templateNo=0):
         self.logClust = None
         self.token = token
@@ -93,34 +93,109 @@ class LogParser:
                 lenOfSeq2 -= 1
         return result
 
+    def LCSEfficient(self, seq1, seq2):
+        # 确保较短的序列用于列滚动，以节省内存
+        if len(seq1) < len(seq2):
+            seq1, seq2 = seq2, seq1
+
+        # 滚动数组，用于存储当前行和上一行的 LCS 长度
+        prev = [0] * (len(seq2) + 1)
+        curr = [0] * (len(seq2) + 1)
+
+        # 填充滚动数组
+        for i in range(1, len(seq1) + 1):
+            for j in range(1, len(seq2) + 1):
+                if seq1[i - 1] == seq2[j - 1]:
+                    curr[j] = prev[j - 1] + 1
+                else:
+                    curr[j] = max(curr[j - 1], prev[j])
+            prev, curr = curr, prev  # 滚动数组：当前行成为下一行的前一行
+
+        # 逆序回溯得到 LCS
+        result = []
+        i, j = len(seq1), len(seq2)
+        while i > 0 and j > 0:
+            if seq1[i - 1] == seq2[j - 1]:
+                result.append(seq1[i - 1])
+                i -= 1
+                j -= 1
+            elif prev[j] == prev[j - 1]:
+                j -= 1
+            else:
+                i -= 1
+
+        return result[::-1]  # 返回正序的 LCS
+
+    '''
+        SimpleLoopMatch 是一个简单的循环匹配函数，用于遍历日志模板列表 logClustL，尝试找到一个与输入序列 seq 匹配的日志模板。
+        如果找到相似的模板，返回对应的模板对象；如果未找到，则返回 None。
+    '''
     def SimpleLoopMatch(self, logClustL, seq):
         for logClust in logClustL:
             if float(len(logClust.logTemplate)) < 0.5 * len(seq):
                 continue
             # Check the template is a subsequence of seq (we use set checking as a proxy here for speedup since
             # incorrect-ordering bad cases rarely occur in logs)
+            # 将输入序列 seq 转换为集合 token_set，用于加速后续的匹配检查。
             token_set = set(seq)
+            # 使用 all() 检查模板 logClust.logTemplate 中的每个 token 是否满足以下任意条件：
+            # 	1.	token in token_set：模板中的 token 存在于输入序列中。
+            # 	2.	token == "<*>"：模板中的 token 是占位符 <*>。
+            # 如果模板中的所有 token 都满足以上条件，认为当前模板与输入序列匹配。
             if all(
                 token in token_set or token == "<*>" for token in logClust.logTemplate
             ):
                 return logClust
         return None
 
+    '''
+        idx是字符串下标
+        在前缀树中匹配给定日志序列，寻找是否有相似的模板
+        功能：
+	        PrefixTreeMatch 通过前缀树递归匹配给定序列，寻找相似的日志模板。
+	        判断是否相似的标准是固定内容长度超过阈值 tau * length。
+	    优点：
+	        使用前缀树高效地组织和匹配日志模板。
+	        支持动态和固定内容的混合匹配。
+	    不足：
+	        需要较高质量的前缀树结构，才能保证匹配效率和准确性。
+	        
+	    一开始调用传的 idx = 0, 就是从constLogMessL 0开始的
+	    matchCluster = self.PrefixTreeMatch(rootNode, constLogMessL, 0)
+	    
+	    时间复杂度O(N2)
+    '''
     def PrefixTreeMatch(self, parentn, seq, idx):
         retLogClust = None
         length = len(seq)
         for i in range(idx, length):
             if seq[i] in parentn.childD:
                 childn = parentn.childD[seq[i]]
-                if childn.logClust is not None:
-                    constLM = [w for w in childn.logClust.logTemplate if w != "<*>"]
-                    if float(len(constLM)) >= self.tau * length:
+                if childn.logClust is not None: # 总感觉这一块有点别扭
+                    constLM = [w for w in childn.logClust.logTemplate if w != "<*>"] # logTemplate 是什么？有待验证
+                    if float(len(constLM)) >= self.tau * length: # 判断相似的标准 给的长度>阈值*length判断是否相似
                         return childn.logClust
                 else:
-                    return self.PrefixTreeMatch(childn, seq, i + 1)
+                    return self.PrefixTreeMatch(childn, seq, i + 1) # 如果当前childn的logClust为None 进入下一层？可能最后一层的 logClust不为空？
 
         return retLogClust
 
+    '''
+        LCSMatch 方法通过计算最长公共子序列（LCS），从日志模板列表 logClustL 中找到一个与输入序列 seq 最相似的模板。
+        如果找到满足条件的模板，返回该模板对象；否则返回 None。
+        self.LCSMatch(logCluL, logmessageL)
+        
+        set_seq & set_template
+	        &：集合的交集运算符，返回两个集合之间的公共元素。
+	        set_seq: 输入日志序列 seq 的集合表示。
+	        set_template: 当前日志模板 logClust.logTemplate 的集合表示。
+	        交集：
+	        用于快速检查 seq 和 logTemplate 之间的共有 token。
+	    计算交集的大小，即 seq 和 logTemplate 之间共有 token 的数量
+	    定义了一个相似性阈值，表示至少有一半的 token 需要匹配。
+	    在执行复杂的 LCS 计算前，先通过集合交集快速判断模板是否有可能匹配。
+	    如果交集大小过小，说明两者相似性很低，直接跳过。
+    '''
     def LCSMatch(self, logClustL, seq):
         retLogClust = None
 
@@ -134,6 +209,7 @@ class LogParser:
             if len(set_seq & set_template) < 0.5 * size_seq:
                 continue
             lcs = self.LCS(seq, logClust.logTemplate)
+            # 选取最符合的最长公共子序列
             if len(lcs) > maxLen or (
                 len(lcs) == maxLen
                 and len(logClust.logTemplate) < len(maxClust.logTemplate)
@@ -143,6 +219,7 @@ class LogParser:
                 maxClust = logClust
 
         # LCS should be large then tau * len(itself)
+        # LCS 匹配的相似性应该大于 设置的阈值*长度
         if float(maxLen) >= self.tau * size_seq:
             retLogClust = maxClust
 
@@ -153,8 +230,11 @@ class LogParser:
         if not lcs:
             return retVal
 
+        # 因为在 seq 中从左到右进行匹配，而 lcs 是按从后向前回溯生成的，需要反转顺序以便匹配。
         lcs = lcs[::-1]
         i = 0
+        # 如果当前 token 等于 lcs 的最后一个元素（lcs[-1]），将其加入模板，并从 lcs 中移除该元素。
+        # 如果不匹配，添加占位符 <*>。
         for token in seq:
             i += 1
             if token == lcs[-1]:
@@ -176,13 +256,15 @@ class LogParser:
         for i in range(len(seq)):
             tokenInSeq = seq[i]
             # Match
-            if tokenInSeq in parentn.childD:
-                parentn.childD[tokenInSeq].templateNo += 1
+            if tokenInSeq in parentn.childD:   # 如果当前token存在，则孩子数加一
+                parentn.childD[tokenInSeq].templateNo += 1 # 孩子数+1？
             # Do not Match
-            else:
+            else:   #如果当前token不存在，则把节点新建出来
                 parentn.childD[tokenInSeq] = Node(token=tokenInSeq, templateNo=1)
+            #无论 token是否存在，都向下传递，即走到最后。中间的 parentn.logClust不存任何东西。
             parentn = parentn.childD[tokenInSeq]
 
+        # 最后的叶子存储模板相关东西
         if parentn.logClust is None:
             parentn.logClust = newCluster
 
@@ -258,18 +340,40 @@ class LogParser:
         count = 0
         for idx, line in self.df_log.iterrows():
             logID = line["LineId"]
+            '''
+                使用正则表达式对字符串进行分割，re.split 返回一个列表。
+                正则表达式 r"[\s=:,]" 的含义：
+                [\s=:,] 是一个字符集合，表示匹配以下任意一个字符：
+                    \s：匹配任何空白字符（如空格、制表符、换行符等）。
+                    =：匹配等号。
+                    :：匹配冒号。
+                    ,：匹配逗号。
+                分割的逻辑是：以这些字符为分隔符，将字符串拆分成多个部分。
+                
+                filter 函数用于过滤掉列表中的空字符串。
+	            lambda x: x != "" 是一个匿名函数，表示只保留非空字符串。
+	            line = {"Content": "timestamp=2023-12-25, level=INFO, message=Log message here"}
+	            假设 self.preprocess 方法没有改变内容。 
+	            输出结果：
+	            ['timestamp', '2023-12-25', 'level', 'INFO', 'message', 'Log', 'message', 'here']
+            '''
             logmessageL = list(
                 filter(
                     lambda x: x != "",
                     re.split(r"[\s=:,]", self.preprocess(line["Content"])),
                 )
             )
+
+            # 用途：过滤掉 logmessageL 中所有的 "<*>" 占位符，生成一个不包含占位符的子集列表。
+	        # 结果：生成的新列表 constLogMessL 只保留实际有意义的内容。
             constLogMessL = [w for w in logmessageL if w != "<*>"]
 
             # Find an existing matched log cluster
             matchCluster = self.PrefixTreeMatch(rootNode, constLogMessL, 0)
 
+            # 如果没有找到
             if matchCluster is None:
+                # 奇怪，为什么不先遍历这个？疑问
                 matchCluster = self.SimpleLoopMatch(logCluL, constLogMessL)
 
                 if matchCluster is None:
@@ -290,6 +394,7 @@ class LogParser:
                             self.removeSeqFromPrefixTree(rootNode, matchCluster)
                             matchCluster.logTemplate = newTemplate
                             self.addSeqToPrefixTree(rootNode, matchCluster)
+
             if matchCluster:
                 matchCluster.logIDL.append(logID)
             count += 1
@@ -312,6 +417,11 @@ class LogParser:
             os.path.join(self.path, self.logname), regex, headers, self.logformat
         )
 
+    '''
+        通过遍历正则表达式列表并替换匹配的部分，这段代码实现了日志行的归一化处理，将日志行中的动态内容替换为通配符 <*>。
+        这有助于在后续的日志分析和模板挖掘中发现日志消息的结构化模式。
+        预处理
+    '''
     def preprocess(self, line):
         for currentRex in self.rex:
             line = re.sub(currentRex, "<*>", line)
@@ -334,11 +444,19 @@ class LogParser:
         logdf = pd.DataFrame(log_messages, columns=headers)
         logdf.insert(0, "LineId", None)
         logdf["LineId"] = [i + 1 for i in range(linecount)]
+        print("Total lines: ", len(logdf))
         return logdf
 
     def generate_logformat_regex(self, logformat):
         """Function to generate regular expression to split log messages"""
         headers = []
+        '''
+            通过将 logformat 按照占位符拆分为若干部分，可以更方便地处理日志格式，提取日志中的各个字段。
+            随后可以使用这些部分生成正则表达式，用于解析具体的日志条目。
+            log_format = '<Date> <Time> <Pid> <Level> <Component>: <Content>'
+            拆分结果 splitters 将是：
+            ['', '<Date>', ' ', '<Time>', ' ', '<Pid>', ' ', '<Level>', ' ', '<Component>', ': ', '<Content>', '']
+        '''
         splitters = re.split(r"(<[^<>]+>)", logformat)
         regex = ""
         for k in range(len(splitters)):

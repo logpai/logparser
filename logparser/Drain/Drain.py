@@ -386,6 +386,7 @@ class LogParser:
         linecount = 0
         with open(log_file, "r") as fin:
             for line in fin.readlines():
+                line = re.sub(r"[^\x00-\x7F]+", "<NASCII>", line)
                 try:
                     match = regex.search(line.strip())
                     message = [match.group(header) for header in headers]
