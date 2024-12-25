@@ -73,9 +73,16 @@ class LogParser:
         self.rex = rex
         self.keep_para = keep_para
 
+    '''
+        用于检查字符串 s 是否包含数字。
+    '''
     def hasNumbers(self, s):
         return any(char.isdigit() for char in s)
 
+    '''
+        入参：rootNode, logmessageL
+        从 rootNode 中，找到 logmessageL的模版
+    '''
     def treeSearch(self, rn, seq):
         retLogClust = None
 
@@ -83,9 +90,11 @@ class LogParser:
         if seqLen not in rn.childD:
             return retLogClust
 
+        # 先查找第一层，根据长度查找
         parentn = rn.childD[seqLen]
 
         currentDepth = 1
+        # 对每一个Seq 的 token进行查找，如果第一层找到，就进行第二层查找。
         for token in seq:
             if currentDepth >= self.depth or currentDepth > seqLen:
                 break
@@ -100,23 +109,30 @@ class LogParser:
 
         logClustL = parentn.childD
 
+        # 计算相似度， 通过Ham相似度进行查找，如果大于阈值，停止查找
         retLogClust = self.fastMatch(logClustL, seq)
 
         return retLogClust
 
+    '''
+        向Drain树中增加节点
+    '''
     def addSeqToPrefixTree(self, rn, logClust):
         seqLen = len(logClust.logTemplate)
         if seqLen not in rn.childD:
+            # 如果没有相应长度， 则新增一个长度
             firtLayerNode = Node(depth=1, digitOrtoken=seqLen)
             rn.childD[seqLen] = firtLayerNode
         else:
             firtLayerNode = rn.childD[seqLen]
 
+        # 找到相应长度下面的节点
         parentn = firtLayerNode
 
         currentDepth = 1
         for token in logClust.logTemplate:
             # Add current log cluster to the leaf node
+            # 如果当前深度大于之前定义深度，或者当前深度大于模版长度， 则进入判断。进入之后，判断当前节点的childD是否为空，不为空则追加，为空则直接插入。
             if currentDepth >= self.depth or currentDepth > seqLen:
                 if len(parentn.childD) == 0:
                     parentn.childD = [logClust]
@@ -125,6 +141,29 @@ class LogParser:
                 break
 
             # If token not matched in this layer of existing tree.
+            '''
+                遍历logClust.logTemplate 的每个token, 
+                如果遍历到当前token在 parentn.childD中，则深度加一，然后进入下一层循环（深度加一），判断下一个token；
+                如果当前token不存在，则进行增加。增加又分为一下两种方式。
+                    当前token不带数字
+                        不带数字又分为两种情况：
+                            当前parentn.childD有<*> 和 没有<*>
+                                有<*> 
+                                 判断孩子节点+1是否小于之前定义的maxChild, 如果小于，则在下一层新增token
+                                 如果大于，则就把<*>当成父节点
+                                无<*>
+                                 判断孩子节点+1是否小于之前定义的maxChild, 如果小于，则在下一层新增token
+                                 判断孩子节点+1是否小于之前定义的maxChild, 如果等于，则在下一层新增<*>
+                                 判断孩子节点+1是否小于之前定义的maxChild, 如果大于，则返回父节点<*>
+                                  
+                    当前token带数字
+                        带数字的话，查找当前parentn中的 childD 是否有"<*>", 如果有的话，parentn = parentn.childD["<*>"]
+                        如果没有的话， 则新建一个节点，增加<*>节点
+                        newNode = Node(depth=currentDepth + 1, digitOrtoken="<*>")
+                        parentn.childD["<*>"] = newNode
+                        parentn = newNode
+                    
+            '''
             if token not in parentn.childD:
                 if not self.hasNumbers(token):
                     if "<*>" in parentn.childD:
@@ -156,11 +195,11 @@ class LogParser:
 
             # If the token is matched
             else:
-                parentn = parentn.childD[token]
+                parentn = parentn.childD[token]  # 判断下一个token使用
 
             currentDepth += 1
 
-    # seq1 is template
+    # seq1 is template Ham相似度
     def seqDist(self, seq1, seq2):
         assert len(seq1) == len(seq2)
         simTokens = 0
@@ -196,6 +235,9 @@ class LogParser:
 
         return retLogClust
 
+    '''
+        getTemplate 方法生成一个模板列表，其中比较两个输入序列，相同位置的元素相等则保留，不相等则替换为占位符 "<*>"
+    '''
     def getTemplate(self, seq1, seq2):
         assert len(seq1) == len(seq2)
         retVal = []
@@ -282,6 +324,7 @@ class LogParser:
         start_time = datetime.now()
         self.logName = logName
         rootNode = Node()
+        #  用于存储LogCluster
         logCluL = []
 
         self.load_data()
@@ -292,7 +335,7 @@ class LogParser:
             logmessageL = self.preprocess(line["Content"]).strip().split()
             matchCluster = self.treeSearch(rootNode, logmessageL)
 
-            # Match no existing log cluster
+            # 没有匹配到，则新建一个，更新Drain解析树
             if matchCluster is None:
                 newCluster = Logcluster(logTemplate=logmessageL, logIDL=[logID])
                 logCluL.append(newCluster)
@@ -300,6 +343,7 @@ class LogParser:
 
             # Add the new log message to the existing cluster
             else:
+                # 比较模板，如果已经存在的模版和之前的模版不同，选取最新的模版
                 newTemplate = self.getTemplate(logmessageL, matchCluster.logTemplate)
                 matchCluster.logIDL.append(logID)
                 if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
@@ -327,8 +371,9 @@ class LogParser:
         )
 
     '''
-    通过遍历正则表达式列表并替换匹配的部分，这段代码实现了日志行的归一化处理，将日志行中的动态内容替换为通配符 <*>。
-    这有助于在后续的日志分析和模板挖掘中发现日志消息的结构化模式。
+        通过遍历正则表达式列表并替换匹配的部分，这段代码实现了日志行的归一化处理，将日志行中的动态内容替换为通配符 <*>。
+        这有助于在后续的日志分析和模板挖掘中发现日志消息的结构化模式。
+        预处理
     '''
     def preprocess(self, line):
         for currentRex in self.rex:
@@ -358,11 +403,11 @@ class LogParser:
         """Function to generate regular expression to split log messages"""
         headers = []
         '''
-        通过将 logformat 按照占位符拆分为若干部分，可以更方便地处理日志格式，提取日志中的各个字段。
-        随后可以使用这些部分生成正则表达式，用于解析具体的日志条目。
-        log_format = '<Date> <Time> <Pid> <Level> <Component>: <Content>'
-        拆分结果 splitters 将是：
-        ['', '<Date>', ' ', '<Time>', ' ', '<Pid>', ' ', '<Level>', ' ', '<Component>', ': ', '<Content>', '']
+            通过将 logformat 按照占位符拆分为若干部分，可以更方便地处理日志格式，提取日志中的各个字段。
+            随后可以使用这些部分生成正则表达式，用于解析具体的日志条目。
+            log_format = '<Date> <Time> <Pid> <Level> <Component>: <Content>'
+            拆分结果 splitters 将是：
+            ['', '<Date>', ' ', '<Time>', ' ', '<Pid>', ' ', '<Level>', ' ', '<Component>', ': ', '<Content>', '']
         '''
         splitters = re.split(r"(<[^<>]+>)", logformat)
         regex = ""
