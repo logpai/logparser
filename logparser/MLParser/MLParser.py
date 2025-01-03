@@ -247,7 +247,7 @@ class LogParser:
         getTemplate 方法生成一个模板列表，其中比较两个输入序列，相同位置的元素相等则保留，不相等则替换为占位符 "<*>"
         self.getTemplate(logmessageL, matchCluster.logTemplate)
     '''
-    def getTemplate(self, seq1, seq2):
+    def getTemplateHam(self, seq1, seq2):
         assert len(seq1) == len(seq2)
         retVal = []
 
@@ -539,6 +539,21 @@ class LogParser:
                             self.addSeqToPrefixHamTree(rootHamNode, newCluster)
                             # 第二层，LCS前缀树增加相应节点
                             self.addSeqToPrefixLCSTree(rootLCSNode, newCluster)
+                        else:
+                            newTemplate = self.getTemplateLCS(
+                                self.LCS(logmessageL, matchCluster.logTemplate),
+                                matchCluster.logTemplate,
+                            )
+                            if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
+                                # 删除第二层
+                                self.removeSeqFromPrefixLCSTree(rootLCSNode, matchCluster)
+                                # 删除第一层
+                                self.removeSeqFromPrefixHamTree(rootHamNode, matchCluster)
+                                matchCluster.logTemplate = newTemplate
+                                # 第一层，固定深度解析树增加
+                                self.addSeqToPrefixHamTree(rootHamNode, matchCluster)
+                                # 第二层，LCS前缀树增加相应节点
+                                self.addSeqToPrefixLCSTree(rootLCSNode, matchCluster)
 
                 if matchCluster:
                     matchCluster.logIDL.append(logID)
@@ -546,7 +561,7 @@ class LogParser:
             # Add the new log message to the existing cluster
             else:
                 # 比较模板，如果已经存在的模版和之前的模版不同，选取最新的模版
-                newTemplate = self.getTemplate(logmessageL, matchCluster.logTemplate)
+                newTemplate = self.getTemplateHam(logmessageL, matchCluster.logTemplate)
                 matchCluster.logIDL.append(logID)
                 if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
                     # 同时更新第二层的模版
@@ -704,3 +719,58 @@ class LogParser:
                     matchedNode.templateNo -= 1
                     parentn = matchedNode
 
+
+    def removeSeqFromPrefixHamTree(self, rn, newCluster):
+        retLogClust = None
+        seq = newCluster.logTemplate
+        seqLen = len(seq)
+        if seqLen not in rn.childD:
+            return
+
+        # 先查找第一层，根据长度查找
+        parentn = rn.childD[seqLen]
+
+        currentDepth = 1
+        # 对每一个Seq 的 token进行查找，如果第一层找到，就进行第二层查找。
+        for token in seq:
+            if currentDepth >= self.depth or currentDepth > seqLen:
+                break
+
+            if token in parentn.childD:
+                parentn = parentn.childD[token]
+            elif "<*>" in parentn.childD:
+                parentn = parentn.childD["<*>"]
+            else:
+                return
+            currentDepth += 1
+
+        logClustL = parentn.childD
+
+        # 倒表删除
+        for i in range(len(logClustL) - 1, -1, -1):
+            if logClustL[i].logTemplate == newCluster.logTemplate:
+                del logClustL[i]
+
+
+    def getTemplateLCS(self, lcs, seq):
+        retVal = []
+        if not lcs:
+            return retVal
+
+        # 因为在 seq 中从左到右进行匹配，而 lcs 是按从后向前回溯生成的，需要反转顺序以便匹配。
+        lcs = lcs[::-1]
+        i = 0
+        # 如果当前 token 等于 lcs 的最后一个元素（lcs[-1]），将其加入模板，并从 lcs 中移除该元素。
+        # 如果不匹配，添加占位符 <*>。
+        for token in seq:
+            i += 1
+            if token == lcs[-1]:
+                retVal.append(token)
+                lcs.pop()
+            else:
+                retVal.append(self.process_strings(token, lcs[-1]))
+            if not lcs:
+                break
+        if i < len(seq):
+            retVal.append("<*>")
+        return retVal
