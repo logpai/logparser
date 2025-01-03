@@ -116,6 +116,7 @@ class LogParser:
 
     '''
         向Drain树中增加节点
+        self.addSeqToPrefixTree(rootNode, newCluster)
     '''
     def addSeqToPrefixTree(self, rn, logClust):
         seqLen = len(logClust.logTemplate)
@@ -340,6 +341,8 @@ class LogParser:
 
             # 没有匹配到，则新建一个，更新Drain解析树
             if matchCluster is None:
+                # 这里增加对二层的查找 Spell, 如果第二层找不到，则在第一层 和 第二层都增加模版
+
                 newCluster = Logcluster(logTemplate=logmessageL, logIDL=[logID])
                 logCluL.append(newCluster)
                 self.addSeqToPrefixTree(rootNode, newCluster)
@@ -350,10 +353,11 @@ class LogParser:
                 newTemplate = self.getTemplate(logmessageL, matchCluster.logTemplate)
                 matchCluster.logIDL.append(logID)
                 if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
+                    # 同时更新第二层的模版
                     matchCluster.logTemplate = newTemplate
 
             count += 1
-            if count % 1000 == 0 or count == len(self.df_log):
+            if count % 1000000 == 0 or count == len(self.df_log):
                 print(
                     "Processed {0:.1f}% of log lines.".format(
                         count * 100.0 / len(self.df_log)

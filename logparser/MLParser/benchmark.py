@@ -17,7 +17,7 @@
 
 import sys
 sys.path.append("../../")
-from logparser.Drain import LogParser
+from logparser.MLParser import LogParser
 from logparser.utils import evaluator
 import os
 import pandas as pd
@@ -56,13 +56,6 @@ benchmark_settings = {
         "st": 0.5,
         "depth": 4,
     },
-    "BGL": {
-        "log_file": "BGL/BGL_2k.log",
-        "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
-        "regex": [r"core\.\d+"],
-        "st": 0.5,
-        "depth": 4,
-    },
     "HPC": {
         "log_file": "HPC/HPC_2k.log",
         "log_format": "<LogId> <Node> <Component> <State> <Time> <Flag> <Content>",
@@ -89,17 +82,6 @@ benchmark_settings = {
         "log_format": "<Month> <Date> <Time> <Level> <Component>(\[<PID>\])?: <Content>",
         "regex": [r"(\d+\.){3}\d+", r"\d{2}:\d{2}:\d{2}"],
         "st": 0.39,
-        "depth": 6,
-    },
-    "Android": {
-        "log_file": "Android/Android_2k.log",
-        "log_format": "<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>",
-        "regex": [
-            r"(/[\w-]+)+",
-            r"([\w-]+\.){2,}[\w-]+",
-            r"\b(\-?\+?\d+)\b|\b0[Xx][a-fA-F\d]+\b|\b[a-fA-F\d]{4,}\b",
-        ],
-        "st": 0.2,
         "depth": 6,
     },
     "HealthApp": {

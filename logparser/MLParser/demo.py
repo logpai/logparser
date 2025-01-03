@@ -2,11 +2,12 @@
 
 import sys
 sys.path.append('../../')
-from logparser.Drain import LogParser
+# from logparser.Drain import LogParser
+from logparser.MLParser import LogParser
 
-input_dir  = '../../data/loghub_2k/HDFS/' # The input directory of log file
+input_dir  = '../../data/loghub_2k/HDFS_v1/' # The input directory of log file
 output_dir = 'demo_result/'  # The output directory of parsing results
-log_file   = 'HDFS_2k.log'  # The input log file name
+log_file   = 'HDFS.log'  # The input log file name
 log_format = '<Date> <Time> <Pid> <Level> <Component>: <Content>'  # HDFS log format
 # Regular expression list for optional preprocessing (default: [])
 # regex      = [
