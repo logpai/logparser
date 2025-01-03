@@ -22,15 +22,22 @@ import hashlib
 from datetime import datetime
 
 
-class Logcluster:
+class LogCluster:
     def __init__(self, logTemplate="", logIDL=None):
         self.logTemplate = logTemplate
         if logIDL is None:
             logIDL = []
         self.logIDL = logIDL
 
+class LCSNode:
+    """A node in prefix tree data structure"""
+    def __init__(self, token="", templateNo=0):
+        self.logClust = None
+        self.token = token
+        self.templateNo = templateNo
+        self.childD = dict()
 
-class Node:
+class HamNode:
     def __init__(self, childD=None, depth=0, digitOrtoken=None):
         if childD is None:
             childD = dict()
@@ -48,6 +55,7 @@ class LogParser:
         depth=4,
         st=0.4,
         maxChild=100,
+        tau=0.5,
         rex=[],
         keep_para=True,
     ):
@@ -70,14 +78,49 @@ class LogParser:
         self.savePath = outdir
         self.df_log = None
         self.log_format = log_format
+        self.tau = tau
         self.rex = rex
         self.keep_para = keep_para
 
-    '''
-        用于检查字符串 s 是否包含数字。
-    '''
+    #  用于检查字符串 s 是否包含数字。
     def hasNumbers(self, s):
         return any(char.isdigit() for char in s)
+
+    # seq1 is template Ham相似度
+    def seqDist(self, seq1, seq2):
+        assert len(seq1) == len(seq2)
+        simTokens = 0
+        numOfPar = 0
+
+        for token1, token2 in zip(seq1, seq2):
+            if token1 == "<*>":
+                numOfPar += 1
+                continue
+            if token1 == token2:
+                simTokens += 1
+
+        retVal = float(simTokens) / len(seq1)
+
+        return retVal, numOfPar
+
+    def fastMatch(self, logClustL, seq):
+        retLogClust = None
+
+        maxSim = -1
+        maxNumOfPara = -1
+        maxClust = None
+
+        for logClust in logClustL:
+            curSim, curNumOfPara = self.seqDist(logClust.logTemplate, seq)
+            if curSim > maxSim or (curSim == maxSim and curNumOfPara > maxNumOfPara):
+                maxSim = curSim
+                maxNumOfPara = curNumOfPara
+                maxClust = logClust
+
+        if maxSim >= self.st:
+            retLogClust = maxClust
+
+        return retLogClust
 
     '''
         入参：rootNode, logmessageL
@@ -118,11 +161,11 @@ class LogParser:
         向Drain树中增加节点
         self.addSeqToPrefixTree(rootNode, newCluster)
     '''
-    def addSeqToPrefixTree(self, rn, logClust):
+    def addSeqToPrefixHamTree(self, rn, logClust):
         seqLen = len(logClust.logTemplate)
         if seqLen not in rn.childD:
             # 如果没有相应长度， 则新增一个长度
-            firtLayerNode = Node(depth=1, digitOrtoken=seqLen)
+            firtLayerNode = HamNode(depth=1, digitOrtoken=seqLen)
             rn.childD[seqLen] = firtLayerNode
         else:
             firtLayerNode = rn.childD[seqLen]
@@ -169,18 +212,18 @@ class LogParser:
                 if not self.hasNumbers(token):
                     if "<*>" in parentn.childD:
                         if len(parentn.childD) < self.maxChild:
-                            newNode = Node(depth=currentDepth + 1, digitOrtoken=token)
+                            newNode = HamNode(depth=currentDepth + 1, digitOrtoken=token)
                             parentn.childD[token] = newNode
                             parentn = newNode
                         else:
                             parentn = parentn.childD["<*>"]
                     else:
                         if len(parentn.childD) + 1 < self.maxChild:
-                            newNode = Node(depth=currentDepth + 1, digitOrtoken=token)
+                            newNode = HamNode(depth=currentDepth + 1, digitOrtoken=token)
                             parentn.childD[token] = newNode
                             parentn = newNode
                         elif len(parentn.childD) + 1 == self.maxChild:
-                            newNode = Node(depth=currentDepth + 1, digitOrtoken="<*>")
+                            newNode = HamNode(depth=currentDepth + 1, digitOrtoken="<*>")
                             parentn.childD["<*>"] = newNode
                             parentn = newNode
                         else:
@@ -188,7 +231,7 @@ class LogParser:
 
                 else:
                     if "<*>" not in parentn.childD:
-                        newNode = Node(depth=currentDepth + 1, digitOrtoken="<*>")
+                        newNode = HamNode(depth=currentDepth + 1, digitOrtoken="<*>")
                         parentn.childD["<*>"] = newNode
                         parentn = newNode
                     else:
@@ -199,42 +242,6 @@ class LogParser:
                 parentn = parentn.childD[token]  # 判断下一个token使用
 
             currentDepth += 1
-
-    # seq1 is template Ham相似度
-    def seqDist(self, seq1, seq2):
-        assert len(seq1) == len(seq2)
-        simTokens = 0
-        numOfPar = 0
-
-        for token1, token2 in zip(seq1, seq2):
-            if token1 == "<*>":
-                numOfPar += 1
-                continue
-            if token1 == token2:
-                simTokens += 1
-
-        retVal = float(simTokens) / len(seq1)
-
-        return retVal, numOfPar
-
-    def fastMatch(self, logClustL, seq):
-        retLogClust = None
-
-        maxSim = -1
-        maxNumOfPara = -1
-        maxClust = None
-
-        for logClust in logClustL:
-            curSim, curNumOfPara = self.seqDist(logClust.logTemplate, seq)
-            if curSim > maxSim or (curSim == maxSim and curNumOfPara > maxNumOfPara):
-                maxSim = curSim
-                maxNumOfPara = curNumOfPara
-                maxClust = logClust
-
-        if maxSim >= self.st:
-            retLogClust = maxClust
-
-        return retLogClust
 
     '''
         getTemplate 方法生成一个模板列表，其中比较两个输入序列，相同位置的元素相等则保留，不相等则替换为占位符 "<*>"
@@ -321,56 +328,6 @@ class LogParser:
         for child in node.childD:
             self.printTree(node.childD[child], dep + 1)
 
-    def parse(self, logName):
-        print("Parsing file: " + os.path.join(self.path, logName))
-        start_time = datetime.now()
-        self.logName = logName
-        rootNode = Node()
-        #  用于存储LogCluster
-        logCluL = []
-
-        self.load_data()
-
-        count = 0
-        for idx, line in self.df_log.iterrows():
-            logID = line["LineId"]
-            # 粗粒度解析
-            logmessageL = self.preprocess(line["Content"]).strip().split()
-            #logmessageL = re.split(r"[ ._:]+", self.preprocess(line["Content"]).strip())
-            matchCluster = self.treeSearch(rootNode, logmessageL)
-
-            # 没有匹配到，则新建一个，更新Drain解析树
-            if matchCluster is None:
-                # 这里增加对二层的查找 Spell, 如果第二层找不到，则在第一层 和 第二层都增加模版
-
-                newCluster = Logcluster(logTemplate=logmessageL, logIDL=[logID])
-                logCluL.append(newCluster)
-                self.addSeqToPrefixTree(rootNode, newCluster)
-
-            # Add the new log message to the existing cluster
-            else:
-                # 比较模板，如果已经存在的模版和之前的模版不同，选取最新的模版
-                newTemplate = self.getTemplate(logmessageL, matchCluster.logTemplate)
-                matchCluster.logIDL.append(logID)
-                if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
-                    # 同时更新第二层的模版
-                    matchCluster.logTemplate = newTemplate
-
-            count += 1
-            if count % 1000000 == 0 or count == len(self.df_log):
-                print(
-                    "Processed {0:.1f}% of log lines.".format(
-                        count * 100.0 / len(self.df_log)
-                    )
-                )
-
-        if not os.path.exists(self.savePath):
-            os.makedirs(self.savePath)
-
-        self.outputResult(logCluL)
-
-        print("Parsing done. [Time taken: {!s}]".format(datetime.now() - start_time))
-
     def load_data(self):
         headers, regex = self.generate_logformat_regex(self.log_format)
         self.df_log = self.log_to_dataframe(
@@ -447,9 +404,7 @@ class LogParser:
         return parameter_list
 
     def split_string_preserve_delimiters(self, s):
-        """
-        分割字符串，使用非字母和数字字符进行划分，并保留所有分隔符
-        """
+        # 分割字符串，使用非字母和数字字符进行划分，并保留所有分隔符
         # return re.split(r'([^\w*])', s)
         return re.split(r'([^a-zA-Z0-9*])', s)  # 使用捕获组保留分隔符
 
@@ -534,3 +489,218 @@ class LogParser:
 
         # 根据 LCS 替换并合并结果
         return self.getCommonTemplate(lcs, split1)
+
+
+    def parse(self, logName):
+        print("Parsing file: " + os.path.join(self.path, logName))
+        start_time = datetime.now()
+        self.logName = logName
+        rootHamNode = HamNode()
+        rootLCSNode = LCSNode()
+
+        #  用于存储LogCluster
+        logCluL = []
+
+        self.load_data()
+
+        count = 0
+        for idx, line in self.df_log.iterrows():
+            logID = line["LineId"]
+            # 粗粒度解析 空格解析
+            logmessageL = self.preprocess(line["Content"]).strip().split()
+            # 先基于Drain固定深度解析树查找模版
+            matchCluster = self.treeSearch(rootHamNode, logmessageL)
+
+            # 没有匹配到，则新建一个，更新Drain解析树
+            if matchCluster is None:
+                # 这里增加对二层的查找 Spell, 如果第二层找不到，则在 第一层fixed deepth tree 和 第二层LCS tree 都增加模版
+                # 用途：过滤掉 logmessageL 中所有的 "<*>" 占位符，生成一个不包含占位符的子集列表。
+                # 结果：生成的新列表 constLogMessL 只保留实际有意义的内容。
+                constLogMessL = [w for w in logmessageL if w != "<*>"]
+                # 通过前缀树查询
+                matchCluster = self.PrefixTreeMatch(rootLCSNode, constLogMessL, 0)
+
+                # 如果没有找到
+                if matchCluster is None:
+                    # 遍历LogCluster模版
+                    # SimpleLoopMatch 是一个简单的循环匹配函数，用于遍历日志模板列表 logClustL，尝试找到一个与输入序列 seq 匹配的日志模板。
+                    # 如果找到相似的模板，返回对应的模板对象；如果未找到，则返回 None。
+                    matchCluster = self.SimpleLoopMatch(logCluL, constLogMessL)
+                    if matchCluster is None:
+                        # 遍历 logCluL
+                        # LCSMatch 方法通过计算最长公共子序列（LCS），从日志模板列表 logClustL 中找到一个与输入序列 seq 最相似的模板。
+                        # 如果找到满足条件的模板，返回该模板对象；否则返回 None。
+                        matchCluster = self.LCSMatch(logCluL, logmessageL)
+                        # Match no existing log cluster
+                        if matchCluster is None:
+                            newCluster = LogCluster(logTemplate=logmessageL, logIDL=[logID])
+                            logCluL.append(newCluster)
+                            # 第一层，固定深度解析树增加
+                            self.addSeqToPrefixHamTree(rootHamNode, newCluster)
+                            # 第二层，LCS前缀树增加相应节点
+                            self.addSeqToPrefixLCSTree(rootLCSNode, newCluster)
+
+                if matchCluster:
+                    matchCluster.logIDL.append(logID)
+
+            # Add the new log message to the existing cluster
+            else:
+                # 比较模板，如果已经存在的模版和之前的模版不同，选取最新的模版
+                newTemplate = self.getTemplate(logmessageL, matchCluster.logTemplate)
+                matchCluster.logIDL.append(logID)
+                if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
+                    # 同时更新第二层的模版
+                    self.removeSeqFromPrefixLCSTree(rootLCSNode, matchCluster)
+                    matchCluster.logTemplate = newTemplate
+                    self.addSeqToPrefixLCSTree(rootLCSNode, matchCluster)
+
+            count += 1
+            if count % 1000000 == 0 or count == len(self.df_log):
+                print(
+                    "Processed {0:.1f}% of log lines.".format(
+                        count * 100.0 / len(self.df_log)
+                    )
+                )
+
+        if not os.path.exists(self.savePath):
+            os.makedirs(self.savePath)
+
+        self.outputResult(logCluL)
+
+        print("Parsing done. [Time taken: {!s}]".format(datetime.now() - start_time))
+
+    '''
+        idx是字符串下标
+        在前缀树中匹配给定日志序列，寻找是否有相似的模板
+        功能：
+	        PrefixTreeMatch 通过前缀树递归匹配给定序列，寻找相似的日志模板。
+	        判断是否相似的标准是固定内容长度超过阈值 tau * length。
+	    优点：
+	        使用前缀树高效地组织和匹配日志模板。
+	        支持动态和固定内容的混合匹配。
+	    不足：
+	        需要较高质量的前缀树结构，才能保证匹配效率和准确性。
+
+	    一开始调用传的 idx = 0, 就是从constLogMessL 0开始的
+	    matchCluster = self.PrefixTreeMatch(rootNode, constLogMessL, 0)
+
+	    时间复杂度O(N2)
+    '''
+    def PrefixTreeMatch(self, parentn, seq, idx):
+        retLogClust = None
+        length = len(seq)
+        for i in range(idx, length):
+            if seq[i] in parentn.childD:
+                childn = parentn.childD[seq[i]]
+                if childn.logClust is not None:  # 总感觉这一块有点别扭
+                    constLM = [w for w in childn.logClust.logTemplate if w != "<*>"]  # logTemplate 是什么？有待验证
+                    if float(len(constLM)) >= self.tau * length:  # 判断相似的标准 给的长度>阈值*length判断是否相似
+                        return childn.logClust
+                else:
+                    return self.PrefixTreeMatch(childn, seq, i + 1)  # 如果当前childn的logClust为None 进入下一层？可能最后一层的 logClust不为空？
+
+        return retLogClust
+
+    '''
+        SimpleLoopMatch 是一个简单的循环匹配函数，用于遍历日志模板列表 logClustL，尝试找到一个与输入序列 seq 匹配的日志模板。
+        如果找到相似的模板，返回对应的模板对象；如果未找到，则返回 None。
+    '''
+    def SimpleLoopMatch(self, logClustL, seq):
+        for logClust in logClustL:
+            if float(len(logClust.logTemplate)) < 0.5 * len(seq):
+                continue
+            # Check the template is a subsequence of seq (we use set checking as a proxy here for speedup since
+            # incorrect-ordering bad cases rarely occur in logs)
+            # 将输入序列 seq 转换为集合 token_set，用于加速后续的匹配检查。
+            token_set = set(seq)
+            # 使用 all() 检查模板 logClust.logTemplate 中的每个 token 是否满足以下任意条件：
+            # 	1.	token in token_set：模板中的 token 存在于输入序列中。
+            # 	2.	token == "<*>"：模板中的 token 是占位符 <*>。
+            # 如果模板中的所有 token 都满足以上条件，认为当前模板与输入序列匹配。
+            if all(
+                token in token_set or token == "<*>" for token in logClust.logTemplate
+            ):
+                return logClust
+        return None
+
+    '''
+        LCSMatch 方法通过计算最长公共子序列（LCS），从日志模板列表 logClustL 中找到一个与输入序列 seq 最相似的模板。
+        如果找到满足条件的模板，返回该模板对象；否则返回 None。
+        self.LCSMatch(logCluL, logmessageL)
+        set_seq & set_template
+    	    &：集合的交集运算符，返回两个集合之间的公共元素。
+    	    set_seq: 输入日志序列 seq 的集合表示。
+    	    set_template: 当前日志模板 logClust.logTemplate 的集合表示。
+    	    交集：
+    	    用于快速检查 seq 和 logTemplate 之间的共有 token。
+    	计算交集的大小，即 seq 和 logTemplate 之间共有 token 的数量
+    	定义了一个相似性阈值，表示至少有一半的 token 需要匹配。
+    	在执行复杂的 LCS 计算前，先通过集合交集快速判断模板是否有可能匹配。
+    	如果交集大小过小，说明两者相似性很低，直接跳过。
+    '''
+    def LCSMatch(self, logClustL, seq):
+        retLogClust = None
+
+        maxLen = -1
+        maxlcs = []
+        maxClust = None
+        set_seq = set(seq)
+        size_seq = len(seq)
+        for logClust in logClustL:
+            set_template = set(logClust.logTemplate)
+            if len(set_seq & set_template) < 0.5 * size_seq:
+                continue
+            lcs = self.LCS(seq, logClust.logTemplate)
+            # 选取最符合的最长公共子序列
+            if len(lcs) > maxLen or (
+                len(lcs) == maxLen
+                and len(logClust.logTemplate) < len(maxClust.logTemplate)
+            ):
+                maxLen = len(lcs)
+                maxlcs = lcs
+                maxClust = logClust
+
+        # LCS should be large then tau * len(itself)
+        # LCS 匹配的相似性应该大于 设置的阈值*长度
+        if float(maxLen) >= self.tau * size_seq:
+            retLogClust = maxClust
+
+        return retLogClust
+
+
+    def addSeqToPrefixLCSTree(self, rootn, newCluster):
+        parentn = rootn
+        seq = newCluster.logTemplate
+        seq = [w for w in seq if w != "<*>"]
+
+        for i in range(len(seq)):
+            tokenInSeq = seq[i]
+            # Match
+            if tokenInSeq in parentn.childD:   # 如果当前token存在，则孩子数加一
+                parentn.childD[tokenInSeq].templateNo += 1 # 孩子数+1？
+            # Do not Match
+            else:   #如果当前token不存在，则把节点新建出来
+                parentn.childD[tokenInSeq] = LCSNode(token=tokenInSeq, templateNo=1)
+            #无论 token是否存在，都向下传递，即走到最后。中间的 parentn.logClust不存任何东西。
+            # 建一个len(seq)长的树
+            parentn = parentn.childD[tokenInSeq]
+
+        # 最后的叶子存储模板相关东西
+        if parentn.logClust is None:
+            parentn.logClust = newCluster
+
+    def removeSeqFromPrefixLCSTree(self, rootn, newCluster):
+        parentn = rootn
+        seq = newCluster.logTemplate
+        seq = [w for w in seq if w != "<*>"]
+
+        for tokenInSeq in seq:
+            if tokenInSeq in parentn.childD:
+                matchedNode = parentn.childD[tokenInSeq]
+                if matchedNode.templateNo == 1:
+                    del parentn.childD[tokenInSeq]
+                    break
+                else:
+                    matchedNode.templateNo -= 1
+                    parentn = matchedNode
+
