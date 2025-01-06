@@ -24,112 +24,154 @@ import pandas as pd
 
 
 input_dir = "../../data/loghub_2k/"  # The input directory of log file
-output_dir = "Drain_result/"  # The output directory of parsing results
+output_dir = "MLParser_result/"  # The output directory of parsing results
 
 
 benchmark_settings = {
     "HDFS": {
         "log_file": "HDFS/HDFS_2k.log",
         "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
-        "regex": [],
+        "regex": [r'(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)'],
         "st": 0.5,
+        "tau": 0.75,
         "depth": 4,
+        "delimiter_pattern": r"\.|_"
     },
     "Hadoop": {
         "log_file": "Hadoop/Hadoop_2k.log",
         "log_format": "<Date> <Time> <Level> \[<Process>\] <Component>: <Content>",
-        "regex": [r"(\d+\.){3}\d+"],
+        "regex": [],
         "st": 0.5,
+        "tau": 0.75,
         "depth": 4,
+        "delimiter_pattern": r"\.|_"
     },
     "Spark": {
         "log_file": "Spark/Spark_2k.log",
         "log_format": "<Date> <Time> <Level> <Component>: <Content>",
-        "regex": [r"(\d+\.){3}\d+", r"\b[KGTM]?B\b", r"([\w-]+\.){2,}[\w-]+"],
+        "regex": [],
         "st": 0.5,
+        "tau": 0.75,
         "depth": 4,
+        "delimiter_pattern": r"\.|_"
     },
     "Zookeeper": {
         "log_file": "Zookeeper/Zookeeper_2k.log",
         "log_format": "<Date> <Time> - <Level>  \[<Node>:<Component>@<Id>\] - <Content>",
-        "regex": [r"(/|)(\d+\.){3}\d+(:\d+)?"],
+        "regex": [],
         "st": 0.5,
+        "tau": 0.75,
         "depth": 4,
+        "delimiter_pattern": r"\.|_"
+    },
+    "BGL": {
+        "log_file": "BGL/BGL_2k.log",
+        "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+        "regex": [],
+        "st": 0.5,
+        "tau": 0.75,
+        "depth": 4,
+        "delimiter_pattern": r"\.|_"
     },
     "HPC": {
         "log_file": "HPC/HPC_2k.log",
         "log_format": "<LogId> <Node> <Component> <State> <Time> <Flag> <Content>",
-        "regex": [r"=\d+"],
+        "regex": [],
         "st": 0.5,
+        "tau": 0.75,
         "depth": 4,
+        "delimiter_pattern": r"\.|_"
     },
     "Thunderbird": {
         "log_file": "Thunderbird/Thunderbird_2k.log",
         "log_format": "<Label> <Timestamp> <Date> <User> <Month> <Day> <Time> <Location> <Component>(\[<PID>\])?: <Content>",
-        "regex": [r"(\d+\.){3}\d+"],
+        "regex": [],
         "st": 0.5,
+        "tau": 0.75,
         "depth": 4,
+        "delimiter_pattern": r"\.|_"
     },
     "Windows": {
         "log_file": "Windows/Windows_2k.log",
         "log_format": "<Date> <Time>, <Level>                  <Component>    <Content>",
-        "regex": [r"0x.*?\s"],
+        "regex": [],
         "st": 0.7,
+        "tau": 0.75,
         "depth": 5,
+        "delimiter_pattern": r"\.|_"
     },
     "Linux": {
         "log_file": "Linux/Linux_2k.log",
         "log_format": "<Month> <Date> <Time> <Level> <Component>(\[<PID>\])?: <Content>",
-        "regex": [r"(\d+\.){3}\d+", r"\d{2}:\d{2}:\d{2}"],
+        "regex": [],
         "st": 0.39,
+        "tau": 0.75,
         "depth": 6,
+        "delimiter_pattern": r"\.|_"
+    },
+    "Android": {
+        "log_file": "Android/Android_2k.log",
+        "log_format": "<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>",
+        "regex": [
+        ],
+        "st": 0.2,
+        "tau": 0.75,
+        "depth": 6,
+        "delimiter_pattern": r"\.|_"
     },
     "HealthApp": {
         "log_file": "HealthApp/HealthApp_2k.log",
         "log_format": "<Time>\|<Component>\|<Pid>\|<Content>",
         "regex": [],
         "st": 0.2,
+        "tau": 0.75,
         "depth": 4,
+        "delimiter_pattern": ""
     },
     "Apache": {
         "log_file": "Apache/Apache_2k.log",
         "log_format": "\[<Time>\] \[<Level>\] <Content>",
-        "regex": [r"(\d+\.){3}\d+"],
+        "regex": [],
         "st": 0.5,
+        "tau": 0.75,
         "depth": 4,
+        "delimiter_pattern": ""
     },
     "Proxifier": {
         "log_file": "Proxifier/Proxifier_2k.log",
         "log_format": "\[<Time>\] <Program> - <Content>",
-        "regex": [
-            r"<\d+\ssec",
-            r"([\w-]+\.)+[\w-]+(:\d+)?",
-            r"\d{2}:\d{2}(:\d{2})*",
-            r"[KGTM]B",
-        ],
+        "regex": [],
         "st": 0.6,
+        "tau": 0.75,
         "depth": 3,
+        "delimiter_pattern": ""
     },
     "OpenSSH": {
         "log_file": "OpenSSH/OpenSSH_2k.log",
         "log_format": "<Date> <Day> <Time> <Component> sshd\[<Pid>\]: <Content>",
-        "regex": [r"(\d+\.){3}\d+", r"([\w-]+\.){2,}[\w-]+"],
+        "regex": [],
         "st": 0.6,
+        "tau": 0.75,
         "depth": 5,
+        "delimiter_pattern": ""
     },
     "OpenStack": {
         "log_file": "OpenStack/OpenStack_2k.log",
         "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
-        "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+        "regex": [],
         "st": 0.5,
+        "tau": 0.75,
         "depth": 5,
+        "delimiter_pattern": ""
     },
     "Mac": {
         "log_file": "Mac/Mac_2k.log",
         "log_format": "<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>",
-        "regex": [r"([\w-]+\.){2,}[\w-]+"],
+        "regex": [],
         "st": 0.7,
+        "tau": 0.75,
         "depth": 6,
+        "delimiter_pattern": r"\.|_"
     },
 }
 
@@ -146,6 +188,8 @@ for dataset, setting in benchmark_settings.items():
         rex=setting["regex"],
         depth=setting["depth"],
         st=setting["st"],
+        tau=setting["tau"],
+        delimiter_pattern=setting["delimiter_pattern"]
     )
     parser.parse(log_file)
 

@@ -57,6 +57,7 @@ class LogParser:
         maxChild=100,
         tau=0.5,
         rex=[],
+        delimiter_pattern="",
         keep_para=True,
     ):
         """
@@ -80,6 +81,7 @@ class LogParser:
         self.log_format = log_format
         self.tau = tau
         self.rex = rex
+        self.delimiter_pattern = delimiter_pattern
         self.keep_para = keep_para
 
     #  用于检查字符串 s 是否包含数字。
@@ -406,7 +408,18 @@ class LogParser:
     def split_string_preserve_delimiters(self, s):
         # 分割字符串，使用非字母和数字字符进行划分，并保留所有分隔符
         # return re.split(r'([^\w*])', s)
-        return re.split(r'([^a-zA-Z0-9*])', s)  # 使用捕获组保留分隔符
+        # return re.split(r'([^a-zA-Z0-9*])', s)  # 使用捕获组保留分隔符
+        """
+        分割字符串，使用指定的分隔符模式划分，并保留所有分隔符。
+        如果字符串中没有分隔符，返回包含原始字符串的列表。
+        """
+        # 使用捕获组进行分割
+        if not self.delimiter_pattern:
+            return [s]
+        result = re.split(f"({self.delimiter_pattern})", s)
+
+        # 如果结果为空或仅包含空字符串，返回原字符串作为单元素列表
+        return [s] if not result or all(not part for part in result) else result
 
     def LCS(self, seq1, seq2):
         lengths = [[0 for j in range(len(seq2) + 1)] for i in range(len(seq1) + 1)]
@@ -486,6 +499,8 @@ class LogParser:
 
         # 找到最长公共子序列
         lcs = list(filter(None, self.compress_repeated_delimiters(self.LCS(split1, split2))))
+        if not lcs:
+            return "<*>"
 
         # 根据 LCS 替换并合并结果
         return self.getCommonTemplate(lcs, split1)
@@ -539,21 +554,21 @@ class LogParser:
                             self.addSeqToPrefixHamTree(rootHamNode, newCluster)
                             # 第二层，LCS前缀树增加相应节点
                             self.addSeqToPrefixLCSTree(rootLCSNode, newCluster)
-                        else:
-                            newTemplate = self.getTemplateLCS(
-                                self.LCS(logmessageL, matchCluster.logTemplate),
-                                matchCluster.logTemplate,
-                            )
-                            if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
-                                # 删除第二层
-                                self.removeSeqFromPrefixLCSTree(rootLCSNode, matchCluster)
-                                # 删除第一层
-                                self.removeSeqFromPrefixHamTree(rootHamNode, matchCluster)
-                                matchCluster.logTemplate = newTemplate
-                                # 第一层，固定深度解析树增加
-                                self.addSeqToPrefixHamTree(rootHamNode, matchCluster)
-                                # 第二层，LCS前缀树增加相应节点
-                                self.addSeqToPrefixLCSTree(rootLCSNode, matchCluster)
+                        # else:
+                        #     newTemplate = self.getTemplateLCS(
+                        #         self.LCS(logmessageL, matchCluster.logTemplate),
+                        #         matchCluster.logTemplate,
+                        #     )
+                        #     if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
+                        #         # 删除第二层
+                        #         self.removeSeqFromPrefixLCSTree(rootLCSNode, matchCluster)
+                        #         # 删除第一层
+                        #         self.removeSeqFromPrefixHamTree(rootHamNode, matchCluster)
+                        #         matchCluster.logTemplate = newTemplate
+                        #         # 第一层，固定深度解析树增加
+                        #         self.addSeqToPrefixHamTree(rootHamNode, matchCluster)
+                        #         # 第二层，LCS前缀树增加相应节点
+                        #         self.addSeqToPrefixLCSTree(rootLCSNode, matchCluster)
 
                 if matchCluster:
                     matchCluster.logIDL.append(logID)
@@ -764,6 +779,10 @@ class LogParser:
         # 如果不匹配，添加占位符 <*>。
         for token in seq:
             i += 1
+            # 这一块感觉还是有Bug
+            # if re.search(r'[<*>]', token):
+            #     retVal.append(token)
+            #     continue
             if token == lcs[-1]:
                 retVal.append(token)
                 lcs.pop()
