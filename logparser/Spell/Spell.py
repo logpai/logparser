@@ -262,6 +262,7 @@ class LogParser:
             else:   #如果当前token不存在，则把节点新建出来
                 parentn.childD[tokenInSeq] = Node(token=tokenInSeq, templateNo=1)
             #无论 token是否存在，都向下传递，即走到最后。中间的 parentn.logClust不存任何东西。
+            # 建一个len(seq)长的树
             parentn = parentn.childD[tokenInSeq]
 
         # 最后的叶子存储模板相关东西
@@ -377,6 +378,7 @@ class LogParser:
                 matchCluster = self.SimpleLoopMatch(logCluL, constLogMessL)
 
                 if matchCluster is None:
+                    # 遍历 logCluL
                     matchCluster = self.LCSMatch(logCluL, logmessageL)
 
                     # Match no existing log cluster
@@ -398,7 +400,7 @@ class LogParser:
             if matchCluster:
                 matchCluster.logIDL.append(logID)
             count += 1
-            if count % 1000 == 0 or count == len(self.df_log):
+            if count % 100000 == 0 or count == len(self.df_log):
                 print(
                     "Processed {0:.1f}% of log lines.".format(
                         count * 100.0 / len(self.df_log)
@@ -461,7 +463,7 @@ class LogParser:
         regex = ""
         for k in range(len(splitters)):
             if k % 2 == 0:
-                splitter = re.sub(" +", "\s+", splitters[k])
+                splitter = re.sub(" +", "\\\s+", splitters[k])
                 regex += splitter
             else:
                 header = splitters[k].strip("<").strip(">")

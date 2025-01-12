@@ -47,7 +47,7 @@ def evaluate(groundtruth, parsedresult):
             precision, recall, f_measure, accuracy
         )
     )
-    return f_measure, accuracy
+    return f_measure, accuracy, precision, recall
 
 
 def get_accuracy(series_groundtruth, series_parsedlog, debug=False):

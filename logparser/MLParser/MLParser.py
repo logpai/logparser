@@ -487,6 +487,8 @@ class LogParser:
         """
         主函数，处理两个字符串
         """
+        if str1 == str2:
+            return str1
         # 切割字符串
         rexStr2 = re.sub(r'<\*>', '', str2)
         split2 = self.split_string_preserve_delimiters(rexStr2)
@@ -554,21 +556,22 @@ class LogParser:
                             self.addSeqToPrefixHamTree(rootHamNode, newCluster)
                             # 第二层，LCS前缀树增加相应节点
                             self.addSeqToPrefixLCSTree(rootLCSNode, newCluster)
-                        # else:
-                        #     newTemplate = self.getTemplateLCS(
-                        #         self.LCS(logmessageL, matchCluster.logTemplate),
-                        #         matchCluster.logTemplate,
-                        #     )
-                        #     if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
-                        #         # 删除第二层
-                        #         self.removeSeqFromPrefixLCSTree(rootLCSNode, matchCluster)
-                        #         # 删除第一层
-                        #         self.removeSeqFromPrefixHamTree(rootHamNode, matchCluster)
-                        #         matchCluster.logTemplate = newTemplate
-                        #         # 第一层，固定深度解析树增加
-                        #         self.addSeqToPrefixHamTree(rootHamNode, matchCluster)
-                        #         # 第二层，LCS前缀树增加相应节点
-                        #         self.addSeqToPrefixLCSTree(rootLCSNode, matchCluster)
+                        else:
+                            # newTemplate = self.getTemplateLCS(
+                            #     self.LCS(logmessageL, matchCluster.logTemplate),
+                            #     matchCluster.logTemplate,
+                            # )
+                            newTemplate = self.getTemplateLCS(logmessageL, matchCluster.logTemplate)
+                            if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
+                                # 删除第二层
+                                self.removeSeqFromPrefixLCSTree(rootLCSNode, matchCluster)
+                                # 删除第一层
+                                self.removeSeqFromPrefixHamTree(rootHamNode, matchCluster)
+                                matchCluster.logTemplate = newTemplate
+                                # 第一层，固定深度解析树增加
+                                self.addSeqToPrefixHamTree(rootHamNode, matchCluster)
+                                # 第二层，LCS前缀树增加相应节点
+                                self.addSeqToPrefixLCSTree(rootLCSNode, matchCluster)
 
                 if matchCluster:
                     matchCluster.logIDL.append(logID)
@@ -577,6 +580,7 @@ class LogParser:
             else:
                 # 比较模板，如果已经存在的模版和之前的模版不同，选取最新的模版
                 newTemplate = self.getTemplateHam(logmessageL, matchCluster.logTemplate)
+                # newTemplate = self.remove_redundant_placeholders(newTemplate)
                 matchCluster.logIDL.append(logID)
                 if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
                     # 同时更新第二层的模版
@@ -598,6 +602,7 @@ class LogParser:
         self.outputResult(logCluL)
 
         print("Parsing done. [Time taken: {!s}]".format(datetime.now() - start_time))
+        return format(datetime.now() - start_time)
 
     '''
         idx是字符串下标
@@ -620,10 +625,11 @@ class LogParser:
         retLogClust = None
         length = len(seq)
         for i in range(idx, length):
+            x = seq[i]
             if seq[i] in parentn.childD:
                 childn = parentn.childD[seq[i]]
                 if childn.logClust is not None:  # 总感觉这一块有点别扭
-                    constLM = [w for w in childn.logClust.logTemplate if w != "<*>"]  # logTemplate 是什么？有待验证
+                    constLM = [w for w in childn.logClust.logTemplate if "<*>" not in w] # logTemplate 是什么？有待验证
                     if float(len(constLM)) >= self.tau * length:  # 判断相似的标准 给的长度>阈值*length判断是否相似
                         return childn.logClust
                 else:
@@ -701,7 +707,7 @@ class LogParser:
     def addSeqToPrefixLCSTree(self, rootn, newCluster):
         parentn = rootn
         seq = newCluster.logTemplate
-        seq = [w for w in seq if w != "<*>"]
+        seq = [w for w in seq if "<*>" not in w]
 
         for i in range(len(seq)):
             tokenInSeq = seq[i]
@@ -722,7 +728,7 @@ class LogParser:
     def removeSeqFromPrefixLCSTree(self, rootn, newCluster):
         parentn = rootn
         seq = newCluster.logTemplate
-        seq = [w for w in seq if w != "<*>"]
+        seq = [w for w in seq if "<*>" not in w]
 
         for tokenInSeq in seq:
             if tokenInSeq in parentn.childD:
@@ -766,30 +772,75 @@ class LogParser:
             if logClustL[i].logTemplate == newCluster.logTemplate:
                 del logClustL[i]
 
+    def getTemplateLCS(self, seq1, seq2):
+        """
+        利用 lengths 矩阵做 LCS 动态规划，并结合 self.process_strings 判定是否匹配。
+        若 self.process_strings(a, b) != "<*>", 表示 a 和 b 在细粒度上可视为相等，
+        并将返回的字符串作为 LCS 中的公共元素。
+        """
 
-    def getTemplateLCS(self, lcs, seq):
-        retVal = []
-        if not lcs:
-            return retVal
+        # 用于记录 LCS 的长度
+        lengths = [[0 for _ in range(len(seq2) + 1)] for _ in range(len(seq1) + 1)]
+        # 用于记录匹配后的字符串（如 "<*>.exe" 或实际完全相同的字符串）
+        matched_token = [[None for _ in range(len(seq2) + 1)] for _ in range(len(seq1) + 1)]
 
-        # 因为在 seq 中从左到右进行匹配，而 lcs 是按从后向前回溯生成的，需要反转顺序以便匹配。
-        lcs = lcs[::-1]
-        i = 0
-        # 如果当前 token 等于 lcs 的最后一个元素（lcs[-1]），将其加入模板，并从 lcs 中移除该元素。
-        # 如果不匹配，添加占位符 <*>。
-        for token in seq:
-            i += 1
-            # 这一块感觉还是有Bug
-            # if re.search(r'[<*>]', token):
-            #     retVal.append(token)
-            #     continue
-            if token == lcs[-1]:
-                retVal.append(token)
-                lcs.pop()
+        # 1) 填充 lengths 表和 matched_token
+        for i in range(len(seq1)):
+            for j in range(len(seq2)):
+                if seq1[i] == "<*>" or seq2[j] == "<*>":
+                    lengths[i + 1][j + 1] = lengths[i][j] + 1
+                    matched_token[i + 1][j + 1] = "<*>"
+                    continue
+                # 调用 process_strings 看看是否匹配
+                token_result = self.process_strings(seq1[i], seq2[j])
+                if token_result != "<*>":
+                    # 表示它们在细粒度上"相等"
+                    lengths[i + 1][j + 1] = lengths[i][j] + 1
+                    matched_token[i + 1][j + 1] = token_result
+                else:
+                    # 不匹配时，沿用上/左方向中 LCS 长度较大的
+                    if lengths[i + 1][j] > lengths[i][j + 1]:
+                        lengths[i + 1][j + 1] = lengths[i + 1][j]
+                    else:
+                        lengths[i + 1][j + 1] = lengths[i][j + 1]
+
+        # 2) 回溯 lengths 矩阵，拼出最终的 LCS 序列
+        result = []
+        i, j = len(seq1), len(seq2)
+        while i > 0 and j > 0:
+            # 如果和上方的长度一样，则往上走
+            if lengths[i][j] == lengths[i - 1][j]:
+                i -= 1
+            # 如果和左方的长度一样，则往左走
+            elif lengths[i][j] == lengths[i][j - 1]:
+                j -= 1
             else:
-                retVal.append(self.process_strings(token, lcs[-1]))
-            if not lcs:
-                break
-        if i < len(seq):
-            retVal.append("<*>")
-        return retVal
+                # 能走到这里，说明 seq1[i-1] 与 seq2[j-1] 细粒度匹配
+                # matched_token[i][j] 就是它们匹配后的结果
+                result.insert(0, matched_token[i][j])
+                i -= 1
+                j -= 1
+
+        return result
+
+
+    def remove_redundant_placeholders(self, seq):
+        """
+        如果当前 token 为 "<*>", 且下一个 token 包含 "<*>",
+        就删除当前 token。
+        """
+        new_seq = []
+        i = 0
+        while i < len(seq):
+            current_token = seq[i]
+
+            # 判断是否还有下一个 token，并且当前 token == "<*>"，下一个 token 包含 "<*>"
+            if current_token == "<*>" and (i + 1 < len(seq)) and ("<*>" in seq[i+1]):
+                # 跳过当前 token，不添加到 new_seq
+                i += 1
+            else:
+                # 否则保留当前 token
+                new_seq.append(current_token)
+                i += 1
+
+        return new_seq

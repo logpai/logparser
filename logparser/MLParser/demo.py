@@ -20,9 +20,9 @@ regex = [
 ]
 st         = 0.5  # Similarity threshold
 depth      = 4  # Depth of all leaf nodes
-tau        = 0.75  # Message type threshold (default: 0.5)
-#delimiter_pattern = r"\.|/|_"
-delimiter_pattern = r""
+tau        = 0.57  # Message type threshold (default: 0.5)
+delimiter_pattern = r"\.|/|_"
+#delimiter_pattern = r""
 
 parser = LogParser(log_format, indir=input_dir, outdir=output_dir,  depth=depth, st=st, tau=tau, rex=regex, delimiter_pattern=delimiter_pattern)
 parser.parse(log_file)

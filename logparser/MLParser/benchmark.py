@@ -33,7 +33,7 @@ benchmark_settings = {
         "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
         "regex": [r'(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)'],
         "st": 0.5,
-        "tau": 0.75,
+        "tau": 0.57,
         "depth": 4,
         "delimiter_pattern": r"\.|_"
     },
@@ -164,15 +164,15 @@ benchmark_settings = {
         "depth": 5,
         "delimiter_pattern": ""
     },
-    "Mac": {
-        "log_file": "Mac/Mac_2k.log",
-        "log_format": "<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>",
-        "regex": [],
-        "st": 0.7,
-        "tau": 0.75,
-        "depth": 6,
-        "delimiter_pattern": r"\.|_"
-    },
+    # "Mac": {
+    #     "log_file": "Mac/Mac_2k.log",
+    #     "log_format": "<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>",
+    #     "regex": [],
+    #     "st": 0.7,
+    #     "tau": 0.75,
+    #     "depth": 6,
+    #     "delimiter_pattern": r"\.|_"
+    # },
 }
 
 bechmark_result = []
@@ -191,17 +191,17 @@ for dataset, setting in benchmark_settings.items():
         tau=setting["tau"],
         delimiter_pattern=setting["delimiter_pattern"]
     )
-    parser.parse(log_file)
+    TimeToken = parser.parse(log_file)
 
-    F1_measure, accuracy = evaluator.evaluate(
+    F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
         groundtruth=os.path.join(indir, log_file + "_structured.csv"),
         parsedresult=os.path.join(output_dir, log_file + "_structured.csv"),
     )
-    bechmark_result.append([dataset, F1_measure, accuracy])
+    bechmark_result.append([dataset, F1_measure, accuracy, Precision, Recall, TimeToken])
 
 
 print("\n=== Overall evaluation results ===")
-df_result = pd.DataFrame(bechmark_result, columns=["Dataset", "F1_measure", "Accuracy"])
+df_result = pd.DataFrame(bechmark_result, columns=["Dataset", "F1_measure", "Accuracy", "Precision", "Recall", "TimeToken"])
 df_result.set_index("Dataset", inplace=True)
 print(df_result)
-df_result.to_csv("Drain_bechmark_result.csv", float_format="%.6f")
+df_result.to_csv("MLParser_bechmark_result.csv", float_format="%.6f")

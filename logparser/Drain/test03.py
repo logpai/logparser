@@ -5,41 +5,8 @@ def split_string_preserve_delimiters(s):
     """
     分割字符串，使用非字母和数字字符进行划分，并保留所有分隔符
     """
-    return re.split(r'([^a-zA-Z0-9*])', s)  # 使用捕获组保留分隔符
     # return re.split(r'([^\w*])', s)
-
-def LCSEfficient(seq1, seq2):
-        # 确保较短的序列用于列滚动，以节省内存
-        if len(seq1) < len(seq2):
-            seq1, seq2 = seq2, seq1
-
-        # 滚动数组，用于存储当前行和上一行的 LCS 长度
-        prev = [0] * (len(seq2) + 1)
-        curr = [0] * (len(seq2) + 1)
-
-        # 填充滚动数组
-        for i in range(1, len(seq1) + 1):
-            for j in range(1, len(seq2) + 1):
-                if seq1[i - 1] == seq2[j - 1]:
-                    curr[j] = prev[j - 1] + 1
-                else:
-                    curr[j] = max(curr[j - 1], prev[j])
-            prev, curr = curr, prev  # 滚动数组：当前行成为下一行的前一行
-
-        # 逆序回溯得到 LCS
-        result = []
-        i, j = len(seq1), len(seq2)
-        while i > 0 and j > 0:
-            if seq1[i - 1] == seq2[j - 1]:
-                result.append(seq1[i - 1])
-                i -= 1
-                j -= 1
-            elif prev[j] == prev[j - 1]:
-                j -= 1
-            else:
-                i -= 1
-
-        return result[::-1]  # 返回正序的 LCS
+    return re.split(r'([^a-zA-Z0-9*])', s)  # 使用捕获组保留分隔符
 
 def LCS( seq1, seq2):
         lengths = [[0 for j in range(len(seq2) + 1)] for i in range(len(seq1) + 1)]
@@ -141,7 +108,7 @@ str6 = "c++.exe"
 str7 = "<*>.exe"
 str21 = "blk_4029139044660806713"
 str22 = "blk_-5471189807977280544"
-result = process_strings(str5, str6)
+result = process_strings(str1, str2)
 print(result)
 result = compress_repeated_delimiters(result)
 print("".join(result))

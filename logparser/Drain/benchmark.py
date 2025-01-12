@@ -165,17 +165,18 @@ for dataset, setting in benchmark_settings.items():
         depth=setting["depth"],
         st=setting["st"],
     )
-    parser.parse(log_file)
 
-    F1_measure, accuracy = evaluator.evaluate(
+    TimeToken = parser.parse(log_file)
+
+    F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
         groundtruth=os.path.join(indir, log_file + "_structured.csv"),
         parsedresult=os.path.join(output_dir, log_file + "_structured.csv"),
     )
-    bechmark_result.append([dataset, F1_measure, accuracy])
-
+    bechmark_result.append([dataset, F1_measure, accuracy, Precision, Recall, TimeToken])
 
 print("\n=== Overall evaluation results ===")
-df_result = pd.DataFrame(bechmark_result, columns=["Dataset", "F1_measure", "Accuracy"])
+df_result = pd.DataFrame(bechmark_result,
+                         columns=["Dataset", "F1_measure", "Accuracy", "Precision", "Recall", "TimeToken"])
 df_result.set_index("Dataset", inplace=True)
 print(df_result)
 df_result.to_csv("Drain_bechmark_result.csv", float_format="%.6f")
