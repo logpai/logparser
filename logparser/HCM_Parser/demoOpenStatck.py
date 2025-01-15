@@ -5,7 +5,7 @@ sys.path.append('../../')
 from logparser.MLParser import LogParser
 
 input_dir  = '../../data/loghub_2k/OpenStack/'  # The input directory of log file
-output_dir = '../MLParser/demo_result/'  # The output directory of parsing results
+output_dir = '/demo_result/'  # The output directory of parsing results
 log_file   = 'OpenStack_test.log'  # The input log file name
 log_format = '<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>'  # HDFS log format
 # Regular expression list for optional preprocessing (default: [])
