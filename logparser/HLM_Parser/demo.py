@@ -3,7 +3,7 @@
 import sys
 sys.path.append('../../')
 # from logparser.Drain import LogParser
-from logparser.HCM_Parser import LogParser
+from logparser.HLM_Parser import LogParser
 
 input_dir  = '../../data/loghub_2k/HDFS/' # The input directory of log file
 output_dir = 'demo_result/'  # The output directory of parsing results
