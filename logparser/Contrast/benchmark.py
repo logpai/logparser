@@ -203,12 +203,47 @@ def Spell_Parser():
         indir=indir,
         outdir=output_dir,
         rex=setting["regex"],
-        tau=setting["tau"],
+        tau=setting["tau_Spell"],
     )
     TimeToken = parser_Spell.parse(log_file)
     F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
         groundtruth=os.path.join(indir, log_file + "_structured.csv"),
-        parsedresult=os.path.join(output_dir, log_file + "_Drain" + "_structured.csv"),
+        parsedresult=os.path.join(output_dir, log_file + "_Spell" + "_structured.csv"),
+    )
+
+    bechmark_result.append([Spell.__name__, dataset, F1_measure, accuracy, Precision, Recall, TimeToken])
+
+def Spell_A_Parser():
+    # Spell
+    parser_Spell_A = Spell_A(
+        log_format=setting["log_format"],
+        indir=indir,
+        outdir=output_dir,
+        rex=setting["regex"],
+        tau=setting["tau_Spell"],
+    )
+    TimeToken = parser_Spell_A.parse(log_file)
+    F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
+        groundtruth=os.path.join(indir, log_file + "_structured.csv"),
+        parsedresult=os.path.join(output_dir, log_file + "_Spell_A" + "_structured.csv"),
+    )
+
+    bechmark_result.append([Spell_A.__name__, dataset, F1_measure, accuracy, Precision, Recall, TimeToken])
+
+
+def Spell_Parser():
+    # Spell
+    parser_Spell = Spell(
+        log_format=setting["log_format"],
+        indir=indir,
+        outdir=output_dir,
+        rex=setting["regex"],
+        tau=setting["tau_Spell"],
+    )
+    TimeToken = parser_Spell.parse(log_file)
+    F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
+        groundtruth=os.path.join(indir, log_file + "_structured.csv"),
+        parsedresult=os.path.join(output_dir, log_file + "_Spell" + "_structured.csv"),
     )
 
     bechmark_result.append([Spell.__name__, dataset, F1_measure, accuracy, Precision, Recall, TimeToken])
@@ -220,6 +255,8 @@ for dataset, setting in benchmark_settings.items():
     log_file = os.path.basename(setting["log_file"])
     Drain_Parser()
     Drain_A_Parser()
+    Spell_Parser()
+    Spell_A_Parser()
 
 
 
@@ -228,7 +265,7 @@ df_result = pd.DataFrame(bechmark_result,
                          columns=["Algorithm", "Dataset", "F1_measure", "Accuracy", "Precision", "Recall", "TimeToken"])
 df_result.set_index("Dataset", inplace=True)
 print(df_result)
-df_result.to_csv("Drain_bechmark_result.csv", float_format="%.6f")
+df_result.to_csv("bechmark_result.csv", float_format="%.6f")
 
 
 

@@ -412,6 +412,7 @@ class LogParser:
 
         self.outputResult(logCluL)
         print("Parsing done. [Time taken: {!s}]".format(datetime.now() - starttime))
+        return format(datetime.now() - starttime)
 
     def load_data(self):
         headers, regex = self.generate_logformat_regex(self.logformat)

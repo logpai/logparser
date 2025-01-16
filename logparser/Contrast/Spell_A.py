@@ -310,10 +310,10 @@ class Spell_A:
                 self.get_parameter_list, axis=1
             )
         self.df_log.to_csv(
-            os.path.join(self.savePath, self.logname + "_structured.csv"), index=False
+            os.path.join(self.savePath, self.logname +"_Spell_A" + "_structured.csv"), index=False
         )
         df_event.to_csv(
-            os.path.join(self.savePath, self.logname + "_templates.csv"), index=False
+            os.path.join(self.savePath, self.logname +"_Spell_A" + "_templates.csv"), index=False
         )
 
     def printTree(self, node, dep):
@@ -390,8 +390,8 @@ class Spell_A:
                         self.addSeqToPrefixTree(rootNode, newCluster)
                     # Add the new log message to the existing cluster
                     else:
-                        newTemplate = self.getTemplate(
-                            self.LCS(logmessageL, matchCluster.logTemplate),
+                        newTemplate = self.getTemplateLCS(
+                            logmessageL,
                             matchCluster.logTemplate,
                         )
                         if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
@@ -414,6 +414,7 @@ class Spell_A:
 
         self.outputResult(logCluL)
         print("Parsing done. [Time taken: {!s}]".format(datetime.now() - starttime))
+        return format(datetime.now() - starttime)
 
     def load_data(self):
         headers, regex = self.generate_logformat_regex(self.logformat)

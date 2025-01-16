@@ -308,10 +308,10 @@ class Spell:
                 self.get_parameter_list, axis=1
             )
         self.df_log.to_csv(
-            os.path.join(self.savePath, self.logname + "_structured.csv"), index=False
+            os.path.join(self.savePath, self.logname + "_Spell" + "_structured.csv"), index=False
         )
         df_event.to_csv(
-            os.path.join(self.savePath, self.logname + "_templates.csv"), index=False
+            os.path.join(self.savePath, self.logname + "_Spell" + "_templates.csv"), index=False
         )
 
     def printTree(self, node, dep):
@@ -412,6 +412,7 @@ class Spell:
 
         self.outputResult(logCluL)
         print("Parsing done. [Time taken: {!s}]".format(datetime.now() - starttime))
+        return format(datetime.now() - starttime)
 
     def load_data(self):
         headers, regex = self.generate_logformat_regex(self.logformat)
