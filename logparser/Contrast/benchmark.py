@@ -29,7 +29,7 @@ import pandas as pd
 
 
 input_dir = "../../data/loghub_2k/"  # The input directory of log file
-output_dir = "Drain_result/"  # The output directory of parsing results
+output_dir = "Contrast_result/"  # The output directory of parsing results
 
 
 benchmark_settings = {
@@ -231,22 +231,47 @@ def Spell_A_Parser():
     bechmark_result.append([Spell_A.__name__, dataset, F1_measure, accuracy, Precision, Recall, TimeToken])
 
 
-def Spell_Parser():
+def HLM_Parser_Parser():
     # Spell
-    parser_Spell = Spell(
+    parser_HLM_Parser = HLM_Parser(
         log_format=setting["log_format"],
         indir=indir,
         outdir=output_dir,
         rex=setting["regex"],
+        depth=setting["depth"],
+        st=setting["st"],
         tau=setting["tau_Spell"],
+        delimiter_pattern=setting["delimiter_pattern"]
     )
-    TimeToken = parser_Spell.parse(log_file)
+    TimeToken = parser_HLM_Parser.parse(log_file)
     F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
         groundtruth=os.path.join(indir, log_file + "_structured.csv"),
-        parsedresult=os.path.join(output_dir, log_file + "_Spell" + "_structured.csv"),
+        parsedresult=os.path.join(output_dir, log_file + "_HLM_Parser" + "_structured.csv"),
     )
 
-    bechmark_result.append([Spell.__name__, dataset, F1_measure, accuracy, Precision, Recall, TimeToken])
+    bechmark_result.append([HLM_Parser.__name__, dataset, F1_measure, accuracy, Precision, Recall, TimeToken])
+
+
+def HLM_Parser_S_Parser():
+    # Spell
+    parser_HLM_Parser_S = HLM_Parser_S(
+        log_format=setting["log_format"],
+        indir=indir,
+        outdir=output_dir,
+        rex=setting["regex"],
+        depth=setting["depth"],
+        st=setting["st"],
+        tau=setting["tau_Spell"],
+        delimiter_pattern=setting["delimiter_pattern"]
+    )
+    TimeToken = parser_HLM_Parser_S.parse(log_file)
+    F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
+        groundtruth=os.path.join(indir, log_file + "_structured.csv"),
+        parsedresult=os.path.join(output_dir, log_file + "_HLM_Parser_S" + "_structured.csv"),
+    )
+
+    bechmark_result.append([HLM_Parser_S.__name__, dataset, F1_measure, accuracy, Precision, Recall, TimeToken])
+
 
 bechmark_result = []
 for dataset, setting in benchmark_settings.items():
@@ -254,9 +279,11 @@ for dataset, setting in benchmark_settings.items():
     indir = os.path.join(input_dir, os.path.dirname(setting["log_file"]))
     log_file = os.path.basename(setting["log_file"])
     Drain_Parser()
-    Drain_A_Parser()
     Spell_Parser()
+    HLM_Parser_S_Parser()
+    Drain_A_Parser()
     Spell_A_Parser()
+    HLM_Parser_Parser()
 
 
 

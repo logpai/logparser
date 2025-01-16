@@ -249,6 +249,22 @@ class HLM_Parser_S:
         getTemplate 方法生成一个模板列表，其中比较两个输入序列，相同位置的元素相等则保留，不相等则替换为占位符 "<*>"
         self.getTemplate(logmessageL, matchCluster.logTemplate)
     '''
+    def getTemplate(self, seq1, seq2):
+        assert len(seq1) == len(seq2)
+        retVal = []
+
+        i = 0
+        for word in seq1:
+            if word == seq2[i]:
+                retVal.append(word)
+            else:
+                retVal.append("<*>")
+
+            i += 1
+
+        return retVal
+
+
     def getTemplateHam(self, seq1, seq2):
         assert len(seq1) == len(seq2)
         retVal = []
@@ -295,7 +311,7 @@ class HLM_Parser_S:
                 self.get_parameter_list, axis=1
             )
         self.df_log.to_csv(
-            os.path.join(self.savePath, self.logName + "_structured.csv"), index=False
+            os.path.join(self.savePath, self.logName +"_HLM_Parser_S" +  "_structured.csv"), index=False
         )
 
         occ_dict = dict(self.df_log["EventTemplate"].value_counts())
@@ -306,7 +322,7 @@ class HLM_Parser_S:
         )
         df_event["Occurrences"] = df_event["EventTemplate"].map(occ_dict)
         df_event.to_csv(
-            os.path.join(self.savePath, self.logName + "_templates.csv"),
+            os.path.join(self.savePath, self.logName +"_HLM_Parser_S" +  "_templates.csv"),
             index=False,
             columns=["EventId", "EventTemplate", "Occurrences"],
         )
@@ -446,6 +462,29 @@ class HLM_Parser_S:
                 lenOfSeq2 -= 1
         return result
 
+    def getTemplateLCS_S(self, lcs, seq):
+        retVal = []
+        if not lcs:
+            return retVal
+
+        # 因为在 seq 中从左到右进行匹配，而 lcs 是按从后向前回溯生成的，需要反转顺序以便匹配。
+        lcs = lcs[::-1]
+        i = 0
+        # 如果当前 token 等于 lcs 的最后一个元素（lcs[-1]），将其加入模板，并从 lcs 中移除该元素。
+        # 如果不匹配，添加占位符 <*>。
+        for token in seq:
+            i += 1
+            if token == lcs[-1]:
+                retVal.append(token)
+                lcs.pop()
+            else:
+                retVal.append("<*>")
+            if not lcs:
+                break
+        if i < len(seq):
+            retVal.append("<*>")
+        return retVal
+
     def getCommonTemplate(self, lcs, seq):
         retVal = []
         if not lcs:
@@ -557,11 +596,11 @@ class HLM_Parser_S:
                             # 第二层，LCS前缀树增加相应节点
                             self.addSeqToPrefixLCSTree(rootLCSNode, newCluster)
                         else:
-                            # newTemplate = self.getTemplateLCS(
-                            #     self.LCS(logmessageL, matchCluster.logTemplate),
-                            #     matchCluster.logTemplate,
-                            # )
-                            newTemplate = self.getTemplateLCS(logmessageL, matchCluster.logTemplate)
+                            newTemplate = self.getTemplateLCS_S(
+                                self.LCS(logmessageL, matchCluster.logTemplate),
+                                matchCluster.logTemplate,
+                            )
+                            # newTemplate = self.getTemplateLCS(logmessageL, matchCluster.logTemplate)
                             if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):
                                 # 删除第二层
                                 self.removeSeqFromPrefixLCSTree(rootLCSNode, matchCluster)
@@ -579,7 +618,7 @@ class HLM_Parser_S:
             # Add the new log message to the existing cluster
             else:
                 # 比较模板，如果已经存在的模版和之前的模版不同，选取最新的模版
-                newTemplate = self.getTemplateHam(logmessageL, matchCluster.logTemplate)
+                newTemplate = self.getTemplate(logmessageL, matchCluster.logTemplate)
                 # newTemplate = self.remove_redundant_placeholders(newTemplate)
                 matchCluster.logIDL.append(logID)
                 if " ".join(newTemplate) != " ".join(matchCluster.logTemplate):

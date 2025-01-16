@@ -17,7 +17,7 @@
 
 import sys
 sys.path.append("../../")
-from logparser.MLParser import LogParser
+from logparser.HLM_Parser import LogParser
 from logparser.utils import evaluator
 import os
 import pandas as pd
