@@ -39,16 +39,18 @@ benchmark_settings = {
         "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
         "st": 0.5,
         "depth": 4,
-        "tau_Spell": 0.7,
+        "tau": 0.7,
         "delimiter_pattern": r"\.|/|_"
     },
-    # "Hadoop": {
-    #     "log_file": "Hadoop/Hadoop_2k.log",
-    #     "log_format": "<Date> <Time> <Level> \[<Process>\] <Component>: <Content>",
-    #     "regex": [r"(\d+\.){3}\d+"],
-    #     "st": 0.5,
-    #     "depth": 4,
-    # },
+    "Hadoop": {
+        "log_file": "Hadoop/Hadoop_2k.log",
+        "log_format": "<Date> <Time> <Level> \[<Process>\] <Component>: <Content>",
+        "regex": [r"(\d+\.){3}\d+"],
+        "st": 0.5,
+        "depth": 4,
+        "tau": 0.7,
+        "delimiter_pattern": r"\.|/|_"
+    },
     # "Spark": {
     #     "log_file": "Spark/Spark_2k.log",
     #     "log_format": "<Date> <Time> <Level> <Component>: <Content>",
@@ -63,13 +65,15 @@ benchmark_settings = {
     #     "st": 0.5,
     #     "depth": 4,
     # },
-    # "BGL": {
-    #     "log_file": "BGL/BGL_2k.log",
-    #     "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
-    #     "regex": [r"core\.\d+"],
-    #     "st": 0.5,
-    #     "depth": 4,
-    # },
+    "BGL": {
+        "log_file": "BGL/BGL_2k.log",
+        "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+        "regex": [r"core\.\d+"],
+        "st": 0.5,
+        "depth": 4,
+        "tau": 0.75,
+        "delimiter_pattern": r"\.|/|_"
+    },
     # "HPC": {
     #     "log_file": "HPC/HPC_2k.log",
     #     "log_format": "<LogId> <Node> <Component> <State> <Time> <Flag> <Content>",
@@ -142,13 +146,15 @@ benchmark_settings = {
     #     "st": 0.6,
     #     "depth": 5,
     # },
-    # "OpenStack": {
-    #     "log_file": "OpenStack/OpenStack_2k.log",
-    #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
-    #     "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
-    #     "st": 0.5,
-    #     "depth": 5,
-    # },
+    "OpenStack": {
+        "log_file": "OpenStack/OpenStack_2k.log",
+        "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
+        "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+        "st": 0.5,
+        "depth": 5,
+        "tau": 0.9,
+        "delimiter_pattern": r"\.|/|_"
+    },
     # "Mac": {
     #     "log_file": "Mac/Mac_2k.log",
     #     "log_format": "<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>",
@@ -203,7 +209,7 @@ def Spell_Parser():
         indir=indir,
         outdir=output_dir,
         rex=setting["regex"],
-        tau=setting["tau_Spell"],
+        tau=setting["tau"],
     )
     TimeToken = parser_Spell.parse(log_file)
     F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
@@ -220,7 +226,7 @@ def Spell_A_Parser():
         indir=indir,
         outdir=output_dir,
         rex=setting["regex"],
-        tau=setting["tau_Spell"],
+        tau=setting["tau"],
     )
     TimeToken = parser_Spell_A.parse(log_file)
     F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
@@ -240,7 +246,7 @@ def HLM_Parser_Parser():
         rex=setting["regex"],
         depth=setting["depth"],
         st=setting["st"],
-        tau=setting["tau_Spell"],
+        tau=setting["tau"],
         delimiter_pattern=setting["delimiter_pattern"]
     )
     TimeToken = parser_HLM_Parser.parse(log_file)
@@ -261,7 +267,7 @@ def HLM_Parser_S_Parser():
         rex=setting["regex"],
         depth=setting["depth"],
         st=setting["st"],
-        tau=setting["tau_Spell"],
+        tau=setting["tau"],
         delimiter_pattern=setting["delimiter_pattern"]
     )
     TimeToken = parser_HLM_Parser_S.parse(log_file)
