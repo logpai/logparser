@@ -402,7 +402,7 @@ class Spell_A:
             if matchCluster:
                 matchCluster.logIDL.append(logID)
             count += 1
-            if count % 100000 == 0 or count == len(self.df_log):
+            if count % 1000000 == 0 or count == len(self.df_log):
                 print(
                     "Processed {0:.1f}% of log lines.".format(
                         count * 100.0 / len(self.df_log)
@@ -412,9 +412,10 @@ class Spell_A:
         if not os.path.exists(self.savePath):
             os.makedirs(self.savePath)
 
-        self.outputResult(logCluL)
+        # self.outputResult(logCluL)
         print("Parsing done. [Time taken: {!s}]".format(datetime.now() - starttime))
-        return format(datetime.now() - starttime)
+        print(len(logCluL))
+        return format(datetime.now() - starttime), len(logCluL)
 
     def load_data(self):
         headers, regex = self.generate_logformat_regex(self.logformat)

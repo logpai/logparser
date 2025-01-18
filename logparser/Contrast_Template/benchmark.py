@@ -17,12 +17,12 @@
 
 import sys
 sys.path.append("../../")
-from logparser.Contrast import Drain
-from logparser.Contrast import Drain_A
-from logparser.Contrast import Spell
-from logparser.Contrast import Spell_A
-from logparser.Contrast import HLM_Parser
-from logparser.Contrast import HLM_Parser_S
+from logparser.Contrast_Template import Drain
+from logparser.Contrast_Template import Drain_A
+from logparser.Contrast_Template import Spell
+from logparser.Contrast_Template import Spell_A
+from logparser.Contrast_Template import HLM_Parser
+from logparser.Contrast_Template import HLM_Parser_S
 from logparser.utils import evaluator
 import os
 import pandas as pd
@@ -33,8 +33,17 @@ output_dir = "Contrast_result/"  # The output directory of parsing results
 
 
 benchmark_settings = {
-    "HDFS": {
-        "log_file": "HDFS/HDFS_2k.log",
+    # "HDFS": {
+    #     "log_file": "HDFS/HDFS_2k.log",
+    #     "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
+    #     "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.7,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+    "HDFS_25%": {
+        "log_file": "HDFS_Total/HDFS_25%.log",
         "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
         "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
         "st": 0.5,
@@ -42,15 +51,44 @@ benchmark_settings = {
         "tau": 0.7,
         "delimiter_pattern": r"\.|/|_"
     },
-    "Hadoop": {
-        "log_file": "Hadoop/Hadoop_2k.log",
-        "log_format": "<Date> <Time> <Level> \[<Process>\] <Component>: <Content>",
-        "regex": [r"(\d+\.){3}\d+"],
+    "HDFS_50%": {
+        "log_file": "HDFS_Total/HDFS_50%.log",
+        "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
+        "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
         "st": 0.5,
         "depth": 4,
         "tau": 0.7,
         "delimiter_pattern": r"\.|/|_"
     },
+    "HDFS_75%": {
+        "log_file": "HDFS_Total/HDFS_75%.log",
+        "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
+        "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
+        "st": 0.5,
+        "depth": 4,
+        "tau": 0.7,
+        "delimiter_pattern": r"\.|/|_"
+    },
+    "HDFS_100%": {
+        "log_file": "HDFS_Total/HDFS.log",
+        "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
+        "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
+        "st": 0.5,
+        "depth": 4,
+        "tau": 0.7,
+        "delimiter_pattern": r"\.|/|_"
+    },
+
+
+    # "Hadoop": {
+    #     "log_file": "Hadoop/Hadoop_2k.log",
+    #     "log_format": "<Date> <Time> <Level> \[<Process>\] <Component>: <Content>",
+    #     "regex": [r"(\d+\.){3}\d+"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.7,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
     # "Spark": {
     #     "log_file": "Spark/Spark_2k.log",
     #     "log_format": "<Date> <Time> <Level> <Component>: <Content>",
@@ -65,15 +103,58 @@ benchmark_settings = {
     #     "st": 0.5,
     #     "depth": 4,
     # },
-    "BGL": {
-        "log_file": "BGL/BGL_2k.log",
-        "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
-        "regex": [r"core\.\d+"],
-        "st": 0.5,
-        "depth": 4,
-        "tau": 0.75,
-        "delimiter_pattern": r"\.|/|_"
-    },
+    # "BGL": {
+    #     "log_file": "BGL/BGL_2k.log",
+    #     "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+    #     "regex": [r"core\.\d+"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.75,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+
+    # "BGL_5w": {
+    #     "log_file": "BGL_Total/BGL_5w.log",
+    #     "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+    #     "regex": [r"core\.\d+"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.75,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+    #
+    # "BGL_10w": {
+    #     "log_file": "BGL_Total/BGL_10w.log",
+    #     "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+    #     "regex": [r"core\.\d+"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.75,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+    #
+    # "BGL_15w": {
+    #     "log_file": "BGL_Total/BGL_15w.log",
+    #     "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+    #     "regex": [r"core\.\d+"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.75,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+    #
+    # "BGL_20w": {
+    #     "log_file": "BGL_Total/BGL_20w.log",
+    #     "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+    #     "regex": [r"core\.\d+"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.75,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+
+
+
     # "HPC": {
     #     "log_file": "HPC/HPC_2k.log",
     #     "log_format": "<LogId> <Node> <Component> <State> <Time> <Flag> <Content>",
@@ -146,15 +227,54 @@ benchmark_settings = {
     #     "st": 0.6,
     #     "depth": 5,
     # },
-    "OpenStack": {
-        "log_file": "OpenStack/OpenStack_2k.log",
-        "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
-        "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
-        "st": 0.5,
-        "depth": 5,
-        "tau": 0.9,
-        "delimiter_pattern": r"\.|/|_"
-    },
+    # "OpenStack": {
+    #     "log_file": "OpenStack/OpenStack_2k.log",
+    #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
+    #     "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+    #     "st": 0.5,
+    #     "depth": 5,
+    #     "tau": 0.9,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+
+    # "OpenStack_5w": {
+    #     "log_file": "OpenStack_Total/openstack_5w.log",
+    #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
+    #     "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+    #     "st": 0.5,
+    #     "depth": 5,
+    #     "tau": 0.9,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+    #
+    # "OpenStack_10w": {
+    #     "log_file": "OpenStack_Total/openstack_10w.log",
+    #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
+    #     "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+    #     "st": 0.5,
+    #     "depth": 5,
+    #     "tau": 0.9,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+    #
+    # "OpenStack_15w": {
+    #     "log_file": "OpenStack_Total/openstack_15w.log",
+    #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
+    #     "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+    #     "st": 0.5,
+    #     "depth": 5,
+    #     "tau": 0.9,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+    # "OpenStack_20w": {
+    #     "log_file": "OpenStack_Total/openstack_20w.log",
+    #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
+    #     "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+    #     "st": 0.5,
+    #     "depth": 5,
+    #     "tau": 0.9,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
     # "Mac": {
     #     "log_file": "Mac/Mac_2k.log",
     #     "log_format": "<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>",
@@ -174,13 +294,13 @@ def Drain_Parser():
         depth=setting["depth"],
         st=setting["st"],
     )
-    TimeToken = parser_Drain.parse(log_file)
+    TimeToken, len= parser_Drain.parse(log_file)
     # F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
     #     groundtruth=os.path.join(indir, log_file + "_structured.csv"),
     #     parsedresult=os.path.join(output_dir, log_file + "_Drain" + "_structured.csv"),
     # )
 
-    bechmark_result.append([Drain.__name__, dataset, TimeToken])
+    bechmark_result.append([Drain.__name__, dataset, TimeToken, len])
 
 def Drain_A_Parser():
     # Drain_A
@@ -193,13 +313,13 @@ def Drain_A_Parser():
         st=setting["st"],
         delimiter_pattern=setting["delimiter_pattern"]
     )
-    TimeToken = parser_Drain_A.parse(log_file)
+    TimeToken, len = parser_Drain_A.parse(log_file)
     # F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
     #     groundtruth=os.path.join(indir, log_file + "_structured.csv"),
     #     parsedresult=os.path.join(output_dir, log_file + "_Drain" + "_structured.csv"),
     # )
 
-    bechmark_result.append([Drain_A.__name__, dataset, TimeToken])
+    bechmark_result.append([Drain_A.__name__, dataset, TimeToken, len])
 
 
 def Spell_Parser():
@@ -211,13 +331,13 @@ def Spell_Parser():
         rex=setting["regex"],
         tau=setting["tau"],
     )
-    TimeToken = parser_Spell.parse(log_file)
+    TimeToken, len = parser_Spell.parse(log_file)
     # F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
     #     groundtruth=os.path.join(indir, log_file + "_structured.csv"),
     #     parsedresult=os.path.join(output_dir, log_file + "_Spell" + "_structured.csv"),
     # )
 
-    bechmark_result.append([Spell.__name__, dataset, TimeToken])
+    bechmark_result.append([Spell.__name__, dataset, TimeToken, len])
 
 def Spell_A_Parser():
     # Spell
@@ -228,13 +348,13 @@ def Spell_A_Parser():
         rex=setting["regex"],
         tau=setting["tau"],
     )
-    TimeToken = parser_Spell_A.parse(log_file)
+    TimeToken, len = parser_Spell_A.parse(log_file)
     # F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
     #     groundtruth=os.path.join(indir, log_file + "_structured.csv"),
     #     parsedresult=os.path.join(output_dir, log_file + "_Spell_A" + "_structured.csv"),
     # )
 
-    bechmark_result.append([Spell_A.__name__, dataset, TimeToken])
+    bechmark_result.append([Spell_A.__name__, dataset, TimeToken, len])
 
 
 def HLM_Parser_Parser():
@@ -249,13 +369,13 @@ def HLM_Parser_Parser():
         tau=setting["tau"],
         delimiter_pattern=setting["delimiter_pattern"]
     )
-    TimeToken = parser_HLM_Parser.parse(log_file)
+    TimeToken, len = parser_HLM_Parser.parse(log_file)
     # F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
     #     groundtruth=os.path.join(indir, log_file + "_structured.csv"),
     #     parsedresult=os.path.join(output_dir, log_file + "_HLM_Parser" + "_structured.csv"),
     # )
 
-    bechmark_result.append([HLM_Parser.__name__, dataset, TimeToken])
+    bechmark_result.append([HLM_Parser.__name__, dataset, TimeToken, len])
 
 
 def HLM_Parser_S_Parser():
@@ -270,13 +390,13 @@ def HLM_Parser_S_Parser():
         tau=setting["tau"],
         delimiter_pattern=setting["delimiter_pattern"]
     )
-    TimeToken = parser_HLM_Parser_S.parse(log_file)
+    TimeToken, len = parser_HLM_Parser_S.parse(log_file)
     # F1_measure, accuracy, Precision, Recall = evaluator.evaluate(
     #     groundtruth=os.path.join(indir, log_file + "_structured.csv"),
     #     parsedresult=os.path.join(output_dir, log_file + "_HLM_Parser_S" + "_structured.csv"),
     # )
 
-    bechmark_result.append([HLM_Parser_S.__name__, dataset, TimeToken])
+    bechmark_result.append([HLM_Parser_S.__name__, dataset, TimeToken, len])
 
 
 bechmark_result = []
@@ -295,10 +415,10 @@ for dataset, setting in benchmark_settings.items():
 
 print("\n=== Overall evaluation results ===")
 df_result = pd.DataFrame(bechmark_result,
-                         columns=["Algorithm", "Dataset", "F1_measure", "Accuracy", "Precision", "Recall", "TimeToken"])
+                         columns=["Algorithm", "Dataset", "TimeToken", "TemplateSize"])
 df_result.set_index("Dataset", inplace=True)
 print(df_result)
-df_result.to_csv("bechmark_result.csv", float_format="%.6f")
+df_result.to_csv("bechmark_result_HDFS_Template_Size.csv", float_format="%.6f")
 
 
 

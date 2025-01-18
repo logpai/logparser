@@ -628,7 +628,7 @@ class HLM_Parser_S:
                     self.addSeqToPrefixLCSTree(rootLCSNode, matchCluster)
 
             count += 1
-            if count % 1000000 == 0 or count == len(self.df_log):
+            if count % 10000000 == 0 or count == len(self.df_log):
                 print(
                     "Processed {0:.1f}% of log lines.".format(
                         count * 100.0 / len(self.df_log)
@@ -638,10 +638,11 @@ class HLM_Parser_S:
         if not os.path.exists(self.savePath):
             os.makedirs(self.savePath)
 
-        self.outputResult(logCluL)
+        # self.outputResult(logCluL)
 
         print("Parsing done. [Time taken: {!s}]".format(datetime.now() - start_time))
-        return format(datetime.now() - start_time)
+        print(len(logCluL))
+        return format(datetime.now() - start_time), len(logCluL)
 
     '''
         idx是字符串下标
