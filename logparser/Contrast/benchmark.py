@@ -36,21 +36,21 @@ benchmark_settings = {
     "HDFS": {
         "log_file": "HDFS/HDFS_2k.log",
         "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
-        "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
+        "regex": [r"(\d+\.){3}\d+(:\d+)?"],
         "st": 0.5,
         "depth": 4,
         "tau": 0.7,
-        "delimiter_pattern": r"\.|/|_"
+        "delimiter_pattern": r"\.|/|_|-"
     },
-    "Hadoop": {
-        "log_file": "Hadoop/Hadoop_2k.log",
-        "log_format": "<Date> <Time> <Level> \[<Process>\] <Component>: <Content>",
-        "regex": [r"(\d+\.){3}\d+"],
-        "st": 0.5,
-        "depth": 4,
-        "tau": 0.7,
-        "delimiter_pattern": r"\.|/|_"
-    },
+    # "Hadoop": {
+    #     "log_file": "Hadoop/Hadoop_2k.log",
+    #     "log_format": "<Date> <Time> <Level> \[<Process>\] <Component>: <Content>",
+    #     "regex": [r"(\d+\.){3}\d+"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.7,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
     # "Spark": {
     #     "log_file": "Spark/Spark_2k.log",
     #     "log_format": "<Date> <Time> <Level> <Component>: <Content>",
@@ -65,15 +65,15 @@ benchmark_settings = {
     #     "st": 0.5,
     #     "depth": 4,
     # },
-    "BGL": {
-        "log_file": "BGL/BGL_2k.log",
-        "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
-        "regex": [r"core\.\d+"],
-        "st": 0.5,
-        "depth": 4,
-        "tau": 0.75,
-        "delimiter_pattern": r"\.|/|_"
-    },
+    # "BGL": {
+    #     "log_file": "BGL/BGL_2k.log",
+    #     "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+    #     "regex": [r"core\.\d+"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.75,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
     # "HPC": {
     #     "log_file": "HPC/HPC_2k.log",
     #     "log_format": "<LogId> <Node> <Component> <State> <Time> <Flag> <Content>",
@@ -146,15 +146,21 @@ benchmark_settings = {
     #     "st": 0.6,
     #     "depth": 5,
     # },
-    "OpenStack": {
-        "log_file": "OpenStack/OpenStack_2k.log",
-        "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
-        "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
-        "st": 0.5,
-        "depth": 5,
-        "tau": 0.9,
-        "delimiter_pattern": r"\.|/|_"
-    },
+    # "OpenStack": {
+    #     "log_file": "OpenStack/OpenStack_2k.log",
+    #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
+    #     #"regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+    #     "regex": [
+    #         r"((\d+\.){3}\d+,?)+",
+    #         r"/.+?\s",
+    #         r"\d+",
+    #         # r"(\[instance:\s*)[^]]+(\])"
+    #     ],
+    #     "st": 0.5,
+    #     "depth": 5,
+    #     "tau": 0.9,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
     # "Mac": {
     #     "log_file": "Mac/Mac_2k.log",
     #     "log_format": "<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>",
@@ -288,7 +294,7 @@ for dataset, setting in benchmark_settings.items():
     Spell_Parser()
     HLM_Parser_S_Parser()
     Drain_A_Parser()
-    Spell_A_Parser()
+    # Spell_A_Parser()
     HLM_Parser_Parser()
 
 
@@ -298,7 +304,7 @@ df_result = pd.DataFrame(bechmark_result,
                          columns=["Algorithm", "Dataset", "F1_measure", "Accuracy", "Precision", "Recall", "TimeToken"])
 df_result.set_index("Dataset", inplace=True)
 print(df_result)
-df_result.to_csv("bechmark_result.csv", float_format="%.6f")
+df_result.to_csv("bechmark_result_HDFS.csv", float_format="%.6f")
 
 
 

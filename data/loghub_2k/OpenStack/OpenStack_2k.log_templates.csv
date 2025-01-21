@@ -1,23 +1,23 @@
 EventId,EventTemplate
-E1,"[instance: <*>] Attempting claim: memory <*> MB, disk <*> GB, vcpus <*> CPU"
+E1,[instance: <*>] Attempting claim: memory <*> MB, disk <*> GB, vcpus <*> CPU"
 E2,[instance: <*>] Claim successful
 E3,[instance: <*>] Creating image
 E4,[instance: <*>] Deleting instance files <*>
 E5,[instance: <*>] Deletion of <*> complete
-E6,"[instance: <*>] disk limit not specified, defaulting to unlimited"
+E6,[instance: <*>] disk limit not specified, defaulting to unlimited"
 E7,[instance: <*>] During sync_power_state the instance has a pending task (spawning). Skip.
 E8,[instance: <*>] Instance destroyed successfully.
 E9,[instance: <*>] Instance spawned successfully.
-E10,"[instance: <*>] memory limit: <*>.<*> MB, free: <*>.<*> MB"
+E10,[instance: <*>] memory limit: <*>.<*> MB, free: <*>.<*> MB"
 E11,[instance: <*>] Terminating instance
 E12,[instance: <*>] Took <*>.<*> seconds to build instance.
 E13,[instance: <*>] Took <*>.<*> seconds to deallocate network for instance.
 E14,[instance: <*>] Took <*>.<*> seconds to destroy the instance on the hypervisor.
 E15,[instance: <*>] Took <*>.<*> seconds to spawn the instance on the hypervisor.
-E16,"[instance: <*>] Total disk: <*> GB, used: <*>.<*> GB"
-E17,"[instance: <*>] Total memory: <*> MB, used: <*>.<*> MB"
-E18,"[instance: <*>] Total vcpu: <*> VCPU, used: <*>.<*> VCPU"
-E19,"[instance: <*>] vcpu limit not specified, defaulting to unlimited"
+E16,[instance: <*>] Total disk: <*> GB, used: <*>.<*> GB"
+E17,[instance: <*>] Total memory: <*> MB, used: <*>.<*> MB"
+E18,[instance: <*>] Total vcpu: <*> VCPU, used: <*>.<*> VCPU"
+E19,[instance: <*>] vcpu limit not specified, defaulting to unlimited"
 E20,[instance: <*>] VM Paused (Lifecycle Event)
 E21,[instance: <*>] VM Resumed (Lifecycle Event)
 E22,[instance: <*>] VM Started (Lifecycle Event)

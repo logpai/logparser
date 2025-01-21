@@ -42,42 +42,42 @@ benchmark_settings = {
     #     "tau": 0.7,
     #     "delimiter_pattern": r"\.|/|_"
     # },
-    "HDFS_25%": {
-        "log_file": "HDFS_Total/HDFS_25%.log",
-        "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
-        "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
-        "st": 0.5,
-        "depth": 4,
-        "tau": 0.7,
-        "delimiter_pattern": r"\.|/|_"
-    },
-    "HDFS_50%": {
-        "log_file": "HDFS_Total/HDFS_50%.log",
-        "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
-        "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
-        "st": 0.5,
-        "depth": 4,
-        "tau": 0.7,
-        "delimiter_pattern": r"\.|/|_"
-    },
-    "HDFS_75%": {
-        "log_file": "HDFS_Total/HDFS_75%.log",
-        "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
-        "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
-        "st": 0.5,
-        "depth": 4,
-        "tau": 0.7,
-        "delimiter_pattern": r"\.|/|_"
-    },
-    "HDFS_100%": {
-        "log_file": "HDFS_Total/HDFS.log",
-        "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
-        "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
-        "st": 0.5,
-        "depth": 4,
-        "tau": 0.7,
-        "delimiter_pattern": r"\.|/|_"
-    },
+    # "HDFS_25%": {
+    #     "log_file": "HDFS_Total/HDFS_25%.log",
+    #     "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
+    #     "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.7,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+    # "HDFS_50%": {
+    #     "log_file": "HDFS_Total/HDFS_50%.log",
+    #     "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
+    #     "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.7,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+    # "HDFS_75%": {
+    #     "log_file": "HDFS_Total/HDFS_75%.log",
+    #     "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
+    #     "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.7,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
+    # "HDFS_100%": {
+    #     "log_file": "HDFS_Total/HDFS.log",
+    #     "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
+    #     "regex": [r"blk_-?\d+", r"(\d+\.){3}\d+(:\d+)?"],
+    #     "st": 0.5,
+    #     "depth": 4,
+    #     "tau": 0.7,
+    #     "delimiter_pattern": r"\.|/|_"
+    # },
 
 
     # "Hadoop": {
@@ -152,6 +152,46 @@ benchmark_settings = {
     #     "tau": 0.75,
     #     "delimiter_pattern": r"\.|/|_"
     # },
+
+    "BGL_25%": {
+        "log_file": "BGL_Total/BGL_25%.log",
+        "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+        "regex": [r"core\.\d+"],
+        "st": 0.5,
+        "depth": 4,
+        "tau": 0.75,
+        "delimiter_pattern": r"\.|/|_"
+    },
+
+    "BGL_50%": {
+        "log_file": "BGL_Total/BGL_50%.log",
+        "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+        "regex": [r"core\.\d+"],
+        "st": 0.5,
+        "depth": 4,
+        "tau": 0.75,
+        "delimiter_pattern": r"\.|/|_"
+    },
+
+    "BGL_75%": {
+        "log_file": "BGL_Total/BGL_75%.log",
+        "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+        "regex": [r"core\.\d+"],
+        "st": 0.5,
+        "depth": 4,
+        "tau": 0.75,
+        "delimiter_pattern": r"\.|/|_"
+    },
+
+    "BGL_100%": {
+        "log_file": "BGL_Total/BGL_100%.log",
+        "log_format": "<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>",
+        "regex": [r"core\.\d+"],
+        "st": 0.5,
+        "depth": 4,
+        "tau": 0.75,
+        "delimiter_pattern": r"\.|/|_"
+    },
 
 
 
@@ -237,44 +277,68 @@ benchmark_settings = {
     #     "delimiter_pattern": r"\.|/|_"
     # },
 
-    # "OpenStack_5w": {
-    #     "log_file": "OpenStack_Total/openstack_5w.log",
+    # "OpenStack_25%": {
+    #     "log_file": "OpenStack_Total/OpenStack_25%.log",
     #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
-    #     "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+    #     "regex": [
+    #         r"((\d+\.){3}\d+,?)+",
+    #         r"/.+?\s",
+    #         r"\d+",
+    #         r"(\[instance:\s*)[^]]+(\])"
+    #     ],
     #     "st": 0.5,
     #     "depth": 5,
-    #     "tau": 0.9,
+    #     "tau": 0.7,
     #     "delimiter_pattern": r"\.|/|_"
     # },
     #
-    # "OpenStack_10w": {
-    #     "log_file": "OpenStack_Total/openstack_10w.log",
+    # "OpenStack_50%": {
+    #     "log_file": "OpenStack_Total/OpenStack_50%.log",
     #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
-    #     "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+    #     "regex": [
+    #         r"((\d+\.){3}\d+,?)+",
+    #         r"/.+?\s",
+    #         r"\d+",
+    #         r"(\[instance:\s*)[^]]+(\])"
+    #     ],
     #     "st": 0.5,
     #     "depth": 5,
-    #     "tau": 0.9,
+    #     "tau": 0.7,
     #     "delimiter_pattern": r"\.|/|_"
     # },
     #
-    # "OpenStack_15w": {
-    #     "log_file": "OpenStack_Total/openstack_15w.log",
+    #
+    # "OpenStack_75%": {
+    #     "log_file": "OpenStack_Total/OpenStack_75%.log",
     #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
-    #     "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+    #     "regex": [
+    #         r"((\d+\.){3}\d+,?)+",
+    #         r"/.+?\s",
+    #         r"\d+",
+    #         r"(\[instance:\s*)[^]]+(\])"
+    #     ],
     #     "st": 0.5,
     #     "depth": 5,
-    #     "tau": 0.9,
+    #     "tau": 0.7,
     #     "delimiter_pattern": r"\.|/|_"
     # },
-    # "OpenStack_20w": {
-    #     "log_file": "OpenStack_Total/openstack_20w.log",
+    #
+    # "OpenStack_100%": {
+    #     "log_file": "OpenStack_Total/OpenStack_100%.log",
     #     "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>",
-    #     "regex": [r"((\d+\.){3}\d+,?)+", r"/.+?\s", r"\d+"],
+    #     "regex": [
+    #         r"((\d+\.){3}\d+,?)+",
+    #         r"/.+?\s",
+    #         r"\d+",
+    #         r"(\[instance:\s*)[^]]+(\])"
+    #     ],
     #     "st": 0.5,
     #     "depth": 5,
-    #     "tau": 0.9,
+    #     "tau": 0.7,
     #     "delimiter_pattern": r"\.|/|_"
     # },
+
+
     # "Mac": {
     #     "log_file": "Mac/Mac_2k.log",
     #     "log_format": "<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>",
@@ -408,7 +472,7 @@ for dataset, setting in benchmark_settings.items():
     Spell_Parser()
     HLM_Parser_S_Parser()
     Drain_A_Parser()
-    Spell_A_Parser()
+    # Spell_A_Parser()
     HLM_Parser_Parser()
 
 
@@ -418,7 +482,7 @@ df_result = pd.DataFrame(bechmark_result,
                          columns=["Algorithm", "Dataset", "TimeToken", "TemplateSize"])
 df_result.set_index("Dataset", inplace=True)
 print(df_result)
-df_result.to_csv("bechmark_result_HDFS_Template_Size.csv", float_format="%.6f")
+df_result.to_csv("bechmark_result_BGL_Template_0119_Size.csv", float_format="%.6f")
 
 
 
