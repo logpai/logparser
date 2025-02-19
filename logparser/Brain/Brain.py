@@ -106,8 +106,12 @@ class LogParser:
 
         self.df_log["EventId"] = EventID
         self.df_log["EventTemplate"] = template_
+        
         self.df_log.to_csv(
-            os.path.join(self.savePath, self.logName + "_structured.csv"), index=False
+            os.path.join(self.savePath, self.logName + "_structured.csv"), 
+            index=False,
+            escapechar="\\",
+            quoting=1
         )
 
         df_event = pd.DataFrame(
@@ -117,6 +121,8 @@ class LogParser:
             os.path.join(self.savePath, self.logName + "_templates.csv"),
             index=False,
             columns=["EventId", "EventTemplate", "Occurrences"],
+            escapechar="\\",
+            quoting=1
         )
 
     def preprocess(self, line):
