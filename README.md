@@ -160,78 +160,96 @@ If you use our logparser tools or benchmarking results in your publication, plea
 
 <!-- readme: zhujiem,PinjiaHe,JinYang88,contributors -start -->
 <table>
-<tr>
-    <td align="center">
-        <a href="https://github.com/zhujiem">
-            <img src="https://avatars.githubusercontent.com/u/7032227?v=4" width="80;" alt="zhujiem"/>
-            <br />
-            <sub><b>Zhujiem</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/PinjiaHe">
-            <img src="https://avatars.githubusercontent.com/u/5793028?v=4" width="80;" alt="PinjiaHe"/>
-            <br />
-            <sub><b>Pinjia He</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/JinYang88">
-            <img src="https://avatars.githubusercontent.com/u/22317155?v=4" width="80;" alt="JinYang88"/>
-            <br />
-            <sub><b>LIU, Jinyang</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Siyuexi">
-            <img src="https://avatars.githubusercontent.com/u/50619651?v=4" width="80;" alt="Siyuexi"/>
-            <br />
-            <sub><b>Junjielong Xu</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/ShilinHe">
-            <img src="https://avatars.githubusercontent.com/u/10590876?v=4" width="80;" alt="ShilinHe"/>
-            <br />
-            <sub><b>Shilin HE</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/JoeHitHard">
-            <img src="https://avatars.githubusercontent.com/u/29425534?v=4" width="80;" alt="JoeHitHard"/>
-            <br />
-            <sub><b>Joseph Hit Hard</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
-        <a href="https://github.com/rustamtemirov">
-            <img src="https://avatars.githubusercontent.com/u/56340691?v=4" width="80;" alt="rustamtemirov"/>
-            <br />
-            <sub><b>Rustam Temirov</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/gaiusyu">
-            <img src="https://avatars.githubusercontent.com/u/84389256?v=4" width="80;" alt="gaiusyu"/>
-            <br />
-            <sub><b>Siyu Yu (Youth Yu)</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/thomasryck">
-            <img src="https://avatars.githubusercontent.com/u/37658138?v=4" width="80;" alt="thomasryck"/>
-            <br />
-            <sub><b>Thomas Ryckeboer</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/IsuruBoyagane15">
-            <img src="https://avatars.githubusercontent.com/u/35162901?v=4" width="80;" alt="IsuruBoyagane15"/>
-            <br />
-            <sub><b>Isuru Boyagane</b></sub>
-        </a>
-    </td></tr>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/zhujiem">
+                    <img src="https://avatars.githubusercontent.com/u/7032227?v=4" width="80;" alt="zhujiem"/>
+                    <br />
+                    <sub><b>Zhujiem</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/pinjiahe">
+                    <img src="https://avatars.githubusercontent.com/u/5793028?v=4" width="80;" alt="pinjiahe"/>
+                    <br />
+                    <sub><b>Pinjia He</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/jinyang88">
+                    <img src="https://avatars.githubusercontent.com/u/22317155?v=4" width="80;" alt="jinyang88"/>
+                    <br />
+                    <sub><b>LIU, Jinyang</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/PinjiaHe">
+                    <img src="https://avatars.githubusercontent.com/u/5793028?v=4" width="80;" alt="PinjiaHe"/>
+                    <br />
+                    <sub><b>Pinjia He</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/JinYang88">
+                    <img src="https://avatars.githubusercontent.com/u/22317155?v=4" width="80;" alt="JinYang88"/>
+                    <br />
+                    <sub><b>LIU, Jinyang</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Siyuexi">
+                    <img src="https://avatars.githubusercontent.com/u/50619651?v=4" width="80;" alt="Siyuexi"/>
+                    <br />
+                    <sub><b>Junjielong Xu</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/ShilinHe">
+                    <img src="https://avatars.githubusercontent.com/u/10590876?v=4" width="80;" alt="ShilinHe"/>
+                    <br />
+                    <sub><b>Shilin HE</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/JoeHitHard">
+                    <img src="https://avatars.githubusercontent.com/u/29425534?v=4" width="80;" alt="JoeHitHard"/>
+                    <br />
+                    <sub><b>Joseph Hit Hard</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/rustamtemirov">
+                    <img src="https://avatars.githubusercontent.com/u/56340691?v=4" width="80;" alt="rustamtemirov"/>
+                    <br />
+                    <sub><b>Rustam Temirov</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/gaiusyu">
+                    <img src="https://avatars.githubusercontent.com/u/84389256?v=4" width="80;" alt="gaiusyu"/>
+                    <br />
+                    <sub><b>Siyu Yu (Youth Yu)</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/thomasryck">
+                    <img src="https://avatars.githubusercontent.com/u/37658138?v=4" width="80;" alt="thomasryck"/>
+                    <br />
+                    <sub><b>Thomas Ryckeboer</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/IsuruBoyagane15">
+                    <img src="https://avatars.githubusercontent.com/u/35162901?v=4" width="80;" alt="IsuruBoyagane15"/>
+                    <br />
+                    <sub><b>Isuru Boyagane</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
 </table>
 <!-- readme: zhujiem,PinjiaHe,JinYang88,contributors -end -->
 
