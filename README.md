@@ -5,7 +5,7 @@
 <div>
 <a href="https://pypi.org/project/logparser3"><img src="https://img.shields.io/badge/python-3.6+-blue" style="max-width: 100%;" alt="Python version"></a>
 <a href="https://pypi.org/project/logparser3"><img src="https://img.shields.io/pypi/v/logparser3.svg" style="max-width: 100%;" alt="Pypi version"></a>
-<a href="https://github.com/logpai/logparser/actions/workflows/ci.yml"><img src="https://github.com/logpai/logparser/workflows/CI/badge.svg?event=push" style="max-width: 100%;" alt="Pypi version"></a>
+<a href="https://github.com/logpai/logparser/actions/workflows/ci.yml"><img src="https://github.com/logpai/logparser/workflows/CI/badge.svg" style="max-width: 100%;" alt="Pypi version"></a>
 <a href="https://pepy.tech/project/logparser3"><img src="https://static.pepy.tech/badge/logparser3" style="max-width: 100%;" alt="Downloads"></a>
 <a href="https://github.com/logpai/logparser/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-view-brightgreen" style="max-width: 100%;" alt="License"></a>
 <a href="https://github.com/logpai/logparser#discussion"><img src="https://img.shields.io/badge/chat-wechat-brightgreen?style=flat" style="max-width: 100%;"></a>
@@ -60,6 +60,8 @@ pip install logparser3
 ```
 
 In particular, the package depends on the following requirements. Note that regex matching in Python is brittle, so we recommend fixing the regex library to version 2022.3.2.
+
+Note: If you encouter ``"Error: need to escape..."``, please follow the instructions [here](https://github.com/logpai/logparser/issues/122).
 
 + python 3.6+
 + regex 2022.3.2
@@ -156,21 +158,21 @@ If you use our logparser tools or benchmarking results in your publication, plea
 
 ### 🤗 Contributors
 
-<!-- readme: contributors -start -->
+<!-- readme: zhujiem,PinjiaHe,JinYang88,contributors -start -->
 <table>
 <tr>
-    <td align="center">
-        <a href="https://github.com/PinjiaHe">
-            <img src="https://avatars.githubusercontent.com/u/5793028?v=4" width="80;" alt="PinjiaHe"/>
-            <br />
-            <sub><b>Pinjia He</b></sub>
-        </a>
-    </td>
     <td align="center">
         <a href="https://github.com/zhujiem">
             <img src="https://avatars.githubusercontent.com/u/7032227?v=4" width="80;" alt="zhujiem"/>
             <br />
             <sub><b>Zhujiem</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/PinjiaHe">
+            <img src="https://avatars.githubusercontent.com/u/5793028?v=4" width="80;" alt="PinjiaHe"/>
+            <br />
+            <sub><b>Pinjia He</b></sub>
         </a>
     </td>
     <td align="center">
@@ -231,7 +233,7 @@ If you use our logparser tools or benchmarking results in your publication, plea
         </a>
     </td></tr>
 </table>
-<!-- readme: contributors -end -->
+<!-- readme: zhujiem,PinjiaHe,JinYang88,contributors -end -->
 
 ### Discussion
 Welcome to join our WeChat group for any question and discussion. Alternatively, you can [open an issue here](https://github.com/logpai/logparser/issues/new).
