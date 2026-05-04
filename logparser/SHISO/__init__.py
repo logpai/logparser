@@ -1,1 +1,1 @@
-from SHISO import *
+from .SHISO import *
